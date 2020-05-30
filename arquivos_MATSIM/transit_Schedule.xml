@@ -614,9 +614,9 @@
 				<link refId="497966183_0"/>
 			</route>
 			<departures>
-				<departure id="viagem_Linha1_Abolicoes_Ida0" departureTime="19:15:00" vehicleRefId="veiculo10"/>
-				<departure id="viagem_Linha1_Abolicoes_Ida1" departureTime="19:50:00" vehicleRefId="veiculo10"/>
-				<departure id="viagem_Linha1_Abolicoes_Ida2" departureTime="21:10:00" vehicleRefId="veiculo10"/>
+				<departure id="viagem_Linha1_Abolicoes_Ida0" departureTime="19:15:00" vehicleRefId="veiculo3"/>
+				<departure id="viagem_Linha1_Abolicoes_Ida1" departureTime="19:50:00" vehicleRefId="veiculo2"/>
+				<departure id="viagem_Linha1_Abolicoes_Ida2" departureTime="21:10:00" vehicleRefId="veiculo3"/>
 			</departures>
 		</transitRoute>
 
@@ -1054,15 +1054,15 @@
 				<link refId="556798986_5"/>
 			</route>
 			<departures>
-				<departure id="viagem_Linha1_Abolicoes_Volta0" departureTime="17:36:00" vehicleRefId="veiculo10"/>
-				<departure id="viagem_Linha1_Abolicoes_Volta1" departureTime="18:10:00" vehicleRefId="veiculo20"/>
-				<departure id="viagem_Linha1_Abolicoes_Volta2" departureTime="18:45:00" vehicleRefId="veiculo10"/>
-				<departure id="viagem_Linha1_Abolicoes_Volta3" departureTime="19:05:00" vehicleRefId="veiculo20"/>
-				<departure id="viagem_Linha1_Abolicoes_Volta4" departureTime="20:05:00" vehicleRefId="veiculo20"/>
-				<departure id="viagem_Linha1_Abolicoes_Volta5" departureTime="21:45:00" vehicleRefId="veiculo20"/>
-				<departure id="viagem_Linha1_Abolicoes_Volta6" departureTime="22:20:00" vehicleRefId="veiculo10"/>
-				<departure id="viagem_Linha1_Abolicoes_Volta7" departureTime="22:25:00" vehicleRefId="veiculo30"/>
-				<departure id="viagem_Linha1_Abolicoes_Volta8" departureTime="22:55:00" vehicleRefId="veiculo20"/>
+				<departure id="viagem_Linha1_Abolicoes_Volta0" departureTime="17:36:00" vehicleRefId="veiculo3"/>
+				<departure id="viagem_Linha1_Abolicoes_Volta1" departureTime="18:10:00" vehicleRefId="veiculo2"/>
+				<departure id="viagem_Linha1_Abolicoes_Volta2" departureTime="18:45:00" vehicleRefId="veiculo3"/>
+				<departure id="viagem_Linha1_Abolicoes_Volta3" departureTime="19:05:00" vehicleRefId="veiculo2"/>
+				<departure id="viagem_Linha1_Abolicoes_Volta4" departureTime="20:05:00" vehicleRefId="veiculo3"/>
+				<departure id="viagem_Linha1_Abolicoes_Volta5" departureTime="21:45:00" vehicleRefId="veiculo3"/>
+				<departure id="viagem_Linha1_Abolicoes_Volta6" departureTime="22:20:00" vehicleRefId="veiculo1"/>
+				<departure id="viagem_Linha1_Abolicoes_Volta7" departureTime="22:25:00" vehicleRefId="veiculo2"/>
+				<departure id="viagem_Linha1_Abolicoes_Volta8" departureTime="22:55:00" vehicleRefId="veiculo3"/>
 			</departures>
 		</transitRoute>
 
@@ -1392,31 +1392,26 @@
 				<departure id="viagem_Linha2_Abolicoes_Ida8" departureTime="08:13:00" vehicleRefId="veiculo1"/>
 				<departure id="viagem_Linha2_Abolicoes_Ida9" departureTime="08:35:00" vehicleRefId="veiculo3"/>
 				<departure id="viagem_Linha2_Abolicoes_Ida10" departureTime="08:56:00" vehicleRefId="veiculo2"/>
-				<departure id="viagem_Linha2_Abolicoes_Ida11" departureTime="09:15:00" vehicleRefId="veiculo3"/>
+				<departure id="viagem_Linha2_Abolicoes_Ida11" departureTime="09:15:00" vehicleRefId="veiculo1"/>
 				<departure id="viagem_Linha2_Abolicoes_Ida12" departureTime="09:50:00" vehicleRefId="veiculo2"/>
 				<departure id="viagem_Linha2_Abolicoes_Ida13" departureTime="10:16:00" vehicleRefId="veiculo1"/>
 				<departure id="viagem_Linha2_Abolicoes_Ida14" departureTime="10:43:00" vehicleRefId="veiculo3"/>
 				<departure id="viagem_Linha2_Abolicoes_Ida15" departureTime="11:05:00" vehicleRefId="veiculo1"/>
-				<!--
-				
-				
-				
-				
-				<departure id="viagem_Linha2_Abolicoes_Ida16" departureTime="11:39:00" vehicleRefId=""/>
-				<departure id="viagem_Linha2_Abolicoes_Ida17" departureTime="12:07:00" vehicleRefId=""/>
-				<departure id="viagem_Linha2_Abolicoes_Ida18" departureTime="12:34:00" vehicleRefId=""/>
-				<departure id="viagem_Linha2_Abolicoes_Ida19" departureTime="13:01:00" vehicleRefId=""/>
-				<departure id="viagem_Linha2_Abolicoes_Ida20" departureTime="13:28:00" vehicleRefId=""/>
-				<departure id="viagem_Linha2_Abolicoes_Ida21" departureTime="13:55:00" vehicleRefId=""/>
-				<departure id="viagem_Linha2_Abolicoes_Ida22" departureTime="14:22:00" vehicleRefId=""/>
-				<departure id="viagem_Linha2_Abolicoes_Ida23" departureTime="14:49:00" vehicleRefId=""/>
-				<departure id="viagem_Linha2_Abolicoes_Ida24" departureTime="15:17:00" vehicleRefId=""/>
-				<departure id="viagem_Linha2_Abolicoes_Ida25" departureTime="15:48:00" vehicleRefId=""/>
-				<departure id="viagem_Linha2_Abolicoes_Ida26" departureTime="16:12:00" vehicleRefId=""/>
-				<departure id="viagem_Linha2_Abolicoes_Ida27" departureTime="16:38:00" vehicleRefId=""/>
-				<departure id="viagem_Linha2_Abolicoes_Ida28" departureTime="17:11:00" vehicleRefId=""/>
-				<departure id="viagem_Linha2_Abolicoes_Ida29" departureTime="17:47:00" vehicleRefId=""/>
-				<departure id="viagem_Linha2_Abolicoes_Ida30" departureTime="18:10:00" vehicleRefId=""/>-->
+				<departure id="viagem_Linha2_Abolicoes_Ida16" departureTime="11:39:00" vehicleRefId="veiculo3"/>
+				<departure id="viagem_Linha2_Abolicoes_Ida17" departureTime="12:07:00" vehicleRefId="veiculo1"/>
+				<departure id="viagem_Linha2_Abolicoes_Ida18" departureTime="12:34:00" vehicleRefId="veiculo2"/>
+				<departure id="viagem_Linha2_Abolicoes_Ida19" departureTime="13:01:00" vehicleRefId="veiculo1"/>
+				<departure id="viagem_Linha2_Abolicoes_Ida20" departureTime="13:28:00" vehicleRefId="veiculo2"/>
+				<departure id="viagem_Linha2_Abolicoes_Ida21" departureTime="13:55:00" vehicleRefId="veiculo1"/>
+				<departure id="viagem_Linha2_Abolicoes_Ida22" departureTime="14:22:00" vehicleRefId="veiculo2"/>
+				<departure id="viagem_Linha2_Abolicoes_Ida23" departureTime="14:49:00" vehicleRefId="veiculo1"/>
+				<departure id="viagem_Linha2_Abolicoes_Ida24" departureTime="15:17:00" vehicleRefId="veiculo3"/>
+				<departure id="viagem_Linha2_Abolicoes_Ida25" departureTime="15:48:00" vehicleRefId="veiculo1"/>
+				<departure id="viagem_Linha2_Abolicoes_Ida26" departureTime="16:12:00" vehicleRefId="veiculo2"/>
+				<departure id="viagem_Linha2_Abolicoes_Ida27" departureTime="16:38:00" vehicleRefId="veiculo1"/>
+				<departure id="viagem_Linha2_Abolicoes_Ida28" departureTime="17:11:00" vehicleRefId="veiculo3"/>
+				<departure id="viagem_Linha2_Abolicoes_Ida29" departureTime="17:47:00" vehicleRefId="veiculo1"/>
+				<departure id="viagem_Linha2_Abolicoes_Ida30" departureTime="18:10:00" vehicleRefId="veiculo3"/>
 			</departures>
 		</transitRoute>
 
@@ -1776,27 +1771,21 @@
 				<departure id="viagem_Linha2_Abolicoes_Volta8" departureTime="09:22:00" vehicleRefId="veiculo2"/>
 				<departure id="viagem_Linha2_Abolicoes_Volta9" departureTime="09:51:00" vehicleRefId="veiculo1"/>
 				<departure id="viagem_Linha2_Abolicoes_Volta10" departureTime="10:10:00" vehicleRefId="veiculo3"/>
-				<departure id="viagem_Linha2_Abolicoes_Volta11" departureTime="10:46:00" vehicleRefId="veiculo2"/>
+				<departure id="viagem_Linha2_Abolicoes_Volta11" departureTime="10:46:00" vehicleRefId="veiculo1"/>
 				<departure id="viagem_Linha2_Abolicoes_Volta12" departureTime="11:13:00" vehicleRefId="veiculo3"/>
-				<!--
-				
-				
-				
-				
-				
-				<departure id="viagem_Linha2_Abolicoes_Volta13" departureTime="11:41:00" vehicleRefId=""/>
-				<departure id="viagem_Linha2_Abolicoes_Volta14" departureTime="12:09:00" vehicleRefId=""/>
-				<departure id="viagem_Linha2_Abolicoes_Volta15" departureTime="12:36:00" vehicleRefId=""/>
-				<departure id="viagem_Linha2_Abolicoes_Volta16" departureTime="13:04:00" vehicleRefId=""/>
-				<departure id="viagem_Linha2_Abolicoes_Volta17" departureTime="13:32:00" vehicleRefId=""/>
-				<departure id="viagem_Linha2_Abolicoes_Volta18" departureTime="13:59:00" vehicleRefId=""/>
-				<departure id="viagem_Linha2_Abolicoes_Volta19" departureTime="14:26:00" vehicleRefId=""/>
-				<departure id="viagem_Linha2_Abolicoes_Volta20" departureTime="15:00:00" vehicleRefId=""/>
-				<departure id="viagem_Linha2_Abolicoes_Volta21" departureTime="15:20:00" vehicleRefId=""/>
-				<departure id="viagem_Linha2_Abolicoes_Volta22" departureTime="15:47:00" vehicleRefId=""/>
-				<departure id="viagem_Linha2_Abolicoes_Volta23" departureTime="16:15:00" vehicleRefId=""/>
-				<departure id="viagem_Linha2_Abolicoes_Volta24" departureTime="16:43:00" vehicleRefId=""/>
-				<departure id="viagem_Linha2_Abolicoes_Volta25" departureTime="17:20:00" vehicleRefId=""/>-->
+				<departure id="viagem_Linha2_Abolicoes_Volta13" departureTime="11:41:00" vehicleRefId="veiculo1"/>
+				<departure id="viagem_Linha2_Abolicoes_Volta14" departureTime="12:09:00" vehicleRefId="veiculo2"/>
+				<departure id="viagem_Linha2_Abolicoes_Volta15" departureTime="12:36:00" vehicleRefId="veiculo1"/>
+				<departure id="viagem_Linha2_Abolicoes_Volta16" departureTime="13:04:00" vehicleRefId="veiculo2"/>
+				<departure id="viagem_Linha2_Abolicoes_Volta17" departureTime="13:32:00" vehicleRefId="veiculo1"/>
+				<departure id="viagem_Linha2_Abolicoes_Volta18" departureTime="13:59:00" vehicleRefId="veiculo2"/>
+				<departure id="viagem_Linha2_Abolicoes_Volta19" departureTime="14:26:00" vehicleRefId="veiculo1"/>
+				<departure id="viagem_Linha2_Abolicoes_Volta20" departureTime="15:00:00" vehicleRefId="veiculo2"/>
+				<departure id="viagem_Linha2_Abolicoes_Volta21" departureTime="15:20:00" vehicleRefId="veiculo1"/>
+				<departure id="viagem_Linha2_Abolicoes_Volta22" departureTime="15:47:00" vehicleRefId="veiculo2"/>
+				<departure id="viagem_Linha2_Abolicoes_Volta23" departureTime="16:15:00" vehicleRefId="veiculo1"/>
+				<departure id="viagem_Linha2_Abolicoes_Volta24" departureTime="16:43:00" vehicleRefId="veiculo2"/>
+				<departure id="viagem_Linha2_Abolicoes_Volta25" departureTime="17:20:00" vehicleRefId="veiculo1"/>
 			</departures>
 		</transitRoute>
 	</transitLine>
