@@ -13,7 +13,38 @@
 		|																														|
 		|=====================================================================================================================-->
 		<stopFacility id="terminal_Praca_Felipe_Guerra" x="-4157205.2329715514" y="-579013.5879012579" linkRefId="497966183_0"/>
+		<stopFacility id="terminal_Carcara" x="-4157010.4238626626" y="-579083.7513058769" linkRefId="488900244_0"/>
 
+		<!--====================================================================================================================|
+		|																														|
+		|													PARADAS MARCADAS													|
+		|																														|
+		|=====================================================================================================================-->
+		<stopFacility id="parada_ADVM" x="-4157514.478516975" y="-577843.8355162342" linkRefId="487178210_2"/>
+		<stopFacility id="parada_AeC" x="-4157254.2135475" y="-579402.5781843684" linkRefId="488900248_8"/>
+		<stopFacility id="parada_Caixa_Economica_Federal" x="-4157167.594377" y="-579124.995512" linkRefId="488900268_5"/>
+		<stopFacility id="parada_Central" x="-4156993.725939044" y="-578833.40117623" linkRefId="488900268_2"/>
+		<stopFacility id="parada_CIEE" x="-4157040.480125177" y="-578523.3290690613" linkRefId="491990646_13"/>
+		<stopFacility id="parada_Cobal" x="-4156400.949650569" y="-578380.589051281" linkRefId="490163722_0"/>
+		<stopFacility id="parada_Colegio_Diocesano_Ida" x="-4157538.284106" y="-578016.583956" linkRefId="687195164_3"/>
+		<stopFacility id="parada_Colegio_Diocesano_Volta" x="-4157528.3934533237" y="-578023.2372743305" linkRefId="687195164_3_r"/>
+		<stopFacility id="parada_EE_Jeronimo_Rosado_Ida" x="-4157658.3032990796" y="-577756.0908971574" linkRefId="487178210_1"/>
+		<stopFacility id="parada_EE_Jeronimo_Rosado_Volta" x="-4157640.937458515" y="-577760.1148518234" linkRefId="487178206_4"/>
+		<stopFacility id="parada_Estacao_Das_Artes" x="-4157185.1954632085" y="-578432.006722123" linkRefId="491945361_5"/>
+		<stopFacility id="parada_IFRN_Ida" x="-4154567.4063177137" y="-581057.8229540222" linkRefId="682678880_9_r"/>
+		<stopFacility id="parada_Igreja_Sao_Vicente" x="-4157240.521250132" y="-578854.0801504253" linkRefId="491990646_6"/>
+		<stopFacility id="parada_Hotel_Caraubas" x="-4156920.8116725744" y="-578539.9839529201" linkRefId="761618598_1"/>
+		<stopFacility id="parada_Loterica_Sorteca" x="-4157052.117734" y="-578695.037227" linkRefId="488546099_5"/>
+		<stopFacility id="parada_Mercado_Central" x="-4157003.9673321964" y="-578698.8203248462" linkRefId="488546096_1"/>
+		<stopFacility id="parada_Oficinas" x="-4157316.107184381" y="-579363.008384986" linkRefId="488900268_7"/>
+		<stopFacility id="parada_Praca_Dos_Hospitais" x="-4157137.586872" y="-578160.201966" linkRefId="488546106_7_r"/>
+		<stopFacility id="parada_Praca_Gazeta" x="-4157049.819830" y="-579098.329475" linkRefId="488900262_0"/>
+		<stopFacility id="parada_SESC" x="-4158011.238219" y="-577526.685307" linkRefId="485692144_20"/>
+		<stopFacility id="parada_Teatro_Dix-Huit" x="-4157267.5718863956" y="-578558.8743964208" linkRefId="488546099_3"/>
+		<stopFacility id="parada_UERN" x="-4154089.400424247" y="-580321.9227872522" linkRefId="193532919_4"/>
+		<stopFacility id="parada_UFERSA_Ida" x="-4155081.591045687" y="-580007.1940723791" linkRefId="368028915_2_r"/>
+		<stopFacility id="parada_UFERSA_Lateral_Ida" x="-4154817.875171998" y="-580580.0693477748" linkRefId="666094865_0"/>
+		
 		<!--====================================================================================================================|
 		|																														|
 		|									LINHA 01 - PARADAS ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO								|
@@ -69,98 +100,81 @@
 		<stopFacility id="parada_Linha1_Abolicoes_Ida46" x="-4158154.0089915814" y="-576768.775836412" linkRefId="739676061_14"/>
 		<stopFacility id="parada_Linha1_Abolicoes_Ida47" x="-4157667.765455797" y="-577570.6539016819" linkRefId="487178192_14"/>
 		<stopFacility id="parada_Linha1_Abolicoes_Ida48" x="-4157713.1838080403" y="-577626.2737715637" linkRefId="487178192_14"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Ida49" x="-4157658.3032990796" y="-577756.0908971574" linkRefId="487178210_1"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Ida50" x="-4157514.478516975" y="-577843.8355162342" linkRefId="487178210_2"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Ida51" x="-4157288.9452286274" y="-577984.11535674" linkRefId="487178210_4"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Ida52" x="-4157113.171752665" y="-578140.1560487369" linkRefId="488546106_7_r"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Ida53" x="-4157059.404438611" y="-578278.8715954764" linkRefId="491945361_3"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Ida54" x="-4157185.1954632085" y="-578432.006722123" linkRefId="491945361_5"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Ida55" x="-4157267.5718863956" y="-578558.8743964208" linkRefId="488546099_3"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Ida56" x="-4157148.7939897184" y="-578636.0793562856" linkRefId="488546099_4"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Ida57" x="-4156993.725939044" y="-578833.40117623" linkRefId="488900268_2"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Ida58" x="-4157079.4419469545" y="-578981.3956982144" linkRefId="488900268_4"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Ida59" x="-4157316.107184381" y="-579363.008384986" linkRefId="488900268_7"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Ida60" x="-4157254.2135475" y="-579402.5781843684" linkRefId="488900248_8"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Ida49" x="-4157288.9452286274" y="-577984.11535674" linkRefId="487178210_4"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Ida50" x="-4157059.404438611" y="-578278.8715954764" linkRefId="491945361_3"/>
 
 		<!--LINHA 01 - PARADA IDA - VOLTA=====================================================================================-->
 		<stopFacility id="parada_Linha1_Abolicoes_Ida_Volta" x="-4157417.6305599846" y="-573183.684879501" linkRefId="556798986_5"/>
 
 		<!--LINHA 01 - PARADAS ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO - VOLTA=====================================================-->
-		<stopFacility id="parada_Linha1_Abolicoes_Volta0" x="-4157240.521250132" y="-578854.0801504253" linkRefId="491990646_6"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta1" x="-4157040.480125177" y="-578523.3290690613" linkRefId="491990646_13"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta2" x="-4156920.8116725744" y="-578539.9839529201" linkRefId="761618598_1"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta3" x="-4156707.634847705" y="-578589.2779610838" linkRefId="488900238_2"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta4" x="-4156523.9576878957" y="-578471.6877763364" linkRefId="488900238_5"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta5" x="-4156400.949650569" y="-578380.589051281" linkRefId="490163722_0"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta6" x="-4156507.259764277" y="-578212.5876619997" linkRefId="490163739_6"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta7" x="-4156812.2751690503" y="-578029.7203370538" linkRefId="490163739_13"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta8" x="-4157013.763447386" y="-577978.4147362716" linkRefId="488546106_9_r"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta9"  x="-4157126.752730541" y="-578161.0583739443" linkRefId="488546106_7_r"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta10" x="-4157528.3934533237" y="-578023.2372743305" linkRefId="687195164_3_r"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta11" x="-4157640.937458515" y="-577760.1148518234" linkRefId="487178206_4"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta12" x="-4157745.1325018983" y="-577683.3244231587" linkRefId="487178212_2"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta13" x="-4157528.0594948516" y="-577220.5716424013" linkRefId="485703688_1"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta14" x="-4157696.5972039127" y="-577123.4386537113" linkRefId="485703688_5"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta15" x="-4157921.0172973513" y="-576982.0427695166" linkRefId="485703688_7"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta16" x="-4158155.2335059806" y="-576744.2971258044" linkRefId="485712351_3"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta17" x="-4158218.4629767514" y="-576645.7117195332" linkRefId="485712351_5"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta18" x="-4158269.002025571" y="-576567.804755305" linkRefId="485712351_8"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta19" x="-4158588.934242111" y="-576103.9415359223" linkRefId="739676060_1"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta20" x="-4158786.63765776" y="-575891.4596641458" linkRefId="739676060_4"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta21" x="-4158803.224261888" y="-575688.1438354695" linkRefId="353540702_3"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta22" x="-4158646.597738342" y="-575586.3184802871" linkRefId="353540702_7"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta23" x="-4158551.864851677" y="-575487.6787998759" linkRefId="377032657_41_r"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta24" x="-4158632.126204539" y="-575379.6950533056" linkRefId="377032657_39_r"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta25" x="-4158716.172420088" y="-575267.7211898386" linkRefId="377032657_39_r"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta26" x="-4158804.1148178144" y="-575145.3750244987" linkRefId="377032657_37_r"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta27" x="-4158892.8364519766" y="-575032.2055683265" linkRefId="377032657_32_r"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta28" x="-4159047.793183161" y="-574812.7411671007" linkRefId="377032657_26_r"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta29" x="-4159182.044489058" y="-574616.2129645942" linkRefId="377032657_21_r"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta30" x="-4159299.152593372" y="-574427.5428253833" linkRefId="377032657_13_r"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta31" x="-4159352.585948953" y="-574334.6944995812" linkRefId="377032657_9_r"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta32" x="-4159416.8172951406" y="-574223.6388066853" linkRefId="377032657_7_r"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta33" x="-4159469.9166922485" y="-574137.0834434056" linkRefId="377032657_3_r"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta34" x="-4159923.0983392685" y="-573444.9237562835" linkRefId="356782784_2"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta35" x="-4159467.24502447" y="-573041.1791579487" linkRefId="356782784_17"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta36" x="-4159392.6609656387" y="-572968.4175230893" linkRefId="356782784_21"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta37" x="-4159294.6998137403" y="-572886.2673795643" linkRefId="356782784_25"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta38" x="-4159196.7386618424" y="-572798.8642016767" linkRefId="356782784_29"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta39" x="-4159536.597067234" y="-573020.4795270677" linkRefId="356782780_1"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta40" x="-4159627.099813249" y="-573185.6967270235" linkRefId="356782784_11_r"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta41" x="-4159762.575633545" y="-573306.072374022" linkRefId="356782784_6_r"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta42" x="-4160030.0763699203" y="-573616.2334057895" linkRefId="623933342_0"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta43" x="-4159914.0814605136" y="-573830.161478687" linkRefId="623933342_2"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta44" x="-4159836.38045594" y="-573969.09212371" linkRefId="623933342_3"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta45" x="-4159542.6083197366" y="-574028.4423050578" linkRefId="353540700_3"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta46" x="-4159445.315084784" y="-574006.501733183" linkRefId="159588624_0"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta47" x="-4159328.5409389418" y="-573974.1217981727" linkRefId="368063697_13_r"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta48" x="-4159246.1645157547" y="-574100.646170672" linkRefId="368063697_8_r"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta49" x="-4159165.5692044203" y="-574215.8483725879" linkRefId="368063697_3_r"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta50" x="-4158987.1240606783" y="-574065.393685941" linkRefId="624133992_22_r"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta51" x="-4158891.1666596145" y="-574129.259487561" linkRefId="624133992_18_r"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta52" x="-4158786.63765776" y="-574202.581164692" linkRefId="624133992_16_r"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta53" x="-4158694.687758365" y="-574267.4083203116" linkRefId="624133992_14_r"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta54" x="-4158599.398274246" y="-574326.3899062336" linkRefId="624133992_11_r"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta55" x="-4158499.8786494764" y="-574400.1924030879" linkRefId="624133992_10_r"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta56" x="-4158399.691107762" y="-574467.0316228691" linkRefId="624133992_6_r"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta57" x="-4158300.0601635026" y="-574532.6973055806" linkRefId="624133992_4_r"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta58" x="-4158146.3279467174" y="-574596.2393899891" linkRefId="624133992_1_r"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta59" x="-4158052.040338015" y="-574379.0676460405" linkRefId="368063708_1"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta60" x="-4158216.79318439" y="-574278.585422088" linkRefId="368063708_5"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta61" x="-4158345.9237937094" y="-574187.1567812058" linkRefId="368063708_8"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta62" x="-4158486.075032618" y="-574083.8805606609" linkRefId="368063708_11"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta63" x="-4158637.5808595885" y="-573984.7400009857" linkRefId="368063708_15"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta64" x="-4158710.717765039" y="-573867.71631653" linkRefId="356648581_3"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta65" x="-4158608.971750454" y="-573668.2064677543" linkRefId="356648581_7"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta66" x="-4158521.6972696725" y="-573479.5388456478" linkRefId="356648581_9"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta67" x="-4158423.068200829" y="-573263.3764387827" linkRefId="356648581_13"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta68" x="-4158308.4091253118" y="-573018.5570994515" linkRefId="356648581_15"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta69" x="-4158197.646231972" y="-572853.1279267278" linkRefId="556798944_0"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta70" x="-4158119.9452273985" y="-572802.3849158478" linkRefId="556798946_0"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta71" x="-4158033.449983052" y="-572890.1792890114" linkRefId="556798965_2"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta72" x="-4157873.1499163103" y="-572999.4222413547" linkRefId="556798975_3"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta73" x="-4157725.8742299913" y="-573051.9760520393" linkRefId="556798986_0"/>
-		<stopFacility id="parada_Linha1_Abolicoes_Volta74" x="-4157575.9268758926" y="-573155.2954816245" linkRefId="556798986_4"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta0" x="-4156707.634847705" y="-578589.2779610838" linkRefId="488900238_2"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta1" x="-4156523.9576878957" y="-578471.6877763364" linkRefId="488900238_5"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta2" x="-4156507.259764277" y="-578212.5876619997" linkRefId="490163739_6"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta3" x="-4156812.2751690503" y="-578029.7203370538" linkRefId="490163739_13"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta4" x="-4157013.763447386" y="-577978.4147362716" linkRefId="488546106_9_r"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta5" x="-4157745.1325018983" y="-577683.3244231587" linkRefId="487178212_2"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta6" x="-4157528.0594948516" y="-577220.5716424013" linkRefId="485703688_1"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta7" x="-4157696.5972039127" y="-577123.4386537113" linkRefId="485703688_5"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta8" x="-4157921.0172973513" y="-576982.0427695166" linkRefId="485703688_7"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta9" x="-4158155.2335059806" y="-576744.2971258044" linkRefId="485712351_3"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta10" x="-4158218.4629767514" y="-576645.7117195332" linkRefId="485712351_5"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta11" x="-4158269.002025571" y="-576567.804755305" linkRefId="485712351_8"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta12" x="-4158588.934242111" y="-576103.9415359223" linkRefId="739676060_1"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta13" x="-4158786.63765776" y="-575891.4596641458" linkRefId="739676060_4"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta14" x="-4158803.224261888" y="-575688.1438354695" linkRefId="353540702_3"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta15" x="-4158646.597738342" y="-575586.3184802871" linkRefId="353540702_7"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta16" x="-4158551.864851677" y="-575487.6787998759" linkRefId="377032657_41_r"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta17" x="-4158632.126204539" y="-575379.6950533056" linkRefId="377032657_39_r"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta18" x="-4158716.172420088" y="-575267.7211898386" linkRefId="377032657_39_r"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta19" x="-4158804.1148178144" y="-575145.3750244987" linkRefId="377032657_37_r"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta20" x="-4158892.8364519766" y="-575032.2055683265" linkRefId="377032657_32_r"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta21" x="-4159047.793183161" y="-574812.7411671007" linkRefId="377032657_26_r"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta22" x="-4159182.044489058" y="-574616.2129645942" linkRefId="377032657_21_r"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta23" x="-4159299.152593372" y="-574427.5428253833" linkRefId="377032657_13_r"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta24" x="-4159352.585948953" y="-574334.6944995812" linkRefId="377032657_9_r"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta25" x="-4159416.8172951406" y="-574223.6388066853" linkRefId="377032657_7_r"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta26" x="-4159469.9166922485" y="-574137.0834434056" linkRefId="377032657_3_r"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta27" x="-4159923.0983392685" y="-573444.9237562835" linkRefId="356782784_2"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta28" x="-4159467.24502447" y="-573041.1791579487" linkRefId="356782784_17"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta29" x="-4159392.6609656387" y="-572968.4175230893" linkRefId="356782784_21"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta30" x="-4159294.6998137403" y="-572886.2673795643" linkRefId="356782784_25"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta31" x="-4159196.7386618424" y="-572798.8642016767" linkRefId="356782784_29"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta32" x="-4159536.597067234" y="-573020.4795270677" linkRefId="356782780_1"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta33" x="-4159627.099813249" y="-573185.6967270235" linkRefId="356782784_11_r"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta34" x="-4159762.575633545" y="-573306.072374022" linkRefId="356782784_6_r"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta35" x="-4160030.0763699203" y="-573616.2334057895" linkRefId="623933342_0"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta36" x="-4159914.0814605136" y="-573830.161478687" linkRefId="623933342_2"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta37" x="-4159836.38045594" y="-573969.09212371" linkRefId="623933342_3"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta38" x="-4159542.6083197366" y="-574028.4423050578" linkRefId="353540700_3"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta39" x="-4159445.315084784" y="-574006.501733183" linkRefId="159588624_0"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta40" x="-4159328.5409389418" y="-573974.1217981727" linkRefId="368063697_13_r"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta41" x="-4159246.1645157547" y="-574100.646170672" linkRefId="368063697_8_r"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta42" x="-4159165.5692044203" y="-574215.8483725879" linkRefId="368063697_3_r"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta43" x="-4158987.1240606783" y="-574065.393685941" linkRefId="624133992_22_r"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta44" x="-4158891.1666596145" y="-574129.259487561" linkRefId="624133992_18_r"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta45" x="-4158786.63765776" y="-574202.581164692" linkRefId="624133992_16_r"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta46" x="-4158694.687758365" y="-574267.4083203116" linkRefId="624133992_14_r"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta47" x="-4158599.398274246" y="-574326.3899062336" linkRefId="624133992_11_r"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta48" x="-4158499.8786494764" y="-574400.1924030879" linkRefId="624133992_10_r"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta49" x="-4158399.691107762" y="-574467.0316228691" linkRefId="624133992_6_r"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta50" x="-4158300.0601635026" y="-574532.6973055806" linkRefId="624133992_4_r"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta51" x="-4158146.3279467174" y="-574596.2393899891" linkRefId="624133992_1_r"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta52" x="-4158052.040338015" y="-574379.0676460405" linkRefId="368063708_1"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta53" x="-4158216.79318439" y="-574278.585422088" linkRefId="368063708_5"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta54" x="-4158345.9237937094" y="-574187.1567812058" linkRefId="368063708_8"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta55" x="-4158486.075032618" y="-574083.8805606609" linkRefId="368063708_11"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta56" x="-4158637.5808595885" y="-573984.7400009857" linkRefId="368063708_15"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta57" x="-4158710.717765039" y="-573867.71631653" linkRefId="356648581_3"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta58" x="-4158608.971750454" y="-573668.2064677543" linkRefId="356648581_7"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta59" x="-4158521.6972696725" y="-573479.5388456478" linkRefId="356648581_9"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta60" x="-4158423.068200829" y="-573263.3764387827" linkRefId="356648581_13"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta61" x="-4158308.4091253118" y="-573018.5570994515" linkRefId="356648581_15"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta62" x="-4158197.646231972" y="-572853.1279267278" linkRefId="556798944_0"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta63" x="-4158119.9452273985" y="-572802.3849158478" linkRefId="556798946_0"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta64" x="-4158033.449983052" y="-572890.1792890114" linkRefId="556798965_2"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta65" x="-4157873.1499163103" y="-572999.4222413547" linkRefId="556798975_3"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta66" x="-4157725.8742299913" y="-573051.9760520393" linkRefId="556798986_0"/>
+		<stopFacility id="parada_Linha1_Abolicoes_Volta67" x="-4157575.9268758926" y="-573155.2954816245" linkRefId="556798986_4"/>
 
 		<!--====================================================================================================================|
 		|																														|
@@ -217,84 +231,141 @@
 		<stopFacility id="parada_Linha2_Abolicoes_Ida46" x="-4158154.0089915814" y="-576768.775836412" linkRefId="739676061_14"/>
 		<stopFacility id="parada_Linha2_Abolicoes_Ida47" x="-4158403.649798" y="-577108.595663" linkRefId="485692144_12"/>
 		<stopFacility id="parada_Linha2_Abolicoes_Ida48" x="-4158174.711941" y="-577347.759958" linkRefId="485692144_16"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Ida49" x="-4158011.238219" y="-577526.685307" linkRefId="485692144_20"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Ida50" x="-4157831.491769" y="-577720.017244" linkRefId="485692144_22"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Ida51" x="-4157538.284106" y="-578016.583956" linkRefId="687195164_3"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Ida52" x="-4157185.1954632085" y="-578432.006722123" linkRefId="491945361_5"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Ida53" x="-4157267.5718863956" y="-578558.8743964208" linkRefId="488546099_3"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Ida54" x="-4157148.7939897184" y="-578636.0793562856" linkRefId="488546099_4"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Ida55" x="-4156993.725939044" y="-578833.40117623" linkRefId="488900268_2"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Ida56" x="-4157079.4419469545" y="-578981.3956982144" linkRefId="488900268_4"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Ida57" x="-4157316.107184381" y="-579363.008384986" linkRefId="488900268_7"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Ida58" x="-4157254.2135475" y="-579402.5781843684" linkRefId="488900248_8"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Ida49" x="-4157831.491769" y="-577720.017244" linkRefId="485692144_22"/>
 
 		<!--LINHA 02 - PARADA IDA - VOLTA=====================================================================================-->
 		<stopFacility id="parada_Linha2_Abolicoes_Ida_Volta" x="-4157417.6305599846" y="-573183.684879501" linkRefId="556798986_5"/>
 
 		<!--LINHA 02 - PARADAS ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO - VOLTA=====================================================-->
-		<stopFacility id="parada_Linha2_Abolicoes_Volta0" x="-4157240.521250132" y="-578854.0801504253" linkRefId="491990646_6"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta1" x="-4157040.480125177" y="-578523.3290690613" linkRefId="491990646_13"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta2" x="-4156920.8116725744" y="-578539.9839529201" linkRefId="761618598_1"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta3" x="-4156707.634847705" y="-578589.2779610838" linkRefId="488900238_2"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta4" x="-4156523.9576878957" y="-578471.6877763364" linkRefId="488900238_5"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta5" x="-4156400.949650569" y="-578380.589051281" linkRefId="490163722_0"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta6" x="-4156507.259764277" y="-578212.5876619997" linkRefId="490163739_6"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta7" x="-4156812.2751690503" y="-578029.7203370538" linkRefId="490163739_13"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta8" x="-4157013.763447386" y="-577978.4147362716" linkRefId="488546106_9_r"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta9" x="-4157126.752730541" y="-578161.0583739443" linkRefId="488546106_7_r"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta10" x="-4157528.3934533237" y="-578023.2372743305" linkRefId="687195164_3_r"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta11" x="-4157640.937458515" y="-577760.1148518234" linkRefId="487178206_4"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta12" x="-4157812.905031" y="-577655.374210" linkRefId="485703731_0"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta13" x="-4158094.841218" y="-577417.852116" linkRefId="485692144_18_r"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta14" x="-4158272.273656" y="-577232.805834" linkRefId="485692144_13_r"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta15" x="-4158395.737372" y="-577102.474729" linkRefId="485692144_12_r"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta16" x="-4158155.2335059806" y="-576744.2971258044" linkRefId="485712351_3"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta17" x="-4158218.4629767514" y="-576645.7117195332" linkRefId="485712351_5"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta18" x="-4158269.002025571" y="-576567.804755305" linkRefId="485712351_8"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta19" x="-4158588.934242111" y="-576103.9415359223" linkRefId="739676060_1"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta20" x="-4158786.63765776" y="-575891.4596641458" linkRefId="739676060_4"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta21" x="-4158803.224261888" y="-575688.1438354695" linkRefId="353540702_3"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta22" x="-4158646.597738342" y="-575586.3184802871" linkRefId="353540702_7"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta23" x="-4158551.864851677" y="-575487.6787998759" linkRefId="377032657_41_r"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta24" x="-4158632.126204539" y="-575379.6950533056" linkRefId="377032657_39_r"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta25" x="-4158716.172420088" y="-575267.7211898386" linkRefId="377032657_39_r"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta26" x="-4158804.1148178144" y="-575145.3750244987" linkRefId="377032657_37_r"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta27" x="-4158892.8364519766" y="-575032.2055683265" linkRefId="377032657_32_r"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta28" x="-4159047.793183161" y="-574812.7411671007" linkRefId="377032657_26_r"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta29" x="-4159182.044489058" y="-574616.2129645942" linkRefId="377032657_21_r"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta30" x="-4159299.152593372" y="-574427.5428253833" linkRefId="377032657_13_r"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta31" x="-4159352.585948953" y="-574334.6944995812" linkRefId="377032657_9_r"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta32" x="-4159416.8172951406" y="-574223.6388066853" linkRefId="377032657_7_r"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta33" x="-4159469.9166922485" y="-574137.0834434056" linkRefId="377032657_3_r"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta34" x="-4159445.315084784" y="-574006.501733183" linkRefId="159588624_0"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta35" x="-4159328.5409389418" y="-573974.1217981727" linkRefId="368063697_13_r"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta36" x="-4159246.1645157547" y="-574100.646170672" linkRefId="368063697_8_r"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta37" x="-4159165.5692044203" y="-574215.8483725879" linkRefId="368063697_3_r"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta38" x="-4158987.1240606783" y="-574065.393685941" linkRefId="624133992_22_r"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta39" x="-4158891.1666596145" y="-574129.259487561" linkRefId="624133992_18_r"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta40" x="-4158786.63765776" y="-574202.581164692" linkRefId="624133992_16_r"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta41" x="-4158694.687758365" y="-574267.4083203116" linkRefId="624133992_14_r"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta42" x="-4158599.398274246" y="-574326.3899062336" linkRefId="624133992_11_r"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta43" x="-4158499.8786494764" y="-574400.1924030879" linkRefId="624133992_10_r"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta44" x="-4158399.691107762" y="-574467.0316228691" linkRefId="624133992_6_r"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta45" x="-4158300.0601635026" y="-574532.6973055806" linkRefId="624133992_4_r"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta46" x="-4158146.3279467174" y="-574596.2393899891" linkRefId="624133992_1_r"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta47" x="-4158052.040338015" y="-574379.0676460405" linkRefId="368063708_1"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta48" x="-4158216.79318439" y="-574278.585422088" linkRefId="368063708_5"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta49" x="-4158345.9237937094" y="-574187.1567812058" linkRefId="368063708_8"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta50" x="-4158486.075032618" y="-574083.8805606609" linkRefId="368063708_11"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta51" x="-4158637.5808595885" y="-573984.7400009857" linkRefId="368063708_15"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta52" x="-4158710.717765039" y="-573867.71631653" linkRefId="356648581_3"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta53" x="-4158608.971750454" y="-573668.2064677543" linkRefId="356648581_7"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta54" x="-4158521.6972696725" y="-573479.5388456478" linkRefId="356648581_9"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta55" x="-4158423.068200829" y="-573263.3764387827" linkRefId="356648581_13"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta56" x="-4158308.4091253118" y="-573018.5570994515" linkRefId="356648581_15"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta57" x="-4158197.646231972" y="-572853.1279267278" linkRefId="556798944_0"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta58" x="-4158119.9452273985" y="-572802.3849158478" linkRefId="556798946_0"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta59" x="-4158033.449983052" y="-572890.1792890114" linkRefId="556798965_2"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta60" x="-4157873.1499163103" y="-572999.4222413547" linkRefId="556798975_3"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta61" x="-4157725.8742299913" y="-573051.9760520393" linkRefId="556798986_0"/>
-		<stopFacility id="parada_Linha2_Abolicoes_Volta62" x="-4157575.9268758926" y="-573155.2954816245" linkRefId="556798986_4"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta0" x="-4156707.634847705" y="-578589.2779610838" linkRefId="488900238_2"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta1" x="-4156523.9576878957" y="-578471.6877763364" linkRefId="488900238_5"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta2" x="-4156507.259764277" y="-578212.5876619997" linkRefId="490163739_6"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta3" x="-4156812.2751690503" y="-578029.7203370538" linkRefId="490163739_13"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta4" x="-4157013.763447386" y="-577978.4147362716" linkRefId="488546106_9_r"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta5" x="-4157812.905031" y="-577655.374210" linkRefId="485703731_0"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta6" x="-4158094.841218" y="-577417.852116" linkRefId="485692144_18_r"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta7" x="-4158272.273656" y="-577232.805834" linkRefId="485692144_13_r"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta8" x="-4158395.737372" y="-577102.474729" linkRefId="485692144_12_r"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta9" x="-4158155.2335059806" y="-576744.2971258044" linkRefId="485712351_3"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta10" x="-4158218.4629767514" y="-576645.7117195332" linkRefId="485712351_5"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta11" x="-4158269.002025571" y="-576567.804755305" linkRefId="485712351_8"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta12" x="-4158588.934242111" y="-576103.9415359223" linkRefId="739676060_1"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta13" x="-4158786.63765776" y="-575891.4596641458" linkRefId="739676060_4"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta14" x="-4158803.224261888" y="-575688.1438354695" linkRefId="353540702_3"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta15" x="-4158646.597738342" y="-575586.3184802871" linkRefId="353540702_7"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta16" x="-4158551.864851677" y="-575487.6787998759" linkRefId="377032657_41_r"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta17" x="-4158632.126204539" y="-575379.6950533056" linkRefId="377032657_39_r"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta18" x="-4158716.172420088" y="-575267.7211898386" linkRefId="377032657_39_r"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta19" x="-4158804.1148178144" y="-575145.3750244987" linkRefId="377032657_37_r"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta20" x="-4158892.8364519766" y="-575032.2055683265" linkRefId="377032657_32_r"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta21" x="-4159047.793183161" y="-574812.7411671007" linkRefId="377032657_26_r"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta22" x="-4159182.044489058" y="-574616.2129645942" linkRefId="377032657_21_r"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta23" x="-4159299.152593372" y="-574427.5428253833" linkRefId="377032657_13_r"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta24" x="-4159352.585948953" y="-574334.6944995812" linkRefId="377032657_9_r"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta25" x="-4159416.8172951406" y="-574223.6388066853" linkRefId="377032657_7_r"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta26" x="-4159469.9166922485" y="-574137.0834434056" linkRefId="377032657_3_r"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta27" x="-4159445.315084784" y="-574006.501733183" linkRefId="159588624_0"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta28" x="-4159328.5409389418" y="-573974.1217981727" linkRefId="368063697_13_r"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta29" x="-4159246.1645157547" y="-574100.646170672" linkRefId="368063697_8_r"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta30" x="-4159165.5692044203" y="-574215.8483725879" linkRefId="368063697_3_r"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta31" x="-4158987.1240606783" y="-574065.393685941" linkRefId="624133992_22_r"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta32" x="-4158891.1666596145" y="-574129.259487561" linkRefId="624133992_18_r"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta33" x="-4158786.63765776" y="-574202.581164692" linkRefId="624133992_16_r"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta34" x="-4158694.687758365" y="-574267.4083203116" linkRefId="624133992_14_r"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta35" x="-4158599.398274246" y="-574326.3899062336" linkRefId="624133992_11_r"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta36" x="-4158499.8786494764" y="-574400.1924030879" linkRefId="624133992_10_r"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta37" x="-4158399.691107762" y="-574467.0316228691" linkRefId="624133992_6_r"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta38" x="-4158300.0601635026" y="-574532.6973055806" linkRefId="624133992_4_r"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta39" x="-4158146.3279467174" y="-574596.2393899891" linkRefId="624133992_1_r"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta40" x="-4158052.040338015" y="-574379.0676460405" linkRefId="368063708_1"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta41" x="-4158216.79318439" y="-574278.585422088" linkRefId="368063708_5"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta42" x="-4158345.9237937094" y="-574187.1567812058" linkRefId="368063708_8"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta43" x="-4158486.075032618" y="-574083.8805606609" linkRefId="368063708_11"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta44" x="-4158637.5808595885" y="-573984.7400009857" linkRefId="368063708_15"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta45" x="-4158710.717765039" y="-573867.71631653" linkRefId="356648581_3"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta46" x="-4158608.971750454" y="-573668.2064677543" linkRefId="356648581_7"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta47" x="-4158521.6972696725" y="-573479.5388456478" linkRefId="356648581_9"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta48" x="-4158423.068200829" y="-573263.3764387827" linkRefId="356648581_13"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta49" x="-4158308.4091253118" y="-573018.5570994515" linkRefId="356648581_15"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta50" x="-4158197.646231972" y="-572853.1279267278" linkRefId="556798944_0"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta51" x="-4158119.9452273985" y="-572802.3849158478" linkRefId="556798946_0"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta52" x="-4158033.449983052" y="-572890.1792890114" linkRefId="556798965_2"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta53" x="-4157873.1499163103" y="-572999.4222413547" linkRefId="556798975_3"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta54" x="-4157725.8742299913" y="-573051.9760520393" linkRefId="556798986_0"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Volta55" x="-4157575.9268758926" y="-573155.2954816245" linkRefId="556798986_4"/>
+
+		<!--====================================================================================================================|
+		|																														|
+		|							LINHA 02 - PARADAS ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO, UNIVERSIDADES						|
+		|																														|
+		|=====================================================================================================================-->
+		<!--LINHA 02 - PARADAS ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO, UNIVERSIDADES VIA AEC======================================-->
+		<stopFacility id="parada_Linha2_Abolicoes_Universidades_AeC_Ida0" x="-4154293.8943288345" y="-580215.161230164" linkRefId="193532919_4"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Universidades_AeC_Ida1" x="-4154445.956753258" y="-580112.4574582785" linkRefId="193532919_6"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Universidades_AeC_Ida2" x="-4155447.498211925" y="-580311.1247834272" linkRefId="677249483_3_r"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Universidades_AeC_Ida3" x="-4155740.2684727116" y="-580531.444630866" linkRefId="160163563_7_r"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Universidades_AeC_Ida4" x="-4156018.7898386763" y="-580603.7333888423" linkRefId="171476715_18"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Universidades_AeC_Ida5" x="-4156186.993589265" y="-580324.8737947972" linkRefId="171476715_22"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Universidades_AeC_Ida6" x="-4156313.8978087693" y="-580121.2433867494" linkRefId="171476715_24"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Universidades_AeC_Ida7" x="-4156458.279188328" y="-579892.3960175905" linkRefId="492359288_1"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Universidades_AeC_Ida8" x="-4156536.202831883" y="-579762.3961096862" linkRefId="492359288_4"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Universidades_AeC_Ida9" x="-4156812.9430859946" y="-579176.494087661" linkRefId="492359291_6"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Universidades_AeC_Ida10" x="-4156864.2613712507" y="-578890.586938058" linkRefId="488900266_3"/>
+
+		<!--LINHA 02 - PARADAS ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO, UNIVERSIDADES VIA IFRN=====================================-->
+		<stopFacility id="parada_Linha2_Abolicoes_Universidades_IFRN_Ida0" x="-4154293.8943288345" y="-580215.161230164" linkRefId="193532919_4"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Universidades_IFRN_Ida1" x="-4154445.956753258" y="-580112.4574582785" linkRefId="193532919_6"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Universidades_IFRN_Ida2" x="-4155090.162646478" y="-580392.9482077922" linkRefId="666094865_0"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Universidades_IFRN_Ida3" x="-4154687.965326243" y="-580669.7177646335" linkRefId="666094865_0"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Universidades_IFRN_Ida4" x="-4154945.6699474286" y="-581391.6040754183" linkRefId="682678880_0_r"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Universidades_IFRN_Ida5" x="-4155358.8878972535" y="-581670.8367892291" linkRefId="171476715_5"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Universidades_IFRN_Ida6" x="-4155518.965325014" y="-581381.2418579877" linkRefId="492359292_4"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Universidades_IFRN_Ida7" x="-4155676.8163629593" y="-581126.8258668162" linkRefId="492359292_7"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Universidades_IFRN_Ida8" x="-4155860.048244805" y="-580853.665049006" linkRefId="171476715_12"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Universidades_IFRN_Ida9" x="-4156018.7898386763" y="-580603.7333888423" linkRefId="171476715_18"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Universidades_IFRN_Ida10" x="-4156186.993589265" y="-580324.8737947972" linkRefId="171476715_22"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Universidades_IFRN_Ida11" x="-4156313.8978087693" y="-580121.2433867494" linkRefId="171476715_24"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Universidades_IFRN_Ida12" x="-4156458.279188328" y="-579892.3960175905" linkRefId="492359288_1"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Universidades_IFRN_Ida13" x="-4156536.202831883" y="-579762.3961096862" linkRefId="492359288_4"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Universidades_IFRN_Ida14" x="-4156812.9430859946" y="-579176.494087661" linkRefId="492359291_6"/>
+		<stopFacility id="parada_Linha2_Abolicoes_Universidades_IFRN_Ida15" x="-4156864.2613712507" y="-578890.586938058" linkRefId="488900266_3"/>
+
+		<!--====================================================================================================================|
+		|																														|
+		|								LINHA 06 - PARADAS UNIVERSIDADES, UERN, UFERSA, IFRN, FACENE							|
+		|																														|
+		|=====================================================================================================================-->
+		<!--LINHA 06 - PARADAS UNIVERSIDADES, UERN, UFERSA, IFRN, FACENE - IDA=================================================-->
+		<stopFacility id="parada_Linha6_Universidades_Ida0" x="-4154293.8943288345" y="-580215.161230164" linkRefId="193532919_4"/>
+		<stopFacility id="parada_Linha6_Universidades_Ida1" x="-4154445.956753258" y="-580112.4574582785" linkRefId="193532919_6"/>
+		<stopFacility id="parada_Linha6_Universidades_Ida2" x="-4155090.162646478" y="-580392.9482077922" linkRefId="666094865_0"/>
+		<stopFacility id="parada_Linha6_Universidades_Ida3" x="-4154687.965326243" y="-580669.7177646335" linkRefId="666094865_0"/>
+		<stopFacility id="parada_Linha6_Universidades_Ida4" x="-4154395.75166291" y="-580873.9422037813" linkRefId="349894991_0"/>
+		<stopFacility id="parada_Linha6_Universidades_Ida5" x="-4154197.9369277703" y="-581008.9743430049" linkRefId="349894991_5"/>
+		<stopFacility id="parada_Linha6_Universidades_Ida6" x="-4154047.5442957086" y="-581114.8316734764" linkRefId="349894991_9"/>
+		<stopFacility id="parada_Linha6_Universidades_Ida7" x="-4154070.9213887756" y="-581290.6647409907" linkRefId="368028904_9_r"/>
+		<stopFacility id="parada_Linha6_Universidades_Ida8" x="-4154212.2971420824" y="-581192.7436649359" linkRefId="368028904_6_r"/>
+		<stopFacility id="parada_Linha6_Universidades_Ida9" x="-4154283.6529356814" y="-581143.783178139" linkRefId="368028904_4_r"/>
+		<stopFacility id="parada_Linha6_Universidades_Ida10" x="-4154945.6699474286" y="-581391.6040754183" linkRefId="682678880_0_r"/>
+		<stopFacility id="parada_Linha6_Universidades_Ida11" x="-4155358.8878972535" y="-581670.8367892291" linkRefId="171476715_5"/>
+		<stopFacility id="parada_Linha6_Universidades_Ida12" x="-4155518.965325014" y="-581381.2418579877" linkRefId="492359292_4"/>
+		<stopFacility id="parada_Linha6_Universidades_Ida13" x="-4155676.8163629593" y="-581126.8258668162" linkRefId="492359292_7"/>
+		<stopFacility id="parada_Linha6_Universidades_Ida14" x="-4155860.048244805" y="-580853.665049006" linkRefId="171476715_12"/>
+		<stopFacility id="parada_Linha6_Universidades_Ida15" x="-4156018.7898386763" y="-580603.7333888423" linkRefId="171476715_18"/>
+		<stopFacility id="parada_Linha6_Universidades_Ida16" x="-4156186.993589265" y="-580324.8737947972" linkRefId="171476715_22"/>
+		<stopFacility id="parada_Linha6_Universidades_Ida17" x="-4156313.8978087693" y="-580121.2433867494" linkRefId="171476715_24"/>
+		<stopFacility id="parada_Linha6_Universidades_Ida18" x="-4156458.279188328" y="-579892.3960175905" linkRefId="492359288_1"/>
+		<stopFacility id="parada_Linha6_Universidades_Ida19" x="-4156536.202831883" y="-579762.3961096862" linkRefId="492359288_4"/>
+		<stopFacility id="parada_Linha6_Universidades_Ida20" x="-4156812.9430859946" y="-579176.494087661" linkRefId="492359291_6"/>
+		<stopFacility id="parada_Linha6_Universidades_Ida21" x="-4156864.2613712507" y="-578890.586938058" linkRefId="488900266_3"/>
+		<stopFacility id="parada_Linha6_Universidades_Ida22" x="-4157441.230292033" y="-578564.7986193888" linkRefId="494477033_0"/>
+		<stopFacility id="parada_Linha6_Universidades_Ida23" x="-4157491.8806603434" y="-578784.777666221" linkRefId="488546104_3"/>
+		<stopFacility id="parada_Linha6_Universidades_Ida24" x="-4157621.011269664" y="-578961.7226924836" linkRefId="491945361_14"/>
+		<stopFacility id="parada_Linha6_Universidades_Ida25" x="-4157702.4971369244" y="-579191.8748476574" linkRefId="490698546_7"/>
+		<stopFacility id="parada_Linha6_Universidades_Ida26" x="-4157480.414752792" y="-579318.5203320094" linkRefId="490698546_11"/>
+
+		<!--LINHA 06 - PARADAS UNIVERSIDADES, UERN, UFERSA, IFRN, FACENE - VOLTA==============================================-->
+
 	</transitStops>
 	
 	<!--====================================================================================================================|
@@ -302,7 +373,7 @@
 	|													ROTAS - LINHAS														|
 	|																														|
 	|=====================================================================================================================-->
-	<transitLine id="Cidade_do_Sol">
+	<transitLine id="Cidade_Do_Sol">
 		<!--====================================================================================================================|
 		|																														|
 		|									LINHA 01 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO										|
@@ -362,18 +433,19 @@
 				<stop refId="parada_Linha1_Abolicoes_Ida46" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha1_Abolicoes_Ida47" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha1_Abolicoes_Ida48" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_EE_Jeronimo_Rosado_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_ADVM" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha1_Abolicoes_Ida49" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Praca_Dos_Hospitais" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha1_Abolicoes_Ida50" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Linha1_Abolicoes_Ida51" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Linha1_Abolicoes_Ida52" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Linha1_Abolicoes_Ida53" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Linha1_Abolicoes_Ida54" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Linha1_Abolicoes_Ida55" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Linha1_Abolicoes_Ida56" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Linha1_Abolicoes_Ida57" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Linha1_Abolicoes_Ida58" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Linha1_Abolicoes_Ida59" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Linha1_Abolicoes_Ida60" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Estacao_Das_Artes" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Teatro_Dix-Huit" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Loterica_Sorteca" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Central" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Caixa_Economica_Federal" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Oficinas" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_AeC" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Praca_Gazeta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="terminal_Praca_Felipe_Guerra" arrivalOffset="00:02:00"/>
 			</routeProfile>
 			<route>
@@ -625,11 +697,18 @@
 			<transportMode>pt</transportMode>
 			<routeProfile>
 				<stop refId="terminal_Praca_Felipe_Guerra" departureOffset="00:00:00"/>
+				<stop refId="parada_Igreja_Sao_Vicente" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_CIEE" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Hotel_Caraubas" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha1_Abolicoes_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha1_Abolicoes_Volta1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Cobal" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha1_Abolicoes_Volta2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha1_Abolicoes_Volta3" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha1_Abolicoes_Volta4" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Praca_Dos_Hospitais" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Colegio_Diocesano_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_EE_Jeronimo_Rosado_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha1_Abolicoes_Volta5" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha1_Abolicoes_Volta6" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha1_Abolicoes_Volta7" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
@@ -693,13 +772,6 @@
 				<stop refId="parada_Linha1_Abolicoes_Volta65" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha1_Abolicoes_Volta66" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha1_Abolicoes_Volta67" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Linha1_Abolicoes_Volta68" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Linha1_Abolicoes_Volta69" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Linha1_Abolicoes_Volta70" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Linha1_Abolicoes_Volta71" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Linha1_Abolicoes_Volta72" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Linha1_Abolicoes_Volta73" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Linha1_Abolicoes_Volta74" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha1_Abolicoes_Ida_Volta" arrivalOffset="00:02:00"/>
 			</routeProfile>
 			<route>
@@ -1125,16 +1197,17 @@
 				<stop refId="parada_Linha2_Abolicoes_Ida46" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha2_Abolicoes_Ida47" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha2_Abolicoes_Ida48" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_SESC" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha2_Abolicoes_Ida49" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Linha2_Abolicoes_Ida50" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Linha2_Abolicoes_Ida51" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Linha2_Abolicoes_Ida52" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Linha2_Abolicoes_Ida53" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Linha2_Abolicoes_Ida54" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Linha2_Abolicoes_Ida55" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Linha2_Abolicoes_Ida56" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Linha2_Abolicoes_Ida57" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Linha2_Abolicoes_Ida58" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Colegio_Diocesano_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Estacao_Das_Artes" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Teatro_Dix-Huit" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Loterica_Sorteca" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Central" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Caixa_Economica_Federal" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Oficinas" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_AeC" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Praca_Gazeta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="terminal_Praca_Felipe_Guerra" arrivalOffset="00:02:00"/>
 			</routeProfile>
 			<route>
@@ -1420,11 +1493,18 @@
 			<transportMode>pt</transportMode>
 			<routeProfile>
 				<stop refId="terminal_Praca_Felipe_Guerra" departureOffset="00:00:00"/>
+				<stop refId="parada_Igreja_Sao_Vicente" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_CIEE" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Hotel_Caraubas" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha2_Abolicoes_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha2_Abolicoes_Volta1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Cobal" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha2_Abolicoes_Volta2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha2_Abolicoes_Volta3" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha2_Abolicoes_Volta4" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Praca_Dos_Hospitais" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Colegio_Diocesano_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_EE_Jeronimo_Rosado_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha2_Abolicoes_Volta5" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha2_Abolicoes_Volta6" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha2_Abolicoes_Volta7" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
@@ -1476,13 +1556,6 @@
 				<stop refId="parada_Linha2_Abolicoes_Volta53" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha2_Abolicoes_Volta54" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha2_Abolicoes_Volta55" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Linha2_Abolicoes_Volta56" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Linha2_Abolicoes_Volta57" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Linha2_Abolicoes_Volta58" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Linha2_Abolicoes_Volta59" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Linha2_Abolicoes_Volta60" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Linha2_Abolicoes_Volta61" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Linha2_Abolicoes_Volta62" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha2_Abolicoes_Ida_Volta" arrivalOffset="00:02:00"/>
 			</routeProfile>
 			<route>
@@ -1786,6 +1859,278 @@
 				<departure id="viagem_Linha2_Abolicoes_Volta23" departureTime="16:15:00" vehicleRefId="veiculo1"/>
 				<departure id="viagem_Linha2_Abolicoes_Volta24" departureTime="16:43:00" vehicleRefId="veiculo2"/>
 				<departure id="viagem_Linha2_Abolicoes_Volta25" departureTime="17:20:00" vehicleRefId="veiculo1"/>
+			</departures>
+		</transitRoute>
+
+		<!--====================================================================================================================|
+		|																														|
+		|							LINHA 02 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO, UNIVERSIDADES								|
+		|																														|
+		|=====================================================================================================================-->
+		<!--LINHA 02 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO, UNIVERSIDADES VIA AEC==============================================-->
+		<transitRoute id="Linha2_Abolicoes_Universidades_AeC">
+			<transportMode>pt</transportMode>
+			<routeProfile>
+				<stop refId="parada_UERN" departureOffset="00:00:00"/>
+				<stop refId="parada_Linha2_Abolicoes_Universidades_AeC_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha2_Abolicoes_Universidades_AeC_Ida1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_UFERSA_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha2_Abolicoes_Universidades_AeC_Ida2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha2_Abolicoes_Universidades_AeC_Ida3" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha2_Abolicoes_Universidades_AeC_Ida4" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha2_Abolicoes_Universidades_AeC_Ida5" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha2_Abolicoes_Universidades_AeC_Ida6" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha2_Abolicoes_Universidades_AeC_Ida7" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha2_Abolicoes_Universidades_AeC_Ida8" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha2_Abolicoes_Universidades_AeC_Ida9" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha2_Abolicoes_Universidades_AeC_Ida10" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Central" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Caixa_Economica_Federal" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Oficinas" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_AeC" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Praca_Gazeta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="terminal_Praca_Felipe_Guerra" arrivalOffset="00:02:00"/>
+			</routeProfile>
+			<route>
+				<link refId="193532919_3"/>
+				<link refId="193532919_4"/>
+				<link refId="193532919_5"/>
+				<link refId="193532919_6"/>
+				<link refId="193532919_7"/>
+				<link refId="193532919_8"/>
+				<link refId="193532919_9"/>
+				<link refId="492137571_6"/>
+				<link refId="492137571_7"/>
+				<link refId="492137571_8"/>
+				<link refId="492137571_0"/>
+				<link refId="492137571_1"/>
+				<link refId="492137571_2"/>
+				<link refId="492137567_0"/>
+				<link refId="368028915_6_r"/>
+				<link refId="368028915_5_r"/>
+				<link refId="368028915_4_r"/>
+				<link refId="368028915_3_r"/>
+				<link refId="368028915_2_r"/>
+				<link refId="368028915_1_r"/>
+				<link refId="368028915_0_r"/>
+				<link refId="677249483_4_r"/>
+				<link refId="677249483_3_r"/>
+				<link refId="677249483_2_r"/>
+				<link refId="677249483_1_r"/>
+				<link refId="677249483_0_r"/>
+				<link refId="160163563_9_r"/>
+				<link refId="160163563_8_r"/>
+				<link refId="160163563_7_r"/>
+				<link refId="160163563_6_r"/>
+				<link refId="160163563_5_r"/>
+				<link refId="160163563_4_r"/>
+				<link refId="160163563_3_r"/>
+				<link refId="160163563_2_r"/>
+				<link refId="160163563_1_r"/>
+				<link refId="160163563_0_r"/>
+				<link refId="770123649_0"/>
+				<link refId="492359301_0"/>
+				<link refId="171476715_17"/>
+				<link refId="171476715_18"/>
+				<link refId="171476715_19"/>
+				<link refId="171476715_20"/>
+				<link refId="171476715_21"/>
+				<link refId="171476715_22"/>
+				<link refId="171476715_23"/>
+				<link refId="171476715_24"/>
+				<link refId="171476715_25"/>
+				<link refId="492359295_0"/>
+				<link refId="492359288_0"/>
+				<link refId="492359288_1"/>
+				<link refId="492359288_2"/>
+				<link refId="492359288_3"/>
+				<link refId="492359288_4"/>
+				<link refId="492359288_5"/>
+				<link refId="492137556_0"/>
+				<link refId="492359291_0"/>
+				<link refId="492359291_1"/>
+				<link refId="492359291_2"/>
+				<link refId="492359291_3"/>
+				<link refId="492359291_4"/>
+				<link refId="492359291_5"/>
+				<link refId="492359291_6"/>
+				<link refId="492359291_7"/>
+				<link refId="159693249_0"/>
+				<link refId="488900266_0"/>
+				<link refId="488900266_1"/>
+				<link refId="488900266_2"/>
+				<link refId="488900266_3"/>
+				<link refId="488900266_4"/>
+				<link refId="488900267_0"/>
+				<link refId="488900268_1"/>
+				<link refId="488900268_2"/>
+				<link refId="488900268_3"/>
+				<link refId="488900268_4"/>
+				<link refId="488900268_5"/>
+				<link refId="488900268_6"/>
+				<link refId="488900268_7"/>
+				<link refId="490698546_14"/>
+				<link refId="488900248_8"/>
+				<link refId="488900248_9"/>
+				<link refId="488900248_10"/>
+				<link refId="488900262_0"/>
+				<link refId="769208664_1"/>
+				<link refId="769208664_2"/>
+				<link refId="769208664_3"/>
+				<link refId="769208664_4"/>
+				<link refId="491990665_4"/>
+				<link refId="491992841_0"/>
+				<link refId="497966183_0"/>
+			</route>
+			<departures>
+				<departure id="viagem_Linha2_Abolicoes_Universidades_AeC" departureTime="22:00:00" vehicleRefId="veiculo1"/>
+			</departures>
+		</transitRoute>
+
+		<!--LINHA 02 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO, UNIVERSIDADES VIA IFRN=============================================-->
+		<transitRoute id="Linha2_Abolicoes_Universidades_IFRN">
+			<transportMode>pt</transportMode>
+			<routeProfile>
+				<stop refId="parada_UERN" departureOffset="00:00:00"/>
+				<stop refId="parada_Linha2_Abolicoes_Universidades_IFRN_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha2_Abolicoes_Universidades_IFRN_Ida1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_UFERSA_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha2_Abolicoes_Universidades_IFRN_Ida2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_UFERSA_Lateral_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha2_Abolicoes_Universidades_IFRN_Ida3" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_IFRN_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha2_Abolicoes_Universidades_IFRN_Ida4" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha2_Abolicoes_Universidades_IFRN_Ida5" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha2_Abolicoes_Universidades_IFRN_Ida6" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha2_Abolicoes_Universidades_IFRN_Ida7" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha2_Abolicoes_Universidades_IFRN_Ida8" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha2_Abolicoes_Universidades_IFRN_Ida9" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha2_Abolicoes_Universidades_IFRN_Ida10" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha2_Abolicoes_Universidades_IFRN_Ida11" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha2_Abolicoes_Universidades_IFRN_Ida12" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha2_Abolicoes_Universidades_IFRN_Ida13" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha2_Abolicoes_Universidades_IFRN_Ida14" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha2_Abolicoes_Universidades_IFRN_Ida15" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Central" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="terminal_Praca_Felipe_Guerra" arrivalOffset="00:02:00"/>
+			</routeProfile>
+			<route>
+				<link refId="193532919_3"/>
+				<link refId="193532919_4"/>
+				<link refId="193532919_5"/>
+				<link refId="193532919_6"/>
+				<link refId="193532919_7"/>
+				<link refId="193532919_8"/>
+				<link refId="193532919_9"/>
+				<link refId="492137571_6"/>
+				<link refId="492137571_7"/>
+				<link refId="492137571_8"/>
+				<link refId="492137571_0"/>
+				<link refId="492137571_1"/>
+				<link refId="492137571_2"/>
+				<link refId="492137567_0"/>
+				<link refId="368028915_6_r"/>
+				<link refId="368028915_5_r"/>
+				<link refId="368028915_4_r"/>
+				<link refId="368028915_3_r"/>
+				<link refId="368028915_2_r"/>
+				<link refId="368028915_1_r"/>
+				<link refId="368028915_0_r"/>
+				<link refId="349894966_0"/>
+				<link refId="666094865_0"/>
+				<link refId="666094865_1"/>
+				<link refId="666094865_2"/>
+				<link refId="666094865_3"/>
+				<link refId="350164526_1_r"/>
+				<link refId="350164526_0_r"/>
+				<link refId="682678880_9_r"/>
+				<link refId="682678880_8_r"/>
+				<link refId="682678880_7_r"/>
+				<link refId="682678880_6_r"/>
+				<link refId="682678880_5_r"/>
+				<link refId="682678880_4_r"/>
+				<link refId="682678880_3_r"/>
+				<link refId="682678880_2_r"/>
+				<link refId="682678880_1_r"/>
+				<link refId="682678880_0_r"/>
+				<link refId="682678878_1_r"/>
+				<link refId="682678878_0_r"/>
+				<link refId="666094867_1_r"/>
+				<link refId="666094867_0_r"/>
+				<link refId="746175801_0_r"/>
+				<link refId="745522524_0_r"/>
+				<link refId="771780907_0"/>
+				<link refId="666094866_0"/>
+				<link refId="666094866_1"/>
+				<link refId="666094866_2"/>
+				<link refId="666094866_3"/>
+				<link refId="666094866_4"/>
+				<link refId="666094866_5"/>
+				<link refId="666094866_6"/>
+				<link refId="666094866_7"/>
+				<link refId="666094866_8"/>
+				<link refId="171476715_5"/>
+				<link refId="492359292_0"/>
+				<link refId="492359292_1"/>
+				<link refId="492359292_2"/>
+				<link refId="492359292_3"/>
+				<link refId="492359292_4"/>
+				<link refId="492359292_5"/>
+				<link refId="492359292_6"/>
+				<link refId="492359292_7"/>
+				<link refId="771802510_0_r"/>
+				<link refId="171476715_10"/>
+				<link refId="171476715_11"/>
+				<link refId="171476715_12"/>
+				<link refId="171476715_13"/>
+				<link refId="171476715_14"/>
+				<link refId="171476715_15"/>
+				<link refId="171476715_16"/>
+				<link refId="171476715_17"/>
+				<link refId="171476715_18"/>
+				<link refId="171476715_19"/>
+				<link refId="171476715_20"/>
+				<link refId="171476715_21"/>
+				<link refId="171476715_22"/>
+				<link refId="171476715_23"/>
+				<link refId="171476715_24"/>
+				<link refId="171476715_25"/>
+				<link refId="492359295_0"/>
+				<link refId="492359288_0"/>
+				<link refId="492359288_1"/>
+				<link refId="492359288_2"/>
+				<link refId="492359288_3"/>
+				<link refId="492359288_4"/>
+				<link refId="492359288_5"/>
+				<link refId="492137556_0"/>
+				<link refId="492359291_0"/>
+				<link refId="492359291_1"/>
+				<link refId="492359291_2"/>
+				<link refId="492359291_3"/>
+				<link refId="492359291_4"/>
+				<link refId="492359291_5"/>
+				<link refId="492359291_6"/>
+				<link refId="492359291_7"/>
+				<link refId="159693249_0"/>
+				<link refId="488900266_0"/>
+				<link refId="488900266_1"/>
+				<link refId="488900266_2"/>
+				<link refId="488900266_3"/>
+				<link refId="488900266_4"/>
+				<link refId="488900267_0"/>
+				<link refId="488900268_1"/>
+				<link refId="488900268_2"/>
+				<link refId="488900268_3"/>
+				<link refId="488900268_4"/>
+				<link refId="769208664_2"/>
+				<link refId="769208664_3"/>
+				<link refId="769208664_4"/>
+				<link refId="491990665_4"/>
+				<link refId="491992841_0"/>
+				<link refId="497966183_0"/>
+			</route>
+			<departures>
+				<departure id="viagem_Linha2_Abolicoes_Universidades_IFRN" departureTime="22:00:00" vehicleRefId="veiculo2"/>
 			</departures>
 		</transitRoute>
 	</transitLine>
