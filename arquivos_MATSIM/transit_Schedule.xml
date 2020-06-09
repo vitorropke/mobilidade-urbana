@@ -115,7 +115,7 @@
 		<stopFacility id="parada_Linha1_Abolicoes_Ida61" x="-4157288.9452286274" y="-577984.11535674" linkRefId="487178210_4"/>
 		<stopFacility id="parada_Linha1_Abolicoes_Ida62" x="-4157059.404438611" y="-578278.8715954764" linkRefId="491945361_3"/>
 
-		<!--LINHA 01 - PARADA IDA - VOLTA=====================================================================================-->
+		<!--LINHA 01 - PARADA ABOLIÇÕES - IDA - VOLTA=========================================================================-->
 		<stopFacility id="parada_Linha1_Abolicoes_Ida_Volta" x="-4157417.6305599846" y="-573183.684879501" linkRefId="556798986_5"/>
 
 		<!--LINHA 01 - PARADAS ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO - VOLTA=====================================================-->
@@ -245,7 +245,7 @@
 		<stopFacility id="parada_Linha2_Abolicoes_Ida48" x="-4158174.711941" y="-577347.759958" linkRefId="485692144_16"/>
 		<stopFacility id="parada_Linha2_Abolicoes_Ida49" x="-4157831.491769" y="-577720.017244" linkRefId="485692144_22"/>
 
-		<!--LINHA 02 - PARADA IDA - VOLTA=====================================================================================-->
+		<!--LINHA 02 - PARADA ABOLIÇÕES - IDA - VOLTA=========================================================================-->
 		<stopFacility id="parada_Linha2_Abolicoes_Ida_Volta" x="-4157417.6305599846" y="-573183.684879501" linkRefId="556798986_5"/>
 
 		<!--LINHA 02 - PARADAS ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO - VOLTA=====================================================-->
@@ -379,45 +379,129 @@
 		|																														|
 		|=====================================================================================================================-->
 		<!--LINHA 04 - PARADAS ABOLIÇÃO V - IDA===============================================================================-->
-		<stopFacility id="parada_Linha4_Abolicao_V_Ida0" x="-4159196.7386618424" y="-572798.8642016767" linkRefId="356782784_29"/>
-		<stopFacility id="parada_Linha4_Abolicao_V_Ida1" x="-4159536.597067234" y="-573020.4795270677" linkRefId="356782780_1"/>
-		<stopFacility id="parada_Linha4_Abolicao_V_Ida2" x="-4159554.8534637247" y="-573116.4556741343" linkRefId="356782784_15_r"/>
-		<stopFacility id="parada_Linha4_Abolicao_V_Ida3" x="-4159613.852793845" y="-573170.6078719851" linkRefId="356782784_12_r"/>
-		<stopFacility id="parada_Linha4_Abolicao_V_Ida4" x="-4159683.984073045" y="-573234.7634703425" linkRefId="356782784_8_r"/>
-		<stopFacility id="parada_Linha4_Abolicao_V_Ida5" x="-4159923.0983392685" y="-573444.9237562835" linkRefId="356782784_2_r"/>
-		<stopFacility id="parada_Linha4_Abolicao_V_Ida6" x="-4160018.276503897" y="-573502.8540235026" linkRefId="356782784_0_r"/>
-		<stopFacility id="parada_Linha4_Abolicao_V_Ida7" x="-4160058.3515205826" y="-573572.307815296" linkRefId="623933342_0"/>
-		<stopFacility id="parada_Linha4_Abolicao_V_Ida8" x="-4160006.03135991" y="-573663.5121251128" linkRefId="623933342_1"/>
-		<stopFacility id="parada_Linha4_Abolicao_V_Ida9" x="-4159988.4428803646" y="-573697.7137714538" linkRefId="623933342_1"/>
-		<stopFacility id="parada_Linha4_Abolicao_V_Ida10" x="-4159955.9375890526" y="-573758.4049686971" linkRefId="623933342_2"/>
-		<stopFacility id="parada_Linha4_Abolicao_V_Ida11" x="-4159899.164648748" y="-573860.786553292" linkRefId="623933342_2"/>
-		<stopFacility id="parada_Linha4_Abolicao_V_Ida12" x="-4159836.38045594" y="-573969.09212371" linkRefId="623933342_3"/>
-		<stopFacility id="parada_Linha4_Abolicao_V_Ida13" x="-4159542.6083197366" y="-574028.4423050578" linkRefId="353540700_3"/>
-		<stopFacility id="parada_Linha4_Abolicao_V_Ida14" x="-4159484.3882260523" y="-574135.8539645725" linkRefId="377032657_3"/>
-		<stopFacility id="parada_Linha4_Abolicao_V_Ida15" x="-4159422.38326968" y="-574237.2748626863" linkRefId="377032657_7"/>
-		<stopFacility id="parada_Linha4_Abolicao_V_Ida16" x="-4159356.5934506217" y="-574350.3424573853" linkRefId="377032657_10"/>
-		<stopFacility id="parada_Linha4_Abolicao_V_Ida17" x="-4159302.158219624" y="-574445.292103847" linkRefId="623552106_0"/>
-		<stopFacility id="parada_Linha4_Abolicao_V_Ida18" x="-4159185.6067127627" y="-574634.2864278236" linkRefId="377032657_21"/>
-		<stopFacility id="parada_Linha4_Abolicao_V_Ida19" x="-4159064.825065252" y="-574806.9625617871" linkRefId="377032657_26"/>
-		<stopFacility id="parada_Linha4_Abolicao_V_Ida20" x="-4158909.534375596" y="-575031.5572894922" linkRefId="377032657_32"/>
-		<stopFacility id="parada_Linha4_Abolicao_V_Ida21" x="-4158821.9259363413" y="-575142.6924871511" linkRefId="377032657_37"/>
-		<stopFacility id="parada_Linha4_Abolicao_V_Ida22" x="-4158734.4288165784" y="-575265.6981060888" linkRefId="377032657_39"/>
-		<stopFacility id="parada_Linha4_Abolicao_V_Ida23" x="-4158646.820377324" y="-575379.7621169621" linkRefId="377032657_39"/>
-		<stopFacility id="parada_Linha4_Abolicao_V_Ida24" x="-4158575.241944744" y="-575472.1200095619" linkRefId="377032657_41"/>
-		<stopFacility id="parada_Linha4_Abolicao_V_Ida25" x="-4158664.4088568687" y="-575584.8989620985" linkRefId="353540702_7_r"/>
-		<stopFacility id="parada_Linha4_Abolicao_V_Ida26" x="-4158793.4281466985" y="-575670.7519203146" linkRefId="353540702_3_r"/>
-		<stopFacility id="parada_Linha4_Abolicao_V_Ida27" x="-4158806.0072491583" y="-575894.3657769776" linkRefId="485712354_3"/>
-		<stopFacility id="parada_Linha4_Abolicao_V_Ida28" x="-4158712.832835364" y="-575992.8383630038" linkRefId="485712354_5"/>
-		<stopFacility id="parada_Linha4_Abolicao_V_Ida29" x="-4158298.3903711406" y="-576534.4959216001" linkRefId="739676061_11"/>
-		<stopFacility id="parada_Linha4_Abolicao_V_Ida30" x="-4158214.2328361007" y="-576676.7515769599" linkRefId="739676061_13"/>
-		<stopFacility id="parada_Linha4_Abolicao_V_Ida31" x="-4158154.0089915814" y="-576768.775836412" linkRefId="739676061_14"/>
-		<stopFacility id="parada_Linha4_Abolicao_V_Ida32" x="-4157667.765455797" y="-577570.6539016819" linkRefId="487178192_14"/>
-		<stopFacility id="parada_Linha4_Abolicao_V_Ida33" x="-4157713.1838080403" y="-577626.2737715637" linkRefId="487178192_14"/>
-		<stopFacility id="parada_Linha4_Abolicao_V_Ida34" x="-4157288.9452286274" y="-577984.11535674" linkRefId="487178210_4"/>
-		<stopFacility id="parada_Linha4_Abolicao_V_Ida35" x="-4157059.404438611" y="-578278.8715954764" linkRefId="491945361_3"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Ida0" x="-4159536.597067234" y="-573020.4795270677" linkRefId="356782780_1"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Ida1" x="-4159554.8534637247" y="-573116.4556741343" linkRefId="356782784_15_r"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Ida2" x="-4159613.852793845" y="-573170.6078719851" linkRefId="356782784_12_r"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Ida3" x="-4159683.984073045" y="-573234.7634703425" linkRefId="356782784_8_r"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Ida4" x="-4159923.0983392685" y="-573444.9237562835" linkRefId="356782784_2_r"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Ida5" x="-4160018.276503897" y="-573502.8540235026" linkRefId="356782784_0_r"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Ida6" x="-4160058.3515205826" y="-573572.307815296" linkRefId="623933342_0"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Ida7" x="-4160006.03135991" y="-573663.5121251128" linkRefId="623933342_1"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Ida8" x="-4159988.4428803646" y="-573697.7137714538" linkRefId="623933342_1"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Ida9" x="-4159955.9375890526" y="-573758.4049686971" linkRefId="623933342_2"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Ida10" x="-4159899.164648748" y="-573860.786553292" linkRefId="623933342_2"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Ida11" x="-4159836.38045594" y="-573969.09212371" linkRefId="623933342_3"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Ida12" x="-4159542.6083197366" y="-574028.4423050578" linkRefId="353540700_3"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Ida13" x="-4159484.3882260523" y="-574135.8539645725" linkRefId="377032657_3"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Ida14" x="-4159422.38326968" y="-574237.2748626863" linkRefId="377032657_7"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Ida15" x="-4159356.5934506217" y="-574350.3424573853" linkRefId="377032657_10"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Ida16" x="-4159302.158219624" y="-574445.292103847" linkRefId="623552106_0"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Ida17" x="-4159185.6067127627" y="-574634.2864278236" linkRefId="377032657_21"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Ida18" x="-4159064.825065252" y="-574806.9625617871" linkRefId="377032657_26"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Ida19" x="-4158909.534375596" y="-575031.5572894922" linkRefId="377032657_32"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Ida20" x="-4158821.9259363413" y="-575142.6924871511" linkRefId="377032657_37"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Ida21" x="-4158734.4288165784" y="-575265.6981060888" linkRefId="377032657_39"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Ida22" x="-4158646.820377324" y="-575379.7621169621" linkRefId="377032657_39"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Ida23" x="-4158575.241944744" y="-575472.1200095619" linkRefId="377032657_41"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Ida24" x="-4158664.4088568687" y="-575584.8989620985" linkRefId="353540702_7_r"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Ida25" x="-4158793.4281466985" y="-575670.7519203146" linkRefId="353540702_3_r"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Ida26" x="-4158806.0072491583" y="-575894.3657769776" linkRefId="485712354_3"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Ida27" x="-4158712.832835364" y="-575992.8383630038" linkRefId="485712354_5"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Ida28" x="-4158298.3903711406" y="-576534.4959216001" linkRefId="739676061_11"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Ida29" x="-4158214.2328361007" y="-576676.7515769599" linkRefId="739676061_13"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Ida30" x="-4158154.0089915814" y="-576768.775836412" linkRefId="739676061_14"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Ida31" x="-4157667.765455797" y="-577570.6539016819" linkRefId="487178192_14"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Ida32" x="-4157713.1838080403" y="-577626.2737715637" linkRefId="487178192_14"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Ida33" x="-4157288.9452286274" y="-577984.11535674" linkRefId="487178210_4"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Ida34" x="-4157059.404438611" y="-578278.8715954764" linkRefId="491945361_3"/>
+
+		<!--LINHA 04 - PARADA ABOLIÇÃO V - IDA - VOLTA========================================================================-->
+		<stopFacility id="parada_Linha4_Abolicao_V_Ida_Volta" x="-4159196.7386618424" y="-572798.8642016767" linkRefId="356782784_29"/>
 
 		<!--LINHA 04 - PARADAS ABOLIÇÃO V - VOLTA=============================================================================-->
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta0" x="-4156742.1438898505" y="-578612.7513104186" linkRefId="488900238_1"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta1" x="-4156698.7292884416" y="-578587.936627073" linkRefId="488900238_2"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta2" x="-4156520.2841446996" y="-578472.8055528352" linkRefId="488900238_5"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta3" x="-4156451.154740917" y="-578423.8469588133" linkRefId="490163722_0"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta4" x="-4156495.01462029" y="-578218.7354103766" linkRefId="490163739_6"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta5" x="-4156719.8799916916" y="-578082.479076539" linkRefId="490163739_11"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta6" x="-4156818.9543384984" y="-578026.2552517317" linkRefId="490163739_13"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta7" x="-4157013.763447386" y="-577978.4147362716" linkRefId="488546106_9_r"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta8" x="-4157047.1592946243" y="-578031.1287266207" linkRefId="488546106_9_r"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta9" x="-4157218.9252689183" y="-578247.4621689818" linkRefId="781466654_0_r"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta10" x="-4157745.1325018983" y="-577683.3244231587" linkRefId="487178212_2"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta11" x="-4157528.0594948516" y="-577220.5716424013" linkRefId="485703688_1"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta12" x="-4157696.5972039127" y="-577123.4386537113" linkRefId="485703688_5"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta13" x="-4157921.0172973513" y="-576982.0427695166" linkRefId="485703688_7"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta14" x="-4158155.2335059806" y="-576744.2971258044" linkRefId="485712351_3"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta15" x="-4158193.416091323" y="-576687.5154918088" linkRefId="485712351_4"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta16" x="-4158269.002025571" y="-576567.804755305" linkRefId="485712351_8"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta17" x="-4158588.934242111" y="-576103.9415359223" linkRefId="739676060_1"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta18" x="-4158786.63765776" y="-575891.4596641458" linkRefId="739676060_4"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta19" x="-4158803.224261888" y="-575688.1438354695" linkRefId="353540702_3"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta20" x="-4158646.597738342" y="-575586.3184802871" linkRefId="353540702_7"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta21" x="-4158551.864851677" y="-575487.6787998759" linkRefId="377032657_41_r"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta22" x="-4158632.126204539" y="-575379.6950533056" linkRefId="377032657_39_r"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta23" x="-4158716.172420088" y="-575267.7211898386" linkRefId="377032657_39_r"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta24" x="-4158804.1148178144" y="-575145.3750244987" linkRefId="377032657_37_r"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta25" x="-4158892.8364519766" y="-575032.2055683265" linkRefId="377032657_32_r"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta26" x="-4159047.793183161" y="-574812.7411671007" linkRefId="377032657_26_r"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta27" x="-4159182.044489058" y="-574616.2129645942" linkRefId="377032657_21_r"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta28" x="-4159299.152593372" y="-574427.5428253833" linkRefId="377032657_13_r"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta29" x="-4159352.585948953" y="-574334.6944995812" linkRefId="377032657_9_r"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta30" x="-4159416.8172951406" y="-574223.6388066853" linkRefId="377032657_7_r"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta31" x="-4159469.9166922485" y="-574137.0834434056" linkRefId="377032657_3_r"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta32" x="-4159801.20349685" y="-573975.5748153061" linkRefId="377032664_2"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta33" x="-4159914.0814605136" y="-573830.161478687" linkRefId="623933342_2_r"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta34" x="-4160030.0763699203" y="-573616.2334057895" linkRefId="623933342_0_r"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta35" x="-4159828.8107305667" y="-573369.1103985474" linkRefId="356782784_4"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta36" x="-4159762.575633545" y="-573306.072374022" linkRefId="356782784_6"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta37" x="-4159691.6651179087" y="-573241.9167113736" linkRefId="356782784_8"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta38" x="-4159627.099813249" y="-573185.6967270235" linkRefId="356782784_11"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta39" x="-4159467.24502447" y="-573041.1791579487" linkRefId="356782784_17"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta40" x="-4159392.6609656387" y="-572968.4175230893" linkRefId="356782784_21"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Volta41" x="-4159294.6998137403" y="-572886.2673795643" linkRefId="356782784_25"/>
 
+		<!--====================================================================================================================|
+		|																														|
+		|										LINHA 04 - PARADAS ABOLIÇÃO V, SANTA JÚLIA										|
+		|																														|
+		|=====================================================================================================================-->
+		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia0" x="-4159536.597067234" y="-573020.4795270677" linkRefId="356782780_1"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia1" x="-4159554.8534637247" y="-573116.4556741343" linkRefId="356782784_15_r"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia2" x="-4159613.852793845" y="-573170.6078719851" linkRefId="356782784_12_r"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia3" x="-4159683.984073045" y="-573234.7634703425" linkRefId="356782784_8_r"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia4" x="-4159923.0983392685" y="-573444.9237562835" linkRefId="356782784_2_r"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia5" x="-4160018.276503897" y="-573502.8540235026" linkRefId="356782784_0_r"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia6" x="-4160058.3515205826" y="-573572.307815296" linkRefId="623933342_0"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia7" x="-4160006.03135991" y="-573663.5121251128" linkRefId="623933342_1"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia8" x="-4159988.4428803646" y="-573697.7137714538" linkRefId="623933342_1"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia9" x="-4159955.9375890526" y="-573758.4049686971" linkRefId="623933342_2"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia10" x="-4159899.164648748" y="-573860.786553292" linkRefId="623933342_2"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia11" x="-4159836.38045594" y="-573969.09212371" linkRefId="623933342_3"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia12" x="-4159542.6083197366" y="-574028.4423050578" linkRefId="353540700_3"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia13" x="-4159484.3882260523" y="-574135.8539645725" linkRefId="377032657_3"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia14" x="-4159422.38326968" y="-574237.2748626863" linkRefId="377032657_7"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia15" x="-4159356.5934506217" y="-574350.3424573853" linkRefId="377032657_10"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia16" x="-4159302.158219624" y="-574445.292103847" linkRefId="623552106_0"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia17" x="-4159185.6067127627" y="-574634.2864278236" linkRefId="377032657_21"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia18" x="-4159064.825065252" y="-574806.9625617871" linkRefId="377032657_26"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia19" x="-4158909.534375596" y="-575031.5572894922" linkRefId="377032657_32"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia20" x="-4158821.9259363413" y="-575142.6924871511" linkRefId="377032657_37"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia21" x="-4158734.4288165784" y="-575265.6981060888" linkRefId="377032657_39"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia22" x="-4158646.820377324" y="-575379.7621169621" linkRefId="377032657_39"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia23" x="-4158575.241944744" y="-575472.1200095619" linkRefId="377032657_41"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia24" x="-4158664.4088568687" y="-575584.8989620985" linkRefId="353540702_7_r"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia25" x="-4158793.4281466985" y="-575670.7519203146" linkRefId="353540702_3_r"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia26" x="-4158806.0072491583" y="-575894.3657769776" linkRefId="485712354_3"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia27" x="-4158712.832835364" y="-575992.8383630038" linkRefId="485712354_5"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia28" x="-4158298.3903711406" y="-576534.4959216001" linkRefId="739676061_11"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia29" x="-4158214.2328361007" y="-576676.7515769599" linkRefId="739676061_13"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia30" x="-4158154.0089915814" y="-576768.775836412" linkRefId="739676061_14"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia31" x="-4157667.765455797" y="-577570.6539016819" linkRefId="487178192_14"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia32" x="-4157713.1838080403" y="-577626.2737715637" linkRefId="487178192_14"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia33" x="-4157288.9452286274" y="-577984.11535674" linkRefId="487178210_4"/>
+		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia34" x="-4157059.404438611" y="-578278.8715954764" linkRefId="491945361_3"/>
 
 		<!--====================================================================================================================|
 		|																														|
@@ -2494,14 +2578,15 @@
 
 		<!--====================================================================================================================|
 		|																														|
-		|													LINHA 04 - ABOLIÇÃO V												|
+		|												LINHA 04 - ABOLIÇÃO V													|
 		|																														|
 		|=====================================================================================================================-->
 		<!--LINHA 04 - ABOLIÇÃO V - IDA=======================================================================================-->
 		<transitRoute id="Linha4_Abolicao_V_Ida">
 			<transportMode>pt</transportMode>
 			<routeProfile>
-				<stop refId="parada_Linha4_Abolicao_V_Ida0" departureOffset="00:00:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Ida_Volta" departureOffset="00:00:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha4_Abolicao_V_Ida1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha4_Abolicao_V_Ida2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha4_Abolicao_V_Ida3" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
@@ -2534,12 +2619,11 @@
 				<stop refId="parada_Linha4_Abolicao_V_Ida30" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha4_Abolicao_V_Ida31" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha4_Abolicao_V_Ida32" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Linha4_Abolicao_V_Ida33" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_EE_Jeronimo_Rosado_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_ADVM" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Linha4_Abolicao_V_Ida34" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Ida33" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Praca_Dos_Hospitais" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Linha4_Abolicao_V_Ida35" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Ida34" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Estacao_Das_Artes" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Teatro_Dix-Huit" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Loterica_Sorteca" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
@@ -2734,6 +2818,562 @@
 			</route>
 			<departures>
 				<departure id="viagem_Linha4_Abolicao_V_Ida0" departureTime="08:53:00" vehicleRefId="veiculo4"/>
+				<departure id="viagem_Linha4_Abolicao_V_Ida1" departureTime="09:49:00" vehicleRefId="veiculo6"/>
+				<departure id="viagem_Linha4_Abolicao_V_Ida2" departureTime="10:31:00" vehicleRefId="veiculo4"/>
+				<departure id="viagem_Linha4_Abolicao_V_Ida3" departureTime="12:57:00" vehicleRefId="veiculo6"/>
+				<departure id="viagem_Linha4_Abolicao_V_Ida4" departureTime="13:33:00" vehicleRefId="veiculo4"/>
+				<departure id="viagem_Linha4_Abolicao_V_Ida5" departureTime="14:20:00" vehicleRefId="veiculo6"/>
+				<departure id="viagem_Linha4_Abolicao_V_Ida6" departureTime="15:03:00" vehicleRefId="veiculo4"/>
+				<departure id="viagem_Linha4_Abolicao_V_Ida7" departureTime="15:43:00" vehicleRefId="veiculo6"/>
+				<departure id="viagem_Linha4_Abolicao_V_Ida8" departureTime="16:27:00" vehicleRefId="veiculo4"/>
+			</departures>
+		</transitRoute>
+
+		<!--LINHA 04 - ABOLIÇÃO V - VOLTA=====================================================================================-->
+		<transitRoute id="Linha4_Abolicao_V_Volta">
+			<transportMode>pt</transportMode>
+			<routeProfile>
+				<stop refId="terminal_Praca_Felipe_Guerra" departureOffset="00:00:00"/>
+				<stop refId="parada_Igreja_Sao_Vicente" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_CIEE" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Hotel_Caraubas" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta3" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Cobal" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta4" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta5" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta6" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta7" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta8" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Praca_Dos_Hospitais" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta9" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Colegio_Diocesano_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_EE_Jeronimo_Rosado_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta10" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta11" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta12" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta13" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta14" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta15" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta16" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta17" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta18" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta19" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta20" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta21" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta22" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta23" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta24" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta25" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta26" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta27" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta28" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta29" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta30" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta31" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta32" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta33" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta34" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta35" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta36" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta37" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta38" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta39" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta40" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Volta41" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Ida_Volta" arrivalOffset="00:02:00"/>
+			</routeProfile>
+			<route>
+				<link refId="497966183_0"/>
+				<link refId="769208664_4"/>
+				<link refId="769208664_5"/>
+				<link refId="491990646_4"/>
+				<link refId="491990646_5"/>
+				<link refId="491990646_6"/>
+				<link refId="491990646_7"/>
+				<link refId="491990646_8"/>
+				<link refId="491990646_9"/>
+				<link refId="491990646_10"/>
+				<link refId="491990646_11"/>
+				<link refId="491990646_12"/>
+				<link refId="491990646_13"/>
+				<link refId="761618598_1"/>
+				<link refId="761618597_0"/>
+				<link refId="488900263_0"/>
+				<link refId="488900263_1"/>
+				<link refId="488900238_0"/>
+				<link refId="488900238_1"/>
+				<link refId="488900238_2"/>
+				<link refId="488900238_3"/>
+				<link refId="488900238_4"/>
+				<link refId="488900238_5"/>
+				<link refId="676068109_10"/>
+				<link refId="787992357_4"/>
+				<link refId="490163722_0"/>
+				<link refId="490163722_1"/>
+				<link refId="490163722_2"/>
+				<link refId="490163739_3"/>
+				<link refId="490163739_4"/>
+				<link refId="490163739_5"/>
+				<link refId="490163739_6"/>
+				<link refId="490163739_7"/>
+				<link refId="490163739_8"/>
+				<link refId="490163739_9"/>
+				<link refId="490163739_10"/>
+				<link refId="490163739_11"/>
+				<link refId="490163739_12"/>
+				<link refId="490163739_13"/>
+				<link refId="788951575_4"/>
+				<link refId="788951575_0"/>
+				<link refId="788948317_0"/>
+				<link refId="488546106_10_r"/>
+				<link refId="488546106_9_r"/>
+				<link refId="488546106_8_r"/>
+				<link refId="488546106_7_r"/>
+				<link refId="488546106_6_r"/>
+				<link refId="488546106_5_r"/>
+				<link refId="488546106_4_r"/>
+				<link refId="781466654_0_r"/>
+				<link refId="676068114_0_r"/>
+				<link refId="781466656_0_r"/>
+				<link refId="687195164_5_r"/>
+				<link refId="687195164_4_r"/>
+				<link refId="687195164_3_r"/>
+				<link refId="687195164_2_r"/>
+				<link refId="487178209_0"/>
+				<link refId="487178209_1"/>
+				<link refId="487178206_4"/>
+				<link refId="487178206_5"/>
+				<link refId="487178212_2"/>
+				<link refId="487178212_3"/>
+				<link refId="487178212_4"/>
+				<link refId="487178212_5"/>
+				<link refId="487178212_6"/>
+				<link refId="487178212_7"/>
+				<link refId="487178212_8"/>
+				<link refId="485703688_0"/>
+				<link refId="485703688_1"/>
+				<link refId="485703688_2"/>
+				<link refId="485703688_3"/>
+				<link refId="485703688_4"/>
+				<link refId="485703688_5"/>
+				<link refId="485703688_6"/>
+				<link refId="485703688_7"/>
+				<link refId="485703688_8"/>
+				<link refId="485712351_0"/>
+				<link refId="485712351_1"/>
+				<link refId="485712351_2"/>
+				<link refId="485712351_3"/>
+				<link refId="485712351_4"/>
+				<link refId="485712351_5"/>
+				<link refId="485712351_6"/>
+				<link refId="485712351_7"/>
+				<link refId="485712351_8"/>
+				<link refId="485712351_9"/>
+				<link refId="485712351_10"/>
+				<link refId="485712351_11"/>
+				<link refId="485712351_12"/>
+				<link refId="485712351_13"/>
+				<link refId="485712351_14"/>
+				<link refId="485712351_15"/>
+				<link refId="485712351_16"/>
+				<link refId="485712351_17"/>
+				<link refId="485712351_18"/>
+				<link refId="485712351_19"/>
+				<link refId="485712351_20"/>
+				<link refId="739676060_0"/>
+				<link refId="739676060_1"/>
+				<link refId="739676060_2"/>
+				<link refId="739676060_3"/>
+				<link refId="739676060_4"/>
+				<link refId="739676060_5"/>
+				<link refId="739676060_6"/>
+				<link refId="739676060_7"/>
+				<link refId="739676060_8"/>
+				<link refId="353540676_0"/>
+				<link refId="353540702_1"/>
+				<link refId="353540702_2"/>
+				<link refId="353540702_3"/>
+				<link refId="353540702_4"/>
+				<link refId="353540702_5"/>
+				<link refId="353540702_6"/>
+				<link refId="353540702_7"/>
+				<link refId="353540702_8"/>
+				<link refId="353540702_9"/>
+				<link refId="377032657_41_r"/>
+				<link refId="377032657_40_r"/>
+				<link refId="377032657_39_r"/>
+				<link refId="377032657_38_r"/>
+				<link refId="377032657_37_r"/>
+				<link refId="377032657_36_r"/>
+				<link refId="377032657_35_r"/>
+				<link refId="377032657_34_r"/>
+				<link refId="377032657_33_r"/>
+				<link refId="377032657_32_r"/>
+				<link refId="377032657_31_r"/>
+				<link refId="377032657_30_r"/>
+				<link refId="377032657_29_r"/>
+				<link refId="377032657_28_r"/>
+				<link refId="377032657_27_r"/>
+				<link refId="377032657_26_r"/>
+				<link refId="377032657_25_r"/>
+				<link refId="377032657_24_r"/>
+				<link refId="377032657_23_r"/>
+				<link refId="377032657_22_r"/>
+				<link refId="377032657_21_r"/>
+				<link refId="377032657_20_r"/>
+				<link refId="377032657_19_r"/>
+				<link refId="377032657_18_r"/>
+				<link refId="377032657_17_r"/>
+				<link refId="377032657_16_r"/>
+				<link refId="377032657_15_r"/>
+				<link refId="377032657_14_r"/>
+				<link refId="377032657_13_r"/>
+				<link refId="377032657_12_r"/>
+				<link refId="377032657_11_r"/>
+				<link refId="377032657_10_r"/>
+				<link refId="377032657_9_r"/>
+				<link refId="377032657_8_r"/>
+				<link refId="377032657_7_r"/>
+				<link refId="377032657_6_r"/>
+				<link refId="377032657_5_r"/>
+				<link refId="377032657_4_r"/>
+				<link refId="377032657_3_r"/>
+				<link refId="377032657_2_r"/>
+				<link refId="377032657_1_r"/>
+				<link refId="377032657_0_r"/>
+				<link refId="353540700_3_r"/>
+				<link refId="353540700_2_r"/>
+				<link refId="353540700_1_r"/>
+				<link refId="353540700_0_r"/>
+				<link refId="377032664_0"/>
+				<link refId="377032664_1"/>
+				<link refId="377032664_2"/>
+				<link refId="623933343_1"/>
+				<link refId="623933342_3_r"/>
+				<link refId="623933342_2_r"/>
+				<link refId="623933342_1_r"/>
+				<link refId="623933342_0_r"/>
+				<link refId="356782800_0"/>
+				<link refId="356782784_0"/>
+				<link refId="356782784_1"/>
+				<link refId="356782784_2"/>
+				<link refId="356782784_3"/>
+				<link refId="356782784_4"/>
+				<link refId="356782784_5"/>
+				<link refId="356782784_6"/>
+				<link refId="356782784_7"/>
+				<link refId="356782784_8"/>
+				<link refId="356782784_9"/>
+				<link refId="356782784_10"/>
+				<link refId="356782784_11"/>
+				<link refId="356782784_12"/>
+				<link refId="356782784_13"/>
+				<link refId="356782784_14"/>
+				<link refId="356782784_15"/>
+				<link refId="356782784_16"/>
+				<link refId="356782784_17"/>
+				<link refId="356782784_18"/>
+				<link refId="356782784_19"/>
+				<link refId="356782784_20"/>
+				<link refId="356782784_21"/>
+				<link refId="356782784_22"/>
+				<link refId="356782784_23"/>
+				<link refId="356782784_24"/>
+				<link refId="356782784_25"/>
+				<link refId="356782784_26"/>
+				<link refId="356782784_27"/>
+				<link refId="356782784_28"/>
+				<link refId="356782784_29"/>
+			</route>
+			<departures>
+				<departure id="viagem_Linha4_Abolicao_V_Volta0" departureTime="05:53:00" vehicleRefId="veiculo6"/>
+				<departure id="viagem_Linha4_Abolicao_V_Volta1" departureTime="06:40:00" vehicleRefId="veiculo4"/>
+				<departure id="viagem_Linha4_Abolicao_V_Volta2" departureTime="07:25:00" vehicleRefId="veiculo6"/>
+				<departure id="viagem_Linha4_Abolicao_V_Volta3" departureTime="08:12:00" vehicleRefId="veiculo4"/>
+				<departure id="viagem_Linha4_Abolicao_V_Volta4" departureTime="09:02:00" vehicleRefId="veiculo6"/>
+				<departure id="viagem_Linha4_Abolicao_V_Volta5" departureTime="09:41:00" vehicleRefId="veiculo4"/>
+				<departure id="viagem_Linha4_Abolicao_V_Volta6" departureTime="10:35:00" vehicleRefId="veiculo6"/>
+				<departure id="viagem_Linha4_Abolicao_V_Volta7" departureTime="11:20:00" vehicleRefId="veiculo4"/>
+				<departure id="viagem_Linha4_Abolicao_V_Volta8" departureTime="12:17:00" vehicleRefId="veiculo6"/>
+				<departure id="viagem_Linha4_Abolicao_V_Volta9" departureTime="12:53:00" vehicleRefId="veiculo4"/>
+				<departure id="viagem_Linha4_Abolicao_V_Volta10" departureTime="13:42:00" vehicleRefId="veiculo6"/>
+				<departure id="viagem_Linha4_Abolicao_V_Volta11" departureTime="14:14:00" vehicleRefId="veiculo4"/>
+				<departure id="viagem_Linha4_Abolicao_V_Volta12" departureTime="15:05:00" vehicleRefId="veiculo6"/>
+				<departure id="viagem_Linha4_Abolicao_V_Volta13" departureTime="15:47:00" vehicleRefId="veiculo4"/>
+				<departure id="viagem_Linha4_Abolicao_V_Volta14" departureTime="16:25:00" vehicleRefId="veiculo6"/>
+				<departure id="viagem_Linha4_Abolicao_V_Volta15" departureTime="17:06:00" vehicleRefId="veiculo4"/>
+				<departure id="viagem_Linha4_Abolicao_V_Volta16" departureTime="18:10:00" vehicleRefId="veiculo6"/>
+			</departures>
+		</transitRoute>
+
+		<!--LINHA 04 - ABOLIÇÃO V, SANTA JÚLIA================================================================================-->
+		<transitRoute id="Linha4_Abolicao_V_Santa_Julia">
+			<transportMode>pt</transportMode>
+			<routeProfile>
+				<stop refId="parada_Linha4_Abolicao_V_Ida_Volta" departureOffset="00:00:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Santa_Julia0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Santa_Julia1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Santa_Julia2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Santa_Julia3" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Santa_Julia4" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Santa_Julia5" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Santa_Julia6" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Santa_Julia7" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Santa_Julia8" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Santa_Julia9" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Santa_Julia10" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Santa_Julia11" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Santa_Julia12" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Santa_Julia13" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Santa_Julia14" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Santa_Julia15" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Santa_Julia16" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Santa_Julia17" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Santa_Julia18" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Santa_Julia19" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Santa_Julia20" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Santa_Julia21" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Santa_Julia22" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Santa_Julia23" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Santa_Julia24" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Santa_Julia25" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Santa_Julia26" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Santa_Julia27" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Santa_Julia28" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Santa_Julia29" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Santa_Julia30" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Santa_Julia31" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Santa_Julia32" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_EE_Jeronimo_Rosado_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_ADVM" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Santa_Julia33" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Praca_Dos_Hospitais" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha4_Abolicao_V_Santa_Julia34" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Estacao_Das_Artes" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Teatro_Dix-Huit" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Loterica_Sorteca" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Central" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Caixa_Economica_Federal" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Oficinas" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_AeC" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Praca_Gazeta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="terminal_Praca_Felipe_Guerra" arrivalOffset="00:02:00"/>
+			</routeProfile>
+			<route>
+				<link refId="356782784_29"/>
+				<link refId="744162029_0"/>
+				<link refId="356782774_3_r"/>
+				<link refId="356782774_2_r"/>
+				<link refId="356782774_1_r"/>
+				<link refId="356782816_0"/>
+				<link refId="356782816_1"/>
+				<link refId="356782816_2"/>
+				<link refId="356782772_3_r"/>
+				<link refId="356782772_2_r"/>
+				<link refId="356782773_3_r"/>
+				<link refId="356782773_2_r"/>
+				<link refId="356648550_3"/>
+				<link refId="356648550_4"/>
+				<link refId="356648550_5"/>
+				<link refId="356782829_4_r"/>
+				<link refId="356782829_3_r"/>
+				<link refId="356782829_2_r"/>
+				<link refId="356782829_1_r"/>
+				<link refId="356782829_0_r"/>
+				<link refId="356782774_3"/>
+				<link refId="744162029_0_r"/>
+				<link refId="356782787_0"/>
+				<link refId="356782787_1"/>
+				<link refId="356782826_0"/>
+				<link refId="356782826_1"/>
+				<link refId="356782826_2"/>
+				<link refId="356782826_3"/>
+				<link refId="356782826_4"/>
+				<link refId="356782826_5"/>
+				<link refId="356782826_6"/>
+				<link refId="356782826_7"/>
+				<link refId="356782826_8"/>
+				<link refId="356782826_9"/>
+				<link refId="356782780_0"/>
+				<link refId="356782780_1"/>
+				<link refId="356782780_2"/>
+				<link refId="356782784_16_r"/>
+				<link refId="356782784_15_r"/>
+				<link refId="356782784_14_r"/>
+				<link refId="356782784_13_r"/>
+				<link refId="356782784_12_r"/>
+				<link refId="356782784_11_r"/>
+				<link refId="356782784_10_r"/>
+				<link refId="356782784_9_r"/>
+				<link refId="356782784_8_r"/>
+				<link refId="356782784_7_r"/>
+				<link refId="356782784_6_r"/>
+				<link refId="356782784_5_r"/>
+				<link refId="356782784_4_r"/>
+				<link refId="356782784_3_r"/>
+				<link refId="356782784_2_r"/>
+				<link refId="356782784_1_r"/>
+				<link refId="356782784_0_r"/>
+				<link refId="356782814_0"/>
+				<link refId="755801996_0_r"/>
+				<link refId="623933342_0"/>
+				<link refId="623933342_1"/>
+				<link refId="623933342_2"/>
+				<link refId="623933342_3"/>
+				<link refId="623933343_1_r"/>
+				<link refId="377032664_2_r"/>
+				<link refId="377032664_1_r"/>
+				<link refId="377032664_0_r"/>
+				<link refId="353540700_0"/>
+				<link refId="353540700_1"/>
+				<link refId="353540700_2"/>
+				<link refId="353540700_3"/>
+				<link refId="377032657_0"/>
+				<link refId="377032657_1"/>
+				<link refId="377032657_2"/>
+				<link refId="377032657_3"/>
+				<link refId="377032657_4"/>
+				<link refId="377032657_5"/>
+				<link refId="377032657_6"/>
+				<link refId="377032657_7"/>
+				<link refId="377032657_8"/>
+				<link refId="377032657_9"/>
+				<link refId="377032657_10"/>
+				<link refId="377032657_11"/>
+				<link refId="377032657_12"/>
+				<link refId="623552106_0"/>
+				<link refId="377032657_15"/>
+				<link refId="377032657_16"/>
+				<link refId="377032657_17"/>
+				<link refId="377032657_18"/>
+				<link refId="377032657_19"/>
+				<link refId="377032657_20"/>
+				<link refId="377032657_21"/>
+				<link refId="377032657_22"/>
+				<link refId="377032657_23"/>
+				<link refId="377032657_24"/>
+				<link refId="377032657_25"/>
+				<link refId="377032657_26"/>
+				<link refId="377032657_27"/>
+				<link refId="377032657_28"/>
+				<link refId="377032657_29"/>
+				<link refId="377032657_30"/>
+				<link refId="377032657_31"/>
+				<link refId="377032657_32"/>
+				<link refId="377032657_33"/>
+				<link refId="377032657_34"/>
+				<link refId="377032657_35"/>
+				<link refId="377032657_36"/>
+				<link refId="377032657_37"/>
+				<link refId="377032657_38"/>
+				<link refId="377032657_39"/>
+				<link refId="377032657_40"/>
+				<link refId="377032657_41"/>
+				<link refId="353540702_9_r"/>
+				<link refId="353540702_8_r"/>
+				<link refId="353540702_7_r"/>
+				<link refId="353540702_6_r"/>
+				<link refId="353540702_5_r"/>
+				<link refId="353540702_4_r"/>
+				<link refId="353540702_3_r"/>
+				<link refId="353540702_2_r"/>
+				<link refId="353540702_1_r"/>
+				<link refId="353540702_0_r"/>
+				<link refId="353540685_2"/>
+				<link refId="485712354_0"/>
+				<link refId="485712354_1"/>
+				<link refId="485712354_2"/>
+				<link refId="485712354_3"/>
+				<link refId="485712354_4"/>
+				<link refId="485712354_5"/>
+				<link refId="485712354_6"/>
+				<link refId="485712354_7"/>
+				<link refId="485712354_8"/>
+				<link refId="485712354_9"/>
+				<link refId="739676061_0"/>
+				<link refId="739676061_1"/>
+				<link refId="739676061_2"/>
+				<link refId="739676061_3"/>
+				<link refId="739676061_4"/>
+				<link refId="739676061_5"/>
+				<link refId="739676061_6"/>
+				<link refId="739676061_7"/>
+				<link refId="739676061_8"/>
+				<link refId="739676061_9"/>
+				<link refId="739676061_10"/>
+				<link refId="739676061_11"/>
+				<link refId="739676061_12"/>
+				<link refId="739676061_13"/>
+				<link refId="739676061_14"/>
+				<link refId="739676061_15"/>
+				<link refId="485703713_0"/>
+				<link refId="485703713_1"/>
+				<link refId="485703713_2"/>
+				<link refId="485703733_0"/>
+				<link refId="485703733_1"/>
+				<link refId="485703733_2"/>
+				<link refId="485703733_3"/>
+				<link refId="485703733_4"/>
+				<link refId="485703733_5"/>
+				<link refId="485703733_6"/>
+				<link refId="487178192_11"/>
+				<link refId="487178192_12"/>
+				<link refId="487178192_13"/>
+				<link refId="487178192_14"/>
+				<link refId="487178192_15"/>
+				<link refId="487178210_0"/>
+				<link refId="487178210_1"/>
+				<link refId="487178210_2"/>
+				<link refId="487178210_3"/>
+				<link refId="487178210_4"/>
+				<link refId="487178210_5"/>
+				<link refId="487178210_6"/>
+				<link refId="488546106_7_r"/>
+				<link refId="488546106_6_r"/>
+				<link refId="488903597_0"/>
+				<link refId="491945361_3"/>
+				<link refId="491945361_4"/>
+				<link refId="491945361_5"/>
+				<link refId="491945361_6"/>
+				<link refId="491945361_7"/>
+				<link refId="491945361_8"/>
+				<link refId="488546099_3"/>
+				<link refId="488546099_4"/>
+				<link refId="488546099_5"/>
+				<link refId="488546099_6"/>
+				<link refId="488900268_0"/>
+				<link refId="488900268_1"/>
+				<link refId="488900268_2"/>
+				<link refId="488900268_3"/>
+				<link refId="488900268_4"/>
+				<link refId="488900268_5"/>
+				<link refId="488900268_6"/>
+				<link refId="488900268_7"/>
+				<link refId="490698546_14"/>
+				<link refId="488900248_8"/>
+				<link refId="488900248_9"/>
+				<link refId="488900248_10"/>
+				<link refId="488900262_0"/>
+				<link refId="769208664_1"/>
+				<link refId="769208664_2"/>
+				<link refId="769208664_3"/>
+				<link refId="769208664_4"/>
+				<link refId="491990665_4"/>
+				<link refId="491992841_0"/>
+				<link refId="497966183_0"/>
+			</route>
+			<departures>
+				<departure id="viagem_Linha4_Abolicao_V_Santa_Julia0" departureTime="06:35:00" vehicleRefId="veiculo6"/>
+				<departure id="viagem_Linha4_Abolicao_V_Santa_Julia1" departureTime="07:20:00" vehicleRefId="veiculo4"/>
+				<departure id="viagem_Linha4_Abolicao_V_Santa_Julia2" departureTime="08:11:00" vehicleRefId="veiculo6"/>
+				<departure id="viagem_Linha4_Abolicao_V_Santa_Julia3" departureTime="11:22:00" vehicleRefId="veiculo6"/>
+				<departure id="viagem_Linha4_Abolicao_V_Santa_Julia4" departureTime="12:06:00" vehicleRefId="veiculo4"/>
+				<departure id="viagem_Linha4_Abolicao_V_Santa_Julia5" departureTime="17:30:00" vehicleRefId="veiculo6"/>
+				<departure id="viagem_Linha4_Abolicao_V_Santa_Julia6" departureTime="17:46:00" vehicleRefId="veiculo4"/>
+				<departure id="viagem_Linha4_Abolicao_V_Santa_Julia7" departureTime="18:25:00" vehicleRefId="veiculo6"/>
 			</departures>
 		</transitRoute>
 	</transitLine>
