@@ -28,6 +28,7 @@
 		<stopFacility id="parada_Cobal" x="-4156400.949650569" y="-578380.589051281" linkRefId="490163722_0"/>
 		<stopFacility id="parada_Colegio_Diocesano_Ida" x="-4157538.284106" y="-578016.583956" linkRefId="687195164_3"/>
 		<stopFacility id="parada_Colegio_Diocesano_Volta" x="-4157528.3934533237" y="-578023.2372743305" linkRefId="687195164_3_r"/>
+		<stopFacility id="parada_Delegacia" x="-4155880.531031111" y="-580647.1379780372" linkRefId="160163563_0"/>
 		<stopFacility id="parada_EE_Jeronimo_Rosado_Ida" x="-4157658.3032990796" y="-577756.0908971574" linkRefId="487178210_1"/>
 		<stopFacility id="parada_EE_Jeronimo_Rosado_Volta" x="-4157640.937458515" y="-577760.1148518234" linkRefId="487178206_4"/>
 		<stopFacility id="parada_Estacao_Das_Artes" x="-4157185.1954632085" y="-578432.006722123" linkRefId="491945361_5"/>
@@ -37,19 +38,25 @@
 		<stopFacility id="parada_Loterica_Sorteca" x="-4157052.117734" y="-578695.037227" linkRefId="488546099_5"/>
 		<stopFacility id="parada_Mercado_Central" x="-4157003.9673321964" y="-578698.8203248462" linkRefId="488546096_1"/>
 		<stopFacility id="parada_Oficinas" x="-4157316.107184381" y="-579363.008384986" linkRefId="488900268_7"/>
+		<stopFacility id="parada_Pousada_Mossoro" x="-4156112.760187" y="-580479.680024" linkRefId="492359299_4"/>
 		<stopFacility id="parada_Praca_Dos_Hospitais" x="-4157137.586872" y="-578160.201966" linkRefId="488546106_7_r"/>
 		<stopFacility id="parada_Praca_Gazeta" x="-4157049.819830" y="-579098.329475" linkRefId="488900262_0"/>
 		<stopFacility id="parada_SESC" x="-4158011.238219" y="-577526.685307" linkRefId="485692144_20"/>
-		<stopFacility id="parada_Teatro_Dix-Huit" x="-4157267.5718863956" y="-578558.8743964208" linkRefId="488546099_3"/>
+		<stopFacility id="parada_Teatro_Dix_Huit" x="-4157267.5718863956" y="-578558.8743964208" linkRefId="488546099_3"/>
 		<stopFacility id="parada_UERN" x="-4154089.400424247" y="-580321.9227872522" linkRefId="193532919_4"/>
 		<stopFacility id="parada_UFERSA_Ida" x="-4155081.591045687" y="-580007.1940723791" linkRefId="368028915_2_r"/>
+		<stopFacility id="parada_UFERSA_Volta" x="-4155113.8736980176" y="-580080.1865065108" linkRefId="368028915_1"/>
 		<stopFacility id="parada_UFERSA_Lateral_Ida" x="-4154817.875171998" y="-580580.0693477748" linkRefId="666094865_0"/>
+		<stopFacility id="parada_UFERSA_Lateral_Volta" x="-4154776.6869604047" y="-580604.996514546" linkRefId="666094865_0_r"/>
 		
 		<!--====================================================================================================================|
 		|																														|
 		|									LINHA 01 - PARADAS ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO								|
 		|																														|
 		|=====================================================================================================================-->
+		<!--LINHA 01 - PARADA ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO - IDA - VOLTA================================================-->
+		<stopFacility id="parada_Linha1_Abolicoes_Ida_Volta" x="-4157417.6305599846" y="-573183.684879501" linkRefId="556798986_5"/>
+
 		<!--LINHA 01 - PARADAS ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO - IDA=======================================================-->
 		<stopFacility id="parada_Linha1_Abolicoes_Ida0" x="-4157545.425335415" y="-573164.2705538222" linkRefId="556798986_4_r"/>
 		<stopFacility id="parada_Linha1_Abolicoes_Ida1" x="-4157688.3595615937" y="-573065.131276141" linkRefId="556798986_0_r"/>
@@ -114,9 +121,6 @@
 		<stopFacility id="parada_Linha1_Abolicoes_Ida60" x="-4157713.1838080403" y="-577626.2737715637" linkRefId="487178192_14"/>
 		<stopFacility id="parada_Linha1_Abolicoes_Ida61" x="-4157288.9452286274" y="-577984.11535674" linkRefId="487178210_4"/>
 		<stopFacility id="parada_Linha1_Abolicoes_Ida62" x="-4157059.404438611" y="-578278.8715954764" linkRefId="491945361_3"/>
-
-		<!--LINHA 01 - PARADA ABOLIÇÕES - IDA - VOLTA=========================================================================-->
-		<stopFacility id="parada_Linha1_Abolicoes_Ida_Volta" x="-4157417.6305599846" y="-573183.684879501" linkRefId="556798986_5"/>
 
 		<!--LINHA 01 - PARADAS ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO - VOLTA=====================================================-->
 		<stopFacility id="parada_Linha1_Abolicoes_Volta0" x="-4156707.634847705" y="-578589.2779610838" linkRefId="488900238_2"/>
@@ -193,6 +197,9 @@
 		|								LINHA 02 - PARADAS ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO									|
 		|																														|
 		|=====================================================================================================================-->
+		<!--LINHA 02 - PARADA ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO - IDA - VOLTA================================================-->
+		<stopFacility id="parada_Linha2_Abolicoes_Ida_Volta" x="-4157417.6305599846" y="-573183.684879501" linkRefId="556798986_5"/>
+
 		<!--LINHA 02 - PARADAS ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO - IDA=======================================================-->
 		<stopFacility id="parada_Linha2_Abolicoes_Ida0" x="-4157545.425335415" y="-573164.2705538222" linkRefId="556798986_4_r"/>
 		<stopFacility id="parada_Linha2_Abolicoes_Ida1" x="-4157688.3595615937" y="-573065.131276141" linkRefId="556798986_0_r"/>
@@ -244,9 +251,6 @@
 		<stopFacility id="parada_Linha2_Abolicoes_Ida47" x="-4158403.649798" y="-577108.595663" linkRefId="485692144_12"/>
 		<stopFacility id="parada_Linha2_Abolicoes_Ida48" x="-4158174.711941" y="-577347.759958" linkRefId="485692144_16"/>
 		<stopFacility id="parada_Linha2_Abolicoes_Ida49" x="-4157831.491769" y="-577720.017244" linkRefId="485692144_22"/>
-
-		<!--LINHA 02 - PARADA ABOLIÇÕES - IDA - VOLTA=========================================================================-->
-		<stopFacility id="parada_Linha2_Abolicoes_Ida_Volta" x="-4157417.6305599846" y="-573183.684879501" linkRefId="556798986_5"/>
 
 		<!--LINHA 02 - PARADAS ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO - VOLTA=====================================================-->
 		<stopFacility id="parada_Linha2_Abolicoes_Volta0" x="-4156707.634847705" y="-578589.2779610838" linkRefId="488900238_2"/>
@@ -306,11 +310,6 @@
 		<stopFacility id="parada_Linha2_Abolicoes_Volta54" x="-4157725.8742299913" y="-573051.9760520393" linkRefId="556798986_0"/>
 		<stopFacility id="parada_Linha2_Abolicoes_Volta55" x="-4157575.9268758926" y="-573155.2954816245" linkRefId="556798986_4"/>
 
-		<!--====================================================================================================================|
-		|																														|
-		|							LINHA 02 - PARADAS ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO, UNIVERSIDADES						|
-		|																														|
-		|=====================================================================================================================-->
 		<!--LINHA 02 - PARADAS ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO, UNIVERSIDADES VIA AEC======================================-->
 		<stopFacility id="parada_Linha2_Abolicoes_Universidades_AeC_Ida0" x="-4154293.8943288345" y="-580215.161230164" linkRefId="193532919_4"/>
 		<stopFacility id="parada_Linha2_Abolicoes_Universidades_AeC_Ida1" x="-4154445.956753258" y="-580112.4574582785" linkRefId="193532919_6"/>
@@ -378,6 +377,9 @@
 		|											LINHA 04 - PARADAS ABOLIÇÃO V												|
 		|																														|
 		|=====================================================================================================================-->
+		<!--LINHA 04 - PARADA ABOLIÇÃO V - IDA - VOLTA========================================================================-->
+		<stopFacility id="parada_Linha4_Abolicao_V_Ida_Volta" x="-4159196.7386618424" y="-572798.8642016767" linkRefId="356782784_29"/>
+
 		<!--LINHA 04 - PARADAS ABOLIÇÃO V - IDA===============================================================================-->
 		<stopFacility id="parada_Linha4_Abolicao_V_Ida0" x="-4159536.597067234" y="-573020.4795270677" linkRefId="356782780_1"/>
 		<stopFacility id="parada_Linha4_Abolicao_V_Ida1" x="-4159554.8534637247" y="-573116.4556741343" linkRefId="356782784_15_r"/>
@@ -414,9 +416,6 @@
 		<stopFacility id="parada_Linha4_Abolicao_V_Ida32" x="-4157713.1838080403" y="-577626.2737715637" linkRefId="487178192_14"/>
 		<stopFacility id="parada_Linha4_Abolicao_V_Ida33" x="-4157288.9452286274" y="-577984.11535674" linkRefId="487178210_4"/>
 		<stopFacility id="parada_Linha4_Abolicao_V_Ida34" x="-4157059.404438611" y="-578278.8715954764" linkRefId="491945361_3"/>
-
-		<!--LINHA 04 - PARADA ABOLIÇÃO V - IDA - VOLTA========================================================================-->
-		<stopFacility id="parada_Linha4_Abolicao_V_Ida_Volta" x="-4159196.7386618424" y="-572798.8642016767" linkRefId="356782784_29"/>
 
 		<!--LINHA 04 - PARADAS ABOLIÇÃO V - VOLTA=============================================================================-->
 		<stopFacility id="parada_Linha4_Abolicao_V_Volta0" x="-4156742.1438898505" y="-578612.7513104186" linkRefId="488900238_1"/>
@@ -462,11 +461,7 @@
 		<stopFacility id="parada_Linha4_Abolicao_V_Volta40" x="-4159392.6609656387" y="-572968.4175230893" linkRefId="356782784_21"/>
 		<stopFacility id="parada_Linha4_Abolicao_V_Volta41" x="-4159294.6998137403" y="-572886.2673795643" linkRefId="356782784_25"/>
 
-		<!--====================================================================================================================|
-		|																														|
-		|										LINHA 04 - PARADAS ABOLIÇÃO V, SANTA JÚLIA										|
-		|																														|
-		|=====================================================================================================================-->
+		<!--LINHA 04 - PARADAS ABOLIÇÃO V, SANTA JÚLIA========================================================================-->
 		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia0" x="-4159536.597067234" y="-573020.4795270677" linkRefId="356782780_1"/>
 		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia1" x="-4159554.8534637247" y="-573116.4556741343" linkRefId="356782784_15_r"/>
 		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia2" x="-4159613.852793845" y="-573170.6078719851" linkRefId="356782784_12_r"/>
@@ -502,6 +497,182 @@
 		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia32" x="-4157713.1838080403" y="-577626.2737715637" linkRefId="487178192_14"/>
 		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia33" x="-4157288.9452286274" y="-577984.11535674" linkRefId="487178210_4"/>
 		<stopFacility id="parada_Linha4_Abolicao_V_Santa_Julia34" x="-4157059.404438611" y="-578278.8715954764" linkRefId="491945361_3"/>
+
+		<!--====================================================================================================================|
+		|																														|
+		|											LINHA 05 - PARADAS VINGT ROSADO												|
+		|																														|
+		|=====================================================================================================================-->
+		<!--LINHA 05 - PARADA VINGT ROSADO - IDA - VOLTA======================================================================-->
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida_Volta" x="-4151620.668076925" y="-580653.1406235682" linkRefId="368028885_0_r"/>
+
+		<!--LINHA 05 - PARADAS VINGT ROSADO - IDA=============================================================================-->
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida0" x="-4151816.4790612296" y="-580509.7591357834" linkRefId="368028895_1_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida1" x="-4151956.1850221753" y="-580414.7454475632" linkRefId="368028895_0_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida2" x="-4151873.3633210254" y="-580215.0606277896" linkRefId="368028928_3"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida3" x="-4152039.4520012895" y="-580035.2508795979" linkRefId="745523878_0"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida4" x="-4152276.339877697" y="-579872.9463170333" linkRefId="368028874_1"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida5" x="-4152365.506789822" y="-579878.1999712507" linkRefId="368028851_13_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida6" x="-4152483.0601721006" y="-580037.0393617123" linkRefId="368028851_4_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida7" x="-4152568.7761800103" y="-580167.0844893645" linkRefId="368028851_0_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida8" x="-4152675.0862937183" y="-580156.6889184852" linkRefId="376861944_0"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida9" x="-4152829.70906643" y="-580051.9061210494" linkRefId="376861944_3"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida10" x="-4152914.6458379054" y="-579994.0040234495" linkRefId="376861944_5"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida11" x="-4153056.355549686" y="-579926.2653365688" linkRefId="349238414_1"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida12" x="-4153160.439273577" y="-579866.5748645723" linkRefId="349238414_3"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida13" x="-4153374.9519323367" y="-579720.2551764752" linkRefId="349238414_7"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida14" x="-4153458.5528699216" y="-579663.1358086165" linkRefId="349238414_7"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida15" x="-4153445.4171700077" y="-579601.7241564185" linkRefId="349238385_5"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida16" x="-4153251.8325755186" y="-579305.8893070174" linkRefId="349238385_11"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida17" x="-4153221.1083960594" y="-579223.843589209" linkRefId="368028857_3"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida18" x="-4153338.8844173183" y="-579138.8693647949" linkRefId="368028857_3"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida19" x="-4154084.9476446155" y="-579263.6927576495" linkRefId="349238360_2"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida20" x="-4154464.54710822" y="-579550.3503436507" linkRefId="349238360_6"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida21" x="-4154627.073564778" y="-579676.929405142" linkRefId="349238360_7"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida22" x="-4155447.498211925" y="-580311.1247834272" linkRefId="677249483_3_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida23" x="-4155740.2684727116" y="-580531.444630866" linkRefId="160163563_7_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida24" x="-4156018.7898386763" y="-580603.7333888423" linkRefId="171476715_18"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida25" x="-4156123.652799003" y="-580445.9322793" linkRefId="171476715_19"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida26" x="-4156186.993589265" y="-580324.8737947972" linkRefId="171476715_22"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida27" x="-4156313.8978087693" y="-580121.2433867494" linkRefId="171476715_24"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida28" x="-4156458.279188328" y="-579892.3960175905" linkRefId="492359288_1"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida29" x="-4156536.202831883" y="-579762.3961096862" linkRefId="492359288_4"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida30" x="-4156812.9430859946" y="-579176.494087661" linkRefId="492359291_6"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida31" x="-4156864.2613712507" y="-578890.586938058" linkRefId="488900266_3"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida32" x="-4156742.1438898505" y="-578612.7513104186" linkRefId="488900238_1"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida33" x="-4156698.7292884416" y="-578587.936627073" linkRefId="488900238_2"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida34" x="-4156520.2841446996" y="-578472.8055528352" linkRefId="488900238_5"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida35" x="-4156451.154740917" y="-578423.8469588133" linkRefId="490163722_0"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida36" x="-4156495.01462029" y="-578218.7354103766" linkRefId="490163739_6"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida37" x="-4156719.8799916916" y="-578082.479076539" linkRefId="490163739_11"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida38" x="-4156818.9543384984" y="-578026.2552517317" linkRefId="490163739_13"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida39" x="-4157013.763447386" y="-577978.4147362716" linkRefId="488546106_9_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida40" x="-4157059.404438611" y="-578278.8715954764" linkRefId="491945361_3"/>
+		
+		<!--LINHA 05 - PARADAS VINGT ROSADO - VOLTA===========================================================================-->
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Volta0" x="-4156875.282000839" y="-579175.8904823228" linkRefId="159693156_0"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Volta1" x="-4156815.8373927562" y="-579294.1525159125" linkRefId="171476713_2"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Volta2" x="-4156751.0494491146" y="-579408.8378156853" linkRefId="171476713_4"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Volta3" x="-4156589.636187464" y="-579679.6791824054" linkRefId="492137558_0"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Volta4" x="-4156484.9958661185" y="-579864.2274874938" linkRefId="492359305_2"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Volta5" x="-4156304.9922495056" y="-580163.0939313294" linkRefId="492359299_1"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Volta6" x="-4155463.416899109" y="-580332.8102172194" linkRefId="677249483_2"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Volta7" x="-4154756.7607715526" y="-579802.0779133695" linkRefId="286301202_0"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Volta8" x="-4154093.8532038787" y="-579330.2571271762" linkRefId="349238408_5"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Volta9" x="-4153329.978858055" y="-579156.5080469869" linkRefId="368028872_0"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Volta10" x="-4153249.717505194" y="-579216.5220754388" linkRefId="368028872_0"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Volta11" x="-4153273.428556732" y="-579317.1007388224" linkRefId="349238385_11_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Volta12" x="-4153448.2001572778" y="-579582.5428067945" linkRefId="349238385_5_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Volta13" x="-4153475.584752013" y="-579668.568294445" linkRefId="349238414_7_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Volta14" x="-4153399.2195813293" y="-579718.723795558" linkRefId="349238414_7_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Volta15" x="-4153195.7275521583" y="-579857.252424642" linkRefId="349238414_3_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Volta16" x="-4153077.506252936" y="-579929.283395486" linkRefId="349238414_1_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Volta17" x="-4152942.2530716225" y="-579988.8621406384" linkRefId="376861944_5_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Volta18" x="-4152855.646507785" y="-580047.1554645291" linkRefId="376861944_3_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Volta19" x="-4152696.34831646" y="-580155.258130355" linkRefId="376861944_0_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Volta20" x="-4152565.1026368155" y="-580187.5514726519" linkRefId="368028851_0"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Volta21" x="-4152478.050795015" y="-580051.6378486723" linkRefId="368028851_4"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Volta22" x="-4152358.7163008843" y="-579872.83453716" linkRefId="368028851_13"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Volta23" x="-4152268.7701523234" y="-579890.8310989552" linkRefId="368028930_0"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Volta24" x="-4152063.6083307914" y="-580035.1614554924" linkRefId="745523879_0"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Volta25" x="-4151891.953675988" y="-580221.2532631399" linkRefId="368028928_3_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Volta26" x="-4151760.596676852" y="-580333.648571753" linkRefId="349238369_2"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Volta27" x="-4151581.594935656" y="-580457.4457009656" linkRefId="349238369_6"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Volta28" x="-4151546.863254528" y="-580540.990722059" linkRefId="368028885_2_r"/>
+
+		<!--LINHA 05 - PARADA VINGT ROSADO VIA UNIVERSIDADES - IDA - VOLTA====================================================-->
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida_Volta" x="-4151620.668076925" y="-580653.1406235682" linkRefId="368028885_0_r"/>
+
+		<!--LINHA 05 - PARADAS VINGT ROSADO VIA UNIVERSIDADES - IDA===========================================================-->
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida0" x="-4151816.4790612296" y="-580509.7591357834" linkRefId="368028895_1_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida1" x="-4151956.1850221753" y="-580414.7454475632" linkRefId="368028895_0_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida2" x="-4151873.3633210254" y="-580215.0606277896" linkRefId="368028928_3"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida3" x="-4152039.4520012895" y="-580035.2508795979" linkRefId="745523878_0"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida4" x="-4152276.339877697" y="-579872.9463170333" linkRefId="368028874_1"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida5" x="-4152365.506789822" y="-579878.1999712507" linkRefId="368028851_13_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida6" x="-4152483.0601721006" y="-580037.0393617123" linkRefId="368028851_4_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida7" x="-4152568.7761800103" y="-580167.0844893645" linkRefId="368028851_0_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida8" x="-4152675.0862937183" y="-580156.6889184852" linkRefId="376861944_0"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida9" x="-4152829.70906643" y="-580051.9061210494" linkRefId="376861944_3"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida10" x="-4152914.6458379054" y="-579994.0040234495" linkRefId="376861944_5"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida11" x="-4153056.355549686" y="-579926.2653365688" linkRefId="349238414_1"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida12" x="-4153160.439273577" y="-579866.5748645723" linkRefId="349238414_3"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida13" x="-4153374.9519323367" y="-579720.2551764752" linkRefId="349238414_7"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida14" x="-4153458.5528699216" y="-579663.1358086165" linkRefId="349238414_7"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida15" x="-4153445.4171700077" y="-579601.7241564185" linkRefId="349238385_5"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida16" x="-4153251.8325755186" y="-579305.8893070174" linkRefId="349238385_11"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida17" x="-4153221.1083960594" y="-579223.843589209" linkRefId="368028857_3"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida18" x="-4153338.8844173183" y="-579138.8693647949" linkRefId="368028857_3"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida19" x="-4154084.9476446155" y="-579263.6927576495" linkRefId="349238360_2"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida20" x="-4154464.54710822" y="-579550.3503436507" linkRefId="349238360_6"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida21" x="-4154627.073564778" y="-579676.929405142" linkRefId="349238360_7"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida22" x="-4154293.8943288345" y="-580215.161230164" linkRefId="193532919_4"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida23" x="-4154445.956753258" y="-580112.4574582785" linkRefId="193532919_6"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida24" x="-4155090.162646478" y="-580392.9482077922" linkRefId="666094865_0"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida25" x="-4154687.965326243" y="-580669.7177646335" linkRefId="666094865_0"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida26" x="-4154945.6699474286" y="-581391.6040754183" linkRefId="682678880_0_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida27" x="-4155358.8878972535" y="-581670.8367892291" linkRefId="171476715_5"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida28" x="-4155518.965325014" y="-581381.2418579877" linkRefId="492359292_4"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida29" x="-4155676.8163629593" y="-581126.8258668162" linkRefId="492359292_7"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida30" x="-4155860.048244805" y="-580853.665049006" linkRefId="171476715_12"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida31" x="-4156018.7898386763" y="-580603.7333888423" linkRefId="171476715_18"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida32" x="-4156123.652799003" y="-580445.9322793" linkRefId="171476715_19"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida33" x="-4156186.993589265" y="-580324.8737947972" linkRefId="171476715_22"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida34" x="-4156313.8978087693" y="-580121.2433867494" linkRefId="171476715_24"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida35" x="-4156458.279188328" y="-579892.3960175905" linkRefId="492359288_1"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida36" x="-4156536.202831883" y="-579762.3961096862" linkRefId="492359288_4"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida37" x="-4156812.9430859946" y="-579176.494087661" linkRefId="492359291_6"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida38" x="-4156864.2613712507" y="-578890.586938058" linkRefId="488900266_3"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida39" x="-4156742.1438898505" y="-578612.7513104186" linkRefId="488900238_1"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida40" x="-4156698.7292884416" y="-578587.936627073" linkRefId="488900238_2"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida41" x="-4156520.2841446996" y="-578472.8055528352" linkRefId="488900238_5"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida42" x="-4156451.154740917" y="-578423.8469588133" linkRefId="490163722_0"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida43" x="-4156495.01462029" y="-578218.7354103766" linkRefId="490163739_6"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida44" x="-4156719.8799916916" y="-578082.479076539" linkRefId="490163739_11"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida45" x="-4156818.9543384984" y="-578026.2552517317" linkRefId="490163739_13"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida46" x="-4157013.763447386" y="-577978.4147362716" linkRefId="488546106_9_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Ida47" x="-4157059.404438611" y="-578278.8715954764" linkRefId="491945361_3"/>
+
+		<!--LINHA 05 - PARADAS VINGT ROSADO VIA UNIVERSIDADES - VOLTA=========================================================-->
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta0" x="-4156875.282000839" y="-579175.8904823228" linkRefId="159693156_0"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta1" x="-4156815.8373927562" y="-579294.1525159125" linkRefId="171476713_2"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta2" x="-4156751.0494491146" y="-579408.8378156853" linkRefId="171476713_4"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta3" x="-4156589.636187464" y="-579679.6791824054" linkRefId="492137558_0"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta4" x="-4156484.9958661185" y="-579864.2274874938" linkRefId="492359305_2"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta5" x="-4156304.9922495056" y="-580163.0939313294" linkRefId="492359299_1"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta6" x="-4155948.4359204946" y="-580759.4780771747" linkRefId="492359299_8"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta7" x="-4155716.0008237185" y="-580940.6757699337" linkRefId="162230039_0"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta8" x="-4155540.2273477563" y="-581150.042964502" linkRefId="162230039_4"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta9" x="-4155358.1086608185" y="-581643.2264593582" linkRefId="492359298_1_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta10" x="-4155104.9681387544" y="-581533.903073712" linkRefId="236434949_6"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta11" x="-4154949.5661296067" y="-581399.7641829955" linkRefId="682678880_0"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta12" x="-4154566.9610397504" y="-581061.8470974064" linkRefId="682678880_9"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta13" x="-4155105.4134167167" y="-580377.7460343116" linkRefId="666094865_0_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta14" x="-4154789.0434238827" y="-579887.8130416876" linkRefId="336685655_0"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta15" x="-4154293.8943288345" y="-580215.161230164" linkRefId="193532919_4"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta16" x="-4154445.956753258" y="-580112.4574582785" linkRefId="193532919_6"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta17" x="-4154756.7607715526" y="-579802.0779133695" linkRefId="286301202_0"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta18" x="-4154093.8532038787" y="-579330.2571271762" linkRefId="349238408_5"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta19" x="-4153329.978858055" y="-579156.5080469869" linkRefId="368028872_0"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta20" x="-4153249.717505194" y="-579216.5220754388" linkRefId="368028872_0"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta21" x="-4153273.428556732" y="-579317.1007388224" linkRefId="349238385_11_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta22" x="-4153448.2001572778" y="-579582.5428067945" linkRefId="349238385_5_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta23" x="-4153475.584752013" y="-579668.568294445" linkRefId="349238414_7_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta24" x="-4153399.2195813293" y="-579718.723795558" linkRefId="349238414_7_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta25" x="-4153195.7275521583" y="-579857.252424642" linkRefId="349238414_3_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta26" x="-4153077.506252936" y="-579929.283395486" linkRefId="349238414_1_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta27" x="-4152942.2530716225" y="-579988.8621406384" linkRefId="376861944_5_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta28" x="-4152855.646507785" y="-580047.1554645291" linkRefId="376861944_3_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta29" x="-4152696.34831646" y="-580155.258130355" linkRefId="376861944_0_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta30" x="-4152565.1026368155" y="-580187.5514726519" linkRefId="368028851_0"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta31" x="-4152478.050795015" y="-580051.6378486723" linkRefId="368028851_4"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta32" x="-4152358.7163008843" y="-579872.83453716" linkRefId="368028851_13"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta33" x="-4152268.7701523234" y="-579890.8310989552" linkRefId="368028930_0"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta34" x="-4152063.6083307914" y="-580035.1614554924" linkRefId="745523879_0"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta35" x="-4151891.953675988" y="-580221.2532631399" linkRefId="368028928_3_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta36" x="-4151760.596676852" y="-580333.648571753" linkRefId="349238369_2"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta37" x="-4151581.594935656" y="-580457.4457009656" linkRefId="349238369_6"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Universidades_Volta38" x="-4151546.863254528" y="-580540.990722059" linkRefId="368028885_2_r"/>
 
 		<!--====================================================================================================================|
 		|																														|
@@ -624,7 +795,7 @@
 				<stop refId="parada_Praca_Dos_Hospitais" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha1_Abolicoes_Ida62" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Estacao_Das_Artes" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Teatro_Dix-Huit" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Teatro_Dix_Huit" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Loterica_Sorteca" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Central" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Caixa_Economica_Federal" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
@@ -1476,7 +1647,7 @@
 				<stop refId="parada_Linha2_Abolicoes_Ida49" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Colegio_Diocesano_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Estacao_Das_Artes" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Teatro_Dix-Huit" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Teatro_Dix_Huit" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Loterica_Sorteca" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Central" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Caixa_Economica_Federal" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
@@ -2444,7 +2615,7 @@
 				<stop refId="parada_Praca_Dos_Hospitais" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha3_Santo_Antonio24" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Estacao_Das_Artes" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Teatro_Dix-Huit" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Teatro_Dix_Huit" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Loterica_Sorteca" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Central" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Caixa_Economica_Federal" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
@@ -2625,7 +2796,7 @@
 				<stop refId="parada_Praca_Dos_Hospitais" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha4_Abolicao_V_Ida34" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Estacao_Das_Artes" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Teatro_Dix-Huit" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Teatro_Dix_Huit" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Loterica_Sorteca" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Central" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Caixa_Economica_Federal" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
@@ -3153,7 +3324,7 @@
 				<stop refId="parada_Praca_Dos_Hospitais" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Linha4_Abolicao_V_Santa_Julia34" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Estacao_Das_Artes" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Teatro_Dix-Huit" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Teatro_Dix_Huit" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Loterica_Sorteca" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Central" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Caixa_Economica_Federal" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
@@ -3374,6 +3545,1057 @@
 				<departure id="viagem_Linha4_Abolicao_V_Santa_Julia5" departureTime="17:30:00" vehicleRefId="veiculo6"/>
 				<departure id="viagem_Linha4_Abolicao_V_Santa_Julia6" departureTime="17:46:00" vehicleRefId="veiculo4"/>
 				<departure id="viagem_Linha4_Abolicao_V_Santa_Julia7" departureTime="18:25:00" vehicleRefId="veiculo6"/>
+			</departures>
+		</transitRoute>
+
+		<!--====================================================================================================================|
+		|																														|
+		|												LINHA 05 - VINGT ROSADO													|
+		|																														|
+		|=====================================================================================================================-->
+		<!--LINHA 05 - VINGT ROSADO - IDA=====================================================================================-->
+		<transitRoute id="Linha5_Vingt_Rosado_Ida">
+			<transportMode>pt</transportMode>
+			<routeProfile>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida_Volta" departureOffset="00:00:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida3" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida4" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida5" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida6" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida7" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida8" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida9" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida10" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida11" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida12" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida13" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida14" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida15" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida16" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida17" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida18" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida19" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida20" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida21" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_UFERSA_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida22" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida23" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida24" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida25" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida26" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida27" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida28" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida29" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida30" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida31" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Mercado_Central" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_CIEE" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Hotel_Caraubas" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida32" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida33" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida34" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida35" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Cobal" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida36" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida37" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida38" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida39" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Praca_Dos_Hospitais" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida40" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Estacao_Das_Artes" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Teatro_Dix_Huit" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Loterica_Sorteca" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Central" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Caixa_Economica_Federal" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Oficinas" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_AeC" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="terminal_Carcara" arrivalOffset="00:02:00"/>
+			</routeProfile>
+			<route>
+				<link refId="368028885_0_r"/>
+				<link refId="368028895_3_r"/>
+				<link refId="368028895_2_r"/>
+				<link refId="368028895_1_r"/>
+				<link refId="368028895_0_r"/>
+				<link refId="368028928_0"/>
+				<link refId="368028928_1"/>
+				<link refId="368028928_2"/>
+				<link refId="368028928_3"/>
+				<link refId="368028928_4"/>
+				<link refId="349238344_0"/>
+				<link refId="349238468_7_r"/>
+				<link refId="745523878_0"/>
+				<link refId="368028874_0"/>
+				<link refId="368028874_1"/>
+				<link refId="368028851_14_r"/>
+				<link refId="368028851_13_r"/>
+				<link refId="368028851_12_r"/>
+				<link refId="368028851_11_r"/>
+				<link refId="368028851_10_r"/>
+				<link refId="368028851_9_r"/>
+				<link refId="368028851_8_r"/>
+				<link refId="368028851_7_r"/>
+				<link refId="368028851_6_r"/>
+				<link refId="368028851_5_r"/>
+				<link refId="368028851_4_r"/>
+				<link refId="368028851_3_r"/>
+				<link refId="368028851_2_r"/>
+				<link refId="368028851_1_r"/>
+				<link refId="368028851_0_r"/>
+				<link refId="376861944_0"/>
+				<link refId="376861944_1"/>
+				<link refId="376861944_2"/>
+				<link refId="376861944_3"/>
+				<link refId="376861944_4"/>
+				<link refId="376861944_5"/>
+				<link refId="349238414_0"/>
+				<link refId="349238414_1"/>
+				<link refId="349238414_2"/>
+				<link refId="349238414_3"/>
+				<link refId="349238414_4"/>
+				<link refId="349238414_5"/>
+				<link refId="349238414_6"/>
+				<link refId="349238414_7"/>
+				<link refId="349238385_4"/>
+				<link refId="349238385_5"/>
+				<link refId="349238385_6"/>
+				<link refId="349238385_7"/>
+				<link refId="349238385_8"/>
+				<link refId="349238385_9"/>
+				<link refId="349238385_10"/>
+				<link refId="349238385_11"/>
+				<link refId="349238385_12"/>
+				<link refId="349238385_13"/>
+				<link refId="349238385_14"/>
+				<link refId="368028857_3"/>
+				<link refId="368028883_0"/>
+				<link refId="368028919_1_r"/>
+				<link refId="368028919_0_r"/>
+				<link refId="682678893_2_r"/>
+				<link refId="751763282_1_r"/>
+				<link refId="349238360_2"/>
+				<link refId="349238360_3"/>
+				<link refId="349238360_4"/>
+				<link refId="349238360_5"/>
+				<link refId="349238360_6"/>
+				<link refId="349238360_7"/>
+				<link refId="349238350_5"/>
+				<link refId="286301202_0_r"/>
+				<link refId="492137555_0"/>
+				<link refId="492137571_8"/>
+				<link refId="492137571_0"/>
+				<link refId="492137571_1"/>
+				<link refId="492137571_2"/>
+				<link refId="492137567_0"/>
+				<link refId="368028915_6_r"/>
+				<link refId="368028915_5_r"/>
+				<link refId="368028915_4_r"/>
+				<link refId="368028915_3_r"/>
+				<link refId="368028915_2_r"/>
+				<link refId="368028915_1_r"/>
+				<link refId="368028915_0_r"/>
+				<link refId="677249483_4_r"/>
+				<link refId="677249483_3_r"/>
+				<link refId="677249483_2_r"/>
+				<link refId="677249483_1_r"/>
+				<link refId="677249483_0_r"/>
+				<link refId="160163563_9_r"/>
+				<link refId="160163563_8_r"/>
+				<link refId="160163563_7_r"/>
+				<link refId="160163563_6_r"/>
+				<link refId="160163563_5_r"/>
+				<link refId="160163563_4_r"/>
+				<link refId="160163563_3_r"/>
+				<link refId="160163563_2_r"/>
+				<link refId="160163563_1_r"/>
+				<link refId="160163563_0_r"/>
+				<link refId="770123649_0"/>
+				<link refId="492359301_0"/>
+				<link refId="171476715_17"/>
+				<link refId="171476715_18"/>
+				<link refId="171476715_19"/>
+				<link refId="171476715_20"/>
+				<link refId="171476715_21"/>
+				<link refId="171476715_22"/>
+				<link refId="171476715_23"/>
+				<link refId="171476715_24"/>
+				<link refId="171476715_25"/>
+				<link refId="492359295_0"/>
+				<link refId="492359288_0"/>
+				<link refId="492359288_1"/>
+				<link refId="492359288_2"/>
+				<link refId="492359288_3"/>
+				<link refId="492359288_4"/>
+				<link refId="492359288_5"/>
+				<link refId="492137556_0"/>
+				<link refId="492359291_0"/>
+				<link refId="492359291_1"/>
+				<link refId="492359291_2"/>
+				<link refId="492359291_3"/>
+				<link refId="492359291_4"/>
+				<link refId="492359291_5"/>
+				<link refId="492359291_6"/>
+				<link refId="492359291_7"/>
+				<link refId="159693249_0"/>
+				<link refId="488900266_0"/>
+				<link refId="488900266_1"/>
+				<link refId="488900266_2"/>
+				<link refId="488900266_3"/>
+				<link refId="488900266_4"/>
+				<link refId="488900266_5"/>
+				<link refId="488546096_0"/>
+				<link refId="488546096_1"/>
+				<link refId="488546096_2"/>
+				<link refId="491990646_11"/>
+				<link refId="491990646_12"/>
+				<link refId="491990646_13"/>
+				<link refId="761618598_1"/>
+				<link refId="761618597_0"/>
+				<link refId="488900263_0"/>
+				<link refId="488900263_1"/>
+				<link refId="488900238_0"/>
+				<link refId="488900238_1"/>
+				<link refId="488900238_2"/>
+				<link refId="488900238_3"/>
+				<link refId="488900238_4"/>
+				<link refId="488900238_5"/>
+				<link refId="676068109_10"/>
+				<link refId="787992357_4"/>
+				<link refId="490163722_0"/>
+				<link refId="490163722_1"/>
+				<link refId="490163722_2"/>
+				<link refId="490163739_3"/>
+				<link refId="490163739_4"/>
+				<link refId="490163739_5"/>
+				<link refId="490163739_6"/>
+				<link refId="490163739_7"/>
+				<link refId="490163739_8"/>
+				<link refId="490163739_9"/>
+				<link refId="490163739_10"/>
+				<link refId="490163739_11"/>
+				<link refId="490163739_12"/>
+				<link refId="490163739_13"/>
+				<link refId="788951575_4"/>
+				<link refId="788951575_0"/>
+				<link refId="788948317_0"/>
+				<link refId="488546106_10_r"/>
+				<link refId="488546106_9_r"/>
+				<link refId="488546106_8_r"/>
+				<link refId="488546106_7_r"/>
+				<link refId="488546106_6_r"/>
+				<link refId="488903597_0"/>
+				<link refId="491945361_3"/>
+				<link refId="491945361_4"/>
+				<link refId="491945361_5"/>
+				<link refId="491945361_6"/>
+				<link refId="491945361_7"/>
+				<link refId="491945361_8"/>
+				<link refId="488546099_3"/>
+				<link refId="488546099_4"/>
+				<link refId="488546099_5"/>
+				<link refId="488546099_6"/>
+				<link refId="488900268_0"/>
+				<link refId="488900268_1"/>
+				<link refId="488900268_2"/>
+				<link refId="488900268_3"/>
+				<link refId="488900268_4"/>
+				<link refId="488900268_5"/>
+				<link refId="488900268_6"/>
+				<link refId="488900268_7"/>
+				<link refId="490698546_14"/>
+				<link refId="488900248_8"/>
+				<link refId="488900248_9"/>
+				<link refId="488900248_10"/>
+				<link refId="488900244_0"/>
+			</route>
+			<departures>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida0" departureTime="05:10:00" vehicleRefId="veiculo10"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida1" departureTime="05:40:00" vehicleRefId="veiculo15"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida2" departureTime="06:00:00" vehicleRefId="veiculo16"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida3" departureTime="06:18:00" vehicleRefId="veiculo10"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida4" departureTime="06:37:00" vehicleRefId="veiculo16"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida5" departureTime="07:07:00" vehicleRefId="veiculo10"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida6" departureTime="07:32:00" vehicleRefId="veiculo15"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida7" departureTime="08:12:00" vehicleRefId="veiculo15"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida8" departureTime="08:42:00" vehicleRefId="veiculo10"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida9" departureTime="09:12:00" vehicleRefId="veiculo16"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida10" departureTime="09:47:00" vehicleRefId="veiculo10"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida11" departureTime="10:19:00" vehicleRefId="veiculo15"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida12" departureTime="10:47:00" vehicleRefId="veiculo16"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida13" departureTime="11:21:00" vehicleRefId="veiculo10"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida14" departureTime="11:52:00" vehicleRefId="veiculo15"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida15" departureTime="12:20:00" vehicleRefId="veiculo10"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida16" departureTime="12:57:00" vehicleRefId="veiculo15"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida17" departureTime="13:24:00" vehicleRefId="veiculo10"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida18" departureTime="13:59:00" vehicleRefId="veiculo15"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida19" departureTime="14:34:00" vehicleRefId="veiculo10"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida20" departureTime="15:00:00" vehicleRefId="veiculo15"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida21" departureTime="15:35:00" vehicleRefId="veiculo10"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida22" departureTime="16:14:00" vehicleRefId="veiculo10"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida23" departureTime="16:41:00" vehicleRefId="veiculo15"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida24" departureTime="17:10:00" vehicleRefId="veiculo16"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida25" departureTime="17:50:00" vehicleRefId="veiculo15"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida26" departureTime="18:46:00" vehicleRefId="veiculo10"/>
+			</departures>
+		</transitRoute>
+
+		<!--LINHA 05 - VINGT ROSADO - VOLTA===================================================================================-->
+		<transitRoute id="Linha5_Vingt_Rosado_Volta">
+			<transportMode>pt</transportMode>
+			<routeProfile>
+				<stop refId="terminal_Carcara" departureOffset="00:00:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Volta1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Volta2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Volta3" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Volta4" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Volta5" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Pousada_Mossoro" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Delegacia" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Volta6" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_UFERSA_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Volta7" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Volta8" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Volta9" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Volta10" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Volta11" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Volta12" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Volta13" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Volta14" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Volta15" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Volta16" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Volta17" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Volta18" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Volta19" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Volta20" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Volta21" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Volta22" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Volta23" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Volta24" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Volta25" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Volta26" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Volta27" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Volta28" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Ida_Volta" arrivalOffset="00:02:00"/>
+			</routeProfile>
+			<route>
+				<link refId="488900244_0"/>
+				<link refId="488900239_11"/>
+				<link refId="488900239_12"/>
+				<link refId="159693156_0"/>
+				<link refId="171476713_0"/>
+				<link refId="171476713_1"/>
+				<link refId="171476713_2"/>
+				<link refId="171476713_3"/>
+				<link refId="171476713_4"/>
+				<link refId="171476713_5"/>
+				<link refId="171476713_6"/>
+				<link refId="492137558_0"/>
+				<link refId="492359305_0"/>
+				<link refId="492359305_1"/>
+				<link refId="492359305_2"/>
+				<link refId="492359305_3"/>
+				<link refId="492359305_4"/>
+				<link refId="492359283_0"/>
+				<link refId="492359299_0"/>
+				<link refId="492359299_1"/>
+				<link refId="492359299_2"/>
+				<link refId="492359299_3"/>
+				<link refId="492359299_4"/>
+				<link refId="492359299_5"/>
+				<link refId="492359299_6"/>
+				<link refId="492359299_7"/>
+				<link refId="770123651_0"/>
+				<link refId="770123651_1"/>
+				<link refId="770123650_0"/>
+				<link refId="770123650_1"/>
+				<link refId="160163563_0"/>
+				<link refId="160163563_1"/>
+				<link refId="160163563_2"/>
+				<link refId="160163563_3"/>
+				<link refId="160163563_4"/>
+				<link refId="160163563_5"/>
+				<link refId="160163563_6"/>
+				<link refId="160163563_7"/>
+				<link refId="160163563_8"/>
+				<link refId="160163563_9"/>
+				<link refId="677249483_0"/>
+				<link refId="677249483_1"/>
+				<link refId="677249483_2"/>
+				<link refId="677249483_3"/>
+				<link refId="677249483_4"/>
+				<link refId="368028915_0"/>
+				<link refId="368028915_1"/>
+				<link refId="368028915_2"/>
+				<link refId="368028915_3"/>
+				<link refId="368028915_4"/>
+				<link refId="368028915_5"/>
+				<link refId="368028915_6"/>
+				<link refId="770221600_0"/>
+				<link refId="492137571_4"/>
+				<link refId="492137571_5"/>
+				<link refId="492137571_6"/>
+				<link refId="770221601_0"/>
+				<link refId="286301202_0"/>
+				<link refId="286301202_1"/>
+				<link refId="286301202_2"/>
+				<link refId="286301202_3"/>
+				<link refId="682678896_0"/>
+				<link refId="682678896_1"/>
+				<link refId="682678892_16_r"/>
+				<link refId="349238408_5"/>
+				<link refId="349238451_4"/>
+				<link refId="682678893_1"/>
+				<link refId="682678893_2"/>
+				<link refId="349238448_0"/>
+				<link refId="368028872_0"/>
+				<link refId="349238385_13_r"/>
+				<link refId="349238385_12_r"/>
+				<link refId="349238385_11_r"/>
+				<link refId="349238385_10_r"/>
+				<link refId="349238385_9_r"/>
+				<link refId="349238385_8_r"/>
+				<link refId="349238385_7_r"/>
+				<link refId="349238385_6_r"/>
+				<link refId="349238385_5_r"/>
+				<link refId="349238385_4_r"/>
+				<link refId="349238414_7_r"/>
+				<link refId="349238414_6_r"/>
+				<link refId="349238414_5_r"/>
+				<link refId="349238414_4_r"/>
+				<link refId="349238414_3_r"/>
+				<link refId="349238414_2_r"/>
+				<link refId="349238414_1_r"/>
+				<link refId="349238414_0_r"/>
+				<link refId="376861944_5_r"/>
+				<link refId="376861944_4_r"/>
+				<link refId="376861944_3_r"/>
+				<link refId="376861944_2_r"/>
+				<link refId="376861944_1_r"/>
+				<link refId="376861944_0_r"/>
+				<link refId="368028851_0"/>
+				<link refId="368028851_1"/>
+				<link refId="368028851_2"/>
+				<link refId="368028851_3"/>
+				<link refId="368028851_4"/>
+				<link refId="368028851_5"/>
+				<link refId="368028851_6"/>
+				<link refId="368028851_7"/>
+				<link refId="368028851_8"/>
+				<link refId="368028851_9"/>
+				<link refId="368028851_10"/>
+				<link refId="368028851_11"/>
+				<link refId="368028851_12"/>
+				<link refId="368028851_13"/>
+				<link refId="368028930_0"/>
+				<link refId="368028930_1"/>
+				<link refId="745523879_0"/>
+				<link refId="349238468_6"/>
+				<link refId="349238468_7"/>
+				<link refId="349238344_0_r"/>
+				<link refId="368028928_4_r"/>
+				<link refId="368028928_3_r"/>
+				<link refId="349238369_0"/>
+				<link refId="349238369_1"/>
+				<link refId="349238369_2"/>
+				<link refId="349238369_3"/>
+				<link refId="349238369_4"/>
+				<link refId="349238369_5"/>
+				<link refId="349238369_6"/>
+				<link refId="368028885_2_r"/>
+				<link refId="368028885_1_r"/>
+				<link refId="368028885_0_r"/>
+			</route>
+			<departures>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta0" departureTime="06:05:00" vehicleRefId="veiculo10"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta1" departureTime="06:35:00" vehicleRefId="veiculo15"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta2" departureTime="06:58:00" vehicleRefId="veiculo10"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta3" departureTime="07:42:00" vehicleRefId="veiculo10"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta4" departureTime="08:05:00" vehicleRefId="veiculo15"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta5" departureTime="08:35:00" vehicleRefId="veiculo10"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta6" departureTime="09:10:00" vehicleRefId="veiculo15"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta7" departureTime="09:40:00" vehicleRefId="veiculo10"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta8" departureTime="10:10:00" vehicleRefId="veiculo15"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta9" departureTime="10:45:00" vehicleRefId="veiculo10"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta10" departureTime="11:20:00" vehicleRefId="veiculo15"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta11" departureTime="11:45:00" vehicleRefId="veiculo10"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta12" departureTime="12:20:00" vehicleRefId="veiculo15"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta13" departureTime="12:50:00" vehicleRefId="veiculo10"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta14" departureTime="13:25:00" vehicleRefId="veiculo15"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta15" departureTime="13:55:00" vehicleRefId="veiculo10"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta16" departureTime="14:25:00" vehicleRefId="veiculo15"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta17" departureTime="15:00:00" vehicleRefId="veiculo10"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta18" departureTime="15:33:00" vehicleRefId="veiculo15"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta19" departureTime="16:00:00" vehicleRefId="veiculo10"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta20" departureTime="16:35:00" vehicleRefId="veiculo15"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta21" departureTime="17:15:00" vehicleRefId="veiculo10"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta22" departureTime="17:40:00" vehicleRefId="veiculo15"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta23" departureTime="18:10:00" vehicleRefId="veiculo10"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta24" departureTime="18:45:00" vehicleRefId="veiculo15"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta25" departureTime="19:12:00" vehicleRefId="veiculo10"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta26" departureTime="19:42:00" vehicleRefId="veiculo15"/>
+			</departures>
+		</transitRoute>
+
+		<!--LINHA 05 - VINGT ROSADO VIA UNIVERSIADES - IDA====================================================================-->
+		<transitRoute id="Linha5_Vingt_Rosado_Universidades_Ida">
+			<transportMode>pt</transportMode>
+			<routeProfile>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida_Volta" departureOffset="00:00:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida3" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida4" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida5" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida6" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida7" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida8" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida9" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida10" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida11" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida12" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida13" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida14" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida15" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida16" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida17" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida18" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida19" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida20" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida21" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_UERN" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida22" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida23" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_UFERSA_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida24" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_UFERSA_Lateral_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida25" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_IFRN_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida26" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida27" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida28" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida29" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida30" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida31" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida32" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida33" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida34" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida35" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida36" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida37" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida38" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Mercado_Central" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_CIEE" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Hotel_Caraubas" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida39" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida40" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida41" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida42" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Cobal" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida43" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida44" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida45" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida46" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Praca_Dos_Hospitais" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida47" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Estacao_Das_Artes" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Teatro_Dix_Huit" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Loterica_Sorteca" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Central" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Caixa_Economica_Federal" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Oficinas" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_AeC" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="terminal_Carcara" arrivalOffset="00:02:00"/>
+			</routeProfile>
+			<route>
+				<link refId="368028885_0_r"/>
+				<link refId="368028895_3_r"/>
+				<link refId="368028895_2_r"/>
+				<link refId="368028895_1_r"/>
+				<link refId="368028895_0_r"/>
+				<link refId="368028928_0"/>
+				<link refId="368028928_1"/>
+				<link refId="368028928_2"/>
+				<link refId="368028928_3"/>
+				<link refId="368028928_4"/>
+				<link refId="349238344_0"/>
+				<link refId="349238468_7_r"/>
+				<link refId="745523878_0"/>
+				<link refId="368028874_0"/>
+				<link refId="368028874_1"/>
+				<link refId="368028851_14_r"/>
+				<link refId="368028851_13_r"/>
+				<link refId="368028851_12_r"/>
+				<link refId="368028851_11_r"/>
+				<link refId="368028851_10_r"/>
+				<link refId="368028851_9_r"/>
+				<link refId="368028851_8_r"/>
+				<link refId="368028851_7_r"/>
+				<link refId="368028851_6_r"/>
+				<link refId="368028851_5_r"/>
+				<link refId="368028851_4_r"/>
+				<link refId="368028851_3_r"/>
+				<link refId="368028851_2_r"/>
+				<link refId="368028851_1_r"/>
+				<link refId="368028851_0_r"/>
+				<link refId="376861944_0"/>
+				<link refId="376861944_1"/>
+				<link refId="376861944_2"/>
+				<link refId="376861944_3"/>
+				<link refId="376861944_4"/>
+				<link refId="376861944_5"/>
+				<link refId="349238414_0"/>
+				<link refId="349238414_1"/>
+				<link refId="349238414_2"/>
+				<link refId="349238414_3"/>
+				<link refId="349238414_4"/>
+				<link refId="349238414_5"/>
+				<link refId="349238414_6"/>
+				<link refId="349238414_7"/>
+				<link refId="349238385_4"/>
+				<link refId="349238385_5"/>
+				<link refId="349238385_6"/>
+				<link refId="349238385_7"/>
+				<link refId="349238385_8"/>
+				<link refId="349238385_9"/>
+				<link refId="349238385_10"/>
+				<link refId="349238385_11"/>
+				<link refId="349238385_12"/>
+				<link refId="349238385_13"/>
+				<link refId="349238385_14"/>
+				<link refId="368028857_3"/>
+				<link refId="368028883_0"/>
+				<link refId="368028919_1_r"/>
+				<link refId="368028919_0_r"/>
+				<link refId="682678893_2_r"/>
+				<link refId="751763282_1_r"/>
+				<link refId="349238360_2"/>
+				<link refId="349238360_3"/>
+				<link refId="349238360_4"/>
+				<link refId="349238360_5"/>
+				<link refId="349238360_6"/>
+				<link refId="349238360_7"/>
+				<link refId="349238350_5"/>
+				<link refId="286301202_0_r"/>
+				<link refId="492137555_0"/>
+				<link refId="492137571_8"/>
+				<link refId="492137571_0"/>
+				<link refId="492137571_1"/>
+				<link refId="492137571_2"/>
+				<link refId="492137571_3"/>
+				<link refId="492137571_4"/>
+				<link refId="336685655_0"/>
+				<link refId="336685655_1"/>
+				<link refId="336685655_2"/>
+				<link refId="336685655_3"/>
+				<link refId="336685655_4"/>
+				<link refId="336685655_5"/>
+				<link refId="336685655_6"/>
+				<link refId="336685655_7"/>
+				<link refId="336685655_8"/>
+				<link refId="336685655_9"/>
+				<link refId="336685655_10"/>
+				<link refId="627602248_0"/>
+				<link refId="193532919_4"/>
+				<link refId="193532919_5"/>
+				<link refId="193532919_6"/>
+				<link refId="193532919_7"/>
+				<link refId="193532919_8"/>
+				<link refId="193532919_9"/>
+				<link refId="492137571_6"/>
+				<link refId="492137571_7"/>
+				<link refId="492137571_8"/>
+				<link refId="492137571_0"/>
+				<link refId="492137571_1"/>
+				<link refId="492137571_2"/>
+				<link refId="492137567_0"/>
+				<link refId="368028915_6_r"/>
+				<link refId="368028915_5_r"/>
+				<link refId="368028915_4_r"/>
+				<link refId="368028915_3_r"/>
+				<link refId="368028915_2_r"/>
+				<link refId="368028915_1_r"/>
+				<link refId="368028915_0_r"/>
+				<link refId="349894966_0"/>
+				<link refId="666094865_0"/>
+				<link refId="666094865_1"/>
+				<link refId="666094865_2"/>
+				<link refId="666094865_3"/>
+				<link refId="350164526_1_r"/>
+				<link refId="350164526_0_r"/>
+				<link refId="682678880_9_r"/>
+				<link refId="682678880_8_r"/>
+				<link refId="682678880_7_r"/>
+				<link refId="682678880_6_r"/>
+				<link refId="682678880_5_r"/>
+				<link refId="682678880_4_r"/>
+				<link refId="682678880_3_r"/>
+				<link refId="682678880_2_r"/>
+				<link refId="682678880_1_r"/>
+				<link refId="682678880_0_r"/>
+				<link refId="682678878_1_r"/>
+				<link refId="682678878_0_r"/>
+				<link refId="666094867_1_r"/>
+				<link refId="666094867_0_r"/>
+				<link refId="746175801_0_r"/>
+				<link refId="745522524_0_r"/>
+				<link refId="771780907_0"/>
+				<link refId="666094866_0"/>
+				<link refId="666094866_1"/>
+				<link refId="666094866_2"/>
+				<link refId="666094866_3"/>
+				<link refId="666094866_4"/>
+				<link refId="666094866_5"/>
+				<link refId="666094866_6"/>
+				<link refId="666094866_7"/>
+				<link refId="666094866_8"/>
+				<link refId="171476715_5"/>
+				<link refId="492359292_0"/>
+				<link refId="492359292_1"/>
+				<link refId="492359292_2"/>
+				<link refId="492359292_3"/>
+				<link refId="492359292_4"/>
+				<link refId="492359292_5"/>
+				<link refId="492359292_6"/>
+				<link refId="492359292_7"/>
+				<link refId="771802510_0_r"/>
+				<link refId="171476715_10"/>
+				<link refId="171476715_11"/>
+				<link refId="171476715_12"/>
+				<link refId="171476715_13"/>
+				<link refId="171476715_14"/>
+				<link refId="171476715_15"/>
+				<link refId="171476715_16"/>
+				<link refId="171476715_17"/>
+				<link refId="171476715_18"/>
+				<link refId="171476715_19"/>
+				<link refId="171476715_20"/>
+				<link refId="171476715_21"/>
+				<link refId="171476715_22"/>
+				<link refId="171476715_23"/>
+				<link refId="171476715_24"/>
+				<link refId="171476715_25"/>
+				<link refId="492359295_0"/>
+				<link refId="492359288_0"/>
+				<link refId="492359288_1"/>
+				<link refId="492359288_2"/>
+				<link refId="492359288_3"/>
+				<link refId="492359288_4"/>
+				<link refId="492359288_5"/>
+				<link refId="492137556_0"/>
+				<link refId="492359291_0"/>
+				<link refId="492359291_1"/>
+				<link refId="492359291_2"/>
+				<link refId="492359291_3"/>
+				<link refId="492359291_4"/>
+				<link refId="492359291_5"/>
+				<link refId="492359291_6"/>
+				<link refId="492359291_7"/>
+				<link refId="159693249_0"/>
+				<link refId="488900266_0"/>
+				<link refId="488900266_1"/>
+				<link refId="488900266_2"/>
+				<link refId="488900266_3"/>
+				<link refId="488900266_4"/>
+				<link refId="488900266_5"/>
+				<link refId="488546096_0"/>
+				<link refId="488546096_1"/>
+				<link refId="488546096_2"/>
+				<link refId="491990646_11"/>
+				<link refId="491990646_12"/>
+				<link refId="491990646_13"/>
+				<link refId="761618598_1"/>
+				<link refId="761618597_0"/>
+				<link refId="488900263_0"/>
+				<link refId="488900263_1"/>
+				<link refId="488900238_0"/>
+				<link refId="488900238_1"/>
+				<link refId="488900238_2"/>
+				<link refId="488900238_3"/>
+				<link refId="488900238_4"/>
+				<link refId="488900238_5"/>
+				<link refId="676068109_10"/>
+				<link refId="787992357_4"/>
+				<link refId="490163722_0"/>
+				<link refId="490163722_1"/>
+				<link refId="490163722_2"/>
+				<link refId="490163739_3"/>
+				<link refId="490163739_4"/>
+				<link refId="490163739_5"/>
+				<link refId="490163739_6"/>
+				<link refId="490163739_7"/>
+				<link refId="490163739_8"/>
+				<link refId="490163739_9"/>
+				<link refId="490163739_10"/>
+				<link refId="490163739_11"/>
+				<link refId="490163739_12"/>
+				<link refId="490163739_13"/>
+				<link refId="788951575_4"/>
+				<link refId="788951575_0"/>
+				<link refId="788948317_0"/>
+				<link refId="488546106_10_r"/>
+				<link refId="488546106_9_r"/>
+				<link refId="488546106_8_r"/>
+				<link refId="488546106_7_r"/>
+				<link refId="488546106_6_r"/>
+				<link refId="488903597_0"/>
+				<link refId="491945361_3"/>
+				<link refId="491945361_4"/>
+				<link refId="491945361_5"/>
+				<link refId="491945361_6"/>
+				<link refId="491945361_7"/>
+				<link refId="491945361_8"/>
+				<link refId="488546099_3"/>
+				<link refId="488546099_4"/>
+				<link refId="488546099_5"/>
+				<link refId="488546099_6"/>
+				<link refId="488900268_0"/>
+				<link refId="488900268_1"/>
+				<link refId="488900268_2"/>
+				<link refId="488900268_3"/>
+				<link refId="488900268_4"/>
+				<link refId="488900268_5"/>
+				<link refId="488900268_6"/>
+				<link refId="488900268_7"/>
+				<link refId="490698546_14"/>
+				<link refId="488900248_8"/>
+				<link refId="488900248_9"/>
+				<link refId="488900248_10"/>
+				<link refId="488900244_0"/>
+			</route>
+			<departures>
+				<departure id="viagem_Linha5_Vingt_Rosado_Universidades_Ida0" departureTime="19:40:00" vehicleRefId="veiculo10"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Universidades_Ida1" departureTime="20:08:00" vehicleRefId="veiculo15"/>
+			</departures>
+		</transitRoute>
+
+		<!--LINHA 05 - VINGT ROSADO VIA UNIVERSIDADES - VOLTA=================================================================-->
+		<transitRoute id="Linha5_Vingt_Rosado_Universidades_Volta">
+			<transportMode>pt</transportMode>
+			<routeProfile>
+				<stop refId="terminal_Carcara" departureOffset="00:00:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Volta1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Volta2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Volta3" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Volta4" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Volta5" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Pousada_Mossoro" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Volta6" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Volta7" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Volta8" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Volta9" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Volta10" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Volta11" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Volta12" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_UFERSA_Lateral_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Volta13" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_UFERSA_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Volta14" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_UERN" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Volta15" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Volta16" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Volta17" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Volta18" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Volta19" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Volta20" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Volta21" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Volta22" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Volta23" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Volta24" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Volta25" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Volta26" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Volta27" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Volta28" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha5_Vingt_Rosado_Universidades_Ida_Volta" arrivalOffset="00:02:00"/>
+			</routeProfile>
+			<route>
+				<link refId="488900244_0"/>
+				<link refId="488900239_11"/>
+				<link refId="488900239_12"/>
+				<link refId="159693156_0"/>
+				<link refId="171476713_0"/>
+				<link refId="171476713_1"/>
+				<link refId="171476713_2"/>
+				<link refId="171476713_3"/>
+				<link refId="171476713_4"/>
+				<link refId="171476713_5"/>
+				<link refId="171476713_6"/>
+				<link refId="492137558_0"/>
+				<link refId="492359305_0"/>
+				<link refId="492359305_1"/>
+				<link refId="492359305_2"/>
+				<link refId="492359305_3"/>
+				<link refId="492359305_4"/>
+				<link refId="492359283_0"/>
+				<link refId="492359299_0"/>
+				<link refId="492359299_1"/>
+				<link refId="492359299_2"/>
+				<link refId="492359299_3"/>
+				<link refId="492359299_4"/>
+				<link refId="492359299_5"/>
+				<link refId="492359299_6"/>
+				<link refId="492359299_7"/>
+				<link refId="492359299_8"/>
+				<link refId="492359299_9"/>
+				<link refId="492359299_10"/>
+				<link refId="492359299_11"/>
+				<link refId="492359299_12"/>
+				<link refId="492359303_0"/>
+				<link refId="492359303_1"/>
+				<link refId="162227773_0"/>
+				<link refId="162230039_0"/>
+				<link refId="162230039_1"/>
+				<link refId="162230039_2"/>
+				<link refId="162230039_3"/>
+				<link refId="162230039_4"/>
+				<link refId="162230039_5"/>
+				<link refId="162230039_6"/>
+				<link refId="162229394_1_r"/>
+				<link refId="162229394_0_r"/>
+				<link refId="492359292_3_r"/>
+				<link refId="492359292_2_r"/>
+				<link refId="683389513_6_r"/>
+				<link refId="492359298_2_r"/>
+				<link refId="492359298_1_r"/>
+				<link refId="492359298_0"/>
+				<link refId="666094868_0"/>
+				<link refId="236434949_1"/>
+				<link refId="236434949_2"/>
+				<link refId="236434949_3"/>
+				<link refId="236434949_4"/>
+				<link refId="236434949_5"/>
+				<link refId="236434949_6"/>
+				<link refId="771780908_0"/>
+				<link refId="745522524_0"/>
+				<link refId="746175801_0"/>
+				<link refId="666094867_0"/>
+				<link refId="666094867_1"/>
+				<link refId="682678878_0"/>
+				<link refId="682678878_1"/>
+				<link refId="682678880_0"/>
+				<link refId="682678880_1"/>
+				<link refId="682678880_2"/>
+				<link refId="682678880_3"/>
+				<link refId="682678880_4"/>
+				<link refId="682678880_5"/>
+				<link refId="682678880_6"/>
+				<link refId="682678880_7"/>
+				<link refId="682678880_8"/>
+				<link refId="682678880_9"/>
+				<link refId="350164526_0"/>
+				<link refId="350164526_1"/>
+				<link refId="666094865_3_r"/>
+				<link refId="666094865_2_r"/>
+				<link refId="666094865_1_r"/>
+				<link refId="666094865_0_r"/>
+				<link refId="349894998_0"/>
+				<link refId="368028915_1"/>
+				<link refId="368028915_2"/>
+				<link refId="368028915_3"/>
+				<link refId="368028915_4"/>
+				<link refId="368028915_5"/>
+				<link refId="368028915_6"/>
+				<link refId="770221600_0"/>
+				<link refId="492137571_4"/>
+				<link refId="336685655_0"/>
+				<link refId="336685655_1"/>
+				<link refId="336685655_2"/>
+				<link refId="336685655_3"/>
+				<link refId="336685655_4"/>
+				<link refId="336685655_5"/>
+				<link refId="336685655_6"/>
+				<link refId="336685655_7"/>
+				<link refId="336685655_8"/>
+				<link refId="336685655_9"/>
+				<link refId="336685655_10"/>
+				<link refId="627602248_0"/>
+				<link refId="193532919_4"/>
+				<link refId="193532919_5"/>
+				<link refId="193532919_6"/>
+				<link refId="193532919_7"/>
+				<link refId="193532919_8"/>
+				<link refId="193532919_9"/>
+				<link refId="492137571_6"/>
+				<link refId="770221601_0"/>
+				<link refId="286301202_0"/>
+				<link refId="286301202_1"/>
+				<link refId="286301202_2"/>
+				<link refId="286301202_3"/>
+				<link refId="682678896_0"/>
+				<link refId="682678896_1"/>
+				<link refId="682678892_16_r"/>
+				<link refId="349238408_5"/>
+				<link refId="349238451_4"/>
+				<link refId="682678893_1"/>
+				<link refId="682678893_2"/>
+				<link refId="349238448_0"/>
+				<link refId="368028872_0"/>
+				<link refId="349238385_13_r"/>
+				<link refId="349238385_12_r"/>
+				<link refId="349238385_11_r"/>
+				<link refId="349238385_10_r"/>
+				<link refId="349238385_9_r"/>
+				<link refId="349238385_8_r"/>
+				<link refId="349238385_7_r"/>
+				<link refId="349238385_6_r"/>
+				<link refId="349238385_5_r"/>
+				<link refId="349238385_4_r"/>
+				<link refId="349238414_7_r"/>
+				<link refId="349238414_6_r"/>
+				<link refId="349238414_5_r"/>
+				<link refId="349238414_4_r"/>
+				<link refId="349238414_3_r"/>
+				<link refId="349238414_2_r"/>
+				<link refId="349238414_1_r"/>
+				<link refId="349238414_0_r"/>
+				<link refId="376861944_5_r"/>
+				<link refId="376861944_4_r"/>
+				<link refId="376861944_3_r"/>
+				<link refId="376861944_2_r"/>
+				<link refId="376861944_1_r"/>
+				<link refId="376861944_0_r"/>
+				<link refId="368028851_0"/>
+				<link refId="368028851_1"/>
+				<link refId="368028851_2"/>
+				<link refId="368028851_3"/>
+				<link refId="368028851_4"/>
+				<link refId="368028851_5"/>
+				<link refId="368028851_6"/>
+				<link refId="368028851_7"/>
+				<link refId="368028851_8"/>
+				<link refId="368028851_9"/>
+				<link refId="368028851_10"/>
+				<link refId="368028851_11"/>
+				<link refId="368028851_12"/>
+				<link refId="368028851_13"/>
+				<link refId="368028930_0"/>
+				<link refId="368028930_1"/>
+				<link refId="745523879_0"/>
+				<link refId="349238468_6"/>
+				<link refId="349238468_7"/>
+				<link refId="349238344_0_r"/>
+				<link refId="368028928_4_r"/>
+				<link refId="368028928_3_r"/>
+				<link refId="349238369_0"/>
+				<link refId="349238369_1"/>
+				<link refId="349238369_2"/>
+				<link refId="349238369_3"/>
+				<link refId="349238369_4"/>
+				<link refId="349238369_5"/>
+				<link refId="349238369_6"/>
+				<link refId="368028885_2_r"/>
+				<link refId="368028885_1_r"/>
+				<link refId="368028885_0_r"/>
+			</route>
+			<departures>
+				<departure id="viagem_Linha5_Vingt_Rosado_Universidades_Volta0" departureTime="20:35:00" vehicleRefId="veiculo10"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Universidades_Volta1" departureTime="21:25:00" vehicleRefId="veiculo10"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Universidades_Volta2" departureTime="22:40:00" vehicleRefId="veiculo10"/>
 			</departures>
 		</transitRoute>
 	</transitLine>
