@@ -194,144 +194,134 @@
 	<facility id="parada_Cobal" x="-4156400.949650569" y="-578380.589051281"/>
 	<facility id="parada_Colegio_Diocesano_Santa_Luzia_Ida" x="-4157537.463005" y="-578020.689460"/>
 	<facility id="parada_Colegio_Diocesano_Santa_Luzia_Volta" x="-4157528.206959" y="-578012.030578"/>
-	<facility id="parada_Delegacia" x="-4155880.531031111" y="-580647.1379780372"/>
 	<facility id="parada_EE_Jeronimo_Rosado_Ida" x="-4157667.271591" y="-577764.804565"/>
 	<facility id="parada_EE_Jeronimo_Rosado_Volta" x="-4157655.179015" y="-577746.367118"/>
 	<facility id="parada_Estacao_Das_Artes" x="-4157185.1954632085" y="-578432.006722123"/>
-	<facility id="parada_IFRN_Ida" x="-4154567.4063177137" y="-581057.8229540222"/>
+	<facility id="parada_Hotel_Caraubas" x="-4156920.8116725744" y="-578539.9839529201"/>
 	<facility id="parada_Igreja_Universal_do_Reino_de_Deus_Centro" x="-4156520.2841446996" y="-578472.8055528352"/>
 	<facility id="parada_Igreja_Sao_Vicente" x="-4157240.521250132" y="-578854.0801504253"/>
-	<facility id="parada_Hotel_Caraubas" x="-4156920.8116725744" y="-578539.9839529201"/>
+	<facility id="parada_Livraria_Independencia" x="-4156871.251602" y="-578878.590599"/>
 	<facility id="parada_Loterica_Sorteca" x="-4157052.117734" y="-578695.037227"/>
 	<facility id="parada_Mercado_Central" x="-4157003.9673321964" y="-578698.8203248462"/>
 	<facility id="parada_Oficinas" x="-4157316.107184381" y="-579363.008384986"/>
-	<facility id="parada_Pousada_Mossoro" x="-4156112.760187" y="-580479.680024"/>
+	<facility id="parada_Pousada_Mossoro" x="-4156112.852961" y="-580479.662689"/>
 	<facility id="parada_Praca_de_Eventos_Ida" x="-4157059.404438611" y="-578278.8715954764"/>
 	<facility id="parada_Praca_Dos_Hospitais" x="-4157137.586872" y="-578160.201966"/>
 	<facility id="parada_Praca_Gazeta" x="-4157049.819830" y="-579098.329475"/>
 	<facility id="parada_Reboucas_Supermercados_Centro" x="-4156818.9543384984" y="-578026.2552517317"/>
 	<facility id="parada_Teatro_Municipal_Dix_Huit_Rosado" x="-4157267.5718863956" y="-578558.8743964208"/>
+
+	<!--====================================================================================================================|
+	|													PARADAS ILHA, ALTO													|
+	|=====================================================================================================================-->
+	<!--PARADA AVENIDA====================================================================================================-->
+	<facility id="parada_Avenida_Presidente_Dutra_Ida0" x="-4155358.8878972535" y="-581670.8367892291"/>
+	
+	<!--PARADAS MARCADAS==================================================================================================-->
+	<facility id="parada_Arte_Da_Terra" x="-4156812.9430859946" y="-579176.494087661"/>
+	<facility id="parada_Facene_Ida" x="-4155518.965325014" y="-581381.2418579877"/>
+	<facility id="parada_Farmacia_da_familia" x="-4156304.9922495056" y="-580163.0939313294"/>
+	<facility id="parada_Fic_Frio_Alto_de_Sao_Manoel" x="-4156168.389240" y="-580344.703561"/>
+	<facility id="parada_Hotel_VillaOeste_Ida" x="-4156543.408410" y="-579733.132689"/>
+	<facility id="parada_Hotel_VillaOeste_Volta" x="-4156576.028509"  y="-579710.067218"/>
+	<facility id="parada_Izamar_Supermercado" x="-4156007.752048" y="-580612.904969"/>
+	<facility id="parada_JPL_Motos_Ilha_de_Santa_Luzia_Ida" x="-4156460.925093" y="-579868.465044"/>
+	<facility id="parada_JPL_Motos_Ilha_de_Santa_Luzia_Volta" x="-4156477.197820" y="-579878.467546"/>
+	<facility id="parada_L_E_Pneus" x="-4156313.8978087693" y="-580121.2433867494"/>
+	<facility id="parada_O_Sebosao" x="-4156815.8373927562" y="-579294.1525159125"/>
+	<facility id="parada_Oeste_Trigo" x="-4155694.763318" y="-581103.699365"/>
+
+	<!--====================================================================================================================|
+	|													PARADAS UNIVERSIDADES												|
+	|=====================================================================================================================-->
+	<!--PARADAS AVENIDAS==================================================================================================-->
+	<facility id="parada_Avenida_Professor_Antonio_Campos_Ida0" x="-4154293.8943288345" y="-580215.161230164"/>
+	<facility id="parada_Avenida_Professor_Antonio_Campos_Ida1" x="-4154445.956753258" y="-580112.4574582785"/>
+
+	<!--PARADAS RUAS======================================================================================================-->
+	<facility id="parada_Alameda_das_Carnaubeiras_Ida0" x="-4154455.124911" y="-580832.437489"/>
+	<facility id="parada_Rua_Raimundo_Firmino_de_Oliveira_Ida0" x="-4155083.267091" y="-581508.278167"/>
+
+	<!--PARADAS MARCADAS==================================================================================================-->
+	<facility id="parada_Convesti" x="-4154687.965326243" y="-580669.7177646335"/>
+	<facility id="parada_IFRN_Ida" x="-4154572.169110" y="-581057.120551"/>
+	<facility id="parada_Ministerio_Publico_da_Uniao_Ida" x="-4155090.162646478" y="-580392.9482077922"/>
+	<facility id="parada_Supermercados_Queiroz_Dom_Jaime_Camara_Ida" x="-4154945.6699474286" y="-581391.6040754183"/>
 	<facility id="parada_UERN" x="-4154089.400424247" y="-580321.9227872522"/>
 	<facility id="parada_UFERSA_Ida" x="-4155081.591045687" y="-580007.1940723791"/>
 	<facility id="parada_UFERSA_Volta" x="-4155113.8736980176" y="-580080.1865065108"/>
 	<facility id="parada_UFERSA_Lateral_Ida" x="-4154817.875171998" y="-580580.0693477748"/>
 	<facility id="parada_UFERSA_Lateral_Volta" x="-4154776.6869604047" y="-580604.996514546"/>
 
+	<!--====================================================================================================================|
+	|													PARADAS VINGT ROSADO												|
+	|=====================================================================================================================-->
+	<!--PARADAS RUAS======================================================================================================-->
+	<facility id="parada_Rua_Francisco_Mota_Ida0" x="-4155740.2684727116" y="-580531.444630866"/>
+
+	<!--PARADAS MARCADAS==================================================================================================-->
+	<facility id="parada_Delegacia" x="-4155880.531031111" y="-580647.1379780372"/>
+	<facility id="parada_Residencial_Vingt_Un_Rosado_Ida" x="-4155468.064826" y="-580327.460442"/>
+	<facility id="parada_Residencial_Vingt_Un_Rosado_Volta" x="-4155463.416899109" y="-580332.8102172194"/>
 	
 
 
+	
+	
+	
+	
+	
+	
+	
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	<facility id="parada_Linha5_Vingt_Rosado_Ida21" x="-4154627.073564778" y="-579676.929405142"/>
 	<facility id="parada_Linha5_Vingt_Rosado_Universidades_Ida21" x="-4154627.073564778" y="-579676.929405142"/>
-	<facility id="parada_Linha5_Vingt_Rosado_Universidades_Ida24" x="-4155090.162646478" y="-580392.9482077922"/>
-	<facility id="parada_Linha5_Vingt_Rosado_Universidades_Ida25" x="-4154687.965326243" y="-580669.7177646335"/>
-	<facility id="parada_Linha5_Vingt_Rosado_Universidades_Ida26" x="-4154945.6699474286" y="-581391.6040754183"/>
-	<facility id="parada_Linha5_Vingt_Rosado_Universidades_Ida27" x="-4155358.8878972535" y="-581670.8367892291"/>
-	<facility id="parada_Linha5_Vingt_Rosado_Universidades_Ida28" x="-4155518.965325014" y="-581381.2418579877"/>
-	<facility id="parada_Linha5_Vingt_Rosado_Universidades_Ida29" x="-4155676.8163629593" y="-581126.8258668162"/>
-	<facility id="parada_Linha5_Vingt_Rosado_Universidades_Ida30" x="-4155860.048244805" y="-580853.665049006"/>
+	
+	
+	
 
-	<facility id="parada_Linha5_Vingt_Rosado_Universidades_Ida32" x="-4156123.652799003" y="-580445.9322793"/>
-	<facility id="parada_Linha5_Vingt_Rosado_Ida25" x="-4156123.652799003" y="-580445.9322793"/>
+	
 
-
-
-	<!--LINHA 02 - PARADAS ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO, UNIVERSIDADES VIA AEC======================================-->
-	<facility id="parada_Linha2_Abolicoes_Universidades_AeC_Ida0" x="-4154293.8943288345" y="-580215.161230164"/>
-	<facility id="parada_Linha2_Abolicoes_Universidades_IFRN_Ida0" x="-4154293.8943288345" y="-580215.161230164"/>
-	<facility id="parada_Linha5_Vingt_Rosado_Universidades_Ida22" x="-4154293.8943288345" y="-580215.161230164"/>
-	<facility id="parada_Linha6_Universidades_Ida0" x="-4154293.8943288345" y="-580215.161230164"/>
-	
-	<facility id="parada_Linha2_Abolicoes_Universidades_AeC_Ida1" x="-4154445.956753258" y="-580112.4574582785"/>
-	<facility id="parada_Linha2_Abolicoes_Universidades_IFRN_Ida1" x="-4154445.956753258" y="-580112.4574582785"/>
-	<facility id="parada_Linha5_Vingt_Rosado_Universidades_Ida23" x="-4154445.956753258" y="-580112.4574582785"/>
-	<facility id="parada_Linha6_Universidades_Ida1" x="-4154445.956753258" y="-580112.4574582785"/>
-	
-	<facility id="parada_Linha2_Abolicoes_Universidades_AeC_Ida2" x="-4155447.498211925" y="-580311.1247834272"/>
-	<facility id="parada_Linha5_Vingt_Rosado_Ida22" x="-4155447.498211925" y="-580311.1247834272"/>
-
-	<facility id="parada_Linha2_Abolicoes_Universidades_AeC_Ida3" x="-4155740.2684727116" y="-580531.444630866"/>
-	<facility id="parada_Linha5_Vingt_Rosado_Ida23" x="-4155740.2684727116" y="-580531.444630866"/>
-	
-	<facility id="parada_Linha2_Abolicoes_Universidades_AeC_Ida4" x="-4156018.7898386763" y="-580603.7333888423"/>
-	<facility id="parada_Linha2_Abolicoes_Universidades_IFRN_Ida9" x="-4156018.7898386763" y="-580603.7333888423"/>
-	<facility id="parada_Linha5_Vingt_Rosado_Ida24" x="-4156018.7898386763" y="-580603.7333888423"/>
-	<facility id="parada_Linha5_Vingt_Rosado_Universidades_Ida31" x="-4156018.7898386763" y="-580603.7333888423"/>
-	<facility id="parada_Linha6_Universidades_Ida15" x="-4156018.7898386763" y="-580603.7333888423"/>
-	
-	<facility id="parada_Linha2_Abolicoes_Universidades_AeC_Ida5" x="-4156186.993589265" y="-580324.8737947972"/>
-	<facility id="parada_Linha2_Abolicoes_Universidades_IFRN_Ida10" x="-4156186.993589265" y="-580324.8737947972"/>
-	<facility id="parada_Linha5_Vingt_Rosado_Ida26" x="-4156186.993589265" y="-580324.8737947972"/>
-	<facility id="parada_Linha5_Vingt_Rosado_Universidades_Ida33" x="-4156186.993589265" y="-580324.8737947972"/>
-	<facility id="parada_Linha6_Universidades_Ida16" x="-4156186.993589265" y="-580324.8737947972"/>
-	
-	<facility id="parada_Linha2_Abolicoes_Universidades_AeC_Ida6" x="-4156313.8978087693" y="-580121.2433867494"/>
-	<facility id="parada_Linha2_Abolicoes_Universidades_IFRN_Ida11" x="-4156313.8978087693" y="-580121.2433867494"/>
-	<facility id="parada_Linha5_Vingt_Rosado_Ida27" x="-4156313.8978087693" y="-580121.2433867494"/>
-	<facility id="parada_Linha5_Vingt_Rosado_Universidades_Ida34" x="-4156313.8978087693" y="-580121.2433867494"/>
-	<facility id="parada_Linha6_Universidades_Ida17" x="-4156313.8978087693" y="-580121.2433867494"/>
-	
-	<facility id="parada_Linha2_Abolicoes_Universidades_AeC_Ida7" x="-4156458.279188328" y="-579892.3960175905"/>
-	<facility id="parada_Linha2_Abolicoes_Universidades_IFRN_Ida12" x="-4156458.279188328" y="-579892.3960175905"/>
-	<facility id="parada_Linha5_Vingt_Rosado_Ida28" x="-4156458.279188328" y="-579892.3960175905"/>
-	<facility id="parada_Linha5_Vingt_Rosado_Universidades_Ida35" x="-4156458.279188328" y="-579892.3960175905"/>
-	<facility id="parada_Linha6_Universidades_Ida18" x="-4156458.279188328" y="-579892.3960175905"/>
-	
-	<facility id="parada_Linha2_Abolicoes_Universidades_AeC_Ida8" x="-4156536.202831883" y="-579762.3961096862"/>
-	<facility id="parada_Linha2_Abolicoes_Universidades_IFRN_Ida13" x="-4156536.202831883" y="-579762.3961096862"/>
-	<facility id="parada_Linha5_Vingt_Rosado_Ida29" x="-4156536.202831883" y="-579762.3961096862"/>
-	<facility id="parada_Linha5_Vingt_Rosado_Universidades_Ida36" x="-4156536.202831883" y="-579762.3961096862"/>
-	<facility id="parada_Linha6_Universidades_Ida19" x="-4156536.202831883" y="-579762.3961096862"/>
-	
-	<facility id="parada_Linha2_Abolicoes_Universidades_AeC_Ida9" x="-4156812.9430859946" y="-579176.494087661"/>
-	<facility id="parada_Linha2_Abolicoes_Universidades_IFRN_Ida14" x="-4156812.9430859946" y="-579176.494087661"/>
-	<facility id="parada_Linha5_Vingt_Rosado_Ida30" x="-4156812.9430859946" y="-579176.494087661"/>
-	<facility id="parada_Linha5_Vingt_Rosado_Universidades_Ida37" x="-4156812.9430859946" y="-579176.494087661"/>
-	<facility id="parada_Linha6_Universidades_Ida20" x="-4156812.9430859946" y="-579176.494087661"/>
-	
-	<facility id="parada_Linha2_Abolicoes_Universidades_AeC_Ida10" x="-4156864.2613712507" y="-578890.586938058"/>
-	<facility id="parada_Linha2_Abolicoes_Universidades_IFRN_Ida15" x="-4156864.2613712507" y="-578890.586938058"/>
-	<facility id="parada_Linha5_Vingt_Rosado_Ida31" x="-4156864.2613712507" y="-578890.586938058"/>
-	<facility id="parada_Linha5_Vingt_Rosado_Universidades_Ida38" x="-4156864.2613712507" y="-578890.586938058"/>
-	<facility id="parada_Linha6_Universidades_Ida21" x="-4156864.2613712507" y="-578890.586938058"/>
-
-
-	<facility id="parada_Linha6_Universidades_Ida2" x="-4155090.162646478" y="-580392.9482077922"/>
-	<facility id="parada_Linha6_Universidades_Ida3" x="-4154687.965326243" y="-580669.7177646335"/>
 	<facility id="parada_Linha6_Universidades_Ida4" x="-4154395.75166291" y="-580873.9422037813"/>
 	<facility id="parada_Linha6_Universidades_Ida5" x="-4154197.9369277703" y="-581008.9743430049"/>
 	<facility id="parada_Linha6_Universidades_Ida6" x="-4154047.5442957086" y="-581114.8316734764"/>
 	<facility id="parada_Linha6_Universidades_Ida7" x="-4154070.9213887756" y="-581290.6647409907"/>
 	<facility id="parada_Linha6_Universidades_Ida8" x="-4154212.2971420824" y="-581192.7436649359"/>
 	<facility id="parada_Linha6_Universidades_Ida9" x="-4154283.6529356814" y="-581143.783178139"/>
-	<facility id="parada_Linha6_Universidades_Ida10" x="-4154945.6699474286" y="-581391.6040754183"/>
-	<facility id="parada_Linha6_Universidades_Ida11" x="-4155358.8878972535" y="-581670.8367892291"/>
-	<facility id="parada_Linha6_Universidades_Ida12" x="-4155518.965325014" y="-581381.2418579877"/>
-	<facility id="parada_Linha6_Universidades_Ida13" x="-4155676.8163629593" y="-581126.8258668162"/>
-	<facility id="parada_Linha6_Universidades_Ida14" x="-4155860.048244805" y="-580853.665049006"/>
-
-
-
-
-
-
-
-
-	
 	
 
+	<facility id="parada_Linha6_Universidades_Ida22" x="-4157441.230292033" y="-578564.7986193888"/>
+	<facility id="parada_Linha6_Universidades_Ida23" x="-4157491.8806603434" y="-578784.777666221"/>
+	<facility id="parada_Linha6_Universidades_Ida24" x="-4157621.011269664" y="-578961.7226924836"/>
+	<facility id="parada_Linha6_Universidades_Ida25" x="-4157702.4971369244" y="-579191.8748476574"/>
+	<facility id="parada_Linha6_Universidades_Ida26" x="-4157480.414752792" y="-579318.5203320094"/>
 
 
-
-	<!--LINHA 02 - PARADAS ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO, UNIVERSIDADES VIA IFRN=====================================-->
-	<facility id="parada_Linha2_Abolicoes_Universidades_IFRN_Ida2" x="-4155090.162646478" y="-580392.9482077922"/>
-	<facility id="parada_Linha2_Abolicoes_Universidades_IFRN_Ida3" x="-4154687.965326243" y="-580669.7177646335"/>
-	<facility id="parada_Linha2_Abolicoes_Universidades_IFRN_Ida4" x="-4154945.6699474286" y="-581391.6040754183"/>
-	<facility id="parada_Linha2_Abolicoes_Universidades_IFRN_Ida5" x="-4155358.8878972535" y="-581670.8367892291"/>
-	<facility id="parada_Linha2_Abolicoes_Universidades_IFRN_Ida6" x="-4155518.965325014" y="-581381.2418579877"/>
-	<facility id="parada_Linha2_Abolicoes_Universidades_IFRN_Ida7" x="-4155676.8163629593" y="-581126.8258668162"/>
-	<facility id="parada_Linha2_Abolicoes_Universidades_IFRN_Ida8" x="-4155860.048244805" y="-580853.665049006"/>
-
-
-	
 
 	<!--====================================================================================================================|
 	|																														|
@@ -392,19 +382,18 @@
 	<facility id="parada_Linha5_Vingt_Rosado_Ida18" x="-4153338.8844173183" y="-579138.8693647949"/>
 	<facility id="parada_Linha5_Vingt_Rosado_Ida19" x="-4154084.9476446155" y="-579263.6927576495"/>
 	<facility id="parada_Linha5_Vingt_Rosado_Ida20" x="-4154464.54710822" y="-579550.3503436507"/>
-	<facility id="parada_Linha5_Vingt_Rosado_Ida21" x="-4154627.073564778" y="-579676.929405142"/>
+	
 	
 	
 	
 	
 	<!--LINHA 05 - PARADAS VINGT ROSADO - VOLTA===========================================================================-->
-	<facility id="parada_Linha5_Vingt_Rosado_Volta0" x="-4156875.282000839" y="-579175.8904823228"/>
-	<facility id="parada_Linha5_Vingt_Rosado_Volta1" x="-4156815.8373927562" y="-579294.1525159125"/>
-	<facility id="parada_Linha5_Vingt_Rosado_Volta2" x="-4156751.0494491146" y="-579408.8378156853"/>
-	<facility id="parada_Linha5_Vingt_Rosado_Volta3" x="-4156589.636187464" y="-579679.6791824054"/>
-	<facility id="parada_Linha5_Vingt_Rosado_Volta4" x="-4156484.9958661185" y="-579864.2274874938"/>
-	<facility id="parada_Linha5_Vingt_Rosado_Volta5" x="-4156304.9922495056" y="-580163.0939313294"/>
-	<facility id="parada_Linha5_Vingt_Rosado_Volta6" x="-4155463.416899109" y="-580332.8102172194"/>
+	
+	
+	
+	
+	
+	
 	<facility id="parada_Linha5_Vingt_Rosado_Volta7" x="-4154756.7607715526" y="-579802.0779133695"/>
 	<facility id="parada_Linha5_Vingt_Rosado_Volta8" x="-4154093.8532038787" y="-579330.2571271762"/>
 	<facility id="parada_Linha5_Vingt_Rosado_Volta9" x="-4153329.978858055" y="-579156.5080469869"/>
@@ -453,25 +442,4 @@
 	<facility id="parada_Linha5_Vingt_Rosado_Universidades_Ida18" x="-4153338.8844173183" y="-579138.8693647949"/>
 	<facility id="parada_Linha5_Vingt_Rosado_Universidades_Ida19" x="-4154084.9476446155" y="-579263.6927576495"/>
 	<facility id="parada_Linha5_Vingt_Rosado_Universidades_Ida20" x="-4154464.54710822" y="-579550.3503436507"/>
-	
-	
-	
-
-	<!--LINHA 05 - PARADAS VINGT ROSADO VIA UNIVERSIDADES - VOLTA=========================================================-->
-	
-
-	<!--====================================================================================================================|
-	|																														|
-	|								LINHA 06 - PARADAS UNIVERSIDADES, UERN, UFERSA, IFRN, FACENE							|
-	|																														|
-	|=====================================================================================================================-->
-	<!--LINHA 06 - PARADAS UNIVERSIDADES, UERN, UFERSA, IFRN, FACENE - IDA================================================-->
-	
-	<facility id="parada_Linha6_Universidades_Ida22" x="-4157441.230292033" y="-578564.7986193888"/>
-	<facility id="parada_Linha6_Universidades_Ida23" x="-4157491.8806603434" y="-578784.777666221"/>
-	<facility id="parada_Linha6_Universidades_Ida24" x="-4157621.011269664" y="-578961.7226924836"/>
-	<facility id="parada_Linha6_Universidades_Ida25" x="-4157702.4971369244" y="-579191.8748476574"/>
-	<facility id="parada_Linha6_Universidades_Ida26" x="-4157480.414752792" y="-579318.5203320094"/>
-
-	<!--LINHA 06 - PARADAS UNIVERSIDADES, UERN, UFERSA, IFRN, FACENE - VOLTA==============================================-->
 </facilities>
