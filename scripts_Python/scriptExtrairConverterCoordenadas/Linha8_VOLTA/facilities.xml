@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE facilities SYSTEM "http://www.matsim.org/files/dtd/facilities_v1.dtd">
+
+<facilities>
+	
+	<facility id="parada_Rua_Chico_Linhares_Volta0" x="-4156292.823347" y="-580494.517150"/>
+	<facility id="parada_UPA_Alto_de_Sao_Manoel_Volta" x="-4156332.488163732" y="-580834.4833578164"/>
+	<facility id="parada_Green_Garden_Residence_Club_Volta" x="-4155996.853799" y="-581145.948738"/>
+	<facility id="parada_Rua_Alfredo_Ananias_Volta0" x="-4155885.184078" y="-581337.787764"/>
+	<facility id="parada_Avenida_Servulo_Marcelino_Volta0" x="-4155795.928218107" y="-581684.3625013507"/>
+	<facility id="parada_EE_Professora_Maria_Stella_Pinheiro_Costa_Volta" x="-4155793.3678698195" y="-581825.0971318644"/>
+	<facility id="parada_Avenida_Pedro_Paraguai_Volta0" x="-4155709.169906" y="-582239.431187"/>
+	<facility id="parada_UBS_da_Familia_Pereira_Francisco_de_Azevedo_Volta" x="-4155448.806278" y="-582315.868215"/>
+	<facility id="parada_Rua_Armando_Duarte_Numero_Volta0" x="-4155585.780836" y="-582519.501235"/>
+	<facility id="parada_Rua_Francisco_Lima_Ferreira_Volta0" x="-4155376.026881" y="-582727.239761"/>
+</facilities>

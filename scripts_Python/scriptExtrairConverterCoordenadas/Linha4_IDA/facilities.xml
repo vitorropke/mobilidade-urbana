@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE facilities SYSTEM "http://www.matsim.org/files/dtd/facilities_v1.dtd">
+
+<facilities>
+	<facility id="parada_Linha4_Abolicao_V_Ida0" x="-4159196.7386618424" y="-572798.8642016767"/>
+	<facility id="parada_Linha4_Abolicao_V_Ida1" x="-4159536.597067234" y="-573020.4795270677"/>
+	<facility id="parada_Linha4_Abolicao_V_Ida2" x="-4159554.8534637247" y="-573116.4556741343"/>
+	<facility id="parada_Linha4_Abolicao_V_Ida3" x="-4159613.852793845" y="-573170.6078719851"/>
+	<facility id="parada_Linha4_Abolicao_V_Ida4" x="-4159683.984073045" y="-573234.7634703425"/>
+	<facility id="parada_Linha4_Abolicao_V_Ida5" x="-4159923.0983392685" y="-573444.9237562835"/>
+	<facility id="parada_Linha4_Abolicao_V_Ida6" x="-4160018.276503897" y="-573502.8540235026"/>
+	<facility id="parada_Linha4_Abolicao_V_Ida7" x="-4160058.3515205826" y="-573572.307815296"/>
+	<facility id="parada_Linha4_Abolicao_V_Ida8" x="-4160006.03135991" y="-573663.5121251128"/>
+	<facility id="parada_Linha4_Abolicao_V_Ida9" x="-4159988.4428803646" y="-573697.7137714538"/>
+	<facility id="parada_Linha4_Abolicao_V_Ida10" x="-4159955.9375890526" y="-573758.4049686971"/>
+	<facility id="parada_Linha4_Abolicao_V_Ida11" x="-4159899.164648748" y="-573860.786553292"/>
+	<facility id="parada_Linha4_Abolicao_V_Ida12" x="-4159836.38045594" y="-573969.09212371"/>
+	<facility id="parada_Linha4_Abolicao_V_Ida13" x="-4159542.6083197366" y="-574028.4423050578"/>
+	<facility id="parada_Linha4_Abolicao_V_Ida14" x="-4159484.3882260523" y="-574135.8539645725"/>
+	<facility id="parada_Linha4_Abolicao_V_Ida15" x="-4159422.38326968" y="-574237.2748626863"/>
+	<facility id="parada_Linha4_Abolicao_V_Ida16" x="-4159356.5934506217" y="-574350.3424573853"/>
+	<facility id="parada_Linha4_Abolicao_V_Ida17" x="-4159302.158219624" y="-574445.292103847"/>
+	<facility id="parada_Linha4_Abolicao_V_Ida18" x="-4159185.6067127627" y="-574634.2864278236"/>
+	<facility id="parada_Linha4_Abolicao_V_Ida19" x="-4159064.825065252" y="-574806.9625617871"/>
+	<facility id="parada_Linha4_Abolicao_V_Ida20" x="-4158909.534375596" y="-575031.5572894922"/>
+	<facility id="parada_Linha4_Abolicao_V_Ida21" x="-4158821.9259363413" y="-575142.6924871511"/>
+	<facility id="parada_Linha4_Abolicao_V_Ida22" x="-4158734.4288165784" y="-575265.6981060888"/>
+	<facility id="parada_Linha4_Abolicao_V_Ida23" x="-4158646.820377324" y="-575379.7621169621"/>
+	<facility id="parada_Linha4_Abolicao_V_Ida24" x="-4158575.241944744" y="-575472.1200095619"/>
+	<facility id="parada_Linha4_Abolicao_V_Ida25" x="-4158664.4088568687" y="-575584.8989620985"/>
+	<facility id="parada_Linha4_Abolicao_V_Ida26" x="-4158793.4281466985" y="-575670.7519203146"/>
+	<facility id="parada_Linha4_Abolicao_V_Ida27" x="-4158806.0072491583" y="-575894.3657769776"/>
+	<facility id="parada_Linha4_Abolicao_V_Ida28" x="-4158712.832835364" y="-575992.8383630038"/>
+	<facility id="parada_Linha4_Abolicao_V_Ida29" x="-4158298.3903711406" y="-576534.4959216001"/>
+	<facility id="parada_Linha4_Abolicao_V_Ida30" x="-4158214.2328361007" y="-576676.7515769599"/>
+	<facility id="parada_Linha4_Abolicao_V_Ida31" x="-4158154.0089915814" y="-576768.775836412"/>
+	<facility id="parada_Linha4_Abolicao_V_Ida32" x="-4157667.765455797" y="-577570.6539016819"/>
+	<facility id="parada_Linha4_Abolicao_V_Ida33" x="-4157713.1838080403" y="-577626.2737715637"/>
+	<facility id="parada_Linha4_Abolicao_V_Ida34" x="-4157288.9452286274" y="-577984.11535674"/>
+	<facility id="parada_Linha4_Abolicao_V_Ida35" x="-4157059.404438611" y="-578278.8715954764"/>
+</facilities>

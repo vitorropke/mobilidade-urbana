@@ -1,0 +1,35 @@
+				<stop refId="parada_Linha3_Santo_Antonio0" departureOffset="00:00:00"/>
+				<stop refId="parada_Linha3_Santo_Antonio1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha3_Santo_Antonio2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha3_Santo_Antonio3" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha3_Santo_Antonio4" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha3_Santo_Antonio5" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha3_Santo_Antonio6" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha3_Santo_Antonio7" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha3_Santo_Antonio8" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha3_Santo_Antonio9" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha3_Santo_Antonio10" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha3_Santo_Antonio11" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha3_Santo_Antonio12" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha3_Santo_Antonio13" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha3_Santo_Antonio14" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha3_Santo_Antonio15" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha3_Santo_Antonio16" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha3_Santo_Antonio17" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha3_Santo_Antonio18" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha3_Santo_Antonio19" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha3_Santo_Antonio20" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha3_Santo_Antonio21" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha3_Santo_Antonio22" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha3_Santo_Antonio23" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				
+				<stop refId="parada_Praca_Dos_Hospitais" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Linha3_Santo_Antonio24" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Estacao_Das_Artes" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Teatro_Dix-Huit" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Loterica_Sorteca" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Central" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Caixa_Economica_Federal" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Oficinas" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_AeC" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="terminal_Carcara" arrivalOffset="00:02:00"/>

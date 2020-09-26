@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE facilities SYSTEM "http://www.matsim.org/files/dtd/facilities_v1.dtd">
+
+<facilities>
+	<facility id="parada_Linha9_Ida0" x="-4156477.8714187075" y="-583657.0205643732"/>
+	<facility id="parada_Linha9_Ida1" x="-4156845.2257383256" y="-583453.1233705836"/>
+	<facility id="parada_Linha9_Ida2" x="-4157002.6314983075" y="-583351.9574945973"/>
+	<facility id="parada_Linha9_Ida3" x="-4157209.908390165" y="-583213.9026402917"/>
+	<facility id="parada_Linha9_Ida4" x="-4157438.4473047624" y="-583025.2094825705"/>
+	<facility id="parada_Linha9_Ida5" x="-4157623.794256934" y="-582907.9472256594"/>
+	<facility id="parada_Linha9_Ida6" x="-4157877.9366544145" y="-582850.0427708835"/>
+	<facility id="parada_Linha9_Ida7" x="-4157959.979119129" y="-583047.6782501338"/>
+	<facility id="parada_Linha9_Ida8" x="-4158107.7000834118" y="-582917.560711206"/>
+	<facility id="parada_Linha9_Ida9" x="-4158043.134778751" y="-582712.7713976711"/>
+	<facility id="parada_Linha9_Ida10" x="-4157914.004169432" y="-582496.3571409563"/>
+	<facility id="parada_Linha9_Ida11" x="-4159295.367730685" y="-581557.8245361713"/>
+	<facility id="parada_Linha9_Ida12" x="-4158632.905440975" y="-581028.4243579645"/>
+	<facility id="parada_Linha9_Ida13" x="-4158433.754871945" y="-580768.532361645"/>
+	<facility id="parada_Linha9_Ida14" x="-4158202.3216505856" y="-580387.5827344238"/>
+	<facility id="parada_Linha9_Ida15" x="-4157864.2443570467" y="-579860.7623119527"/>
+	<facility id="parada_Linha9_Ida16" x="-4157672.4408744103" y="-579552.2505928018"/>
+	<facility id="parada_Linha9_Ida17" x="-4157523.60671522" y="-579317.6261000781"/>
+</facilities>

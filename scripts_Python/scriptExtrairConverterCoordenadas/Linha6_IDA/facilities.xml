@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE facilities SYSTEM "http://www.matsim.org/files/dtd/facilities_v1.dtd">
+
+<facilities>
+	<facility id="parada_UERN" x="-4154089.400424247" y="-580321.9227872522"/>
+	<facility id="parada_Linha6_Universidades_Ida0" x="-4154293.8943288345" y="-580215.161230164"/>
+	<facility id="parada_Linha6_Universidades_Ida1" x="-4154445.956753258" y="-580112.4574582785"/>
+	<facility id="parada_UFERSA_Ida" x="-4155081.591045687" y="-580007.1940723791"/>
+	<facility id="parada_Linha6_Universidades_Ida2" x="-4155090.162646478" y="-580392.9482077922"/>
+	<facility id="parada_UFERSA_Lateral_Ida" x="-4154817.875171998" y="-580580.0693477748"/>
+	<facility id="parada_Linha6_Universidades_Ida3" x="-4154687.965326243" y="-580669.7177646335"/>
+	<facility id="parada_Linha6_Universidades_Ida4" x="-4154395.75166291" y="-580873.9422037813"/>
+	<facility id="parada_Linha6_Universidades_Ida5" x="-4154197.9369277703" y="-581008.9743430049"/>
+	<facility id="parada_Linha6_Universidades_Ida6" x="-4154047.5442957086" y="-581114.8316734764"/>
+	<facility id="parada_Linha6_Universidades_Ida7" x="-4154070.9213887756" y="-581290.6647409907"/>
+	<facility id="parada_Linha6_Universidades_Ida8" x="-4154212.2971420824" y="-581192.7436649359"/>
+	<facility id="parada_Linha6_Universidades_Ida9" x="-4154283.6529356814" y="-581143.783178139"/>
+	<facility id="parada_IFRN_Ida" x="-4154567.4063177137" y="-581057.8229540222"/>
+	<facility id="parada_Linha6_Universidades_Ida10" x="-4154945.6699474286" y="-581391.6040754183"/>
+	<facility id="parada_Linha6_Universidades_Ida11" x="-4155358.8878972535" y="-581670.8367892291"/>
+	<facility id="parada_Linha6_Universidades_Ida12" x="-4155518.965325014" y="-581381.2418579877"/>
+	<facility id="parada_Linha6_Universidades_Ida13" x="-4155676.8163629593" y="-581126.8258668162"/>
+	<facility id="parada_Linha6_Universidades_Ida14" x="-4155860.048244805" y="-580853.665049006"/>
+	<facility id="parada_Linha6_Universidades_Ida15" x="-4156018.7898386763" y="-580603.7333888423"/>
+	<facility id="parada_Linha6_Universidades_Ida16" x="-4156186.993589265" y="-580324.8737947972"/>
+	<facility id="parada_Linha6_Universidades_Ida17" x="-4156313.8978087693" y="-580121.2433867494"/>
+	<facility id="parada_Linha6_Universidades_Ida18" x="-4156458.279188328" y="-579892.3960175905"/>
+	<facility id="parada_Linha6_Universidades_Ida19" x="-4156536.202831883" y="-579762.3961096862"/>
+	<facility id="parada_Linha6_Universidades_Ida20" x="-4156812.9430859946" y="-579176.494087661"/>
+	<facility id="parada_Linha6_Universidades_Ida21" x="-4156864.2613712507" y="-578890.586938058"/>
+	<facility id="parada_Linha6_Universidades_Ida22" x="-4157003.9673321964" y="-578698.8203248462"/>
+	<facility id="parada_Linha6_Universidades_Ida23" x="-4157441.230292033" y="-578564.7986193888"/>
+	<facility id="parada_Linha6_Universidades_Ida24" x="-4157491.8806603434" y="-578784.777666221"/>
+	<facility id="parada_Linha6_Universidades_Ida25" x="-4157621.011269664" y="-578961.7226924836"/>
+	<facility id="parada_Linha6_Universidades_Ida26" x="-4157702.4971369244" y="-579191.8748476574"/>
+	<facility id="parada_Linha6_Universidades_Ida27" x="-4157480.414752792" y="-579318.5203320094"/>
+	<facility id="parada_Linha6_Universidades_Ida28" x="-4157254.2135475" y="-579402.5781843684"/>
+	<facility id="terminal_Carcara" x="-4157010.4238626626" y="-579083.7513058769"/>
+</facilities>

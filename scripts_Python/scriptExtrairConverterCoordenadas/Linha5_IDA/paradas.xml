@@ -1,0 +1,65 @@
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida_Volta" x="-4151620.668076925" y="-580653.1406235682" linkRefId="368028885_0_r"/>
+		
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida0" x="-4151816.4790612296" y="-580509.7591357834" linkRefId="368028895_1_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida1" x="-4151956.1850221753" y="-580414.7454475632" linkRefId="368028895_0_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida2" x="-4151873.3633210254" y="-580215.0606277896" linkRefId="368028928_3"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida3" x="-4152039.4520012895" y="-580035.2508795979" linkRefId="745523878_0"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida4" x="-4152276.339877697" y="-579872.9463170333" linkRefId="368028874_1"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida5" x="-4152365.506789822" y="-579878.1999712507" linkRefId="368028851_13_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida6" x="-4152483.0601721006" y="-580037.0393617123" linkRefId="368028851_4_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida7" x="-4152568.7761800103" y="-580167.0844893645" linkRefId="368028851_0_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida8" x="-4152675.0862937183" y="-580156.6889184852" linkRefId="376861944_0"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida9" x="-4152829.70906643" y="-580051.9061210494" linkRefId="376861944_3"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida10" x="-4152914.6458379054" y="-579994.0040234495" linkRefId="376861944_5"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida11" x="-4153056.355549686" y="-579926.2653365688" linkRefId="349238414_1"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida12" x="-4153160.439273577" y="-579866.5748645723" linkRefId="349238414_3"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida13" x="-4153374.9519323367" y="-579720.2551764752" linkRefId="349238414_7"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida14" x="-4153458.5528699216" y="-579663.1358086165" linkRefId="349238414_7"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida15" x="-4153445.4171700077" y="-579601.7241564185" linkRefId="349238385_5"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida16" x="-4153251.8325755186" y="-579305.8893070174" linkRefId="349238385_11"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida17" x="-4153221.1083960594" y="-579223.843589209" linkRefId="368028857_3"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida18" x="-4153338.8844173183" y="-579138.8693647949" linkRefId="368028857_3"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida19" x="-4154084.9476446155" y="-579263.6927576495" linkRefId="349238360_2"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida20" x="-4154464.54710822" y="-579550.3503436507" linkRefId="349238360_6"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida21" x="-4154627.073564778" y="-579676.929405142" linkRefId="349238360_7"/>
+		
+		<facility id="parada_UFERSA_Ida" x="-4155081.591045687" y="-580007.1940723791"/>
+		
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida22" x="-4155447.498211925" y="-580311.1247834272" linkRefId="677249483_3_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida23" x="-4155740.2684727116" y="-580531.444630866" linkRefId="160163563_7_r"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida24" x="-4156018.7898386763" y="-580603.7333888423" linkRefId="171476715_18"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida25" x="-4156123.652799003" y="-580445.9322793" linkRefId="171476715_19"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida26" x="-4156186.993589265" y="-580324.8737947972" linkRefId="171476715_22"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida27" x="-4156313.8978087693" y="-580121.2433867494" linkRefId="171476715_24"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida28" x="-4156458.279188328" y="-579892.3960175905" linkRefId="492359288_1"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida29" x="-4156536.202831883" y="-579762.3961096862" linkRefId="492359288_4"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida30" x="-4156812.9430859946" y="-579176.494087661" linkRefId="492359291_6"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida31" x="-4156864.2613712507" y="-578890.586938058" linkRefId="488900266_3"/>
+		
+		<facility id="parada_Mercado_Central" x="-4157003.9673321964" y="-578698.8203248462"/>
+		<facility id="parada_CIEE" x="-4157040.480125177" y="-578523.3290690613"/>
+		<facility id="parada_Hotel_Caraubas" x="-4156920.8116725744" y="-578539.9839529201"/>
+		
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida32" x="-4156742.1438898505" y="-578612.7513104186" linkRefId="488900238_1"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida33" x="-4156698.7292884416" y="-578587.936627073" linkRefId="488900238_2"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida34" x="-4156520.2841446996" y="-578472.8055528352" linkRefId="488900238_5"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida35" x="-4156451.154740917" y="-578423.8469588133" linkRefId="490163722_0"/>
+		
+		<facility id="parada_Cobal" x="-4156400.949650569" y="-578380.589051281"/>
+		
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida36" x="-4156495.01462029" y="-578218.7354103766" linkRefId="490163739_6"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida37" x="-4156719.8799916916" y="-578082.479076539" linkRefId="490163739_11"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida38" x="-4156818.9543384984" y="-578026.2552517317" linkRefId="490163739_13"/>
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida39" x="-4157013.763447386" y="-577978.4147362716" linkRefId="488546106_9_r"/>
+		
+		<facility id="parada_Praca_Dos_Hospitais" x="-4157137.586872" y="-578160.201966"/>
+		
+		<stopFacility id="parada_Linha5_Vingt_Rosado_Ida40" x="-4157059.404438611" y="-578278.8715954764" linkRefId="491945361_3"/>
+		<facility id="parada_Estacao_Das_Artes" x="-4157185.1954632085" y="-578432.006722123"/>
+		<facility id="parada_Teatro_Dix_Huit" x="-4157267.5718863956" y="-578558.8743964208"/>
+		<facility id="parada_Loterica_Sorteca" x="-4157052.117734" y="-578695.037227"/>
+		<facility id="parada_Central" x="-4156993.725939044" y="-578833.40117623"/>
+		<facility id="parada_Caixa_Economica_Federal" x="-4157167.594377" y="-579124.995512"/>
+		<facility id="parada_Oficinas" x="-4157316.107184381" y="-579363.008384986"/>
+		<facility id="parada_AeC" x="-4157254.2135475" y="-579402.5781843684"/>
+		<facility id="terminal_Carcara" x="-4157010.4238626626" y="-579083.7513058769"/>

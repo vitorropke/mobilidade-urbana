@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE facilities SYSTEM "http://www.matsim.org/files/dtd/facilities_v1.dtd">
+
+<facilities>
+	<facility id="parada_Ida_Volta_Linha7" x="-4153367.716165434" y="-584084.4464589028"/>
+	<facility id="parada_Rua_Sem_Nome_Jardim_das_Palmeiras_Ida0" x="-4153254.003600" y="-584200.145466"/>
+	<facility id="parada_Rua_Sem_Nome_Jardim_das_Palmeiras_Ida1" x="-4153110.087008" y="-584013.531627"/>
+	<facility id="parada_Rua_Sem_Nome_Jardim_das_Palmeiras_Ida2" x="-4153157.099688853" y="-583972.1904563308"/>
+	<facility id="parada_Rua_Professor_Anderson_Araujo_Ida0" x="-4153209.3085300354" y="-583903.5089201257"/>
+	<facility id="parada_Rua_Professor_Anderson_Araujo_Ida1" x="-4153159.2147591785" y="-583826.4546663363"/>
+	<facility id="parada_Avenida_Antonio_Bento_Ida0" x="-4153113.968575" y="-583755.258075"/>
+	<facility id="parada_Avenida_Antonio_Bento_Ida1" x="-4153186.599353913" y="-583719.1735553237"/>
+	<facility id="parada_Avenida_Antonio_Bento_Ida2" x="-4153337.993861393" y="-583648.3683358422"/>
+	<facility id="parada_Avenida_Antonio_Bento_Ida3" x="-4153455.658563161" y="-583590.1726250034"/>
+	<facility id="parada_Avenida_Antonio_Bento_Ida4" x="-4153564.7516641384" y="-583533.8773196294"/>
+	<facility id="parada_Avenida_Antonio_Bento_Ida5" x="-4153661.1543431655" y="-583484.8704822817"/>
+	<facility id="parada_Avenida_Antonio_Bento_Ida6" x="-4153758.4475781186" y="-583435.2376801994"/>
+	<facility id="parada_Avenida_Antonio_Bento_Ida7" x="-4153864.902662" y="-583381.134651"/>
+	<facility id="parada_Assembleia_de_Deus_Congregacao_Liberdade_II_Ida" x="-4153979.6394063253" y="-583284.1037791152"/>
+	<facility id="parada_Avenida_Antonio_Bento_Ida8" x="-4154149.152861" y="-583193.027902"/>
+	<facility id="parada_Assembleia_de_Deus_Ministerio_de_Madureira_Ida" x="-4154290.4434246197" y="-583121.8364127894"/>
+	<facility id="parada_Campo_das_Malvinas_Ida" x="-4154360.698308" y="-583055.680116"/>
+	<facility id="parada_BR_304_Sul_Ida0" x="-4154734.075276" y="-582736.645098"/>
+	<facility id="parada_Lino_Brita" x="-4155055.051079" y="-582209.498327"/>
+</facilities>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE facilities SYSTEM "http://www.matsim.org/files/dtd/facilities_v1.dtd">
+
+<facilities>
+	<facility id="terminal_Praca_Felipe_Guerra" x="-4157205.2329715514" y="-579013.5879012579"/>
+	<facility id="parada_Igreja_Sao_Vicente" x="-4157240.521250132" y="-578854.0801504253"/>
+	<facility id="parada_CIEE" x="-4157040.480125177" y="-578523.3290690613"/>
+	<facility id="parada_Hotel_Caraubas" x="-4156920.8116725744" y="-578539.9839529201"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta0" x="-4156742.1438898505" y="-578612.7513104186"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta1" x="-4156698.7292884416" y="-578587.936627073"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta2" x="-4156520.2841446996" y="-578472.8055528352"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta3" x="-4156451.154740917" y="-578423.8469588133"/>
+	<facility id="parada_Cobal" x="-4156400.949650569" y="-578380.589051281"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta4" x="-4156495.01462029" y="-578218.7354103766"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta5" x="-4156719.8799916916" y="-578082.479076539"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta6" x="-4156818.9543384984" y="-578026.2552517317"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta7" x="-4157013.763447386" y="-577978.4147362716"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta8" x="-4157047.1592946243" y="-578031.1287266207"/>
+	<facility id="parada_Praca_Dos_Hospitais" x="-4157137.586872" y="-578160.201966"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta9" x="-4157218.9252689183" y="-578247.4621689818"/>
+	<facility id="parada_Colegio_Diocesano_Volta" x="-4157528.3934533237" y="-578023.2372743305"/>
+	<facility id="parada_EE_Jeronimo_Rosado_Volta" x="-4157640.937458515" y="-577760.1148518234"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta10" x="-4157745.1325018983" y="-577683.3244231587"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta11" x="-4157528.0594948516" y="-577220.5716424013"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta12" x="-4157696.5972039127" y="-577123.4386537113"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta13" x="-4157921.0172973513" y="-576982.0427695166"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta14" x="-4158155.2335059806" y="-576744.2971258044"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta15" x="-4158193.416091323" y="-576687.5154918088"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta16" x="-4158269.002025571" y="-576567.804755305"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta17" x="-4158588.934242111" y="-576103.9415359223"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta18" x="-4158786.63765776" y="-575891.4596641458"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta19" x="-4158803.224261888" y="-575688.1438354695"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta20" x="-4158646.597738342" y="-575586.3184802871"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta21" x="-4158551.864851677" y="-575487.6787998759"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta22" x="-4158632.126204539" y="-575379.6950533056"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta23" x="-4158716.172420088" y="-575267.7211898386"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta24" x="-4158804.1148178144" y="-575145.3750244987"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta25" x="-4158892.8364519766" y="-575032.2055683265"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta26" x="-4159047.793183161" y="-574812.7411671007"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta27" x="-4159182.044489058" y="-574616.2129645942"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta28" x="-4159299.152593372" y="-574427.5428253833"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta29" x="-4159352.585948953" y="-574334.6944995812"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta30" x="-4159416.8172951406" y="-574223.6388066853"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta31" x="-4159469.9166922485" y="-574137.0834434056"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta32" x="-4159801.20349685" y="-573975.5748153061"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta33" x="-4159914.0814605136" y="-573830.161478687"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta34" x="-4160030.0763699203" y="-573616.2334057895"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta35" x="-4159828.8107305667" y="-573369.1103985474"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta36" x="-4159762.575633545" y="-573306.072374022"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta37" x="-4159691.6651179087" y="-573241.9167113736"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta38" x="-4159627.099813249" y="-573185.6967270235"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta39" x="-4159467.24502447" y="-573041.1791579487"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta40" x="-4159392.6609656387" y="-572968.4175230893"/>
+	<facility id="parada_Linha4_Abolicao_V_Volta41" x="-4159294.6998137403" y="-572886.2673795643"/>
+	<facility id="parada_Linha4_Abolicao_V_Ida_Volta" x="-4159196.7386618424" y="-572798.8642016767"/>
+</facilities>

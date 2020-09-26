@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<vehicleDefinitions xmlns="http://www.matsim.org/files/dtd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.matsim.org/files/dtd http://www.matsim.org/files/dtd/vehicleDefinitions_v1.0.xsd">
-	<!--Categorias de veículos===========================================================================================================-->
-	
-	<!--Veículos grandes=============================================-->
+
+<vehicleDefinitions xmlns="http://www.matsim.org/files/dtd" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.matsim.org/files/dtd http://www.matsim.org/files/dtd/vehicleDefinitions_v1.0.xsd">
+	<!--Categorias de veículos============================================================================================-->
+	<!--Veículos grandes=========================================================-->
 	<vehicleType id="Mercedes-Benz_OF-1722M_Caio_Apache_Vip_II">
 		<description>pt</description>
 		<capacity>
@@ -21,7 +23,7 @@
 		<length meter="13"/>
 	</vehicleType>
 
-	<!--Veículo médio===============================================-->
+	<!--Veículo médio============================================================-->
 	<vehicleType id="Mercedes-Benz_OF-1418_Neobus_Spectrum_City">
 		<description>pt</description>
 		<capacity>
@@ -31,7 +33,7 @@
 		<length meter="10"/>
 	</vehicleType>
 
-	<!--Veículos pequenos============================================-->
+	<!--Veículos pequenos========================================================-->
 	<vehicleType id="Mercedes-Benz_LO-915_Caio_Foz">
 		<description>pt</description>
 		<capacity>
@@ -50,9 +52,8 @@
 		<length meter="8"/>
 	</vehicleType>
 
-	<!--Veículos=========================================================================================================================-->
-	
-	<!--Veículos grandes=============================================-->
+	<!--Veículos==========================================================================================================-->
+	<!--Veículos grandes=========================================================-->
 	<vehicle id="veiculo1" type="Mercedes-Benz_OF-1722M_Marcopolo_Torino_2007"/>
 	<vehicle id="veiculo2" type="Mercedes-Benz_OF-1722M_Marcopolo_Torino_2007"/>
 	<vehicle id="veiculo3" type="Mercedes-Benz_OF-1722M_Marcopolo_Torino_2007"/>
@@ -80,7 +81,7 @@
 	<vehicle id="veiculo25" type="Mercedes-Benz_OF-1722M_Marcopolo_Torino_2007"/>
 	<vehicle id="veiculo26" type="Mercedes-Benz_OF-1722M_Caio_Apache_Vip_II"/>
 	
-	<!--Veículos pequenos============================================-->
+	<!--Veículos pequenos========================================================-->
 	<vehicle id="veiculo27" type="Volksbus_9-150_EOD_Ibrava_Apollo"/>
 	<vehicle id="veiculo28" type="Volksbus_9-150_EOD_Ibrava_Apollo"/>
 	<vehicle id="veiculo29" type="Volksbus_9-150_EOD_Ibrava_Apollo"/>
