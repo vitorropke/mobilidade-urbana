@@ -2,22 +2,27 @@
 <!DOCTYPE facilities SYSTEM "http://www.matsim.org/files/dtd/facilities_v1.dtd">
 
 <facilities>
-	<facility id="parada_Linha9_Ida0" x="-4156477.8714187075" y="-583657.0205643732"/>
-	<facility id="parada_Linha9_Ida1" x="-4156845.2257383256" y="-583453.1233705836"/>
-	<facility id="parada_Linha9_Ida2" x="-4157002.6314983075" y="-583351.9574945973"/>
-	<facility id="parada_Linha9_Ida3" x="-4157209.908390165" y="-583213.9026402917"/>
-	<facility id="parada_Linha9_Ida4" x="-4157438.4473047624" y="-583025.2094825705"/>
-	<facility id="parada_Linha9_Ida5" x="-4157623.794256934" y="-582907.9472256594"/>
-	<facility id="parada_Linha9_Ida6" x="-4157877.9366544145" y="-582850.0427708835"/>
-	<facility id="parada_Linha9_Ida7" x="-4157959.979119129" y="-583047.6782501338"/>
-	<facility id="parada_Linha9_Ida8" x="-4158107.7000834118" y="-582917.560711206"/>
-	<facility id="parada_Linha9_Ida9" x="-4158043.134778751" y="-582712.7713976711"/>
-	<facility id="parada_Linha9_Ida10" x="-4157914.004169432" y="-582496.3571409563"/>
-	<facility id="parada_Linha9_Ida11" x="-4159295.367730685" y="-581557.8245361713"/>
-	<facility id="parada_Linha9_Ida12" x="-4158632.905440975" y="-581028.4243579645"/>
-	<facility id="parada_Linha9_Ida13" x="-4158433.754871945" y="-580768.532361645"/>
-	<facility id="parada_Linha9_Ida14" x="-4158202.3216505856" y="-580387.5827344238"/>
-	<facility id="parada_Linha9_Ida15" x="-4157864.2443570467" y="-579860.7623119527"/>
-	<facility id="parada_Linha9_Ida16" x="-4157672.4408744103" y="-579552.2505928018"/>
-	<facility id="parada_Linha9_Ida17" x="-4157523.60671522" y="-579317.6261000781"/>
+	<facility id="parada_Ida_Volta_Linha9" x="-4156440.546862" y="-583688.450320"/>
+	<facility id="parada_Rua_Zeus_Ida0" x="-4156870.878374" y="-583428.609212"/>
+	<facility id="parada_Rua_Zeus_Ida1" x="-4157012.257018" y="-583333.361508"/>
+	<facility id="parada_Rua_Zeus_Ida2" x="-4157201.259514" y="-583212.435741"/>
+	<facility id="parada_Rua_Zeus_Ida3" x="-4157442.215302" y="-583006.712645"/>
+	<facility id="parada_Rua_Manoel_Balbino_da_Costa_Ida0" x="-4157618.975930" y="-582899.820239"/>
+	<facility id="parada_Rua_Josefa_Xavier_de_Medeiros_Ida0" x="-4157881.429633" y="-582840.402392"/>
+	<facility id="parada_Rua_Nilza_Pires_de_Almeida_Ida0" x="-4157959.979119129" y="-583047.6782501338"/>
+	<facility id="parada_Rua_Antonio_Geraldo_de_Medeiros_Ida0" x="-4158105.216948" y="-582925.498303"/>
+	<facility id="parada_Rua_Januario_Granjeiro_Ida0" x="-4158040.573914" y="-582715.595057"/>
+	<facility id="parada_Rua_Januario_Granjeiro_Ida1" x="-4157914.004169432" y="-582496.3571409563"/>
+	<facility id="parada_Avenida_Alberto_Maranhao_Sul_Ida0" x="-4159308.950852" y="-581569.338215"/>
+	<facility id="parada_Avenida_Alberto_Maranhao_Sul_Ida1" x="-4158891.533018" y="-581252.841145"/>
+	<facility id="parada_Multmoveis_Ida" x="-4158632.905440975" y="-581028.4243579645"/>
+	<facility id="parada_Posto_BH" x="-4158487.849962" y="-580886.779439"/>
+	<facility id="parada_Avenida_Alberto_Maranhao_Sul_Ida2" x="-4158433.955886" y="-580766.898709"/>
+	<facility id="parada_Avenida_Alberto_Maranhao_Sul_Ida3" x="-4158320.046799" y="-580592.377447"/>
+	<facility id="parada_Avenida_Alberto_Maranhao_Sul_Ida4" x="-4158228.083499" y="-580444.877869"/>
+	<facility id="parada_Ster_Bom_Loja_da_Fabrica_Ida" x="-4158022.061821" y="-580116.437513"/>
+	<facility id="parada_Praca_da_Igreja_de_Nossa_Senhora_da_Conceicao_Ida" x="-4157864.2443570467" y="-579860.7623119527"/>
+	<facility id="parada_Churrascaria_Mossoro" x="-4157667.943401" y="-579555.700251"/>
+	<facility id="parada_Holanda_Pneus" x="-4157498.945909" y="-579286.976323"/>
+	<facility id="parada_Shopping_Boulevard" x="-4157305.464681" y="-578962.716118"/>
 </facilities>
