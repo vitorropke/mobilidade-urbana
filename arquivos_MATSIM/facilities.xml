@@ -21,6 +21,7 @@
 	<!--PARADAS RUAS======================================================================================================-->
 	<facility id="parada_Rua_Doutor_Joao_Marcelino_Volta0" x="-4157218.9252689183" y="-578247.4621689818"/>
 	<facility id="parada_Rua_Doutor_Mario_Negocio0" x="-4156698.7292884416" y="-578587.936627073"/>
+	<facility id="parada_Rua_Ferreira_Itajuba_Ida0" x="-4157288.9452286274" y="-577984.11535674"/>
 	<facility id="parada_Rua_Nisia_Floresta_Ida0" x="-4157618.751993" y="-579238.979244"/>
 	<facility id="parada_Rua_Nisia_Floresta_Ida1" x="-4157480.414752792" y="-579318.5203320094"/>
 	<facility id="parada_Rua_Nisia_Floresta_Ida2" x="-4157368.764095" y="-579384.911266"/>
@@ -48,7 +49,6 @@
 	<facility id="parada_Mercado_Central" x="-4157003.9673321964" y="-578698.8203248462"/>
 	<facility id="parada_Nossa_Corretora_de_Seguros" x="-4157441.910454" y="-578572.510170"/>
 	<facility id="parada_Oficinas" x="-4157316.107184381" y="-579363.008384986"/>
-	<facility id="parada_Pousada_Mossoro" x="-4156112.852961" y="-580479.662689"/>
 	<facility id="parada_Praca_da_Convivencia" x="-4157558.662337" y="-578876.127296"/>
 	<facility id="parada_Praca_de_Eventos_Ida" x="-4157059.404438611" y="-578278.8715954764"/>
 	<facility id="parada_Praca_do_Patins_Sadraque_Tavares" x="-4157621.011269664" y="-578961.7226924836"/>
@@ -82,6 +82,7 @@
 	<facility id="parada_Locavelthe" x="-4155948.4359204946" y="-580759.4780771747"/>
 	<facility id="parada_O_Sebosao" x="-4156815.8373927562" y="-579294.1525159125"/>
 	<facility id="parada_Oeste_Trigo" x="-4155694.763318" y="-581103.699365"/>
+	<facility id="parada_Pousada_Mossoro" x="-4156112.852961" y="-580479.662689"/>
 
 	<!--====================================================================================================================|
 	|										PARADAS ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO										|
@@ -182,7 +183,6 @@
 	<facility id="parada_Rua_Expedicionario_Claudionor_Amancio_de_Oliveira_Ida0" x="-4159454.882874" y="-572701.299314"/>
 	<facility id="parada_Rua_Expedicionario_Claudionor_Amancio_de_Oliveira_Ida1" x="-4159515.868276" y="-572756.089137"/>
 	<facility id="parada_Rua_Expedicionario_Claudionor_Amancio_de_Oliveira_Ida2" x="-4159574.838249" y="-572809.386050"/>
-	<facility id="parada_Rua_Ferreira_Itajuba_Ida0" x="-4157288.9452286274" y="-577984.11535674"/>
 	<facility id="parada_Rua_Francisco_Alves_da_Silva_Ida0" x="-4159460.2318965504" y="-574004.4786853797"/>
 	<facility id="parada_Rua_Francisco_Alves_da_Silva_Volta0" x="-4159445.315084784" y="-574006.501733183"/>
 	<facility id="parada_Rua_Francisco_Gomes_Monteiro_Ida0" x="-4158084.3229903453" y="-572813.7294404717"/>
