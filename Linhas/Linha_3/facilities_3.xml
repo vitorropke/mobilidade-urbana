@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE facilities SYSTEM "http://www.matsim.org/files/dtd/facilities_v1.dtd">
+
+<facilities>
+	<!--====================================================================================================================|
+	|																														|
+	|														TERMINAIS														|
+	|																														|
+	|=====================================================================================================================-->
+	<facility id="terminal_Carcara" x="-4157012.257018" y="-579099.466738"/>
+
+	<!--====================================================================================================================|
+	|																														|
+	|														PARADAS															|
+	|																														|
+	|=====================================================================================================================-->
+	<!--====================================================================================================================|
+	|													PARADAS CENTRAIS													|
+	|=====================================================================================================================-->
+	<!--PARADAS RUAS======================================================================================================-->
+	<facility id="parada_Rua_Prudente_de_Morais0" x="-4156525.269545" y="-578195.658595"/>
+
+	<!--PARADAS MARCADAS==================================================================================================-->
+	<facility id="parada_AeC" x="-4157253.212806" y="-579415.665227"/>
+	<facility id="parada_Caixa_Economica_Federal" x="-4157167.594377" y="-579124.995512"/>
+	<facility id="parada_Central" x="-4156993.725939044" y="-578833.40117623"/>
+	<facility id="parada_Cirne_Pneus_Mossoro" x="-4156718.526836" y="-578076.598966"/>
+	<facility id="parada_Estacao_das_Artes" x="-4157185.1954632085" y="-578432.006722123"/>
+	<facility id="parada_Loterica_Sorteca" x="-4157052.117734" y="-578695.037227"/>
+	<facility id="parada_Oficinas" x="-4157316.107184381" y="-579363.008384986"/>
+	<facility id="parada_Praca_de_Eventos_Ida" x="-4157059.404438611" y="-578278.8715954764"/>
+	<facility id="parada_Praca_dos_Hospitais" x="-4157137.586872" y="-578160.201966"/>
+	<facility id="parada_Reboucas_Supermercados_Centro" x="-4156823.403813" y="-578016.360019"/>
+	<facility id="parada_Teatro_Municipal_Dix_Huit_Rosado" x="-4157267.5718863956" y="-578558.8743964208"/>
+
+	<!--====================================================================================================================|
+	|												PARADAS SANTO ANTÔNIO, BARROCAS											|
+	|=====================================================================================================================-->
+	<!--PARADA IDA========================================================================================================-->
+	<facility id="parada_Ida_Linha3" x="-4157048.385457" y="-575810.584447"/>
+
+	<!--PARADAS AVENIDAS==================================================================================================-->
+	<facility id="parada_Avenida_Alberto_Maranhao_Norte_Ida0" x="-4155646.542302" y="-576175.153242"/>
+	<facility id="parada_Avenida_Alberto_Maranhao_Norte_Ida1" x="-4156004.7635828364" y="-576785.4303064636"/>
+
+	<!--PARADAS RUAS======================================================================================================-->
+	<facility id="parada_Rua_Jeronimo_Rosado_de_Souza_Ida0" x="-4156580.507241" y="-576030.938068"/>
+	<facility id="parada_Rua_Joao_Cordeiro_Ida0" x="-4156108.747457" y="-576985.505175"/>
+	<facility id="parada_Rua_Joao_Cordeiro_Ida1" x="-4155909.593168" y="-577115.089824"/>
+	<facility id="parada_Rua_Jose_Dutra_de_Souza_Ida0" x="-4156447.638188" y="-575875.078190"/>
+	<facility id="parada_Rua_Seis_de_Janeiro_Ida0" x="-4156275.654874" y="-576027.653664"/>
+	<facility id="parada_Rua_Seis_de_Janeiro_Ida1" x="-4156194.2293561664" y="-575880.170534665"/>
+	<facility id="parada_Rua_Venceslau_Braz_Ida0" x="-4155859.431369" y="-577246.465967"/>
+	<facility id="parada_Rua_Venceslau_Braz_Ida1" x="-4156102.178650" y="-577625.068123"/>
+	<facility id="parada_Rua_Zeca_Cirilino_Ida0" x="-4156048.135282" y="-575877.466847"/>
+	<facility id="parada_Rua_Zeca_Cirilino_Ida1" x="-4155916.012685" y="-575961.965593"/>
+	<facility id="parada_Rua_Zeca_Cirilino_Ida2" x="-4155786.129453" y="-576050.793780"/>
+
+	<!--PARADAS MARCADAS==================================================================================================-->
+	<facility id="parada_EM_Raimunda_Nogueira_do_Couto_Ida" x="-4156531.390479" y="-575703.542749"/>
+	<facility id="parada_Igreja_Universal_do_Reino_de_Deus_Barrocas_Ida" x="-4155805.388001" y="-576439.323792"/>
+	<facility id="parada_Primeira_Igreja_Metodista_Wesleyana_Ida" x="-4156362.094404" y="-576165.897196"/>
+	<facility id="parada_UBS_Joaquim_Saldanha_Ida" x="-4156860.427999" y="-575481.397636"/>
+</facilities>

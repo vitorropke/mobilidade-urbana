@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<vehicleDefinitions xmlns="http://www.matsim.org/files/dtd" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.matsim.org/files/dtd http://www.matsim.org/files/dtd/vehicleDefinitions_v1.0.xsd">
+	<!--Categorias de veículos============================================================================================-->
+	<!--Veículos grandes=========================================================-->
+	<vehicleType id="Mercedes-Benz_OF-1722M_Caio_Apache_Vip_II">
+		<description>pt</description>
+		<capacity>
+			<seats persons="44"/>
+			<standingRoom persons="30"/>
+		</capacity>
+		<length meter="15"/>
+	</vehicleType>
+
+	<vehicleType id="Mercedes-Benz_OF-1722M_Marcopolo_Torino_2007">
+		<description>pt</description>
+		<capacity>
+			<seats persons="42"/>
+			<standingRoom persons="30"/>
+		</capacity>
+		<length meter="13"/>
+	</vehicleType>
+
+	<!--Veículo médio============================================================-->
+	<vehicleType id="Mercedes-Benz_OF-1418_Neobus_Spectrum_City">
+		<description>pt</description>
+		<capacity>
+			<seats persons="34"/>
+			<standingRoom persons="15"/>
+		</capacity>
+		<length meter="10"/>
+	</vehicleType>
+
+	<!--Veículos pequenos========================================================-->
+	<vehicleType id="Mercedes-Benz_LO-915_Caio_Foz">
+		<description>pt</description>
+		<capacity>
+			<seats persons="23"/>
+			<standingRoom persons="10"/>
+		</capacity>
+		<length meter="8"/>
+	</vehicleType>
+
+	<vehicleType id="Volksbus_9-150_EOD_Ibrava_Apollo">
+		<description>pt</description>
+		<capacity>
+			<seats persons="23"/>
+			<standingRoom persons="10"/>
+		</capacity>
+		<length meter="8"/>
+	</vehicleType>
+
+	<!--Veículos==========================================================================================================-->
+	<!--Veículos grandes=========================================================-->
+	<vehicle id="veiculo1" type="Mercedes-Benz_OF-1722M_Marcopolo_Torino_2007"/>
+	<vehicle id="veiculo2" type="Mercedes-Benz_OF-1722M_Marcopolo_Torino_2007"/>
+	<vehicle id="veiculo3" type="Mercedes-Benz_OF-1722M_Marcopolo_Torino_2007"/>
+	<vehicle id="veiculo4" type="Mercedes-Benz_OF-1722M_Marcopolo_Torino_2007"/>
+	<vehicle id="veiculo5" type="Mercedes-Benz_OF-1722M_Marcopolo_Torino_2007"/>
+	<vehicle id="veiculo6" type="Mercedes-Benz_OF-1722M_Marcopolo_Torino_2007"/>
+	<vehicle id="veiculo7" type="Mercedes-Benz_OF-1722M_Caio_Apache_Vip_II"/>
+	<vehicle id="veiculo8" type="Mercedes-Benz_OF-1722M_Caio_Apache_Vip_II"/>
+	<vehicle id="veiculo9" type="Mercedes-Benz_OF-1722M_Caio_Apache_Vip_II"/>
+	<vehicle id="veiculo10" type="Mercedes-Benz_OF-1722M_Caio_Apache_Vip_II"/>
+	<vehicle id="veiculo11" type="Mercedes-Benz_OF-1722M_Caio_Apache_Vip_II"/>
+	<vehicle id="veiculo12" type="Mercedes-Benz_OF-1722M_Caio_Apache_Vip_II"/>
+	<vehicle id="veiculo13" type="Mercedes-Benz_OF-1722M_Caio_Apache_Vip_II"/>
+	<vehicle id="veiculo14" type="Mercedes-Benz_OF-1722M_Caio_Apache_Vip_II"/>
+	<vehicle id="veiculo15" type="Mercedes-Benz_OF-1722M_Caio_Apache_Vip_II"/>
+	<vehicle id="veiculo16" type="Mercedes-Benz_OF-1722M_Marcopolo_Torino_2007"/>
+	<vehicle id="veiculo17" type="Mercedes-Benz_OF-1722M_Marcopolo_Torino_2007"/>
+	<vehicle id="veiculo18" type="Mercedes-Benz_OF-1722M_Marcopolo_Torino_2007"/>
+	<vehicle id="veiculo19" type="Mercedes-Benz_OF-1418_Neobus_Spectrum_City"/>
+	<vehicle id="veiculo20" type="Mercedes-Benz_OF-1418_Neobus_Spectrum_City"/>
+	<vehicle id="veiculo21" type="Mercedes-Benz_OF-1418_Neobus_Spectrum_City"/>
+	<vehicle id="veiculo22" type="Mercedes-Benz_OF-1722M_Caio_Apache_Vip_II"/>
+	<vehicle id="veiculo23" type="Mercedes-Benz_OF-1722M_Marcopolo_Torino_2007"/>
+	<vehicle id="veiculo24" type="Mercedes-Benz_OF-1722M_Marcopolo_Torino_2007"/>
+	<vehicle id="veiculo25" type="Mercedes-Benz_OF-1722M_Marcopolo_Torino_2007"/>
+	<vehicle id="veiculo26" type="Mercedes-Benz_OF-1722M_Caio_Apache_Vip_II"/>
+	
+	<!--Veículos pequenos========================================================-->
+	<vehicle id="veiculo27" type="Volksbus_9-150_EOD_Ibrava_Apollo"/>
+	<vehicle id="veiculo28" type="Volksbus_9-150_EOD_Ibrava_Apollo"/>
+	<vehicle id="veiculo29" type="Volksbus_9-150_EOD_Ibrava_Apollo"/>
+	<vehicle id="veiculo30" type="Volksbus_9-150_EOD_Ibrava_Apollo"/>
+	<vehicle id="veiculo31" type="Volksbus_9-150_EOD_Ibrava_Apollo"/>
+	<vehicle id="veiculo32" type="Volksbus_9-150_EOD_Ibrava_Apollo"/>
+	<vehicle id="veiculo33" type="Volksbus_9-150_EOD_Ibrava_Apollo"/>
+	<vehicle id="veiculo34" type="Mercedes-Benz_LO-915_Caio_Foz"/>
+	<vehicle id="veiculo35" type="Mercedes-Benz_LO-915_Caio_Foz"/>
+</vehicleDefinitions>

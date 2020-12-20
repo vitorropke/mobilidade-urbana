@@ -4672,33 +4672,33 @@
 				<link refId="488900244_0"/>
 			</route>
 			<departures>
-				<departure id="viagem_Linha5_Vingt_Rosado_Ida0" departureTime="05:10:00" vehicleRefId="veiculo10"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Ida1" departureTime="05:40:00" vehicleRefId="veiculo15"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Ida2" departureTime="06:00:00" vehicleRefId="veiculo16"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Ida3" departureTime="06:18:00" vehicleRefId="veiculo10"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Ida4" departureTime="06:37:00" vehicleRefId="veiculo16"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Ida5" departureTime="07:07:00" vehicleRefId="veiculo10"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Ida6" departureTime="07:32:00" vehicleRefId="veiculo15"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Ida7" departureTime="08:12:00" vehicleRefId="veiculo15"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Ida8" departureTime="08:42:00" vehicleRefId="veiculo10"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Ida9" departureTime="09:12:00" vehicleRefId="veiculo16"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Ida10" departureTime="09:47:00" vehicleRefId="veiculo10"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Ida11" departureTime="10:19:00" vehicleRefId="veiculo15"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Ida12" departureTime="10:47:00" vehicleRefId="veiculo16"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Ida13" departureTime="11:21:00" vehicleRefId="veiculo10"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Ida14" departureTime="11:52:00" vehicleRefId="veiculo15"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Ida15" departureTime="12:20:00" vehicleRefId="veiculo10"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Ida16" departureTime="12:57:00" vehicleRefId="veiculo15"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Ida17" departureTime="13:24:00" vehicleRefId="veiculo10"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Ida18" departureTime="13:59:00" vehicleRefId="veiculo15"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Ida19" departureTime="14:34:00" vehicleRefId="veiculo10"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Ida20" departureTime="15:00:00" vehicleRefId="veiculo15"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Ida21" departureTime="15:35:00" vehicleRefId="veiculo10"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Ida22" departureTime="16:14:00" vehicleRefId="veiculo10"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Ida23" departureTime="16:41:00" vehicleRefId="veiculo15"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Ida24" departureTime="17:10:00" vehicleRefId="veiculo16"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Ida25" departureTime="17:50:00" vehicleRefId="veiculo15"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Ida26" departureTime="18:46:00" vehicleRefId="veiculo10"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida0" departureTime="05:10:00" vehicleRefId="veiculo24"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida1" departureTime="05:40:00" vehicleRefId="veiculo25"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida2" departureTime="06:00:00" vehicleRefId="veiculo26"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida3" departureTime="06:37:00" vehicleRefId="veiculo24"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida4" departureTime="07:07:00" vehicleRefId="veiculo25"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida5" departureTime="07:32:00" vehicleRefId="veiculo26"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida6" departureTime="08:12:00" vehicleRefId="veiculo24"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida7" departureTime="08:42:00" vehicleRefId="veiculo25"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida8" departureTime="09:12:00" vehicleRefId="veiculo26"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida9" departureTime="09:47:00" vehicleRefId="veiculo24"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida10" departureTime="10:19:00" vehicleRefId="veiculo25"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida11" departureTime="10:47:00" vehicleRefId="veiculo26"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida12" departureTime="11:21:00" vehicleRefId="veiculo24"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida13" departureTime="11:52:00" vehicleRefId="veiculo25"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida14" departureTime="12:20:00" vehicleRefId="veiculo26"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida15" departureTime="12:57:00" vehicleRefId="veiculo24"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida16" departureTime="13:24:00" vehicleRefId="veiculo25"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida17" departureTime="13:59:00" vehicleRefId="veiculo26"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida18" departureTime="14:34:00" vehicleRefId="veiculo24"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida19" departureTime="15:00:00" vehicleRefId="veiculo25"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida20" departureTime="15:35:00" vehicleRefId="veiculo26"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida21" departureTime="16:14:00" vehicleRefId="veiculo24"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida22" departureTime="16:41:00" vehicleRefId="veiculo25"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida23" departureTime="17:10:00" vehicleRefId="veiculo26"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida24" departureTime="17:50:00" vehicleRefId="veiculo24"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida25" departureTime="18:20:00" vehicleRefId="veiculo25"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Ida26" departureTime="18:56:00" vehicleRefId="veiculo26"/>
 			</departures>
 		</transitRoute>
 
@@ -5035,8 +5035,8 @@
 				<link refId="488900244_0"/>
 			</route>
 			<departures>
-				<departure id="viagem_Linha5_Vingt_Rosado_Universidades_Ida0" departureTime="19:40:00" vehicleRefId="veiculo10"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Universidades_Ida1" departureTime="20:08:00" vehicleRefId="veiculo15"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Universidades_Ida0" departureTime="19:40:00" vehicleRefId="veiculo25"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Universidades_Ida1" departureTime="20:18:00" vehicleRefId="veiculo26"/>
 			</departures>
 		</transitRoute>
 
@@ -5207,36 +5207,34 @@
 				<link refId="368028885_0_r"/>
 			</route>
 			<departures>
-				<departure id="viagem_Linha5_Vingt_Rosado_Volta0" departureTime="06:05:00" vehicleRefId="veiculo10"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Volta1" departureTime="06:58:00" vehicleRefId="veiculo10"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Volta2" departureTime="07:42:00" vehicleRefId="veiculo10"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Volta3" departureTime="08:05:00" vehicleRefId="veiculo15"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Volta4" departureTime="08:35:00" vehicleRefId="veiculo10"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Volta5" departureTime="09:10:00" vehicleRefId="veiculo15"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Volta6" departureTime="09:40:00" vehicleRefId="veiculo10"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Volta7" departureTime="10:10:00" vehicleRefId="veiculo15"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Volta8" departureTime="10:45:00" vehicleRefId="veiculo10"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Volta9" departureTime="11:20:00" vehicleRefId="veiculo15"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Volta10" departureTime="11:45:00" vehicleRefId="veiculo10"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Volta11" departureTime="12:20:00" vehicleRefId="veiculo15"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Volta12" departureTime="12:50:00" vehicleRefId="veiculo10"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Volta13" departureTime="13:25:00" vehicleRefId="veiculo15"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Volta14" departureTime="13:55:00" vehicleRefId="veiculo10"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Volta15" departureTime="14:25:00" vehicleRefId="veiculo15"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Volta16" departureTime="15:00:00" vehicleRefId="veiculo10"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Volta17" departureTime="15:33:00" vehicleRefId="veiculo15"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Volta18" departureTime="16:00:00" vehicleRefId="veiculo10"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Volta19" departureTime="16:35:00" vehicleRefId="veiculo15"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Volta20" departureTime="17:15:00" vehicleRefId="veiculo10"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Volta21" departureTime="17:40:00" vehicleRefId="veiculo15"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Volta22" departureTime="18:10:00" vehicleRefId="veiculo10"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Volta23" departureTime="18:45:00" vehicleRefId="veiculo15"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Volta24" departureTime="19:12:00" vehicleRefId="veiculo10"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Volta25" departureTime="19:42:00" vehicleRefId="veiculo15"/>		
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta0" departureTime="06:05:00" vehicleRefId="veiculo24"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta1" departureTime="06:58:00" vehicleRefId="veiculo26"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta2" departureTime="07:42:00" vehicleRefId="veiculo24"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta3" departureTime="08:05:00" vehicleRefId="veiculo25"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta4" departureTime="08:35:00" vehicleRefId="veiculo26"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta5" departureTime="09:10:00" vehicleRefId="veiculo24"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta6" departureTime="09:40:00" vehicleRefId="veiculo25"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta7" departureTime="10:10:00" vehicleRefId="veiculo26"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta8" departureTime="10:45:00" vehicleRefId="veiculo24"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta9" departureTime="11:20:00" vehicleRefId="veiculo25"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta10" departureTime="11:45:00" vehicleRefId="veiculo26"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta11" departureTime="12:20:00" vehicleRefId="veiculo24"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta12" departureTime="12:50:00" vehicleRefId="veiculo25"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta13" departureTime="13:25:00" vehicleRefId="veiculo26"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta14" departureTime="13:55:00" vehicleRefId="veiculo24"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta15" departureTime="14:25:00" vehicleRefId="veiculo25"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta16" departureTime="15:00:00" vehicleRefId="veiculo26"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta17" departureTime="15:33:00" vehicleRefId="veiculo24"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta18" departureTime="16:00:00" vehicleRefId="veiculo25"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta19" departureTime="16:35:00" vehicleRefId="veiculo26"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta20" departureTime="17:15:00" vehicleRefId="veiculo24"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta21" departureTime="17:40:00" vehicleRefId="veiculo25"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta22" departureTime="18:15:00" vehicleRefId="veiculo26"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Volta23" departureTime="19:12:00" vehicleRefId="veiculo25"/>
 			</departures>
 		</transitRoute>
 
-		<!--LINHA 05 - VINGT ROSADO - VOLTA===================================================================================-->
+		<!--LINHA 05 - VINGT ROSADO, UERN - VOLTA=============================================================================-->
 		<transitRoute id="Linha5_Vingt_Rosado_UERN_Volta">
 			<transportMode>pt</transportMode>
 			<routeProfile>
@@ -5427,7 +5425,227 @@
 				<link refId="368028885_0_r"/>
 			</route>
 			<departures>
-				<departure id="viagem_Linha5_Vingt_Rosado_UERN_Volta0" departureTime="06:35:00" vehicleRefId="veiculo15"/>	
+				<departure id="viagem_Linha5_Vingt_Rosado_UERN_Volta0" departureTime="06:35:00" vehicleRefId="veiculo25"/>	
+			</departures>
+		</transitRoute>
+
+		<!--LINHA 05 - VINGT ROSADO, IFRN - VOLTA=============================================================================-->
+		<transitRoute id="Linha5_Vingt_Rosado_IFRN_Volta">
+			<transportMode>pt</transportMode>
+			<routeProfile>
+				<stop refId="terminal_Carcara" departureOffset="00:00:00"/>
+				<stop refId="parada_O_Sebosao" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Hotel_VillaOeste_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_JPL_Motos_Ilha_de_Santa_Luzia_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Farmacia_da_familia" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Pousada_Mossoro" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Locavelthe" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Mercadinho_Cocada" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_CITECS" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Presidente_Cafe_Filho_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Presidente_Cafe_Filho_Volta1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Presidente_Cafe_Filho_Volta2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Presidente_Cafe_Filho_Volta3" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Pedro_Valamira_Fernandes_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_FACENE_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Fabrica_de_jarros_Sol_Nascente" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Raimundo_Firmino_de_Oliveira_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Supermercados_Queiroz_Dom_Jaime_Camara_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_IFRN_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Alameda_das_Carnaubeiras_Volta1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Justica_Federal_de_Primeiro_Grau_no_RN" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_UFERSA_Lateral_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Ministerio_Publico_da_Uniao_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_UFERSA_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>				
+				<stop refId="parada_Tenda_Restaurante" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Avenida_Francisco_Mota_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Leite_Do_Sertao_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Joao_Falcao_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Avenida_Joaquim_da_Silveira_Borges_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Pizzaria_Do_Louro_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Avenida_Joaquim_da_Silveira_Borges_Volta1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Andre_Pedro_Fernandes_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Andre_Pedro_Fernandes_Volta1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Andre_Pedro_Fernandes_Volta2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_UBS_Vingt_Rosado" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Professora_Maria_Zelia_Ferreira_Guerra_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Professora_Maria_Zelia_Ferreira_Guerra_Volta1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Professora_Maria_Zelia_Ferreira_Guerra_Volta2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Bioforma_Academia_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Avenida_Doutor_Epitacio_Carvalho_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Avenida_Doutor_Epitacio_Carvalho_Volta1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Francisco_Bandeira_Sobrinho_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Francisco_Bandeira_Sobrinho_Volta1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Igreja_Sagrada_Familia_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Hamilton_Freire_de_Andrade_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Hamilton_Freire_de_Andrade_Volta1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Avenida_Luiz_Marques_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Ida_Volta_Linha5" arrivalOffset="00:02:00"/>
+			</routeProfile>
+			<route>
+				<link refId="488900244_0"/>
+				<link refId="488900239_11"/>
+				<link refId="488900239_12"/>
+				<link refId="159693156_0"/>
+				<link refId="171476713_0"/>
+				<link refId="171476713_1"/>
+				<link refId="171476713_2"/>
+				<link refId="171476713_3"/>
+				<link refId="171476713_4"/>
+				<link refId="171476713_5"/>
+				<link refId="171476713_6"/>
+				<link refId="492137558_0"/>
+				<link refId="492359305_0"/>
+				<link refId="492359305_1"/>
+				<link refId="492359305_2"/>
+				<link refId="492359305_3"/>
+				<link refId="492359305_4"/>
+				<link refId="492359283_0"/>
+				<link refId="492359299_0"/>
+				<link refId="492359299_1"/>
+				<link refId="492359299_2"/>
+				<link refId="492359299_3"/>
+				<link refId="492359299_4"/>
+				<link refId="492359299_5"/>
+				<link refId="492359299_6"/>
+				<link refId="492359299_7"/>
+				<link refId="492359299_8"/>
+				<link refId="492359299_9"/>
+				<link refId="492359299_10"/>
+				<link refId="492359299_11"/>
+				<link refId="492359299_12"/>
+				<link refId="492359303_0"/>
+				<link refId="492359303_1"/>
+				<link refId="162227773_0"/>
+				<link refId="162230039_0"/>
+				<link refId="162230039_1"/>
+				<link refId="162230039_2"/>
+				<link refId="162230039_3"/>
+				<link refId="162230039_4"/>
+				<link refId="162230039_5"/>
+				<link refId="162230039_6"/>
+				<link refId="162229394_1_r"/>
+				<link refId="162229394_0_r"/>
+				<link refId="492359292_3_r"/>
+				<link refId="492359292_2_r"/>
+				<link refId="683389513_6_r"/>
+				<link refId="492359298_2_r"/>
+				<link refId="492359298_1_r"/>
+				<link refId="492359298_0"/>
+				<link refId="666094868_0"/>
+				<link refId="236434949_1"/>
+				<link refId="236434949_2"/>
+				<link refId="236434949_3"/>
+				<link refId="236434949_4"/>
+				<link refId="236434949_5"/>
+				<link refId="236434949_6"/>
+				<link refId="771780908_0"/>
+				<link refId="745522524_0"/>
+				<link refId="746175801_0"/>
+				<link refId="666094867_0"/>
+				<link refId="666094867_1"/>
+				<link refId="682678878_0"/>
+				<link refId="682678878_1"/>
+				<link refId="682678880_0"/>
+				<link refId="682678880_1"/>
+				<link refId="682678880_2"/>
+				<link refId="682678880_3"/>
+				<link refId="682678880_4"/>
+				<link refId="682678880_5"/>
+				<link refId="682678880_6"/>
+				<link refId="682678880_7"/>
+				<link refId="682678880_8"/>
+				<link refId="682678880_9"/>
+				<link refId="350164526_0"/>
+				<link refId="350164526_1"/>
+				<link refId="666094865_3_r"/>
+				<link refId="666094865_2_r"/>
+				<link refId="666094865_1_r"/>
+				<link refId="666094865_0_r"/>
+				<link refId="349894998_0"/>
+				<link refId="368028915_1"/>
+				<link refId="368028915_2"/>
+				<link refId="368028915_3"/>
+				<link refId="368028915_4"/>
+				<link refId="368028915_5"/>
+				<link refId="368028915_6"/>
+				<link refId="770221600_0"/>
+				<link refId="492137571_4"/>
+				<link refId="492137571_5"/>
+				<link refId="492137571_6"/>
+				<link refId="770221601_0"/>
+				<link refId="286301202_0"/>
+				<link refId="286301202_1"/>
+				<link refId="286301202_2"/>
+				<link refId="286301202_3"/>
+				<link refId="682678896_0"/>
+				<link refId="682678896_1"/>
+				<link refId="682678892_16_r"/>
+				<link refId="349238408_5"/>
+				<link refId="349238451_4"/>
+				<link refId="682678893_1"/>
+				<link refId="682678893_2"/>
+				<link refId="349238448_0"/>
+				<link refId="368028872_0"/>
+				<link refId="349238385_13_r"/>
+				<link refId="349238385_12_r"/>
+				<link refId="349238385_11_r"/>
+				<link refId="349238385_10_r"/>
+				<link refId="349238385_9_r"/>
+				<link refId="349238385_8_r"/>
+				<link refId="349238385_7_r"/>
+				<link refId="349238385_6_r"/>
+				<link refId="349238385_5_r"/>
+				<link refId="349238385_4_r"/>
+				<link refId="349238414_7_r"/>
+				<link refId="349238414_6_r"/>
+				<link refId="349238414_5_r"/>
+				<link refId="349238414_4_r"/>
+				<link refId="349238414_3_r"/>
+				<link refId="349238414_2_r"/>
+				<link refId="349238414_1_r"/>
+				<link refId="349238414_0_r"/>
+				<link refId="376861944_5_r"/>
+				<link refId="376861944_4_r"/>
+				<link refId="376861944_3_r"/>
+				<link refId="376861944_2_r"/>
+				<link refId="376861944_1_r"/>
+				<link refId="376861944_0_r"/>
+				<link refId="368028851_0"/>
+				<link refId="368028851_1"/>
+				<link refId="368028851_2"/>
+				<link refId="368028851_3"/>
+				<link refId="368028851_4"/>
+				<link refId="368028851_5"/>
+				<link refId="368028851_6"/>
+				<link refId="368028851_7"/>
+				<link refId="368028851_8"/>
+				<link refId="368028851_9"/>
+				<link refId="368028851_10"/>
+				<link refId="368028851_11"/>
+				<link refId="368028851_12"/>
+				<link refId="368028851_13"/>
+				<link refId="368028930_0"/>
+				<link refId="368028930_1"/>
+				<link refId="745523879_0"/>
+				<link refId="349238468_6"/>
+				<link refId="349238468_7"/>
+				<link refId="349238344_0_r"/>
+				<link refId="368028928_4_r"/>
+				<link refId="368028928_3_r"/>
+				<link refId="349238369_0"/>
+				<link refId="349238369_1"/>
+				<link refId="349238369_2"/>
+				<link refId="349238369_3"/>
+				<link refId="349238369_4"/>
+				<link refId="349238369_5"/>
+				<link refId="349238369_6"/>
+				<link refId="368028885_2_r"/>
+				<link refId="368028885_1_r"/>
+				<link refId="368028885_0_r"/>
+			</route>
+			<departures>
+				<departure id="viagem_Linha5_Vingt_Rosado_IFRN_Volta0" departureTime="22:40:00" vehicleRefId="veiculo26"/>
 			</departures>
 		</transitRoute>
 
@@ -5671,9 +5889,10 @@
 				<link refId="368028885_0_r"/>
 			</route>
 			<departures>
-				<departure id="viagem_Linha5_Vingt_Rosado_Universidades_Volta0" departureTime="20:35:00" vehicleRefId="veiculo10"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Universidades_Volta1" departureTime="21:25:00" vehicleRefId="veiculo10"/>
-				<departure id="viagem_Linha5_Vingt_Rosado_Universidades_Volta2" departureTime="22:40:00" vehicleRefId="veiculo10"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Universidades_Volta0" departureTime="18:45:00" vehicleRefId="veiculo24"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Universidades_Volta1" departureTime="19:52:00" vehicleRefId="veiculo26"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Universidades_Volta2" departureTime="20:35:00" vehicleRefId="veiculo25"/>
+				<departure id="viagem_Linha5_Vingt_Rosado_Universidades_Volta3" departureTime="21:35:00" vehicleRefId="veiculo26"/>
 			</departures>
 		</transitRoute>
 
@@ -5884,8 +6103,8 @@
 				<link refId="488900244_0"/>
 			</route>
 			<departures>
-				<departure id="viagem_Linha6_Universidades_Ida0" departureTime="06:40:00" vehicleRefId="veiculo22"/>
-				<departure id="viagem_Linha6_Universidades_Ida1" departureTime="07:05:00" vehicleRefId="veiculo5"/>
+				<departure id="viagem_Linha6_Universidades_Ida0" departureTime="06:40:00" vehicleRefId="veiculo5"/>
+				<departure id="viagem_Linha6_Universidades_Ida1" departureTime="07:05:00" vehicleRefId="veiculo22"/>
 				<departure id="viagem_Linha6_Universidades_Ida2" departureTime="07:55:00" vehicleRefId="veiculo5"/>
 				<departure id="viagem_Linha6_Universidades_Ida3" departureTime="08:30:00" vehicleRefId="veiculo22"/>
 				<departure id="viagem_Linha6_Universidades_Ida4" departureTime="09:05:00" vehicleRefId="veiculo5"/>
@@ -6617,21 +6836,22 @@
 				<link refId="627602248_0"/>
 			</route>
 			<departures>
-				<departure id="viagem_Linha6_Universidades_Volta0" departureTime="06:35:00" vehicleRefId="veiculo5"/>
-				<departure id="viagem_Linha6_Universidades_Volta1" departureTime="07:25:00" vehicleRefId="veiculo5"/>
-				<departure id="viagem_Linha6_Universidades_Volta2" departureTime="07:55:00" vehicleRefId="veiculo22"/>
-				<departure id="viagem_Linha6_Universidades_Volta3" departureTime="08:35:00" vehicleRefId="veiculo5"/>
-				<departure id="viagem_Linha6_Universidades_Volta4" departureTime="09:10:00" vehicleRefId="veiculo22"/>
-				<departure id="viagem_Linha6_Universidades_Volta5" departureTime="09:45:00" vehicleRefId="veiculo5"/>
-				<departure id="viagem_Linha6_Universidades_Volta6" departureTime="10:20:00" vehicleRefId="veiculo22"/>
-				<departure id="viagem_Linha6_Universidades_Volta7" departureTime="10:50:00" vehicleRefId="veiculo5"/>
-				<departure id="viagem_Linha6_Universidades_Volta8" departureTime="11:40:00" vehicleRefId="veiculo22"/>
-				<departure id="viagem_Linha6_Universidades_Volta9" departureTime="12:10:00" vehicleRefId="veiculo5"/>
-				<departure id="viagem_Linha6_Universidades_Volta10" departureTime="12:55:00" vehicleRefId="veiculo22"/>
-				<departure id="viagem_Linha6_Universidades_Volta11" departureTime="13:25:00" vehicleRefId="veiculo5"/>
-				<departure id="viagem_Linha6_Universidades_Volta12" departureTime="14:40:00" vehicleRefId="veiculo5"/>
-				<departure id="viagem_Linha6_Universidades_Volta13" departureTime="15:50:00" vehicleRefId="veiculo5"/>
-				<departure id="viagem_Linha6_Universidades_Volta14" departureTime="17:00:00" vehicleRefId="veiculo5"/>
+				<departure id="viagem_Linha6_Universidades_Volta0" departureTime="06:35:00" vehicleRefId="veiculo10"/>
+				<departure id="viagem_Linha6_Universidades_Volta1" departureTime="06:35:00" vehicleRefId="veiculo22"/>
+				<departure id="viagem_Linha6_Universidades_Volta2" departureTime="07:25:00" vehicleRefId="veiculo5"/>
+				<departure id="viagem_Linha6_Universidades_Volta3" departureTime="07:55:00" vehicleRefId="veiculo22"/>
+				<departure id="viagem_Linha6_Universidades_Volta4" departureTime="08:35:00" vehicleRefId="veiculo5"/>
+				<departure id="viagem_Linha6_Universidades_Volta5" departureTime="09:10:00" vehicleRefId="veiculo22"/>
+				<departure id="viagem_Linha6_Universidades_Volta6" departureTime="09:45:00" vehicleRefId="veiculo5"/>
+				<departure id="viagem_Linha6_Universidades_Volta7" departureTime="10:20:00" vehicleRefId="veiculo22"/>
+				<departure id="viagem_Linha6_Universidades_Volta8" departureTime="10:50:00" vehicleRefId="veiculo5"/>
+				<departure id="viagem_Linha6_Universidades_Volta9" departureTime="11:40:00" vehicleRefId="veiculo22"/>
+				<departure id="viagem_Linha6_Universidades_Volta10" departureTime="12:10:00" vehicleRefId="veiculo5"/>
+				<departure id="viagem_Linha6_Universidades_Volta11" departureTime="12:55:00" vehicleRefId="veiculo22"/>
+				<departure id="viagem_Linha6_Universidades_Volta12" departureTime="13:25:00" vehicleRefId="veiculo5"/>
+				<departure id="viagem_Linha6_Universidades_Volta13" departureTime="14:40:00" vehicleRefId="veiculo5"/>
+				<departure id="viagem_Linha6_Universidades_Volta14" departureTime="15:50:00" vehicleRefId="veiculo5"/>
+				<departure id="viagem_Linha6_Universidades_Volta15" departureTime="17:00:00" vehicleRefId="veiculo5"/>
 			</departures>
 		</transitRoute>
 
