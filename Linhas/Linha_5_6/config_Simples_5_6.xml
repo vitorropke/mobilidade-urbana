@@ -8,17 +8,17 @@
 	</module>
 
 	<module name="network">
-		<param name="inputNetworkFile" value="network.xml" />
+		<param name="inputNetworkFile" value="../network.xml" />
 	</module>
 
 	<module name="plans">
-		<param name="inputPlansFile" value="population.xml" />
+		<param name="inputPlansFile" value="../population.xml" />
 	</module>
 
 	<module name="transit">
 		<param name="useTransit" value="true" />
-		<param name="transitScheduleFile" value="transit_Schedule_3.xml" />
-		<param name="vehiclesFile" value="transit_Vehicles.xml" />
+		<param name="transitScheduleFile" value="transit_Schedule_5_6.xml" />
+		<param name="vehiclesFile" value="../transit_Vehicles.xml" />
 		<param name="transitModes" value="pt" />
 	</module>
 
@@ -27,7 +27,7 @@
 	</module>
 
 	<module name="controler">
-		<param name="outputDirectory" value="./output_Simples_3" />
+		<param name="outputDirectory" value="./output_Simples_5_6" />
 		<param name="firstIteration" value="0" />
 		<param name="lastIteration" value="0" />
 		<param name="eventsFileFormat" value="xml" />
