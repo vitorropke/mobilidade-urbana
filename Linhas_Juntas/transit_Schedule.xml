@@ -13,8 +13,8 @@
 		|														TERMINAIS														|
 		|																														|
 		|=====================================================================================================================-->
-		<stopFacility id="terminal_Praca_Felipe_Guerra" x="-4157205.2329715514" y="-579013.5879012579" linkRefId="497966183_0"/>
 		<stopFacility id="terminal_Carcara" x="-4157012.257018" y="-579099.466738" linkRefId="488900244_0"/>
+		<stopFacility id="terminal_Praca_Felipe_Guerra" x="-4157205.2329715514" y="-579013.5879012579" linkRefId="497966183_0"/>
 
 		<!--====================================================================================================================|
 		|																														|
@@ -7202,9 +7202,141 @@
 				<link refId="488900244_0"/>
 			</route>
 			<departures>
-				<departure id="viagem_Linha7_Nova_Vida_Ida0" departureTime="18:54:00" vehicleRefId="veiculo8"/>
+				<departure id="viagem_Linha7_Nova_Vida_Ida0" departureTime="18:54:00" vehicleRefId="veiculo18"/>
 				<departure id="viagem_Linha7_Nova_Vida_Ida1" departureTime="20:09:00" vehicleRefId="veiculo18"/>
-				<departure id="viagem_Linha7_Nova_Vida_Ida2" departureTime="21:08:00" vehicleRefId="veiculo18"/>
+			</departures>
+		</transitRoute>
+
+		<!--LINHA 07 - NOVA VIDA ALTERNATIVA - IDA============================================================================-->
+		<transitRoute id="Linha7_Nova_Vida_Alternativa_Ida">
+			<transportMode>pt</transportMode>
+			<routeProfile>
+				<stop refId="parada_Avenida_Antonio_Bento_Volta4" departureOffset="00:00:00"/>
+				<stop refId="parada_Avenida_Antonio_Bento_Ida4" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Avenida_Antonio_Bento_Ida5" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Avenida_Antonio_Bento_Ida6" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Avenida_Antonio_Bento_Ida7" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Assembleia_de_Deus_Congregacao_Liberdade_II_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Avenida_Antonio_Bento_Ida8" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Assembleia_de_Deus_Ministerio_de_Madureira_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Campo_das_Malvinas" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_BR_304_Sul_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Lino_Brita" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Avenida_Presidente_Dutra_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_FACENE_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Oeste_Trigo" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Izamar_Supermercado" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Fic_Frio_Alto_de_Sao_Manoel" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_L_E_Pneus" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_JPL_Motos_Ilha_de_Santa_Luzia_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Hotel_VillaOeste_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Arte_da_Terra" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Livraria_Independencia" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Central" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="terminal_Praca_Felipe_Guerra" arrivalOffset="00:02:00"/>
+			</routeProfile>
+			<route>
+				<link refId="350401788_23"/>
+				<link refId="350401760_4"/>
+				<link refId="350401810_13"/>
+				<link refId="350401810_14"/>
+				<link refId="350401810_15"/>
+				<link refId="350401810_16"/>
+				<link refId="350401810_17"/>
+				<link refId="350401810_18"/>
+				<link refId="350401810_19"/>
+				<link refId="350401810_20"/>
+				<link refId="350401810_21"/>
+				<link refId="350401810_22"/>
+				<link refId="350401810_23"/>
+				<link refId="350401810_24"/>
+				<link refId="350401810_25"/>
+				<link refId="350401810_26"/>
+				<link refId="350401810_27"/>
+				<link refId="350401810_28"/>
+				<link refId="350401810_29"/>
+				<link refId="350401810_30"/>
+				<link refId="350401810_31"/>
+				<link refId="350401810_32"/>
+				<link refId="350401776_1_r"/>
+				<link refId="350401776_0_r"/>
+				<link refId="350401826_0"/>
+				<link refId="350401826_1"/>
+				<link refId="350401826_2"/>
+				<link refId="350401826_3"/>
+				<link refId="350401826_4"/>
+				<link refId="349895007_0_r"/>
+				<link refId="756436541_0"/>
+				<link refId="492359302_0_r"/>
+				<link refId="627413386_6"/>
+				<link refId="627413386_7"/>
+				<link refId="171476715_0"/>
+				<link refId="171476715_1"/>
+				<link refId="171476715_2"/>
+				<link refId="171476715_3"/>
+				<link refId="171476715_4"/>
+				<link refId="171476715_5"/>
+				<link refId="492359292_0"/>
+				<link refId="492359292_1"/>
+				<link refId="492359292_2"/>
+				<link refId="492359292_3"/>
+				<link refId="492359292_4"/>
+				<link refId="492359292_5"/>
+				<link refId="492359292_6"/>
+				<link refId="492359292_7"/>
+				<link refId="492359292_8"/>
+				<link refId="162227557_8"/>
+				<link refId="171476715_11"/>
+				<link refId="171476715_12"/>
+				<link refId="171476715_13"/>
+				<link refId="171476715_14"/>
+				<link refId="171476715_15"/>
+				<link refId="171476715_16"/>
+				<link refId="171476715_17"/>
+				<link refId="171476715_18"/>
+				<link refId="171476715_19"/>
+				<link refId="171476715_20"/>
+				<link refId="171476715_21"/>
+				<link refId="171476715_22"/>
+				<link refId="171476715_23"/>
+				<link refId="171476715_24"/>
+				<link refId="171476715_25"/>
+				<link refId="492359295_0"/>
+				<link refId="492359288_0"/>
+				<link refId="492359288_1"/>
+				<link refId="492359288_2"/>
+				<link refId="492359288_3"/>
+				<link refId="492359288_4"/>
+				<link refId="492359288_5"/>
+				<link refId="492137556_0"/>
+				<link refId="492359291_0"/>
+				<link refId="492359291_1"/>
+				<link refId="492359291_2"/>
+				<link refId="492359291_3"/>
+				<link refId="492359291_4"/>
+				<link refId="492359291_5"/>
+				<link refId="492359291_6"/>
+				<link refId="492359291_7"/>
+				<link refId="159693249_0"/>
+				<link refId="488900266_0"/>
+				<link refId="488900266_1"/>
+				<link refId="488900266_2"/>
+				<link refId="488900266_3"/>
+				<link refId="488900266_4"/>
+				<link refId="488900267_0"/>
+				<link refId="488900268_1"/>
+				<link refId="488900268_2"/>
+				<link refId="488900268_3"/>
+				<link refId="488900268_4"/>
+				<link refId="769208664_2"/>
+				<link refId="769208664_3"/>
+				<link refId="769208664_4"/>
+				<link refId="491990665_4"/>
+				<link refId="491992841_0"/>
+				<link refId="497966183_0"/>
+			</route>
+			<departures>
+				<departure id="viagem_Linha7_Nova_Vida_Alternativa_Ida0" departureTime="21:08:00" vehicleRefId="veiculo18"/>
 			</departures>
 		</transitRoute>
 
@@ -7445,41 +7577,41 @@
 				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida0" departureTime="05:40:00" vehicleRefId="veiculo7"/>
 				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida1" departureTime="05:55:00" vehicleRefId="veiculo8"/>
 				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida2" departureTime="06:10:00" vehicleRefId="veiculo13"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida3" departureTime="06:25:00" vehicleRefId="veiculo14"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida4" departureTime="06:40:00" vehicleRefId="veiculo18"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida3" departureTime="06:25:00" vehicleRefId="veiculo18"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida4" departureTime="06:40:00" vehicleRefId="veiculo14"/>
 				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida5" departureTime="06:55:00" vehicleRefId="veiculo7"/>
 				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida6" departureTime="07:11:00" vehicleRefId="veiculo8"/>
 				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida7" departureTime="07:27:00" vehicleRefId="veiculo13"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida8" departureTime="07:42:00" vehicleRefId="veiculo14"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida9" departureTime="07:58:00" vehicleRefId="veiculo18"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida8" departureTime="07:42:00" vehicleRefId="veiculo18"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida9" departureTime="07:58:00" vehicleRefId="veiculo14"/>
 				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida10" departureTime="08:13:00" vehicleRefId="veiculo7"/>
 				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida11" departureTime="08:30:00" vehicleRefId="veiculo8"/>
 				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida12" departureTime="08:50:00" vehicleRefId="veiculo13"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida13" departureTime="09:08:00" vehicleRefId="veiculo14"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida14" departureTime="09:29:00" vehicleRefId="veiculo18"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida15" departureTime="09:51:00" vehicleRefId="veiculo7"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida16" departureTime="10:11:00" vehicleRefId="veiculo8"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida17" departureTime="10:31:00" vehicleRefId="veiculo13"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida18" departureTime="10:50:00" vehicleRefId="veiculo14"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida19" departureTime="11:10:00" vehicleRefId="veiculo18"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida20" departureTime="11:31:00" vehicleRefId="veiculo7"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida21" departureTime="11:53:00" vehicleRefId="veiculo8"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida22" departureTime="12:13:00" vehicleRefId="veiculo13"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida23" departureTime="12:33:00" vehicleRefId="veiculo14"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida24" departureTime="12:54:00" vehicleRefId="veiculo18"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida25" departureTime="13:13:00" vehicleRefId="veiculo7"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida26" departureTime="13:34:00" vehicleRefId="veiculo8"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida27" departureTime="13:55:00" vehicleRefId="veiculo13"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida28" departureTime="14:15:00" vehicleRefId="veiculo14"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida13" departureTime="09:08:00" vehicleRefId="veiculo18"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida14" departureTime="09:29:00" vehicleRefId="veiculo7"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida15" departureTime="09:51:00" vehicleRefId="veiculo8"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida16" departureTime="10:11:00" vehicleRefId="veiculo13"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida17" departureTime="10:31:00" vehicleRefId="veiculo18"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida18" departureTime="10:50:00" vehicleRefId="veiculo7"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida19" departureTime="11:10:00" vehicleRefId="veiculo8"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida20" departureTime="11:31:00" vehicleRefId="veiculo13"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida21" departureTime="11:53:00" vehicleRefId="veiculo18"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida22" departureTime="12:13:00" vehicleRefId="veiculo7"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida23" departureTime="12:33:00" vehicleRefId="veiculo8"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida24" departureTime="12:54:00" vehicleRefId="veiculo13"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida25" departureTime="13:13:00" vehicleRefId="veiculo18"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida26" departureTime="13:34:00" vehicleRefId="veiculo7"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida27" departureTime="13:55:00" vehicleRefId="veiculo8"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida28" departureTime="14:15:00" vehicleRefId="veiculo13"/>
 				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida29" departureTime="14:36:00" vehicleRefId="veiculo18"/>
 				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida30" departureTime="14:56:00" vehicleRefId="veiculo7"/>
 				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida31" departureTime="15:17:00" vehicleRefId="veiculo8"/>
 				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida32" departureTime="15:41:00" vehicleRefId="veiculo13"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida33" departureTime="16:03:00" vehicleRefId="veiculo14"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida34" departureTime="16:24:00" vehicleRefId="veiculo18"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida35" departureTime="16:46:00" vehicleRefId="veiculo7"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida36" departureTime="17:08:00" vehicleRefId="veiculo8"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida37" departureTime="17:34:00" vehicleRefId="veiculo13"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida33" departureTime="16:03:00" vehicleRefId="veiculo18"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida34" departureTime="16:24:00" vehicleRefId="veiculo7"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida35" departureTime="16:46:00" vehicleRefId="veiculo8"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida36" departureTime="17:08:00" vehicleRefId="veiculo13"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Ida37" departureTime="17:34:00" vehicleRefId="veiculo18"/>
 			</departures>
 		</transitRoute>
 
@@ -7608,11 +7740,12 @@
 				<link refId="350401788_23"/>
 			</route>
 			<departures>
-				<departure id="viagem_Linha7_Nova_Vida_Volta0" departureTime="18:04:00" vehicleRefId="veiculo7"/>
-				<departure id="viagem_Linha7_Nova_Vida_Volta1" departureTime="18:30:00" vehicleRefId="veiculo8"/>
-				<departure id="viagem_Linha7_Nova_Vida_Volta2" departureTime="19:51:00" vehicleRefId="veiculo18"/>
-				<departure id="viagem_Linha7_Nova_Vida_Volta3" departureTime="20:50:00" vehicleRefId="veiculo18"/>
-				<departure id="viagem_Linha7_Nova_Vida_Volta4" departureTime="21:50:00" vehicleRefId="veiculo18"/>
+				<departure id="viagem_Linha7_Nova_Vida_Volta0" departureTime="17:20:00" vehicleRefId="veiculo7"/>
+				<departure id="viagem_Linha7_Nova_Vida_Volta1" departureTime="17:42:00" vehicleRefId="veiculo8"/>
+				<departure id="viagem_Linha7_Nova_Vida_Volta2" departureTime="18:04:00" vehicleRefId="veiculo13"/>
+				<departure id="viagem_Linha7_Nova_Vida_Volta3" departureTime="18:30:00" vehicleRefId="veiculo18"/>
+				<departure id="viagem_Linha7_Nova_Vida_Volta4" departureTime="19:51:00" vehicleRefId="veiculo18"/>
+				<departure id="viagem_Linha7_Nova_Vida_Volta5" departureTime="20:50:00" vehicleRefId="veiculo18"/>
 			</departures>
 		</transitRoute>
 
@@ -7770,38 +7903,36 @@
 				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta0" departureTime="06:24:00" vehicleRefId="veiculo7"/>
 				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta1" departureTime="06:42:00" vehicleRefId="veiculo8"/>
 				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta2" departureTime="07:00:00" vehicleRefId="veiculo13"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta3" departureTime="07:12:00" vehicleRefId="veiculo14"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta4" departureTime="07:32:00" vehicleRefId="veiculo18"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta3" departureTime="07:12:00" vehicleRefId="veiculo18"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta4" departureTime="07:32:00" vehicleRefId="veiculo14"/>
 				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta5" departureTime="07:47:00" vehicleRefId="veiculo7"/>
 				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta6" departureTime="08:03:00" vehicleRefId="veiculo8"/>
 				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta7" departureTime="08:19:00" vehicleRefId="veiculo13"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta8" departureTime="08:41:00" vehicleRefId="veiculo14"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta9" departureTime="09:02:00" vehicleRefId="veiculo18"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta10" departureTime="09:22:00" vehicleRefId="veiculo7"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta11" departureTime="09:42:00" vehicleRefId="veiculo8"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta12" departureTime="10:02:00" vehicleRefId="veiculo13"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta13" departureTime="10:23:00" vehicleRefId="veiculo14"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta14" departureTime="10:43:00" vehicleRefId="veiculo18"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta15" departureTime="11:03:00" vehicleRefId="veiculo7"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta16" departureTime="11:23:00" vehicleRefId="veiculo8"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta17" departureTime="11:44:00" vehicleRefId="veiculo13"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta18" departureTime="12:05:00" vehicleRefId="veiculo14"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta19" departureTime="12:25:00" vehicleRefId="veiculo18"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta20" departureTime="12:45:00" vehicleRefId="veiculo7"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta21" departureTime="13:05:00" vehicleRefId="veiculo8"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta22" departureTime="13:25:00" vehicleRefId="veiculo13"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta23" departureTime="13:46:00" vehicleRefId="veiculo14"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta8" departureTime="08:41:00" vehicleRefId="veiculo18"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta9" departureTime="09:02:00" vehicleRefId="veiculo7"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta10" departureTime="09:22:00" vehicleRefId="veiculo8"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta11" departureTime="09:42:00" vehicleRefId="veiculo13"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta12" departureTime="10:02:00" vehicleRefId="veiculo18"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta13" departureTime="10:23:00" vehicleRefId="veiculo7"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta14" departureTime="10:43:00" vehicleRefId="veiculo8"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta15" departureTime="11:03:00" vehicleRefId="veiculo13"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta16" departureTime="11:23:00" vehicleRefId="veiculo18"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta17" departureTime="11:44:00" vehicleRefId="veiculo7"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta18" departureTime="12:05:00" vehicleRefId="veiculo8"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta19" departureTime="12:25:00" vehicleRefId="veiculo13"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta20" departureTime="12:45:00" vehicleRefId="veiculo18"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta21" departureTime="13:05:00" vehicleRefId="veiculo7"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta22" departureTime="13:25:00" vehicleRefId="veiculo8"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta23" departureTime="13:46:00" vehicleRefId="veiculo13"/>
 				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta24" departureTime="14:07:00" vehicleRefId="veiculo18"/>
 				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta25" departureTime="14:26:00" vehicleRefId="veiculo7"/>
 				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta26" departureTime="14:47:00" vehicleRefId="veiculo8"/>
 				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta27" departureTime="15:08:00" vehicleRefId="veiculo13"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta28" departureTime="15:28:00" vehicleRefId="veiculo14"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta29" departureTime="15:48:00" vehicleRefId="veiculo18"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta30" departureTime="16:09:00" vehicleRefId="veiculo7"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta31" departureTime="16:34:00" vehicleRefId="veiculo8"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta32" departureTime="16:59:00" vehicleRefId="veiculo13"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta33" departureTime="17:20:00" vehicleRefId="veiculo14"/>
-				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta34" departureTime="17:42:00" vehicleRefId="veiculo18"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta28" departureTime="15:28:00" vehicleRefId="veiculo18"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta29" departureTime="15:48:00" vehicleRefId="veiculo7"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta30" departureTime="16:09:00" vehicleRefId="veiculo8"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta31" departureTime="16:34:00" vehicleRefId="veiculo13"/>
+				<departure id="viagem_Linha7_Nova_Vida_Jardim_das_Palmeiras_Volta32" departureTime="16:59:00" vehicleRefId="veiculo18"/>
 			</departures>
 		</transitRoute>
 
@@ -7809,7 +7940,10 @@
 		<transitRoute id="Linha7_Via_Sumare_Volta">
 			<transportMode>pt</transportMode>
 			<routeProfile>
-				<stop refId="terminal_Carcara" departureOffset="00:00:00"/>
+				<stop refId="terminal_Praca_Felipe_Guerra" departureOffset="00:00:00"/>
+				<stop refId="parada_Rua_Nisia_Floresta_Ida2" arrivalOffset="00:02:00" departureOffset="00:00:00"/>
+				<stop refId="parada_AeC" arrivalOffset="00:02:00" departureOffset="00:00:00"/>
+				<stop refId="terminal_Carcara" arrivalOffset="00:02:00" departureOffset="00:00:00"/>
 				<stop refId="parada_O_Sebosao" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Hotel_VillaOeste_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_JPL_Motos_Ilha_de_Santa_Luzia_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
@@ -7862,6 +7996,18 @@
 				<stop refId="parada_Avenida_Antonio_Bento_Volta4" arrivalOffset="00:02:00"/>
 			</routeProfile>
 			<route>
+				<link refId="497966183_0"/>
+				<link refId="769208664_4"/>
+				<link refId="491990665_4"/>
+				<link refId="491990665_5"/>
+				<link refId="491990665_6"/>
+				<link refId="491990665_7"/>
+				<link refId="490698546_12"/>
+				<link refId="490698546_13"/>
+				<link refId="490698546_14"/>
+				<link refId="488900248_8"/>
+				<link refId="488900248_9"/>
+				<link refId="488900248_10"/>
 				<link refId="488900244_0"/>
 				<link refId="488900239_11"/>
 				<link refId="488900239_12"/>
@@ -8084,7 +8230,7 @@
 				<link refId="350401788_23"/>
 			</route>
 			<departures>
-				<departure id="viagem_Linha7_Via_Sumare_Volta0" departureTime="21:45:00" vehicleRefId="veiculo11"/>
+				<departure id="viagem_Linha7_Via_Sumare_Volta0" departureTime="21:50:00" vehicleRefId="veiculo18"/>
 			</departures>
 		</transitRoute>
 
