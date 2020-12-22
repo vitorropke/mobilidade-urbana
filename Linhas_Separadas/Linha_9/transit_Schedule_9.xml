@@ -151,7 +151,7 @@
 		<transitRoute id="Linha9_Belo_Horizonte_Ida">
 			<transportMode>pt</transportMode>
 			<routeProfile>
-				<stop refId="parada_Ida_Volta_Linha9" departureOffset="00:02:00"/>
+				<stop refId="parada_Ida_Volta_Linha9" departureOffset="00:00:00"/>
 				<stop refId="parada_Rua_Zeus_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Rua_Zeus_Ida1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Rua_Zeus_Ida2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
@@ -322,7 +322,7 @@
 		<transitRoute id="Linha9_Belo_Horizonte_Alternativa_Ida">
 			<transportMode>pt</transportMode>
 			<routeProfile>
-				<stop refId="parada_Ida_Volta_Linha9" departureOffset="00:02:00"/>
+				<stop refId="parada_Ida_Volta_Linha9" departureOffset="00:00:00"/>
 				<stop refId="parada_Rua_Zeus_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Rua_Zeus_Ida1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Rua_Zeus_Ida2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
