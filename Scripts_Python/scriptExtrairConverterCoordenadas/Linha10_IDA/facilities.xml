@@ -2,12 +2,12 @@
 <!DOCTYPE facilities SYSTEM "http://www.matsim.org/files/dtd/facilities_v1.dtd">
 
 <facilities>
-	<facility id="parada_Linha10_Ida0" x="-4160643.2241252107" y="-576411.0633567738"/>
-	<facility id="parada_Linha10_Ida1" x="-4160047.219571503" y="-576894.1874455793"/>
-	<facility id="parada_Linha10_Ida2" x="-4159813.1146823647" y="-577081.0757464801"/>
-	<facility id="parada_Linha10_Ida3" x="-4159960.390368684" y="-577741.3363986727"/>
-	<facility id="parada_Linha10_Ida4" x="-4160150.7466979413" y="-577933.0333427016"/>
-	<facility id="parada_Linha10_Ida5" x="-4160435.724594372" y="-578069.736496017"/>
+	<facility id="parada_Partage_Shopping" x="-4160643.2241252107" y="-576411.0633567738"/>
+	<facility id="parada_UNP_Ida" x="-4160047.219571503" y="-576894.1874455793"/>
+	<facility id="parada_Maxxi_Atacado" x="-4159802.656424" y="-577098.070642"/>
+	<facility id="parada_Posto_Shell_Posto_Olinda_Ltda" x="-4159960.457085" y="-577728.377544"/>
+	<facility id="parada_Vnz_Jeep" x="-4160153.938313" y="-577926.636086"/>
+	<facility id="parada_Rodoviaria_Detran_RN" x="-4160402.955820" y="-578068.462603"/>
 	<facility id="parada_Linha10_Ida6" x="-4160925.5303538623" y="-578429.8829480198"/>
 	<facility id="parada_Linha10_Ida7" x="-4161258.375631334" y="-578382.8246014084"/>
 	<facility id="parada_Linha10_Ida8" x="-4161403.424927837" y="-578677.8060622767"/>

@@ -1,10 +1,10 @@
 #Biblioteca de conversão de coordenadas
 import pyproj
 
-nomeDaRotaAtual = "Linha10_Volta"
+nomeDaRotaAtual = "Ultima_Viage_Volta"
 
 #Lendo arquivo de entrada
-arquivoEntrada = open("AEROPORTO - SHOPPING - VOLTA", "r")
+arquivoEntrada = open("ULTIMA VIAGEM - VOLTA", "r")
 #Salvando o texto do arquivo de entrada em uma variável 'texto'
 textoParadas = arquivoEntrada.read()
 #Fechando arquivo de entrada

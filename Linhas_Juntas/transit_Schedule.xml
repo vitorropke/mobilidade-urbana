@@ -28,9 +28,9 @@
 		<stopFacility id="parada_Rua_Doutor_Joao_Marcelino_Volta0" x="-4157218.9252689183" y="-578247.4621689818" linkRefId="781466654_0_r"/>
 		<stopFacility id="parada_Rua_Doutor_Mario_Negocio0" x="-4156698.7292884416" y="-578587.936627073" linkRefId="488900238_2"/>
 		<stopFacility id="parada_Rua_Ferreira_Itajuba_Ida0" x="-4157288.9452286274" y="-577984.11535674" linkRefId="487178210_4"/>
-		<stopFacility id="parada_Rua_Nisia_Floresta_Ida0" x="-4157618.751993" y="-579238.979244" linkRefId="490698546_8"/>
-		<stopFacility id="parada_Rua_Nisia_Floresta_Ida1" x="-4157480.414752792" y="-579318.5203320094" linkRefId="490698546_11"/>
-		<stopFacility id="parada_Rua_Nisia_Floresta_Ida2" x="-4157368.764095" y="-579384.911266" linkRefId="490698546_13"/>
+		<stopFacility id="parada_Rua_Nisia_Floresta_Ida1" x="-4157618.751993" y="-579238.979244" linkRefId="490698546_8"/>
+		<stopFacility id="parada_Rua_Nisia_Floresta_Ida2" x="-4157480.414752792" y="-579318.5203320094" linkRefId="490698546_11"/>
+		<stopFacility id="parada_Rua_Nisia_Floresta_Ida3" x="-4157368.764095" y="-579384.911266" linkRefId="490698546_13"/>
 		<stopFacility id="parada_Rua_Prudente_de_Morais0" x="-4156525.269545" y="-578195.658595" linkRefId="490163739_6"/>
 
 		<!--PARADAS MARCADAS==================================================================================================-->
@@ -5940,9 +5940,9 @@
 				<stop refId="parada_Praca_da_Convivencia" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Praca_do_Patins_Sadraque_Tavares" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Praca_dos_Esportes" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Nisia_Floresta_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Rua_Nisia_Floresta_Ida1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Rua_Nisia_Floresta_Ida2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Nisia_Floresta_Ida3" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_AeC" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="terminal_Carcara" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 			</routeProfile>
@@ -6121,7 +6121,7 @@
 			</departures>
 		</transitRoute>
 
-		<!--LINHA 06 - UNIVERSIDADES ROTA ALTERNATIVA 0 - Ida=================================================================-->
+		<!--LINHA 06 - UNIVERSIDADES ROTA ALTERNATIVA 0 - IDA=================================================================-->
 		<transitRoute id="Linha6_Universidades_Alternativa0_Ida">
 			<transportMode>pt</transportMode>
 			<routeProfile>
@@ -6153,9 +6153,9 @@
 				<stop refId="parada_Praca_da_Convivencia" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Praca_do_Patins_Sadraque_Tavares" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Praca_dos_Esportes" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Nisia_Floresta_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Rua_Nisia_Floresta_Ida1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Rua_Nisia_Floresta_Ida2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Nisia_Floresta_Ida3" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_AeC" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="terminal_Carcara" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 			</routeProfile>
@@ -6304,7 +6304,7 @@
 			</departures>
 		</transitRoute>
 
-		<!--LINHA 06 - UNIVERSIDADES ROTA ALTERNATIVA 1 - Ida=================================================================-->
+		<!--LINHA 06 - UNIVERSIDADES ROTA ALTERNATIVA 1 - IDA=================================================================-->
 		<transitRoute id="Linha6_Universidades_Alternativa1_Ida">
 			<transportMode>pt</transportMode>
 			<routeProfile>
@@ -6466,7 +6466,7 @@
 			</departures>
 		</transitRoute>
 
-		<!--LINHA 06 - UNIVERSIDADES ROTA ALTERNATIVA 2 - Ida=================================================================-->
+		<!--LINHA 06 - UNIVERSIDADES ROTA ALTERNATIVA 2 - IDA=================================================================-->
 		<transitRoute id="Linha6_Universidades_Alternativa2_Ida">
 			<transportMode>pt</transportMode>
 			<routeProfile>
@@ -7941,7 +7941,7 @@
 			<transportMode>pt</transportMode>
 			<routeProfile>
 				<stop refId="terminal_Praca_Felipe_Guerra" departureOffset="00:00:00"/>
-				<stop refId="parada_Rua_Nisia_Floresta_Ida2" arrivalOffset="00:02:00" departureOffset="00:00:00"/>
+				<stop refId="parada_Rua_Nisia_Floresta_Ida3" arrivalOffset="00:02:00" departureOffset="00:00:00"/>
 				<stop refId="parada_AeC" arrivalOffset="00:02:00" departureOffset="00:00:00"/>
 				<stop refId="terminal_Carcara" arrivalOffset="00:02:00" departureOffset="00:00:00"/>
 				<stop refId="parada_O_Sebosao" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
