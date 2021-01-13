@@ -129,4 +129,21 @@
 	<facility id="parada_Supermercado_Reboucas_Belo_Horizonte_Volta" x="-4159144.4185011694" y="-580836.160078866"/>
 	<facility id="parada_Tiinha_Restaurante_Ida" x="-4158508.153548" y="-578899.416703"/>
 	<facility id="parada_Tiinha_Restaurante_Volta" x="-4158520.544707" y="-578905.836220"/>
+
+	<!--====================================================================================================================|
+	|												PARADAS MACARRÃO, BOA VISTA												|
+	|=====================================================================================================================-->
+	<!--PARADAS RUAS======================================================================================================-->
+	<facility id="parada_Rua_Coelho_Neto_Ida0" x="-4158444.256970" y="-579388.942125"/>
+	<facility id="parada_Rua_Coelho_Neto_Volta0" x="-4158439.479655" y="-579381.328280"/>
+	<facility id="parada_Rua_Francisco_Solon_Ida0" x="-4158542.191912" y="-579033.778667"/>
+	<facility id="parada_Rua_Francisco_Solon_Volta0" x="-4158555.2044364014" y="-579047.2332403001"/>
+
+	<!--PARADAS MARCADAS==================================================================================================-->
+	<facility id="parada_Aplastec_Center_Ida" x="-4158554.4251999645" y="-579322.0972598532"/>
+	<facility id="parada_Aplastec_Center_Volta" x="-4158549.955048" y="-579312.057223"/>
+	<facility id="parada_FUNDAC_Ida" x="-4158609.074312" y="-579226.065567"/>
+	<facility id="parada_FUNDAC_Volta" x="-4158615.493828" y="-579217.854558"/>
+	<facility id="parada_Tiinha_Restaurante_Ida" x="-4158508.153548" y="-578899.416703"/>
+	<facility id="parada_Tiinha_Restaurante_Volta" x="-4158520.544707" y="-578905.836220"/>
 </facilities>

@@ -17,7 +17,7 @@
 
 	<module name="transit">
 		<param name="useTransit" value="true" />
-		<param name="transitScheduleFile" value="transit_Schedule_9.xml" />
+		<param name="transitScheduleFile" value="transit_Schedule_9_19.xml" />
 		<param name="vehiclesFile" value="../transit_Vehicles.xml" />
 		<param name="transitModes" value="pt" />
 	</module>
@@ -27,7 +27,7 @@
 	</module>
 
 	<module name="controler">
-		<param name="outputDirectory" value="./output_Simples_9" />
+		<param name="outputDirectory" value="./output_Simples_9_19" />
 		<param name="firstIteration" value="0" />
 		<param name="lastIteration" value="0" />
 		<param name="eventsFileFormat" value="xml" />
