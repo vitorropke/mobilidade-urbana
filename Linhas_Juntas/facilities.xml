@@ -603,6 +603,49 @@
 	<facility id="parada_West_Flat" x="-4159724.502548" y="-577135.468056"/>
 
 	<!--====================================================================================================================|
+	|												PARADAS ALTO DAS BRISAS													|
+	|=====================================================================================================================-->
+	<!--PARADAS RUAS======================================================================================================-->
+	<facility id="parada_Rua_da_Pitomba_Volta0" x="-4151086.894415" y="-578548.284105"/>
+	<facility id="parada_Rua_do_Pinhao_Volta0" x="-4151726.755945" y="-578083.093128"/>
+	<facility id="parada_Rua_do_Pinhao_Volta1" x="-4151411.453203" y="-578323.153170"/>
+	<facility id="parada_Rua_Mamona_Ida0" x="-4151387.566632" y="-578292.100627"/>
+	<facility id="parada_Rua_Mamona_Ida1" x="-4151698.390641" y="-578051.443421"/>
+
+	<!--PARADAS MARCADAS==================================================================================================-->
+	<facility id="parada_Condominio_Ecoville_Ida" x="-4152384.830985" y="-578007.850428"/>
+	<facility id="parada_Condominio_Ecoville_Volta" x="-4152375.873521" y="-578018.599385"/>
+	<facility id="parada_Condominio_Ninho_Residencial_Ida" x="-4152645.791777" y="-578206.108970"/>
+	<facility id="parada_Condominio_Ninho_Residencial_Volta" x="-4152624.891027" y="-578210.886285"/>
+	<facility id="parada_Taldi_Engenharia_Ida" x="-4151978.983209" y="-577836.912152"/>
+	<facility id="parada_Taldi_Engenharia_Volta" x="-4152006.228830" y="-577865.725329"/>
+
+	<!--====================================================================================================================|
+	|												PARADAS PARQUE UNIVERSITÁRIO											|
+	|=====================================================================================================================-->
+	<!--PARADAS RODOVIAS==================================================================================================-->
+	<facility id="parada_BR_110_Norte_Ida0" x="-4153155.471493" y="-578580.829558"/>
+	<facility id="parada_BR_110_Norte_Volta0" x="-4153562.438952" y="-578907.777003"/>
+	<facility id="parada_BR_110_Norte_Ida1" x="-4153569.903506" y="-578900.312450"/>
+	<facility id="parada_BR_110_Norte_Volta1" x="-4153139.198766" y="-578589.339149"/>
+
+	<!--PARADAS RUAS======================================================================================================-->
+	<facility id="parada_Rua_Maria_Rosa_de_Araujo_Ida0" x="-4153401.801760" y="-578117.131492"/>
+	<facility id="parada_Rua_Maria_Rosa_de_Araujo_Ida1" x="-4153443.603260" y="-578180.430906"/>
+	<facility id="parada_Rua_Maria_Rosa_de_Araujo_Ida2" x="-4153488.390581" y="-578246.716142"/>
+	<facility id="parada_Rua_Raimundo_Almeida_Lopes_Ida0" x="-4152963.483176" y="-578366.148998"/>
+	<facility id="parada_Rua_Raimundo_Almeida_Lopes_Ida1" x="-4153102.622454" y="-578269.408384"/>
+	<facility id="parada_Rua_Raimundo_Almeida_Lopes_Ida2" x="-4153213.695011" y="-578194.165685"/>
+	<facility id="parada_Rua_Raimundo_Almeida_Lopes_Ida3" x="-4153312.824282" y="-578126.088956"/>
+	<facility id="parada_Rua_Sergina_Lucinda_Alves_Volta0" x="-4153461.518188" y="-578328.826231"/>
+	<facility id="parada_Rua_Sergina_Lucinda_Alves_Volta1" x="-4153363.583246" y="-578398.694452"/>
+	<facility id="parada_Rua_Sergina_Lucinda_Alves_Volta2" x="-4153223.846804" y="-578488.567676"/>
+
+	<!--PARADAS MARCADAS==================================================================================================-->
+	<facility id="parada_UNIRB_Ida" x="-4153331.336375" y="-578720.267418"/>
+	<facility id="parada_UNIRB_Volta" x="-4153337.308017" y="-578741.765333"/>
+
+	<!--====================================================================================================================|
 	|											PARADAS AEROPORTO, RODOVIÁRIA												|
 	|=====================================================================================================================-->
 	<!--PARADA AVENIDAS===================================================================================================-->
