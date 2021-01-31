@@ -737,4 +737,19 @@
 	<facility id="parada_Supermercado_Queiroz_Aeroporto" x="-4160006.214799" y="-578970.180671"/>
 	<facility id="parada_Tiinha_Restaurante_Ida" x="-4158508.153548" y="-578899.416703"/>
 	<facility id="parada_Tiinha_Restaurante_Volta" x="-4158520.544707" y="-578905.836220"/>
+
+	<!--====================================================================================================================|
+	|													PARADAS ODETE ROSADO												|
+	|=====================================================================================================================-->
+	<!--PARADA IDA-VOLTA==================================================================================================-->
+	<facility id="parada_Ida_Volta_Linha17" x="-4150591.40806505" y="-582640.0333288047"/>
+
+	<!--PARADAS RUAS======================================================================================================-->
+	<facility id="parada_Rua_Francisco_Soares_Xaxa_Ida0" x="-4151695.404820" y="-581992.727692"/>
+	<facility id="parada_Rua_Francisco_Soares_Xaxa_Volta0" x="-4151704.936931455" y="-582004.0619111818"/>
+	<facility id="parada_Rua_Francisco_Soares_Xaxa_Ida1" x="-4151766.467370" y="-581949.433281"/>
+	<facility id="parada_Rua_Joao_Aquino_de_Morais_Volta1" x="-4150554.4499941072" y="-582482.4176712115"/>
+	<facility id="parada_Rua_Monalisa_Fartura_Ida0" x="-4150750.989506" y="-582304.447448"/>
+	<facility id="parada_Rua_Monalisa_Fartura_Ida1" x="-4150801.151305" y="-582503.004572"/>
+	<facility id="parada_Rua_Pedro_Zaqueu_Dantas_Ida0" x="-4150529.142974" y="-582338.037939"/>
 </facilities>
