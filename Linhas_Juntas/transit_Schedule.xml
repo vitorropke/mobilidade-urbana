@@ -7065,6 +7065,149 @@
 			</departures>
 		</transitRoute>
 
+		<!--LINHA 06 - UNIVERSIDADES ALTERNATIVA- VOLTA=======================================================================-->
+		<transitRoute id="Linha6_Universidades_Alternativa_Volta">
+			<transportMode>pt</transportMode>
+			<routeProfile>
+				<stop refId="terminal_Carcara" departureOffset="00:00:00"/>
+				<stop refId="parada_O_Sebosao" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Hotel_VillaOeste_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_JPL_Motos_Ilha_de_Santa_Luzia_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Farmacia_da_familia" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Pousada_Mossoro" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Locavelthe" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Mercadinho_Cocada" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_CITECS" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Presidente_Cafe_Filho_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Presidente_Cafe_Filho_Volta1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Presidente_Cafe_Filho_Volta2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Presidente_Cafe_Filho_Volta3" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Pedro_Valamira_Fernandes_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_FACENE_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Fabrica_de_jarros_Sol_Nascente" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Raimundo_Firmino_de_Oliveira_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Supermercados_Queiroz_Dom_Jaime_Camara_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_IFRN_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Alameda_das_Carnaubeiras_Volta1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Justica_Federal_de_Primeiro_Grau_no_RN" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_UFERSA_Lateral_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Ministerio_Publico_da_Uniao_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_UFERSA_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_ADUERN_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Cristais_do_Alto_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Costalarga_Corretora_de_Seguros_Presidente_Costa_e_Silva_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_UERN_Ida" arrivalOffset="00:02:00"/>
+			</routeProfile>
+			<route>
+				<link refId="488900244_0"/>
+				<link refId="488900239_11"/>
+				<link refId="488900239_12"/>
+				<link refId="159693156_0"/>
+				<link refId="171476713_0"/>
+				<link refId="171476713_1"/>
+				<link refId="171476713_2"/>
+				<link refId="171476713_3"/>
+				<link refId="171476713_4"/>
+				<link refId="171476713_5"/>
+				<link refId="171476713_6"/>
+				<link refId="492137558_0"/>
+				<link refId="492359305_0"/>
+				<link refId="492359305_1"/>
+				<link refId="492359305_2"/>
+				<link refId="492359305_3"/>
+				<link refId="492359305_4"/>
+				<link refId="492359283_0"/>
+				<link refId="492359299_0"/>
+				<link refId="492359299_1"/>
+				<link refId="492359299_2"/>
+				<link refId="492359299_3"/>
+				<link refId="492359299_4"/>
+				<link refId="492359299_5"/>
+				<link refId="492359299_6"/>
+				<link refId="492359299_7"/>
+				<link refId="492359299_8"/>
+				<link refId="492359299_9"/>
+				<link refId="492359299_10"/>
+				<link refId="492359299_11"/>
+				<link refId="492359299_12"/>
+				<link refId="492359303_0"/>
+				<link refId="492359303_1"/>
+				<link refId="162227773_0"/>
+				<link refId="162230039_0"/>
+				<link refId="162230039_1"/>
+				<link refId="162230039_2"/>
+				<link refId="162230039_3"/>
+				<link refId="162230039_4"/>
+				<link refId="162230039_5"/>
+				<link refId="162230039_6"/>
+				<link refId="162229394_1_r"/>
+				<link refId="162229394_0_r"/>
+				<link refId="492359292_3_r"/>
+				<link refId="492359292_2_r"/>
+				<link refId="683389513_6_r"/>
+				<link refId="492359298_2_r"/>
+				<link refId="492359298_1_r"/>
+				<link refId="492359298_0"/>
+				<link refId="666094868_0"/>
+				<link refId="236434949_1"/>
+				<link refId="236434949_2"/>
+				<link refId="236434949_3"/>
+				<link refId="236434949_4"/>
+				<link refId="236434949_5"/>
+				<link refId="236434949_6"/>
+				<link refId="771780908_0"/>
+				<link refId="745522524_0"/>
+				<link refId="746175801_0"/>
+				<link refId="666094867_0"/>
+				<link refId="666094867_1"/>
+				<link refId="682678878_0"/>
+				<link refId="682678878_1"/>
+				<link refId="682678880_0"/>
+				<link refId="682678880_1"/>
+				<link refId="682678880_2"/>
+				<link refId="682678880_3"/>
+				<link refId="682678880_4"/>
+				<link refId="682678880_5"/>
+				<link refId="682678880_6"/>
+				<link refId="682678880_7"/>
+				<link refId="682678880_8"/>
+				<link refId="682678880_9"/>
+				<link refId="350164526_0"/>
+				<link refId="350164526_1"/>
+				<link refId="666094865_3_r"/>
+				<link refId="666094865_2_r"/>
+				<link refId="666094865_1_r"/>
+				<link refId="666094865_0_r"/>
+				<link refId="349894998_0"/>
+				<link refId="368028915_1"/>
+				<link refId="368028915_2"/>
+				<link refId="368028915_3"/>
+				<link refId="368028915_4"/>
+				<link refId="368028915_5"/>
+				<link refId="368028915_6"/>
+				<link refId="770221600_0"/>
+				<link refId="492137571_4"/>
+				<link refId="336685655_0"/>
+				<link refId="336685655_1"/>
+				<link refId="336685655_2"/>
+				<link refId="336685655_3"/>
+				<link refId="336685655_4"/>
+				<link refId="336685655_5"/>
+				<link refId="336685655_6"/>
+				<link refId="336685655_7"/>
+				<link refId="336685655_8"/>
+				<link refId="336685655_9"/>
+				<link refId="336685655_10"/>
+				<link refId="627602248_0"/>
+				<link refId="193532919_4"/>
+			</route>
+			<departures>
+				<departure id="viagem_Linha6_Universidades_Alternativa_Volta0" departureTime="18:18:00" vehicleRefId="veiculo22"/>
+				<departure id="viagem_Linha6_Universidades_Alternativa_Volta1" departureTime="18:40:00" vehicleRefId="veiculo5"/>
+				<departure id="viagem_Linha6_Universidades_Alternativa_Volta2" departureTime="19:50:00" vehicleRefId="veiculo5"/>
+			</departures>
+		</transitRoute>
+
 		<!--LINHA 06 - UNIVERSIDADES, UNIRB - VOLTA===========================================================================-->
 		<transitRoute id="Linha6_Universidades_UNIRB_Volta">
 			<transportMode>pt</transportMode>
@@ -7259,149 +7402,6 @@
 			</route>
 			<departures>
 				<departure id="viagem_Linha6_Universidades_UNIRB_Volta0" departureTime="06:35:00" vehicleRefId="veiculo10"/>
-			</departures>
-		</transitRoute>
-
-		<!--LINHA 06 - UNIVERSIDADES ALTERNATIVA- VOLTA=======================================================================-->
-		<transitRoute id="Linha6_Universidades_Alternativa_Volta">
-			<transportMode>pt</transportMode>
-			<routeProfile>
-				<stop refId="terminal_Carcara" departureOffset="00:00:00"/>
-				<stop refId="parada_O_Sebosao" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Hotel_VillaOeste_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_JPL_Motos_Ilha_de_Santa_Luzia_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Farmacia_da_familia" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Pousada_Mossoro" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Locavelthe" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Mercadinho_Cocada" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_CITECS" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Presidente_Cafe_Filho_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Presidente_Cafe_Filho_Volta1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Presidente_Cafe_Filho_Volta2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Presidente_Cafe_Filho_Volta3" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Pedro_Valamira_Fernandes_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_FACENE_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Fabrica_de_jarros_Sol_Nascente" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Raimundo_Firmino_de_Oliveira_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Supermercados_Queiroz_Dom_Jaime_Camara_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_IFRN_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Alameda_das_Carnaubeiras_Volta1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Justica_Federal_de_Primeiro_Grau_no_RN" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_UFERSA_Lateral_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Ministerio_Publico_da_Uniao_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_UFERSA_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_ADUERN_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Cristais_do_Alto_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Costalarga_Corretora_de_Seguros_Presidente_Costa_e_Silva_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_UERN_Ida" arrivalOffset="00:02:00"/>
-			</routeProfile>
-			<route>
-				<link refId="488900244_0"/>
-				<link refId="488900239_11"/>
-				<link refId="488900239_12"/>
-				<link refId="159693156_0"/>
-				<link refId="171476713_0"/>
-				<link refId="171476713_1"/>
-				<link refId="171476713_2"/>
-				<link refId="171476713_3"/>
-				<link refId="171476713_4"/>
-				<link refId="171476713_5"/>
-				<link refId="171476713_6"/>
-				<link refId="492137558_0"/>
-				<link refId="492359305_0"/>
-				<link refId="492359305_1"/>
-				<link refId="492359305_2"/>
-				<link refId="492359305_3"/>
-				<link refId="492359305_4"/>
-				<link refId="492359283_0"/>
-				<link refId="492359299_0"/>
-				<link refId="492359299_1"/>
-				<link refId="492359299_2"/>
-				<link refId="492359299_3"/>
-				<link refId="492359299_4"/>
-				<link refId="492359299_5"/>
-				<link refId="492359299_6"/>
-				<link refId="492359299_7"/>
-				<link refId="492359299_8"/>
-				<link refId="492359299_9"/>
-				<link refId="492359299_10"/>
-				<link refId="492359299_11"/>
-				<link refId="492359299_12"/>
-				<link refId="492359303_0"/>
-				<link refId="492359303_1"/>
-				<link refId="162227773_0"/>
-				<link refId="162230039_0"/>
-				<link refId="162230039_1"/>
-				<link refId="162230039_2"/>
-				<link refId="162230039_3"/>
-				<link refId="162230039_4"/>
-				<link refId="162230039_5"/>
-				<link refId="162230039_6"/>
-				<link refId="162229394_1_r"/>
-				<link refId="162229394_0_r"/>
-				<link refId="492359292_3_r"/>
-				<link refId="492359292_2_r"/>
-				<link refId="683389513_6_r"/>
-				<link refId="492359298_2_r"/>
-				<link refId="492359298_1_r"/>
-				<link refId="492359298_0"/>
-				<link refId="666094868_0"/>
-				<link refId="236434949_1"/>
-				<link refId="236434949_2"/>
-				<link refId="236434949_3"/>
-				<link refId="236434949_4"/>
-				<link refId="236434949_5"/>
-				<link refId="236434949_6"/>
-				<link refId="771780908_0"/>
-				<link refId="745522524_0"/>
-				<link refId="746175801_0"/>
-				<link refId="666094867_0"/>
-				<link refId="666094867_1"/>
-				<link refId="682678878_0"/>
-				<link refId="682678878_1"/>
-				<link refId="682678880_0"/>
-				<link refId="682678880_1"/>
-				<link refId="682678880_2"/>
-				<link refId="682678880_3"/>
-				<link refId="682678880_4"/>
-				<link refId="682678880_5"/>
-				<link refId="682678880_6"/>
-				<link refId="682678880_7"/>
-				<link refId="682678880_8"/>
-				<link refId="682678880_9"/>
-				<link refId="350164526_0"/>
-				<link refId="350164526_1"/>
-				<link refId="666094865_3_r"/>
-				<link refId="666094865_2_r"/>
-				<link refId="666094865_1_r"/>
-				<link refId="666094865_0_r"/>
-				<link refId="349894998_0"/>
-				<link refId="368028915_1"/>
-				<link refId="368028915_2"/>
-				<link refId="368028915_3"/>
-				<link refId="368028915_4"/>
-				<link refId="368028915_5"/>
-				<link refId="368028915_6"/>
-				<link refId="770221600_0"/>
-				<link refId="492137571_4"/>
-				<link refId="336685655_0"/>
-				<link refId="336685655_1"/>
-				<link refId="336685655_2"/>
-				<link refId="336685655_3"/>
-				<link refId="336685655_4"/>
-				<link refId="336685655_5"/>
-				<link refId="336685655_6"/>
-				<link refId="336685655_7"/>
-				<link refId="336685655_8"/>
-				<link refId="336685655_9"/>
-				<link refId="336685655_10"/>
-				<link refId="627602248_0"/>
-				<link refId="193532919_4"/>
-			</route>
-			<departures>
-				<departure id="viagem_Linha6_Universidades_Alternativa_Volta0" departureTime="18:18:00" vehicleRefId="veiculo22"/>
-				<departure id="viagem_Linha6_Universidades_Alternativa_Volta1" departureTime="18:40:00" vehicleRefId="veiculo5"/>
-				<departure id="viagem_Linha6_Universidades_Alternativa_Volta2" departureTime="19:50:00" vehicleRefId="veiculo5"/>
 			</departures>
 		</transitRoute>
 
