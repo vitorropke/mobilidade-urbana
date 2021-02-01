@@ -3360,7 +3360,6 @@
 				<stop refId="terminal_Praca_Felipe_Guerra" arrivalOffset="00:02:00"/>
 			</routeProfile>
 			<route>
-				<link refId="627602248_0"/>
 				<link refId="193532919_4"/>
 				<link refId="193532919_5"/>
 				<link refId="193532919_6"/>
@@ -3485,7 +3484,6 @@
 				<stop refId="terminal_Praca_Felipe_Guerra" arrivalOffset="00:02:00"/>
 			</routeProfile>
 			<route>
-				<link refId="627602248_0"/>
 				<link refId="193532919_4"/>
 				<link refId="193532919_5"/>
 				<link refId="193532919_6"/>
