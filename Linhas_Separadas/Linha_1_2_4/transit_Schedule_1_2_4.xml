@@ -252,7 +252,7 @@
 		<stopFacility id="parada_IFRN_Ida" x="-4154572.169110" y="-581057.120551" linkRefId="682678880_9_r"/>
 		<stopFacility id="parada_Ministerio_Publico_da_Uniao_Ida" x="-4155090.162646478" y="-580392.9482077922" linkRefId="666094865_0"/>
 		<stopFacility id="parada_Supermercados_Queiroz_Dom_Jaime_Camara_Ida" x="-4154945.6699474286" y="-581391.6040754183" linkRefId="682678880_0_r"/>
-		<stopFacility id="parada_UERN_Ida" x="-4154089.400424247" y="-580321.9227872522" linkRefId="627602248_0"/>
+		<stopFacility id="parada_UERN_Ida" x="-4154089.400424247" y="-580321.9227872522" linkRefId="193532919_4"/>
 		<stopFacility id="parada_UFERSA_Ida" x="-4155081.591045687" y="-580007.1940723791" linkRefId="368028915_2_r"/>
 		<stopFacility id="parada_UFERSA_Lateral_Ida" x="-4154817.875171998" y="-580580.0693477748" linkRefId="666094865_0"/>
 	</transitStops>
@@ -2852,7 +2852,6 @@
 				<stop refId="terminal_Praca_Felipe_Guerra" arrivalOffset="00:02:00"/>
 			</routeProfile>
 			<route>
-				<link refId="627602248_0"/>
 				<link refId="193532919_4"/>
 				<link refId="193532919_5"/>
 				<link refId="193532919_6"/>
@@ -2977,7 +2976,6 @@
 				<stop refId="terminal_Praca_Felipe_Guerra" arrivalOffset="00:02:00"/>
 			</routeProfile>
 			<route>
-				<link refId="627602248_0"/>
 				<link refId="193532919_4"/>
 				<link refId="193532919_5"/>
 				<link refId="193532919_6"/>
