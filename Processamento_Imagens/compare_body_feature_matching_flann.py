@@ -1,9 +1,10 @@
 # https://docs.opencv.org/master/dc/dc3/tutorial_py_matcher.html
+
 import cv2 as cv
 import matplotlib.pyplot as plt
 
-img1 = cv.imread('../../ArquivosHDD/resources/frames/bones/frame584body0.png', cv.IMREAD_GRAYSCALE)  # queryImage
-img2 = cv.imread('../../ArquivosHDD/resources/frames1/bones/frame748body0.png', cv.IMREAD_GRAYSCALE)  # trainImage
+img1 = cv.imread('../../Documentos/videos_cameras/frame0body0.png', cv.IMREAD_GRAYSCALE)  # queryImage
+img2 = cv.imread('../../Documentos/videos_cameras/frame1body0.png', cv.IMREAD_GRAYSCALE)  # trainImage
 
 # Initiate SIFT detector
 sift = cv.SIFT_create()
@@ -15,7 +16,7 @@ kp2, des2 = sift.detectAndCompute(img2, None)
 # FLANN parameters
 FLANN_INDEX_KDTREE = 1
 index_params = dict(algorithm=FLANN_INDEX_KDTREE, trees=5)
-search_params = dict(checks=100)  # or pass empty dictionary
+search_params = dict(checks=1)  # or pass empty dictionary
 
 flann = cv.FlannBasedMatcher(index_params, search_params)
 
@@ -35,5 +36,4 @@ draw_params = dict(matchColor=(0, 255, 0),
                    flags=cv.DrawMatchesFlags_DEFAULT)
 
 img3 = cv.drawMatchesKnn(img1, kp1, img2, kp2, matches, None, **draw_params)
-
 plt.imshow(img3, ), plt.show()

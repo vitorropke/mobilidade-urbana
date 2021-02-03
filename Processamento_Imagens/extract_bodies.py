@@ -29,14 +29,15 @@ try:
 		      'Python script in the right folder?')
 		raise e
 
-	saveLocation = "/mnt/993a36c3-7196-41ee-9cf8-2ee60c841bc1/resources/frames1"
+	saveLocation = "../../Documentos/videos_cameras"
 
+	"""
 	# Take the video
-	videoCapture = cv2.VideoCapture('MHDX_ch3_main_20200220100000_20200220103000.avi')
+	videoCapture = cv2.VideoCapture('../../Documentos/videos_cameras/camera1/ch01_20210122160115.mp4')
 	success, image = videoCapture.read()
 	count = 0
 	framesLimit = 1800
-	"""
+	
 	# Save the frames on separate images
 	while success and count < framesLimit:
 		videoCapture.set(cv2.CAP_PROP_POS_MSEC, (count * 1000))  # Take 1 frame per second
@@ -46,9 +47,19 @@ try:
 		print('Read a new frame: ', success)
 		count += 1
 	"""
+
+	# Choose a specific frame
+	frame_no = 17660
+	videoCapture = cv2.VideoCapture('../../Documentos/videos_cameras/camera1/ch01_20210122160115.mp4')
+	videoCapture.set(1, frame_no)  # Where frame_no is the frame you want
+	ret, frame = videoCapture.read()  # Read the frame
+	cv2.imwrite(saveLocation + "/frame1.jpg", frame)  # save
+	cv2.imshow('window_name', frame)  # show frame on window
+
 	# Take all the bodies in all frames
-	for frame in range(framesLimit):
-		actualFrame = saveLocation + "/frame" + str(frame) + ".jpg"
+	for frame in range(1):
+		# actualFrame = saveLocation + "/frame" + str(frame) + ".jpg"
+		actualFrame = saveLocation + "/frame1.jpg"
 
 		# Flags
 		parser = argparse.ArgumentParser()
