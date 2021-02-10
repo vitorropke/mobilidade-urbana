@@ -90,6 +90,9 @@
 	<facility id="parada_Rua_Francisca_da_Nobrega_Gurjel_Volta3" x="-4161403.424927837" y="-578677.8060622767"/>
 	<facility id="parada_Rua_Francisca_da_Nobrega_Gurjel_Volta4" x="-4161515.920753" y="-578885.234052"/>
 	<facility id="parada_Rua_Francisca_da_Nobrega_Gurjel_Volta5" x="-4161553.691394" y="-578962.716118"/>
+	<facility id="parada_Rua_Frei_Miguelinho_Volta1" x="-4157755.129387" y="-578650.399197"/>
+	<facility id="parada_Rua_Frei_Miguelinho_Volta2" x="-4157948.909197" y="-578537.833730"/>
+	<facility id="parada_Rua_Gilberto_Mercelino_Sobrinho_Volta0" x="-4159652.618897" y="-577895.732834"/>
 	<facility id="parada_Rua_Raimundo_Nonato_Chaves_Ida0" x="-4159919.700623" y="-578140.271608"/>
 	<facility id="parada_Rua_Raimundo_Nonato_Chaves_Ida1" x="-4159816.241911" y="-578191.777028"/>
 	<facility id="parada_Rua_Ricardo_Guilherme_de_Lima_Volta0" x="-4159697.704801" y="-578414.519305"/>
@@ -101,33 +104,42 @@
 	<facility id="parada_Aeroporto" x="-4159189.2802559594" y="-578743.4197645684"/>
 	<facility id="parada_Cantina_azul" x="-4159929.031315" y="-578303.446749"/>
 	<facility id="parada_Capela_Santo_Expedito_Aeroporto" x="-4159827.588032" y="-578352.712802"/>
+	<facility id="parada_Granero_Transportes" x="-4159797.132654" y="-577825.267449"/>
 	<facility id="parada_HRTM" x="-4159562.089230626" y="-578559.5450631467"/>
 	<facility id="parada_ICPI" x="-4159645.452926" y="-578051.144839"/>
 	<facility id="parada_Igreja_Batista_Regular_Central" x="-4159259.684799" y="-577616.409240"/>
+	<facility id="parada_Igreja_Sao_Joao_Ida" x="-4158042.962571" y="-578683.541815"/>
+	<facility id="parada_Igreja_Sao_Joao_Volta" x="-4158020.867493" y="-578658.759497"/>
 	<facility id="parada_Posto_Ipiranga_Aeroporto_Ida" x="-4159618.6395319486" y="-578792.26680236"/>
 	<facility id="parada_Posto_Ipiranga_Aeroporto_Volta" x="-4159651.648505" y="-578749.080595"/>
 	<facility id="parada_Posto_Real" x="-4160925.5303538623" y="-578429.8829480198"/>
 	<facility id="parada_Posto_Shell_Posto_Olinda_Ltda" x="-4159960.457085" y="-577728.377544"/>
 	<facility id="parada_Procon_Municipal_de_Mossoro_Ida" x="-4158952.726338024" y="-578720.1699278093"/>
 	<facility id="parada_Procon_Municipal_de_Mossoro_Volta" x="-4158954.841408348" y="-578700.6087730137"/>
+	<facility id="parada_Rede_Maquinas_Lateral" x="-4159897.904127" y="-577776.598559"/>
 	<facility id="parada_Rodoviaria_Detran_RN" x="-4160402.955820" y="-578068.462603"/>
 	<facility id="parada_Spazio_di_Leone" x="-4159443.312816" y="-577811.084797"/>
+	<facility id="parada_Supermercado_Cidade_Alternativo_Ida" x="-4157483.121055" y="-578612.777847"/>
 	<facility id="parada_UBS_Chico_Porto" x="-4159603.651426" y="-577999.490128"/>
 	<facility id="parada_Vnz_Jeep" x="-4160153.938313" y="-577926.636086"/>
+	<facility id="parada_Wi_Fitness" x="-4157640.473844" y="-578873.738639"/>
 
 	<!--====================================================================================================================|
 	|												PARADAS MACARRÃO, BOA VISTA												|
 	|=====================================================================================================================-->
 	<!--PARADAS RUAS======================================================================================================-->
 	<facility id="parada_Rua_Anderson_Dutra_Volta0" x="-4160088.847406" y="-579131.862901"/>
-	<facility id="parada_Rua_Anderson_Dutra_Volta1" x="-4160166.180181" y="-579264.582663"/>
 	<facility id="parada_Rua_Antonio_Reis_Ida0" x="-4157637.189441" y="-579363.413352"/>
 	<facility id="parada_Rua_Candido_Clementino_Barros_Ida0" x="-4159840.352419" y="-579373.565145"/>
 	<facility id="parada_Rua_Coelho_Neto_Ida0" x="-4158444.256970" y="-579388.942125"/>
 	<facility id="parada_Rua_Coelho_Neto_Volta0" x="-4158439.479655" y="-579381.328280"/>
-	<facility id="parada_Rua_Dolores_do_Carmo_Reboucas_Ida0" x="-4160296.138058" y="-579517.257800"/>
-	<facility id="parada_Rua_Dolores_do_Carmo_Reboucas_Ida1" x="-4160119.5772405188" y="-579627.142806107"/>
-	<facility id="parada_Rua_Dolores_do_Carmo_Reboucas_Ida2" x="-4159960.390368684" y="-579701.3644215043"/>
+	<facility id="parada_Rua_Dolores_do_Carmo_Reboucas_Ida0" x="-4160494.919119" y="-579411.783659"/>
+	<facility id="parada_Rua_Dolores_do_Carmo_Reboucas_Volta0" x="-4160393.699773" y="-579456.944208"/>
+	<facility id="parada_Rua_Dolores_do_Carmo_Reboucas_Ida1" x="-4160396.387012" y="-579463.736951"/>
+	<facility id="parada_Rua_Dolores_do_Carmo_Reboucas_Volta1" x="-4160491.336133" y="-579401.034702"/>
+	<facility id="parada_Rua_Dolores_do_Carmo_Reboucas_Ida2" x="-4160296.138058" y="-579517.257800"/>
+	<facility id="parada_Rua_Dolores_do_Carmo_Reboucas_Ida3" x="-4160119.5772405188" y="-579627.142806107"/>
+	<facility id="parada_Rua_Dolores_do_Carmo_Reboucas_Ida4" x="-4159960.390368684" y="-579701.3644215043"/>
 	<facility id="parada_Rua_Francisco_Romualdo_Ida0" x="-4158632.905440975" y="-578796.4025942988"/>
 	<facility id="parada_Rua_Francisco_Solon_Ida0" x="-4158542.191912" y="-579033.778667"/>
 	<facility id="parada_Rua_Francisco_Solon_Volta0" x="-4158555.2044364014" y="-579047.2332403001"/>
@@ -153,8 +165,14 @@
 	<facility id="parada_Instituto_Aquarela" x="-4157894.268665" y="-579085.731960"/>
 	<facility id="parada_Intensefit_Academia_Aeroporto" x="-4159990.4466311983" y="-578975.1361048856"/>
 	<facility id="parada_Jucas_Bar_e_Restaurante" x="-4157824.8372573056" y="-578649.9733518137"/>
+	<facility id="parada_Loja_Maconica_Uniao_Mossoroense" x="-4160166.180181" y="-579264.582663"/>
 	<facility id="parada_Praca_Raimundo_Rubira_Ida" x="-4158123.281167" y="-579173.813692"/>
 	<facility id="parada_Praca_Raimundo_Rubira_Volta" x="-4158118.0527960556" y="-579149.0635836226"/>
+	<facility id="parada_Residencial_Celina_Guimaraes" x="-4160696.163483" y="-579140.671074"/>
+	<facility id="parada_Residencial_Celina_Guimaraes_Lateral_Ida0" x="-4160736.919945" y="-579276.675240"/>
+	<facility id="parada_Residencial_Celina_Guimaraes_Lateral_Volta0" x="-4160615.546304" y="-579337.138123"/>
+	<facility id="parada_Residencial_Celina_Guimaraes_Lateral_Ida1" x="-4160618.830708" y="-579345.797005"/>
+	<facility id="parada_Residencial_Celina_Guimaraes_Lateral_Volta1" x="-4160731.396175" y="-579271.450052"/>
 	<facility id="parada_SP_Combustiveis_Centro" x="-4158572.6815964547" y="-578645.9493463904"/>
 	<facility id="parada_Supermercado_Cidade_Alternativo_Volta" x="-4157469.684859" y="-578569.782019"/>
 	<facility id="parada_Supermercado_Queiroz_Aeroporto" x="-4160006.214799" y="-578970.180671"/>
