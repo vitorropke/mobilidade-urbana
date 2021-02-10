@@ -740,6 +740,9 @@
 		<stopFacility id="parada_Rua_Francisca_da_Nobrega_Gurjel_Volta3" x="-4161403.424927837" y="-578677.8060622767" linkRefId="431553123_3_r"/>
 		<stopFacility id="parada_Rua_Francisca_da_Nobrega_Gurjel_Volta4" x="-4161515.920753" y="-578885.234052" linkRefId="431553123_2_r"/>
 		<stopFacility id="parada_Rua_Francisca_da_Nobrega_Gurjel_Volta5" x="-4161553.691394" y="-578962.716118" linkRefId="431553123_1_r"/>
+		<stopFacility id="parada_Rua_Frei_Miguelinho_Volta1" x="-4157755.129387" y="-578650.399197" linkRefId="788051812_4"/>
+		<stopFacility id="parada_Rua_Frei_Miguelinho_Volta2" x="-4157948.909197" y="-578537.833730" linkRefId="788051812_6"/>
+		<stopFacility id="parada_Rua_Gilberto_Mercelino_Sobrinho_Volta0" x="-4159652.618897" y="-577895.732834" linkRefId="487046748_7"/>
 		<stopFacility id="parada_Rua_Raimundo_Nonato_Chaves_Ida0" x="-4159919.700623" y="-578140.271608" linkRefId="487046680_2"/>
 		<stopFacility id="parada_Rua_Raimundo_Nonato_Chaves_Ida1" x="-4159816.241911" y="-578191.777028" linkRefId="487046680_3"/>
 		<stopFacility id="parada_Rua_Ricardo_Guilherme_de_Lima_Volta0" x="-4159697.704801" y="-578414.519305" linkRefId="487046711_3"/>
@@ -751,33 +754,42 @@
 		<stopFacility id="parada_Aeroporto" x="-4159189.2802559594" y="-578743.4197645684" linkRefId="365870140_11"/>
 		<stopFacility id="parada_Cantina_azul" x="-4159929.031315" y="-578303.446749" linkRefId="487046711_9"/>
 		<stopFacility id="parada_Capela_Santo_Expedito_Aeroporto" x="-4159827.588032" y="-578352.712802" linkRefId="487046711_7"/>
+		<stopFacility id="parada_Granero_Transportes" x="-4159797.132654" y="-577825.267449" linkRefId="487046748_9"/>
 		<stopFacility id="parada_HRTM" x="-4159562.089230626" y="-578559.5450631467" linkRefId="485596131_3"/>
 		<stopFacility id="parada_ICPI" x="-4159645.452926" y="-578051.144839" linkRefId="487046750_20"/>
 		<stopFacility id="parada_Igreja_Batista_Regular_Central" x="-4159259.684799" y="-577616.409240" linkRefId="486857362_1"/>
+		<stopFacility id="parada_Igreja_Sao_Joao_Ida" x="-4158042.962571" y="-578683.541815" linkRefId="299634518_2"/>
+		<stopFacility id="parada_Igreja_Sao_Joao_Volta" x="-4158020.867493" y="-578658.759497" linkRefId="490138046_0"/>
 		<stopFacility id="parada_Posto_Ipiranga_Aeroporto_Ida" x="-4159618.6395319486" y="-578792.26680236" linkRefId="365870140_8"/>
 		<stopFacility id="parada_Posto_Ipiranga_Aeroporto_Volta" x="-4159651.648505" y="-578749.080595" linkRefId="485596131_0"/>
 		<stopFacility id="parada_Posto_Real" x="-4160925.5303538623" y="-578429.8829480198" linkRefId="49480937_3"/>
 		<stopFacility id="parada_Posto_Shell_Posto_Olinda_Ltda" x="-4159960.457085" y="-577728.377544" linkRefId="430608155_3"/>
 		<stopFacility id="parada_Procon_Municipal_de_Mossoro_Ida" x="-4158952.726338024" y="-578720.1699278093" linkRefId="365870140_12"/>
 		<stopFacility id="parada_Procon_Municipal_de_Mossoro_Volta" x="-4158954.841408348" y="-578700.6087730137" linkRefId="488475326_12"/>
+		<stopFacility id="parada_Rede_Maquinas_Lateral" x="-4159897.904127" y="-577776.598559" linkRefId="487046748_10"/>
 		<stopFacility id="parada_Rodoviaria_Detran_RN" x="-4160402.955820" y="-578068.462603" linkRefId="430608861_0"/>
 		<stopFacility id="parada_Spazio_di_Leone" x="-4159443.312816" y="-577811.084797" linkRefId="487046750_28"/>
+		<stopFacility id="parada_Supermercado_Cidade_Alternativo_Ida" x="-4157483.121055" y="-578612.777847" linkRefId="487178195_5"/>
 		<stopFacility id="parada_UBS_Chico_Porto" x="-4159603.651426" y="-577999.490128" linkRefId="487046750_22"/>
 		<stopFacility id="parada_Vnz_Jeep" x="-4160153.938313" y="-577926.636086" linkRefId="430608162_1"/>
+		<stopFacility id="parada_Wi_Fitness" x="-4157640.473844" y="-578873.738639" linkRefId="487178195_2"/>
 
 		<!--====================================================================================================================|
 		|												PARADAS MACARRÃO, BOA VISTA												|
 		|=====================================================================================================================-->
 		<!--PARADAS RUAS======================================================================================================-->
 		<stopFacility id="parada_Rua_Anderson_Dutra_Volta0" x="-4160088.847406" y="-579131.862901" linkRefId="761893534_13_r"/>
-		<stopFacility id="parada_Rua_Anderson_Dutra_Volta1" x="-4160166.180181" y="-579264.582663" linkRefId="761893534_11_r"/>
 		<stopFacility id="parada_Rua_Antonio_Reis_Ida0" x="-4157637.189441" y="-579363.413352" linkRefId="491990645_3"/>
 		<stopFacility id="parada_Rua_Candido_Clementino_Barros_Ida0" x="-4159840.352419" y="-579373.565145" linkRefId="490608970_0_r"/>
 		<stopFacility id="parada_Rua_Coelho_Neto_Ida0" x="-4158444.256970" y="-579388.942125" linkRefId="490698571_4_r"/>
 		<stopFacility id="parada_Rua_Coelho_Neto_Volta0" x="-4158439.479655" y="-579381.328280" linkRefId="490698571_4"/>
-		<stopFacility id="parada_Rua_Dolores_do_Carmo_Reboucas_Ida0" x="-4160296.138058" y="-579517.257800" linkRefId="490609074_13"/>
-		<stopFacility id="parada_Rua_Dolores_do_Carmo_Reboucas_Ida1" x="-4160119.5772405188" y="-579627.142806107" linkRefId="490609074_16"/>
-		<stopFacility id="parada_Rua_Dolores_do_Carmo_Reboucas_Ida2" x="-4159960.390368684" y="-579701.3644215043" linkRefId="490609074_19"/>
+		<stopFacility id="parada_Rua_Dolores_do_Carmo_Reboucas_Ida0" x="-4160494.919119" y="-579411.783659" linkRefId="490609074_7"/>
+		<stopFacility id="parada_Rua_Dolores_do_Carmo_Reboucas_Volta0" x="-4160393.699773" y="-579456.944208" linkRefId="490609074_11_r"/>
+		<stopFacility id="parada_Rua_Dolores_do_Carmo_Reboucas_Ida1" x="-4160396.387012" y="-579463.736951" linkRefId="490609074_11"/>
+		<stopFacility id="parada_Rua_Dolores_do_Carmo_Reboucas_Volta1" x="-4160491.336133" y="-579401.034702" linkRefId="490609074_7_r"/>
+		<stopFacility id="parada_Rua_Dolores_do_Carmo_Reboucas_Ida2" x="-4160296.138058" y="-579517.257800" linkRefId="490609074_13"/>
+		<stopFacility id="parada_Rua_Dolores_do_Carmo_Reboucas_Ida3" x="-4160119.5772405188" y="-579627.142806107" linkRefId="490609074_16"/>
+		<stopFacility id="parada_Rua_Dolores_do_Carmo_Reboucas_Ida4" x="-4159960.390368684" y="-579701.3644215043" linkRefId="490609074_19"/>
 		<stopFacility id="parada_Rua_Francisco_Romualdo_Ida0" x="-4158632.905440975" y="-578796.4025942988" linkRefId="490698564_1"/>
 		<stopFacility id="parada_Rua_Francisco_Solon_Ida0" x="-4158542.191912" y="-579033.778667" linkRefId="490698533_7_r"/>
 		<stopFacility id="parada_Rua_Francisco_Solon_Volta0" x="-4158555.2044364014" y="-579047.2332403001" linkRefId="490698533_7"/>
@@ -803,9 +815,15 @@
 		<stopFacility id="parada_Instituto_Aquarela" x="-4157894.268665" y="-579085.731960" linkRefId="490698546_1"/>
 		<stopFacility id="parada_Intensefit_Academia_Aeroporto" x="-4159990.4466311983" y="-578975.1361048856" linkRefId="490609016_0_r"/>
 		<stopFacility id="parada_Jucas_Bar_e_Restaurante" x="-4157824.8372573056" y="-578649.9733518137" linkRefId="491945392_15_r"/>
+		<stopFacility id="parada_Loja_Maconica_Uniao_Mossoroense" x="-4160166.180181" y="-579264.582663" linkRefId="761893534_11_r"/>
 		<stopFacility id="parada_Praca_Raimundo_Rubira_Ida" x="-4158123.281167" y="-579173.813692" linkRefId="491945392_5"/>
 		<stopFacility id="parada_Praca_Raimundo_Rubira_Volta" x="-4158118.0527960556" y="-579149.0635836226" linkRefId="491945392_5_r"/>
-		<stopFacility id="parada_SP_Combustiveis_Centro" x="-4158572.6815964547" y="-578645.9493463904" linkRefId="488295550_0_r"/>
+		<stopFacility id="parada_Residencial_Celina_Guimaraes" x="-4160696.163483" y="-579140.671074" linkRefId="490609009_2"/>
+		<stopFacility id="parada_Residencial_Celina_Guimaraes_Lateral_Ida0" x="-4160736.919945" y="-579276.675240" linkRefId="490609074_0"/>
+		<stopFacility id="parada_Residencial_Celina_Guimaraes_Lateral_Volta0" x="-4160615.546304" y="-579337.138123" linkRefId="490609074_3_r"/>
+		<stopFacility id="parada_Residencial_Celina_Guimaraes_Lateral_Ida1" x="-4160618.830708" y="-579345.797005" linkRefId="490609074_3"/>
+		<stopFacility id="parada_Residencial_Celina_Guimaraes_Lateral_Volta1" x="-4160731.396175" y="-579271.450052" linkRefId="490609074_0_r"/>
+		<stopFacility id="parada_SP_Combustiveis_Centro" x="-4158572.6815964547" y="-578645.9493463904" linkRefId="488475326_7"/>
 		<stopFacility id="parada_Supermercado_Cidade_Alternativo_Volta" x="-4157469.684859" y="-578569.782019" linkRefId="487178202_0"/>
 		<stopFacility id="parada_Supermercado_Queiroz_Aeroporto" x="-4160006.214799" y="-578970.180671" linkRefId="761893534_15_r"/>
 		<stopFacility id="parada_Tiinha_Restaurante_Ida" x="-4158508.153548" y="-578899.416703" linkRefId="490698533_4_r"/>
@@ -10275,10 +10293,10 @@
 				<stop refId="parada_BR_405_Ida1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Supermercado_Queiroz_Aeroporto" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Rua_Anderson_Dutra_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Anderson_Dutra_Volta1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Dolores_do_Carmo_Reboucas_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Dolores_do_Carmo_Reboucas_Ida1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Loja_Maconica_Uniao_Mossoroense" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Rua_Dolores_do_Carmo_Reboucas_Ida2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Dolores_do_Carmo_Reboucas_Ida3" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Dolores_do_Carmo_Reboucas_Ida4" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Igreja_Assembleia_de_Deus_Avivamento_e_Milagres" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Rua_Candido_Clementino_Barros_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Assembleia_de_Deus_Centenario_I" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
@@ -10727,6 +10745,7 @@
 				<stop refId="parada_Mercado_Central" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Supermercado_Cidade_Alternativo_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Rua_Frei_Miguelinho_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Frei_Miguelinho_Volta1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Jucas_Bar_e_Restaurante" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_Rua_Silva_Jardim_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
 				<stop refId="parada_EE_Onzieme_Rosado_Fernandes" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
@@ -11801,6 +11820,760 @@
 				<departure id="viagem_Linha12_Nova_Mossoro_Volta4" departureTime="15:35:00" vehicleRefId="veiculo12"/>
 				<departure id="viagem_Linha12_Nova_Mossoro_Volta5" departureTime="17:20:00" vehicleRefId="veiculo12"/>
 				<departure id="viagem_Linha12_Nova_Mossoro_Volta6" departureTime="19:01:00" vehicleRefId="veiculo12"/>
+			</departures>
+		</transitRoute>
+
+		<!--====================================================================================================================|
+		|																														|
+		|											LINHA 14 - AEROPORTO, RODOVIÁRIA											|
+		|																														|
+		|=====================================================================================================================-->
+		<!--LINHA 14 - AEROPORTO, RODOVIÁRIA - IDA============================================================================-->
+		<transitRoute id="Linha14_Aeroporto_Rodoviaria_Ida">
+			<transportMode>pt</transportMode>
+			<routeProfile>
+				<stop refId="parada_Capela_Santo_Expedito_Aeroporto" departureOffset="00:00:00"/>
+				<stop refId="parada_Cantina_azul" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Ricardo_Guilherme_de_Lima_Volta1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Ricardo_Lima_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Ricardo_Lima_Ida1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Raimundo_Nonato_Chaves_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Raimundo_Nonato_Chaves_Ida1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Avenida_Mota_Neto_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Avenida_Mota_Neto_Ida1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_ICPI" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_UBS_Chico_Porto" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Gilberto_Mercelino_Sobrinho_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Granero_Transportes" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rede_Maquinas_Lateral" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Posto_Shell_Posto_Olinda_Ltda" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Vnz_Jeep" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rodoviaria_Detran_RN" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Posto_Real" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Francisca_da_Nobrega_Gurjel_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Francisca_da_Nobrega_Gurjel_Volta1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Francisca_da_Nobrega_Gurjel_Volta2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Francisca_da_Nobrega_Gurjel_Volta3" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Francisca_da_Nobrega_Gurjel_Volta4" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Francisca_da_Nobrega_Gurjel_Volta5" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_BR_405_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_BR_405_Ida1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Felipe_Camarao_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Posto_Ipiranga_Aeroporto_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Aeroporto" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Procon_Municipal_de_Mossoro_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Igreja_Sao_Joao_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Wi_Fitness" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Supermercado_Cidade_Alternativo_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Teatro_Municipal_Dix_Huit_Rosado" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Loterica_Sorteca" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Central" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Caixa_Economica_Federal" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Oficinas" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_AeC" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Praca_Gazeta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="terminal_Praca_Felipe_Guerra" arrivalOffset="00:02:00"/>
+			</routeProfile>
+			<route>
+				<link refId="487046711_7"/>
+				<link refId="487046711_8"/>
+				<link refId="487046711_9"/>
+				<link refId="487046711_10"/>
+				<link refId="487046711_11"/>
+				<link refId="487046730_7"/>
+				<link refId="487046730_8"/>
+				<link refId="487046730_9"/>
+				<link refId="487046680_2"/>
+				<link refId="487046680_3"/>
+				<link refId="772043702_0"/>
+				<link refId="487046709_0"/>
+				<link refId="487046750_16"/>
+				<link refId="487046750_17"/>
+				<link refId="487046750_18"/>
+				<link refId="487046750_19"/>
+				<link refId="487046750_20"/>
+				<link refId="487046750_21"/>
+				<link refId="487046750_22"/>
+				<link refId="487046750_23"/>
+				<link refId="487046748_5"/>
+				<link refId="487046748_6"/>
+				<link refId="487046748_7"/>
+				<link refId="487046748_8"/>
+				<link refId="487046748_9"/>
+				<link refId="487046748_10"/>
+				<link refId="487046748_11"/>
+				<link refId="336152774_25"/>
+				<link refId="336152774_26"/>
+				<link refId="336152774_27"/>
+				<link refId="336152774_28"/>
+				<link refId="487510897_0"/>
+				<link refId="429777255_0"/>
+				<link refId="429777255_1"/>
+				<link refId="429777255_2"/>
+				<link refId="429777255_3"/>
+				<link refId="485596123_0"/>
+				<link refId="429777261_1"/>
+				<link refId="430608155_1"/>
+				<link refId="430608155_2"/>
+				<link refId="430608155_3"/>
+				<link refId="430608162_0"/>
+				<link refId="430608162_1"/>
+				<link refId="430608162_2"/>
+				<link refId="430608162_3"/>
+				<link refId="430608373_0"/>
+				<link refId="430608373_1"/>
+				<link refId="430608373_2"/>
+				<link refId="430608861_0"/>
+				<link refId="430608373_6"/>
+				<link refId="430608373_7"/>
+				<link refId="430608373_8"/>
+				<link refId="430608162_5"/>
+				<link refId="430608162_6"/>
+				<link refId="430608181_0"/>
+				<link refId="430608155_8"/>
+				<link refId="430608180_0"/>
+				<link refId="747980063_0"/>
+				<link refId="49480937_0"/>
+				<link refId="49480937_1"/>
+				<link refId="49480937_2"/>
+				<link refId="49480937_3"/>
+				<link refId="49480937_4"/>
+				<link refId="49480937_5"/>
+				<link refId="49480937_6"/>
+				<link refId="431553123_6_r"/>
+				<link refId="431553123_5_r"/>
+				<link refId="431553123_4_r"/>
+				<link refId="431553123_3_r"/>
+				<link refId="431553123_2_r"/>
+				<link refId="431553123_1_r"/>
+				<link refId="431553123_0_r"/>
+				<link refId="787243186_2"/>
+				<link refId="787243186_3"/>
+				<link refId="787243186_4"/>
+				<link refId="365870172_0"/>
+				<link refId="365870172_1"/>
+				<link refId="365870172_2"/>
+				<link refId="365870172_3"/>
+				<link refId="430608187_0"/>
+				<link refId="430608187_1"/>
+				<link refId="273777946_0"/>
+				<link refId="365870140_0"/>
+				<link refId="365870140_1"/>
+				<link refId="365870140_2"/>
+				<link refId="365870140_3"/>
+				<link refId="365870140_4"/>
+				<link refId="365870140_5"/>
+				<link refId="365870140_6"/>
+				<link refId="365870140_7"/>
+				<link refId="365870140_8"/>
+				<link refId="365870140_9"/>
+				<link refId="365870140_10"/>
+				<link refId="365870140_11"/>
+				<link refId="365870140_12"/>
+				<link refId="365870140_13"/>
+				<link refId="365870140_14"/>
+				<link refId="365870140_15"/>
+				<link refId="365870140_16"/>
+				<link refId="365870140_17"/>
+				<link refId="365870140_18"/>
+				<link refId="365870140_19"/>
+				<link refId="365870140_20"/>
+				<link refId="365870140_21"/>
+				<link refId="365870140_22"/>
+				<link refId="365870140_23"/>
+				<link refId="365870140_24"/>
+				<link refId="365870140_25"/>
+				<link refId="488475325_0"/>
+				<link refId="299634518_0"/>
+				<link refId="299634518_1"/>
+				<link refId="299634518_2"/>
+				<link refId="299634518_3"/>
+				<link refId="676811271_0"/>
+				<link refId="676811271_1"/>
+				<link refId="676811271_2"/>
+				<link refId="676811271_3"/>
+				<link refId="676811271_4"/>
+				<link refId="676811271_5"/>
+				<link refId="676068115_0"/>
+				<link refId="487178195_2"/>
+				<link refId="487178195_3"/>
+				<link refId="487178195_4"/>
+				<link refId="487178195_5"/>
+				<link refId="487178201_0"/>
+				<link refId="487178201_1"/>
+				<link refId="488546099_1"/>
+				<link refId="488546099_2"/>
+				<link refId="488546099_3"/>
+				<link refId="488546099_4"/>
+				<link refId="488546099_5"/>
+				<link refId="488546099_6"/>
+				<link refId="488900268_0"/>
+				<link refId="488900268_1"/>
+				<link refId="488900268_2"/>
+				<link refId="488900268_3"/>
+				<link refId="488900268_4"/>
+				<link refId="488900268_5"/>
+				<link refId="488900268_6"/>
+				<link refId="488900268_7"/>
+				<link refId="490698546_14"/>
+				<link refId="488900248_8"/>
+				<link refId="488900248_9"/>
+				<link refId="488900248_10"/>
+				<link refId="488900262_0"/>
+				<link refId="769208664_1"/>
+				<link refId="769208664_2"/>
+				<link refId="769208664_3"/>
+				<link refId="769208664_4"/>
+				<link refId="491990665_4"/>
+				<link refId="491992841_0"/>
+				<link refId="497966183_0"/>
+			</route>
+			<departures>
+				<departure id="viagem_Linha14_Aeroporto_Rodoviaria_Ida0" departureTime="05:45:00" vehicleRefId="veiculo31"/>
+				<departure id="viagem_Linha14_Aeroporto_Rodoviaria_Ida1" departureTime="06:44:00" vehicleRefId="veiculo31"/>
+				<departure id="viagem_Linha14_Aeroporto_Rodoviaria_Ida2" departureTime="07:48:00" vehicleRefId="veiculo31"/>
+				<departure id="viagem_Linha14_Aeroporto_Rodoviaria_Ida3" departureTime="08:52:00" vehicleRefId="veiculo31"/>
+				<departure id="viagem_Linha14_Aeroporto_Rodoviaria_Ida4" departureTime="09:56:00" vehicleRefId="veiculo31"/>
+				<departure id="viagem_Linha14_Aeroporto_Rodoviaria_Ida5" departureTime="12:04:00" vehicleRefId="veiculo31"/>
+				<departure id="viagem_Linha14_Aeroporto_Rodoviaria_Ida6" departureTime="13:08:00" vehicleRefId="veiculo31"/>
+				<departure id="viagem_Linha14_Aeroporto_Rodoviaria_Ida7" departureTime="14:12:00" vehicleRefId="veiculo31"/>
+				<departure id="viagem_Linha14_Aeroporto_Rodoviaria_Ida8" departureTime="15:16:00" vehicleRefId="veiculo31"/>
+				<departure id="viagem_Linha14_Aeroporto_Rodoviaria_Ida9" departureTime="16:20:00" vehicleRefId="veiculo31"/>
+			</departures>
+		</transitRoute>
+
+		<!--LINHA 14 - AEROPORTO, RODOVIÁRIA - VOLTA==========================================================================-->
+		<transitRoute id="Linha14_Aeroporto_Rodoviaria_Volta">
+			<transportMode>pt</transportMode>
+			<routeProfile>
+				<stop refId="terminal_Praca_Felipe_Guerra" departureOffset="00:00:00"/>
+				<stop refId="parada_Igreja_Sao_Vicente" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_CIEE" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Hotel_Caraubas" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Doutor_Mario_Negocio0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Igreja_Universal_do_Reino_de_Deus_Centro" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Praca_Antonio_Gomes" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_FMA_Imobiliaria" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Catedral_de_Santa_Luzia" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Mercado_Central" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Supermercado_Cidade_Alternativo_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Frei_Miguelinho_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Frei_Miguelinho_Volta1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Frei_Miguelinho_Volta2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Igreja_Sao_Joao_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_SP_Combustiveis_Centro" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Procon_Municipal_de_Mossoro_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Posto_Ipiranga_Aeroporto_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_HRTM" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Ricardo_Guilherme_de_Lima_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Capela_Santo_Expedito_Aeroporto" arrivalOffset="00:02:00"/>
+			</routeProfile>
+			<route>
+				<link refId="497966183_0"/>
+				<link refId="769208664_4"/>
+				<link refId="769208664_5"/>
+				<link refId="491990646_4"/>
+				<link refId="491990646_5"/>
+				<link refId="491990646_6"/>
+				<link refId="491990646_7"/>
+				<link refId="491990646_8"/>
+				<link refId="491990646_9"/>
+				<link refId="491990646_10"/>
+				<link refId="491990646_11"/>
+				<link refId="491990646_12"/>
+				<link refId="491990646_13"/>
+				<link refId="761618598_1"/>
+				<link refId="761618597_0"/>
+				<link refId="488900263_0"/>
+				<link refId="488900263_1"/>
+				<link refId="488900238_0"/>
+				<link refId="488900238_1"/>
+				<link refId="488900238_2"/>
+				<link refId="488900238_3"/>
+				<link refId="488900238_4"/>
+				<link refId="488900238_5"/>
+				<link refId="676068109_10"/>
+				<link refId="676068109_11"/>
+				<link refId="488900230_0"/>
+				<link refId="488900230_1"/>
+				<link refId="488900230_2"/>
+				<link refId="488900230_3"/>
+				<link refId="488900230_4"/>
+				<link refId="488900230_5"/>
+				<link refId="488900230_6"/>
+				<link refId="488900234_0"/>
+				<link refId="488900266_4"/>
+				<link refId="488900266_5"/>
+				<link refId="488546096_0"/>
+				<link refId="488546096_1"/>
+				<link refId="488546096_2"/>
+				<link refId="488546096_3"/>
+				<link refId="488546096_4"/>
+				<link refId="488546096_5"/>
+				<link refId="488546096_6"/>
+				<link refId="488546096_7"/>
+				<link refId="488546096_8"/>
+				<link refId="781466655_5"/>
+				<link refId="781466655_6"/>
+				<link refId="781466655_7"/>
+				<link refId="487178202_0"/>
+				<link refId="487178202_1"/>
+				<link refId="487178202_2"/>
+				<link refId="788051812_2"/>
+				<link refId="788051812_3"/>
+				<link refId="788051812_4"/>
+				<link refId="788051812_5"/>
+				<link refId="788051812_6"/>
+				<link refId="490138046_0"/>
+				<link refId="490138049_0"/>
+				<link refId="490138049_1"/>
+				<link refId="490138049_2"/>
+				<link refId="488475334_0"/>
+				<link refId="488475326_0"/>
+				<link refId="488475326_1"/>
+				<link refId="488475326_2"/>
+				<link refId="488475326_3"/>
+				<link refId="488475326_4"/>
+				<link refId="488475326_5"/>
+				<link refId="488475326_6"/>
+				<link refId="488475326_7"/>
+				<link refId="488475326_8"/>
+				<link refId="488475326_9"/>
+				<link refId="488475326_10"/>
+				<link refId="488475326_11"/>
+				<link refId="488475326_12"/>
+				<link refId="488475326_13"/>
+				<link refId="488475326_14"/>
+				<link refId="488475326_15"/>
+				<link refId="488475326_16"/>
+				<link refId="488475326_17"/>
+				<link refId="485596131_0"/>
+				<link refId="485596131_1"/>
+				<link refId="485596131_2"/>
+				<link refId="485596131_3"/>
+				<link refId="485596131_4"/>
+				<link refId="487046711_0"/>
+				<link refId="487046711_1"/>
+				<link refId="487046711_2"/>
+				<link refId="487046711_3"/>
+				<link refId="487046711_4"/>
+				<link refId="487046711_5"/>
+				<link refId="487046711_6"/>
+				<link refId="487046711_7"/>
+			</route>
+			<departures>
+				<departure id="viagem_Linha14_Aeroporto_Rodoviaria_Volta0" departureTime="06:22:00" vehicleRefId="veiculo31"/>
+				<departure id="viagem_Linha14_Aeroporto_Rodoviaria_Volta1" departureTime="07:26:00" vehicleRefId="veiculo31"/>
+				<departure id="viagem_Linha14_Aeroporto_Rodoviaria_Volta2" departureTime="08:30:00" vehicleRefId="veiculo31"/>
+				<departure id="viagem_Linha14_Aeroporto_Rodoviaria_Volta3" departureTime="09:34:00" vehicleRefId="veiculo31"/>
+				<departure id="viagem_Linha14_Aeroporto_Rodoviaria_Volta4" departureTime="11:42:00" vehicleRefId="veiculo31"/>
+				<departure id="viagem_Linha14_Aeroporto_Rodoviaria_Volta5" departureTime="12:46:00" vehicleRefId="veiculo31"/>
+				<departure id="viagem_Linha14_Aeroporto_Rodoviaria_Volta6" departureTime="13:50:00" vehicleRefId="veiculo31"/>
+				<departure id="viagem_Linha14_Aeroporto_Rodoviaria_Volta7" departureTime="14:54:00" vehicleRefId="veiculo31"/>
+				<departure id="viagem_Linha14_Aeroporto_Rodoviaria_Volta8" departureTime="15:58:00" vehicleRefId="veiculo31"/>
+				<departure id="viagem_Linha14_Aeroporto_Rodoviaria_Volta9" departureTime="17:02:00" vehicleRefId="veiculo31"/>
+				<departure id="viagem_Linha14_Aeroporto_Rodoviaria_Volta10" departureTime="17:56:00" vehicleRefId="veiculo31"/>
+			</departures>
+		</transitRoute>
+
+		<!--====================================================================================================================|
+		|																														|
+		|											LINHA 15 - MACARRÃO, BOA VISTA												|
+		|																														|
+		|=====================================================================================================================-->
+		<!--LINHA 15 - MACARRÃO, BOA VISTA - IDA==============================================================================-->
+		<transitRoute id="Linha15_Macarrao_Boa_Vista_Ida">
+			<transportMode>pt</transportMode>
+			<routeProfile>
+				<stop refId="parada_Loja_Maconica_Uniao_Mossoroense" departureOffset="00:00:00"/>
+				<stop refId="parada_Rua_Dolores_do_Carmo_Reboucas_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Dolores_do_Carmo_Reboucas_Volta1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Residencial_Celina_Guimaraes_Lateral_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Residencial_Celina_Guimaraes_Lateral_Volta1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Residencial_Celina_Guimaraes" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Residencial_Celina_Guimaraes_Lateral_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Residencial_Celina_Guimaraes_Lateral_Ida1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Dolores_do_Carmo_Reboucas_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Dolores_do_Carmo_Reboucas_Ida1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Dolores_do_Carmo_Reboucas_Ida2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Dolores_do_Carmo_Reboucas_Ida3" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Dolores_do_Carmo_Reboucas_Ida4" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Igreja_Assembleia_de_Deus_Avivamento_e_Milagres" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Candido_Clementino_Barros_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Assembleia_de_Deus_Centenario_I" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Intensefit_Academia_Aeroporto" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Felipe_Camarao_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Posto_Ipiranga_Aeroporto_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Aeroporto" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Procon_Municipal_de_Mossoro_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Francisco_Romualdo_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Tiinha_Restaurante_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Francisco_Solon_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_FUNDAC_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Aplastec_Center_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Coelho_Neto_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Assembleia_de_Deus_Boa_Vista_I" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Silva_Jardim_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Silva_Jardim_Ida1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Praca_Raimundo_Rubira_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Nisia_Floresta_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Instituto_Aquarela" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_EM_Professor_Manoel_Assis" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Praca_dos_Esportes" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Nisia_Floresta_Ida1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Antonio_Reis_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Holanda_Pneus" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Shopping_Boulevard" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Igreja_Sao_Vicente" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Loterica_Sorteca" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Central" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Caixa_Economica_Federal" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Oficinas" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_AeC" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Praca_Gazeta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="terminal_Praca_Felipe_Guerra" arrivalOffset="00:02:00"/>
+			</routeProfile>
+			<route>
+				<link refId="761893534_11_r"/>
+				<link refId="761893534_10_r"/>
+				<link refId="761893534_9_r"/>
+				<link refId="761893534_8_r"/>
+				<link refId="761893534_7_r"/>
+				<link refId="761893534_6_r"/>
+				<link refId="490609074_12_r"/>
+				<link refId="490609074_11_r"/>
+				<link refId="490609074_10_r"/>
+				<link refId="490609074_9_r"/>
+				<link refId="490609074_8_r"/>
+				<link refId="490609074_7_r"/>
+				<link refId="490609074_6_r"/>
+				<link refId="490609074_5_r"/>
+				<link refId="490609074_4_r"/>
+				<link refId="490609074_3_r"/>
+				<link refId="490609074_2_r"/>
+				<link refId="490609074_1_r"/>
+				<link refId="490609074_0_r"/>
+				<link refId="764839683_0"/>
+				<link refId="490609009_1"/>
+				<link refId="490609009_2"/>
+				<link refId="490609009_2_r"/>
+				<link refId="490609009_1_r"/>
+				<link refId="490609009_0_r"/>
+				<link refId="490608976_0"/>
+				<link refId="490609074_0"/>
+				<link refId="490609074_1"/>
+				<link refId="490609074_2"/>
+				<link refId="490609074_3"/>
+				<link refId="490609074_4"/>
+				<link refId="490609074_5"/>
+				<link refId="490609074_6"/>
+				<link refId="490609074_7"/>
+				<link refId="490609074_8"/>
+				<link refId="490609074_9"/>
+				<link refId="490609074_10"/>
+				<link refId="490609074_11"/>
+				<link refId="490609074_12"/>
+				<link refId="490609074_13"/>
+				<link refId="490609074_14"/>
+				<link refId="490609074_15"/>
+				<link refId="490609074_16"/>
+				<link refId="490609074_17"/>
+				<link refId="490609074_18"/>
+				<link refId="490609074_19"/>
+				<link refId="490608958_3"/>
+				<link refId="490608958_4"/>
+				<link refId="490608958_5"/>
+				<link refId="490608958_6"/>
+				<link refId="490608958_7"/>
+				<link refId="490608958_8"/>
+				<link refId="490608958_9"/>
+				<link refId="490608970_1_r"/>
+				<link refId="490608970_0_r"/>
+				<link refId="490609016_5_r"/>
+				<link refId="490609016_4_r"/>
+				<link refId="490609016_3_r"/>
+				<link refId="490609016_2_r"/>
+				<link refId="490609016_1_r"/>
+				<link refId="490609016_0_r"/>
+				<link refId="761893534_16"/>
+				<link refId="761893534_17"/>
+				<link refId="761893534_18"/>
+				<link refId="490608997_0"/>
+				<link refId="365870140_6"/>
+				<link refId="365870140_7"/>
+				<link refId="365870140_8"/>
+				<link refId="365870140_9"/>
+				<link refId="365870140_10"/>
+				<link refId="365870140_11"/>
+				<link refId="365870140_12"/>
+				<link refId="365870140_13"/>
+				<link refId="490698574_0"/>
+				<link refId="490698564_0"/>
+				<link refId="490698564_1"/>
+				<link refId="490698564_2"/>
+				<link refId="490698533_2"/>
+				<link refId="490698533_3"/>
+				<link refId="490698533_4"/>
+				<link refId="490698533_5"/>
+				<link refId="490698533_6"/>
+				<link refId="490698533_7"/>
+				<link refId="490698533_8"/>
+				<link refId="490698533_9"/>
+				<link refId="490698533_10"/>
+				<link refId="490698571_7_r"/>
+				<link refId="490698571_6_r"/>
+				<link refId="490698571_5_r"/>
+				<link refId="490698571_4_r"/>
+				<link refId="490698571_3_r"/>
+				<link refId="490698571_2_r"/>
+				<link refId="491945392_2"/>
+				<link refId="491945392_3"/>
+				<link refId="491945392_4"/>
+				<link refId="491945392_5"/>
+				<link refId="491945392_6"/>
+				<link refId="491945392_7"/>
+				<link refId="769242922_0"/>
+				<link refId="490698546_0"/>
+				<link refId="490698546_1"/>
+				<link refId="490698546_2"/>
+				<link refId="490698546_3"/>
+				<link refId="490698546_4"/>
+				<link refId="490698546_5"/>
+				<link refId="490698546_6"/>
+				<link refId="490698546_7"/>
+				<link refId="490698546_8"/>
+				<link refId="488963578_7"/>
+				<link refId="488963578_8"/>
+				<link refId="491990645_2"/>
+				<link refId="491990645_3"/>
+				<link refId="491990645_4"/>
+				<link refId="491990645_5"/>
+				<link refId="804280711_6"/>
+				<link refId="491990646_0"/>
+				<link refId="491990646_1"/>
+				<link refId="491990646_2"/>
+				<link refId="491990646_3"/>
+				<link refId="491990646_4"/>
+				<link refId="491990646_5"/>
+				<link refId="491990646_6"/>
+				<link refId="491990646_7"/>
+				<link refId="491990646_8"/>
+				<link refId="491990646_9"/>
+				<link refId="488546099_5"/>
+				<link refId="488546099_6"/>
+				<link refId="488900268_0"/>
+				<link refId="488900268_1"/>
+				<link refId="488900268_2"/>
+				<link refId="488900268_3"/>
+				<link refId="488900268_4"/>
+				<link refId="488900268_5"/>
+				<link refId="488900268_6"/>
+				<link refId="488900268_7"/>
+				<link refId="490698546_14"/>
+				<link refId="488900248_8"/>
+				<link refId="488900248_9"/>
+				<link refId="488900248_10"/>
+				<link refId="488900262_0"/>
+				<link refId="769208664_1"/>
+				<link refId="769208664_2"/>
+				<link refId="769208664_3"/>
+				<link refId="769208664_4"/>
+				<link refId="491990665_4"/>
+				<link refId="491992841_0"/>
+				<link refId="497966183_0"/>
+			</route>
+			<departures>
+				<departure id="viagem_Linha15_Macarrao_Boa_Vista_Ida0" departureTime="05:50:00" vehicleRefId="veiculo30"/>
+				<departure id="viagem_Linha15_Macarrao_Boa_Vista_Ida1" departureTime="06:20:00" vehicleRefId="veiculo33"/>
+				<departure id="viagem_Linha15_Macarrao_Boa_Vista_Ida2" departureTime="06:58:00" vehicleRefId="veiculo30"/>
+				<departure id="viagem_Linha15_Macarrao_Boa_Vista_Ida3" departureTime="07:32:00" vehicleRefId="veiculo33"/>
+				<departure id="viagem_Linha15_Macarrao_Boa_Vista_Ida4" departureTime="08:54:00" vehicleRefId="veiculo33"/>
+				<departure id="viagem_Linha15_Macarrao_Boa_Vista_Ida5" departureTime="10:16:00" vehicleRefId="veiculo33"/>
+				<departure id="viagem_Linha15_Macarrao_Boa_Vista_Ida6" departureTime="11:38:00" vehicleRefId="veiculo33"/>
+				<departure id="viagem_Linha15_Macarrao_Boa_Vista_Ida7" departureTime="12:16:00" vehicleRefId="veiculo30"/>
+				<departure id="viagem_Linha15_Macarrao_Boa_Vista_Ida8" departureTime="12:59:00" vehicleRefId="veiculo33"/>
+				<departure id="viagem_Linha15_Macarrao_Boa_Vista_Ida9" departureTime="13:35:00" vehicleRefId="veiculo30"/>
+				<departure id="viagem_Linha15_Macarrao_Boa_Vista_Ida10" departureTime="14:20:00" vehicleRefId="veiculo33"/>
+				<departure id="viagem_Linha15_Macarrao_Boa_Vista_Ida11" departureTime="14:47:00" vehicleRefId="veiculo30"/>
+				<departure id="viagem_Linha15_Macarrao_Boa_Vista_Ida12" departureTime="15:41:00" vehicleRefId="veiculo33"/>
+				<departure id="viagem_Linha15_Macarrao_Boa_Vista_Ida13" departureTime="17:07:00" vehicleRefId="veiculo33"/>
+				<departure id="viagem_Linha15_Macarrao_Boa_Vista_Ida14" departureTime="17:50:00" vehicleRefId="veiculo30"/>
+			</departures>
+		</transitRoute>
+
+		<!--LINHA 15 - MACARRÃO, BOA VISTA - VOLTA============================================================================-->
+		<transitRoute id="Linha15_Macarrao_Boa_Vista_Volta">
+			<transportMode>pt</transportMode>
+			<routeProfile>
+				<stop refId="terminal_Praca_Felipe_Guerra" departureOffset="00:00:00"/>
+				<stop refId="parada_Igreja_Sao_Vicente" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_CIEE" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Hotel_Caraubas" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Doutor_Mario_Negocio0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Igreja_Universal_do_Reino_de_Deus_Centro" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Praca_Antonio_Gomes" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_FMA_Imobiliaria" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Catedral_de_Santa_Luzia" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Mercado_Central" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Supermercado_Cidade_Alternativo_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Frei_Miguelinho_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Frei_Miguelinho_Volta1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Jucas_Bar_e_Restaurante" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Silva_Jardim_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_EE_Onzieme_Rosado_Fernandes" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Praca_Raimundo_Rubira_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Silva_Jardim_Volta1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Silva_Jardim_Volta2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Farmacia_do_Povo_Trabalhador" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Coelho_Neto_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Aplastec_Center_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_FUNDAC_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Francisco_Solon_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Tiinha_Restaurante_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_SP_Combustiveis_Centro" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Procon_Municipal_de_Mossoro_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Supermercado_Queiroz_Aeroporto" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Rua_Anderson_Dutra_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
+				<stop refId="parada_Loja_Maconica_Uniao_Mossoroense" arrivalOffset="00:02:00"/>
+			</routeProfile>
+			<route>
+				<link refId="497966183_0"/>
+				<link refId="769208664_4"/>
+				<link refId="769208664_5"/>
+				<link refId="491990646_4"/>
+				<link refId="491990646_5"/>
+				<link refId="491990646_6"/>
+				<link refId="491990646_7"/>
+				<link refId="491990646_8"/>
+				<link refId="491990646_9"/>
+				<link refId="491990646_10"/>
+				<link refId="491990646_11"/>
+				<link refId="491990646_12"/>
+				<link refId="491990646_13"/>
+				<link refId="761618598_1"/>
+				<link refId="761618597_0"/>
+				<link refId="488900263_0"/>
+				<link refId="488900263_1"/>
+				<link refId="488900238_0"/>
+				<link refId="488900238_1"/>
+				<link refId="488900238_2"/>
+				<link refId="488900238_3"/>
+				<link refId="488900238_4"/>
+				<link refId="488900238_5"/>
+				<link refId="676068109_10"/>
+				<link refId="676068109_11"/>
+				<link refId="488900230_0"/>
+				<link refId="488900230_1"/>
+				<link refId="488900230_2"/>
+				<link refId="488900230_3"/>
+				<link refId="488900230_4"/>
+				<link refId="488900230_5"/>
+				<link refId="488900230_6"/>
+				<link refId="488900234_0"/>
+				<link refId="488900266_4"/>
+				<link refId="488900266_5"/>
+				<link refId="488546096_0"/>
+				<link refId="488546096_1"/>
+				<link refId="488546096_2"/>
+				<link refId="488546096_3"/>
+				<link refId="488546096_4"/>
+				<link refId="488546096_5"/>
+				<link refId="488546096_6"/>
+				<link refId="488546096_7"/>
+				<link refId="488546096_8"/>
+				<link refId="781466655_5"/>
+				<link refId="781466655_6"/>
+				<link refId="781466655_7"/>
+				<link refId="487178202_0"/>
+				<link refId="487178202_1"/>
+				<link refId="487178202_2"/>
+				<link refId="788051812_2"/>
+				<link refId="788051812_3"/>
+				<link refId="788051812_4"/>
+				<link refId="491945392_15_r"/>
+				<link refId="491945392_14_r"/>
+				<link refId="491945392_13_r"/>
+				<link refId="491945392_12_r"/>
+				<link refId="491945392_11_r"/>
+				<link refId="491945392_10_r"/>
+				<link refId="491945392_9_r"/>
+				<link refId="491945392_8_r"/>
+				<link refId="491945392_7_r"/>
+				<link refId="491945392_6_r"/>
+				<link refId="491945392_5_r"/>
+				<link refId="491945392_4_r"/>
+				<link refId="491945392_3_r"/>
+				<link refId="491945392_2_r"/>
+				<link refId="490698571_2"/>
+				<link refId="490698571_3"/>
+				<link refId="490698571_4"/>
+				<link refId="490698571_5"/>
+				<link refId="490698571_6"/>
+				<link refId="490698571_7"/>
+				<link refId="490698533_10_r"/>
+				<link refId="490698533_9_r"/>
+				<link refId="490698533_8_r"/>
+				<link refId="490698533_7_r"/>
+				<link refId="490698533_6_r"/>
+				<link refId="490698533_5_r"/>
+				<link refId="490698533_4_r"/>
+				<link refId="490698533_3_r"/>
+				<link refId="490698533_2_r"/>
+				<link refId="490698533_1_r"/>
+				<link refId="490698533_0_r"/>
+				<link refId="756489745_0"/>
+				<link refId="486591388_0"/>
+				<link refId="486591388_1"/>
+				<link refId="677108556_0_r"/>
+				<link refId="676811269_3_r"/>
+				<link refId="676811269_2_r"/>
+				<link refId="676811269_1_r"/>
+				<link refId="676811269_0_r"/>
+				<link refId="488295550_1_r"/>
+				<link refId="488295550_0_r"/>
+				<link refId="488475326_7"/>
+				<link refId="488475326_8"/>
+				<link refId="488475326_9"/>
+				<link refId="488475326_10"/>
+				<link refId="488475326_11"/>
+				<link refId="488475326_12"/>
+				<link refId="488475326_13"/>
+				<link refId="488475326_14"/>
+				<link refId="488475326_15"/>
+				<link refId="488475326_16"/>
+				<link refId="488475326_17"/>
+				<link refId="488475326_18"/>
+				<link refId="488475326_19"/>
+				<link refId="488475326_20"/>
+				<link refId="488475326_21"/>
+				<link refId="488475326_22"/>
+				<link refId="772059651_0"/>
+				<link refId="490609058_0"/>
+				<link refId="761893534_18_r"/>
+				<link refId="761893534_17_r"/>
+				<link refId="761893534_16_r"/>
+				<link refId="761893534_15_r"/>
+				<link refId="761893534_14_r"/>
+				<link refId="761893534_13_r"/>
+				<link refId="761893534_12_r"/>
+				<link refId="761893534_11_r"/>
+			</route>
+			<departures>
+				<departure id="viagem_Linha15_Macarrao_Boa_Vista_Volta0" departureTime="06:28:00" vehicleRefId="veiculo30"/>
+				<departure id="viagem_Linha15_Macarrao_Boa_Vista_Volta1" departureTime="07:02:00" vehicleRefId="veiculo33"/>
+				<departure id="viagem_Linha15_Macarrao_Boa_Vista_Volta2" departureTime="08:19:00" vehicleRefId="veiculo33"/>
+				<departure id="viagem_Linha15_Macarrao_Boa_Vista_Volta3" departureTime="09:41:00" vehicleRefId="veiculo33"/>
+				<departure id="viagem_Linha15_Macarrao_Boa_Vista_Volta4" departureTime="11:03:00" vehicleRefId="veiculo33"/>
+				<departure id="viagem_Linha15_Macarrao_Boa_Vista_Volta5" departureTime="11:42:00" vehicleRefId="veiculo30"/>
+				<departure id="viagem_Linha15_Macarrao_Boa_Vista_Volta6" departureTime="12:25:00" vehicleRefId="veiculo33"/>
+				<departure id="viagem_Linha15_Macarrao_Boa_Vista_Volta7" departureTime="13:03:00" vehicleRefId="veiculo30"/>
+				<departure id="viagem_Linha15_Macarrao_Boa_Vista_Volta8" departureTime="13:46:00" vehicleRefId="veiculo33"/>
+				<departure id="viagem_Linha15_Macarrao_Boa_Vista_Volta9" departureTime="14:15:00" vehicleRefId="veiculo30"/>
+				<departure id="viagem_Linha15_Macarrao_Boa_Vista_Volta10" departureTime="15:07:00" vehicleRefId="veiculo33"/>
+				<departure id="viagem_Linha15_Macarrao_Boa_Vista_Volta11" departureTime="16:33:00" vehicleRefId="veiculo33"/>
+				<departure id="viagem_Linha15_Macarrao_Boa_Vista_Volta12" departureTime="17:16:00" vehicleRefId="veiculo30"/>
+				<departure id="viagem_Linha15_Macarrao_Boa_Vista_Volta13" departureTime="17:57:00" vehicleRefId="veiculo33"/>
+				<departure id="viagem_Linha15_Macarrao_Boa_Vista_Volta14" departureTime="18:40:00" vehicleRefId="veiculo30"/>
 			</departures>
 		</transitRoute>
 
