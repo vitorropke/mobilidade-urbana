@@ -82,7 +82,8 @@ while paradas[indice] != None:
 			indice += 1
 
 		strSaida += "\" departureOffset=\""
-		strSaida += horarioParada[indiceHorario] + "\" awaitDeparture=\"true\"/>"
+		#strSaida += horarioParada[indiceHorario] + "\" awaitDeparture=\"true\"/>"
+		strSaida += horarioParada[indiceHorario] + "\"/>"
 		indiceHorario += 1
 		
 		while indice != len(paradas):
