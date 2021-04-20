@@ -122,9 +122,9 @@ while True:
 	if indice == len(paradas):
 		break
 
-#Criando arquivo de rota
-arquivoRota = open("tempoParadas.xml", "w")
-#Escrevendo no arquivo de rota
-arquivoRota.write(strSaida)
-#Fechando arquivo de rota
-arquivoRota.close()
+#Criando arquivo de horários
+arquivoTempoParadas = open("tempoParadas.xml", "w")
+#Escrevendo no arquivo de horários
+arquivoTempoParadas.write(strSaida)
+#Fechando arquivo de horários
+arquivoTempoParadas.close()
