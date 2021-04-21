@@ -1,5 +1,4 @@
 import random
-import timeit
 
 # https://www.geeksforgeeks.org/python-program-for-binary-search/
 # Iterative Binary Search Function
@@ -84,7 +83,6 @@ for x in range(numeroCoordenadas):
 pessoas = ""
 construcoes = ""
 
-start = timeit.default_timer()
 numeroDePessoas = 1000
 for x in range(numeroDePessoas):
 	print(x)
@@ -333,9 +331,6 @@ for x in range(numeroDePessoas):
 	
 	#Fechando tag person
 	pessoas += "\t</person>\n"
-stop = timeit.default_timer()
-
-print('Time: ', stop - start) 
 
 #Criação do rodapé do arquivo xml
 rodapeDoArquivoPopulation = "\n</plans>"
