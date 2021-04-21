@@ -1,5 +1,12 @@
 import random
 
+#Criando arquivo de entrada
+arquivoEntrada = open("coordenadas.txt", "r")
+#Salvando o texto do arquivo de entrada em uma variável
+coordenadas = arquivoEntrada.read()
+#Fechando arquivo de entrada
+arquivoEntrada.close()
+
 #Caso exista aspas no código a ser copiado aqui, utilize este símbolo \ antes das aspas, para que estas não sejam consideradas como parte da sintaxe do python
 #Ou seja, é uma forma de esconder as aspas do texto
 
@@ -8,6 +15,40 @@ cabecalhoDoArquivoPopulation = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!DO
 
 #Criação do cabeçalho do arquivo facilities
 cabecalhoDoArquivoFacilities = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<!DOCTYPE facilities SYSTEM \"http://www.matsim.org/files/dtd/facilities_v1.dtd\">\n\n<facilities>\n"
+
+# obtém as coordenadas da network para salvar em um vetor
+# Coleta o número de coordenadas
+numeroCoordenadas = 0
+indice = 0
+while True:
+	if coordenadas[indice] == '\n':
+		numeroCoordenadas += 1
+	#Incrementa o índice. Se for o último dígito o loop pára
+	indice += 1
+	if indice == len(coordenadas):
+		break
+
+# Inicializa vetor de coordenadas
+floatCoordenadas = [[0 for y in range(2)] for x in range(numeroCoordenadas)]
+
+# Insere as coordenadas no vetor
+indice = 0
+for x in range(numeroCoordenadas):
+	strNumeroAtual = ""
+	while coordenadas[indice] != '\t':
+		strNumeroAtual += coordenadas[indice]
+		indice += 1
+
+	floatCoordenadas[x][0] = float(strNumeroAtual)
+	strNumeroAtual = ""
+	indice += 1
+
+	while coordenadas[indice] != '\n':
+		strNumeroAtual += coordenadas[indice]
+		indice += 1
+
+	floatCoordenadas[x][1] = float(strNumeroAtual)
+	indice += 1
 
 #Criando as pessoas
 pessoas = ""
@@ -50,17 +91,60 @@ for x in range(numeroDePessoas):
 	segundoAleatorio = random.randrange(60)
 
 	#Coordenadas aleatórias
-	coordenadaXAleatoriaCasa = random.randrange(-600, 600)
+	coordenadaXAleatoriaCasa = random.randrange(-4164462, -4148877)
 	#Parte de baixo do mapa
-	coordenadaYAleatoriaCasa = random.randrange(-400, -200)
+	coordenadaYAleatoriaCasa = random.randrange(-587482, -569598)
 
-	coordenadaXAleatoriaTrabalho = random.randrange(-600, 600)
+	coordenadaXAleatoriaTrabalho = random.randrange(-4164462, -4148877)
 	#Parte de cima do mapa
-	coordenadaYAleatoriaTrabalho = random.randrange(200, 400)
+	coordenadaYAleatoriaTrabalho = random.randrange(-587482, -569598)
 
-	coordenadaXAleatoriaLoja = random.randrange(-600, 600)
+	coordenadaXAleatoriaLoja = random.randrange(-4164462, -4148877)
 	#Parte de cima do mapa
-	coordenadaYAleatoriaLoja = random.randrange(200, 400)
+	coordenadaYAleatoriaLoja = random.randrange(-587482, -569598)
+
+	# Cria um círculo virtual para verificar se a coordenada gerada está próximo de algum nó
+	longeDoNo = True
+	raioDoCirculo = 50
+	while longeDoNo:
+		for x in range(numeroCoordenadas):
+			# (x - center_x)^2 + (y - center_y)^2 <= radius^2
+			if ((floatCoordenadas[x][0] - coordenadaXAleatoriaCasa) ** 2) + ((floatCoordenadas[x][1] - coordenadaYAleatoriaCasa) ** 2) <= (raioDoCirculo ** 2):
+				longeDoNo = False
+				break
+		if longeDoNo:
+			#Coordenadas aleatórias
+			coordenadaXAleatoriaCasa = random.randrange(-4164462, -4148877)
+			#Parte de baixo do mapa
+			coordenadaYAleatoriaCasa = random.randrange(-587482, -569598)
+
+	longeDoNo = True
+	raioDoCirculo = 50
+	while longeDoNo:
+		for x in range(numeroCoordenadas):
+			# (x - center_x)^2 + (y - center_y)^2 <= radius^2
+			if ((floatCoordenadas[x][0] - coordenadaXAleatoriaTrabalho) ** 2) + ((floatCoordenadas[x][1] - coordenadaYAleatoriaTrabalho) ** 2) <= (raioDoCirculo ** 2):
+				longeDoNo = False
+				break
+		if longeDoNo:
+			#Coordenadas aleatórias
+			coordenadaXAleatoriaTrabalho = random.randrange(-4164462, -4148877)
+			#Parte de baixo do mapa
+			coordenadaYAleatoriaTrabalho = random.randrange(-587482, -569598)
+
+	longeDoNo = True
+	raioDoCirculo = 50
+	while longeDoNo:
+		for x in range(numeroCoordenadas):
+			# (x - center_x)^2 + (y - center_y)^2 <= radius^2
+			if ((floatCoordenadas[x][0] - coordenadaXAleatoriaLoja) ** 2) + ((floatCoordenadas[x][1] - coordenadaYAleatoriaLoja) ** 2) <= (raioDoCirculo ** 2):
+				longeDoNo = False
+				break
+		if longeDoNo:
+			#Coordenadas aleatórias
+			coordenadaXAleatoriaLoja = random.randrange(-4164462, -4148877)
+			#Parte de baixo do mapa
+			coordenadaYAleatoriaLoja = random.randrange(-587482, -569598)
 
 	#Tag de construção, pessoa trabalho e loja
 	construcoes += "\n\t<facility id=\"casaPessoa{}\" x=\"{}\" y=\"{}\"/>\n".format(x, coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)
