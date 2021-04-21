@@ -1,4 +1,34 @@
 import random
+import timeit
+
+# https://www.geeksforgeeks.org/python-program-for-binary-search/
+# Iterative Binary Search Function
+# It returns index of x in given array arr if present,
+# else returns -1
+def binary_search(arr, x, rangeCoordenadas):
+	low = 0
+	high = len(arr) - 1
+	mid = 0
+
+	# Enquanto o limite inferior e superior não alcaçarem o tamanho do range de coordenadas
+	while (high - low) > rangeCoordenadas:
+
+		mid = (high + low) // 2
+
+		# If x is greater, ignore left half
+		if arr[mid][0] < x:
+			low = mid + 1
+
+		# If x is smaller, ignore right half
+		elif arr[mid][0] > x:
+			high = mid - 1
+
+		# means x is present at mid
+		else:
+			return mid
+
+	# Retorna a última posição encontrada
+	return mid
 
 #Criando arquivo de entrada
 arquivoEntrada = open("coordenadas.txt", "r")
@@ -54,8 +84,10 @@ for x in range(numeroCoordenadas):
 pessoas = ""
 construcoes = ""
 
-numeroDePessoas = 100
+start = timeit.default_timer()
+numeroDePessoas = 1000
 for x in range(numeroDePessoas):
+	print(x)
 	#Abrindo tag person
 	pessoas += "\n\t<person id=\"pessoa{}\">\n".format(x)
 
@@ -104,42 +136,93 @@ for x in range(numeroDePessoas):
 	coordenadaYAleatoriaLoja = random.randrange(-587482, -569598)
 
 	# Cria um círculo virtual para verificar se a coordenada gerada está próximo de algum nó
+	# casa
 	longeDoNo = True
 	raioDoCirculo = 50
+	rangeCoordenadas = 20
 	while longeDoNo:
-		for x in range(numeroCoordenadas):
-			# (x - center_x)^2 + (y - center_y)^2 <= radius^2
-			if ((floatCoordenadas[x][0] - coordenadaXAleatoriaCasa) ** 2) + ((floatCoordenadas[x][1] - coordenadaYAleatoriaCasa) ** 2) <= (raioDoCirculo ** 2):
+		#Define um range de coordenadas para procurar pelas coordenadas próximas
+		posicao = binary_search(floatCoordenadas, coordenadaXAleatoriaCasa, rangeCoordenadas)
+
+		# Limite inferior do vetor de coordenadas
+		if (posicao - rangeCoordenadas) > 0:
+			posicaoInferior = posicao - rangeCoordenadas
+		else:
+			posicaoInferior = 0
+		# Limite superior do vetor de coordenadas
+		if (posicao + rangeCoordenadas) < numeroCoordenadas:
+			posicaoSuperior = posicao + rangeCoordenadas
+		else:
+			posicaoSuperior = numeroCoordenadas
+
+		# Procura por uma faixa de coordenadas definida em 'rangeCoordenadas'
+		for i in range(posicaoInferior, posicaoSuperior):
+			# (i - center_x)^2 + (y - center_y)^2 <= radius^2
+			if ((floatCoordenadas[i][0] - coordenadaXAleatoriaCasa) ** 2) + ((floatCoordenadas[i][1] - coordenadaYAleatoriaCasa) ** 2) <= (raioDoCirculo ** 2):
 				longeDoNo = False
 				break
+
+		# Procura por novas coordenadas caso sejam longe de nós
 		if longeDoNo:
 			#Coordenadas aleatórias
 			coordenadaXAleatoriaCasa = random.randrange(-4164462, -4148877)
 			#Parte de baixo do mapa
 			coordenadaYAleatoriaCasa = random.randrange(-587482, -569598)
 
+	# trabalho
 	longeDoNo = True
 	raioDoCirculo = 50
 	while longeDoNo:
-		for x in range(numeroCoordenadas):
-			# (x - center_x)^2 + (y - center_y)^2 <= radius^2
-			if ((floatCoordenadas[x][0] - coordenadaXAleatoriaTrabalho) ** 2) + ((floatCoordenadas[x][1] - coordenadaYAleatoriaTrabalho) ** 2) <= (raioDoCirculo ** 2):
+		posicao = binary_search(floatCoordenadas, coordenadaXAleatoriaTrabalho, rangeCoordenadas)
+
+		if (posicao - rangeCoordenadas) > 0:
+			posicaoInferior = posicao - rangeCoordenadas
+		else:
+			posicaoInferior = 0
+		
+		if (posicao + rangeCoordenadas) < numeroCoordenadas:
+			posicaoSuperior = posicao + rangeCoordenadas
+		else:
+			posicaoSuperior = numeroCoordenadas
+
+		# Procura por uma faixa de 1000 coordenadas
+		for i in range(posicaoInferior, posicaoSuperior):
+			# (i - center_x)^2 + (y - center_y)^2 <= radius^2
+			if ((floatCoordenadas[i][0] - coordenadaXAleatoriaTrabalho) ** 2) + ((floatCoordenadas[i][1] - coordenadaYAleatoriaTrabalho) ** 2) <= (raioDoCirculo ** 2):
 				longeDoNo = False
 				break
+
+		# Procura por novas coordenadas caso sejam longe de nós
 		if longeDoNo:
 			#Coordenadas aleatórias
 			coordenadaXAleatoriaTrabalho = random.randrange(-4164462, -4148877)
 			#Parte de baixo do mapa
 			coordenadaYAleatoriaTrabalho = random.randrange(-587482, -569598)
 
+	# loja
 	longeDoNo = True
 	raioDoCirculo = 50
 	while longeDoNo:
-		for x in range(numeroCoordenadas):
-			# (x - center_x)^2 + (y - center_y)^2 <= radius^2
-			if ((floatCoordenadas[x][0] - coordenadaXAleatoriaLoja) ** 2) + ((floatCoordenadas[x][1] - coordenadaYAleatoriaLoja) ** 2) <= (raioDoCirculo ** 2):
+		posicao = binary_search(floatCoordenadas, coordenadaXAleatoriaLoja, rangeCoordenadas)
+
+		if (posicao - rangeCoordenadas) > 0:
+			posicaoInferior = posicao - rangeCoordenadas
+		else:
+			posicaoInferior = 0
+		
+		if (posicao + rangeCoordenadas) < numeroCoordenadas:
+			posicaoSuperior = posicao + rangeCoordenadas
+		else:
+			posicaoSuperior = numeroCoordenadas
+
+		# Procura por uma faixa de 1000 coordenadas
+		for i in range(posicaoInferior, posicaoSuperior):
+			# (i - center_x)^2 + (y - center_y)^2 <= radius^2
+			if ((floatCoordenadas[i][0] - coordenadaXAleatoriaLoja) ** 2) + ((floatCoordenadas[i][1] - coordenadaYAleatoriaLoja) ** 2) <= (raioDoCirculo ** 2):
 				longeDoNo = False
 				break
+
+		# Procura por novas coordenadas caso sejam longe de nós
 		if longeDoNo:
 			#Coordenadas aleatórias
 			coordenadaXAleatoriaLoja = random.randrange(-4164462, -4148877)
@@ -211,9 +294,9 @@ for x in range(numeroDePessoas):
 			
 			#Se não for para loja nem para trabalho então vá para outra casa
 			else:
-				pessoas += "\t\t\t<act x=\"0\" y=\"0\" type=\"home\"/>\n"
-				construcoes += "\t<facility id=\"casaDeNinguem{}\" x=\"0\" y=\"0\"/>\n".format(x)
-
+				pessoas += "\t\t\t<act x=\"{}\" y=\"{}\" type=\"home\"/>\n".format(coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)
+				construcoes += "\t<facility id=\"casaDeNinguem{}\" x=\"{}\" y=\"{}\"/>\n".format(x, coordenadaXAleatoriaLoja, coordenadaYAleatoriaLoja)
+			
 	#Se sair de casa de tarde
 	elif saiDeCasa == 1:
 		pessoas += "\t\t\t<act end_time=\"{:02d}:{:02d}:{:02d}\" x=\"{}\" y=\"{}\" type=\"home\"/>\n".format(horaAleatoriaTarde, minutoAleatorio, segundoAleatorio, coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)
@@ -232,25 +315,27 @@ for x in range(numeroDePessoas):
 			pessoas += "\t\t\t<act end_time=\"{:02d}:{:02d}:{:02d}\" x=\"{}\" y=\"{}\" type=\"shop\"/>\n".format(horaAleatoriaNoite, minutoAleatorio, segundoAleatorio, coordenadaXAleatoriaLoja, coordenadaYAleatoriaLoja)
 			pessoas += "\t\t\t<leg mode=\"pt\"/>\n"
 			pessoas += "\t\t\t<act x=\"{}\" y=\"{}\" type=\"home\"/>\n".format(coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)
-
+		
 		#Se não for nem para loja nem para trabalho então vá para outra casa
 		else:
-			pessoas += "\t\t\t<act x=\"0\" y=\"0\" type=\"home\"/>\n"
-			construcoes += "\t<facility id=\"casaDeNinguem{}\" x=\"0\" y=\"0\"/>\n".format(x)
-
+			pessoas += "\t\t\t<act x=\"{}\" y=\"{}\" type=\"home\"/>\n".format(coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)
+			construcoes += "\t<facility id=\"casaDeNinguem{}\" x=\"{}\" y=\"{}\"/>\n".format(x, coordenadaXAleatoriaLoja, coordenadaYAleatoriaLoja)
+	
 	#Se sair de casa de noite
 	else:
 		pessoas += "\t\t\t<act end_time=\"{:02d}:{:02d}:{:02d}\" x=\"{}\" y=\"{}\" type=\"home\"/>\n".format(horaAleatoriaTarde, minutoAleatorio, segundoAleatorio, coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)
 		pessoas += "\t\t\t<leg mode=\"pt\"/>\n"
-		pessoas += "\t\t\t<act x=\"0\" y=\"0\" type=\"home\"/>\n"
-		construcoes += "\t<facility id=\"casaDeNinguem{}\" x=\"0\" y=\"0\"/>\n".format(x)
+		pessoas += "\t\t\t<act x=\"{}\" y=\"{}\" type=\"home\"/>\n".format(coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)
+		construcoes += "\t<facility id=\"casaDeNinguem{}\" x=\"{}\" y=\"{}\"/>\n".format(x, coordenadaXAleatoriaLoja, coordenadaYAleatoriaLoja)
 
 	#Fechando tag plan
 	pessoas += "\t\t</plan>\n"
 	
 	#Fechando tag person
 	pessoas += "\t</person>\n"
+stop = timeit.default_timer()
 
+print('Time: ', stop - start) 
 
 #Criação do rodapé do arquivo xml
 rodapeDoArquivoPopulation = "\n</plans>"
