@@ -1,5 +1,7 @@
 import random
 
+random.seed(1)
+
 # https://www.geeksforgeeks.org/python-program-for-binary-search/
 # Iterative Binary Search Function
 # It returns index of x in given array arr if present,
@@ -79,19 +81,13 @@ for x in range(numeroCoordenadas):
 	floatCoordenadas[x][1] = float(strNumeroAtual)
 	indice += 1
 
-#Criando as pessoas
-pessoas = ""
-construcoes = ""
+#Criando as corpoDoArquivoPopulation
+corpoDoArquivoPopulation = ""
+corpoDoArquivoFacilities = ""
 
+x = 0
 numeroDePessoas = 1000
-for x in range(numeroDePessoas):
-	print(x)
-	#Abrindo tag person
-	pessoas += "\n\t<person id=\"pessoa{}\">\n".format(x)
-
-	#Abrindo tag plan
-	pessoas += "\t\t<plan>\n"
-	
+while x < numeroDePessoas:
 	#Ações(act)
 	#Para tornar o script mais aleatório, coloquei algumas condições com números aleatórios
 	
@@ -103,234 +99,241 @@ for x in range(numeroDePessoas):
 	#saiDeTrabalho = 0: A pessoa não trabalha
 	#saiDeTrabalho = 1: A pessoa sai do trabalho pela tarde
 	#saiDeTrabalho = 2: A pessoa sai do trabalho pela noite
-	saiDeTrabalho = random.randrange(3)
+	#saiDeTrabalho = 3: A pessoa sai do trabalho pela manha, do outro dia
+	saiDeTrabalho = random.randrange(4)
 	
 	#saiDeLoja = 0: A pessoa não vai à loja
 	#saiDeLoja = 1: A pessoa sai da loja pela tarde
 	#saiDeLoja = 2: A pessoa sai da loja pela noite
 	saiDeLoja = random.randrange(3)
 	
-	#Hora aleatória indo das 4 às 8 da manhã
-	horaAleatoriaManha = random.randrange(4, 9)
-	#Hora aleatória indo das 11 da manhã às 14 da tarde
-	horaAleatoriaTarde = random.randrange(11, 15)
-	#Hora aleatória indo das 17 da tarde às 22 da noite
-	horaAleatoriaNoite = random.randrange(17, 23)
+	# Evita pessoas ociosas e voltas no tempo
+	if ((saiDeTrabalho != 0) and (saiDeTrabalho > saiDeCasa)) or ((saiDeLoja != 0) and (saiDeLoja > saiDeCasa)):
+		print(x)
 
-	minutoAleatorio = random.randrange(60)
-	segundoAleatorio = random.randrange(60)
+		#Abrindo tag person
+		corpoDoArquivoPopulation += "\n\t<person id=\"pessoa{}\">\n".format(x)
 
-	#Coordenadas aleatórias
-	coordenadaXAleatoriaCasa = random.randrange(-4164462, -4148877)
-	#Parte de baixo do mapa
-	coordenadaYAleatoriaCasa = random.randrange(-587482, -569598)
+		#Abrindo tag plan
+		corpoDoArquivoPopulation += "\t\t<plan>\n"
+		#Hora aleatória indo das 4 às 8 da manhã
+		horaAleatoriaManha = random.randrange(4, 9)
+		#Hora aleatória indo das 11 da manhã às 14 da tarde
+		horaAleatoriaTarde = random.randrange(11, 15)
+		#Hora aleatória indo das 17 da tarde às 22 da noite
+		horaAleatoriaNoite = random.randrange(17, 23)
 
-	coordenadaXAleatoriaTrabalho = random.randrange(-4164462, -4148877)
-	#Parte de cima do mapa
-	coordenadaYAleatoriaTrabalho = random.randrange(-587482, -569598)
+		minutoAleatorio = random.randrange(60)
+		segundoAleatorio = random.randrange(60)
 
-	coordenadaXAleatoriaLoja = random.randrange(-4164462, -4148877)
-	#Parte de cima do mapa
-	coordenadaYAleatoriaLoja = random.randrange(-587482, -569598)
+		#Coordenadas aleatórias
+		coordenadaXAleatoriaCasa = random.randrange(-4164462, -4148877)
+		#Parte de baixo do mapa
+		coordenadaYAleatoriaCasa = random.randrange(-587482, -569598)
 
-	# Cria um círculo virtual para verificar se a coordenada gerada está próximo de algum nó
-	# casa
-	longeDoNo = True
-	raioDoCirculo = 50
-	rangeCoordenadas = 20
-	while longeDoNo:
-		#Define um range de coordenadas para procurar pelas coordenadas próximas
-		posicao = binary_search(floatCoordenadas, coordenadaXAleatoriaCasa, rangeCoordenadas)
+		coordenadaXAleatoriaTrabalho = random.randrange(-4164462, -4148877)
+		#Parte de cima do mapa
+		coordenadaYAleatoriaTrabalho = random.randrange(-587482, -569598)
 
-		# Limite inferior do vetor de coordenadas
-		if (posicao - rangeCoordenadas) > 0:
-			posicaoInferior = posicao - rangeCoordenadas
-		else:
-			posicaoInferior = 0
-		# Limite superior do vetor de coordenadas
-		if (posicao + rangeCoordenadas) < numeroCoordenadas:
-			posicaoSuperior = posicao + rangeCoordenadas
-		else:
-			posicaoSuperior = numeroCoordenadas
+		coordenadaXAleatoriaLoja = random.randrange(-4164462, -4148877)
+		#Parte de cima do mapa
+		coordenadaYAleatoriaLoja = random.randrange(-587482, -569598)
 
-		# Procura por uma faixa de coordenadas definida em 'rangeCoordenadas'
-		for i in range(posicaoInferior, posicaoSuperior):
-			# (i - center_x)^2 + (y - center_y)^2 <= radius^2
-			if ((floatCoordenadas[i][0] - coordenadaXAleatoriaCasa) ** 2) + ((floatCoordenadas[i][1] - coordenadaYAleatoriaCasa) ** 2) <= (raioDoCirculo ** 2):
-				longeDoNo = False
-				break
+		# Cria um círculo virtual para verificar se a coordenada gerada está próximo de algum nó
+		# casa
+		longeDoNo = True
+		raioDoCirculo = 50
+		rangeCoordenadas = 20
+		while longeDoNo:
+			#Define um range de coordenadas para procurar pelas coordenadas próximas
+			posicao = binary_search(floatCoordenadas, coordenadaXAleatoriaCasa, rangeCoordenadas)
 
-		# Procura por novas coordenadas caso sejam longe de nós
-		if longeDoNo:
-			#Coordenadas aleatórias
-			coordenadaXAleatoriaCasa = random.randrange(-4164462, -4148877)
-			#Parte de baixo do mapa
-			coordenadaYAleatoriaCasa = random.randrange(-587482, -569598)
-
-	# trabalho
-	longeDoNo = True
-	raioDoCirculo = 50
-	while longeDoNo:
-		posicao = binary_search(floatCoordenadas, coordenadaXAleatoriaTrabalho, rangeCoordenadas)
-
-		if (posicao - rangeCoordenadas) > 0:
-			posicaoInferior = posicao - rangeCoordenadas
-		else:
-			posicaoInferior = 0
-		
-		if (posicao + rangeCoordenadas) < numeroCoordenadas:
-			posicaoSuperior = posicao + rangeCoordenadas
-		else:
-			posicaoSuperior = numeroCoordenadas
-
-		# Procura por uma faixa de 1000 coordenadas
-		for i in range(posicaoInferior, posicaoSuperior):
-			# (i - center_x)^2 + (y - center_y)^2 <= radius^2
-			if ((floatCoordenadas[i][0] - coordenadaXAleatoriaTrabalho) ** 2) + ((floatCoordenadas[i][1] - coordenadaYAleatoriaTrabalho) ** 2) <= (raioDoCirculo ** 2):
-				longeDoNo = False
-				break
-
-		# Procura por novas coordenadas caso sejam longe de nós
-		if longeDoNo:
-			#Coordenadas aleatórias
-			coordenadaXAleatoriaTrabalho = random.randrange(-4164462, -4148877)
-			#Parte de baixo do mapa
-			coordenadaYAleatoriaTrabalho = random.randrange(-587482, -569598)
-
-	# loja
-	longeDoNo = True
-	raioDoCirculo = 50
-	while longeDoNo:
-		posicao = binary_search(floatCoordenadas, coordenadaXAleatoriaLoja, rangeCoordenadas)
-
-		if (posicao - rangeCoordenadas) > 0:
-			posicaoInferior = posicao - rangeCoordenadas
-		else:
-			posicaoInferior = 0
-		
-		if (posicao + rangeCoordenadas) < numeroCoordenadas:
-			posicaoSuperior = posicao + rangeCoordenadas
-		else:
-			posicaoSuperior = numeroCoordenadas
-
-		# Procura por uma faixa de 1000 coordenadas
-		for i in range(posicaoInferior, posicaoSuperior):
-			# (i - center_x)^2 + (y - center_y)^2 <= radius^2
-			if ((floatCoordenadas[i][0] - coordenadaXAleatoriaLoja) ** 2) + ((floatCoordenadas[i][1] - coordenadaYAleatoriaLoja) ** 2) <= (raioDoCirculo ** 2):
-				longeDoNo = False
-				break
-
-		# Procura por novas coordenadas caso sejam longe de nós
-		if longeDoNo:
-			#Coordenadas aleatórias
-			coordenadaXAleatoriaLoja = random.randrange(-4164462, -4148877)
-			#Parte de baixo do mapa
-			coordenadaYAleatoriaLoja = random.randrange(-587482, -569598)
-
-	#Tag de construção, pessoa trabalho e loja
-	construcoes += "\n\t<facility id=\"casaPessoa{}\" x=\"{}\" y=\"{}\"/>\n".format(x, coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)
-	if saiDeTrabalho != 0:
-		construcoes += "\t<facility id=\"trabalho{}\" x=\"{}\" y=\"{}\"/>\n".format(x, coordenadaXAleatoriaTrabalho, coordenadaYAleatoriaTrabalho)
-	if saiDeLoja != 0:
-		construcoes += "\t<facility id=\"loja{}\" x=\"{}\" y=\"{}\"/>\n".format(x, coordenadaXAleatoriaLoja, coordenadaYAleatoriaLoja)
-
-	#:02d significa que o número terá obrigatoriamente dois dígitos
-	#Se sair de casa de manhã
-	if saiDeCasa == 0:
-		pessoas += "\t\t\t<act end_time=\"{:02d}:{:02d}:{:02d}\" x=\"{}\" y=\"{}\" type=\"home\"/>\n".format(horaAleatoriaManha, minutoAleatorio, segundoAleatorio, coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)
-		pessoas += "\t\t\t<leg mode=\"pt\"/>\n"
-
-		#CASA-TRABALHO
-		#Se sair de trabalho de tarde
-		if saiDeTrabalho == 1:
-			pessoas += "\t\t\t<act end_time=\"{:02d}:{:02d}:{:02d}\" x=\"{}\" y=\"{}\" type=\"work\"/>\n".format(horaAleatoriaTarde, minutoAleatorio, segundoAleatorio, coordenadaXAleatoriaTrabalho, coordenadaYAleatoriaTrabalho)
-			pessoas += "\t\t\t<leg mode=\"pt\"/>\n"
-
-			#CASA-TRABALHO-LOJA-CASA
-			#Se sair de loja de noite
-			if saiDeLoja == 2:
-				pessoas += "\t\t\t<act end_time=\"{:02d}:{:02d}:{:02d}\" x=\"{}\" y=\"{}\" type=\"shop\"/>\n".format(horaAleatoriaNoite, minutoAleatorio, segundoAleatorio, coordenadaXAleatoriaLoja, coordenadaYAleatoriaLoja)
-				pessoas += "\t\t\t<leg mode=\"pt\"/>\n"
-				pessoas += "\t\t\t<act x=\"{}\" y=\"{}\" type=\"home\"/>\n".format(coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)
-			
-			#Se não for para loja
-			#CASA-TRABALHO-CASA
+			# Limite inferior do vetor de coordenadas
+			if (posicao - rangeCoordenadas) > 0:
+				posicaoInferior = posicao - rangeCoordenadas
 			else:
-				pessoas += "\t\t\t<act x=\"{}\" y=\"{}\" type=\"home\"/>\n".format(coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)
-		
-		#Se sair de trabalho de noite
-		elif saiDeTrabalho == 2:
-			#CASA-LOJA-TRABALHO-CASA
-			#Se sair de loja de tarde
-			if saiDeLoja == 1:
-				pessoas += "\t\t\t<act end_time=\"{:02d}:{:02d}:{:02d}\" x=\"{}\" y=\"{}\" type=\"shop\"/>\n".format(horaAleatoriaTarde, minutoAleatorio, segundoAleatorio, coordenadaXAleatoriaLoja, coordenadaYAleatoriaLoja)
-				pessoas += "\t\t\t<leg mode=\"pt\"/>\n"
-				pessoas += "\t\t\t<act end_time=\"{:02d}:{:02d}:{:02d}\" x=\"{}\" y=\"{}\" type=\"work\"/>\n".format(horaAleatoriaNoite, minutoAleatorio, segundoAleatorio, coordenadaXAleatoriaTrabalho, coordenadaYAleatoriaTrabalho)
-				pessoas += "\t\t\t<leg mode=\"pt\"/>\n"
-				pessoas += "\t\t\t<act x=\"{}\" y=\"{}\" type=\"home\"/>\n".format(coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)
-			
-			#CASA-TRABALHO-CASA
+				posicaoInferior = 0
+			# Limite superior do vetor de coordenadas
+			if (posicao + rangeCoordenadas) < numeroCoordenadas:
+				posicaoSuperior = posicao + rangeCoordenadas
 			else:
-				pessoas += "\t\t\t<act end_time=\"{:02d}:{:02d}:{:02d}\" x=\"{}\" y=\"{}\" type=\"work\"/>\n".format(horaAleatoriaNoite, minutoAleatorio, segundoAleatorio, coordenadaXAleatoriaTrabalho, coordenadaYAleatoriaTrabalho)
-				pessoas += "\t\t\t<leg mode=\"pt\"/>\n"
-				pessoas += "\t\t\t<act x=\"{}\" y=\"{}\" type=\"home\"/>\n".format(coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)
-		
-		#Se não trabalhar
-		else:
+				posicaoSuperior = numeroCoordenadas
+
+			# Procura por uma faixa de coordenadas definida em 'rangeCoordenadas'
+			for i in range(posicaoInferior, posicaoSuperior):
+				# (i - center_x)^2 + (y - center_y)^2 <= radius^2
+				if ((floatCoordenadas[i][0] - coordenadaXAleatoriaCasa) ** 2) + ((floatCoordenadas[i][1] - coordenadaYAleatoriaCasa) ** 2) <= (raioDoCirculo ** 2):
+					longeDoNo = False
+					break
+
+			# Procura por novas coordenadas caso sejam longe de nós
+			if longeDoNo:
+				#Coordenadas aleatórias
+				coordenadaXAleatoriaCasa = random.randrange(-4164462, -4148877)
+				#Parte de baixo do mapa
+				coordenadaYAleatoriaCasa = random.randrange(-587482, -569598)
+
+		# trabalho
+		longeDoNo = True
+		raioDoCirculo = 50
+		while longeDoNo:
+			posicao = binary_search(floatCoordenadas, coordenadaXAleatoriaTrabalho, rangeCoordenadas)
+
+			if (posicao - rangeCoordenadas) > 0:
+				posicaoInferior = posicao - rangeCoordenadas
+			else:
+				posicaoInferior = 0
+			
+			if (posicao + rangeCoordenadas) < numeroCoordenadas:
+				posicaoSuperior = posicao + rangeCoordenadas
+			else:
+				posicaoSuperior = numeroCoordenadas
+
+			# Procura por uma faixa de 1000 coordenadas
+			for i in range(posicaoInferior, posicaoSuperior):
+				# (i - center_x)^2 + (y - center_y)^2 <= radius^2
+				if ((floatCoordenadas[i][0] - coordenadaXAleatoriaTrabalho) ** 2) + ((floatCoordenadas[i][1] - coordenadaYAleatoriaTrabalho) ** 2) <= (raioDoCirculo ** 2):
+					longeDoNo = False
+					break
+
+			# Procura por novas coordenadas caso sejam longe de nós
+			if longeDoNo:
+				#Coordenadas aleatórias
+				coordenadaXAleatoriaTrabalho = random.randrange(-4164462, -4148877)
+				#Parte de baixo do mapa
+				coordenadaYAleatoriaTrabalho = random.randrange(-587482, -569598)
+
+		# loja
+		longeDoNo = True
+		raioDoCirculo = 50
+		while longeDoNo:
+			posicao = binary_search(floatCoordenadas, coordenadaXAleatoriaLoja, rangeCoordenadas)
+
+			if (posicao - rangeCoordenadas) > 0:
+				posicaoInferior = posicao - rangeCoordenadas
+			else:
+				posicaoInferior = 0
+			
+			if (posicao + rangeCoordenadas) < numeroCoordenadas:
+				posicaoSuperior = posicao + rangeCoordenadas
+			else:
+				posicaoSuperior = numeroCoordenadas
+
+			# Procura por uma faixa de 1000 coordenadas
+			for i in range(posicaoInferior, posicaoSuperior):
+				# (i - center_x)^2 + (y - center_y)^2 <= radius^2
+				if ((floatCoordenadas[i][0] - coordenadaXAleatoriaLoja) ** 2) + ((floatCoordenadas[i][1] - coordenadaYAleatoriaLoja) ** 2) <= (raioDoCirculo ** 2):
+					longeDoNo = False
+					break
+
+			# Procura por novas coordenadas caso sejam longe de nós
+			if longeDoNo:
+				#Coordenadas aleatórias
+				coordenadaXAleatoriaLoja = random.randrange(-4164462, -4148877)
+				#Parte de baixo do mapa
+				coordenadaYAleatoriaLoja = random.randrange(-587482, -569598)
+
+		#Tag de construção, pessoa trabalho e loja
+		corpoDoArquivoFacilities += "\n\t<facility id=\"casaPessoa{}\" x=\"{}\" y=\"{}\"/>\n".format(x, coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)
+		if saiDeTrabalho != 0:
+			corpoDoArquivoFacilities += "\t<facility id=\"trabalho{}\" x=\"{}\" y=\"{}\"/>\n".format(x, coordenadaXAleatoriaTrabalho, coordenadaYAleatoriaTrabalho)
+		if saiDeLoja != 0:
+			corpoDoArquivoFacilities += "\t<facility id=\"loja{}\" x=\"{}\" y=\"{}\"/>\n".format(x, coordenadaXAleatoriaLoja, coordenadaYAleatoriaLoja)
+
+		#:02d significa que o número terá obrigatoriamente dois dígitos
+		#Se sair de casa de manhã
+		if saiDeCasa == 0 and saiDeTrabalho != 3:
+			corpoDoArquivoPopulation += "\t\t\t<act end_time=\"{:02d}:{:02d}:{:02d}\" x=\"{}\" y=\"{}\" type=\"home\"/>\n".format(horaAleatoriaManha, minutoAleatorio, segundoAleatorio, coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)
+			corpoDoArquivoPopulation += "\t\t\t<leg mode=\"pt\"/>\n"
+
+			#CASA-TRABALHO
+			#Se sair de trabalho de tarde
+			if saiDeTrabalho == 1:
+				corpoDoArquivoPopulation += "\t\t\t<act end_time=\"{:02d}:{:02d}:{:02d}\" x=\"{}\" y=\"{}\" type=\"work\"/>\n".format(horaAleatoriaTarde, minutoAleatorio, segundoAleatorio, coordenadaXAleatoriaTrabalho, coordenadaYAleatoriaTrabalho)
+				corpoDoArquivoPopulation += "\t\t\t<leg mode=\"pt\"/>\n"
+
+				#CASA-TRABALHO-LOJA-CASA
+				#Se sair de loja de noite
+				if saiDeLoja == 2:
+					corpoDoArquivoPopulation += "\t\t\t<act end_time=\"{:02d}:{:02d}:{:02d}\" x=\"{}\" y=\"{}\" type=\"shop\"/>\n".format(horaAleatoriaNoite, minutoAleatorio, segundoAleatorio, coordenadaXAleatoriaLoja, coordenadaYAleatoriaLoja)
+					corpoDoArquivoPopulation += "\t\t\t<leg mode=\"pt\"/>\n"
+					corpoDoArquivoPopulation += "\t\t\t<act x=\"{}\" y=\"{}\" type=\"home\"/>\n".format(coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)
+				
+				#Se não for para loja
+				#CASA-TRABALHO-CASA
+				else:
+					corpoDoArquivoPopulation += "\t\t\t<act x=\"{}\" y=\"{}\" type=\"home\"/>\n".format(coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)
+			
+			#Se sair de trabalho de noite
+			elif saiDeTrabalho == 2:
+				#CASA-LOJA-TRABALHO-CASA
+				#Se sair de loja de tarde
+				if saiDeLoja == 1:
+					corpoDoArquivoPopulation += "\t\t\t<act end_time=\"{:02d}:{:02d}:{:02d}\" x=\"{}\" y=\"{}\" type=\"shop\"/>\n".format(horaAleatoriaTarde, minutoAleatorio, segundoAleatorio, coordenadaXAleatoriaLoja, coordenadaYAleatoriaLoja)
+					corpoDoArquivoPopulation += "\t\t\t<leg mode=\"pt\"/>\n"
+					corpoDoArquivoPopulation += "\t\t\t<act end_time=\"{:02d}:{:02d}:{:02d}\" x=\"{}\" y=\"{}\" type=\"work\"/>\n".format(horaAleatoriaNoite, minutoAleatorio, segundoAleatorio, coordenadaXAleatoriaTrabalho, coordenadaYAleatoriaTrabalho)
+					corpoDoArquivoPopulation += "\t\t\t<leg mode=\"pt\"/>\n"
+					corpoDoArquivoPopulation += "\t\t\t<act x=\"{}\" y=\"{}\" type=\"home\"/>\n".format(coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)
+				
+				#CASA-TRABALHO-CASA
+				else:
+					corpoDoArquivoPopulation += "\t\t\t<act end_time=\"{:02d}:{:02d}:{:02d}\" x=\"{}\" y=\"{}\" type=\"work\"/>\n".format(horaAleatoriaNoite, minutoAleatorio, segundoAleatorio, coordenadaXAleatoriaTrabalho, coordenadaYAleatoriaTrabalho)
+					corpoDoArquivoPopulation += "\t\t\t<leg mode=\"pt\"/>\n"
+					corpoDoArquivoPopulation += "\t\t\t<act x=\"{}\" y=\"{}\" type=\"home\"/>\n".format(coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)
+			
+			#Se não trabalhar
+			else:
+				#CASA-LOJA-CASA
+				#Se sair da loja de tarde
+				if saiDeLoja == 1:
+					corpoDoArquivoPopulation += "\t\t\t<act end_time=\"{:02d}:{:02d}:{:02d}\" x=\"{}\" y=\"{}\" type=\"shop\"/>\n".format(horaAleatoriaTarde, minutoAleatorio, segundoAleatorio, coordenadaXAleatoriaLoja, coordenadaYAleatoriaLoja)
+					corpoDoArquivoPopulation += "\t\t\t<leg mode=\"pt\"/>\n"
+					corpoDoArquivoPopulation += "\t\t\t<act x=\"{}\" y=\"{}\" type=\"home\"/>\n".format(coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)
+				
+				#Se sair da loja de noite
+				elif saiDeLoja == 2:
+					corpoDoArquivoPopulation += "\t\t\t<act end_time=\"{:02d}:{:02d}:{:02d}\" x=\"{}\" y=\"{}\" type=\"shop\"/>\n".format(horaAleatoriaNoite, minutoAleatorio, segundoAleatorio, coordenadaXAleatoriaLoja, coordenadaYAleatoriaLoja)
+					corpoDoArquivoPopulation += "\t\t\t<leg mode=\"pt\"/>\n"
+					corpoDoArquivoPopulation += "\t\t\t<act x=\"{}\" y=\"{}\" type=\"home\"/>\n".format(coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)
+				
+		#Se sair de casa de tarde
+		elif saiDeCasa == 1 and saiDeTrabalho != 3:
+			corpoDoArquivoPopulation += "\t\t\t<act end_time=\"{:02d}:{:02d}:{:02d}\" x=\"{}\" y=\"{}\" type=\"home\"/>\n".format(horaAleatoriaTarde, minutoAleatorio, segundoAleatorio, coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)
+			corpoDoArquivoPopulation += "\t\t\t<leg mode=\"pt\"/>\n"
+
+			#CASA-TRABALHO-CASA
+			#Se sair de trabalho de noite
+			if saiDeTrabalho == 2:
+				corpoDoArquivoPopulation += "\t\t\t<act end_time=\"{:02d}:{:02d}:{:02d}\" x=\"{}\" y=\"{}\" type=\"work\"/>\n".format(horaAleatoriaNoite, minutoAleatorio, segundoAleatorio, coordenadaXAleatoriaTrabalho, coordenadaYAleatoriaTrabalho)
+				corpoDoArquivoPopulation += "\t\t\t<leg mode=\"pt\"/>\n"
+				corpoDoArquivoPopulation += "\t\t\t<act x=\"{}\" y=\"{}\" type=\"home\"/>\n".format(coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)
+			
 			#CASA-LOJA-CASA
-			#Se sair da loja de tarde
-			if saiDeLoja == 1:
-				pessoas += "\t\t\t<act end_time=\"{:02d}:{:02d}:{:02d}\" x=\"{}\" y=\"{}\" type=\"shop\"/>\n".format(horaAleatoriaTarde, minutoAleatorio, segundoAleatorio, coordenadaXAleatoriaLoja, coordenadaYAleatoriaLoja)
-				pessoas += "\t\t\t<leg mode=\"pt\"/>\n"
-				pessoas += "\t\t\t<act x=\"{}\" y=\"{}\" type=\"home\"/>\n".format(coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)
-			
-			#Se sair da loja de noite
+			#Se sair de loja de noite
 			elif saiDeLoja == 2:
-				pessoas += "\t\t\t<act end_time=\"{:02d}:{:02d}:{:02d}\" x=\"{}\" y=\"{}\" type=\"shop\"/>\n".format(horaAleatoriaNoite, minutoAleatorio, segundoAleatorio, coordenadaXAleatoriaLoja, coordenadaYAleatoriaLoja)
-				pessoas += "\t\t\t<leg mode=\"pt\"/>\n"
-				pessoas += "\t\t\t<act x=\"{}\" y=\"{}\" type=\"home\"/>\n".format(coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)
-			
-			#Se não for para loja nem para trabalho então vá para outra casa
-			else:
-				pessoas += "\t\t\t<act x=\"{}\" y=\"{}\" type=\"home\"/>\n".format(coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)
-				construcoes += "\t<facility id=\"casaDeNinguem{}\" x=\"{}\" y=\"{}\"/>\n".format(x, coordenadaXAleatoriaLoja, coordenadaYAleatoriaLoja)
-			
-	#Se sair de casa de tarde
-	elif saiDeCasa == 1:
-		pessoas += "\t\t\t<act end_time=\"{:02d}:{:02d}:{:02d}\" x=\"{}\" y=\"{}\" type=\"home\"/>\n".format(horaAleatoriaTarde, minutoAleatorio, segundoAleatorio, coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)
-		pessoas += "\t\t\t<leg mode=\"pt\"/>\n"
-
-		#CASA-TRABALHO-CASA
-		#Se sair de trabalho de noite
-		if saiDeTrabalho == 2:
-			pessoas += "\t\t\t<act end_time=\"{:02d}:{:02d}:{:02d}\" x=\"{}\" y=\"{}\" type=\"work\"/>\n".format(horaAleatoriaNoite, minutoAleatorio, segundoAleatorio, coordenadaXAleatoriaTrabalho, coordenadaYAleatoriaTrabalho)
-			pessoas += "\t\t\t<leg mode=\"pt\"/>\n"
-			pessoas += "\t\t\t<act x=\"{}\" y=\"{}\" type=\"home\"/>\n".format(coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)
+				corpoDoArquivoPopulation += "\t\t\t<act end_time=\"{:02d}:{:02d}:{:02d}\" x=\"{}\" y=\"{}\" type=\"shop\"/>\n".format(horaAleatoriaNoite, minutoAleatorio, segundoAleatorio, coordenadaXAleatoriaLoja, coordenadaYAleatoriaLoja)
+				corpoDoArquivoPopulation += "\t\t\t<leg mode=\"pt\"/>\n"
+				corpoDoArquivoPopulation += "\t\t\t<act x=\"{}\" y=\"{}\" type=\"home\"/>\n".format(coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)
 		
-		#CASA-LOJA-CASA
-		#Se sair de loja de noite
-		elif saiDeLoja == 2:
-			pessoas += "\t\t\t<act end_time=\"{:02d}:{:02d}:{:02d}\" x=\"{}\" y=\"{}\" type=\"shop\"/>\n".format(horaAleatoriaNoite, minutoAleatorio, segundoAleatorio, coordenadaXAleatoriaLoja, coordenadaYAleatoriaLoja)
-			pessoas += "\t\t\t<leg mode=\"pt\"/>\n"
-			pessoas += "\t\t\t<act x=\"{}\" y=\"{}\" type=\"home\"/>\n".format(coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)
-		
-		#Se não for nem para loja nem para trabalho então vá para outra casa
+		#Se sair de casa de noite, chega no outro dia de manhã
 		else:
-			pessoas += "\t\t\t<act x=\"{}\" y=\"{}\" type=\"home\"/>\n".format(coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)
-			construcoes += "\t<facility id=\"casaDeNinguem{}\" x=\"{}\" y=\"{}\"/>\n".format(x, coordenadaXAleatoriaLoja, coordenadaYAleatoriaLoja)
-	
-	#Se sair de casa de noite
-	else:
-		pessoas += "\t\t\t<act end_time=\"{:02d}:{:02d}:{:02d}\" x=\"{}\" y=\"{}\" type=\"home\"/>\n".format(horaAleatoriaTarde, minutoAleatorio, segundoAleatorio, coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)
-		pessoas += "\t\t\t<leg mode=\"pt\"/>\n"
-		pessoas += "\t\t\t<act x=\"{}\" y=\"{}\" type=\"home\"/>\n".format(coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)
-		construcoes += "\t<facility id=\"casaDeNinguem{}\" x=\"{}\" y=\"{}\"/>\n".format(x, coordenadaXAleatoriaLoja, coordenadaYAleatoriaLoja)
+			# TRABALHO-CASA
+			corpoDoArquivoPopulation += "\t\t\t<act end_time=\"{:02d}:{:02d}:{:02d}\" x=\"{}\" y=\"{}\" type=\"work\"/>\n".format(horaAleatoriaManha, minutoAleatorio, segundoAleatorio, coordenadaXAleatoriaTrabalho, coordenadaYAleatoriaTrabalho)
+			corpoDoArquivoPopulation += "\t\t\t<leg mode=\"pt\"/>\n"
+			corpoDoArquivoPopulation += "\t\t\t<act x=\"{}\" y=\"{}\" type=\"home\"/>\n".format(coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)
 
-	#Fechando tag plan
-	pessoas += "\t\t</plan>\n"
-	
-	#Fechando tag person
-	pessoas += "\t</person>\n"
+			# CASA-TRABALHO
+			corpoDoArquivoPopulation += "\t\t\t<act end_time=\"{:02d}:{:02d}:{:02d}\" x=\"{}\" y=\"{}\" type=\"home\"/>\n".format(horaAleatoriaNoite, minutoAleatorio, segundoAleatorio, coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)
+			corpoDoArquivoPopulation += "\t\t\t<leg mode=\"pt\"/>\n"
+			corpoDoArquivoPopulation += "\t\t\t<act x=\"{}\" y=\"{}\" type=\"work\"/>\n".format(coordenadaXAleatoriaTrabalho, coordenadaYAleatoriaTrabalho)
+
+		#Fechando tag plan
+		corpoDoArquivoPopulation += "\t\t</plan>\n"
+		
+		#Fechando tag person
+		corpoDoArquivoPopulation += "\t</person>\n"
+
+		x += 1
 
 #Criação do rodapé do arquivo xml
 rodapeDoArquivoPopulation = "\n</plans>"
@@ -339,13 +342,13 @@ rodapeDoArquivoFacilities = "\n</facilities>"
 #Criando arquivo population
 arquivoPopulacao = open("population.xml", "w")
 #Escrevendo no arquivo population
-arquivoPopulacao.write(cabecalhoDoArquivoPopulation + pessoas + rodapeDoArquivoPopulation)
+arquivoPopulacao.write(cabecalhoDoArquivoPopulation + corpoDoArquivoPopulation + rodapeDoArquivoPopulation)
 #Fechando arquivo population
 arquivoPopulacao.close()
 
 #Criando arquivo facilities
 arquivoFacilities = open("facilities.xml", "w")
 #Escrevendo no arquivo facilities
-arquivoFacilities.write(cabecalhoDoArquivoFacilities + construcoes + rodapeDoArquivoFacilities)
+arquivoFacilities.write(cabecalhoDoArquivoFacilities + corpoDoArquivoFacilities + rodapeDoArquivoFacilities)
 #Fechando arquivo facilities
 arquivoFacilities.close()
