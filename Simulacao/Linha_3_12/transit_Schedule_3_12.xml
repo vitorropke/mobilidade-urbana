@@ -157,39 +157,39 @@
 		<transitRoute id="Linha3_Santo_Antonio">
 			<transportMode>pt</transportMode>
 			<routeProfile>
-				<stop refId="parada_Ida_Linha3" departureOffset="00:00:00"/>
-				<stop refId="parada_UBS_Joaquim_Saldanha_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_EM_Raimunda_Nogueira_do_Couto_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Jose_Dutra_de_Souza_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Jeronimo_Rosado_de_Souza_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Seis_de_Janeiro_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Primeira_Igreja_Metodista_Wesleyana_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Seis_de_Janeiro_Volta1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Seis_de_Janeiro_Volta2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Zeca_Cirilino_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Zeca_Cirilino_Ida1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Zeca_Cirilino_Ida2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Avenida_Alberto_Maranhao_Norte_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Igreja_Universal_do_Reino_de_Deus_Barrocas_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Avenida_Alberto_Maranhao_Norte_Ida1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Joao_Cordeiro_Ida2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Joao_Cordeiro_Ida3" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Venceslau_Braz_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Venceslau_Braz_Ida1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Venceslau_Braz_Ida2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Prudente_de_Morais0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Cirne_Pneus_Mossoro" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Reboucas_Supermercados_Centro" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Praca_dos_Hospitais" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Praca_de_Eventos_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Estacao_das_Artes" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Teatro_Municipal_Dix_Huit_Rosado" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Loterica_Sorteca" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Central" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Caixa_Economica_Federal" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Oficinas" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_AeC" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="terminal_Carcara" arrivalOffset="00:02:00"/>
+				<stop refId="parada_Ida_Linha3" departureOffset="0:00:00"/>
+				<stop refId="parada_UBS_Joaquim_Saldanha_Ida" departureOffset="0:00:58"/>
+				<stop refId="parada_EM_Raimunda_Nogueira_do_Couto_Ida" departureOffset="0:01:56"/>
+				<stop refId="parada_Rua_Jose_Dutra_de_Souza_Ida0" departureOffset="0:02:54"/>
+				<stop refId="parada_Rua_Jeronimo_Rosado_de_Souza_Ida0" departureOffset="0:03:52"/>
+				<stop refId="parada_Rua_Seis_de_Janeiro_Volta0" departureOffset="0:04:50"/>
+				<stop refId="parada_Primeira_Igreja_Metodista_Wesleyana_Volta" departureOffset="0:05:49"/>
+				<stop refId="parada_Rua_Seis_de_Janeiro_Volta1" departureOffset="0:06:47"/>
+				<stop refId="parada_Rua_Seis_de_Janeiro_Volta2" departureOffset="0:07:45"/>
+				<stop refId="parada_Rua_Zeca_Cirilino_Ida0" departureOffset="0:08:43"/>
+				<stop refId="parada_Rua_Zeca_Cirilino_Ida1" departureOffset="0:09:41"/>
+				<stop refId="parada_Rua_Zeca_Cirilino_Ida2" departureOffset="0:10:39"/>
+				<stop refId="parada_Avenida_Alberto_Maranhao_Norte_Ida0" departureOffset="0:11:38"/>
+				<stop refId="parada_Igreja_Universal_do_Reino_de_Deus_Barrocas_Ida" departureOffset="0:12:36"/>
+				<stop refId="parada_Avenida_Alberto_Maranhao_Norte_Ida1" departureOffset="0:13:34"/>
+				<stop refId="parada_Rua_Joao_Cordeiro_Ida2" departureOffset="0:14:32"/>
+				<stop refId="parada_Rua_Joao_Cordeiro_Ida3" departureOffset="0:15:30"/>
+				<stop refId="parada_Rua_Venceslau_Braz_Ida0" departureOffset="0:16:29"/>
+				<stop refId="parada_Rua_Venceslau_Braz_Ida1" departureOffset="0:17:27"/>
+				<stop refId="parada_Rua_Venceslau_Braz_Ida2" departureOffset="0:18:25"/>
+				<stop refId="parada_Rua_Prudente_de_Morais0" departureOffset="0:19:23"/>
+				<stop refId="parada_Cirne_Pneus_Mossoro" departureOffset="0:20:21"/>
+				<stop refId="parada_Reboucas_Supermercados_Centro" departureOffset="0:21:19"/>
+				<stop refId="parada_Praca_dos_Hospitais" departureOffset="0:22:18"/>
+				<stop refId="parada_Praca_de_Eventos_Ida" departureOffset="0:23:16"/>
+				<stop refId="parada_Estacao_das_Artes" departureOffset="0:24:14"/>
+				<stop refId="parada_Teatro_Municipal_Dix_Huit_Rosado" departureOffset="0:25:12"/>
+				<stop refId="parada_Loterica_Sorteca" departureOffset="0:26:10"/>
+				<stop refId="parada_Central" departureOffset="0:27:09"/>
+				<stop refId="parada_Caixa_Economica_Federal" departureOffset="0:28:07"/>
+				<stop refId="parada_Oficinas" departureOffset="0:29:05"/>
+				<stop refId="parada_AeC" departureOffset="0:30:03"/>
+				<stop refId="terminal_Carcara" arrivalOffset="0:32:00"/>
 			</routeProfile>
 			<route>
 				<link refId="493465144_0"/>

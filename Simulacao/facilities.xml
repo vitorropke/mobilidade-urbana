@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE facilities SYSTEM "http://www.matsim.org/files/dtd/facilities_v1.dtd">
+
+<facilities>
+
+	<facility id="casaPessoa0" x="-4157560" y="-574237"/>
+	<facility id="casaDeNinguem0" x="0" y="0"/>
+
+	<facility id="casaPessoa1" x="-4164177" y="-572158"/>
+	<facility id="trabalho1" x="-4158180" y="-572303"/>
+	<facility id="loja1" x="-4152818" y="-581165"/>
+
+	<facility id="casaPessoa2" x="-4157176" y="-577669"/>
+	<facility id="loja2" x="-4160154" y="-572935"/>
+
+	<facility id="casaPessoa3" x="-4155231" y="-579934"/>
+	<facility id="trabalho3" x="-4156111" y="-575766"/>
+	<facility id="loja3" x="-4158775" y="-576920"/>
+	<facility id="casaDeNinguem3" x="0" y="0"/>
+
+	<facility id="casaPessoa4" x="-4159031" y="-575812"/>
+	<facility id="loja4" x="-4154328" y="-572120"/>
+	<facility id="casaDeNinguem4" x="0" y="0"/>
+
+	<facility id="casaPessoa5" x="-4150110" y="-582180"/>
+	<facility id="trabalho5" x="-4161460" y="-586402"/>
+	<facility id="casaDeNinguem5" x="0" y="0"/>
+
+	<facility id="casaPessoa6" x="-4163651" y="-584277"/>
+	<facility id="loja6" x="-4151769" y="-576939"/>
+
+	<facility id="casaPessoa7" x="-4161254" y="-576935"/>
+	<facility id="trabalho7" x="-4161813" y="-570651"/>
+	<facility id="casaDeNinguem7" x="0" y="0"/>
+
+	<facility id="casaPessoa8" x="-4164175" y="-583671"/>
+	<facility id="trabalho8" x="-4163996" y="-583442"/>
+	<facility id="loja8" x="-4157950" y="-580449"/>
+
+	<facility id="casaPessoa9" x="-4151153" y="-570439"/>
+	<facility id="trabalho9" x="-4154036" y="-569837"/>
+	<facility id="loja9" x="-4154991" y="-585930"/>
+	<facility id="casaDeNinguem9" x="0" y="0"/>
+
+	<facility id="casaPessoa10" x="-4162848" y="-586328"/>
+	<facility id="trabalho10" x="-4161546" y="-587440"/>
+	<facility id="loja10" x="-4149677" y="-574213"/>
+
+	<facility id="casaPessoa11" x="-4161534" y="-585728"/>
+	<facility id="trabalho11" x="-4161070" y="-575826"/>
+	<facility id="loja11" x="-4155397" y="-577695"/>
+
+	<facility id="casaPessoa12" x="-4148955" y="-580047"/>
+	<facility id="trabalho12" x="-4159906" y="-582139"/>
+	<facility id="loja12" x="-4149688" y="-572049"/>
+
+	<facility id="casaPessoa13" x="-4156002" y="-586170"/>
+	<facility id="trabalho13" x="-4159415" y="-570065"/>
+	<facility id="loja13" x="-4149192" y="-582425"/>
+	<facility id="casaDeNinguem13" x="0" y="0"/>
+
+	<facility id="casaPessoa14" x="-4153148" y="-582274"/>
+	<facility id="trabalho14" x="-4159194" y="-584658"/>
+
+	<facility id="casaPessoa15" x="-4158945" y="-582249"/>
+	<facility id="trabalho15" x="-4153521" y="-575771"/>
+
+	<facility id="casaPessoa16" x="-4153221" y="-586231"/>
+	<facility id="trabalho16" x="-4163768" y="-580855"/>
+	<facility id="loja16" x="-4162631" y="-584887"/>
+
+	<facility id="casaPessoa17" x="-4153236" y="-574816"/>
+	<facility id="loja17" x="-4156264" y="-583526"/>
+
+	<facility id="casaPessoa18" x="-4160062" y="-577572"/>
+	<facility id="trabalho18" x="-4152632" y="-572863"/>
+
+	<facility id="casaPessoa19" x="-4158150" y="-580301"/>
+	<facility id="loja19" x="-4158756" y="-576975"/>
+
+	<facility id="casaPessoa20" x="-4150026" y="-577839"/>
+	<facility id="loja20" x="-4159729" y="-582656"/>
+	<facility id="casaDeNinguem20" x="0" y="0"/>
+
+	<facility id="casaPessoa21" x="-4156294" y="-574061"/>
+	<facility id="trabalho21" x="-4155933" y="-571916"/>
+	<facility id="loja21" x="-4152241" y="-576881"/>
+
+	<facility id="casaPessoa22" x="-4152713" y="-570819"/>
+	<facility id="trabalho22" x="-4154997" y="-578515"/>
+	<facility id="loja22" x="-4158665" y="-586742"/>
+
+	<facility id="casaPessoa23" x="-4162433" y="-570519"/>
+	<facility id="trabalho23" x="-4156474" y="-581437"/>
+	<facility id="loja23" x="-4154046" y="-575843"/>
+	<facility id="casaDeNinguem23" x="0" y="0"/>
+
+	<facility id="casaPessoa24" x="-4149491" y="-579463"/>
+	<facility id="trabalho24" x="-4160918" y="-583096"/>
+	<facility id="loja24" x="-4156231" y="-574604"/>
+	<facility id="casaDeNinguem24" x="0" y="0"/>
+
+	<facility id="casaPessoa25" x="-4152731" y="-580396"/>
+	<facility id="loja25" x="-4161490" y="-586124"/>
+
+	<facility id="casaPessoa26" x="-4150998" y="-574902"/>
+	<facility id="trabalho26" x="-4162087" y="-574727"/>
+	<facility id="loja26" x="-4162803" y="-584462"/>
+
+	<facility id="casaPessoa27" x="-4161038" y="-578979"/>
+	<facility id="trabalho27" x="-4160945" y="-578190"/>
+	<facility id="casaDeNinguem27" x="0" y="0"/>
+
+	<facility id="casaPessoa28" x="-4161279" y="-585096"/>
+	<facility id="loja28" x="-4149010" y="-584850"/>
+	<facility id="casaDeNinguem28" x="0" y="0"/>
+
+	<facility id="casaPessoa29" x="-4156656" y="-579791"/>
+	<facility id="trabalho29" x="-4159629" y="-574377"/>
+	<facility id="casaDeNinguem29" x="0" y="0"/>
+
+	<facility id="casaPessoa30" x="-4163620" y="-586612"/>
+	<facility id="trabalho30" x="-4154889" y="-577308"/>
+	<facility id="loja30" x="-4150893" y="-581990"/>
+
+	<facility id="casaPessoa31" x="-4156039" y="-577312"/>
+	<facility id="trabalho31" x="-4155948" y="-582305"/>
+	<facility id="casaDeNinguem31" x="0" y="0"/>
+
+	<facility id="casaPessoa32" x="-4162723" y="-573350"/>
+	<facility id="loja32" x="-4153143" y="-579123"/>
+
+	<facility id="casaPessoa33" x="-4153728" y="-578472"/>
+	<facility id="loja33" x="-4163803" y="-574251"/>
+
+	<facility id="casaPessoa34" x="-4159411" y="-575212"/>
+	<facility id="trabalho34" x="-4160044" y="-576145"/>
+	<facility id="loja34" x="-4156340" y="-580583"/>
+
+	<facility id="casaPessoa35" x="-4154069" y="-580025"/>
+	<facility id="casaDeNinguem35" x="0" y="0"/>
+
+	<facility id="casaPessoa36" x="-4154167" y="-579051"/>
+	<facility id="trabalho36" x="-4158662" y="-579118"/>
+	<facility id="loja36" x="-4163100" y="-570627"/>
+
+	<facility id="casaPessoa37" x="-4149308" y="-585203"/>
+	<facility id="casaDeNinguem37" x="0" y="0"/>
+
+	<facility id="casaPessoa38" x="-4160612" y="-579048"/>
+	<facility id="casaDeNinguem38" x="0" y="0"/>
+
+	<facility id="casaPessoa39" x="-4153527" y="-579835"/>
+	<facility id="trabalho39" x="-4157339" y="-577201"/>
+	<facility id="loja39" x="-4150275" y="-579616"/>
+	<facility id="casaDeNinguem39" x="0" y="0"/>
+
+	<facility id="casaPessoa40" x="-4163784" y="-575798"/>
+	<facility id="trabalho40" x="-4156632" y="-570858"/>
+	<facility id="casaDeNinguem40" x="0" y="0"/>
+
+	<facility id="casaPessoa41" x="-4153245" y="-574376"/>
+	<facility id="trabalho41" x="-4160733" y="-580144"/>
+	<facility id="loja41" x="-4163477" y="-580130"/>
+
+	<facility id="casaPessoa42" x="-4162947" y="-578177"/>
+	<facility id="casaDeNinguem42" x="0" y="0"/>
+
+	<facility id="casaPessoa43" x="-4158123" y="-581240"/>
+	<facility id="casaDeNinguem43" x="0" y="0"/>
+
+	<facility id="casaPessoa44" x="-4150053" y="-576459"/>
+	<facility id="trabalho44" x="-4164426" y="-574818"/>
+
+	<facility id="casaPessoa45" x="-4153514" y="-586663"/>
+	<facility id="trabalho45" x="-4160491" y="-571832"/>
+	<facility id="loja45" x="-4163507" y="-586254"/>
+	<facility id="casaDeNinguem45" x="0" y="0"/>
+
+	<facility id="casaPessoa46" x="-4158612" y="-576587"/>
+	<facility id="loja46" x="-4164455" y="-585883"/>
+	<facility id="casaDeNinguem46" x="0" y="0"/>
+
+	<facility id="casaPessoa47" x="-4150528" y="-577031"/>
+	<facility id="trabalho47" x="-4153542" y="-582309"/>
+	<facility id="loja47" x="-4151216" y="-575230"/>
+	<facility id="casaDeNinguem47" x="0" y="0"/>
+
+	<facility id="casaPessoa48" x="-4150074" y="-584170"/>
+	<facility id="trabalho48" x="-4160257" y="-586134"/>
+	<facility id="casaDeNinguem48" x="0" y="0"/>
+
+	<facility id="casaPessoa49" x="-4154446" y="-571204"/>
+	<facility id="trabalho49" x="-4150680" y="-586453"/>
+	<facility id="loja49" x="-4150062" y="-580692"/>
+	<facility id="casaDeNinguem49" x="0" y="0"/>
+
+	<facility id="casaPessoa50" x="-4152119" y="-571137"/>
+	<facility id="trabalho50" x="-4154167" y="-584957"/>
+	<facility id="casaDeNinguem50" x="0" y="0"/>
+
+	<facility id="casaPessoa51" x="-4160896" y="-575783"/>
+	<facility id="casaDeNinguem51" x="0" y="0"/>
+
+	<facility id="casaPessoa52" x="-4163493" y="-574970"/>
+	<facility id="trabalho52" x="-4149104" y="-575325"/>
+	<facility id="loja52" x="-4152607" y="-574084"/>
+	<facility id="casaDeNinguem52" x="0" y="0"/>
+
+	<facility id="casaPessoa53" x="-4155614" y="-579466"/>
+	<facility id="trabalho53" x="-4162339" y="-573122"/>
+	<facility id="loja53" x="-4160422" y="-581974"/>
+
+	<facility id="casaPessoa54" x="-4150042" y="-579046"/>
+	<facility id="trabalho54" x="-4156427" y="-572038"/>
+	<facility id="loja54" x="-4152049" y="-583922"/>
+
+	<facility id="casaPessoa55" x="-4150298" y="-571700"/>
+	<facility id="trabalho55" x="-4154264" y="-576552"/>
+	<facility id="loja55" x="-4153740" y="-581453"/>
+	<facility id="casaDeNinguem55" x="0" y="0"/>
+
+	<facility id="casaPessoa56" x="-4164341" y="-573645"/>
+	<facility id="loja56" x="-4160214" y="-569923"/>
+
+	<facility id="casaPessoa57" x="-4158655" y="-581150"/>
+	<facility id="loja57" x="-4156168" y="-574008"/>
+	<facility id="casaDeNinguem57" x="0" y="0"/>
+
+	<facility id="casaPessoa58" x="-4149981" y="-582906"/>
+	<facility id="trabalho58" x="-4158454" y="-570752"/>
+	<facility id="loja58" x="-4161521" y="-569915"/>
+	<facility id="casaDeNinguem58" x="0" y="0"/>
+
+	<facility id="casaPessoa59" x="-4152147" y="-582855"/>
+	<facility id="loja59" x="-4158475" y="-583647"/>
+	<facility id="casaDeNinguem59" x="0" y="0"/>
+
+	<facility id="casaPessoa60" x="-4162454" y="-572140"/>
+	<facility id="trabalho60" x="-4162825" y="-571242"/>
+	<facility id="loja60" x="-4164382" y="-576097"/>
+
+	<facility id="casaPessoa61" x="-4158851" y="-586126"/>
+	<facility id="trabalho61" x="-4152840" y="-570872"/>
+	<facility id="loja61" x="-4149811" y="-585495"/>
+
+	<facility id="casaPessoa62" x="-4162079" y="-570118"/>
+	<facility id="trabalho62" x="-4151088" y="-586217"/>
+	<facility id="loja62" x="-4155269" y="-579113"/>
+	<facility id="casaDeNinguem62" x="0" y="0"/>
+
+	<facility id="casaPessoa63" x="-4161211" y="-584477"/>
+	<facility id="trabalho63" x="-4159963" y="-586436"/>
+	<facility id="loja63" x="-4154450" y="-579433"/>
+	<facility id="casaDeNinguem63" x="0" y="0"/>
+
+	<facility id="casaPessoa64" x="-4155809" y="-587430"/>
+	<facility id="trabalho64" x="-4162581" y="-573781"/>
+
+	<facility id="casaPessoa65" x="-4155605" y="-571059"/>
+	<facility id="trabalho65" x="-4163913" y="-580676"/>
+	<facility id="loja65" x="-4149521" y="-570477"/>
+
+	<facility id="casaPessoa66" x="-4152884" y="-579650"/>
+	<facility id="casaDeNinguem66" x="0" y="0"/>
+
+	<facility id="casaPessoa67" x="-4156907" y="-580188"/>
+	<facility id="loja67" x="-4161317" y="-579421"/>
+
+	<facility id="casaPessoa68" x="-4154840" y="-577694"/>
+	<facility id="trabalho68" x="-4159074" y="-582175"/>
+	<facility id="casaDeNinguem68" x="0" y="0"/>
+
+	<facility id="casaPessoa69" x="-4154845" y="-580886"/>
+	<facility id="trabalho69" x="-4152332" y="-585364"/>
+	<facility id="loja69" x="-4150683" y="-580542"/>
+
+	<facility id="casaPessoa70" x="-4153364" y="-572507"/>
+	<facility id="trabalho70" x="-4160392" y="-572291"/>
+	<facility id="loja70" x="-4155007" y="-579951"/>
+
+	<facility id="casaPessoa71" x="-4158935" y="-586930"/>
+	<facility id="loja71" x="-4161280" y="-578908"/>
+	<facility id="casaDeNinguem71" x="0" y="0"/>
+
+	<facility id="casaPessoa72" x="-4158171" y="-580322"/>
+	<facility id="loja72" x="-4163376" y="-584893"/>
+	<facility id="casaDeNinguem72" x="0" y="0"/>
+
+	<facility id="casaPessoa73" x="-4156127" y="-581151"/>
+	<facility id="trabalho73" x="-4151752" y="-574023"/>
+	<facility id="casaDeNinguem73" x="0" y="0"/>
+
+	<facility id="casaPessoa74" x="-4151274" y="-586785"/>
+	<facility id="loja74" x="-4152169" y="-571127"/>
+	<facility id="casaDeNinguem74" x="0" y="0"/>
+
+	<facility id="casaPessoa75" x="-4157913" y="-587051"/>
+	<facility id="trabalho75" x="-4157554" y="-586091"/>
+	<facility id="casaDeNinguem75" x="0" y="0"/>
+
+	<facility id="casaPessoa76" x="-4159860" y="-570444"/>
+	<facility id="trabalho76" x="-4157242" y="-584108"/>
+	<facility id="loja76" x="-4162761" y="-574391"/>
+
+	<facility id="casaPessoa77" x="-4151222" y="-581610"/>
+	<facility id="loja77" x="-4150443" y="-582915"/>
+	<facility id="casaDeNinguem77" x="0" y="0"/>
+
+	<facility id="casaPessoa78" x="-4150142" y="-570694"/>
+	<facility id="trabalho78" x="-4161356" y="-582547"/>
+	<facility id="loja78" x="-4161658" y="-577509"/>
+
+	<facility id="casaPessoa79" x="-4152250" y="-586454"/>
+	<facility id="trabalho79" x="-4160364" y="-571502"/>
+	<facility id="loja79" x="-4158520" y="-581047"/>
+
+	<facility id="casaPessoa80" x="-4157026" y="-571290"/>
+	<facility id="trabalho80" x="-4163504" y="-576993"/>
+	<facility id="casaDeNinguem80" x="0" y="0"/>
+
+	<facility id="casaPessoa81" x="-4152177" y="-582719"/>
+	<facility id="trabalho81" x="-4155592" y="-574791"/>
+	<facility id="loja81" x="-4163639" y="-583686"/>
+
+	<facility id="casaPessoa82" x="-4156156" y="-574604"/>
+	<facility id="trabalho82" x="-4163879" y="-574374"/>
+	<facility id="casaDeNinguem82" x="0" y="0"/>
+
+	<facility id="casaPessoa83" x="-4158734" y="-576407"/>
+	<facility id="trabalho83" x="-4152605" y="-570136"/>
+	<facility id="casaDeNinguem83" x="0" y="0"/>
+
+	<facility id="casaPessoa84" x="-4152396" y="-586934"/>
+	<facility id="trabalho84" x="-4162272" y="-570151"/>
+
+	<facility id="casaPessoa85" x="-4154893" y="-571127"/>
+	<facility id="trabalho85" x="-4153303" y="-575743"/>
+	<facility id="casaDeNinguem85" x="0" y="0"/>
+
+	<facility id="casaPessoa86" x="-4164148" y="-574861"/>
+	<facility id="trabalho86" x="-4159029" y="-573534"/>
+	<facility id="loja86" x="-4155130" y="-585614"/>
+	<facility id="casaDeNinguem86" x="0" y="0"/>
+
+	<facility id="casaPessoa87" x="-4152290" y="-570287"/>
+	<facility id="trabalho87" x="-4150738" y="-582682"/>
+	<facility id="loja87" x="-4160103" y="-580036"/>
+
+	<facility id="casaPessoa88" x="-4164070" y="-578812"/>
+	<facility id="casaDeNinguem88" x="0" y="0"/>
+
+	<facility id="casaPessoa89" x="-4162235" y="-574744"/>
+	<facility id="casaDeNinguem89" x="0" y="0"/>
+
+	<facility id="casaPessoa90" x="-4151004" y="-573012"/>
+	<facility id="trabalho90" x="-4161245" y="-584983"/>
+
+	<facility id="casaPessoa91" x="-4153677" y="-583331"/>
+	<facility id="trabalho91" x="-4158624" y="-571014"/>
+	<facility id="loja91" x="-4152674" y="-579121"/>
+	<facility id="casaDeNinguem91" x="0" y="0"/>
+
+	<facility id="casaPessoa92" x="-4158256" y="-584233"/>
+	<facility id="trabalho92" x="-4155876" y="-579723"/>
+	<facility id="loja92" x="-4164395" y="-582622"/>
+
+	<facility id="casaPessoa93" x="-4151336" y="-583041"/>
+	<facility id="trabalho93" x="-4163054" y="-574968"/>
+	<facility id="loja93" x="-4162729" y="-572551"/>
+	<facility id="casaDeNinguem93" x="0" y="0"/>
+
+	<facility id="casaPessoa94" x="-4158393" y="-585366"/>
+	<facility id="loja94" x="-4151518" y="-581761"/>
+	<facility id="casaDeNinguem94" x="0" y="0"/>
+
+	<facility id="casaPessoa95" x="-4160504" y="-576837"/>
+	<facility id="loja95" x="-4159634" y="-569825"/>
+	<facility id="casaDeNinguem95" x="0" y="0"/>
+
+	<facility id="casaPessoa96" x="-4155818" y="-582313"/>
+	<facility id="trabalho96" x="-4153129" y="-586462"/>
+	<facility id="loja96" x="-4163719" y="-573890"/>
+
+	<facility id="casaPessoa97" x="-4152417" y="-582846"/>
+	<facility id="trabalho97" x="-4154750" y="-584295"/>
+	<facility id="loja97" x="-4162640" y="-577800"/>
+
+	<facility id="casaPessoa98" x="-4164332" y="-574046"/>
+	<facility id="trabalho98" x="-4159261" y="-579754"/>
+	<facility id="casaDeNinguem98" x="0" y="0"/>
+
+	<facility id="casaPessoa99" x="-4153027" y="-584179"/>
+	<facility id="trabalho99" x="-4161096" y="-572747"/>
+	<facility id="loja99" x="-4152076" y="-569712"/>
+
+</facilities>

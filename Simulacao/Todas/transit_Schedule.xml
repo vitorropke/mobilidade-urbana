@@ -82,7 +82,7 @@
 		<stopFacility id="parada_Farmacia_da_familia" x="-4156304.9922495056" y="-580163.0939313294" linkRefId="492359299_1"/>
 		<stopFacility id="parada_Fic_Frio_Alto_de_Sao_Manoel" x="-4156168.389240" y="-580344.703561" linkRefId="171476715_22"/>
 		<stopFacility id="parada_Hotel_VillaOeste_Ida" x="-4156543.408410" y="-579733.132689" linkRefId="492359288_4"/>
-		<stopFacility id="parada_Hotel_VillaOeste_Volta" x="-4156576.028509"  y="-579710.067218" linkRefId="492359305_0"/>
+		<stopFacility id="parada_Hotel_VillaOeste_Volta" x="-4156576.028509" y="-579710.067218" linkRefId="492359305_0"/>
 		<stopFacility id="parada_Izamar_Supermercado" x="-4156007.752048" y="-580612.904969" linkRefId="171476715_18"/>
 		<stopFacility id="parada_JPL_Motos_Ilha_de_Santa_Luzia_Ida" x="-4156460.925093" y="-579868.465044" linkRefId="492359288_1"/>
 		<stopFacility id="parada_JPL_Motos_Ilha_de_Santa_Luzia_Volta" x="-4156477.197820" y="-579878.467546" linkRefId="492359305_3"/>
@@ -123,7 +123,7 @@
 		<stopFacility id="parada_Avenida_da_Integracao_Volta0" x="-4158608.971750454" y="-573668.2064677543" linkRefId="356648581_7"/>
 		<stopFacility id="parada_Avenida_da_Integracao_Ida1" x="-4158545.8535991744" y="-573487.9215788961" linkRefId="356648581_9_r"/>
 		<stopFacility id="parada_Avenida_da_Integracao_Volta1" x="-4158521.6972696725" y="-573479.5388456478" linkRefId="356648581_9"/>
-		<stopFacility id="parada_Avenida_da_Integracao_Ida2"  x="-4158634.575233336" y="-573672.0737121633" linkRefId="356648581_7_r"/>
+		<stopFacility id="parada_Avenida_da_Integracao_Ida2" x="-4158634.575233336" y="-573672.0737121633" linkRefId="356648581_7_r"/>
 		<stopFacility id="parada_Avenida_da_Integracao_Volta2" x="-4158423.068200829" y="-573263.3764387827" linkRefId="356648581_13"/>
 		<stopFacility id="parada_Avenida_Presidente_Costa_e_Silva_Ida0" x="-4159542.6083197366" y="-574028.4423050578" linkRefId="353540700_3"/>
 		<stopFacility id="parada_Avenida_Presidente_Costa_e_Silva_Volta0" x="-4158551.864851677" y="-575487.6787998759" linkRefId="377032657_41_r"/>

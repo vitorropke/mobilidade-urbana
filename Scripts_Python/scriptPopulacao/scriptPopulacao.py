@@ -1,6 +1,6 @@
 import random
 
-random.seed(1)
+#random.seed(1)
 
 # https://www.geeksforgeeks.org/python-program-for-binary-search/
 # Iterative Binary Search Function
@@ -37,6 +37,12 @@ arquivoEntrada = open("coordenadas.txt", "r")
 coordenadas = arquivoEntrada.read()
 #Fechando arquivo de entrada
 arquivoEntrada.close()
+
+arquivoParametros = open("parametros.txt", "r")
+#Salvando o texto do arquivo de entrada em uma variável
+parametros = arquivoParametros.read()
+#Fechando arquivo de entrada
+arquivoParametros.close()
 
 #Caso exista aspas no código a ser copiado aqui, utilize este símbolo \ antes das aspas, para que estas não sejam consideradas como parte da sintaxe do python
 #Ou seja, é uma forma de esconder as aspas do texto
@@ -85,8 +91,167 @@ for x in range(numeroCoordenadas):
 corpoDoArquivoPopulation = ""
 corpoDoArquivoFacilities = ""
 
+numeroPessoasString = ""
+latitudeMinimaCasaString = ""
+latitudeMaximaCasaString = ""
+longitudeMinimaCasaString = ""
+longitudeMaximaCasaString = ""
+latitudeMinimaLojaString = ""
+latitudeMaximaLojaString = ""
+longitudeMinimaLojaString = ""
+longitudeMaximaLojaString = ""
+latitudeMinimaTrabalhoString = ""
+latitudeMaximaTrabalhoString = ""
+longitudeMinimaTrabalhoString = ""
+longitudeMaximaTrabalhoString = ""
+indice = 0
+linha = 1
+# Coleta informações necessárias do arquivo 'parametros.txt'
+while True:
+	if linha == 1 and parametros[indice] == ':':
+		indice += 1
+		# Pula espaços e tabulações
+		while parametros[indice].isspace() or parametros[indice] == '\t':
+			indice += 1
+
+		# Número de pessoas
+		while parametros[indice] != '\n':
+			numeroPessoasString += parametros[indice]
+			indice += 1
+	elif linha == 3 and parametros[indice] == ':':
+		indice += 1
+		# Pula espaços e tabulações
+		while parametros[indice].isspace() or parametros[indice] == '\t':
+			indice += 1
+
+		# Número de pessoas
+		while parametros[indice] != '\n':
+			latitudeMinimaCasaString += parametros[indice]
+			indice += 1
+	elif linha == 4 and parametros[indice] == ':':
+		indice += 1
+		# Pula espaços e tabulações
+		while parametros[indice].isspace() or parametros[indice] == '\t':
+			indice += 1
+
+		# Número de pessoas
+		while parametros[indice] != '\n':
+			latitudeMaximaCasaString += parametros[indice]
+			indice += 1
+	elif linha == 5 and parametros[indice] == ':':
+		indice += 1
+		# Pula espaços e tabulações
+		while parametros[indice].isspace() or parametros[indice] == '\t':
+			indice += 1
+
+		# Número de pessoas
+		while parametros[indice] != '\n':
+			longitudeMinimaCasaString += parametros[indice]
+			indice += 1
+	elif linha == 6 and parametros[indice] == ':':
+		indice += 1
+		# Pula espaços e tabulações
+		while parametros[indice].isspace() or parametros[indice] == '\t':
+			indice += 1
+
+		# Número de pessoas
+		while parametros[indice] != '\n':
+			longitudeMaximaCasaString += parametros[indice]
+			indice += 1
+	elif linha == 8 and parametros[indice] == ':':
+		indice += 1
+		# Pula espaços e tabulações
+		while parametros[indice].isspace() or parametros[indice] == '\t':
+			indice += 1
+
+		# Número de pessoas
+		while parametros[indice] != '\n':
+			latitudeMinimaLojaString += parametros[indice]
+			indice += 1
+	elif linha == 9 and parametros[indice] == ':':
+		indice += 1
+		# Pula espaços e tabulações
+		while parametros[indice].isspace() or parametros[indice] == '\t':
+			indice += 1
+
+		# Número de pessoas
+		while parametros[indice] != '\n':
+			latitudeMaximaLojaString += parametros[indice]
+			indice += 1
+	elif linha == 10 and parametros[indice] == ':':
+		indice += 1
+		# Pula espaços e tabulações
+		while parametros[indice].isspace() or parametros[indice] == '\t':
+			indice += 1
+
+		# Número de pessoas
+		while parametros[indice] != '\n':
+			longitudeMinimaLojaString += parametros[indice]
+			indice += 1
+	elif linha == 11 and parametros[indice] == ':':
+		indice += 1
+		# Pula espaços e tabulações
+		while parametros[indice].isspace() or parametros[indice] == '\t':
+			indice += 1
+
+		# Número de pessoas
+		while parametros[indice] != '\n':
+			longitudeMaximaLojaString += parametros[indice]
+			indice += 1
+	elif linha == 13 and parametros[indice] == ':':
+		indice += 1
+		# Pula espaços e tabulações
+		while parametros[indice].isspace() or parametros[indice] == '\t':
+			indice += 1
+
+		# Número de pessoas
+		while parametros[indice] != '\n':
+			latitudeMinimaTrabalhoString += parametros[indice]
+			indice += 1
+	elif linha == 14 and parametros[indice] == ':':
+		indice += 1
+		# Pula espaços e tabulações
+		while parametros[indice].isspace() or parametros[indice] == '\t':
+			indice += 1
+
+		# Número de pessoas
+		while parametros[indice] != '\n':
+			latitudeMaximaTrabalhoString += parametros[indice]
+			indice += 1
+	elif linha == 15 and parametros[indice] == ':':
+		indice += 1
+		# Pula espaços e tabulações
+		while parametros[indice].isspace() or parametros[indice] == '\t':
+			indice += 1
+
+		# Número de pessoas
+		while parametros[indice] != '\n':
+			longitudeMinimaTrabalhoString += parametros[indice]
+			indice += 1
+	elif linha == 16 and parametros[indice] == ':':
+		indice += 1
+		# Pula espaços e tabulações
+		while parametros[indice].isspace() or parametros[indice] == '\t':
+			indice += 1
+
+		# Número de pessoas
+		while parametros[indice] != '\n':
+			longitudeMaximaTrabalhoString += parametros[indice]
+			indice += 1
+	
+	# Incrementa a linha
+	if parametros[indice] == '\n':
+		linha += 1
+	
+	#Incrementa o índice. Se for o último dígito o loop pára
+	indice += 1
+	if indice == len(parametros):
+		break
+
+
+# Cria o plano de todas as pessoas
 x = 0
-numeroDePessoas = 1000
+numeroDePessoas = int(numeroPessoasString)
 while x < numeroDePessoas:
 	#Ações(act)
 	#Para tornar o script mais aleatório, coloquei algumas condições com números aleatórios
@@ -127,17 +292,29 @@ while x < numeroDePessoas:
 		segundoAleatorio = random.randrange(60)
 
 		#Coordenadas aleatórias
-		coordenadaXAleatoriaCasa = random.randrange(-4164462, -4148877)
-		#Parte de baixo do mapa
-		coordenadaYAleatoriaCasa = random.randrange(-587482, -569598)
+		coordenadaXAleatoriaCasa = random.uniform(float(longitudeMinimaCasaString), float(longitudeMaximaCasaString))
+		coordenadaYAleatoriaCasa = random.uniform(float(latitudeMinimaCasaString), float(latitudeMaximaCasaString))
 
-		coordenadaXAleatoriaTrabalho = random.randrange(-4164462, -4148877)
-		#Parte de cima do mapa
-		coordenadaYAleatoriaTrabalho = random.randrange(-587482, -569598)
+		coordenadaXAleatoriaLoja = random.uniform(float(longitudeMinimaLojaString), float(longitudeMaximaLojaString))
+		coordenadaYAleatoriaLoja = random.uniform(float(latitudeMinimaLojaString), float(latitudeMaximaLojaString))
 
-		coordenadaXAleatoriaLoja = random.randrange(-4164462, -4148877)
-		#Parte de cima do mapa
-		coordenadaYAleatoriaLoja = random.randrange(-587482, -569598)
+		coordenadaXAleatoriaTrabalho = random.uniform(float(longitudeMinimaTrabalhoString), float(longitudeMaximaTrabalhoString))
+		coordenadaYAleatoriaTrabalho = random.uniform(float(latitudeMinimaTrabalhoString), float(latitudeMaximaTrabalhoString))
+		
+		"""
+		print(latitudeMinimaCasaString)
+		print(latitudeMaximaCasaString)
+		print(longitudeMinimaCasaString)
+		print(longitudeMaximaCasaString)
+		print(latitudeMinimaLojaString)
+		print(latitudeMaximaLojaString)
+		print(longitudeMinimaLojaString)
+		print(longitudeMaximaLojaString)
+		print(latitudeMinimaTrabalhoString)
+		print(latitudeMaximaTrabalhoString)
+		print(longitudeMinimaTrabalhoString)
+		print(longitudeMaximaTrabalhoString)
+		"""
 
 		# Cria um círculo virtual para verificar se a coordenada gerada está próximo de algum nó
 		# casa

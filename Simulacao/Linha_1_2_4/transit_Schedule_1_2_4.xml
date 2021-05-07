@@ -100,7 +100,7 @@
 		<stopFacility id="parada_Avenida_da_Integracao_Volta0" x="-4158608.971750454" y="-573668.2064677543" linkRefId="356648581_7"/>
 		<stopFacility id="parada_Avenida_da_Integracao_Ida1" x="-4158545.8535991744" y="-573487.9215788961" linkRefId="356648581_9_r"/>
 		<stopFacility id="parada_Avenida_da_Integracao_Volta1" x="-4158521.6972696725" y="-573479.5388456478" linkRefId="356648581_9"/>
-		<stopFacility id="parada_Avenida_da_Integracao_Ida2"  x="-4158634.575233336" y="-573672.0737121633" linkRefId="356648581_7_r"/>
+		<stopFacility id="parada_Avenida_da_Integracao_Ida2" x="-4158634.575233336" y="-573672.0737121633" linkRefId="356648581_7_r"/>
 		<stopFacility id="parada_Avenida_da_Integracao_Volta2" x="-4158423.068200829" y="-573263.3764387827" linkRefId="356648581_13"/>
 		<stopFacility id="parada_Avenida_Presidente_Costa_e_Silva_Ida0" x="-4159542.6083197366" y="-574028.4423050578" linkRefId="353540700_3"/>
 		<stopFacility id="parada_Avenida_Presidente_Costa_e_Silva_Volta0" x="-4158551.864851677" y="-575487.6787998759" linkRefId="377032657_41_r"/>

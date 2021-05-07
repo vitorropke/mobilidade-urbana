@@ -1,0 +1,16 @@
+Número de pessoas:				1000
+
+Latitude mínima residencial:	-573908.317622
+Latitude máxima residencial:	-576975.353382
+Longitude mínima residencial:	-4157677.498030
+Longitude máxima residencial:	-4159875.062593
+
+Latitude mínima loja:			-580137.935427
+Latitude máxima loja:			-582048.861135
+Longitude mínima loja:			-4154897.101126
+Longitude máxima loja:			-4156693.371291
+
+Latitude mínima trabalho:		-578045.471778
+Latitude máxima trabalho:		-580109.271542
+Longitude mínima trabalho:		-4156053.211179
+Longitude máxima trabalho:		-4157954.582257

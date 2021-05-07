@@ -61,7 +61,7 @@
 		<stopFacility id="parada_Farmacia_da_familia" x="-4156304.9922495056" y="-580163.0939313294" linkRefId="492359299_1"/>
 		<stopFacility id="parada_Fic_Frio_Alto_de_Sao_Manoel" x="-4156168.389240" y="-580344.703561" linkRefId="171476715_22"/>
 		<stopFacility id="parada_Hotel_VillaOeste_Ida" x="-4156543.408410" y="-579733.132689" linkRefId="492359288_4"/>
-		<stopFacility id="parada_Hotel_VillaOeste_Volta" x="-4156576.028509"  y="-579710.067218" linkRefId="492359305_0"/>
+		<stopFacility id="parada_Hotel_VillaOeste_Volta" x="-4156576.028509" y="-579710.067218" linkRefId="492359305_0"/>
 		<stopFacility id="parada_Izamar_Supermercado" x="-4156007.752048" y="-580612.904969" linkRefId="171476715_18"/>
 		<stopFacility id="parada_JPL_Motos_Ilha_de_Santa_Luzia_Ida" x="-4156460.925093" y="-579868.465044" linkRefId="492359288_1"/>
 		<stopFacility id="parada_JPL_Motos_Ilha_de_Santa_Luzia_Volta" x="-4156477.197820" y="-579878.467546" linkRefId="492359305_3"/>
