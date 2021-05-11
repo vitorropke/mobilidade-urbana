@@ -10588,7 +10588,7 @@
 				<link refId="497966183_0"/>
 			</route>
 			<departures>
-				<departure id="viagem_Linha10_Shopping_Aeroporto_Macarrao_Boa_Vista_Ida0" departureTime="22:25:00" vehicleRefId="veiculo29"/>
+				<departure id="viagem_Linha10_Shopping_Aeroporto_Macarrao_Boa_Vista_Ida0" departureTime="22:20:00" vehicleRefId="veiculo29"/>
 			</departures>
 		</transitRoute>
 
