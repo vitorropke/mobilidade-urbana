@@ -25,7 +25,7 @@ numeroParadas += 1
 # Entrada do tempo total das paradas
 horarioParada = ["" for x in range(numeroParadas)]
 horasTotal = 0
-minutosTotal = 32
+minutosTotal = 30
 segundosTotal = 0
 horarioParadaAtual = 0
 strSaida = ""
