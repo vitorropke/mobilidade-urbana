@@ -22,9 +22,9 @@
 	<facility id="parada_Rua_Doutor_Joao_Marcelino_Volta0" x="-4157218.9252689183" y="-578247.4621689818"/>
 	<facility id="parada_Rua_Doutor_Mario_Negocio0" x="-4156698.7292884416" y="-578587.936627073"/>
 	<facility id="parada_Rua_Ferreira_Itajuba_Ida0" x="-4157288.9452286274" y="-577984.11535674"/>
-	<facility id="parada_Rua_Nisia_Floresta_Ida0" x="-4157618.751993" y="-579238.979244"/>
-	<facility id="parada_Rua_Nisia_Floresta_Ida1" x="-4157480.414752792" y="-579318.5203320094"/>
-	<facility id="parada_Rua_Nisia_Floresta_Ida2" x="-4157368.764095" y="-579384.911266"/>
+	<facility id="parada_Rua_Nisia_Floresta_Ida1" x="-4157618.751993" y="-579238.979244"/>
+	<facility id="parada_Rua_Nisia_Floresta_Ida2" x="-4157480.414752792" y="-579318.5203320094"/>
+	<facility id="parada_Rua_Nisia_Floresta_Ida3" x="-4157368.764095" y="-579384.911266"/>
 	<facility id="parada_Rua_Prudente_de_Morais0" x="-4156525.269545" y="-578195.658595"/>
 
 	<!--PARADAS MARCADAS==================================================================================================-->
