@@ -198,37 +198,37 @@
 		<transitRoute id="Linha9_Belo_Horizonte_Ida">
 			<transportMode>pt</transportMode>
 			<routeProfile>
-				<stop refId="parada_Ida_Volta_Linha9" departureOffset="00:00:00"/>
-				<stop refId="parada_Rua_Zeus_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Zeus_Ida1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Zeus_Ida2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Zeus_Ida3" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Manoel_Balbino_da_Costa_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Josefa_Xavier_de_Medeiros_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Nilza_Pires_de_Almeida_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Antonio_Geraldo_de_Medeiros_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Januario_Granjeiro_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Januario_Granjeiro_Ida1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Avenida_Alberto_Maranhao_Sul_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Avenida_Alberto_Maranhao_Sul_Ida1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Multmoveis_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Posto_BH" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Avenida_Alberto_Maranhao_Sul_Ida2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Delta_Gas_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Avenida_Alberto_Maranhao_Sul_Ida3" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Ster_Bom_Loja_da_Fabrica_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Praca_da_Igreja_de_Nossa_Senhora_da_Conceicao_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Churrascaria_Mossoro" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Holanda_Pneus" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Shopping_Boulevard" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Igreja_Sao_Vicente" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Loterica_Sorteca" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Central" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Caixa_Economica_Federal" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Oficinas" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_AeC" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Praca_Gazeta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="terminal_Praca_Felipe_Guerra" arrivalOffset="00:02:00"/>
+				<stop refId="parada_Ida_Volta_Linha9" departureOffset="0:00:00"/>
+				<stop refId="parada_Rua_Zeus_Ida0" departureOffset="0:01:05"/>
+				<stop refId="parada_Rua_Zeus_Ida1" departureOffset="0:02:11"/>
+				<stop refId="parada_Rua_Zeus_Ida2" departureOffset="0:03:17"/>
+				<stop refId="parada_Rua_Zeus_Ida3" departureOffset="0:04:23"/>
+				<stop refId="parada_Rua_Manoel_Balbino_da_Costa_Ida0" departureOffset="0:05:29"/>
+				<stop refId="parada_Rua_Josefa_Xavier_de_Medeiros_Ida0" departureOffset="0:06:34"/>
+				<stop refId="parada_Rua_Nilza_Pires_de_Almeida_Ida0" departureOffset="0:07:40"/>
+				<stop refId="parada_Rua_Antonio_Geraldo_de_Medeiros_Ida0" departureOffset="0:08:46"/>
+				<stop refId="parada_Rua_Januario_Granjeiro_Ida0" departureOffset="0:09:52"/>
+				<stop refId="parada_Rua_Januario_Granjeiro_Ida1" departureOffset="0:10:58"/>
+				<stop refId="parada_Avenida_Alberto_Maranhao_Sul_Ida0" departureOffset="0:12:03"/>
+				<stop refId="parada_Avenida_Alberto_Maranhao_Sul_Ida1" departureOffset="0:13:09"/>
+				<stop refId="parada_Multmoveis_Ida" departureOffset="0:14:15"/>
+				<stop refId="parada_Posto_BH" departureOffset="0:15:21"/>
+				<stop refId="parada_Avenida_Alberto_Maranhao_Sul_Ida2" departureOffset="0:16:27"/>
+				<stop refId="parada_Delta_Gas_Ida" departureOffset="0:17:32"/>
+				<stop refId="parada_Avenida_Alberto_Maranhao_Sul_Ida3" departureOffset="0:18:38"/>
+				<stop refId="parada_Ster_Bom_Loja_da_Fabrica_Ida" departureOffset="0:19:44"/>
+				<stop refId="parada_Praca_da_Igreja_de_Nossa_Senhora_da_Conceicao_Ida" departureOffset="0:20:50"/>
+				<stop refId="parada_Churrascaria_Mossoro" departureOffset="0:21:56"/>
+				<stop refId="parada_Holanda_Pneus" departureOffset="0:23:01"/>
+				<stop refId="parada_Shopping_Boulevard" departureOffset="0:24:07"/>
+				<stop refId="parada_Igreja_Sao_Vicente" departureOffset="0:25:13"/>
+				<stop refId="parada_Loterica_Sorteca" departureOffset="0:26:19"/>
+				<stop refId="parada_Central" departureOffset="0:27:25"/>
+				<stop refId="parada_Caixa_Economica_Federal" departureOffset="0:28:30"/>
+				<stop refId="parada_Oficinas" departureOffset="0:29:36"/>
+				<stop refId="parada_AeC" departureOffset="0:30:42"/>
+				<stop refId="parada_Praca_Gazeta" departureOffset="0:31:48"/>
+				<stop refId="terminal_Praca_Felipe_Guerra" arrivalOffset="0:34:00"/>
 			</routeProfile>
 			<route>
 				<link refId="626764523_16"/>
@@ -369,55 +369,55 @@
 		<transitRoute id="Linha9_Belo_Horizonte_Alternativa_Ida">
 			<transportMode>pt</transportMode>
 			<routeProfile>
-				<stop refId="parada_Ida_Volta_Linha9" departureOffset="00:00:00"/>
-				<stop refId="parada_Rua_Zeus_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Zeus_Ida1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Zeus_Ida2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Zeus_Ida3" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Manoel_Balbino_da_Costa_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Josefa_Xavier_de_Medeiros_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Nilza_Pires_de_Almeida_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Antonio_Geraldo_de_Medeiros_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Januario_Granjeiro_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Januario_Granjeiro_Ida1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Avenida_Alberto_Maranhao_Sul_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Avenida_Alberto_Maranhao_Sul_Ida1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Multmoveis_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Posto_BH" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Multmoveis_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Vicente_Martins_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Vicente_Martins_Ida1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Dom_Helder_Camara_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Marinho_Dantas_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Supermercado_Reboucas_Belo_Horizonte_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Zeca_Medeiros_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Zeca_Medeiros_Ida1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Souza_Leao_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_UPA_Raimundo_Benjamin_Franco_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_EE_Monsenhor_Raimundo_Gurgel_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Professor_Manuel_Freire_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Coelho_Neto_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Aplastec_Center_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_FUNDAC_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Francisco_Solon_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Tiinha_Restaurante_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Avenida_Diocesana_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Avenida_Diocesana_Ida1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_EE_Professor_Eliseu_Viana_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_EE_Jeronimo_Rosado_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_ADVM" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Ferreira_Itajuba_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Praca_dos_Hospitais" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Praca_de_Eventos_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Estacao_das_Artes" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Teatro_Municipal_Dix_Huit_Rosado" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Loterica_Sorteca" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Central" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Caixa_Economica_Federal" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Oficinas" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_AeC" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Praca_Gazeta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="terminal_Praca_Felipe_Guerra" arrivalOffset="00:02:00"/>
+				<stop refId="parada_Ida_Volta_Linha9" departureOffset="0:00:00"/>
+				<stop refId="parada_Rua_Zeus_Ida0" departureOffset="0:00:58"/>
+				<stop refId="parada_Rua_Zeus_Ida1" departureOffset="0:01:57"/>
+				<stop refId="parada_Rua_Zeus_Ida2" departureOffset="0:02:56"/>
+				<stop refId="parada_Rua_Zeus_Ida3" departureOffset="0:03:55"/>
+				<stop refId="parada_Rua_Manoel_Balbino_da_Costa_Ida0" departureOffset="0:04:53"/>
+				<stop refId="parada_Rua_Josefa_Xavier_de_Medeiros_Ida0" departureOffset="0:05:52"/>
+				<stop refId="parada_Rua_Nilza_Pires_de_Almeida_Ida0" departureOffset="0:06:51"/>
+				<stop refId="parada_Rua_Antonio_Geraldo_de_Medeiros_Ida0" departureOffset="0:07:50"/>
+				<stop refId="parada_Rua_Januario_Granjeiro_Ida0" departureOffset="0:08:48"/>
+				<stop refId="parada_Rua_Januario_Granjeiro_Ida1" departureOffset="0:09:47"/>
+				<stop refId="parada_Avenida_Alberto_Maranhao_Sul_Ida0" departureOffset="0:10:46"/>
+				<stop refId="parada_Avenida_Alberto_Maranhao_Sul_Ida1" departureOffset="0:11:45"/>
+				<stop refId="parada_Multmoveis_Ida" departureOffset="0:12:44"/>
+				<stop refId="parada_Posto_BH" departureOffset="0:13:42"/>
+				<stop refId="parada_Multmoveis_Volta" departureOffset="0:14:41"/>
+				<stop refId="parada_Rua_Vicente_Martins_Ida0" departureOffset="0:15:40"/>
+				<stop refId="parada_Rua_Vicente_Martins_Ida1" departureOffset="0:16:39"/>
+				<stop refId="parada_Rua_Dom_Helder_Camara_Ida0" departureOffset="0:17:37"/>
+				<stop refId="parada_Rua_Marinho_Dantas_Ida0" departureOffset="0:18:36"/>
+				<stop refId="parada_Supermercado_Reboucas_Belo_Horizonte_Ida" departureOffset="0:19:35"/>
+				<stop refId="parada_Rua_Zeca_Medeiros_Ida0" departureOffset="0:20:34"/>
+				<stop refId="parada_Rua_Zeca_Medeiros_Ida1" departureOffset="0:21:33"/>
+				<stop refId="parada_Rua_Souza_Leao_Ida0" departureOffset="0:22:31"/>
+				<stop refId="parada_UPA_Raimundo_Benjamin_Franco_Ida" departureOffset="0:23:30"/>
+				<stop refId="parada_EE_Monsenhor_Raimundo_Gurgel_Ida" departureOffset="0:24:29"/>
+				<stop refId="parada_Rua_Professor_Manuel_Freire_Ida0" departureOffset="0:25:28"/>
+				<stop refId="parada_Rua_Coelho_Neto_Volta0" departureOffset="0:26:26"/>
+				<stop refId="parada_Aplastec_Center_Volta" departureOffset="0:27:25"/>
+				<stop refId="parada_FUNDAC_Ida" departureOffset="0:28:24"/>
+				<stop refId="parada_Rua_Francisco_Solon_Ida0" departureOffset="0:29:23"/>
+				<stop refId="parada_Tiinha_Restaurante_Ida" departureOffset="0:30:22"/>
+				<stop refId="parada_Avenida_Diocesana_Ida0" departureOffset="0:31:20"/>
+				<stop refId="parada_Avenida_Diocesana_Ida1" departureOffset="0:32:19"/>
+				<stop refId="parada_EE_Professor_Eliseu_Viana_Ida" departureOffset="0:33:18"/>
+				<stop refId="parada_EE_Jeronimo_Rosado_Ida" departureOffset="0:34:17"/>
+				<stop refId="parada_ADVM" departureOffset="0:35:15"/>
+				<stop refId="parada_Rua_Ferreira_Itajuba_Ida0" departureOffset="0:36:14"/>
+				<stop refId="parada_Praca_dos_Hospitais" departureOffset="0:37:13"/>
+				<stop refId="parada_Praca_de_Eventos_Ida" departureOffset="0:38:12"/>
+				<stop refId="parada_Estacao_das_Artes" departureOffset="0:39:11"/>
+				<stop refId="parada_Teatro_Municipal_Dix_Huit_Rosado" departureOffset="0:40:09"/>
+				<stop refId="parada_Loterica_Sorteca" departureOffset="0:41:08"/>
+				<stop refId="parada_Central" departureOffset="0:42:07"/>
+				<stop refId="parada_Caixa_Economica_Federal" departureOffset="0:43:06"/>
+				<stop refId="parada_Oficinas" departureOffset="0:44:04"/>
+				<stop refId="parada_AeC" departureOffset="0:45:03"/>
+				<stop refId="parada_Praca_Gazeta" departureOffset="0:46:02"/>
+				<stop refId="terminal_Praca_Felipe_Guerra" arrivalOffset="0:48:00"/>
 			</routeProfile>
 			<route>
 				<link refId="626764523_16"/>
@@ -619,52 +619,52 @@
 		<transitRoute id="Linha9_Belo_Horizonte_Volta">
 			<transportMode>pt</transportMode>
 			<routeProfile>
-				<stop refId="terminal_Praca_Felipe_Guerra" departureOffset="00:00:00"/>
-				<stop refId="parada_Igreja_Sao_Vicente" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_CIEE" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Hotel_Caraubas" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Doutor_Mario_Negocio0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Igreja_Universal_do_Reino_de_Deus_Centro" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Cobal" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Prudente_de_Morais0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Cirne_Pneus_Mossoro" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Reboucas_Supermercados_Centro" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Praca_dos_Hospitais" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Doutor_Joao_Marcelino_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Colegio_Diocesano_Santa_Luzia_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_EE_Jeronimo_Rosado_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_EE_Professor_Eliseu_Viana_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Avenida_Diocesana_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Avenida_Diocesana_Volta1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Tiinha_Restaurante_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Francisco_Solon_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_FUNDAC_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Aplastec_Center_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Coelho_Neto_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Professor_Manuel_Freire_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_EE_Monsenhor_Raimundo_Gurgel_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_UPA_Raimundo_Benjamin_Franco_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Souza_Leao_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Zeca_Medeiros_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Zeca_Medeiros_Volta1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Supermercado_Reboucas_Belo_Horizonte_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Dom_Helder_Camara_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Vicente_Martins_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Vicente_Martins_Volta1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Avenida_Alberto_Maranhao_Sul_Volta3" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Avenida_Alberto_Maranhao_Sul_Volta4" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Januario_Granjeiro_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Januario_Granjeiro_Volta1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Antonio_Geraldo_de_Medeiros_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Nilza_Pires_de_Almeida_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Josefa_Xavier_de_Medeiros_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Manoel_Balbino_da_Costa_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Zeus_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Zeus_Volta1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Zeus_Volta2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Zeus_Volta3" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Zeus_Volta4" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Ida_Volta_Linha9" arrivalOffset="00:02:00"/>
+				<stop refId="terminal_Praca_Felipe_Guerra" departureOffset="0:00:00"/>
+				<stop refId="parada_Igreja_Sao_Vicente" departureOffset="0:01:02"/>
+				<stop refId="parada_CIEE" departureOffset="0:02:05"/>
+				<stop refId="parada_Hotel_Caraubas" departureOffset="0:03:07"/>
+				<stop refId="parada_Rua_Doutor_Mario_Negocio0" departureOffset="0:04:10"/>
+				<stop refId="parada_Igreja_Universal_do_Reino_de_Deus_Centro" departureOffset="0:05:13"/>
+				<stop refId="parada_Cobal" departureOffset="0:06:15"/>
+				<stop refId="parada_Rua_Prudente_de_Morais0" departureOffset="0:07:18"/>
+				<stop refId="parada_Cirne_Pneus_Mossoro" departureOffset="0:08:20"/>
+				<stop refId="parada_Reboucas_Supermercados_Centro" departureOffset="0:09:23"/>
+				<stop refId="parada_Praca_dos_Hospitais" departureOffset="0:10:26"/>
+				<stop refId="parada_Rua_Doutor_Joao_Marcelino_Volta0" departureOffset="0:11:28"/>
+				<stop refId="parada_Colegio_Diocesano_Santa_Luzia_Volta" departureOffset="0:12:31"/>
+				<stop refId="parada_EE_Jeronimo_Rosado_Volta" departureOffset="0:13:33"/>
+				<stop refId="parada_EE_Professor_Eliseu_Viana_Volta" departureOffset="0:14:36"/>
+				<stop refId="parada_Avenida_Diocesana_Volta0" departureOffset="0:15:39"/>
+				<stop refId="parada_Avenida_Diocesana_Volta1" departureOffset="0:16:41"/>
+				<stop refId="parada_Tiinha_Restaurante_Volta" departureOffset="0:17:44"/>
+				<stop refId="parada_Rua_Francisco_Solon_Volta0" departureOffset="0:18:46"/>
+				<stop refId="parada_FUNDAC_Volta" departureOffset="0:19:49"/>
+				<stop refId="parada_Aplastec_Center_Ida" departureOffset="0:20:52"/>
+				<stop refId="parada_Rua_Coelho_Neto_Ida0" departureOffset="0:21:54"/>
+				<stop refId="parada_Rua_Professor_Manuel_Freire_Volta0" departureOffset="0:22:57"/>
+				<stop refId="parada_EE_Monsenhor_Raimundo_Gurgel_Volta" departureOffset="0:24:00"/>
+				<stop refId="parada_UPA_Raimundo_Benjamin_Franco_Volta" departureOffset="0:25:02"/>
+				<stop refId="parada_Rua_Souza_Leao_Volta0" departureOffset="0:26:05"/>
+				<stop refId="parada_Rua_Zeca_Medeiros_Volta0" departureOffset="0:27:07"/>
+				<stop refId="parada_Rua_Zeca_Medeiros_Volta1" departureOffset="0:28:10"/>
+				<stop refId="parada_Supermercado_Reboucas_Belo_Horizonte_Volta" departureOffset="0:29:13"/>
+				<stop refId="parada_Rua_Dom_Helder_Camara_Volta0" departureOffset="0:30:15"/>
+				<stop refId="parada_Rua_Vicente_Martins_Volta0" departureOffset="0:31:18"/>
+				<stop refId="parada_Rua_Vicente_Martins_Volta1" departureOffset="0:32:20"/>
+				<stop refId="parada_Avenida_Alberto_Maranhao_Sul_Volta3" departureOffset="0:33:23"/>
+				<stop refId="parada_Avenida_Alberto_Maranhao_Sul_Volta4" departureOffset="0:34:26"/>
+				<stop refId="parada_Rua_Januario_Granjeiro_Volta0" departureOffset="0:35:28"/>
+				<stop refId="parada_Rua_Januario_Granjeiro_Volta1" departureOffset="0:36:31"/>
+				<stop refId="parada_Rua_Antonio_Geraldo_de_Medeiros_Volta0" departureOffset="0:37:33"/>
+				<stop refId="parada_Rua_Nilza_Pires_de_Almeida_Volta0" departureOffset="0:38:36"/>
+				<stop refId="parada_Rua_Josefa_Xavier_de_Medeiros_Volta0" departureOffset="0:39:39"/>
+				<stop refId="parada_Rua_Manoel_Balbino_da_Costa_Volta0" departureOffset="0:40:41"/>
+				<stop refId="parada_Rua_Zeus_Volta0" departureOffset="0:41:44"/>
+				<stop refId="parada_Rua_Zeus_Volta1" departureOffset="0:42:46"/>
+				<stop refId="parada_Rua_Zeus_Volta2" departureOffset="0:43:49"/>
+				<stop refId="parada_Rua_Zeus_Volta3" departureOffset="0:44:52"/>
+				<stop refId="parada_Rua_Zeus_Volta4" departureOffset="0:45:54"/>
+				<stop refId="parada_Ida_Volta_Linha9" arrivalOffset="0:48:00"/>
 			</routeProfile>
 			<route>
 				<link refId="497966183_0"/>
@@ -881,38 +881,38 @@
 		<transitRoute id="Linha19_Cidade_Oeste_Ida">
 			<transportMode>pt</transportMode>
 			<routeProfile>
-				<stop refId="parada_Ida_Volta_Linha19" departureOffset="00:00:00"/>
-				<stop refId="parada_Avenida_Mossoro_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Avenida_Mossoro_Ida1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Avenida_Mossoro_Ida2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Avenida_Mossoro_Ida3" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_RN_117_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_RN_117_Ida1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Elfe_Operacao_E_Manutencao_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Sabao_Guarani_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Assembleia_de_Deus_Efraim_1_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Posto_da_Policia_Rodoviaria_Estadual_RN_117_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_RN_117_Ida2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Avenida_Alberto_Maranhao_Sul_Ida0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Avenida_Alberto_Maranhao_Sul_Ida1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Multmoveis_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Posto_BH" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Avenida_Alberto_Maranhao_Sul_Ida2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Delta_Gas_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Avenida_Alberto_Maranhao_Sul_Ida3" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Ster_Bom_Loja_da_Fabrica_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Praca_da_Igreja_de_Nossa_Senhora_da_Conceicao_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Churrascaria_Mossoro" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Holanda_Pneus" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Shopping_Boulevard" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Igreja_Sao_Vicente" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Loterica_Sorteca" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Central" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Caixa_Economica_Federal" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Oficinas" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_AeC" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Praca_Gazeta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="terminal_Praca_Felipe_Guerra" arrivalOffset="00:02:00"/>
+				<stop refId="parada_Ida_Volta_Linha19" departureOffset="0:00:00"/>
+				<stop refId="parada_Avenida_Mossoro_Ida0" departureOffset="0:01:00"/>
+				<stop refId="parada_Avenida_Mossoro_Ida1" departureOffset="0:02:00"/>
+				<stop refId="parada_Avenida_Mossoro_Ida2" departureOffset="0:03:00"/>
+				<stop refId="parada_Avenida_Mossoro_Ida3" departureOffset="0:04:00"/>
+				<stop refId="parada_RN_117_Ida0" departureOffset="0:05:00"/>
+				<stop refId="parada_RN_117_Ida1" departureOffset="0:06:00"/>
+				<stop refId="parada_Elfe_Operacao_E_Manutencao_Ida" departureOffset="0:07:00"/>
+				<stop refId="parada_Sabao_Guarani_Ida" departureOffset="0:08:00"/>
+				<stop refId="parada_Assembleia_de_Deus_Efraim_1_Ida" departureOffset="0:09:00"/>
+				<stop refId="parada_Posto_da_Policia_Rodoviaria_Estadual_RN_117_Ida" departureOffset="0:10:00"/>
+				<stop refId="parada_RN_117_Ida2" departureOffset="0:11:00"/>
+				<stop refId="parada_Avenida_Alberto_Maranhao_Sul_Ida0" departureOffset="0:12:00"/>
+				<stop refId="parada_Avenida_Alberto_Maranhao_Sul_Ida1" departureOffset="0:13:00"/>
+				<stop refId="parada_Multmoveis_Ida" departureOffset="0:14:00"/>
+				<stop refId="parada_Posto_BH" departureOffset="0:15:00"/>
+				<stop refId="parada_Avenida_Alberto_Maranhao_Sul_Ida2" departureOffset="0:16:00"/>
+				<stop refId="parada_Delta_Gas_Ida" departureOffset="0:17:00"/>
+				<stop refId="parada_Avenida_Alberto_Maranhao_Sul_Ida3" departureOffset="0:18:00"/>
+				<stop refId="parada_Ster_Bom_Loja_da_Fabrica_Ida" departureOffset="0:19:00"/>
+				<stop refId="parada_Praca_da_Igreja_de_Nossa_Senhora_da_Conceicao_Ida" departureOffset="0:20:00"/>
+				<stop refId="parada_Churrascaria_Mossoro" departureOffset="0:21:00"/>
+				<stop refId="parada_Holanda_Pneus" departureOffset="0:22:00"/>
+				<stop refId="parada_Shopping_Boulevard" departureOffset="0:23:00"/>
+				<stop refId="parada_Igreja_Sao_Vicente" departureOffset="0:24:00"/>
+				<stop refId="parada_Loterica_Sorteca" departureOffset="0:25:00"/>
+				<stop refId="parada_Central" departureOffset="0:26:00"/>
+				<stop refId="parada_Caixa_Economica_Federal" departureOffset="0:27:00"/>
+				<stop refId="parada_Oficinas" departureOffset="0:28:00"/>
+				<stop refId="parada_AeC" departureOffset="0:29:00"/>
+				<stop refId="parada_Praca_Gazeta" departureOffset="0:30:00"/>
+				<stop refId="terminal_Praca_Felipe_Guerra" arrivalOffset="0:32:00"/>
 			</routeProfile>
 			<route>
 				<link refId="343751070_0"/>
@@ -1027,42 +1027,42 @@
 		<transitRoute id="Linha19_Cidade_Oeste_Volta">
 			<transportMode>pt</transportMode>
 			<routeProfile>
-				<stop refId="terminal_Praca_Felipe_Guerra" departureOffset="00:00:00"/>
-				<stop refId="parada_Igreja_Sao_Vicente" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_CIEE" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Hotel_Caraubas" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Doutor_Mario_Negocio0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Igreja_Universal_do_Reino_de_Deus_Centro" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Cobal" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Rua_Prudente_de_Morais0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Cirne_Pneus_Mossoro" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Reboucas_Supermercados_Centro" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Praca_dos_Hospitais" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Praca_de_Eventos_Ida" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Estacao_das_Artes" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Teatro_Municipal_Dix_Huit_Rosado" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Lojas_Americanas_Centro" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Mercado_Publico_do_Alto_da_Conceicao" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Paozao" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Avenida_Alberto_Maranhao_Sul_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Avenida_Alberto_Maranhao_Sul_Volta1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Delta_Gas_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Avenida_Alberto_Maranhao_Sul_Volta2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Multmoveis_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Avenida_Alberto_Maranhao_Sul_Volta3" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Avenida_Alberto_Maranhao_Sul_Volta4" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_RN_117_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Posto_da_Policia_Rodoviaria_Estadual_RN_117_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Assembleia_de_Deus_Efraim_1_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Sabao_Guarani_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Elfe_Operacao_E_Manutencao_Volta" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_RN_117_Volta1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_RN_117_Volta2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Avenida_Mossoro_Volta0" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Avenida_Mossoro_Volta1" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Avenida_Mossoro_Volta2" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Avenida_Mossoro_Volta3" arrivalOffset="00:02:00" departureOffset="00:02:00"/>
-				<stop refId="parada_Ida_Volta_Linha19" arrivalOffset="00:02:00"/>
+				<stop refId="terminal_Praca_Felipe_Guerra" departureOffset="0:00:00"/>
+				<stop refId="parada_Igreja_Sao_Vicente" departureOffset="0:01:00"/>
+				<stop refId="parada_CIEE" departureOffset="0:02:00"/>
+				<stop refId="parada_Hotel_Caraubas" departureOffset="0:03:00"/>
+				<stop refId="parada_Rua_Doutor_Mario_Negocio0" departureOffset="0:04:00"/>
+				<stop refId="parada_Igreja_Universal_do_Reino_de_Deus_Centro" departureOffset="0:05:00"/>
+				<stop refId="parada_Cobal" departureOffset="0:06:00"/>
+				<stop refId="parada_Rua_Prudente_de_Morais0" departureOffset="0:07:00"/>
+				<stop refId="parada_Cirne_Pneus_Mossoro" departureOffset="0:08:00"/>
+				<stop refId="parada_Reboucas_Supermercados_Centro" departureOffset="0:09:00"/>
+				<stop refId="parada_Praca_dos_Hospitais" departureOffset="0:10:00"/>
+				<stop refId="parada_Praca_de_Eventos_Ida" departureOffset="0:11:00"/>
+				<stop refId="parada_Estacao_das_Artes" departureOffset="0:12:00"/>
+				<stop refId="parada_Teatro_Municipal_Dix_Huit_Rosado" departureOffset="0:13:00"/>
+				<stop refId="parada_Lojas_Americanas_Centro" departureOffset="0:14:00"/>
+				<stop refId="parada_Mercado_Publico_do_Alto_da_Conceicao" departureOffset="0:15:00"/>
+				<stop refId="parada_Paozao" departureOffset="0:16:00"/>
+				<stop refId="parada_Avenida_Alberto_Maranhao_Sul_Volta0" departureOffset="0:17:00"/>
+				<stop refId="parada_Avenida_Alberto_Maranhao_Sul_Volta1" departureOffset="0:18:00"/>
+				<stop refId="parada_Delta_Gas_Volta" departureOffset="0:19:00"/>
+				<stop refId="parada_Avenida_Alberto_Maranhao_Sul_Volta2" departureOffset="0:20:00"/>
+				<stop refId="parada_Multmoveis_Volta" departureOffset="0:21:00"/>
+				<stop refId="parada_Avenida_Alberto_Maranhao_Sul_Volta3" departureOffset="0:22:00"/>
+				<stop refId="parada_Avenida_Alberto_Maranhao_Sul_Volta4" departureOffset="0:23:00"/>
+				<stop refId="parada_RN_117_Volta0" departureOffset="0:24:00"/>
+				<stop refId="parada_Posto_da_Policia_Rodoviaria_Estadual_RN_117_Volta" departureOffset="0:25:00"/>
+				<stop refId="parada_Assembleia_de_Deus_Efraim_1_Volta" departureOffset="0:26:00"/>
+				<stop refId="parada_Sabao_Guarani_Volta" departureOffset="0:27:00"/>
+				<stop refId="parada_Elfe_Operacao_E_Manutencao_Volta" departureOffset="0:28:00"/>
+				<stop refId="parada_RN_117_Volta1" departureOffset="0:29:00"/>
+				<stop refId="parada_RN_117_Volta2" departureOffset="0:30:00"/>
+				<stop refId="parada_Avenida_Mossoro_Volta0" departureOffset="0:31:00"/>
+				<stop refId="parada_Avenida_Mossoro_Volta1" departureOffset="0:32:00"/>
+				<stop refId="parada_Avenida_Mossoro_Volta2" departureOffset="0:33:00"/>
+				<stop refId="parada_Avenida_Mossoro_Volta3" departureOffset="0:34:00"/>
+				<stop refId="parada_Ida_Volta_Linha19" arrivalOffset="0:36:00"/>
 			</routeProfile>
 			<route>
 				<link refId="497966183_0"/>
