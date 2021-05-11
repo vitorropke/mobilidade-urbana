@@ -8706,7 +8706,7 @@
 		</transitRoute>
 
 		<!--LINHA 07 - NOVA VIDA VIA SUMARÉ, LIBERDADE, PLANALTO - VOLTA======================================================-->
-		<transitRoute id="Linha7_Via_Sumare_Volta">
+		<transitRoute id="Linha7_Nova_Vida_Via_Sumare_Volta">
 			<transportMode>pt</transportMode>
 			<routeProfile>
 				<stop refId="terminal_Praca_Felipe_Guerra" departureOffset="0:00:00"/>
@@ -8999,7 +8999,8 @@
 				<link refId="350401788_23"/>
 			</route>
 			<departures>
-				<departure id="viagem_Linha7_Via_Sumare_Volta0" departureTime="21:50:00" vehicleRefId="veiculo18"/>
+				<departure id="viagem_Linha7_Nova_Vida_Via_Sumare_Volta0" departureTime="21:50:00" vehicleRefId="veiculo18"/>
+				<departure id="viagem_Linha7_Nova_Vida_Via_Sumare_Volta1" departureTime="22:55:00" vehicleRefId="veiculo29"/>
 			</departures>
 		</transitRoute>
 
