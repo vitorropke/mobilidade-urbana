@@ -1,31 +1,60 @@
 package mobilidade;
 
+import java.util.ArrayList;
+import java.util.Calendar;
+
 public class Pedestre {
-	String nome;
-	Parada origem;
-	Parada destino;
+	private String nome;
+	private Parada origem;
+	private Parada destino;
+	ArrayList<Float> sinal = new ArrayList<Float>();
+	ArrayList<Calendar> horario = new ArrayList<Calendar>();
 
 	public Pedestre() {
 	}
 
 	public Pedestre(String nome) {
-		this.nome = nome;
+		setNome(nome);
 	}
 
 	public Pedestre(String nome, Parada origem) {
-		this.nome = nome;
-		this.origem = origem;
+		setNome(nome);
+		setOrigem(origem);
 	}
 
 	public Pedestre(String nome, Parada origem, Parada destino) {
-		this.nome = nome;
-		this.origem = origem;
-		this.destino = destino;
+		setNome(nome);
+		setOrigem(origem);
+		setDestino(destino);
 	}
 
 	@Override
 	public String toString() {
 		return "[" + nome + "]";
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public Parada getOrigem() {
+		return origem;
+	}
+
+	public void setOrigem(Parada origem) {
+		this.origem = origem;
+	}
+
+	public Parada getDestino() {
+		return destino;
+	}
+
+	public void setDestino(Parada destino) {
+		this.destino = destino;
 	}
 
 }

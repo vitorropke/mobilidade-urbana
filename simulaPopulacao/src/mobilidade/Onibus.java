@@ -3,21 +3,53 @@ package mobilidade;
 import java.util.ArrayList;
 
 public class Onibus {
-	int capacidadeMaximaPassageiros;
-	float velocidadeOnibus;
-	Parada paradaAtual;
+	private int capacidadeMaximaPassageiros;
+	private float velocidade;
+	private Parada paradaAtual;
 	ArrayList<Pedestre> pedestres = new ArrayList<Pedestre>();
 
 	public Onibus() {
 	}
 
 	public Onibus(int capacidade) {
-		this.capacidadeMaximaPassageiros = capacidade;
+		setCapacidadeMaximaPassageiros(capacidade);
 	}
 
-	public Onibus(int capacidade, int velocidadeOnibus) {
-		this.capacidadeMaximaPassageiros = capacidade;
-		this.velocidadeOnibus = velocidadeOnibus;
+	public Onibus(int capacidade, int velocidade) {
+		setCapacidadeMaximaPassageiros(capacidade);
+		setVelocidade(velocidade);
+	}
+
+	public int getCapacidadeMaximaPassageiros() {
+		return capacidadeMaximaPassageiros;
+	}
+
+	public void setCapacidadeMaximaPassageiros(int capacidadeMaximaPassageiros) {
+		this.capacidadeMaximaPassageiros = capacidadeMaximaPassageiros;
+	}
+
+	public float getVelocidade() {
+		return velocidade;
+	}
+
+	public void setVelocidade(float velocidade) {
+		this.velocidade = velocidade;
+	}
+
+	public Parada getParadaAtual() {
+		return paradaAtual;
+	}
+
+	public void setParadaAtual(Parada paradaAtual) {
+		this.paradaAtual = paradaAtual;
+	}
+
+	public ArrayList<Pedestre> getPedestres() {
+		return pedestres;
+	}
+
+	public void setPedestres(ArrayList<Pedestre> pedestres) {
+		this.pedestres = pedestres;
 	}
 
 }
