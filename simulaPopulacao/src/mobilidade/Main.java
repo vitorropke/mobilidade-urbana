@@ -44,7 +44,7 @@ public class Main {
 		int numeroPedestresAleatorio;
 		Random paradasAleatorias = new Random();
 
-		numeroPedestresAleatorio = paradasAleatorias.nextInt(numeroPedestres);
+		numeroPedestresAleatorio = paradasAleatorias.nextInt(numeroPedestres - 2) + 2;
 		System.out.println("Número de pessoas nessa simulação é " + numeroPedestresAleatorio + '\n');
 
 		// Adiciona paradas no pedestre e os pedestres na parada de forma aleatória
@@ -55,11 +55,12 @@ public class Main {
 			paradas[numeroDaParadaAleatoria].pedestres.add(pessoas[i]);
 		}
 
-		ArrayList<Pedestre> pessoasNoOnibus = new ArrayList<Pedestre>();
 		ArrayList<Pedestre> pessoasNaParada = new ArrayList<Pedestre>();
+		ArrayList<Pedestre> pessoasQueSubiramNoOnibus = new ArrayList<Pedestre>();
 		ArrayList<Pedestre> pessoasQueDesceramDoOnibus = new ArrayList<Pedestre>();
+		ArrayList<Pedestre> pessoasQueEstaoNoOnibus = new ArrayList<Pedestre>();
 		int numeroOnibus = onibus.length;
-		int numeroPessoasNoOnibus;
+		int numeropessoasQueSubiramNoOnibus;
 		int numeroPessoasNaParada;
 		int indice;
 
@@ -68,21 +69,21 @@ public class Main {
 			// enquanto o ônibus não estiver no terminal
 			indice = 0;
 			while (!onibus[x].getParadaAtual().isTerminal()) {
-				pessoasNoOnibus.clear();
+				pessoasQueSubiramNoOnibus.clear();
 				pessoasNaParada.clear();
 				pessoasQueDesceramDoOnibus.clear();
 
 				pessoasNaParada = paradas[indice].pedestres;
 				numeroPessoasNaParada = pessoasNaParada.size();
-				numeroPessoasNoOnibus = onibus[x].pedestres.size();
+				numeropessoasQueSubiramNoOnibus = onibus[x].pedestres.size();
 
 				// Primeiro, decide quem vai descer do ônibus através do cara e coroa
-				for (int i = 0; i < numeroPessoasNoOnibus; i++) {
+				for (int i = 0; i < numeropessoasQueSubiramNoOnibus; i++) {
 					// Se for true, o pedestre entrará no vetor que entrará no ônibus
 					if (Main.caraCoroa()) {
 						pessoasQueDesceramDoOnibus.add(onibus[x].pedestres.get(i));
 						onibus[x].pedestres.remove(i);
-						numeroPessoasNoOnibus--;
+						numeropessoasQueSubiramNoOnibus--;
 					}
 				}
 
@@ -90,31 +91,33 @@ public class Main {
 				for (int i = 0; i < numeroPessoasNaParada; i++) {
 					// Se for true e a capacidade máxima não for atingida, o pedestre entrará no
 					// vetor que entrará no ônibus
-					if ((numeroPessoasNoOnibus <= onibus[x].getCapacidadeMaximaPassageiros()) && Main.caraCoroa()) {
-						pessoasNoOnibus.add(pessoasNaParada.get(i));
-						numeroPessoasNoOnibus++;
+					if ((numeropessoasQueSubiramNoOnibus <= onibus[x].getCapacidadeMaximaPassageiros())
+							&& Main.caraCoroa()) {
+						pessoasQueSubiramNoOnibus.add(pessoasNaParada.get(i));
+						numeropessoasQueSubiramNoOnibus++;
 					}
 				}
 
 				/*
-				 * for (int i = 0; i < numeroPessoasNoOnibus; i++) { if
+				 * for (int i = 0; i < numeropessoasQueSubiramNoOnibus; i++) { if
 				 * (onibus[x].pedestres.get(i).destino == paradas[indice]) {
-				 * onibus[x].pedestres.remove(i); numeroPessoasNoOnibus--; } }
+				 * onibus[x].pedestres.remove(i); numeropessoasQueSubiramNoOnibus--; } }
 				 */
 
 				// Coloca o vetor de pessoas no ônibus junto com as pessoas que estavam no
 				// ônibus
-				onibus[x].pedestres.addAll(pessoasNoOnibus);
+				onibus[x].pedestres.addAll(pessoasQueSubiramNoOnibus);
+				pessoasQueEstaoNoOnibus = onibus[x].pedestres;
 
 				System.out.println("Parada " + indice);
-				System.out.println("Quem subiu: " + pessoasNoOnibus);
+				System.out.println("Quem subiu: " + pessoasQueSubiramNoOnibus);
 				System.out.println("Quem desceu: " + pessoasQueDesceramDoOnibus);
-				System.out.println("Quem está no ônibus: " + onibus[x].pedestres);
+				System.out.println("Quem está no ônibus: " + pessoasQueEstaoNoOnibus);
 				System.out.println();
 
 				// Simula deslocamento
 				Main.simularDeslocamento(paradas[indice], paradas[indice + 1], onibus[0].getVelocidade(),
-						intervaloDeslocamento, pessoasNoOnibus, pessoasQueDesceramDoOnibus);
+						intervaloDeslocamento, pessoasQueEstaoNoOnibus, pessoasQueDesceramDoOnibus);
 
 				// Avança a parada do ônibus
 				onibus[x].setParadaAtual(paradas[indice += 1]);
@@ -134,42 +137,122 @@ public class Main {
 	public static void escanearBluetooth(Pedestre pedestre, boolean saiu, double distanciaUltimaParada) {
 		Calendar momentoAtual = Calendar.getInstance();
 		Random random = new Random();
-		float[] sinais = { 0, 15, 45, 90 };
-		int sinalSorteado = random.nextInt(4);
+		int ciclosDistancias = 0;
+		int numeroSinais = 100;
+		int sinalSorteado = random.nextInt(numeroSinais);
+		float[] sinais = new float[numeroSinais];
+
+		// Reduz a distância com ciclos de 100 metros (distância máxima de detecção de
+		// sinal de bluetooth)
+		for (double i = distanciaUltimaParada - 100; i > 0; i -= 100) {
+			ciclosDistancias += 1;
+		}
+
+		if (saiu) {
+			if (ciclosDistancias == 0) {
+				// Inicializa sinais 90
+				for (int i = 0; i < numeroSinais - 20; i++) {
+					sinais[i] = 90;
+				}
+				// Inicializa sinais 45
+				for (int i = numeroSinais - 20; i < numeroSinais - 5; i++) {
+					sinais[i] = 45;
+				}
+				// Inicializa sinais 0
+				for (int i = numeroSinais - 5; i < numeroSinais - 3; i++) {
+					sinais[i] = 0;
+				}
+				// Inicializa sinais 15
+				for (int i = numeroSinais - 3; i < numeroSinais; i++) {
+					sinais[i] = 15;
+				}
+			} else if (ciclosDistancias == 1) {
+				// Inicializa sinais 0
+				for (int i = 0; i < numeroSinais - 5; i++) {
+					sinais[i] = 0;
+				}
+				// Inicializa sinais 15
+				for (int i = numeroSinais - 5; i < numeroSinais; i++) {
+					sinais[i] = 15;
+				}
+			} else {
+				// Inicializa sinais 0
+				for (int i = 0; i < numeroSinais; i++) {
+					sinais[i] = 0;
+				}
+			}
+		} else {
+			// Inicializa sinais 90
+			for (int i = 0; i < numeroSinais - 20; i++) {
+				sinais[i] = 90;
+			}
+			// Inicializa sinais 45
+			for (int i = numeroSinais - 20; i < numeroSinais - 5; i++) {
+				sinais[i] = 45;
+			}
+			// Inicializa sinais 0
+			for (int i = numeroSinais - 5; i < numeroSinais - 3; i++) {
+				sinais[i] = 0;
+			}
+			// Inicializa sinais 15
+			for (int i = numeroSinais - 3; i < numeroSinais; i++) {
+				sinais[i] = 15;
+			}
+		}
 
 		pedestre.horario.add(momentoAtual);
 		pedestre.sinal.add(sinais[sinalSorteado]);
 	}
 
-	public static ArrayList<Pedestre> averiguaSeSaiu(ArrayList<Pedestre> entradaPessoas) {
+	public static float[] mediaSinal(ArrayList<Pedestre> entradaPessoas) {
 		int numeroPessoas = entradaPessoas.size();
 		int numeroSinais = 0;
-		ArrayList<Pedestre> saidaPessoas = new ArrayList<Pedestre>();
-		float mediaSinal = 0;
+		float[] mediaSinal = new float[numeroPessoas];
 
 		for (int i = 0; i < numeroPessoas; i++) {
 			numeroSinais = entradaPessoas.get(i).sinal.size();
 
 			if (numeroSinais >= 5) {
-				// Reduz o número de sinais para obter os últimos 5 valores de sinal de
-				// bluetooth
 				numeroSinais -= 5;
-
 				// Percorre os últimos 5 valores de sinais
 				for (int j = numeroSinais; j < numeroSinais + 5; j++) {
-					mediaSinal += entradaPessoas.get(i).sinal.get(j);
+					mediaSinal[i] += entradaPessoas.get(i).sinal.get(j);
+
 				}
 			} else {
 				// Percorre os últimos n valores de sinais
 				for (int j = 0; j < numeroSinais; j++) {
-					mediaSinal += entradaPessoas.get(i).sinal.get(j);
+					mediaSinal[i] += entradaPessoas.get(i).sinal.get(j);
 				}
 			}
 
-			// Se a média de sinais for maior que 0, significa que a pessoa está no ônibus
-			mediaSinal /= numeroSinais;
+			mediaSinal[i] /= numeroSinais;
+		}
 
-			if (mediaSinal > 0) {
+		return mediaSinal;
+	}
+
+	public static ArrayList<Pedestre> averiguaSeSaiu(ArrayList<Pedestre> entradaPessoas) {
+		float[] mediaSinais = mediaSinal(entradaPessoas);
+		int numeroMediaSinais = mediaSinais.length;
+		ArrayList<Pedestre> saidaPessoas = new ArrayList<Pedestre>();
+
+		for (int i = 0; i < numeroMediaSinais; i++) {
+			if (mediaSinais[i] <= 10) {
+				saidaPessoas.add(entradaPessoas.get(i));
+			}
+		}
+
+		return saidaPessoas;
+	}
+
+	public static ArrayList<Pedestre> averiguaSeEntrou(ArrayList<Pedestre> entradaPessoas) {
+		float[] mediaSinais = mediaSinal(entradaPessoas);
+		int numeroMediaSinais = mediaSinais.length;
+		ArrayList<Pedestre> saidaPessoas = new ArrayList<Pedestre>();
+
+		for (int i = 0; i < numeroMediaSinais; i++) {
+			if (mediaSinais[i] > 10) {
 				saidaPessoas.add(entradaPessoas.get(i));
 			}
 		}
@@ -178,28 +261,40 @@ public class Main {
 	}
 
 	public static void simularDeslocamento(Parada parada1, Parada parada2, float velocidade, int tempoSimulacao,
-			ArrayList<Pedestre> pessoasNoOnibus, ArrayList<Pedestre> pessoasQueDesceramDoOnibus) {
+			ArrayList<Pedestre> pessoasQueSubiramNoOnibus, ArrayList<Pedestre> pessoasQueDesceramDoOnibus) {
 		// em Km (quilômetros)
 		double distanciaEntreParadas = Haversine.distance(parada1.getCoordenadaY(), parada1.getCoordenadaX(),
 				parada2.getCoordenadaY(), parada2.getCoordenadaX());
 		DecimalFormat formatter = new DecimalFormat("#0");
 
-		System.out.println("Distancia: " + distanciaEntreParadas);
+		System.out.print("Distancia: ");
+		System.out.print(formatter.format(distanciaEntreParadas * 1000));
+		System.out.println(" metro(s)");
 
 		// Cria o vetor de pessoas no onibus e na parada, juntas
-		int numeroPessoasNoOnibus = pessoasNoOnibus.size();
+		int numeropessoasQueSubiramNoOnibus = pessoasQueSubiramNoOnibus.size();
 		int numeroPessoasQueDesceramDoOnibus = pessoasQueDesceramDoOnibus.size();
-		int numeroPessoasNoOnibusENaParada = numeroPessoasNoOnibus + numeroPessoasQueDesceramDoOnibus;
-		boolean[] saiu = new boolean[numeroPessoasNoOnibusENaParada];
+		int numeropessoasQueSubiramNoOnibusENaParada = numeropessoasQueSubiramNoOnibus
+				+ numeroPessoasQueDesceramDoOnibus;
+		boolean[] saiu = new boolean[numeropessoasQueSubiramNoOnibusENaParada];
 
-		ArrayList<Pedestre> pessoasNoOnibusENaParada = pessoasNoOnibus;
-		pessoasNoOnibusENaParada.addAll(pessoasQueDesceramDoOnibus);
+		ArrayList<Pedestre> pessoasQueSubiramNoOnibusENaParada = pessoasQueSubiramNoOnibus;
+		pessoasQueSubiramNoOnibusENaParada.addAll(pessoasQueDesceramDoOnibus);
 
-		for (int x = 0; x < numeroPessoasNoOnibus; x++) {
+		System.out.println();
+		System.out.print("Pessoas no onibus: ");
+		System.out.println(pessoasQueSubiramNoOnibus);
+		System.out.print("Pessoas que desceram: ");
+		System.out.println(pessoasQueDesceramDoOnibus);
+		System.out.print("Pessoas no onibus e na parada: ");
+		System.out.println(pessoasQueSubiramNoOnibusENaParada);
+		System.out.println();
+
+		for (int x = 0; x < numeropessoasQueSubiramNoOnibus; x++) {
 			saiu[x] = false;
 		}
 		for (int x = 0; x < numeroPessoasQueDesceramDoOnibus; x++) {
-			saiu[x + numeroPessoasNoOnibus] = true;
+			saiu[x + numeropessoasQueSubiramNoOnibus] = true;
 		}
 
 		// Deslocamento
@@ -212,8 +307,9 @@ public class Main {
 			System.out.println(" segundo(s)\n");
 
 			// Calcula sinal do bluetooth
-			for (int x = 0; x < numeroPessoasNoOnibusENaParada; x++) {
-				escanearBluetooth(pessoasNoOnibusENaParada.get(x), saiu[x], x - i);
+			for (int x = 0; x < numeropessoasQueSubiramNoOnibusENaParada; x++) {
+				escanearBluetooth(pessoasQueSubiramNoOnibusENaParada.get(x), saiu[x],
+						(distanciaEntreParadas - i) * 1000);
 			}
 
 			try {
@@ -224,8 +320,12 @@ public class Main {
 			}
 		}
 
+		ArrayList<Pedestre> saidaPessoasQueSubiramNoOnibus = new ArrayList<Pedestre>();
+		ArrayList<Pedestre> saidaPessoasQueDesceramDoOnibus = new ArrayList<Pedestre>();
+
 		// Verifica quem sobrou no ônibus
-		pessoasNoOnibus = averiguaSeSaiu(pessoasNoOnibusENaParada);
+		saidaPessoasQueSubiramNoOnibus = averiguaSeEntrou(pessoasQueSubiramNoOnibusENaParada);
+		saidaPessoasQueDesceramDoOnibus = averiguaSeSaiu(pessoasQueSubiramNoOnibusENaParada);
 
 		System.out.println("Embarcando e desembarcando!");
 
@@ -237,8 +337,10 @@ public class Main {
 			e.printStackTrace();
 		}
 
-		System.out.print("Quem acho que está no ônibus: ");
-		System.out.println(pessoasNoOnibus);
+		System.out.print("Acho que está no ônibus: ");
+		System.out.println(saidaPessoasQueSubiramNoOnibus);
+		System.out.print("Acho que saiu do ônibus: ");
+		System.out.println(saidaPessoasQueDesceramDoOnibus);
 		System.out.println();
 	}
 }
