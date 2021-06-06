@@ -248,7 +248,6 @@ while True:
 	if indice == len(parametros):
 		break
 
-
 # Cria o plano de todas as pessoas
 x = 0
 numeroDePessoas = int(numeroPessoasString)
@@ -291,7 +290,8 @@ while x < numeroDePessoas:
 		minutoAleatorio = random.randrange(60)
 		segundoAleatorio = random.randrange(60)
 
-		#Coordenadas aleatórias
+		"""
+		#Coordenadas aleatórias float
 		coordenadaXAleatoriaCasa = random.uniform(float(longitudeMinimaCasaString), float(longitudeMaximaCasaString))
 		coordenadaYAleatoriaCasa = random.uniform(float(latitudeMinimaCasaString), float(latitudeMaximaCasaString))
 
@@ -300,21 +300,17 @@ while x < numeroDePessoas:
 
 		coordenadaXAleatoriaTrabalho = random.uniform(float(longitudeMinimaTrabalhoString), float(longitudeMaximaTrabalhoString))
 		coordenadaYAleatoriaTrabalho = random.uniform(float(latitudeMinimaTrabalhoString), float(latitudeMaximaTrabalhoString))
-		
 		"""
-		print(latitudeMinimaCasaString)
-		print(latitudeMaximaCasaString)
-		print(longitudeMinimaCasaString)
-		print(longitudeMaximaCasaString)
-		print(latitudeMinimaLojaString)
-		print(latitudeMaximaLojaString)
-		print(longitudeMinimaLojaString)
-		print(longitudeMaximaLojaString)
-		print(latitudeMinimaTrabalhoString)
-		print(latitudeMaximaTrabalhoString)
-		print(longitudeMinimaTrabalhoString)
-		print(longitudeMaximaTrabalhoString)
-		"""
+
+		#Coordenadas aleatórias int
+		coordenadaXAleatoriaCasa = random.randrange(int(longitudeMinimaCasaString), int(longitudeMaximaCasaString))
+		coordenadaYAleatoriaCasa = random.randrange(int(latitudeMinimaCasaString), int(latitudeMaximaCasaString))
+
+		coordenadaXAleatoriaTrabalho = random.randrange(int(longitudeMinimaTrabalhoString), int(longitudeMaximaTrabalhoString))
+		coordenadaYAleatoriaTrabalho = random.randrange(int(latitudeMinimaTrabalhoString), int(latitudeMaximaTrabalhoString))
+
+		coordenadaXAleatoriaLoja = random.randrange(int(longitudeMinimaLojaString), int(longitudeMaximaLojaString))
+		coordenadaYAleatoriaLoja = random.randrange(int(latitudeMinimaLojaString), int(latitudeMaximaLojaString))
 
 		# Cria um círculo virtual para verificar se a coordenada gerada está próximo de algum nó
 		# casa
@@ -346,9 +342,13 @@ while x < numeroDePessoas:
 			# Procura por novas coordenadas caso sejam longe de nós
 			if longeDoNo:
 				#Coordenadas aleatórias
-				coordenadaXAleatoriaCasa = random.randrange(-4164462, -4148877)
+				coordenadaXAleatoriaCasa = random.randrange(int(longitudeMinimaCasaString), int(longitudeMaximaCasaString))
 				#Parte de baixo do mapa
-				coordenadaYAleatoriaCasa = random.randrange(-587482, -569598)
+				coordenadaYAleatoriaCasa = random.randrange(int(latitudeMinimaCasaString), int(latitudeMaximaCasaString))
+				"""
+				coordenadaXAleatoriaCasa = random.uniform(float(longitudeMinimaCasaString), float(longitudeMaximaCasaString))
+				coordenadaYAleatoriaCasa = random.uniform(float(latitudeMinimaCasaString), float(latitudeMaximaCasaString))
+				"""
 
 		# trabalho
 		longeDoNo = True
@@ -376,10 +376,14 @@ while x < numeroDePessoas:
 			# Procura por novas coordenadas caso sejam longe de nós
 			if longeDoNo:
 				#Coordenadas aleatórias
-				coordenadaXAleatoriaTrabalho = random.randrange(-4164462, -4148877)
+				coordenadaXAleatoriaTrabalho = random.randrange(int(longitudeMinimaTrabalhoString), int(longitudeMaximaTrabalhoString))
 				#Parte de baixo do mapa
-				coordenadaYAleatoriaTrabalho = random.randrange(-587482, -569598)
-
+				coordenadaYAleatoriaTrabalho = random.randrange(int(latitudeMinimaTrabalhoString), int(latitudeMaximaTrabalhoString))
+				"""
+				coordenadaXAleatoriaTrabalho = random.uniform(float(longitudeMinimaTrabalhoString), float(longitudeMaximaTrabalhoString))
+				coordenadaYAleatoriaTrabalho = random.uniform(float(latitudeMinimaTrabalhoString), float(latitudeMaximaTrabalhoString))
+				"""
+		
 		# loja
 		longeDoNo = True
 		raioDoCirculo = 50
@@ -406,9 +410,13 @@ while x < numeroDePessoas:
 			# Procura por novas coordenadas caso sejam longe de nós
 			if longeDoNo:
 				#Coordenadas aleatórias
-				coordenadaXAleatoriaLoja = random.randrange(-4164462, -4148877)
+				coordenadaXAleatoriaLoja = random.randrange(int(longitudeMinimaLojaString), int(longitudeMaximaLojaString))
 				#Parte de baixo do mapa
-				coordenadaYAleatoriaLoja = random.randrange(-587482, -569598)
+				coordenadaYAleatoriaLoja = random.randrange(int(latitudeMinimaLojaString), int(latitudeMaximaLojaString))
+				"""
+				coordenadaXAleatoriaLoja = random.uniform(float(longitudeMinimaLojaString), float(longitudeMaximaLojaString))
+				coordenadaYAleatoriaLoja = random.uniform(float(latitudeMinimaLojaString), float(latitudeMaximaLojaString))
+				"""
 
 		#Tag de construção, pessoa trabalho e loja
 		corpoDoArquivoFacilities += "\n\t<facility id=\"casaPessoa{}\" x=\"{}\" y=\"{}\"/>\n".format(x, coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)
@@ -497,7 +505,6 @@ while x < numeroDePessoas:
 			# TRABALHO-CASA
 			corpoDoArquivoPopulation += "\t\t\t<act end_time=\"{:02d}:{:02d}:{:02d}\" x=\"{}\" y=\"{}\" type=\"work\"/>\n".format(horaAleatoriaManha, minutoAleatorio, segundoAleatorio, coordenadaXAleatoriaTrabalho, coordenadaYAleatoriaTrabalho)
 			corpoDoArquivoPopulation += "\t\t\t<leg mode=\"pt\"/>\n"
-			corpoDoArquivoPopulation += "\t\t\t<act x=\"{}\" y=\"{}\" type=\"home\"/>\n".format(coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)
 
 			# CASA-TRABALHO
 			corpoDoArquivoPopulation += "\t\t\t<act end_time=\"{:02d}:{:02d}:{:02d}\" x=\"{}\" y=\"{}\" type=\"home\"/>\n".format(horaAleatoriaNoite, minutoAleatorio, segundoAleatorio, coordenadaXAleatoriaCasa, coordenadaYAleatoriaCasa)

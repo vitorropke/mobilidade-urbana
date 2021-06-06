@@ -18,19 +18,20 @@ try:
 			os.environ['PATH'] = os.environ['PATH'] + ';' + dir_path + '/../../x64/Release;' + dir_path + '/../../bin; '
 		# import pyopenpose as op
 		else:
-			# Change these variables to point to the correct folder (Release/x64 etc.) sys.path.append(
-			# '../../python'); If you run `make install` (default path is `/usr/local/python` for Ubuntu),
+			# Change these variables to point to the correct folder (Release/x64 etc.)
+			sys.path.append('~/openpose/build/python')
+			# If you run `make install` (default path is `/usr/local/python` for Ubuntu),
 			# you can also access the OpenPose/python module from there. This will install OpenPose and the python
 			# library at your desired installation path. Ensure that this is in your python path in order to use it.
-			sys.path.append('/usr/local/python')
+			# sys.path.append('/usr/local/python')
 			from openpose import pyopenpose as op
 	except ImportError as e:
 		print('Error: OpenPose library could not be found. Did you enable `BUILD_PYTHON` in CMake and have this '
 		      'Python script in the right folder?')
 		raise e
-
+	
 	saveLocation = "../../Documentos/videos_cameras"
-
+	
 	"""
 	# Take the video
 	videoCapture = cv2.VideoCapture('../../Documentos/videos_cameras/camera1/ch01_20210122160115.mp4')
@@ -47,7 +48,7 @@ try:
 		print('Read a new frame: ', success)
 		count += 1
 	"""
-
+	
 	# Choose a specific frame
 	frame_no = 17660
 	videoCapture = cv2.VideoCapture('../../Documentos/videos_cameras/camera1/ch01_20210122160115.mp4')
@@ -55,12 +56,12 @@ try:
 	ret, frame = videoCapture.read()  # Read the frame
 	cv2.imwrite(saveLocation + "/frame1.jpg", frame)  # save
 	cv2.imshow('window_name', frame)  # show frame on window
-
+	
 	# Take all the bodies in all frames
 	for frame in range(1):
 		# actualFrame = saveLocation + "/frame" + str(frame) + ".jpg"
 		actualFrame = saveLocation + "/frame1.jpg"
-
+		
 		# Flags
 		parser = argparse.ArgumentParser()
 		parser.add_argument("--image_path", default=actualFrame,
@@ -69,11 +70,11 @@ try:
 		                         "formats (jpg, png, "
 		                         "bmp, etc.).")
 		args = parser.parse_known_args()
-
+		
 		# Custom Params (refer to include/openpose/flags.hpp for more parameters)
 		params = dict()
 		params["model_folder"] = "../../Programas/openpose/models/"
-
+		
 		# Add others in path?
 		for i in range(0, len(args[1])):
 			curr_item = args[1][i]
@@ -89,36 +90,36 @@ try:
 				key = curr_item.replace('-', '')
 				if key not in params:
 					params[key] = next_item
-
+		
 		# Construct it from system arguments
 		# op.init_argv(args[1])
 		# oppython = op.OpenposePython()
-
+		
 		# Starting OpenPose
 		opWrapper = op.WrapperPython()
 		opWrapper.configure(params)
 		opWrapper.start()
-
+		
 		# Process Image
 		datum = op.Datum()
 		imageToProcess = cv2.imread(args[0].image_path)
 		datum.cvInputData = imageToProcess
 		opWrapper.emplaceAndPop([datum])
-
+		
 		# Save the coordinates in a var
 		coordinatesKeyPoints = datum.poseKeypoints
-
+		
 		# Check if there are bodies on image
 		if len(coordinatesKeyPoints.shape) == 0:
 			print("Null")
 		else:
 			# .shape take de dimensions of numpy.ndarray
 			bodiesNumber = coordinatesKeyPoints.shape[0]
-
+			
 			# Define the coordinates that will be used for the polygon
 			coordinatesKeyPointsPolygon = [[[0 for cartesianCoordinates in range(2)] for keyPoints in range(25)] for
 			                               bodies in range(bodiesNumber)]
-
+			
 			# Swap the points to match with the polygon
 			for bodies in range(bodiesNumber):
 				coordinatesKeyPointsPolygon[bodies][0] = coordinatesKeyPoints[bodies][17]  # 0 -> 17
@@ -146,30 +147,30 @@ try:
 				coordinatesKeyPointsPolygon[bodies][22] = coordinatesKeyPoints[bodies][15]  # 22 -> 15
 				coordinatesKeyPointsPolygon[bodies][23] = coordinatesKeyPoints[bodies][17]  # 23 -> 17
 				coordinatesKeyPointsPolygon[bodies][24] = coordinatesKeyPoints[bodies][17]  # 24 -> 17
-
+				
 				# Resize the parts of the body
-
+				
 				# Resize the head
 				if coordinatesKeyPointsPolygon[bodies][20][1] - 20 > 0:  # Point 20 Coordinate Y
 					coordinatesKeyPointsPolygon[bodies][20][1] -= 20
 				else:
 					coordinatesKeyPointsPolygon[bodies][20][1] = 0
-
+				
 				if coordinatesKeyPointsPolygon[bodies][21][1] - 30 > 0:  # Point 21 Coordinate Y
 					coordinatesKeyPointsPolygon[bodies][21][1] -= 30
 				else:
 					coordinatesKeyPointsPolygon[bodies][21][1] = 0
-
+				
 				if coordinatesKeyPointsPolygon[bodies][22][1] - 30 > 0:  # Point 22 Coordinate Y
 					coordinatesKeyPointsPolygon[bodies][22][1] -= 30
 				else:
 					coordinatesKeyPointsPolygon[bodies][22][1] = 0
-
+				
 				if coordinatesKeyPointsPolygon[bodies][23][1] - 20 > 0:  # Point 23 Coordinate Y
 					coordinatesKeyPointsPolygon[bodies][23][1] -= 20
 				else:
 					coordinatesKeyPointsPolygon[bodies][23][1] = 0
-
+				
 				# Verify if the body is on front or is on back
 				backWards = False
 				foundOrientation = False
@@ -185,13 +186,13 @@ try:
 								else:
 									foundOrientation = True
 									backWards = True
-
+							
 							if foundOrientation:  # Quit the inner loop if already found the orientation
 								break
-
+					
 					if foundOrientation:  # Quit the outer loop if already found the orientation
 						break
-
+				
 				# Make the resize of the middle
 				if backWards:  # If the body is backwards
 					# Left arm
@@ -200,141 +201,142 @@ try:
 							if coordinatesKeyPointsPolygon[bodies][leftArm][0] + 5 < imageToProcess.shape[1]:
 								coordinatesKeyPointsPolygon[bodies][leftArm][0] += 5  # Coordinate X
 							else:
-								coordinatesKeyPointsPolygon[bodies][leftArm][0] = imageToProcess.shape[1] - 1  # Coordinate X
-
+								coordinatesKeyPointsPolygon[bodies][leftArm][0] = imageToProcess.shape[
+									                                                  1] - 1  # Coordinate X
+							
 							if coordinatesKeyPointsPolygon[bodies][leftArm][1] - 5 > 0:
 								coordinatesKeyPointsPolygon[bodies][leftArm][1] -= 5  # Coordinate Y
 							else:
 								coordinatesKeyPointsPolygon[bodies][leftArm][1] = 0  # Coordinate Y
-
+					
 					# Right arm
 					for rightArm in range(17, 20):  # Points from 17 to 19
 						if coordinatesKeyPointsPolygon[bodies][rightArm][0] - 5 > 0:
 							coordinatesKeyPointsPolygon[bodies][rightArm][0] -= 5  # Coordinate X
 						else:
 							coordinatesKeyPointsPolygon[bodies][rightArm][0] = 0  # Coordinate X
-
+						
 						if coordinatesKeyPointsPolygon[bodies][rightArm][1] - 5 > 0:
 							coordinatesKeyPointsPolygon[bodies][rightArm][1] -= 5  # Coordinate Y
 						else:
 							coordinatesKeyPointsPolygon[bodies][rightArm][1] = 0  # Coordinate Y
-
+					
 					# Point 5
 					if coordinatesKeyPointsPolygon[bodies][5].any() != 0:
 						if coordinatesKeyPointsPolygon[bodies][5][0] + 5 < imageToProcess.shape[1]:
 							coordinatesKeyPointsPolygon[bodies][5][0] += 5  # Coordinate X
 						else:
 							coordinatesKeyPointsPolygon[bodies][5][0] = imageToProcess.shape[1] - 1  # Coordinate X
-
+						
 						if coordinatesKeyPointsPolygon[bodies][5][1] + 10 < imageToProcess.shape[0]:
 							coordinatesKeyPointsPolygon[bodies][5][1] += 10  # Coordinate Y
 						else:
 							coordinatesKeyPointsPolygon[bodies][5][1] = imageToProcess.shape[0] - 1  # Coordinate Y
-
+					
 					# Point 16
 					if coordinatesKeyPointsPolygon[bodies][16].any() != 0:
 						if coordinatesKeyPointsPolygon[bodies][16][0] - 5 > 0:
 							coordinatesKeyPointsPolygon[bodies][16][0] -= 5  # Coordinate X
 						else:
 							coordinatesKeyPointsPolygon[bodies][16][0] = 0  # Coordinate X
-
+						
 						if coordinatesKeyPointsPolygon[bodies][16][1] + 10 < imageToProcess.shape[0]:
 							coordinatesKeyPointsPolygon[bodies][16][1] += 10  # Coordinate Y
 						else:
 							coordinatesKeyPointsPolygon[bodies][16][1] = imageToProcess.shape[0] - 1  # Coordinate Y
-
+					
 					# Point 6
 					if coordinatesKeyPointsPolygon[bodies][6].any() != 0:
 						if coordinatesKeyPointsPolygon[bodies][6][0] + 5 < imageToProcess.shape[1]:
 							coordinatesKeyPointsPolygon[bodies][6][0] += 5  # Coordinate X
 						else:
 							coordinatesKeyPointsPolygon[bodies][6][0] = imageToProcess.shape[1] - 1  # Coordinate X
-
+					
 					# Point 15
 					if coordinatesKeyPointsPolygon[bodies][15][0] - 5 > 0:
 						coordinatesKeyPointsPolygon[bodies][15][0] -= 5  # Coordinate X
 					else:
 						coordinatesKeyPointsPolygon[bodies][15][0] = 0  # Coordinate X
-
+					
 					# Resize the foot
 					if coordinatesKeyPointsPolygon[bodies][7].any() != 0:  # Point 7
 						if coordinatesKeyPointsPolygon[bodies][7][0] + 5 < imageToProcess.shape[1]:
 							coordinatesKeyPointsPolygon[bodies][7][0] += 5  # Coordinate X
 						else:
 							coordinatesKeyPointsPolygon[bodies][7][0] = imageToProcess.shape[1] - 1  # Coordinate X
-
+						
 						if coordinatesKeyPointsPolygon[bodies][7][1] - 10 > 0:
 							coordinatesKeyPointsPolygon[bodies][7][1] -= 10  # Coordinate Y
 						else:
 							coordinatesKeyPointsPolygon[bodies][7][1] = 0  # Coordinate Y
-
+					
 					if coordinatesKeyPointsPolygon[bodies][8].any() != 0:  # Point 8
 						if coordinatesKeyPointsPolygon[bodies][8][0] + 5 < imageToProcess.shape[1]:
 							coordinatesKeyPointsPolygon[bodies][8][0] += 5  # Coordinate X
 						else:
 							coordinatesKeyPointsPolygon[bodies][8][0] = imageToProcess.shape[1] - 1  # Coordinate X
-
+					
 					if coordinatesKeyPointsPolygon[bodies][9].any() != 0:  # Point 9
 						if coordinatesKeyPointsPolygon[bodies][9][0] + 5 < imageToProcess.shape[1]:
 							coordinatesKeyPointsPolygon[bodies][9][0] += 5  # Coordinate X
 						else:
 							coordinatesKeyPointsPolygon[bodies][9][0] = imageToProcess.shape[1] - 1  # Coordinate X
-
+						
 						if coordinatesKeyPointsPolygon[bodies][9][1] + 10 < imageToProcess.shape[0]:
 							coordinatesKeyPointsPolygon[bodies][9][1] += 10  # Coordinate Y
 						else:
 							coordinatesKeyPointsPolygon[bodies][9][1] = imageToProcess.shape[0] - 1  # Coordinate Y
-
+					
 					if coordinatesKeyPointsPolygon[bodies][10].any() != 0:  # Point 10
 						if coordinatesKeyPointsPolygon[bodies][10][0] - 5 > 0:
 							coordinatesKeyPointsPolygon[bodies][10][0] -= 5  # Coordinate X
 						else:
 							coordinatesKeyPointsPolygon[bodies][10][0] = 0  # Coordinate X
-
+						
 						if coordinatesKeyPointsPolygon[bodies][10][1] + 10 < imageToProcess.shape[0]:
 							coordinatesKeyPointsPolygon[bodies][10][1] += 10  # Coordinate Y
 						else:
 							coordinatesKeyPointsPolygon[bodies][10][1] = imageToProcess.shape[0] - 1  # Coordinate Y
-
+					
 					if coordinatesKeyPointsPolygon[bodies][11].any() != 0:  # Point 11
 						if coordinatesKeyPointsPolygon[bodies][11][0] + 5 < imageToProcess.shape[1]:
 							coordinatesKeyPointsPolygon[bodies][11][0] += 5  # Coordinate X
 						else:
 							coordinatesKeyPointsPolygon[bodies][11][0] = imageToProcess.shape[1] - 1  # Coordinate X
-
+						
 						if coordinatesKeyPointsPolygon[bodies][11][1] + 10 < imageToProcess.shape[0]:
 							coordinatesKeyPointsPolygon[bodies][11][1] += 10  # Coordinate Y
 						else:
 							coordinatesKeyPointsPolygon[bodies][11][1] = imageToProcess.shape[0] - 1  # Coordinate Y
-
+					
 					if coordinatesKeyPointsPolygon[bodies][12].any() != 0:  # Point 12
 						if coordinatesKeyPointsPolygon[bodies][12][0] - 5 > 0:
 							coordinatesKeyPointsPolygon[bodies][12][0] -= 5  # Coordinate X
 						else:
 							coordinatesKeyPointsPolygon[bodies][12][0] = 0  # Coordinate X
-
+						
 						if coordinatesKeyPointsPolygon[bodies][12][1] + 10 < imageToProcess.shape[0]:
 							coordinatesKeyPointsPolygon[bodies][12][1] += 10  # Coordinate Y
 						else:
 							coordinatesKeyPointsPolygon[bodies][12][1] = imageToProcess.shape[0] - 1  # Coordinate Y
-
+					
 					# Point 13
 					if coordinatesKeyPointsPolygon[bodies][13][0] - 5 > 0:
 						coordinatesKeyPointsPolygon[bodies][13][0] -= 5  # Coordinate X
 					else:
 						coordinatesKeyPointsPolygon[bodies][13][0] = 0  # Coordinate X
-
+					
 					# Point 14
 					if coordinatesKeyPointsPolygon[bodies][14][0] - 5 > 0:
 						coordinatesKeyPointsPolygon[bodies][14][0] -= 5  # Coordinate X
 					else:
 						coordinatesKeyPointsPolygon[bodies][14][0] = 0  # Coordinate X
-
+					
 					if coordinatesKeyPointsPolygon[bodies][14][1] - 10 > 0:
 						coordinatesKeyPointsPolygon[bodies][14][1] -= 10  # Coordinate Y
 					else:
 						coordinatesKeyPointsPolygon[bodies][14][1] = 0  # Coordinate Y
-
+				
 				else:  # If the body is on front
 					# Left arm
 					for leftArm in range(2, 5):  # Points from 2 to 4
@@ -342,141 +344,142 @@ try:
 							coordinatesKeyPointsPolygon[bodies][leftArm][0] -= 5  # Coordinate X
 						else:
 							coordinatesKeyPointsPolygon[bodies][leftArm][0] = 0  # Coordinate X
-
+						
 						if coordinatesKeyPointsPolygon[bodies][leftArm][1] - 5 > 0:
 							coordinatesKeyPointsPolygon[bodies][leftArm][1] -= 5  # Coordinate Y
 						else:
 							coordinatesKeyPointsPolygon[bodies][leftArm][1] = 0  # Coordinate Y
-
+					
 					# Right arm
 					for rightArm in range(17, 20):  # Points from 17 to 19
 						if coordinatesKeyPointsPolygon[bodies][rightArm].any() != 0:
 							if coordinatesKeyPointsPolygon[bodies][rightArm][0] + 5 < imageToProcess.shape[1]:
 								coordinatesKeyPointsPolygon[bodies][rightArm][0] += 5  # Coordinate X
 							else:
-								coordinatesKeyPointsPolygon[bodies][rightArm][0] = imageToProcess.shape[1] - 1  # Coordinate X
-
+								coordinatesKeyPointsPolygon[bodies][rightArm][0] = imageToProcess.shape[
+									                                                   1] - 1  # Coordinate X
+							
 							if coordinatesKeyPointsPolygon[bodies][rightArm][1] - 5 > 0:
 								coordinatesKeyPointsPolygon[bodies][rightArm][1] -= 5  # Coordinate Y
 							else:
 								coordinatesKeyPointsPolygon[bodies][rightArm][1] = 0  # Coordinate Y
-
+					
 					# Point 5
 					if coordinatesKeyPointsPolygon[bodies][5].any() != 0:
 						if coordinatesKeyPointsPolygon[bodies][5][0] - 5 > 0:
 							coordinatesKeyPointsPolygon[bodies][5][0] -= 5  # Coordinate X
 						else:
 							coordinatesKeyPointsPolygon[bodies][5][0] = 0  # Coordinate X
-
+						
 						if coordinatesKeyPointsPolygon[bodies][5][1] + 10 < imageToProcess.shape[0]:
 							coordinatesKeyPointsPolygon[bodies][5][1] += 10  # Coordinate Y
 						else:
 							coordinatesKeyPointsPolygon[bodies][5][1] = imageToProcess.shape[0] - 1  # Coordinate Y
-
+					
 					# Point 16
 					if coordinatesKeyPointsPolygon[bodies][16].any() != 0:
 						if coordinatesKeyPointsPolygon[bodies][16][0] + 5 < imageToProcess.shape[1]:
 							coordinatesKeyPointsPolygon[bodies][16][0] += 5  # Coordinate X
 						else:
 							coordinatesKeyPointsPolygon[bodies][16][0] = imageToProcess.shape[1] - 1  # Coordinate X
-
+						
 						if coordinatesKeyPointsPolygon[bodies][16][1] + 10 < imageToProcess.shape[0]:
 							coordinatesKeyPointsPolygon[bodies][16][1] += 10  # Coordinate Y
 						else:
 							coordinatesKeyPointsPolygon[bodies][16][1] = imageToProcess.shape[0] - 1  # Coordinate Y
-
+					
 					# Point 6
 					if coordinatesKeyPointsPolygon[bodies][6][0] - 5 > 0:
 						coordinatesKeyPointsPolygon[bodies][6][0] -= 5  # Coordinate X
 					else:
 						coordinatesKeyPointsPolygon[bodies][6][0] = 0  # Coordinate X
-
+					
 					# Point 15
 					if coordinatesKeyPointsPolygon[bodies][15].any() != 0:
 						if coordinatesKeyPointsPolygon[bodies][15][0] + 5 < imageToProcess.shape[1]:
 							coordinatesKeyPointsPolygon[bodies][15][0] += 5  # Coordinate X
 						else:
 							coordinatesKeyPointsPolygon[bodies][15][0] = imageToProcess.shape[1] - 1  # Coordinate X
-
+					
 					# Resize the foot
 					# Point 7
 					if coordinatesKeyPointsPolygon[bodies][7][0] - 5 > 0:
 						coordinatesKeyPointsPolygon[bodies][7][0] -= 5  # Coordinate X
 					else:
 						coordinatesKeyPointsPolygon[bodies][7][0] = 0  # Coordinate X
-
+					
 					if coordinatesKeyPointsPolygon[bodies][7][1] - 10 > 0:
 						coordinatesKeyPointsPolygon[bodies][7][1] -= 10  # Coordinate Y
 					else:
 						coordinatesKeyPointsPolygon[bodies][7][1] = 0  # Coordinate Y
-
+					
 					# Point 8
 					if coordinatesKeyPointsPolygon[bodies][8][0] - 5 > 0:
 						coordinatesKeyPointsPolygon[bodies][8][0] -= 5  # Coordinate X
 					else:
 						coordinatesKeyPointsPolygon[bodies][8][0] = 0  # Coordinate X
-
+					
 					if coordinatesKeyPointsPolygon[bodies][9].any() != 0:  # Point 9
 						if coordinatesKeyPointsPolygon[bodies][9][0] - 5 > 0:
 							coordinatesKeyPointsPolygon[bodies][9][0] -= 5  # Coordinate X
 						else:
 							coordinatesKeyPointsPolygon[bodies][9][0] = 0  # Coordinate X
-
+						
 						if coordinatesKeyPointsPolygon[bodies][9][1] + 10 < imageToProcess.shape[0]:
 							coordinatesKeyPointsPolygon[bodies][9][1] += 10  # Coordinate Y
 						else:
 							coordinatesKeyPointsPolygon[bodies][9][1] = imageToProcess.shape[0] - 1  # Coordinate Y
-
+					
 					if coordinatesKeyPointsPolygon[bodies][10].any() != 0:  # Point 10
 						if coordinatesKeyPointsPolygon[bodies][10][0] + 5 < imageToProcess.shape[1]:
 							coordinatesKeyPointsPolygon[bodies][10][0] += 5  # Coordinate X
 						else:
 							coordinatesKeyPointsPolygon[bodies][10][0] = imageToProcess.shape[1] - 1  # Coordinate X
-
+						
 						if coordinatesKeyPointsPolygon[bodies][10][1] + 10 < imageToProcess.shape[0]:
 							coordinatesKeyPointsPolygon[bodies][10][1] += 10  # Coordinate Y
 						else:
 							coordinatesKeyPointsPolygon[bodies][10][1] = imageToProcess.shape[0] - 1  # Coordinate Y
-
+					
 					if coordinatesKeyPointsPolygon[bodies][11].any() != 0:  # Point 11
 						if coordinatesKeyPointsPolygon[bodies][11][0] - 5 > 0:
 							coordinatesKeyPointsPolygon[bodies][11][0] -= 5  # Coordinate X
 						else:
 							coordinatesKeyPointsPolygon[bodies][11][0] = 0  # Coordinate X
-
+						
 						if coordinatesKeyPointsPolygon[bodies][11][1] + 10 < imageToProcess.shape[0]:
 							coordinatesKeyPointsPolygon[bodies][11][1] += 10  # Coordinate Y
 						else:
 							coordinatesKeyPointsPolygon[bodies][11][1] = imageToProcess.shape[0] - 1  # Coordinate Y
-
+					
 					if coordinatesKeyPointsPolygon[bodies][12].any() != 0:  # Point 12
 						if coordinatesKeyPointsPolygon[bodies][12][0] + 5 < imageToProcess.shape[1]:
 							coordinatesKeyPointsPolygon[bodies][12][0] += 5  # Coordinate X
 						else:
 							coordinatesKeyPointsPolygon[bodies][12][0] = imageToProcess.shape[1] - 1  # Coordinate X
-
+						
 						if coordinatesKeyPointsPolygon[bodies][12][1] + 10 < imageToProcess.shape[0]:
 							coordinatesKeyPointsPolygon[bodies][12][1] += 10  # Coordinate Y
 						else:
 							coordinatesKeyPointsPolygon[bodies][12][1] = imageToProcess.shape[0] - 1  # Coordinate Y
-
+					
 					if coordinatesKeyPointsPolygon[bodies][13].any() != 0:  # Point 13
 						if coordinatesKeyPointsPolygon[bodies][13][0] + 5 < imageToProcess.shape[1]:
 							coordinatesKeyPointsPolygon[bodies][13][0] += 5  # Coordinate X
 						else:
 							coordinatesKeyPointsPolygon[bodies][13][0] = imageToProcess.shape[1] - 1  # Coordinate X
-
+					
 					if coordinatesKeyPointsPolygon[bodies][14].any() != 0:  # Point 14
 						if coordinatesKeyPointsPolygon[bodies][14][0] + 5 < imageToProcess.shape[1]:
 							coordinatesKeyPointsPolygon[bodies][14][0] += 5  # Coordinate X
 						else:
 							coordinatesKeyPointsPolygon[bodies][14][0] = imageToProcess.shape[1] - 1  # Coordinate X
-
+						
 						if coordinatesKeyPointsPolygon[bodies][14][1] - 10 > 0:
 							coordinatesKeyPointsPolygon[bodies][14][1] -= 10  # Coordinate Y
 						else:
 							coordinatesKeyPointsPolygon[bodies][14][1] = 0  # Coordinate Y
-
+			
 			# Print the points on terminal
 			for bodies in range(bodiesNumber):
 				for keyPoints in range(25):
@@ -485,20 +488,20 @@ try:
 						print(coordinatesKeyPointsPolygon[bodies][keyPoints][coordinates], end=' ')
 					print()
 				print()
-
+			
 			# Go through bodies
 			for bodies in range(bodiesNumber):
 				nonZeroValues = 0
-
+				
 				# Find the non zero values
 				for keyPoints in range(25):
 					if coordinatesKeyPointsPolygon[bodies][keyPoints].any() != 0:
 						nonZeroValues += 1
-
+				
 				# Define the polygon to crop the image
 				polygon = [[[0 for cartesianCoordinates in range(2)] for keyPoints in range(nonZeroValues)] for
 				           polygonArray in range(1)]
-
+				
 				keyPointsIndex = 0
 				insertion = False
 				# Fill the polygon with all points of the all bodies
@@ -513,7 +516,7 @@ try:
 						insertion = False
 					if keyPointsIndex == nonZeroValues:
 						break
-
+				
 				# The polygon only exist if has more than 2 points. But i will limit it to 10 points
 				if keyPointsIndex > 10:
 					# First find the minX minY maxX and maxY of the polygon
@@ -524,7 +527,7 @@ try:
 					for point in polygon[0]:
 						x = point[0]
 						y = point[1]
-
+						
 						if x < minX:
 							minX = x
 						if x > maxX:
@@ -533,36 +536,36 @@ try:
 							minY = y
 						if y > maxY:
 							maxY = y
-
+					
 					# Go over the points in the image if they are out side of the enclosing rectangle put zero
 					# if not check if they are inside the polygon or not
 					croppedImage = np.zeros_like(imageToProcess)
 					for y in range(0, imageToProcess.shape[0]):
 						for x in range(0, imageToProcess.shape[1]):
-
+							
 							if x < minX or x > maxX or y < minY or y > maxY:
 								continue
-
+							
 							if cv2.pointPolygonTest(np.asarray(polygon), (x, y), False) >= 0:
 								croppedImage[y, x, 0] = imageToProcess[y, x, 0]
 								croppedImage[y, x, 1] = imageToProcess[y, x, 1]
 								croppedImage[y, x, 2] = imageToProcess[y, x, 2]
-
+					
 					# Now we can crop again just the enveloping rectangle
 					finalImage = croppedImage[minY:maxY, minX:maxX]
-
+					
 					# Display image
 					nameFile = saveLocation + "/bones/frame" + str(
 						frame) + "body" + str(bodies) + ".png"
 					print(nameFile)
 					cv2.imwrite(nameFile, finalImage)
-					# cv2.imshow(nameFile, finalImage)
-
+		# cv2.imshow(nameFile, finalImage)
+	
 	# Display Image
 	# print("Body key points: \n" + str(datum.poseKeypoints))
 	cv2.imshow("OpenPose 1.6.0 - Tutorial Python API", datum.cvOutputData)
 	cv2.waitKey(0)
-
+	
 	# Open rote file
 	pointsFile = open(saveLocation + "/bodies.txt", "w")
 	# Writing on rote file
