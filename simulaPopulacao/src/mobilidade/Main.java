@@ -72,6 +72,7 @@ public class Main {
 				pessoasQueSubiramNoOnibus.clear();
 				pessoasNaParada.clear();
 				pessoasQueDesceramDoOnibus.clear();
+				pessoasQueEstaoNoOnibus.clear();
 
 				pessoasNaParada = paradas[indice].pedestres;
 				numeroPessoasNaParada = pessoasNaParada.size();
@@ -281,15 +282,6 @@ public class Main {
 		ArrayList<Pedestre> pessoasQueSubiramNoOnibusENaParada = pessoasQueSubiramNoOnibus;
 		pessoasQueSubiramNoOnibusENaParada.addAll(pessoasQueDesceramDoOnibus);
 
-		System.out.println();
-		System.out.print("Pessoas no onibus: ");
-		System.out.println(pessoasQueSubiramNoOnibus);
-		System.out.print("Pessoas que desceram: ");
-		System.out.println(pessoasQueDesceramDoOnibus);
-		System.out.print("Pessoas no onibus e na parada: ");
-		System.out.println(pessoasQueSubiramNoOnibusENaParada);
-		System.out.println();
-
 		for (int x = 0; x < numeropessoasQueSubiramNoOnibus; x++) {
 			saiu[x] = false;
 		}
@@ -336,6 +328,13 @@ public class Main {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		System.out.println();
+		System.out.print("Pessoas no onibus: ");
+		System.out.println(pessoasQueSubiramNoOnibus);
+		System.out.print("Pessoas que desceram: ");
+		System.out.println(pessoasQueDesceramDoOnibus);
+		System.out.println();
 
 		System.out.print("Acho que está no ônibus: ");
 		System.out.println(saidaPessoasQueSubiramNoOnibus);
