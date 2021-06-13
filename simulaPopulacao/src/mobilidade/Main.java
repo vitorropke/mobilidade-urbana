@@ -8,7 +8,6 @@ import java.util.Calendar;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		final int intervaloDeslocamento = 60;
 
 		// coordenadaX, coordenadaY, terminal
@@ -40,7 +39,7 @@ public class Main {
 		// -------------------------------------------------------------
 		int numeroParadas = paradas.length;
 		int numeroPedestres = pessoas.length;
-		int numeroDaParadaAleatoria;
+		int numeroParadaAleatoria;
 		int numeroPedestresAleatorio;
 		Random paradasAleatorias = new Random();
 
@@ -49,19 +48,20 @@ public class Main {
 
 		// Adiciona paradas no pedestre e os pedestres na parada de forma aleatória
 		for (int i = 0; i < numeroPedestresAleatorio; i++) {
-			numeroDaParadaAleatoria = paradasAleatorias.nextInt(numeroParadas - 1);
+			numeroParadaAleatoria = paradasAleatorias.nextInt(numeroParadas - 1);
 
-			pessoas[i].setOrigem(paradas[numeroDaParadaAleatoria]);
-			paradas[numeroDaParadaAleatoria].pedestres.add(pessoas[i]);
+			pessoas[i].setOrigem(paradas[numeroParadaAleatoria]);
+			paradas[numeroParadaAleatoria].pedestres.add(pessoas[i]);
 		}
 
-		ArrayList<Pedestre> pessoasNaParada = new ArrayList<Pedestre>();
-		ArrayList<Pedestre> pessoasQueSubiramNoOnibus = new ArrayList<Pedestre>();
-		ArrayList<Pedestre> pessoasQueDesceramDoOnibus = new ArrayList<Pedestre>();
-		ArrayList<Pedestre> pessoasQueEstaoNoOnibus = new ArrayList<Pedestre>();
+		ArrayList<Pedestre> pessoasParada = new ArrayList<Pedestre>();
+		ArrayList<Pedestre> pessoasOnibus = new ArrayList<Pedestre>();
+		ArrayList<Pedestre> pessoasDesceramOnibus = new ArrayList<Pedestre>();
+		ArrayList<Pedestre> pessoasSubiramOnibus = new ArrayList<Pedestre>();
+
 		int numeroOnibus = onibus.length;
-		int numeropessoasQueSubiramNoOnibus;
-		int numeroPessoasNaParada;
+		int numeroPessoasOnibus;
+		int numeroPessoasParada;
 		int indice;
 
 		// Faz as viagens dos ônibus
@@ -69,59 +69,58 @@ public class Main {
 			// enquanto o ônibus não estiver no terminal
 			indice = 0;
 			while (!onibus[x].getParadaAtual().isTerminal()) {
-				pessoasQueSubiramNoOnibus.clear();
-				pessoasNaParada.clear();
-				pessoasQueDesceramDoOnibus.clear();
-				pessoasQueEstaoNoOnibus.clear();
+				pessoasOnibus = onibus[x].pedestres;
+				pessoasParada = paradas[indice].pedestres;
 
-				pessoasNaParada = paradas[indice].pedestres;
-				numeroPessoasNaParada = pessoasNaParada.size();
-				numeropessoasQueSubiramNoOnibus = onibus[x].pedestres.size();
+				numeroPessoasOnibus = pessoasOnibus.size();
+				numeroPessoasParada = pessoasParada.size();
 
 				// Primeiro, decide quem vai descer do ônibus através do cara e coroa
-				for (int i = 0; i < numeropessoasQueSubiramNoOnibus; i++) {
-					// Se for true, o pedestre entrará no vetor que entrará no ônibus
+				for (int i = 0; i < numeroPessoasOnibus; i++) {
+					// Se for cara, o pedestre sai do ônibus
 					if (Main.caraCoroa()) {
-						pessoasQueDesceramDoOnibus.add(onibus[x].pedestres.get(i));
-						onibus[x].pedestres.remove(i);
-						numeropessoasQueSubiramNoOnibus--;
+						pessoasDesceramOnibus.add(pessoasOnibus.get(i));
+						pessoasOnibus.remove(i);
+						numeroPessoasOnibus--;
 					}
 				}
 
 				// Segundo, decide quem vai entrar no ônibus através do cara e coroa
-				for (int i = 0; i < numeroPessoasNaParada; i++) {
-					// Se for true e a capacidade máxima não for atingida, o pedestre entrará no
-					// vetor que entrará no ônibus
-					if ((numeropessoasQueSubiramNoOnibus <= onibus[x].getCapacidadeMaximaPassageiros())
-							&& Main.caraCoroa()) {
-						pessoasQueSubiramNoOnibus.add(pessoasNaParada.get(i));
-						numeropessoasQueSubiramNoOnibus++;
+				for (int i = 0; i < numeroPessoasParada; i++) {
+					// Se for cara e a capacidade máxima do ônibus não for atingida, o pedestre
+					// entra no ônibus
+					if ((numeroPessoasOnibus <= onibus[x].getCapacidadeMaximaPassageiros()) && Main.caraCoroa()) {
+						pessoasSubiramOnibus.add(pessoasParada.get(i));
+						pessoasOnibus.add(pessoasParada.get(i));
+						numeroPessoasOnibus++;
 					}
 				}
 
 				/*
-				 * for (int i = 0; i < numeropessoasQueSubiramNoOnibus; i++) { if
+				 * for (int i = 0; i < numeroPessoasSubiramOnibus; i++) { if
 				 * (onibus[x].pedestres.get(i).destino == paradas[indice]) {
-				 * onibus[x].pedestres.remove(i); numeropessoasQueSubiramNoOnibus--; } }
+				 * onibus[x].pedestres.remove(i); numeroPessoasSubiramOnibus--; } }
 				 */
 
-				// Coloca o vetor de pessoas no ônibus junto com as pessoas que estavam no
-				// ônibus
-				onibus[x].pedestres.addAll(pessoasQueSubiramNoOnibus);
-				pessoasQueEstaoNoOnibus = onibus[x].pedestres;
+				// Atualiza os pedestres que estão no ônibus
+				onibus[x].pedestres = pessoasOnibus;
 
 				System.out.println("Parada " + indice);
-				System.out.println("Quem subiu: " + pessoasQueSubiramNoOnibus);
-				System.out.println("Quem desceu: " + pessoasQueDesceramDoOnibus);
-				System.out.println("Quem está no ônibus: " + pessoasQueEstaoNoOnibus);
+				System.out.println("Quem subiu: " + pessoasSubiramOnibus);
+				System.out.println("Quem desceu: " + pessoasDesceramOnibus);
+				System.out.println("Quem está no ônibus: " + pessoasOnibus);
 				System.out.println();
 
 				// Simula deslocamento
-				Main.simularDeslocamento(paradas[indice], paradas[indice + 1], onibus[0].getVelocidade(),
-						intervaloDeslocamento, pessoasQueEstaoNoOnibus, pessoasQueDesceramDoOnibus);
+				Main.simularDeslocamento(paradas[indice], paradas[indice + 1], onibus[x].getVelocidade(),
+						intervaloDeslocamento, pessoasSubiramOnibus, pessoasDesceramOnibus, pessoasOnibus);
 
 				// Avança a parada do ônibus
 				onibus[x].setParadaAtual(paradas[indice += 1]);
+
+				// Esvazia vetores de descida e subida
+				pessoasDesceramOnibus.clear();
+				pessoasSubiramOnibus.clear();
 			}
 
 			System.out.println("Terminal");
@@ -262,7 +261,8 @@ public class Main {
 	}
 
 	public static void simularDeslocamento(Parada parada1, Parada parada2, float velocidade, int tempoSimulacao,
-			ArrayList<Pedestre> pessoasQueSubiramNoOnibus, ArrayList<Pedestre> pessoasQueDesceramDoOnibus) {
+			ArrayList<Pedestre> pessoasSubiramOnibus, ArrayList<Pedestre> pessoasDesceramOnibus,
+			ArrayList<Pedestre> pessoasOnibus) {
 		// em Km (quilômetros)
 		double distanciaEntreParadas = Haversine.distance(parada1.getCoordenadaY(), parada1.getCoordenadaX(),
 				parada2.getCoordenadaY(), parada2.getCoordenadaX());
@@ -272,21 +272,21 @@ public class Main {
 		System.out.print(formatter.format(distanciaEntreParadas * 1000));
 		System.out.println(" metro(s)");
 
-		// Cria o vetor de pessoas no onibus e na parada, juntas
-		int numeropessoasQueSubiramNoOnibus = pessoasQueSubiramNoOnibus.size();
-		int numeroPessoasQueDesceramDoOnibus = pessoasQueDesceramDoOnibus.size();
-		int numeropessoasQueSubiramNoOnibusENaParada = numeropessoasQueSubiramNoOnibus
-				+ numeroPessoasQueDesceramDoOnibus;
-		boolean[] saiu = new boolean[numeropessoasQueSubiramNoOnibusENaParada];
+		// Cria o vetor que junta as pessoas que subiram e desceram do ônibus
+		int numeroPessoasSubiramOnibus = pessoasSubiramOnibus.size();
+		int numeroPessoasDesceramOnibus = pessoasDesceramOnibus.size();
+		int numeroPessoasSubiramDesceram = numeroPessoasSubiramOnibus + numeroPessoasDesceramOnibus;
+		boolean[] saiu = new boolean[numeroPessoasSubiramDesceram];
+		ArrayList<Pedestre> pessoasSubiramDesceram = new ArrayList<Pedestre>();
 
-		ArrayList<Pedestre> pessoasQueSubiramNoOnibusENaParada = pessoasQueSubiramNoOnibus;
-		pessoasQueSubiramNoOnibusENaParada.addAll(pessoasQueDesceramDoOnibus);
+		pessoasSubiramDesceram.addAll(pessoasSubiramOnibus);
+		pessoasSubiramDesceram.addAll(pessoasDesceramOnibus);
 
-		for (int x = 0; x < numeropessoasQueSubiramNoOnibus; x++) {
+		for (int x = 0; x < numeroPessoasSubiramOnibus; x++) {
 			saiu[x] = false;
 		}
-		for (int x = 0; x < numeroPessoasQueDesceramDoOnibus; x++) {
-			saiu[x + numeropessoasQueSubiramNoOnibus] = true;
+		for (int x = 0; x < numeroPessoasDesceramOnibus; x++) {
+			saiu[x + numeroPessoasSubiramOnibus] = true;
 		}
 
 		// Deslocamento
@@ -299,47 +299,54 @@ public class Main {
 			System.out.println(" segundo(s)\n");
 
 			// Calcula sinal do bluetooth
-			for (int x = 0; x < numeropessoasQueSubiramNoOnibusENaParada; x++) {
-				escanearBluetooth(pessoasQueSubiramNoOnibusENaParada.get(x), saiu[x],
-						(distanciaEntreParadas - i) * 1000);
+			for (int x = 0; x < numeroPessoasSubiramDesceram; x++) {
+				escanearBluetooth(pessoasSubiramDesceram.get(x), saiu[x], (distanciaEntreParadas - i) * 1000);
 			}
 
 			try {
 				Thread.sleep(100);
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
 
-		ArrayList<Pedestre> saidaPessoasQueSubiramNoOnibus = new ArrayList<Pedestre>();
-		ArrayList<Pedestre> saidaPessoasQueDesceramDoOnibus = new ArrayList<Pedestre>();
+		// Define os valores para saída
+		ArrayList<Pedestre> saidaPessoasSubiramOnibus = averiguaSeEntrou(pessoasSubiramDesceram);
+		ArrayList<Pedestre> saidaPessoasDesceramOnibus = averiguaSeSaiu(pessoasSubiramDesceram);
+		ArrayList<Pedestre> saidaPessoasOnibus = new ArrayList<Pedestre>();
 
-		// Verifica quem sobrou no ônibus
-		saidaPessoasQueSubiramNoOnibus = averiguaSeEntrou(pessoasQueSubiramNoOnibusENaParada);
-		saidaPessoasQueDesceramDoOnibus = averiguaSeSaiu(pessoasQueSubiramNoOnibusENaParada);
+		// Adiciona pessoas que estão no ônibus
+		saidaPessoasOnibus.addAll(pessoasOnibus);
 
-		System.out.println("Embarcando e desembarcando!");
+		// Adiciona as pessoas que subiram se elas não estavam
+		for (int i = 0; i < numeroPessoasSubiramDesceram; i++) {
+			if (!saidaPessoasOnibus.contains(pessoasSubiramDesceram.get(i))) {
+				saidaPessoasOnibus.add(pessoasSubiramDesceram.get(i));
+			}
+		}
+
+		// Remove as pessoas que desceram
+		saidaPessoasOnibus.removeAll(saidaPessoasDesceramOnibus);
 
 		// Embarque desembarque
+		System.out.println("Embarcando e desembarcando!");
+
 		try {
 			Thread.sleep(1500);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 		System.out.println();
-		System.out.print("Pessoas no onibus: ");
-		System.out.println(pessoasQueSubiramNoOnibus);
-		System.out.print("Pessoas que desceram: ");
-		System.out.println(pessoasQueDesceramDoOnibus);
+		System.out.println("Pessoas que subiram: " + pessoasSubiramOnibus);
+		System.out.println("Pessoas que desceram: " + pessoasDesceramOnibus);
+		System.out.println("Pessoas no onibus: " + pessoasOnibus);
+
 		System.out.println();
 
-		System.out.print("Acho que está no ônibus: ");
-		System.out.println(saidaPessoasQueSubiramNoOnibus);
-		System.out.print("Acho que saiu do ônibus: ");
-		System.out.println(saidaPessoasQueDesceramDoOnibus);
+		System.out.println("Acho que subiu no ônibus: " + saidaPessoasSubiramOnibus);
+		System.out.println("Acho que desceu do ônibus: " + saidaPessoasDesceramOnibus);
+		System.out.println("Acho que está no ônibus: " + saidaPessoasOnibus);
 		System.out.println();
 	}
 }
