@@ -51,5 +51,4 @@ public class Parada {
 	public void setTerminal(boolean terminal) {
 		this.terminal = terminal;
 	}
-
 }

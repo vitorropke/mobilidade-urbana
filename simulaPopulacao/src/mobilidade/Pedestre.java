@@ -7,7 +7,7 @@ public class Pedestre {
 	private String nome;
 	private Parada origem;
 	private Parada destino;
-	ArrayList<Float> sinal = new ArrayList<Float>();
+	ArrayList<Double> sinal = new ArrayList<Double>();
 	ArrayList<Calendar> horario = new ArrayList<Calendar>();
 
 	public Pedestre() {
@@ -56,5 +56,4 @@ public class Pedestre {
 	public void setDestino(Parada destino) {
 		this.destino = destino;
 	}
-
 }

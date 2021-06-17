@@ -51,5 +51,4 @@ public class Onibus {
 	public void setPedestres(ArrayList<Pedestre> pedestres) {
 		this.pedestres = pedestres;
 	}
-
 }

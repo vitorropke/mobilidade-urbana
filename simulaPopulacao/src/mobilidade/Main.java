@@ -56,6 +56,7 @@ public class Main {
 
 		ArrayList<Pedestre> pessoasParada = new ArrayList<Pedestre>();
 		ArrayList<Pedestre> pessoasOnibus = new ArrayList<Pedestre>();
+		ArrayList<Pedestre> pessoasOnibusSimulado = new ArrayList<Pedestre>();
 		ArrayList<Pedestre> pessoasDesceramOnibus = new ArrayList<Pedestre>();
 		ArrayList<Pedestre> pessoasSubiramOnibus = new ArrayList<Pedestre>();
 
@@ -66,7 +67,7 @@ public class Main {
 
 		// Faz as viagens dos ônibus
 		for (int x = 0; x < numeroOnibus; x++) {
-			// enquanto o ônibus não estiver no terminal
+			// Enquanto o ônibus não estiver no terminal
 			indice = 0;
 			while (!onibus[x].getParadaAtual().isTerminal()) {
 				pessoasOnibus = onibus[x].pedestres;
@@ -96,6 +97,9 @@ public class Main {
 					}
 				}
 
+				paradas[indice].pedestres.addAll(pessoasDesceramOnibus);
+				paradas[indice].pedestres.removeAll(pessoasSubiramOnibus);
+
 				/*
 				 * for (int i = 0; i < numeroPessoasSubiramOnibus; i++) { if
 				 * (onibus[x].pedestres.get(i).destino == paradas[indice]) {
@@ -112,11 +116,14 @@ public class Main {
 				System.out.println();
 
 				// Simula deslocamento
-				Main.simularDeslocamento(paradas[indice], paradas[indice + 1], onibus[x].getVelocidade(),
-						intervaloDeslocamento, pessoasSubiramOnibus, pessoasDesceramOnibus, pessoasOnibus);
+				pessoasOnibusSimulado = Main.simularDeslocamento(paradas[indice], paradas[indice + 1],
+						onibus[x].getVelocidade(), intervaloDeslocamento, pessoasSubiramOnibus, pessoasDesceramOnibus,
+						pessoasOnibus, pessoasOnibusSimulado);
+
+				indice += 1;
 
 				// Avança a parada do ônibus
-				onibus[x].setParadaAtual(paradas[indice += 1]);
+				onibus[x].setParadaAtual(paradas[indice]);
 
 				// Esvazia vetores de descida e subida
 				pessoasDesceramOnibus.clear();
@@ -125,6 +132,7 @@ public class Main {
 
 			System.out.println("Terminal");
 			System.out.println("Quem desceu: " + onibus[x].pedestres);
+			paradas[indice].pedestres.addAll(onibus[x].pedestres);
 			onibus[x].pedestres.clear();
 		}
 	}
@@ -136,91 +144,41 @@ public class Main {
 
 	public static void escanearBluetooth(Pedestre pedestre, boolean saiu, double distanciaUltimaParada) {
 		Calendar momentoAtual = Calendar.getInstance();
-		Random random = new Random();
-		int ciclosDistancias = 0;
-		int numeroSinais = 100;
-		int sinalSorteado = random.nextInt(numeroSinais);
-		float[] sinais = new float[numeroSinais];
+		double potenciaSinal;
 
-		// Reduz a distância com ciclos de 100 metros (distância máxima de detecção de
-		// sinal de bluetooth)
-		for (double i = distanciaUltimaParada - 100; i > 0; i -= 100) {
-			ciclosDistancias += 1;
-		}
-
+		// 20log10(d) + 20log10(f) + 92,45
+		// d in km and f in GHz
+		// log b(n) = log e(n) / log e(b)
 		if (saiu) {
-			if (ciclosDistancias == 0) {
-				// Inicializa sinais 90
-				for (int i = 0; i < numeroSinais - 20; i++) {
-					sinais[i] = 90;
-				}
-				// Inicializa sinais 45
-				for (int i = numeroSinais - 20; i < numeroSinais - 5; i++) {
-					sinais[i] = 45;
-				}
-				// Inicializa sinais 0
-				for (int i = numeroSinais - 5; i < numeroSinais - 3; i++) {
-					sinais[i] = 0;
-				}
-				// Inicializa sinais 15
-				for (int i = numeroSinais - 3; i < numeroSinais; i++) {
-					sinais[i] = 15;
-				}
-			} else if (ciclosDistancias == 1) {
-				// Inicializa sinais 0
-				for (int i = 0; i < numeroSinais - 5; i++) {
-					sinais[i] = 0;
-				}
-				// Inicializa sinais 15
-				for (int i = numeroSinais - 5; i < numeroSinais; i++) {
-					sinais[i] = 15;
-				}
-			} else {
-				// Inicializa sinais 0
-				for (int i = 0; i < numeroSinais; i++) {
-					sinais[i] = 0;
-				}
-			}
+			potenciaSinal = 20 * (Math.log(distanciaUltimaParada) / Math.log(10)) + 20 * (Math.log(2.4) / Math.log(10))
+					+ 92.45;
 		} else {
-			// Inicializa sinais 90
-			for (int i = 0; i < numeroSinais - 20; i++) {
-				sinais[i] = 90;
-			}
-			// Inicializa sinais 45
-			for (int i = numeroSinais - 20; i < numeroSinais - 5; i++) {
-				sinais[i] = 45;
-			}
-			// Inicializa sinais 0
-			for (int i = numeroSinais - 5; i < numeroSinais - 3; i++) {
-				sinais[i] = 0;
-			}
-			// Inicializa sinais 15
-			for (int i = numeroSinais - 3; i < numeroSinais; i++) {
-				sinais[i] = 15;
-			}
+			// Valor padrão da distância do receptor até algum pedestre
+			double distanciaPadrao = 0.005;
+			potenciaSinal = 20 * (Math.log(distanciaPadrao) / Math.log(10)) + 20 * (Math.log(2.4) / Math.log(10))
+					+ 92.45;
 		}
 
 		pedestre.horario.add(momentoAtual);
-		pedestre.sinal.add(sinais[sinalSorteado]);
+		pedestre.sinal.add(potenciaSinal);
 	}
 
-	public static float[] mediaSinal(ArrayList<Pedestre> entradaPessoas) {
+	public static double[] mediaSinal(ArrayList<Pedestre> entradaPessoas) {
 		int numeroPessoas = entradaPessoas.size();
-		int numeroSinais = 0;
-		float[] mediaSinal = new float[numeroPessoas];
+		int numeroSinais;
+		double[] mediaSinal = new double[numeroPessoas];
 
 		for (int i = 0; i < numeroPessoas; i++) {
 			numeroSinais = entradaPessoas.get(i).sinal.size();
 
-			if (numeroSinais >= 5) {
-				numeroSinais -= 5;
-				// Percorre os últimos 5 valores de sinais
-				for (int j = numeroSinais; j < numeroSinais + 5; j++) {
+			// Média móvel dos últimos 10 sinais
+			// Percorre os últimos 10 sinais de bluetooth
+			if (numeroSinais >= 10) {
+				for (int j = numeroSinais - 10; j < numeroSinais; j++) {
 					mediaSinal[i] += entradaPessoas.get(i).sinal.get(j);
-
 				}
 			} else {
-				// Percorre os últimos n valores de sinais
+				// Percorre os últimos n < 10 valores de sinais
 				for (int j = 0; j < numeroSinais; j++) {
 					mediaSinal[i] += entradaPessoas.get(i).sinal.get(j);
 				}
@@ -233,12 +191,12 @@ public class Main {
 	}
 
 	public static ArrayList<Pedestre> averiguaSeSaiu(ArrayList<Pedestre> entradaPessoas) {
-		float[] mediaSinais = mediaSinal(entradaPessoas);
+		double[] mediaSinais = mediaSinal(entradaPessoas);
 		int numeroMediaSinais = mediaSinais.length;
 		ArrayList<Pedestre> saidaPessoas = new ArrayList<Pedestre>();
 
 		for (int i = 0; i < numeroMediaSinais; i++) {
-			if (mediaSinais[i] <= 10) {
+			if (mediaSinais[i] < 15) {
 				saidaPessoas.add(entradaPessoas.get(i));
 			}
 		}
@@ -247,12 +205,12 @@ public class Main {
 	}
 
 	public static ArrayList<Pedestre> averiguaSeEntrou(ArrayList<Pedestre> entradaPessoas) {
-		float[] mediaSinais = mediaSinal(entradaPessoas);
+		double[] mediaSinais = mediaSinal(entradaPessoas);
 		int numeroMediaSinais = mediaSinais.length;
 		ArrayList<Pedestre> saidaPessoas = new ArrayList<Pedestre>();
 
 		for (int i = 0; i < numeroMediaSinais; i++) {
-			if (mediaSinais[i] > 10) {
+			if (mediaSinais[i] >= 15) {
 				saidaPessoas.add(entradaPessoas.get(i));
 			}
 		}
@@ -260,10 +218,10 @@ public class Main {
 		return saidaPessoas;
 	}
 
-	public static void simularDeslocamento(Parada parada1, Parada parada2, float velocidade, int tempoSimulacao,
-			ArrayList<Pedestre> pessoasSubiramOnibus, ArrayList<Pedestre> pessoasDesceramOnibus,
-			ArrayList<Pedestre> pessoasOnibus) {
-		// em Km (quilômetros)
+	public static ArrayList<Pedestre> simularDeslocamento(Parada parada1, Parada parada2, float velocidade,
+			int tempoSimulacao, ArrayList<Pedestre> pessoasSubiramOnibus, ArrayList<Pedestre> pessoasDesceramOnibus,
+			ArrayList<Pedestre> pessoasOnibus, ArrayList<Pedestre> pessoasOnibusSimulado) {
+		// Calcula a distância em Km (quilômetros) entre as paradas
 		double distanciaEntreParadas = Haversine.distance(parada1.getCoordenadaY(), parada1.getCoordenadaX(),
 				parada2.getCoordenadaY(), parada2.getCoordenadaX());
 		DecimalFormat formatter = new DecimalFormat("#0");
@@ -272,21 +230,42 @@ public class Main {
 		System.out.print(formatter.format(distanciaEntreParadas * 1000));
 		System.out.println(" metro(s)");
 
-		// Cria o vetor que junta as pessoas que subiram e desceram do ônibus
+		// Remove as pessoas que sobraram na última parada porque sairam do alcançe do
+		// bluetooth
+		int numeroPessoasOnibusSimulado = pessoasOnibusSimulado.size();
+		int x;
+		for (x = 0; x < numeroPessoasOnibusSimulado; x++) {
+			if (pessoasOnibus.contains(pessoasOnibusSimulado.get(x))
+					|| pessoasSubiramOnibus.contains(pessoasOnibusSimulado.get(x))
+					|| pessoasDesceramOnibus.contains(pessoasOnibusSimulado.get(x))) {
+				pessoasOnibusSimulado.remove(x);
+				numeroPessoasOnibusSimulado--;
+			}
+		}
+
+		// Cria o vetor que junta as pessoas que subiram e desceram do ônibus e as
+		// pessoas que estavam no alcance do bluetooth e não estão mais
 		int numeroPessoasSubiramOnibus = pessoasSubiramOnibus.size();
 		int numeroPessoasDesceramOnibus = pessoasDesceramOnibus.size();
-		int numeroPessoasSubiramDesceram = numeroPessoasSubiramOnibus + numeroPessoasDesceramOnibus;
+		numeroPessoasOnibusSimulado = pessoasOnibusSimulado.size();
+		int numeroPessoasSubiramDesceram = numeroPessoasSubiramOnibus + numeroPessoasDesceramOnibus
+				+ numeroPessoasOnibusSimulado;
 		boolean[] saiu = new boolean[numeroPessoasSubiramDesceram];
 		ArrayList<Pedestre> pessoasSubiramDesceram = new ArrayList<Pedestre>();
 
 		pessoasSubiramDesceram.addAll(pessoasSubiramOnibus);
 		pessoasSubiramDesceram.addAll(pessoasDesceramOnibus);
+		pessoasSubiramDesceram.addAll(pessoasOnibusSimulado);
 
-		for (int x = 0; x < numeroPessoasSubiramOnibus; x++) {
+		x = 0;
+		for (; x < numeroPessoasSubiramOnibus; x++) {
 			saiu[x] = false;
 		}
-		for (int x = 0; x < numeroPessoasDesceramOnibus; x++) {
-			saiu[x + numeroPessoasSubiramOnibus] = true;
+		for (; x < numeroPessoasDesceramOnibus; x++) {
+			saiu[x] = true;
+		}
+		for (; x < numeroPessoasOnibusSimulado; x++) {
+			saiu[x] = true;
 		}
 
 		// Deslocamento
@@ -299,8 +278,8 @@ public class Main {
 			System.out.println(" segundo(s)\n");
 
 			// Calcula sinal do bluetooth
-			for (int x = 0; x < numeroPessoasSubiramDesceram; x++) {
-				escanearBluetooth(pessoasSubiramDesceram.get(x), saiu[x], (distanciaEntreParadas - i) * 1000);
+			for (x = 0; x < numeroPessoasSubiramDesceram; x++) {
+				escanearBluetooth(pessoasSubiramDesceram.get(x), saiu[x], distanciaEntreParadas - i);
 			}
 
 			try {
@@ -332,7 +311,7 @@ public class Main {
 		System.out.println("Embarcando e desembarcando!");
 
 		try {
-			Thread.sleep(1500);
+			Thread.sleep(100);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -348,5 +327,7 @@ public class Main {
 		System.out.println("Acho que desceu do ônibus: " + saidaPessoasDesceramOnibus);
 		System.out.println("Acho que está no ônibus: " + saidaPessoasOnibus);
 		System.out.println();
+
+		return saidaPessoasOnibus;
 	}
 }
