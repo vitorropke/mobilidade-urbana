@@ -39,7 +39,7 @@
 		<!-- Default=0. First Iteration of a simulation. -->
 		<param name="firstIteration" value="0" />
 		<!-- Default=1000. Last Iteration of a simulation. -->
-		<param name="lastIteration" value="10" />
+		<param name="lastIteration" value="5" />
 		<!-- Defines which mobility simulation will be used. Currently supported: qsim JDEQSim hermes 
 		Depending on the chosen mobsim, you'll have to add additional config modules to configure the corresponding mobsim.
 		For 'qsim', add a module 'qsim' to the config. -->
@@ -91,7 +91,7 @@
 		<param name="idPrefix" value="f_auto_" />
 		<!-- The Coordinates Reference System in which the coordinates are expressed in the input file. At import, the coordinates will be converted to the coordinate system defined in "global", and willbe converted back at export. If not specified, no conversion happens. -->
 		<param name="inputCRS" value="null" />
-		<param name="inputFacilitiesFile" value="null" />
+		<param name="inputFacilitiesFile" value="facilities.xml" />
 		<param name="inputFacilityAttributesFile" value="null" />
 		<param name="insistingOnUsingDeprecatedFacilitiesAttributeFile" value="false" />
 	</module>
@@ -436,7 +436,7 @@
 		<param name="ptCountsInterval" value="10" />
 	</module>
 	<module name="qsim" >
-		<param name="endTime" value="undefined" />
+		<param name="endTime" value="24:00:00" />
 		<param name="flowCapacityFactor" value="1.0" />
 		<!-- decides if waiting vehicles enter the network after or before the already driving vehicles were moved. Default: false -->
 		<param name="insertingWaitingVehiclesBeforeDrivingVehicles" value="true" />
@@ -465,7 +465,7 @@
 		<!-- snapshotStyle. One of: equiDist queue withHoles withHolesAndShowHoles kinematicWaves  -->
 		<param name="snapshotStyle" value="equiDist" />
 		<param name="snapshotperiod" value="00:00:00" />
-		<param name="startTime" value="undefined" />
+		<param name="startTime" value="00:00:00" />
 		<param name="storageCapacityFactor" value="1.0" />
 		<!-- time in seconds.  Time after which the frontmost vehicle on a link is called `stuck' if it does not move. -->
 		<param name="stuckTime" value="10.0" />
@@ -507,7 +507,7 @@
 		</parameterset>
 		<parameterset type="strategysettings">
 			<param name="strategyName" value="KeepLastSelected"/>
-			<param name="weight" value="0.05"/>
+			<param name="weight" value="0.02"/>
 		</parameterset>
 		<parameterset type="strategysettings">
 			<param name="strategyName" value="SelectExpBeta"/>
@@ -519,7 +519,7 @@
 		</parameterset>
 		<parameterset type="strategysettings">
 			<param name="strategyName" value="SelectRandom"/>
-			<param name="weight" value="0.01"/>
+			<param name="weight" value="0.04"/>
 		</parameterset>
 		<!-- strategy innovators -->
 		<parameterset type="strategysettings">
@@ -568,16 +568,16 @@
 		<!-- Optional input file containing additional attributes for transit stop facilities, stored as ObjectAttributes. -->
 		<param name="transitStopsAttributesFile" value="null" />
 		<!-- Set this parameter to true if transit should be simulated, false if not. -->
-		<param name="useTransit" value="false" />
+		<param name="useTransit" value="true" />
 		<param name="usingTransitInMobsim" value="true" />
 		<!-- Input file containing the vehicles used by the departures in the transit schedule. -->
 		<param name="vehiclesFile" value="../transit_Vehicles.xml" />
 	</module>
 	<module name="transitRouter" >
 		<!-- additional time the router allocates when a line switch happens. Can be interpreted as a 'safety' time that agents need to safely transfer from one line to another -->
-		<param name="additionalTransferTime" value="0.0" />
+		<param name="additionalTransferTime" value="50.0" />
 		<!-- Factor with which direct walk generalized cost is multiplied before it is compared to the pt generalized cost.  Set to a very high value to reduce direct walk results. -->
-		<param name="directWalkFactor" value="1.0" />
+		<param name="directWalkFactor" value="50.0" />
 		<!-- step size to increase searchRadius if no stops are found -->
 		<param name="extensionRadius" value="200.0" />
 		<!-- maximum beeline distance between stops that agents could transfer to by walking -->
