@@ -183,7 +183,7 @@ public class Main {
 					mediaSinal[i] += entradaPessoas.get(i).sinal.get(j);
 				}
 			} else {
-				// Percorre todos os valores de sinais
+				// Percorre todos os sinais
 				for (int j = 0; j < numeroSinais; j++) {
 					mediaSinal[i] += entradaPessoas.get(i).sinal.get(j);
 				}
