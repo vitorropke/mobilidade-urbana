@@ -53,7 +53,7 @@ public class Main {
 			numeroParadaAleatoria = paradasAleatorias.nextInt(numeroParadas - 1);
 
 			pessoas[i].setOrigem(paradas[numeroParadaAleatoria]);
-			paradas[numeroParadaAleatoria].pedestres.add(pessoas[i]);
+			paradas[numeroParadaAleatoria].addPedestre(pessoas[i]);
 		}
 
 		ArrayList<Pedestre> pessoasParada = new ArrayList<Pedestre>();
@@ -72,8 +72,8 @@ public class Main {
 			// Enquanto o ônibus não estiver no terminal
 			indice = 0;
 			while (!onibus[x].getParadaAtual().isTerminal()) {
-				pessoasOnibus = onibus[x].pedestres;
-				pessoasParada = paradas[indice].pedestres;
+				pessoasOnibus = onibus[x].getPedestres();
+				pessoasParada = paradas[indice].getPedestres();
 
 				numeroPessoasOnibus = pessoasOnibus.size();
 				numeroPessoasParada = pessoasParada.size();
@@ -99,8 +99,8 @@ public class Main {
 					}
 				}
 
-				paradas[indice].pedestres.addAll(pessoasDesceramOnibus);
-				paradas[indice].pedestres.removeAll(pessoasSubiramOnibus);
+				paradas[indice].addAllPedestres(pessoasDesceramOnibus);
+				paradas[indice].removeAllPedestres(pessoasSubiramOnibus);
 
 				/*
 				 * for (int i = 0; i < numeroPessoasSubiramOnibus; i++) { if
@@ -109,7 +109,7 @@ public class Main {
 				 */
 
 				// Atualiza os pedestres que estão no ônibus
-				onibus[x].pedestres = pessoasOnibus;
+				onibus[x].setPedestres(pessoasOnibus);
 
 				System.out.println("=====================================================================");
 				System.out.println("Parada " + indice);
@@ -134,9 +134,9 @@ public class Main {
 			}
 
 			System.out.println("Terminal");
-			System.out.println("Quem desceu: " + onibus[x].pedestres);
-			paradas[indice].pedestres.addAll(onibus[x].pedestres);
-			onibus[x].pedestres.clear();
+			System.out.println("Quem desceu: " + onibus[x].getPedestres());
+			paradas[indice].addAllPedestres(onibus[x].getPedestres());
+			onibus[x].clearPedestres();
 		}
 	}
 
@@ -163,8 +163,8 @@ public class Main {
 			potenciaSinal = 20 * (Math.log(distanciaPadrao) / Math.log(10)) + parteComumDaFormula;
 		}
 
-		pedestre.horario.add(momentoAtual);
-		pedestre.sinal.add(potenciaSinal);
+		pedestre.addHorario(momentoAtual);
+		pedestre.addSinal(potenciaSinal);
 	}
 
 	public static double[] mediaSinal(ArrayList<Pedestre> entradaPessoas) {
@@ -174,18 +174,18 @@ public class Main {
 		double[] mediaSinal = new double[numeroPessoas];
 
 		for (int i = 0; i < numeroPessoas; i++) {
-			numeroSinais = entradaPessoas.get(i).sinal.size();
+			numeroSinais = entradaPessoas.get(i).getSinal().size();
 
 			// Média móvel dos últimos n sinais
 			if (numeroSinais >= ultimosSinais) {
 				// Percorre os últimos n sinais de bluetooth
 				for (int j = numeroSinais - ultimosSinais; j < numeroSinais; j++) {
-					mediaSinal[i] += entradaPessoas.get(i).sinal.get(j);
+					mediaSinal[i] += entradaPessoas.get(i).getSinal().get(j);
 				}
 			} else {
 				// Percorre todos os sinais
 				for (int j = 0; j < numeroSinais; j++) {
-					mediaSinal[i] += entradaPessoas.get(i).sinal.get(j);
+					mediaSinal[i] += entradaPessoas.get(i).getSinal().get(j);
 				}
 			}
 

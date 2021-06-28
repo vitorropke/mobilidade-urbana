@@ -7,8 +7,8 @@ public class Pedestre {
 	private String nome;
 	private Parada origem;
 	private Parada destino;
-	ArrayList<Double> sinal = new ArrayList<Double>();
-	ArrayList<Calendar> horario = new ArrayList<Calendar>();
+	private ArrayList<Double> sinal = new ArrayList<Double>();
+	private ArrayList<Calendar> horario = new ArrayList<Calendar>();
 
 	public Pedestre() {
 	}
@@ -55,5 +55,29 @@ public class Pedestre {
 
 	public void setDestino(Parada destino) {
 		this.destino = destino;
+	}
+
+	public ArrayList<Double> getSinal() {
+		return sinal;
+	}
+
+	public void setSinal(ArrayList<Double> sinal) {
+		this.sinal = sinal;
+	}
+
+	public void addSinal(final Double sinal) {
+		this.sinal.add(sinal);
+	}
+
+	public ArrayList<Calendar> getHorario() {
+		return horario;
+	}
+
+	public void setHorario(ArrayList<Calendar> horario) {
+		this.horario = horario;
+	}
+
+	public void addHorario(final Calendar horario) {
+		this.horario.add(horario);
 	}
 }

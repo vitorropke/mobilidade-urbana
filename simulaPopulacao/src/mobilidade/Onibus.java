@@ -6,7 +6,7 @@ public class Onibus {
 	private int capacidadeMaximaPassageiros;
 	private float velocidade;
 	private Parada paradaAtual;
-	ArrayList<Pedestre> pedestres = new ArrayList<Pedestre>();
+	private ArrayList<Pedestre> pedestres = new ArrayList<Pedestre>();
 
 	public Onibus() {
 	}
@@ -50,5 +50,13 @@ public class Onibus {
 
 	public void setPedestres(ArrayList<Pedestre> pedestres) {
 		this.pedestres = pedestres;
+	}
+
+	public void add(final Pedestre pedestre) {
+		this.pedestres.add(pedestre);
+	}
+
+	public void clearPedestres() {
+		this.pedestres.clear();
 	}
 }

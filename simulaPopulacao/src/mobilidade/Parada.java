@@ -7,7 +7,7 @@ public class Parada {
 	private long id;
 	private double coordenadaX, coordenadaY;
 	private boolean terminal;
-	ArrayList<Pedestre> pedestres = new ArrayList<Pedestre>();
+	private ArrayList<Pedestre> pedestres = new ArrayList<Pedestre>();
 
 	public Parada() {
 		setId(contadorId++);
@@ -50,5 +50,25 @@ public class Parada {
 
 	public void setTerminal(boolean terminal) {
 		this.terminal = terminal;
+	}
+
+	public ArrayList<Pedestre> getPedestres() {
+		return pedestres;
+	}
+
+	public void setPedestres(ArrayList<Pedestre> pedestres) {
+		this.pedestres = pedestres;
+	}
+
+	public void addPedestre(final Pedestre pedestre) {
+		this.pedestres.add(pedestre);
+	}
+
+	public void addAllPedestres(ArrayList<Pedestre> pedestres) {
+		this.pedestres.addAll(pedestres);
+	}
+
+	public void removeAllPedestres(ArrayList<Pedestre> pedestres) {
+		this.pedestres.removeAll(pedestres);
 	}
 }
