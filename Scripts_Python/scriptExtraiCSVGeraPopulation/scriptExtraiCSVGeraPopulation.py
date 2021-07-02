@@ -128,6 +128,296 @@ for sheet in doc.sheets:
 		strSaida += strPlano[0:len(strPlano) - len(strIndicePessoa)]
 		indicePessoa = int(strIndicePessoa)
 
+		# Veículos em B
+		origem = "{} link=\"781456337_0\"".format(ruaDelfimMoreiraOeste)
+		rota = "4858126827 4852689014"
+		destino = "{} link=\"493347377_3_r\"".format(ruaJuvenalLamartineSul)
+
+		# Carros
+		strPlano = processaVeiculos("F", linha, sheet, segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "car", origem, rota, destino)
+		strIndicePessoa = strPlano.splitlines()[-1]
+
+		# Salva a string do plano menos a última linha. A última linha é o índice atual de pessoas
+		strSaida += strPlano[0:len(strPlano) - len(strIndicePessoa)]
+		indicePessoa = int(strIndicePessoa)
+
+		# Motos
+		# strPlano = processaVeiculos(intNumeroVeiculos, segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "motorcycle", origem, rota, destino)
+		strPlano = processaVeiculos("G", linha, sheet,  segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "car", origem, rota, destino)
+		strIndicePessoa = strPlano.splitlines()[-1]
+
+		strSaida += strPlano[0:len(strPlano) - len(strIndicePessoa)]
+		indicePessoa = int(strIndicePessoa)
+
+		# Caminhões
+		# strPlano = processaVeiculos(intNumeroVeiculos, segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "truck", origem, rota, destino)
+		strPlano = processaVeiculos("H", linha, sheet,  segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "car", origem, rota, destino)
+		strIndicePessoa = strPlano.splitlines()[-1]
+
+		strSaida += strPlano[0:len(strPlano) - len(strIndicePessoa)]
+		indicePessoa = int(strIndicePessoa)
+
+		# Veículos em C
+		origem = "{} link=\"781456337_0\"".format(ruaDelfimMoreiraOeste)
+		rota = "4858126827 4852689014 4858126831"
+		destino = "{} link=\"493347377_5\"".format(ruaJuvenalLamartineNorte)
+
+		# Carros
+		strPlano = processaVeiculos("J", linha, sheet, segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "car", origem, rota, destino)
+		strIndicePessoa = strPlano.splitlines()[-1]
+
+		# Salva a string do plano menos a última linha. A última linha é o índice atual de pessoas
+		strSaida += strPlano[0:len(strPlano) - len(strIndicePessoa)]
+		indicePessoa = int(strIndicePessoa)
+
+		# Motos
+		# strPlano = processaVeiculos(intNumeroVeiculos, segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "motorcycle", origem, rota, destino)
+		strPlano = processaVeiculos("K", linha, sheet,  segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "car", origem, rota, destino)
+		strIndicePessoa = strPlano.splitlines()[-1]
+
+		strSaida += strPlano[0:len(strPlano) - len(strIndicePessoa)]
+		indicePessoa = int(strIndicePessoa)
+
+		# Caminhões
+		# strPlano = processaVeiculos(intNumeroVeiculos, segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "truck", origem, rota, destino)
+		strPlano = processaVeiculos("L", linha, sheet,  segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "car", origem, rota, destino)
+		strIndicePessoa = strPlano.splitlines()[-1]
+
+		strSaida += strPlano[0:len(strPlano) - len(strIndicePessoa)]
+		indicePessoa = int(strIndicePessoa)
+
+		# Veículos em D
+		origem = "{} link=\"781456326_0\"".format(ruaDelfimMoreiraLeste)
+		rota = "4856339514 4858126831"
+		destino = "{} link=\"781456326_2\"".format(ruaDelfimMoreiraOeste)
+
+		# Carros
+		strPlano = processaVeiculos("N", linha, sheet, segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "car", origem, rota, destino)
+		strIndicePessoa = strPlano.splitlines()[-1]
+
+		# Salva a string do plano menos a última linha. A última linha é o índice atual de pessoas
+		strSaida += strPlano[0:len(strPlano) - len(strIndicePessoa)]
+		indicePessoa = int(strIndicePessoa)
+
+		# Motos
+		# strPlano = processaVeiculos(intNumeroVeiculos, segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "motorcycle", origem, rota, destino)
+		strPlano = processaVeiculos("O", linha, sheet,  segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "car", origem, rota, destino)
+		strIndicePessoa = strPlano.splitlines()[-1]
+
+		strSaida += strPlano[0:len(strPlano) - len(strIndicePessoa)]
+		indicePessoa = int(strIndicePessoa)
+
+		# Caminhões
+		# strPlano = processaVeiculos(intNumeroVeiculos, segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "truck", origem, rota, destino)
+		strPlano = processaVeiculos("P", linha, sheet,  segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "car", origem, rota, destino)
+		strIndicePessoa = strPlano.splitlines()[-1]
+
+		strSaida += strPlano[0:len(strPlano) - len(strIndicePessoa)]
+		indicePessoa = int(strIndicePessoa)
+
+		# Veículos em E
+		origem = "{} link=\"781456326_0\"".format(ruaDelfimMoreiraLeste)
+		rota = "4856339514 4858126831"
+		destino = "{} link=\"493347377_5\"".format(ruaJuvenalLamartineNorte)
+
+		# Carros
+		strPlano = processaVeiculos("R", linha, sheet, segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "car", origem, rota, destino)
+		strIndicePessoa = strPlano.splitlines()[-1]
+
+		# Salva a string do plano menos a última linha. A última linha é o índice atual de pessoas
+		strSaida += strPlano[0:len(strPlano) - len(strIndicePessoa)]
+		indicePessoa = int(strIndicePessoa)
+
+		# Motos
+		# strPlano = processaVeiculos(intNumeroVeiculos, segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "motorcycle", origem, rota, destino)
+		strPlano = processaVeiculos("S", linha, sheet,  segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "car", origem, rota, destino)
+		strIndicePessoa = strPlano.splitlines()[-1]
+
+		strSaida += strPlano[0:len(strPlano) - len(strIndicePessoa)]
+		indicePessoa = int(strIndicePessoa)
+
+		# Caminhões
+		# strPlano = processaVeiculos(intNumeroVeiculos, segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "truck", origem, rota, destino)
+		strPlano = processaVeiculos("T", linha, sheet,  segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "car", origem, rota, destino)
+		strIndicePessoa = strPlano.splitlines()[-1]
+
+		strSaida += strPlano[0:len(strPlano) - len(strIndicePessoa)]
+		indicePessoa = int(strIndicePessoa)
+
+		# Veículos em F
+		origem = "{} link=\"781456326_0\"".format(ruaDelfimMoreiraLeste)
+		rota = "4856339514 4858126831 4852689014"
+		destino = "{} link=\"493347377_3_r\"".format(ruaJuvenalLamartineSul)
+
+		# Carros
+		strPlano = processaVeiculos("V", linha, sheet, segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "car", origem, rota, destino)
+		strIndicePessoa = strPlano.splitlines()[-1]
+
+		# Salva a string do plano menos a última linha. A última linha é o índice atual de pessoas
+		strSaida += strPlano[0:len(strPlano) - len(strIndicePessoa)]
+		indicePessoa = int(strIndicePessoa)
+
+		# Motos
+		# strPlano = processaVeiculos(intNumeroVeiculos, segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "motorcycle", origem, rota, destino)
+		strPlano = processaVeiculos("W", linha, sheet,  segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "car", origem, rota, destino)
+		strIndicePessoa = strPlano.splitlines()[-1]
+
+		strSaida += strPlano[0:len(strPlano) - len(strIndicePessoa)]
+		indicePessoa = int(strIndicePessoa)
+
+		# Caminhões
+		# strPlano = processaVeiculos(intNumeroVeiculos, segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "truck", origem, rota, destino)
+		strPlano = processaVeiculos("X", linha, sheet,  segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "car", origem, rota, destino)
+		strIndicePessoa = strPlano.splitlines()[-1]
+
+		strSaida += strPlano[0:len(strPlano) - len(strIndicePessoa)]
+		indicePessoa = int(strIndicePessoa)
+
+		# Veículos em G
+		origem = "{} link=\"493347377_2\"".format(ruaJuvenalLamartineSul)
+		rota = "4852690265 4852689014 4858126831"
+		destino = "{} link=\"493347377_5\"".format(ruaJuvenalLamartineNorte)
+
+		# Carros
+		strPlano = processaVeiculos("Z", linha, sheet, segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "car", origem, rota, destino)
+		strIndicePessoa = strPlano.splitlines()[-1]
+
+		# Salva a string do plano menos a última linha. A última linha é o índice atual de pessoas
+		strSaida += strPlano[0:len(strPlano) - len(strIndicePessoa)]
+		indicePessoa = int(strIndicePessoa)
+
+		# Motos
+		# strPlano = processaVeiculos(intNumeroVeiculos, segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "motorcycle", origem, rota, destino)
+		strPlano = processaVeiculos("AA", linha, sheet,  segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "car", origem, rota, destino)
+		strIndicePessoa = strPlano.splitlines()[-1]
+
+		strSaida += strPlano[0:len(strPlano) - len(strIndicePessoa)]
+		indicePessoa = int(strIndicePessoa)
+
+		# Caminhões
+		# strPlano = processaVeiculos(intNumeroVeiculos, segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "truck", origem, rota, destino)
+		strPlano = processaVeiculos("AB", linha, sheet,  segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "car", origem, rota, destino)
+		strIndicePessoa = strPlano.splitlines()[-1]
+
+		strSaida += strPlano[0:len(strPlano) - len(strIndicePessoa)]
+		indicePessoa = int(strIndicePessoa)
+
+		# Veículos em H
+		origem = "{} link=\"493347377_2\"".format(ruaJuvenalLamartineSul)
+		rota = "4852690265 4852689014"
+		destino = "{} link=\"781456337_2\"".format(ruaDelfimMoreiraLeste)
+
+		# Carros
+		strPlano = processaVeiculos("AD", linha, sheet, segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "car", origem, rota, destino)
+		strIndicePessoa = strPlano.splitlines()[-1]
+
+		# Salva a string do plano menos a última linha. A última linha é o índice atual de pessoas
+		strSaida += strPlano[0:len(strPlano) - len(strIndicePessoa)]
+		indicePessoa = int(strIndicePessoa)
+
+		# Motos
+		# strPlano = processaVeiculos(intNumeroVeiculos, segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "motorcycle", origem, rota, destino)
+		strPlano = processaVeiculos("AE", linha, sheet,  segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "car", origem, rota, destino)
+		strIndicePessoa = strPlano.splitlines()[-1]
+
+		strSaida += strPlano[0:len(strPlano) - len(strIndicePessoa)]
+		indicePessoa = int(strIndicePessoa)
+
+		# Caminhões
+		# strPlano = processaVeiculos(intNumeroVeiculos, segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "truck", origem, rota, destino)
+		strPlano = processaVeiculos("AF", linha, sheet,  segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "car", origem, rota, destino)
+		strIndicePessoa = strPlano.splitlines()[-1]
+
+		strSaida += strPlano[0:len(strPlano) - len(strIndicePessoa)]
+		indicePessoa = int(strIndicePessoa)
+
+		# Veículos em I
+		origem = "{} link=\"493347377_2\"".format(ruaJuvenalLamartineSul)
+		rota = "4852690265 4852689014 4858126831"
+		destino = "{} link=\"781456326_2\"".format(ruaDelfimMoreiraOeste)
+
+		# Carros
+		strPlano = processaVeiculos("AH", linha, sheet, segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "car", origem, rota, destino)
+		strIndicePessoa = strPlano.splitlines()[-1]
+
+		# Salva a string do plano menos a última linha. A última linha é o índice atual de pessoas
+		strSaida += strPlano[0:len(strPlano) - len(strIndicePessoa)]
+		indicePessoa = int(strIndicePessoa)
+
+		# Motos
+		# strPlano = processaVeiculos(intNumeroVeiculos, segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "motorcycle", origem, rota, destino)
+		strPlano = processaVeiculos("AI", linha, sheet,  segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "car", origem, rota, destino)
+		strIndicePessoa = strPlano.splitlines()[-1]
+
+		strSaida += strPlano[0:len(strPlano) - len(strIndicePessoa)]
+		indicePessoa = int(strIndicePessoa)
+
+		# Caminhões
+		# strPlano = processaVeiculos(intNumeroVeiculos, segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "truck", origem, rota, destino)
+		strPlano = processaVeiculos("AJ", linha, sheet,  segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "car", origem, rota, destino)
+		strIndicePessoa = strPlano.splitlines()[-1]
+
+		strSaida += strPlano[0:len(strPlano) - len(strIndicePessoa)]
+		indicePessoa = int(strIndicePessoa)
+
+		# Veículos em J
+		origem = "{} link=\"493347377_6_r\"".format(ruaJuvenalLamartineNorte)
+		rota = "4858126824 4858126831 4852689014"
+		destino = "{} link=\"493347377_3_r\"".format(ruaJuvenalLamartineSul)
+
+		# Carros
+		strPlano = processaVeiculos("AL", linha, sheet, segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "car", origem, rota, destino)
+		strIndicePessoa = strPlano.splitlines()[-1]
+
+		# Salva a string do plano menos a última linha. A última linha é o índice atual de pessoas
+		strSaida += strPlano[0:len(strPlano) - len(strIndicePessoa)]
+		indicePessoa = int(strIndicePessoa)
+
+		# Motos
+		# strPlano = processaVeiculos(intNumeroVeiculos, segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "motorcycle", origem, rota, destino)
+		strPlano = processaVeiculos("AM", linha, sheet,  segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "car", origem, rota, destino)
+		strIndicePessoa = strPlano.splitlines()[-1]
+
+		strSaida += strPlano[0:len(strPlano) - len(strIndicePessoa)]
+		indicePessoa = int(strIndicePessoa)
+
+		# Caminhões
+		# strPlano = processaVeiculos(intNumeroVeiculos, segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "truck", origem, rota, destino)
+		strPlano = processaVeiculos("AN", linha, sheet,  segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "car", origem, rota, destino)
+		strIndicePessoa = strPlano.splitlines()[-1]
+
+		strSaida += strPlano[0:len(strPlano) - len(strIndicePessoa)]
+		indicePessoa = int(strIndicePessoa)
+
+		# Veículos em K
+		origem = "{} link=\"493347377_6_r\"".format(ruaJuvenalLamartineNorte)
+		rota = "4858126824 4858126831"
+		destino = "{} link=\"781456326_2\"".format(ruaDelfimMoreiraOeste)
+
+		# Carros
+		strPlano = processaVeiculos("AP", linha, sheet, segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "car", origem, rota, destino)
+		strIndicePessoa = strPlano.splitlines()[-1]
+
+		# Salva a string do plano menos a última linha. A última linha é o índice atual de pessoas
+		strSaida += strPlano[0:len(strPlano) - len(strIndicePessoa)]
+		indicePessoa = int(strIndicePessoa)
+
+		# Motos
+		# strPlano = processaVeiculos(intNumeroVeiculos, segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "motorcycle", origem, rota, destino)
+		strPlano = processaVeiculos("AQ", linha, sheet,  segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "car", origem, rota, destino)
+		strIndicePessoa = strPlano.splitlines()[-1]
+
+		strSaida += strPlano[0:len(strPlano) - len(strIndicePessoa)]
+		indicePessoa = int(strIndicePessoa)
+
+		# Caminhões
+		# strPlano = processaVeiculos(intNumeroVeiculos, segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "truck", origem, rota, destino)
+		strPlano = processaVeiculos("AR", linha, sheet,  segundosHorarioInicial, segundosHorarioFinal, indicePessoa, "car", origem, rota, destino)
+		strIndicePessoa = strPlano.splitlines()[-1]
+
+		strSaida += strPlano[0:len(strPlano) - len(strIndicePessoa)]
+		indicePessoa = int(strIndicePessoa)
+
 #Criação do rodapé do arquivo population
 strSaida += "\n</plans>"
 
