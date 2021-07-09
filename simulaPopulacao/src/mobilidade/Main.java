@@ -9,8 +9,6 @@ public class Main {
 	static int seed = 1;
 
 	public static void main(String[] args) {
-		final int intervaloDeslocamento = 60;
-
 		// coordenadaX, coordenadaY, terminal
 		Parada[] paradas = new Parada[5];
 		paradas[0] = new Parada(-37.34368, -5.19395, false);
@@ -50,9 +48,11 @@ public class Main {
 
 		// Adiciona paradas no pedestre e os pedestres na parada de forma aleatória
 		for (int i = 0; i < numeroPedestresAleatorio; i++) {
-			numeroParadaAleatoria = paradasAleatorias.nextInt(numeroParadas - 1);
+			numeroParadaAleatoria = paradasAleatorias.nextInt(numeroParadas);
 
 			pessoas[i].setOrigem(paradas[numeroParadaAleatoria]);
+			pessoas[i].setParadaAtual(paradas[numeroParadaAleatoria]);
+
 			paradas[numeroParadaAleatoria].addPedestre(pessoas[i]);
 		}
 
@@ -83,6 +83,7 @@ public class Main {
 					// Se for cara, o pedestre sai do ônibus
 					if (Main.caraCoroa()) {
 						pessoasDesceramOnibus.add(pessoasOnibus.get(i));
+						pessoasOnibus.get(i).setParadaAtual(paradas[indice]);
 						pessoasOnibus.remove(i);
 						numeroPessoasOnibus--;
 					}
@@ -120,8 +121,8 @@ public class Main {
 
 				// Simula deslocamento
 				pessoasOnibusSimulado = Main.simularDeslocamento(paradas[indice], paradas[indice + 1],
-						onibus[x].getVelocidade(), intervaloDeslocamento, pessoasSubiramOnibus, pessoasDesceramOnibus,
-						pessoasOnibus, pessoasOnibusSimulado);
+						onibus[x].getVelocidade(), pessoasSubiramOnibus, pessoasDesceramOnibus, pessoasOnibus,
+						pessoasOnibusSimulado);
 
 				indice += 1;
 
@@ -136,6 +137,14 @@ public class Main {
 			System.out.println("Terminal");
 			System.out.println("Quem desceu: " + onibus[x].getPedestres());
 			paradas[indice].addAllPedestres(onibus[x].getPedestres());
+
+			numeroPessoasOnibus = onibus[x].getPedestres().size();
+
+			// Atualiza a parada atual de cada pessoa que estava no ônibus
+			for (int i = 0; i < numeroPessoasOnibus; i++) {
+				onibus[x].getPedestres().get(i).setParadaAtual(paradas[indice]);
+			}
+
 			onibus[x].clearPedestres();
 		}
 	}
@@ -223,12 +232,12 @@ public class Main {
 		return saidaPessoas;
 	}
 
-	public static ArrayList<Pedestre> simularDeslocamento(Parada parada1, Parada parada2, float velocidade,
-			int tempoSimulacao, ArrayList<Pedestre> pessoasSubiramOnibus, ArrayList<Pedestre> pessoasDesceramOnibus,
+	public static ArrayList<Pedestre> simularDeslocamento(Parada paradaAtual, Parada proximaParada, float velocidade,
+			ArrayList<Pedestre> pessoasSubiramOnibus, ArrayList<Pedestre> pessoasDesceramOnibus,
 			ArrayList<Pedestre> pessoasOnibus, ArrayList<Pedestre> pessoasOnibusSimulado) {
 		// Calcula a distância em Km (quilômetros) entre as paradas
-		double distanciaEntreParadas = Haversine.distance(parada1.getCoordenadaY(), parada1.getCoordenadaX(),
-				parada2.getCoordenadaY(), parada2.getCoordenadaX());
+		double distanciaEntreParadas = Haversine.distance(paradaAtual.getCoordenadaY(), paradaAtual.getCoordenadaX(),
+				proximaParada.getCoordenadaY(), proximaParada.getCoordenadaX());
 		DecimalFormat formatter = new DecimalFormat("#0");
 
 		System.out.print("Distancia: ");
@@ -273,8 +282,9 @@ public class Main {
 			saiu[x + numeroPessoasSubiramOnibus + numeroPessoasDesceramOnibus] = true;
 		}
 
+		double distanciaPedestreParada;
 		// Deslocamento
-		for (double i = distanciaEntreParadas; i > 0; i -= velocidade / (tempoSimulacao * 60)) {
+		for (double i = distanciaEntreParadas; i > 0; i -= velocidade / 3600) {
 			System.out.print("Faltam ");
 			System.out.print(formatter.format(i * 1000));
 			System.out.println(" metro(s) para a próxima parada.");
@@ -284,7 +294,12 @@ public class Main {
 
 			// Calcula sinal do bluetooth
 			for (x = 0; x < numeroPessoasSubiramDesceram; x++) {
-				escanearBluetooth(pessoasSubiramDesceram.get(x), saiu[x], distanciaEntreParadas - i);
+				distanciaPedestreParada = Haversine.distance(proximaParada.getCoordenadaY(),
+						proximaParada.getCoordenadaX(), pessoasSubiramDesceram.get(x).getParadaAtual().getCoordenadaY(),
+						pessoasSubiramDesceram.get(x).getParadaAtual().getCoordenadaX()) - i;
+
+				// escanearBluetooth(pedestre, saiu, distanciaUltimaParada)
+				escanearBluetooth(pessoasSubiramDesceram.get(x), saiu[x], distanciaPedestreParada);
 			}
 
 			try {

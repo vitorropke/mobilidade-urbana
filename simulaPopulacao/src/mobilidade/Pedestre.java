@@ -7,6 +7,7 @@ public class Pedestre {
 	private String nome;
 	private Parada origem;
 	private Parada destino;
+	private Parada paradaAtual;
 	private ArrayList<Double> sinal = new ArrayList<Double>();
 	private ArrayList<Calendar> horario = new ArrayList<Calendar>();
 
@@ -55,6 +56,14 @@ public class Pedestre {
 
 	public void setDestino(Parada destino) {
 		this.destino = destino;
+	}
+
+	public Parada getParadaAtual() {
+		return paradaAtual;
+	}
+
+	public void setParadaAtual(Parada paradaAtual) {
+		this.paradaAtual = paradaAtual;
 	}
 
 	public ArrayList<Double> getSinal() {
