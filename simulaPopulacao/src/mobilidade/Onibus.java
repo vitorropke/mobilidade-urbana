@@ -19,6 +19,12 @@ public class Onibus {
 		setCapacidadeMaximaPassageiros(capacidade);
 		setVelocidade(velocidade);
 	}
+	
+	public Onibus(int capacidade, int velocidade, Parada paradaInicio) {
+		setCapacidadeMaximaPassageiros(capacidade);
+		setVelocidade(velocidade);
+		setParadaAtual(paradaInicio);
+	}
 
 	public int getCapacidadeMaximaPassageiros() {
 		return capacidadeMaximaPassageiros;
