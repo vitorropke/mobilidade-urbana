@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE facilities SYSTEM "http://www.matsim.org/files/dtd/facilities_v1.dtd">
+
+<facilities>
+
+	<facility id="ruaDelfimMoreiraOeste" x="-4156765.926751" y="-577413.522675"/>
+	<facility id="ruaDelfimMoreiraLeste" x="-4156607.081052" y="-577508.919669"/>
+	<facility id="ruaJuvenalLamartineNorte" x="-4156625.443853" y="-577333.950534"/>
+	<facility id="ruaJuvenalLamartineSul" x="-4156779.960112" y="-577595.060617"/>
+
+</facilities>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE network SYSTEM "http://www.matsim.org/files/dtd/network_v2.dtd">
+<network>
+
+	<nodes>
+		<node id="4810523314" x="-4156846.706287553" y="-577368.3056971492" >
+		</node>
+		<node id="4852689014" x="-4156698.4509897144" y="-577458.0841583876" >
+		</node>
+		<node id="4852690235" x="-4156782.7198442454" y="-577598.6426731725" >
+		</node>
+		<node id="4852690265" x="-4156777.5880157193" y="-577590.7400916001" >
+		</node>
+		<node id="4856339514" x="-4156605.9444928654" y="-577506.1143406883" >
+		</node>
+		<node id="4856339515" x="-4156609.39539708" y="-577511.8484558611" >
+		</node>
+		<node id="4856339518" x="-4156483.2926779096" y="-577579.7971972201" >
+		</node>
+		<node id="4858126420" x="-4156554.336776933" y="-577213.5409532397" >
+		</node>
+		<node id="4858126824" x="-4156625.3586120596" y="-577334.3258312234" >
+		</node>
+		<node id="4858126827" x="-4156767.691712989" y="-577416.0004904768" >
+		</node>
+		<node id="4858126828" x="-4156764.2742046206" y="-577411.015282073" >
+		</node>
+		<node id="4858126831" x="-4156695.0891410923" y="-577452.5735996508" >
+		</node>
+	</nodes>
+
+	<links>
+		<link id="493347377_2" from="4852690235" to="4852690265" length="9.38415141486881" freespeed="8.333333333333334" capacity="600.0" permlanes="1.0" oneway="1" modes="car,pt" >
+		</link>
+		<link id="493347377_2_r" from="4852690265" to="4852690235" length="9.38415141486881" freespeed="8.333333333333334" capacity="600.0" permlanes="1.0" oneway="1" modes="car,pt" >
+		</link>
+		<link id="493347377_3" from="4852690265" to="4852689014" length="153.8366115820725" freespeed="8.333333333333334" capacity="600.0" permlanes="1.0" oneway="1" modes="car,pt" >
+		</link>
+		<link id="493347377_3_r" from="4852689014" to="4852690265" length="153.8366115820725" freespeed="8.333333333333334" capacity="600.0" permlanes="1.0" oneway="1" modes="car,pt" >
+		</link>
+		<link id="493347377_4" from="4852689014" to="4858126831" length="6.428731697300839" freespeed="8.333333333333334" capacity="600.0" permlanes="1.0" oneway="1" modes="car,pt" >
+		</link>
+		<link id="493347377_4_r" from="4858126831" to="4852689014" length="6.428731697300839" freespeed="8.333333333333334" capacity="600.0" permlanes="1.0" oneway="1" modes="car,pt" >
+		</link>
+		<link id="493347377_5" from="4858126831" to="4858126824" length="136.71607422663803" freespeed="8.333333333333334" capacity="600.0" permlanes="1.0" oneway="1" modes="car,pt" >
+		</link>
+		<link id="493347377_5_r" from="4858126824" to="4858126831" length="136.71607422663803" freespeed="8.333333333333334" capacity="600.0" permlanes="1.0" oneway="1" modes="car,pt" >
+		</link>
+		<link id="493347377_6" from="4858126824" to="4858126420" length="139.54631443542567" freespeed="8.333333333333334" capacity="600.0" permlanes="1.0" oneway="1" modes="car,pt" >
+		</link>
+		<link id="493347377_6_r" from="4858126420" to="4858126824" length="139.54631443542567" freespeed="8.333333333333334" capacity="600.0" permlanes="1.0" oneway="1" modes="car,pt" >
+		</link>
+		<link id="781456326_0" from="4856339518" to="4856339514" length="142.49800545268786" freespeed="8.333333333333334" capacity="600.0" permlanes="1.0" oneway="1" modes="car,pt" >
+		</link>
+		<link id="781456326_1" from="4856339514" to="4858126831" length="103.56262842855475" freespeed="8.333333333333334" capacity="600.0" permlanes="1.0" oneway="1" modes="car,pt" >
+		</link>
+		<link id="781456326_2" from="4858126831" to="4858126828" length="80.4896122828565" freespeed="8.333333333333334" capacity="600.0" permlanes="1.0" oneway="1" modes="car,pt" >
+		</link>
+		<link id="781456337_0" from="4810523314" to="4858126827" length="91.94027579488434" freespeed="8.333333333333334" capacity="600.0" permlanes="1.0" oneway="1" modes="car,pt" >
+		</link>
+		<link id="781456337_1" from="4858126827" to="4852689014" length="80.69725483743818" freespeed="8.333333333333334" capacity="600.0" permlanes="1.0" oneway="1" modes="car,pt" >
+		</link>
+		<link id="781456337_2" from="4852689014" to="4856339515" length="103.60149182327176" freespeed="8.333333333333334" capacity="600.0" permlanes="1.0" oneway="1" modes="car,pt" >
+		</link>
+	</links>
+
+</network>

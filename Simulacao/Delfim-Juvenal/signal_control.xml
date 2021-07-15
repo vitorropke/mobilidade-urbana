@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<signalControl xsi:schemaLocation="http://www.matsim.org/files/dtd http://www.matsim.org/files/dtd/signalControl_v2.0.xsd" xmlns="http://www.matsim.org/files/dtd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <signalSystem refId="cruzamento_Delfim_Juvenal">
+        <signalSystemController>
+            <controllerIdentifier>DefaultPlanbasedSignalSystemController</controllerIdentifier>
+            <signalPlan id="controle_cruzamento_Delfim_Juvenal">
+                <start daytime="07:00:00"/>
+                <stop daytime="07:30:00"/>
+                <cycleTime sec="120"/>
+                <offset sec="0"/>
+                <signalGroupSettings refId="grupo_semaforo_Delfim_Oeste_Leste">
+                    <onset sec="0"/>
+                    <dropping sec="30"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="grupo_semaforo_Delfim_Leste_Oeste">
+                    <onset sec="30"/>
+                    <dropping sec="60"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="grupo_semaforo_Juvenal_Norte_Sul">
+                    <onset sec="60"/>
+                    <dropping sec="90"/>
+                </signalGroupSettings>
+                <signalGroupSettings refId="grupo_semaforo_Juvenal_Sul_Norte">
+                    <onset sec="90"/>
+                    <dropping sec="120"/>
+                </signalGroupSettings>
+            </signalPlan>
+        </signalSystemController>
+    </signalSystem>
+</signalControl>
+

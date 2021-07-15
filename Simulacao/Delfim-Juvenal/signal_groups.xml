@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<signalGroups xsi:schemaLocation="http://www.matsim.org/files/dtd http://www.matsim.org/files/dtd/signalGroups_v2.0.xsd" xmlns="http://www.matsim.org/files/dtd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <signalSystem refId="cruzamento_Delfim_Juvenal">
+        <signalGroup id="grupo_semaforo_Delfim_Oeste_Leste">
+            <signal refId="semaforo_Delfim_Oeste_Leste"/>
+        </signalGroup>
+        <signalGroup id="grupo_semaforo_Delfim_Leste_Oeste">
+            <signal refId="semaforo_Delfim_Leste_Oeste"/>
+        </signalGroup>
+        <signalGroup id="grupo_semaforo_Juvenal_Norte_Sul">
+            <signal refId="semaforo_Juvenal_Norte_Sul"/>
+        </signalGroup>
+        <signalGroup id="grupo_semaforo_Juvenal_Sul_Norte">
+            <signal refId="semaforo_Juvenal_Sul_Norte"/>
+        </signalGroup>
+    </signalSystem>
+</signalGroups>
+

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE facilities SYSTEM "http://www.matsim.org/files/dtd/facilities_v1.dtd">
+
+<facilities>
+	<!--====================================================================================================================|
+	|																														|
+	|														TERMINAIS														|
+	|																														|
+	|=====================================================================================================================-->
+	<facility id="terminal_Praca_Felipe_Guerra" x="-4157205.2329715514" y="-579013.5879012579"/>
+
+	<!--====================================================================================================================|
+	|																														|
+	|														PARADAS															|
+	|																														|
+	|=====================================================================================================================-->
+	<!--====================================================================================================================|
+	|													PARADAS CENTRAIS													|
+	|=====================================================================================================================-->
+	<!--PARADAS RUAS======================================================================================================-->
+	<facility id="parada_Rua_Doutor_Joao_Marcelino_Volta0" x="-4157218.9252689183" y="-578247.4621689818"/>
+	<facility id="parada_Rua_Doutor_Mario_Negocio0" x="-4156698.7292884416" y="-578587.936627073"/>
+	<facility id="parada_Rua_Ferreira_Itajuba_Ida0" x="-4157288.9452286274" y="-577984.11535674"/>
+	<facility id="parada_Rua_Prudente_de_Morais0" x="-4156525.269545" y="-578195.658595"/>
+
+	<!--PARADAS MARCADAS==================================================================================================-->
+	<facility id="parada_ADVM" x="-4157503.051413" y="-577861.694470"/>
+	<facility id="parada_AeC" x="-4157253.212806" y="-579415.665227"/>
+	<facility id="parada_Caixa_Economica_Federal" x="-4157167.594377" y="-579124.995512"/>
+	<facility id="parada_Central" x="-4156993.725939044" y="-578833.40117623"/>
+	<facility id="parada_CIEE" x="-4157040.480125177" y="-578523.3290690613"/>
+	<facility id="parada_Cirne_Pneus_Mossoro" x="-4156718.526836" y="-578076.598966"/>
+	<facility id="parada_Cobal" x="-4156396.132768" y="-578387.049748"/>
+	<facility id="parada_Colegio_Diocesano_Santa_Luzia_Ida" x="-4157537.463005" y="-578020.689460"/>
+	<facility id="parada_Colegio_Diocesano_Santa_Luzia_Volta" x="-4157528.206959" y="-578012.030578"/>
+	<facility id="parada_EE_Jeronimo_Rosado_Ida" x="-4157667.271591" y="-577764.804565"/>
+	<facility id="parada_EE_Jeronimo_Rosado_Volta" x="-4157655.179015" y="-577746.367118"/>
+	<facility id="parada_Estacao_das_Artes" x="-4157185.1954632085" y="-578432.006722123"/>
+	<facility id="parada_Hotel_Caraubas" x="-4156911.186963" y="-578550.672762"/>
+	<facility id="parada_Igreja_Sao_Vicente" x="-4157240.521250132" y="-578854.0801504253"/>
+	<facility id="parada_Igreja_Universal_do_Reino_de_Deus_Centro" x="-4156520.2841446996" y="-578472.8055528352"/>
+	<facility id="parada_Livraria_Independencia" x="-4156871.251602" y="-578878.590599"/>
+	<facility id="parada_Loterica_Sorteca" x="-4157052.117734" y="-578695.037227"/>
+	<facility id="parada_Oficinas" x="-4157316.107184381" y="-579363.008384986"/>
+	<facility id="parada_Praca_de_Eventos_Ida" x="-4157059.404438611" y="-578278.8715954764"/>
+	<facility id="parada_Praca_dos_Hospitais" x="-4157137.586872" y="-578160.201966"/>
+	<facility id="parada_Praca_Gazeta" x="-4157049.819830" y="-579098.329475"/>
+	<facility id="parada_Reboucas_Supermercados_Centro" x="-4156823.403813" y="-578016.360019"/>
+	<facility id="parada_Teatro_Municipal_Dix_Huit_Rosado" x="-4157267.5718863956" y="-578558.8743964208"/>
+
+	<!--====================================================================================================================|
+	|													PARADAS DUTRA														|
+	|=====================================================================================================================-->
+	<!--PARADA AVENIDA====================================================================================================-->
+	<facility id="parada_Avenida_Presidente_Dutra_Ida0" x="-4155358.8878972535" y="-581670.8367892291"/>
+	
+	<!--PARADAS MARCADAS==================================================================================================-->
+	<facility id="parada_Arte_da_Terra" x="-4156812.9430859946" y="-579176.494087661"/>
+	<facility id="parada_FACENE_Ida" x="-4155518.965325014" y="-581381.2418579877"/>
+	<facility id="parada_Fic_Frio_Alto_de_Sao_Manoel" x="-4156168.389240" y="-580344.703561"/>
+	<facility id="parada_Hotel_VillaOeste_Ida" x="-4156543.408410" y="-579733.132689"/>
+	<facility id="parada_Izamar_Supermercado" x="-4156007.752048" y="-580612.904969"/>
+	<facility id="parada_JPL_Motos_Ilha_de_Santa_Luzia_Ida" x="-4156460.925093" y="-579868.465044"/>
+	<facility id="parada_L_E_Pneus" x="-4156313.8978087693" y="-580121.2433867494"/>
+	<facility id="parada_Oeste_Trigo" x="-4155694.763318" y="-581103.699365"/>
+
+	<!--====================================================================================================================|
+	|										PARADAS ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO										|
+	|=====================================================================================================================-->
+	<!--PARADAS IDA-VOLTA=================================================================================================-->
+	<facility id="parada_Ida_Volta_Linha1_Linha2" x="-4157417.6305599846" y="-573183.684879501"/>
+	<facility id="parada_Ida_Volta_Linha4" x="-4159196.7386618424" y="-572798.8642016767"/>
+
+	<!--PARADAS AVENIDAS==================================================================================================-->
+	<facility id="parada_Avenida_Abel_Coelho_Ida0" x="-4158806.0072491583" y="-575894.3657769776"/>
+	<facility id="parada_Avenida_Abel_Coelho_Volta0" x="-4158265.331621" y="-576565.325456"/>
+	<facility id="parada_Avenida_Abel_Coelho_Ida1" x="-4158680.659380" y="-576034.819636"/>
+	<facility id="parada_Avenida_Abel_Coelho_Volta1" x="-4158588.934242111" y="-576103.9415359223"/>
+	<facility id="parada_Avenida_Abel_Coelho_Ida2" x="-4158280.932538" y="-576569.132378"/>
+	<facility id="parada_Avenida_Abel_Coelho_Volta2" x="-4158786.63765776" y="-575891.4596641458"/>
+	<facility id="parada_Avenida_Benjamin_Soares_Cardoso_Ida0" x="-4159554.8534637247" y="-573116.4556741343"/>
+	<facility id="parada_Avenida_Benjamin_Soares_Cardoso_Volta0" x="-4159828.8107305667" y="-573369.1103985474"/>
+	<facility id="parada_Avenida_Benjamin_Soares_Cardoso_Ida1" x="-4159627.099813249" y="-573185.6967270235"/>
+	<facility id="parada_Avenida_Benjamin_Soares_Cardoso_Volta1" x="-4159760.033823" y="-573307.868935"/>
+	<facility id="parada_Avenida_Benjamin_Soares_Cardoso_Ida2" x="-4159691.6651179087" y="-573241.9167113736"/>
+	<facility id="parada_Avenida_Benjamin_Soares_Cardoso_Volta2" x="-4159681.581365" y="-573240.687953"/>
+	<facility id="parada_Avenida_Benjamin_Soares_Cardoso_Ida3" x="-4159923.0983392685" y="-573444.9237562835"/>
+	<facility id="parada_Avenida_Benjamin_Soares_Cardoso_Volta3" x="-4159588.125155" y="-573156.935662"/>
+	<facility id="parada_Avenida_Benjamin_Soares_Cardoso_Ida4" x="-4160018.276503897" y="-573502.8540235026"/>
+	<facility id="parada_Avenida_Benjamin_Soares_Cardoso_Volta4" x="-4159462.869946" y="-573044.668777"/>
+	<facility id="parada_Avenida_Benjamin_Soares_Cardoso_Volta5" x="-4159384.193552" y="-572978.234251"/>
+	<facility id="parada_Avenida_Benjamin_Soares_Cardoso_Volta6" x="-4159290.588050" y="-572885.823078"/>
+	<facility id="parada_Avenida_da_Integracao_Ida0" x="-4158443.105709172" y="-573276.6099405785"/>
+	<facility id="parada_Avenida_da_Integracao_Volta0" x="-4158608.971750454" y="-573668.2064677543"/>
+	<facility id="parada_Avenida_da_Integracao_Ida1" x="-4158545.8535991744" y="-573487.9215788961"/>
+	<facility id="parada_Avenida_da_Integracao_Volta1" x="-4158521.6972696725" y="-573479.5388456478"/>
+	<facility id="parada_Avenida_da_Integracao_Ida2" x="-4158634.575233336" y="-573672.0737121633"/>
+	<facility id="parada_Avenida_da_Integracao_Volta2" x="-4158423.068200829" y="-573263.3764387827"/>
+	<facility id="parada_Avenida_Presidente_Costa_e_Silva_Ida0" x="-4159542.6083197366" y="-574028.4423050578"/>
+	<facility id="parada_Avenida_Presidente_Costa_e_Silva_Volta0" x="-4158551.864851677" y="-575487.6787998759"/>
+	<facility id="parada_Avenida_Presidente_Costa_e_Silva_Ida1" x="-4159484.3882260523" y="-574135.8539645725"/>
+	<facility id="parada_Avenida_Presidente_Costa_e_Silva_Volta1" x="-4158632.126204539" y="-575379.6950533056"/>
+	<facility id="parada_Avenida_Presidente_Costa_e_Silva_Ida2" x="-4159356.5934506217" y="-574350.3424573853"/>
+	<facility id="parada_Avenida_Presidente_Costa_e_Silva_Volta2" x="-4158716.172420088" y="-575267.7211898386"/>
+	<facility id="parada_Avenida_Presidente_Costa_e_Silva_Ida3" x="-4159302.158219624" y="-574445.292103847"/>
+	<facility id="parada_Avenida_Presidente_Costa_e_Silva_Volta3" x="-4158804.1148178144" y="-575145.3750244987"/>
+	<facility id="parada_Avenida_Presidente_Costa_e_Silva_Ida4" x="-4159064.825065252" y="-574806.9625617871"/>
+	<facility id="parada_Avenida_Presidente_Costa_e_Silva_Volta4" x="-4159047.793183161" y="-574812.7411671007"/>
+	<facility id="parada_Avenida_Presidente_Costa_e_Silva_Ida5" x="-4158821.9259363413" y="-575142.6924871511"/>
+	<facility id="parada_Avenida_Presidente_Costa_e_Silva_Volta5" x="-4159299.152593372" y="-574427.5428253833"/>
+	<facility id="parada_Avenida_Presidente_Costa_e_Silva_Ida6" x="-4158734.4288165784" y="-575265.6981060888"/>
+	<facility id="parada_Avenida_Presidente_Costa_e_Silva_Volta6" x="-4159352.585948953" y="-574334.6944995812"/>
+	<facility id="parada_Avenida_Presidente_Costa_e_Silva_Ida7" x="-4158646.820377324" y="-575379.7621169621"/>
+	<facility id="parada_Avenida_Presidente_Costa_e_Silva_Volta7" x="-4159469.9166922485" y="-574137.0834434056"/>
+	<facility id="parada_Avenida_Presidente_Costa_e_Silva_Ida8" x="-4158575.241944744" y="-575472.1200095619"/>
+	<facility id="parada_Avenida_Santa_Luzia_Ida0" x="-4158137.4223874537" y="-574573.5833051716"/>
+	<facility id="parada_Avenida_Santa_Luzia_Volta0" x="-4158891.1666596145" y="-574129.259487561"/>
+	<facility id="parada_Avenida_Santa_Luzia_Ida1" x="-4158277.2396678897" y="-574533.8150198538"/>
+	<facility id="parada_Avenida_Santa_Luzia_Volta1" x="-4158786.63765776" y="-574202.581164692"/>
+	<facility id="parada_Avenida_Santa_Luzia_Ida2" x="-4158382.9931841437" y="-574466.0815666293"/>
+	<facility id="parada_Avenida_Santa_Luzia_Volta2" x="-4158694.687758365" y="-574267.4083203116"/>
+	<facility id="parada_Avenida_Santa_Luzia_Ida3" x="-4158482.624128404" y="-574396.8392666283"/>
+	<facility id="parada_Avenida_Santa_Luzia_Volta3" x="-4158599.398274246" y="-574326.3899062336"/>
+	<facility id="parada_Avenida_Santa_Luzia_Ida4" x="-4158583.368267572" y="-574324.8921734851"/>
+	<facility id="parada_Avenida_Santa_Luzia_Volta4" x="-4158499.8786494764" y="-574400.1924030879"/>
+	<facility id="parada_Avenida_Santa_Luzia_Ida5" x="-4158677.989834746" y="-574266.000005613"/>
+	<facility id="parada_Avenida_Santa_Luzia_Volta5" x="-4158399.691107762" y="-574467.0316228691"/>
+	<facility id="parada_Avenida_Santa_Luzia_Ida6" x="-4158770.1623731228" y="-574201.0946116456"/>
+	<facility id="parada_Avenida_Santa_Luzia_Volta6" x="-4158300.0601635026" y="-574532.6973055806"/>
+	<facility id="parada_Avenida_Santa_Luzia_Ida7" x="-4158872.464985161" y="-574128.6559252895"/>
+	<facility id="parada_Avenida_Santa_Luzia_Volta7" x="-4158146.3279467174" y="-574596.2393899891"/>
+	<facility id="parada_Avenida_Sao_Jeronimo_Ida0" x="-4158667.30316363" y="-573982.9516719796"/>
+	<facility id="parada_Avenida_Sao_Jeronimo_Volta0" x="-4158052.040338015" y="-574379.0676460405"/>
+	<facility id="parada_Avenida_Sao_Jeronimo_Ida1" x="-4158513.236988372" y="-574087.6807652494"/>
+	<facility id="parada_Avenida_Sao_Jeronimo_Volta1" x="-4158216.79318439" y="-574278.585422088"/>
+	<facility id="parada_Avenida_Sao_Jeronimo_Ida2" x="-4158358.168937697" y="-574191.8511584335"/>
+	<facility id="parada_Avenida_Sao_Jeronimo_Volta2" x="-4158345.9237937094" y="-574187.1567812058"/>
+	<facility id="parada_Avenida_Sao_Jeronimo_Ida3" x="-4158229.9288843023" y="-574278.8089641423"/>
+	<facility id="parada_Avenida_Sao_Jeronimo_Volta3" x="-4158486.075032618" y="-574083.8805606609"/>
+	<facility id="parada_Avenida_Sao_Jeronimo_Ida4" x="-4158080.8720861305" y="-574383.6837961168"/>
+	<facility id="parada_Avenida_Sao_Jeronimo_Volta4" x="-4158637.5808595885" y="-573984.7400009857"/>
+	<facility id="parada_Avenida_Senador_Petronio_Portela_Ida0" x="-4160058.3515205826" y="-573572.307815296"/>
+	<facility id="parada_Avenida_Senador_Petronio_Portela_Volta0" x="-4159910.892450" y="-573822.325965"/>
+	<facility id="parada_Avenida_Senador_Petronio_Portela_Ida1" x="-4160006.03135991" y="-573663.5121251128"/>
+	<facility id="parada_Avenida_Senador_Petronio_Portela_Volta1" x="-4160030.0763699203" y="-573616.2334057895"/>
+	<facility id="parada_Avenida_Senador_Petronio_Portela_Ida2" x="-4159988.4428803646" y="-573697.7137714538"/>
+	<facility id="parada_Avenida_Senador_Petronio_Portela_Ida3" x="-4159955.9375890526" y="-573758.4049686971"/>
+	<facility id="parada_Avenida_Senador_Petronio_Portela_Ida4" x="-4159899.164648748" y="-573860.786553292"/>
+	<facility id="parada_Avenida_Senador_Petronio_Portela_Ida5" x="-4159836.38045594" y="-573969.09212371"/>
+
+	<!--PARADAS RUAS======================================================================================================-->
+	<facility id="parada_Rua_Antonia_das_Merces_Reinaldo_Ida0" x="-4158951.846611" y="-573065.121654"/>
+	<facility id="parada_Rua_Antonia_das_Merces_Reinaldo_Ida1" x="-4158814.200243" y="-573174.701300"/>
+	<facility id="parada_Rua_Antonio_Vitor_de_Melo_Ida0" x="-4159312.84489074" y="-573976.8042913645"/>
+	<facility id="parada_Rua_Antonio_Vitor_de_Melo_Volta0" x="-4159328.5409389418" y="-573974.1217981727"/>
+	<facility id="parada_Rua_Campos_Sales_Ida0" x="-4157583.146073" y="-577442.783725"/>
+	<facility id="parada_Rua_Doutor_Joao_Marcelino_Ida0" x="-4158403.649798" y="-577108.595663"/>
+	<facility id="parada_Rua_Doutor_Joao_Marcelino_Ida1" x="-4158278.096008" y="-577237.807085"/>
+	<facility id="parada_Rua_Doutor_Joao_Marcelino_Volta1" x="-4158272.273656" y="-577232.805834"/>
+	<facility id="parada_Rua_Doutor_Joao_Marcelino_Ida2" x="-4157222.832073" y="-578252.613139"/>
+	<facility id="parada_Rua_Doutor_Joao_Marcelino_Volta2" x="-4158395.737372" y="-577102.474729"/>
+	<facility id="parada_Rua_Elita_Rodrigues_Ida0" x="-4158812.408750" y="-573039.742172"/>
+	<facility id="parada_Rua_Expedicionario_Claudionor_Amancio_de_Oliveira_Ida0" x="-4159454.882874" y="-572701.299314"/>
+	<facility id="parada_Rua_Expedicionario_Claudionor_Amancio_de_Oliveira_Ida1" x="-4159515.868276" y="-572756.089137"/>
+	<facility id="parada_Rua_Expedicionario_Claudionor_Amancio_de_Oliveira_Ida2" x="-4159574.838249" y="-572809.386050"/>
+	<facility id="parada_Rua_Ferreira_Itajuba_Ida0" x="-4157288.9452286274" y="-577984.11535674"/>
+	<facility id="parada_Rua_Francisco_Alves_da_Silva_Ida0" x="-4159460.2318965504" y="-574004.4786853797"/>
+	<facility id="parada_Rua_Francisco_Alves_da_Silva_Volta0" x="-4159445.315084784" y="-574006.501733183"/>
+	<facility id="parada_Rua_Francisco_Gomes_Monteiro_Ida0" x="-4158084.3229903453" y="-572813.7294404717"/>
+	<facility id="parada_Rua_Francisco_Gomes_Monteiro_Volta0" x="-4158119.9452273985" y="-572802.3849158478"/>
+	<facility id="parada_Rua_Monsenhor_Gurgel0" x="-4157528.0594948516" y="-577220.5716424013"/>
+	<facility id="parada_Rua_Monsenhor_Gurgel1" x="-4157921.0172973513" y="-576982.0427695166"/>
+	<facility id="parada_Rua_Sem_Nome_Santa_Julia_Ida0" x="-4159084.715664" y="-572948.674619"/>
+	<facility id="parada_Rua_Sem_Nome_Santa_Julia_Ida1" x="-4158712.383733" y="-573133.795547"/>
+	<facility id="parada_Rua_Sem_Nome_Santa_Julia_Ida2" x="-4158812.707333" y="-572925.683794"/>
+	<facility id="parada_Rua_Sem_Nome_Santa_Julia_Ida3" x="-4158910.940857" y="-572865.668783"/>
+	<facility id="parada_Rua_Sem_Nome_Santa_Julia_Ida4" x="-4159104.123503" y="-572854.024080"/>
+	<facility id="parada_Rua_Senador_Ruy_Carneiro_Ida0" x="-4157545.425335415" y="-573164.2705538222"/>
+	<facility id="parada_Rua_Senador_Ruy_Carneiro_Volta0" x="-4157725.8742299913" y="-573051.9760520393"/>
+	<facility id="parada_Rua_Senador_Ruy_Carneiro_Ida1" x="-4157688.3595615937" y="-573065.131276141"/>
+	<facility id="parada_Rua_Senador_Ruy_Carneiro_Volta1" x="-4157575.9268758926" y="-573155.2954816245"/>
+	<facility id="parada_Rua_Tarcisio_Correia_Ida0" x="-4158664.4088568687" y="-575584.8989620985"/>
+	<facility id="parada_Rua_Tarcisio_Correia_Volta0" x="-4158646.597738342" y="-575586.3184802871"/>
+	<facility id="parada_Rua_Tonheca_Dantas_Volta0" x="-4159801.20349685" y="-573975.5748153061"/>
+
+	<!--PARADAS MARCADAS==================================================================================================-->
+	<facility id="parada_Assembleia_de_Deus_Abolicao_IV_Ida" x="-4158909.534375596" y="-575031.5572894922"/>
+	<facility id="parada_Assembleia_de_Deus_Abolicao_IV_Volta" x="-4158892.8364519766" y="-575032.2055683265"/>
+	<facility id="parada_Assembleia_de_Deus_do_Parque_das_Rosas_Ida" x="-4158734.7627750505" y="-573874.9143293812"/>
+	<facility id="parada_Assembleia_de_Deus_do_Parque_das_Rosas_Volta" x="-4158710.717765039" y="-573867.71631653"/>
+	<facility id="parada_Capela_de_Nossa_Senhora_Aparecida_Ida" x="-4157843.984209723" y="-573007.3690188295"/>
+	<facility id="parada_Capela_de_Nossa_Senhora_Aparecida_Volta" x="-4157873.1499163103" y="-572999.4222413547"/>
+	<facility id="parada_CEM_Ida" x="-4157831.491769" y="-577720.017244"/>
+	<facility id="parada_EE_Diran_Ramos_do_Amaral_Ida" x="-4158195.5311616478" y="-572830.5282817323"/>
+	<facility id="parada_EE_Diran_Ramos_do_Amaral_Volta" x="-4158197.646231972" y="-572853.1279267278"/>
+	<facility id="parada_EE_Doutor_Lavoisier_Maia_Ida" x="-4158174.711941" y="-577347.759958"/>
+	<facility id="parada_EE_Doutor_Lavoisier_Maia_Volta" x="-4158171.352892" y="-577342.460125"/>
+	<facility id="parada_EE_Professor_Abel_Freire_Coelho_Ida" x="-4158104.022619" y="-577425.913834"/>
+	<facility id="parada_EE_Professor_Abel_Freire_Coelho_Volta" x="-4158094.841218" y="-577417.852116"/>
+	<facility id="parada_EM_Alcides_Manoel_de_Medeiros_Ida" x="-4157997.204858" y="-572891.048265"/>
+	<facility id="parada_EM_Alcides_Manoel_de_Medeiros_Volta" x="-4158033.449983052" y="-572890.1792890114"/>
+	<facility id="parada_EM_Monsenhor_Mota" x="-4157696.5972039127" y="-577123.4386537113"/>
+	<facility id="parada_Farmacia_do_Trabalhador_Santo_Antonio" x="-4157784.912955" y="-577334.323762"/>
+	<facility id="parada_Igreja_Adventista_do_Setimo_Dia_Abolicao_Ida" x="-4159185.6067127627" y="-574634.2864278236"/>
+	<facility id="parada_Igreja_Adventista_do_Setimo_Dia_Abolicao_Volta" x="-4159182.044489058" y="-574616.2129645942"/>
+	<facility id="parada_Igreja_de_Nossa_Senhora_de_Fatima_Abolicao_Ida" x="-4158147.317030" y="-576789.336708"/>
+	<facility id="parada_Igreja_de_Nossa_Senhora_de_Fatima_Abolicao_Volta" x="-4158165.231958" y="-576722.454308"/>
+	<facility id="parada_Igreja_de_Sao_Francisco_de_Assis_Abolicao_Ida" x="-4158793.4281466985" y="-575670.7519203146"/>
+	<facility id="parada_Igreja_de_Sao_Francisco_de_Assis_Abolicao_Volta" x="-4158803.224261888" y="-575688.1438354695"/>
+	<facility id="parada_Igreja_de_Sao_Pedro_Ida" x="-4159422.38326968" y="-574237.2748626863"/>
+	<facility id="parada_Igreja_de_Sao_Pedro_Volta" x="-4159416.8172951406" y="-574223.6388066853"/>
+	<facility id="parada_Igreja_Evangelica_Avivamento_Biblico_Abolicao_III_Ida" x="-4159148.5373223294" y="-574222.4093263546"/>
+	<facility id="parada_Igreja_Evangelica_Avivamento_Biblico_Abolicao_III_Volta" x="-4159165.5692044203" y="-574215.8483725879"/>
+	<facility id="parada_Igreja_Universal_do_Reino_de_Deus_Abolicao_Ida" x="-4159227.9081192645" y="-574107.3971240865"/>
+	<facility id="parada_Igreja_Universal_do_Reino_de_Deus_Abolicao_Volta" x="-4159246.1645157547" y="-574100.646170672"/>
+	<facility id="parada_Igreja_Universal_Integracao_Ida" x="-4158312.8619049434" y="-572998.4833816272"/>
+	<facility id="parada_Igreja_Universal_Integracao_Volta" x="-4158308.4091253118" y="-573018.5570994515"/>
+	<facility id="parada_Mater_Christi" x="-4157812.905031" y="-577655.374210"/>
+	<facility id="parada_Olinda_Pneus_Santo_Antonio_Ida" x="-4157667.765455797" y="-577570.6539016819"/>
+	<facility id="parada_Olinda_Pneus_Santo_Antonio_Volta" x="-4157745.1325018983" y="-577683.3244231587"/>
+	<facility id="parada_Praca_Abolicao_V_Ida0" x="-4159609.921651" y="-572940.911483"/>
+	<facility id="parada_Praca_Abolicao_V_Ida1" x="-4159536.597067234" y="-573020.4795270677"/>
+	<facility id="parada_SESC_Ida" x="-4158011.238219" y="-577526.685307"/>
+	<facility id="parada_SESC_Volta" x="-4158006.908778" y="-577517.578552"/>
+	<facility id="parada_Supermercado_Queiroz_Santa_Delmira_Ida" x="-4158969.3129421524" y="-574063.583000768"/>
+	<facility id="parada_Supermercado_Queiroz_Santa_Delmira_Volta" x="-4158987.1240606783" y="-574065.393685941"/>
+
+	<!--====================================================================================================================|
+	|													PARADAS VINGT ROSADO												|
+	|=====================================================================================================================-->
+	<!--PARADAS MARCADAS==================================================================================================-->
+	<facility id="parada_Estacao_Fitness" x="-4155740.2684727116" y="-580531.444630866"/>
+	<facility id="parada_Residencial_Vingt_Un_Rosado_Ida" x="-4155468.064826" y="-580327.460442"/>
+
+	<!--====================================================================================================================|
+	|													PARADAS UNIVERSIDADES												|
+	|=====================================================================================================================-->
+
+	<!--PARADAS RUAS======================================================================================================-->
+	<facility id="parada_Alameda_das_Carnaubeiras_Ida0" x="-4154455.124911" y="-580832.437489"/>
+	<facility id="parada_Rua_Raimundo_Firmino_de_Oliveira_Ida0" x="-4155083.267091" y="-581508.278167"/>
+
+	<!--PARADAS MARCADAS==================================================================================================-->
+	<facility id="parada_ADUERN_Ida" x="-4154766.471439" y="-579877.273218"/>
+	<facility id="parada_Convesti" x="-4154678.464353" y="-580677.846585"/>
+	<facility id="parada_Costalarga_Corretora_de_Seguros_Presidente_Costa_e_Silva_Ida" x="-4154293.8943288345" y="-580215.161230164"/>
+	<facility id="parada_Cristais_do_Alto_Ida" x="-4154447.735003" y="-580104.494228"/>
+	<facility id="parada_IFRN_Ida" x="-4154572.169110" y="-581057.120551"/>
+	<facility id="parada_Ministerio_Publico_da_Uniao_Ida" x="-4155090.162646478" y="-580392.9482077922"/>
+	<facility id="parada_Supermercados_Queiroz_Dom_Jaime_Camara_Ida" x="-4154945.6699474286" y="-581391.6040754183"/>
+	<facility id="parada_UERN_Ida" x="-4154089.400424247" y="-580321.9227872522"/>
+	<facility id="parada_UFERSA_Ida" x="-4155081.591045687" y="-580007.1940723791"/>
+	<facility id="parada_UFERSA_Lateral_Ida" x="-4154817.875171998" y="-580580.0693477748"/>
+</facilities>
