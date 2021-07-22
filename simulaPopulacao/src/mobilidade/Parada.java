@@ -20,6 +20,26 @@ public class Parada {
 		setTerminal(terminal);
 	}
 
+	public Parada(long id, double coordenadaX, double coordenadaY, boolean terminal) {
+		setId(id);
+		setCoordenadaX(coordenadaX);
+		setCoordenadaY(coordenadaY);
+		setTerminal(terminal);
+	}
+
+	@Override
+	public String toString() {
+		String saida = "";
+
+		saida += id;
+		saida += '\t';
+		saida += coordenadaX;
+		saida += '\t';
+		saida += coordenadaY;
+
+		return saida;
+	}
+
 	public long getId() {
 		return id;
 	}
