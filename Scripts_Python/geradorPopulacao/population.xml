@@ -1,0 +1,5102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE plans SYSTEM "http://www.matsim.org/files/dtd/plans_v4.dtd">
+
+<plans>
+
+	<person id="pessoa0">
+		<plan>
+			<act end_time="04:45:19" x="-4154124" y="-579206" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="12:45:19" x="-4150255" y="-579381" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4154124" y="-579206" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa1">
+		<plan>
+			<act end_time="06:53:11" x="-4155394" y="-581607" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="17:53:11" x="-4158327" y="-576395" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4155394" y="-581607" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa2">
+		<plan>
+			<act end_time="11:45:04" x="-4159373" y="-575921" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="18:45:04" x="-4161907" y="-584632" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4159373" y="-575921" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa3">
+		<plan>
+			<act end_time="07:27:41" x="-4163580" y="-586490" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="22:27:41" x="-4158281" y="-582957" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4163580" y="-586490" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa4">
+		<plan>
+			<act end_time="07:37:08" x="-4159133" y="-573874" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="17:37:08" x="-4162411" y="-585281" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4159133" y="-573874" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa5">
+		<plan>
+			<act end_time="06:39:42" x="-4161429" y="-572182" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="12:39:42" x="-4159126" y="-580390" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4161429" y="-572182" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa6">
+		<plan>
+			<act end_time="08:56:16" x="-4150286" y="-581374" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="18:56:16" x="-4153989" y="-579433" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4150286" y="-581374" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa7">
+		<plan>
+			<act end_time="08:13:09" x="-4156033" y="-570313" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="21:13:09" x="-4162965" y="-584969" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4156033" y="-570313" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa8">
+		<plan>
+			<act end_time="08:58:57" x="-4149824" y="-579511" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="22:58:57" x="-4161034" y="-575877" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4149824" y="-579511" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa9">
+		<plan>
+			<act end_time="08:55:11" x="-4160285" y="-578083" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:55:11" x="-4162552" y="-574966" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4160285" y="-578083" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa10">
+		<plan>
+			<act end_time="07:55:40" x="-4157732" y="-573814" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="17:55:40" x="-4152754" y="-580275" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4157732" y="-573814" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa11">
+		<plan>
+			<act end_time="06:49:53" x="-4156972" y="-581772" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="17:49:53" x="-4158119" y="-579832" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4156972" y="-581772" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa12">
+		<plan>
+			<act end_time="04:54:36" x="-4154473" y="-583045" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="11:54:36" x="-4161025" y="-577948" type="shop"/>
+			<leg mode="pt"/>
+			<act end_time="20:54:36" x="-4158554" y="-578712" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4154473" y="-583045" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa13">
+		<plan>
+			<act end_time="11:45:41" x="-4159069" y="-573122" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="19:45:41" x="-4152441" y="-580573" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4159069" y="-573122" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa14">
+		<plan>
+			<act end_time="07:42:31" x="-4157372" y="-582246" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:42:31" x="-4158027" y="-578965" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4157372" y="-582246" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa15">
+		<plan>
+			<act end_time="07:50:43" x="-4155558" y="-576786" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:50:43" x="-4161488" y="-572077" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4155558" y="-576786" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa16">
+		<plan>
+			<act end_time="08:20:58" x="-4152882" y="-585115" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:20:58" x="-4161992" y="-585257" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4152882" y="-585115" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa17">
+		<plan>
+			<act end_time="06:52:16" x="-4153434" y="-584462" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:52:16" x="-4156682" y="-581391" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4153434" y="-584462" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa18">
+		<plan>
+			<act end_time="05:04:22" x="-4158599" y="-577140" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:04:22" x="-4159273" y="-574084" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4158599" y="-577140" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa19">
+		<plan>
+			<act end_time="04:31:24" x="-4159225" y="-574924" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:31:24" x="-4159595" y="-578294" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4159225" y="-574924" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa20">
+		<plan>
+			<act end_time="13:44:20" x="-4160550" y="-578493" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="17:44:20" x="-4156388" y="-583348" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4160550" y="-578493" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa21">
+		<plan>
+			<act end_time="05:19:56" x="-4155633" y="-580987" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:19:56" x="-4154035" y="-579477" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4155633" y="-580987" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa22">
+		<plan>
+			<act end_time="06:10:17" x="-4159074" y="-581371" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:10:17" x="-4152989" y="-579979" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4159074" y="-581371" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa23">
+		<plan>
+			<act end_time="08:12:16" x="-4157870" y="-579082" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="13:12:16" x="-4160000" y="-579480" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4157870" y="-579082" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa24">
+		<plan>
+			<act end_time="05:29:13" x="-4154887" y="-575562" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="22:29:13" x="-4156079" y="-570526" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4154887" y="-575562" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa25">
+		<plan>
+			<act end_time="06:07:26" x="-4158199" y="-572994" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:07:26" x="-4160195" y="-574427" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4158199" y="-572994" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa26">
+		<plan>
+			<act end_time="12:00:27" x="-4163955" y="-586685" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="21:00:27" x="-4159616" y="-572556" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4163955" y="-586685" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa27">
+		<plan>
+			<act end_time="14:03:45" x="-4152466" y="-578220" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="17:03:45" x="-4155129" y="-570532" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4152466" y="-578220" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa28">
+		<plan>
+			<act end_time="08:40:20" x="-4157200" y="-579200" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="13:40:20" x="-4151509" y="-578468" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4157200" y="-579200" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa29">
+		<plan>
+			<act end_time="05:07:47" x="-4159465" y="-580840" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="22:07:47" x="-4157491" y="-581419" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4159465" y="-580840" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa30">
+		<plan>
+			<act end_time="08:45:57" x="-4161439" y="-572184" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="21:45:57" x="-4157066" y="-581416" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4161439" y="-572184" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa31">
+		<plan>
+			<act end_time="11:04:55" x="-4159778" y="-579619" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="18:04:55" x="-4155631" y="-582065" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4159778" y="-579619" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa32">
+		<plan>
+			<act end_time="08:57:24" x="-4156739" y="-580123" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="22:57:24" x="-4161375" y="-579023" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4156739" y="-580123" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa33">
+		<plan>
+			<act end_time="08:06:01" x="-4151934" y="-578420" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="12:06:01" x="-4153054" y="-577457" type="shop"/>
+			<leg mode="pt"/>
+			<act end_time="19:06:01" x="-4155048" y="-584259" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4151934" y="-578420" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa34">
+		<plan>
+			<act end_time="05:17:01" x="-4155969" y="-573185" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="17:17:01" x="-4155432" y="-581673" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4155969" y="-573185" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa35">
+		<plan>
+			<act end_time="04:39:37" x="-4151069" y="-581122" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="21:39:37" x="-4156380" y="-577679" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4151069" y="-581122" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa36">
+		<plan>
+			<act end_time="08:26:35" x="-4159479" y="-574708" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="21:26:35" x="-4153521" y="-580071" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4159479" y="-574708" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa37">
+		<plan>
+			<act end_time="08:20:07" x="-4152506" y="-581567" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="22:20:07" x="-4151791" y="-581088" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4152506" y="-581567" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa38">
+		<plan>
+			<act end_time="04:28:27" x="-4152320" y="-578840" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="22:28:27" x="-4159544" y="-577237" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4152320" y="-578840" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa39">
+		<plan>
+			<act end_time="14:23:55" x="-4158869" y="-575378" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="21:23:55" x="-4155148" y="-580392" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4158869" y="-575378" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa40">
+		<plan>
+			<act end_time="04:01:20" x="-4151659" y="-579149" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:01:20" x="-4157115" y="-574456" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4151659" y="-579149" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa41">
+		<plan>
+			<act end_time="14:35:04" x="-4154164" y="-581846" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="17:35:04" x="-4150945" y="-578721" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4154164" y="-581846" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa42">
+		<plan>
+			<act end_time="05:52:56" x="-4160708" y="-572288" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="22:52:56" x="-4161100" y="-579370" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4160708" y="-572288" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa43">
+		<plan>
+			<act end_time="04:02:56" x="-4161345" y="-572027" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="21:02:56" x="-4155061" y="-584815" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4161345" y="-572027" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa44">
+		<plan>
+			<act end_time="07:03:44" x="-4159713" y="-572899" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="11:03:44" x="-4158123" y="-579782" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="17:03:44" x="-4152204" y="-580985" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4159713" y="-572899" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa45">
+		<plan>
+			<act end_time="06:22:22" x="-4155351" y="-570976" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="11:22:22" x="-4159267" y="-574019" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4155351" y="-570976" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa46">
+		<plan>
+			<act end_time="08:47:43" x="-4153500" y="-578070" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="21:47:43" x="-4161638" y="-578858" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4153500" y="-578070" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa47">
+		<plan>
+			<act end_time="06:07:22" x="-4156583" y="-577872" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:07:22" x="-4158642" y="-579829" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4156583" y="-577872" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa48">
+		<plan>
+			<act end_time="08:39:21" x="-4156626" y="-580024" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="20:39:21" x="-4150143" y="-581635" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4156626" y="-580024" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa49">
+		<plan>
+			<act end_time="04:56:09" x="-4155596" y="-581996" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="18:56:09" x="-4151567" y="-581904" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4155596" y="-581996" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa50">
+		<plan>
+			<act end_time="06:04:01" x="-4157805" y="-579749" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:04:01" x="-4151828" y="-581416" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4157805" y="-579749" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa51">
+		<plan>
+			<act end_time="05:07:27" x="-4154919" y="-582372" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:07:27" x="-4154506" y="-585107" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4154919" y="-582372" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa52">
+		<plan>
+			<act end_time="05:56:17" x="-4158997" y="-574657" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="19:56:17" x="-4159298" y="-576326" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4158997" y="-574657" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa53">
+		<plan>
+			<act end_time="08:03:31" x="-4159959" y="-577976" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="18:03:31" x="-4159452" y="-580548" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4159959" y="-577976" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa54">
+		<plan>
+			<act end_time="08:59:19" x="-4157529" y="-573869" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:59:19" x="-4160515" y="-577080" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4157529" y="-573869" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa55">
+		<plan>
+			<act end_time="04:45:32" x="-4162079" y="-585278" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:45:32" x="-4154193" y="-583718" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4162079" y="-585278" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa56">
+		<plan>
+			<act end_time="04:01:14" x="-4154756" y="-583045" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:01:14" x="-4161977" y="-580729" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4154756" y="-583045" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa57">
+		<plan>
+			<act end_time="04:40:00" x="-4156542" y="-578608" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:40:00" x="-4158178" y="-579787" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4156542" y="-578608" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa58">
+		<plan>
+			<act end_time="06:47:14" x="-4158437" y="-585273" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="18:47:14" x="-4162247" y="-584282" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4158437" y="-585273" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa59">
+		<plan>
+			<act end_time="07:25:42" x="-4158000" y="-578816" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:25:42" x="-4159524" y="-581462" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4158000" y="-578816" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa60">
+		<plan>
+			<act end_time="04:38:24" x="-4153799" y="-585367" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="14:38:24" x="-4150851" y="-578657" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4153799" y="-585367" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa61">
+		<plan>
+			<act end_time="04:27:41" x="-4156796" y="-576183" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="17:27:41" x="-4154603" y="-583605" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4156796" y="-576183" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa62">
+		<plan>
+			<act end_time="04:43:13" x="-4156343" y="-577323" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="17:43:13" x="-4157764" y="-573638" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4156343" y="-577323" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa63">
+		<plan>
+			<act end_time="08:43:31" x="-4152693" y="-579559" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="17:43:31" x="-4152339" y="-577846" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4152693" y="-579559" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa64">
+		<plan>
+			<act end_time="13:40:27" x="-4149919" y="-579432" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="20:40:27" x="-4155596" y="-577150" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4149919" y="-579432" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa65">
+		<plan>
+			<act end_time="06:52:00" x="-4154499" y="-579713" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="13:52:00" x="-4155145" y="-582670" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4154499" y="-579713" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa66">
+		<plan>
+			<act end_time="04:35:08" x="-4161457" y="-582389" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="17:35:08" x="-4159866" y="-573712" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4161457" y="-582389" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa67">
+		<plan>
+			<act end_time="08:57:42" x="-4157369" y="-575883" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:57:42" x="-4161583" y="-585490" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4157369" y="-575883" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa68">
+		<plan>
+			<act end_time="14:46:59" x="-4161918" y="-584985" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="20:46:59" x="-4158347" y="-573077" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4161918" y="-584985" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa69">
+		<plan>
+			<act end_time="04:11:28" x="-4160502" y="-579809" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:11:28" x="-4157743" y="-576573" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4160502" y="-579809" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa70">
+		<plan>
+			<act end_time="08:26:11" x="-4156597" y="-581494" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:26:11" x="-4155864" y="-580186" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4156597" y="-581494" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa71">
+		<plan>
+			<act end_time="12:50:23" x="-4154116" y="-581614" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="20:50:23" x="-4158061" y="-576611" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4154116" y="-581614" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa72">
+		<plan>
+			<act end_time="13:38:03" x="-4154084" y="-579160" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="17:38:03" x="-4155307" y="-575614" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4154084" y="-579160" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa73">
+		<plan>
+			<act end_time="12:20:21" x="-4155667" y="-580874" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="19:20:21" x="-4156946" y="-575542" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4155667" y="-580874" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa74">
+		<plan>
+			<act end_time="04:59:08" x="-4154777" y="-571088" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:59:08" x="-4160919" y="-578456" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4154777" y="-571088" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa75">
+		<plan>
+			<act end_time="07:36:35" x="-4163251" y="-586806" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:36:35" x="-4156825" y="-583457" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4163251" y="-586806" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa76">
+		<plan>
+			<act end_time="06:17:07" x="-4154922" y="-582322" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="22:17:07" x="-4152021" y="-577803" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4154922" y="-582322" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa77">
+		<plan>
+			<act end_time="07:48:51" x="-4151614" y="-580597" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:48:51" x="-4157042" y="-575937" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4151614" y="-580597" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa78">
+		<plan>
+			<act end_time="08:59:51" x="-4158766" y="-573100" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="14:59:51" x="-4158962" y="-574001" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4158766" y="-573100" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa79">
+		<plan>
+			<act end_time="06:05:59" x="-4158337" y="-582994" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="14:05:59" x="-4154911" y="-580708" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="17:05:59" x="-4160660" y="-576933" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4158337" y="-582994" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa80">
+		<plan>
+			<act end_time="12:25:06" x="-4153912" y="-579364" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="19:25:06" x="-4161645" y="-572125" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4153912" y="-579364" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa81">
+		<plan>
+			<act end_time="08:35:11" x="-4159625" y="-576845" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="11:35:11" x="-4157000" y="-581401" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4159625" y="-576845" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa82">
+		<plan>
+			<act end_time="05:16:30" x="-4155572" y="-580294" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="11:16:30" x="-4160781" y="-579892" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4155572" y="-580294" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa83">
+		<plan>
+			<act end_time="06:30:40" x="-4151836" y="-579132" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="13:30:40" x="-4159469" y="-578458" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:30:40" x="-4163405" y="-584673" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4151836" y="-579132" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa84">
+		<plan>
+			<act end_time="04:53:20" x="-4159598" y="-574343" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:53:20" x="-4153072" y="-579322" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4159598" y="-574343" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa85">
+		<plan>
+			<act end_time="08:19:26" x="-4152949" y="-577375" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="19:19:26" x="-4159140" y="-581055" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4152949" y="-577375" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa86">
+		<plan>
+			<act end_time="14:22:15" x="-4158129" y="-574650" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="19:22:15" x="-4158186" y="-578391" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4158129" y="-574650" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa87">
+		<plan>
+			<act end_time="08:18:09" x="-4162259" y="-585118" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="18:18:09" x="-4159040" y="-572687" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4162259" y="-585118" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa88">
+		<plan>
+			<act end_time="06:25:46" x="-4160133" y="-579316" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="19:25:46" x="-4161255" y="-578145" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4160133" y="-579316" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa89">
+		<plan>
+			<act end_time="14:49:31" x="-4150647" y="-581371" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="20:49:31" x="-4153986" y="-579976" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4150647" y="-581371" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa90">
+		<plan>
+			<act end_time="14:34:29" x="-4162756" y="-587201" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="20:34:29" x="-4154004" y="-584958" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4162756" y="-587201" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa91">
+		<plan>
+			<act end_time="04:08:38" x="-4153339" y="-578309" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="13:08:38" x="-4160490" y="-577399" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:08:38" x="-4152717" y="-578904" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4153339" y="-578309" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa92">
+		<plan>
+			<act end_time="06:54:53" x="-4155337" y="-583117" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="20:54:53" x="-4150664" y="-581464" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4155337" y="-583117" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa93">
+		<plan>
+			<act end_time="06:29:21" x="-4158276" y="-573173" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="21:29:21" x="-4154327" y="-579912" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4158276" y="-573173" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa94">
+		<plan>
+			<act end_time="07:44:29" x="-4151982" y="-581090" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="13:44:29" x="-4162592" y="-584191" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4151982" y="-581090" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa95">
+		<plan>
+			<act end_time="07:57:47" x="-4154648" y="-583870" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="12:57:47" x="-4160812" y="-577050" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4154648" y="-583870" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa96">
+		<plan>
+			<act end_time="05:06:18" x="-4155980" y="-576699" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="11:06:18" x="-4157543" y="-576664" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="21:06:18" x="-4160595" y="-579392" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4155980" y="-576699" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa97">
+		<plan>
+			<act end_time="05:44:01" x="-4156006" y="-579664" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="19:44:01" x="-4157739" y="-579643" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4156006" y="-579664" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa98">
+		<plan>
+			<act end_time="13:12:25" x="-4159452" y="-576302" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="21:12:25" x="-4151899" y="-577751" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4159452" y="-576302" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa99">
+		<plan>
+			<act end_time="04:37:36" x="-4154899" y="-571307" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:37:36" x="-4149627" y="-572373" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4154899" y="-571307" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa100">
+		<plan>
+			<act end_time="06:49:40" x="-4158009" y="-578338" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="22:49:40" x="-4156419" y="-574999" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4158009" y="-578338" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa101">
+		<plan>
+			<act end_time="07:23:30" x="-4154498" y="-581727" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:23:30" x="-4163511" y="-586680" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4154498" y="-581727" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa102">
+		<plan>
+			<act end_time="11:25:13" x="-4153654" y="-585503" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="22:25:13" x="-4157497" y="-573246" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4153654" y="-585503" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa103">
+		<plan>
+			<act end_time="08:08:18" x="-4151694" y="-579323" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="17:08:18" x="-4158310" y="-574535" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4151694" y="-579323" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa104">
+		<plan>
+			<act end_time="08:41:23" x="-4152191" y="-578529" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="11:41:23" x="-4153561" y="-580861" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4152191" y="-578529" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa105">
+		<plan>
+			<act end_time="06:40:52" x="-4158770" y="-578334" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="14:40:52" x="-4153735" y="-579957" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="17:40:52" x="-4160846" y="-576749" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4158770" y="-578334" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa106">
+		<plan>
+			<act end_time="06:02:05" x="-4151154" y="-578697" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="17:02:05" x="-4161184" y="-575923" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4151154" y="-578697" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa107">
+		<plan>
+			<act end_time="11:03:51" x="-4161722" y="-575097" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="19:03:51" x="-4157305" y="-578572" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4161722" y="-575097" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa108">
+		<plan>
+			<act end_time="08:35:40" x="-4153986" y="-581969" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="17:35:40" x="-4156612" y="-580568" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4153986" y="-581969" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa109">
+		<plan>
+			<act end_time="07:29:46" x="-4154843" y="-584341" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:29:46" x="-4156033" y="-574807" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4154843" y="-584341" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa110">
+		<plan>
+			<act end_time="07:47:42" x="-4159908" y="-577683" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="14:47:42" x="-4159775" y="-577096" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4159908" y="-577683" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa111">
+		<plan>
+			<act end_time="07:45:21" x="-4149907" y="-580779" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="13:45:21" x="-4157374" y="-582859" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4149907" y="-580779" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa112">
+		<plan>
+			<act end_time="11:10:44" x="-4154871" y="-575658" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="17:10:44" x="-4154321" y="-583042" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4154871" y="-575658" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa113">
+		<plan>
+			<act end_time="04:32:28" x="-4160874" y="-570685" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="20:32:28" x="-4159302" y="-574410" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4160874" y="-570685" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa114">
+		<plan>
+			<act end_time="07:12:21" x="-4160490" y="-577461" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="17:12:21" x="-4158142" y="-574534" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4160490" y="-577461" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa115">
+		<plan>
+			<act end_time="08:11:09" x="-4159680" y="-578252" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="22:11:09" x="-4151978" y="-578683" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4159680" y="-578252" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa116">
+		<plan>
+			<act end_time="07:41:48" x="-4158986" y="-575844" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:41:48" x="-4160185" y="-573831" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4158986" y="-575844" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa117">
+		<plan>
+			<act end_time="08:02:30" x="-4155147" y="-576774" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:02:30" x="-4159479" y="-578694" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4155147" y="-576774" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa118">
+		<plan>
+			<act end_time="07:22:33" x="-4149911" y="-579630" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="12:22:33" x="-4156440" y="-583895" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4149911" y="-579630" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa119">
+		<plan>
+			<act end_time="08:32:02" x="-4155441" y="-583241" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="12:32:02" x="-4158893" y="-584505" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:32:02" x="-4151411" y="-579029" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4155441" y="-583241" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa120">
+		<plan>
+			<act end_time="11:39:35" x="-4161597" y="-578752" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="21:39:35" x="-4158011" y="-578985" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4161597" y="-578752" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa121">
+		<plan>
+			<act end_time="06:24:10" x="-4156911" y="-575586" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="11:24:10" x="-4160341" y="-578497" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4156911" y="-575586" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa122">
+		<plan>
+			<act end_time="05:48:52" x="-4158910" y="-575758" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="21:48:52" x="-4153419" y="-580371" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4158910" y="-575758" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa123">
+		<plan>
+			<act end_time="13:54:50" x="-4153942" y="-583470" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="18:54:50" x="-4163461" y="-586833" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4153942" y="-583470" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa124">
+		<plan>
+			<act end_time="04:32:56" x="-4156923" y="-577693" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="17:32:56" x="-4161419" y="-578863" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4156923" y="-577693" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa125">
+		<plan>
+			<act end_time="04:38:03" x="-4152472" y="-580079" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="22:38:03" x="-4157391" y="-575172" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4152472" y="-580079" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa126">
+		<plan>
+			<act end_time="05:45:38" x="-4158485" y="-579454" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="21:45:38" x="-4164197" y="-577682" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4158485" y="-579454" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa127">
+		<plan>
+			<act end_time="08:21:06" x="-4156897" y="-575743" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="22:21:06" x="-4161874" y="-578948" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4156897" y="-575743" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa128">
+		<plan>
+			<act end_time="07:22:16" x="-4151402" y="-581722" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="12:22:16" x="-4157375" y="-581697" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4151402" y="-581722" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa129">
+		<plan>
+			<act end_time="08:17:01" x="-4158686" y="-573669" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="13:17:01" x="-4150813" y="-581040" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4158686" y="-573669" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa130">
+		<plan>
+			<act end_time="04:03:20" x="-4154220" y="-581937" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:03:20" x="-4162277" y="-584268" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4154220" y="-581937" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa131">
+		<plan>
+			<act end_time="12:12:19" x="-4152092" y="-578560" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="18:12:19" x="-4157611" y="-583482" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4152092" y="-578560" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa132">
+		<plan>
+			<act end_time="04:34:27" x="-4156937" y="-581984" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="19:34:27" x="-4158561" y="-579681" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4156937" y="-581984" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa133">
+		<plan>
+			<act end_time="04:46:52" x="-4158918" y="-573016" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:46:52" x="-4150609" y="-581209" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4158918" y="-573016" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa134">
+		<plan>
+			<act end_time="04:12:02" x="-4157955" y="-577082" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="14:12:02" x="-4150840" y="-578688" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4157955" y="-577082" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa135">
+		<plan>
+			<act end_time="04:41:12" x="-4153034" y="-577393" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="11:41:12" x="-4156459" y="-582093" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4153034" y="-577393" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa136">
+		<plan>
+			<act end_time="14:30:18" x="-4152705" y="-580631" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="22:30:18" x="-4157383" y="-579401" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4152705" y="-580631" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa137">
+		<plan>
+			<act end_time="04:14:43" x="-4155104" y="-570883" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="12:14:43" x="-4151827" y="-581865" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="21:14:43" x="-4153814" y="-580612" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4155104" y="-570883" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa138">
+		<plan>
+			<act end_time="12:16:41" x="-4162795" y="-585059" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="22:16:41" x="-4149937" y="-579429" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4162795" y="-585059" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa139">
+		<plan>
+			<act end_time="11:51:52" x="-4161131" y="-575872" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="19:51:52" x="-4158753" y="-576246" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4161131" y="-575872" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa140">
+		<plan>
+			<act end_time="04:50:52" x="-4157043" y="-575924" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:50:52" x="-4152871" y="-578281" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4157043" y="-575924" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa141">
+		<plan>
+			<act end_time="08:14:36" x="-4160968" y="-578647" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:14:36" x="-4157876" y="-582740" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4160968" y="-578647" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa142">
+		<plan>
+			<act end_time="05:10:53" x="-4158552" y="-580316" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="20:10:53" x="-4151501" y="-580543" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4158552" y="-580316" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa143">
+		<plan>
+			<act end_time="04:38:51" x="-4157451" y="-579930" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="17:38:51" x="-4159550" y="-574929" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4157451" y="-579930" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa144">
+		<plan>
+			<act end_time="07:29:58" x="-4158399" y="-573667" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="22:29:58" x="-4160087" y="-576522" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4158399" y="-573667" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa145">
+		<plan>
+			<act end_time="13:01:24" x="-4159950" y="-577797" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="19:01:24" x="-4150866" y="-578652" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4159950" y="-577797" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa146">
+		<plan>
+			<act end_time="08:51:19" x="-4151018" y="-578405" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="11:51:19" x="-4158734" y="-574891" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:51:19" x="-4160118" y="-578358" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4151018" y="-578405" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa147">
+		<plan>
+			<act end_time="08:02:56" x="-4158870" y="-575721" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="11:02:56" x="-4159035" y="-581380" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:02:56" x="-4159266" y="-575987" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4158870" y="-575721" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa148">
+		<plan>
+			<act end_time="14:36:49" x="-4151388" y="-579332" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="17:36:49" x="-4151942" y="-580085" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4151388" y="-579332" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa149">
+		<plan>
+			<act end_time="05:59:56" x="-4156515" y="-583869" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="14:59:56" x="-4161925" y="-585328" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="22:59:56" x="-4156082" y="-575804" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4156515" y="-583869" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa150">
+		<plan>
+			<act end_time="08:10:21" x="-4157844" y="-576558" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="22:10:21" x="-4151834" y="-580649" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4157844" y="-576558" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa151">
+		<plan>
+			<act end_time="06:06:07" x="-4160285" y="-579792" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="21:06:07" x="-4156719" y="-580842" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4160285" y="-579792" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa152">
+		<plan>
+			<act end_time="07:04:02" x="-4159068" y="-577549" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:04:02" x="-4155655" y="-576959" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4159068" y="-577549" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa153">
+		<plan>
+			<act end_time="07:46:26" x="-4161510" y="-582320" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:46:26" x="-4161225" y="-578418" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4161510" y="-582320" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa154">
+		<plan>
+			<act end_time="08:09:45" x="-4159176" y="-574826" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="12:09:45" x="-4156822" y="-577035" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4159176" y="-574826" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa155">
+		<plan>
+			<act end_time="11:24:42" x="-4154614" y="-585236" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="21:24:42" x="-4155587" y="-580541" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4154614" y="-585236" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa156">
+		<plan>
+			<act end_time="05:33:22" x="-4159089" y="-577001" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="14:33:22" x="-4151472" y="-582367" type="shop"/>
+			<leg mode="pt"/>
+			<act end_time="19:33:22" x="-4149338" y="-580010" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4159089" y="-577001" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa157">
+		<plan>
+			<act end_time="13:27:57" x="-4161116" y="-572307" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="17:27:57" x="-4158180" y="-576285" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4161116" y="-572307" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa158">
+		<plan>
+			<act end_time="05:32:18" x="-4155430" y="-572647" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="21:32:18" x="-4157072" y="-573559" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4155430" y="-572647" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa159">
+		<plan>
+			<act end_time="13:30:36" x="-4155255" y="-583128" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="18:30:36" x="-4155993" y="-582913" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4155255" y="-583128" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa160">
+		<plan>
+			<act end_time="07:26:04" x="-4160267" y="-578189" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="21:26:04" x="-4158400" y="-577761" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4160267" y="-578189" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa161">
+		<plan>
+			<act end_time="06:46:59" x="-4159766" y="-577621" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="20:46:59" x="-4157618" y="-573119" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4159766" y="-577621" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa162">
+		<plan>
+			<act end_time="14:54:27" x="-4154820" y="-571132" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="19:54:27" x="-4157656" y="-582831" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4154820" y="-571132" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa163">
+		<plan>
+			<act end_time="05:23:44" x="-4160094" y="-576536" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="12:23:44" x="-4154184" y="-585093" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4160094" y="-576536" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa164">
+		<plan>
+			<act end_time="04:52:07" x="-4161747" y="-585053" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:52:07" x="-4159768" y="-579963" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4161747" y="-585053" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa165">
+		<plan>
+			<act end_time="08:35:07" x="-4151966" y="-578422" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="22:35:07" x="-4154082" y="-583891" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4151966" y="-578422" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa166">
+		<plan>
+			<act end_time="06:47:24" x="-4156637" y="-583527" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="19:47:24" x="-4161139" y="-577947" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4156637" y="-583527" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa167">
+		<plan>
+			<act end_time="07:57:38" x="-4152899" y="-578248" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="22:57:38" x="-4162029" y="-580723" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4152899" y="-578248" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa168">
+		<plan>
+			<act end_time="08:58:51" x="-4162832" y="-587161" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="13:58:51" x="-4155052" y="-571144" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4162832" y="-587161" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa169">
+		<plan>
+			<act end_time="14:49:08" x="-4157642" y="-583356" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="18:49:08" x="-4153241" y="-578626" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4157642" y="-583356" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa170">
+		<plan>
+			<act end_time="05:30:10" x="-4152677" y="-580462" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="17:30:10" x="-4157642" y="-573148" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4152677" y="-580462" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa171">
+		<plan>
+			<act end_time="11:13:17" x="-4153597" y="-571253" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="20:13:17" x="-4151719" y="-581985" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4153597" y="-571253" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa172">
+		<plan>
+			<act end_time="06:55:12" x="-4155815" y="-581499" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="19:55:12" x="-4152301" y="-578847" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4155815" y="-581499" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa173">
+		<plan>
+			<act end_time="07:09:21" x="-4154838" y="-583412" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="11:09:21" x="-4157477" y="-575237" type="shop"/>
+			<leg mode="pt"/>
+			<act end_time="22:09:21" x="-4156716" y="-573852" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4154838" y="-583412" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa174">
+		<plan>
+			<act end_time="13:36:30" x="-4155092" y="-584301" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="21:36:30" x="-4157783" y="-582116" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4155092" y="-584301" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa175">
+		<plan>
+			<act end_time="06:40:03" x="-4150518" y="-581167" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:40:03" x="-4151661" y="-580433" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4150518" y="-581167" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa176">
+		<plan>
+			<act end_time="08:43:29" x="-4152360" y="-580684" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="17:43:29" x="-4157002" y="-576340" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4152360" y="-580684" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa177">
+		<plan>
+			<act end_time="11:18:57" x="-4159172" y="-580798" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="21:18:57" x="-4161237" y="-571261" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4159172" y="-580798" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa178">
+		<plan>
+			<act end_time="05:04:48" x="-4160840" y="-572041" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:04:48" x="-4160972" y="-570591" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4160840" y="-572041" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa179">
+		<plan>
+			<act end_time="06:29:20" x="-4155317" y="-582677" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="21:29:20" x="-4159211" y="-578639" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4155317" y="-582677" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa180">
+		<plan>
+			<act end_time="05:51:29" x="-4155224" y="-583648" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:51:29" x="-4159007" y="-574142" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4155224" y="-583648" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa181">
+		<plan>
+			<act end_time="04:45:12" x="-4161337" y="-578046" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="13:45:12" x="-4153662" y="-575651" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="21:45:12" x="-4162934" y="-584698" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4161337" y="-578046" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa182">
+		<plan>
+			<act end_time="07:15:36" x="-4160381" y="-579266" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:15:36" x="-4159023" y="-582356" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4160381" y="-579266" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa183">
+		<plan>
+			<act end_time="04:21:08" x="-4155827" y="-580179" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="17:21:08" x="-4153290" y="-578402" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4155827" y="-580179" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa184">
+		<plan>
+			<act end_time="04:48:55" x="-4159238" y="-578813" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="12:48:55" x="-4151935" y="-578641" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4159238" y="-578813" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa185">
+		<plan>
+			<act end_time="06:19:19" x="-4157071" y="-578783" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:19:19" x="-4161762" y="-585285" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4157071" y="-578783" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa186">
+		<plan>
+			<act end_time="05:47:45" x="-4149300" y="-579254" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="11:47:45" x="-4149631" y="-579761" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4149300" y="-579254" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa187">
+		<plan>
+			<act end_time="08:48:59" x="-4155208" y="-571015" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:48:59" x="-4161012" y="-572691" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4155208" y="-571015" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa188">
+		<plan>
+			<act end_time="11:31:02" x="-4157537" y="-583518" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="17:31:02" x="-4152452" y="-580161" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4157537" y="-583518" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa189">
+		<plan>
+			<act end_time="04:01:21" x="-4158844" y="-573206" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="19:01:21" x="-4152737" y="-579928" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4158844" y="-573206" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa190">
+		<plan>
+			<act end_time="07:46:57" x="-4160755" y="-577858" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="17:46:57" x="-4154352" y="-583355" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4160755" y="-577858" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa191">
+		<plan>
+			<act end_time="06:33:28" x="-4154119" y="-581577" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:33:28" x="-4160295" y="-571002" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4154119" y="-581577" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa192">
+		<plan>
+			<act end_time="08:54:38" x="-4157701" y="-576103" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="21:54:38" x="-4159070" y="-581306" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4157701" y="-576103" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa193">
+		<plan>
+			<act end_time="04:02:57" x="-4154743" y="-580417" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:02:57" x="-4156096" y="-580343" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4154743" y="-580417" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa194">
+		<plan>
+			<act end_time="08:05:28" x="-4158872" y="-574928" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="14:05:28" x="-4151601" y="-578934" type="shop"/>
+			<leg mode="pt"/>
+			<act end_time="21:05:28" x="-4161387" y="-584623" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4158872" y="-574928" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa195">
+		<plan>
+			<act end_time="07:12:13" x="-4157447" y="-576979" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="19:12:13" x="-4152535" y="-580954" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4157447" y="-576979" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa196">
+		<plan>
+			<act end_time="04:18:39" x="-4160739" y="-575861" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:18:39" x="-4158635" y="-580166" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4160739" y="-575861" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa197">
+		<plan>
+			<act end_time="08:50:53" x="-4159838" y="-573723" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:50:53" x="-4153965" y="-583265" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4159838" y="-573723" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa198">
+		<plan>
+			<act end_time="04:24:18" x="-4150409" y="-574778" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:24:18" x="-4156741" y="-575181" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4150409" y="-574778" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa199">
+		<plan>
+			<act end_time="04:33:51" x="-4159897" y="-578299" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="22:33:51" x="-4151512" y="-581474" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4159897" y="-578299" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa200">
+		<plan>
+			<act end_time="04:08:09" x="-4162463" y="-586962" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="17:08:09" x="-4153500" y="-583334" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4162463" y="-586962" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa201">
+		<plan>
+			<act end_time="08:58:17" x="-4156380" y="-581096" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="14:58:17" x="-4153213" y="-579893" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4156380" y="-581096" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa202">
+		<plan>
+			<act end_time="07:24:53" x="-4155456" y="-576173" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="22:24:53" x="-4155528" y="-582520" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4155456" y="-576173" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa203">
+		<plan>
+			<act end_time="08:08:12" x="-4154820" y="-584248" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="19:08:12" x="-4160824" y="-579210" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4154820" y="-584248" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa204">
+		<plan>
+			<act end_time="05:00:06" x="-4160020" y="-579752" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:00:06" x="-4156683" y="-578652" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4160020" y="-579752" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa205">
+		<plan>
+			<act end_time="05:41:00" x="-4160877" y="-578648" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="22:41:00" x="-4157303" y="-576189" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4160877" y="-578648" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa206">
+		<plan>
+			<act end_time="08:41:02" x="-4153849" y="-583153" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:41:02" x="-4158742" y="-577702" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4153849" y="-583153" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa207">
+		<plan>
+			<act end_time="07:19:52" x="-4150263" y="-574686" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:19:52" x="-4160908" y="-578898" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4150263" y="-574686" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa208">
+		<plan>
+			<act end_time="07:54:43" x="-4158318" y="-576525" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="12:54:43" x="-4160149" y="-579270" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4158318" y="-576525" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa209">
+		<plan>
+			<act end_time="08:55:30" x="-4156370" y="-579543" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="21:55:30" x="-4156754" y="-582699" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4156370" y="-579543" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa210">
+		<plan>
+			<act end_time="14:51:42" x="-4154183" y="-579546" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="18:51:42" x="-4156960" y="-577296" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4154183" y="-579546" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa211">
+		<plan>
+			<act end_time="06:28:54" x="-4159306" y="-580295" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="21:28:54" x="-4163075" y="-584684" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4159306" y="-580295" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa212">
+		<plan>
+			<act end_time="11:30:13" x="-4163866" y="-586382" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="17:30:13" x="-4151999" y="-578474" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4163866" y="-586382" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa213">
+		<plan>
+			<act end_time="08:28:59" x="-4159928" y="-579990" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="21:28:59" x="-4152864" y="-584519" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4159928" y="-579990" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa214">
+		<plan>
+			<act end_time="11:42:06" x="-4160806" y="-570736" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="22:42:06" x="-4161240" y="-578945" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4160806" y="-570736" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa215">
+		<plan>
+			<act end_time="07:40:51" x="-4159075" y="-574027" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="13:40:51" x="-4159911" y="-573677" type="shop"/>
+			<leg mode="pt"/>
+			<act end_time="20:40:51" x="-4158668" y="-573779" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4159075" y="-574027" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa216">
+		<plan>
+			<act end_time="06:03:02" x="-4155650" y="-576926" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="22:03:02" x="-4152868" y="-584858" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4155650" y="-576926" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa217">
+		<plan>
+			<act end_time="04:12:52" x="-4160286" y="-579388" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="11:12:52" x="-4155713" y="-585165" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4160286" y="-579388" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa218">
+		<plan>
+			<act end_time="05:46:46" x="-4153601" y="-578981" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="21:46:46" x="-4159022" y="-576450" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4153601" y="-578981" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa219">
+		<plan>
+			<act end_time="07:58:18" x="-4156180" y="-580887" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="11:58:18" x="-4153340" y="-584227" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4156180" y="-580887" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa220">
+		<plan>
+			<act end_time="06:34:49" x="-4159878" y="-573230" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="21:34:49" x="-4151473" y="-581689" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4159878" y="-573230" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa221">
+		<plan>
+			<act end_time="06:15:56" x="-4155324" y="-581790" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:15:56" x="-4158636" y="-572959" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4155324" y="-581790" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa222">
+		<plan>
+			<act end_time="07:57:11" x="-4162359" y="-584213" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="13:57:11" x="-4156390" y="-580046" type="shop"/>
+			<leg mode="pt"/>
+			<act end_time="18:57:11" x="-4152275" y="-581084" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4162359" y="-584213" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa223">
+		<plan>
+			<act end_time="04:54:58" x="-4159977" y="-581297" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="21:54:58" x="-4151504" y="-580527" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4159977" y="-581297" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa224">
+		<plan>
+			<act end_time="06:29:10" x="-4156321" y="-581160" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:29:10" x="-4161223" y="-578938" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4156321" y="-581160" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa225">
+		<plan>
+			<act end_time="06:57:39" x="-4156006" y="-575710" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="17:57:39" x="-4154915" y="-581359" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4156006" y="-575710" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa226">
+		<plan>
+			<act end_time="11:20:10" x="-4153424" y="-579968" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="19:20:10" x="-4157179" y="-574002" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4153424" y="-579968" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa227">
+		<plan>
+			<act end_time="05:45:15" x="-4156216" y="-579870" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="14:45:15" x="-4162060" y="-579214" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4156216" y="-579870" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa228">
+		<plan>
+			<act end_time="04:10:12" x="-4158292" y="-574180" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="13:10:12" x="-4154343" y="-583103" type="shop"/>
+			<leg mode="pt"/>
+			<act end_time="22:10:12" x="-4157004" y="-582664" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4158292" y="-574180" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa229">
+		<plan>
+			<act end_time="08:21:47" x="-4156099" y="-582752" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="13:21:47" x="-4157543" y="-576895" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4156099" y="-582752" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa230">
+		<plan>
+			<act end_time="13:46:36" x="-4156647" y="-580435" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="21:46:36" x="-4162056" y="-585387" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4156647" y="-580435" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa231">
+		<plan>
+			<act end_time="07:54:15" x="-4154313" y="-584262" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:54:15" x="-4154176" y="-580437" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4154313" y="-584262" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa232">
+		<plan>
+			<act end_time="07:50:25" x="-4153968" y="-580421" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:50:25" x="-4153631" y="-585088" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4153968" y="-580421" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa233">
+		<plan>
+			<act end_time="07:15:26" x="-4152467" y="-577741" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="18:15:26" x="-4156258" y="-584300" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4152467" y="-577741" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa234">
+		<plan>
+			<act end_time="05:09:07" x="-4162166" y="-587069" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="21:09:07" x="-4153868" y="-584338" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4162166" y="-587069" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa235">
+		<plan>
+			<act end_time="08:25:57" x="-4161272" y="-578039" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="21:25:57" x="-4156543" y="-576272" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4161272" y="-578039" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa236">
+		<plan>
+			<act end_time="08:35:43" x="-4158356" y="-579110" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="11:35:43" x="-4160929" y="-572728" type="shop"/>
+			<leg mode="pt"/>
+			<act end_time="21:35:43" x="-4160558" y="-579360" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4158356" y="-579110" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa237">
+		<plan>
+			<act end_time="05:42:20" x="-4153683" y="-578286" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="17:42:20" x="-4158626" y="-579126" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4153683" y="-578286" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa238">
+		<plan>
+			<act end_time="13:46:45" x="-4155070" y="-581550" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="18:46:45" x="-4159018" y="-576268" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4155070" y="-581550" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa239">
+		<plan>
+			<act end_time="14:37:14" x="-4152944" y="-583516" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="17:37:14" x="-4161349" y="-573952" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4152944" y="-583516" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa240">
+		<plan>
+			<act end_time="07:42:47" x="-4156152" y="-580752" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="13:42:47" x="-4156384" y="-583686" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4156152" y="-580752" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa241">
+		<plan>
+			<act end_time="12:53:38" x="-4154273" y="-580314" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="19:53:38" x="-4151791" y="-581454" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4154273" y="-580314" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa242">
+		<plan>
+			<act end_time="14:58:57" x="-4162866" y="-577493" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="18:58:57" x="-4153100" y="-578590" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4162866" y="-577493" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa243">
+		<plan>
+			<act end_time="05:56:23" x="-4157900" y="-573703" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="12:56:23" x="-4154882" y="-583667" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="22:56:23" x="-4156410" y="-581743" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4157900" y="-573703" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa244">
+		<plan>
+			<act end_time="07:45:15" x="-4162622" y="-584717" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:45:15" x="-4155926" y="-577238" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4162622" y="-584717" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa245">
+		<plan>
+			<act end_time="08:15:23" x="-4159220" y="-577685" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="17:15:23" x="-4157314" y="-577758" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4159220" y="-577685" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa246">
+		<plan>
+			<act end_time="05:36:46" x="-4161514" y="-577937" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:36:46" x="-4156609" y="-583572" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4161514" y="-577937" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa247">
+		<plan>
+			<act end_time="13:39:41" x="-4164072" y="-577212" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="19:39:41" x="-4160575" y="-578035" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4164072" y="-577212" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa248">
+		<plan>
+			<act end_time="04:17:13" x="-4159587" y="-576081" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="14:17:13" x="-4150899" y="-578302" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4159587" y="-576081" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa249">
+		<plan>
+			<act end_time="08:14:48" x="-4156679" y="-576998" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:14:48" x="-4158269" y="-574305" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4156679" y="-576998" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa250">
+		<plan>
+			<act end_time="05:09:41" x="-4157963" y="-573245" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="17:09:41" x="-4157233" y="-576143" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4157963" y="-573245" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa251">
+		<plan>
+			<act end_time="05:27:07" x="-4152908" y="-578921" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="17:27:07" x="-4153672" y="-583246" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4152908" y="-578921" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa252">
+		<plan>
+			<act end_time="07:04:25" x="-4157348" y="-579771" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="21:04:25" x="-4153753" y="-583200" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4157348" y="-579771" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa253">
+		<plan>
+			<act end_time="13:51:03" x="-4152643" y="-580108" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="20:51:03" x="-4155753" y="-584073" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4152643" y="-580108" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa254">
+		<plan>
+			<act end_time="08:09:51" x="-4154877" y="-581466" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="13:09:51" x="-4160536" y="-577806" type="shop"/>
+			<leg mode="pt"/>
+			<act end_time="20:09:51" x="-4151281" y="-580657" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4154877" y="-581466" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa255">
+		<plan>
+			<act end_time="14:44:57" x="-4161640" y="-584569" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="21:44:57" x="-4158386" y="-582788" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4161640" y="-584569" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa256">
+		<plan>
+			<act end_time="12:56:04" x="-4150964" y="-579331" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="21:56:04" x="-4151047" y="-579347" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4150964" y="-579331" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa257">
+		<plan>
+			<act end_time="07:29:20" x="-4161178" y="-571373" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="19:29:20" x="-4161841" y="-584524" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4161178" y="-571373" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa258">
+		<plan>
+			<act end_time="05:00:04" x="-4162892" y="-584813" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:00:04" x="-4160302" y="-579214" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4162892" y="-584813" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa259">
+		<plan>
+			<act end_time="08:41:07" x="-4155977" y="-576728" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="19:41:07" x="-4159087" y="-577700" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4155977" y="-576728" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa260">
+		<plan>
+			<act end_time="13:06:55" x="-4161245" y="-579034" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="17:06:55" x="-4159861" y="-578699" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4161245" y="-579034" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa261">
+		<plan>
+			<act end_time="08:22:01" x="-4158618" y="-577133" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="12:22:01" x="-4162195" y="-585266" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="17:22:01" x="-4153777" y="-583360" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4158618" y="-577133" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa262">
+		<plan>
+			<act end_time="06:05:38" x="-4160865" y="-577310" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="14:05:38" x="-4155762" y="-572450" type="shop"/>
+			<leg mode="pt"/>
+			<act end_time="19:05:38" x="-4162447" y="-584244" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4160865" y="-577310" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa263">
+		<plan>
+			<act end_time="04:00:32" x="-4155972" y="-575061" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="14:00:32" x="-4156067" y="-575333" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4155972" y="-575061" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa264">
+		<plan>
+			<act end_time="07:13:03" x="-4159748" y="-579472" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="22:13:03" x="-4154880" y="-581028" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4159748" y="-579472" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa265">
+		<plan>
+			<act end_time="06:34:57" x="-4161519" y="-585680" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="18:34:57" x="-4158410" y="-576917" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4161519" y="-585680" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa266">
+		<plan>
+			<act end_time="05:10:26" x="-4155694" y="-580001" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="21:10:26" x="-4154860" y="-580252" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4155694" y="-580001" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa267">
+		<plan>
+			<act end_time="04:24:20" x="-4159452" y="-578287" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="17:24:20" x="-4159453" y="-574222" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4159452" y="-578287" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa268">
+		<plan>
+			<act end_time="05:04:22" x="-4151236" y="-580943" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="14:04:22" x="-4157903" y="-576535" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="17:04:22" x="-4161078" y="-578147" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4151236" y="-580943" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa269">
+		<plan>
+			<act end_time="06:59:04" x="-4153998" y="-579100" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="14:59:04" x="-4151586" y="-579124" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4153998" y="-579100" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa270">
+		<plan>
+			<act end_time="07:10:18" x="-4154439" y="-580958" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:10:18" x="-4160050" y="-579334" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4154439" y="-580958" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa271">
+		<plan>
+			<act end_time="08:31:53" x="-4154126" y="-581064" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="17:31:53" x="-4160883" y="-576950" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4154126" y="-581064" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa272">
+		<plan>
+			<act end_time="06:45:53" x="-4160584" y="-580525" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:45:53" x="-4157107" y="-578326" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4160584" y="-580525" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa273">
+		<plan>
+			<act end_time="11:05:02" x="-4156492" y="-573855" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="17:05:02" x="-4158650" y="-577348" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4156492" y="-573855" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa274">
+		<plan>
+			<act end_time="04:22:49" x="-4162307" y="-587171" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="21:22:49" x="-4155252" y="-575564" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4162307" y="-587171" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa275">
+		<plan>
+			<act end_time="07:06:32" x="-4162525" y="-587063" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="14:06:32" x="-4161661" y="-579320" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4162525" y="-587063" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa276">
+		<plan>
+			<act end_time="05:11:47" x="-4160148" y="-579611" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="13:11:47" x="-4159070" y="-578088" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4160148" y="-579611" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa277">
+		<plan>
+			<act end_time="04:26:37" x="-4152520" y="-584834" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:26:37" x="-4159972" y="-578895" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4152520" y="-584834" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa278">
+		<plan>
+			<act end_time="08:07:48" x="-4157932" y="-582777" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="17:07:48" x="-4154410" y="-579462" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4157932" y="-582777" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa279">
+		<plan>
+			<act end_time="07:19:00" x="-4155298" y="-571534" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="17:19:00" x="-4152139" y="-580449" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4155298" y="-571534" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa280">
+		<plan>
+			<act end_time="06:32:56" x="-4155412" y="-582492" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="13:32:56" x="-4157811" y="-576770" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="21:32:56" x="-4160575" y="-585731" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4155412" y="-582492" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa281">
+		<plan>
+			<act end_time="08:47:17" x="-4149766" y="-573889" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="22:47:17" x="-4153943" y="-579272" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4149766" y="-573889" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa282">
+		<plan>
+			<act end_time="07:27:56" x="-4152626" y="-580884" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="20:27:56" x="-4151332" y="-578204" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4152626" y="-580884" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa283">
+		<plan>
+			<act end_time="04:12:43" x="-4155887" y="-581612" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:12:43" x="-4159872" y="-578317" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4155887" y="-581612" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa284">
+		<plan>
+			<act end_time="12:14:25" x="-4158182" y="-576661" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="21:14:25" x="-4156162" y="-580830" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4158182" y="-576661" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa285">
+		<plan>
+			<act end_time="14:54:02" x="-4158751" y="-578544" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="18:54:02" x="-4161455" y="-572370" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4158751" y="-578544" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa286">
+		<plan>
+			<act end_time="05:44:36" x="-4151741" y="-578311" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:44:36" x="-4154972" y="-583112" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4151741" y="-578311" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa287">
+		<plan>
+			<act end_time="07:48:50" x="-4154638" y="-579700" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="17:48:50" x="-4163755" y="-584759" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4154638" y="-579700" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa288">
+		<plan>
+			<act end_time="06:55:10" x="-4161364" y="-571857" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="21:55:10" x="-4162798" y="-585070" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4161364" y="-571857" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa289">
+		<plan>
+			<act end_time="06:09:18" x="-4160454" y="-577398" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="11:09:18" x="-4152823" y="-579737" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4160454" y="-577398" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa290">
+		<plan>
+			<act end_time="04:17:35" x="-4160317" y="-582898" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="20:17:35" x="-4153567" y="-580690" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4160317" y="-582898" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa291">
+		<plan>
+			<act end_time="05:57:08" x="-4161472" y="-578003" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:57:08" x="-4153653" y="-571234" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4161472" y="-578003" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa292">
+		<plan>
+			<act end_time="08:28:04" x="-4153355" y="-580105" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:28:04" x="-4153504" y="-586856" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4153355" y="-580105" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa293">
+		<plan>
+			<act end_time="05:00:23" x="-4151626" y="-581918" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="22:00:23" x="-4158193" y="-574679" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4151626" y="-581918" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa294">
+		<plan>
+			<act end_time="05:57:33" x="-4158348" y="-577512" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="21:57:33" x="-4153807" y="-583014" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4158348" y="-577512" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa295">
+		<plan>
+			<act end_time="06:23:12" x="-4163090" y="-585047" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:23:12" x="-4152382" y="-574376" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4163090" y="-585047" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa296">
+		<plan>
+			<act end_time="08:01:07" x="-4152776" y="-579802" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:01:07" x="-4164124" y="-586436" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4152776" y="-579802" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa297">
+		<plan>
+			<act end_time="08:33:44" x="-4155419" y="-579278" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="17:33:44" x="-4157814" y="-583353" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4155419" y="-579278" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa298">
+		<plan>
+			<act end_time="06:26:41" x="-4149591" y="-577745" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:26:41" x="-4152614" y="-575173" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4149591" y="-577745" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa299">
+		<plan>
+			<act end_time="14:03:03" x="-4158410" y="-573935" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="20:03:03" x="-4159600" y="-578042" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4158410" y="-573935" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa300">
+		<plan>
+			<act end_time="13:31:16" x="-4158823" y="-580312" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="19:31:16" x="-4156632" y="-575586" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4158823" y="-580312" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa301">
+		<plan>
+			<act end_time="08:56:47" x="-4157513" y="-576956" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="17:56:47" x="-4155324" y="-581784" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4157513" y="-576956" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa302">
+		<plan>
+			<act end_time="08:50:44" x="-4155715" y="-585461" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="17:50:44" x="-4151697" y="-580605" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4155715" y="-585461" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa303">
+		<plan>
+			<act end_time="05:42:26" x="-4155927" y="-580510" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:42:26" x="-4160553" y="-579996" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4155927" y="-580510" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa304">
+		<plan>
+			<act end_time="04:28:00" x="-4162609" y="-585246" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="21:28:00" x="-4158474" y="-583010" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4162609" y="-585246" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa305">
+		<plan>
+			<act end_time="06:36:52" x="-4154874" y="-583983" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:36:52" x="-4162510" y="-585114" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4154874" y="-583983" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa306">
+		<plan>
+			<act end_time="06:42:10" x="-4161303" y="-577994" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:42:10" x="-4163790" y="-584765" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4161303" y="-577994" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa307">
+		<plan>
+			<act end_time="08:54:45" x="-4160159" y="-577887" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="17:54:45" x="-4157478" y="-573169" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4160159" y="-577887" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa308">
+		<plan>
+			<act end_time="08:50:43" x="-4152840" y="-580636" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="12:50:43" x="-4161424" y="-584850" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4152840" y="-580636" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa309">
+		<plan>
+			<act end_time="14:13:12" x="-4150668" y="-581659" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="20:13:12" x="-4160033" y="-573969" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4150668" y="-581659" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa310">
+		<plan>
+			<act end_time="07:40:55" x="-4151836" y="-578511" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="12:40:55" x="-4155020" y="-580633" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4151836" y="-578511" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa311">
+		<plan>
+			<act end_time="13:49:41" x="-4153241" y="-580273" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="21:49:41" x="-4162994" y="-586920" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4153241" y="-580273" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa312">
+		<plan>
+			<act end_time="12:15:29" x="-4160880" y="-577093" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="19:15:29" x="-4155247" y="-584075" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4160880" y="-577093" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa313">
+		<plan>
+			<act end_time="04:07:25" x="-4163202" y="-584486" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:07:25" x="-4153576" y="-580863" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4163202" y="-584486" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa314">
+		<plan>
+			<act end_time="06:08:05" x="-4161566" y="-572141" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="14:08:05" x="-4160825" y="-579647" type="shop"/>
+			<leg mode="pt"/>
+			<act end_time="21:08:05" x="-4162410" y="-580113" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4161566" y="-572141" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa315">
+		<plan>
+			<act end_time="08:52:55" x="-4152915" y="-584290" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="21:52:55" x="-4158777" y="-573837" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4152915" y="-584290" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa316">
+		<plan>
+			<act end_time="07:40:12" x="-4153081" y="-580007" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="21:40:12" x="-4160491" y="-574929" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4153081" y="-580007" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa317">
+		<plan>
+			<act end_time="05:55:49" x="-4153441" y="-579547" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="11:55:49" x="-4154308" y="-582885" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="22:55:49" x="-4156920" y="-583680" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4153441" y="-579547" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa318">
+		<plan>
+			<act end_time="11:32:15" x="-4160021" y="-581304" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="18:32:15" x="-4153971" y="-581135" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4160021" y="-581304" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa319">
+		<plan>
+			<act end_time="07:48:56" x="-4153642" y="-584369" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="13:48:56" x="-4159495" y="-574089" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:48:56" x="-4153377" y="-580552" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4153642" y="-584369" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa320">
+		<plan>
+			<act end_time="05:37:16" x="-4153118" y="-583687" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="19:37:16" x="-4154965" y="-579894" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4153118" y="-583687" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa321">
+		<plan>
+			<act end_time="04:27:26" x="-4162726" y="-586871" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="22:27:26" x="-4155169" y="-579916" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4162726" y="-586871" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa322">
+		<plan>
+			<act end_time="08:32:46" x="-4161626" y="-585361" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:32:46" x="-4161556" y="-582318" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4161626" y="-585361" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa323">
+		<plan>
+			<act end_time="06:01:52" x="-4159771" y="-576769" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="21:01:52" x="-4157883" y="-574624" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4159771" y="-576769" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa324">
+		<plan>
+			<act end_time="06:26:29" x="-4159513" y="-575730" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="11:26:29" x="-4151372" y="-579110" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:26:29" x="-4159805" y="-574207" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4159513" y="-575730" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa325">
+		<plan>
+			<act end_time="06:40:59" x="-4157611" y="-579080" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="12:40:59" x="-4155478" y="-583866" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4157611" y="-579080" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa326">
+		<plan>
+			<act end_time="11:47:50" x="-4156654" y="-573469" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="18:47:50" x="-4152082" y="-581056" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4156654" y="-573469" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa327">
+		<plan>
+			<act end_time="06:12:53" x="-4161230" y="-574563" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="17:12:53" x="-4162101" y="-585417" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4161230" y="-574563" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa328">
+		<plan>
+			<act end_time="06:29:08" x="-4152938" y="-580488" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="14:29:08" x="-4157636" y="-579387" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="21:29:08" x="-4152053" y="-579032" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4152938" y="-580488" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa329">
+		<plan>
+			<act end_time="08:53:01" x="-4149990" y="-579202" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="12:53:01" x="-4161182" y="-578698" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4149990" y="-579202" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa330">
+		<plan>
+			<act end_time="04:02:43" x="-4152624" y="-578838" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="12:02:43" x="-4154414" y="-582631" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4152624" y="-578838" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa331">
+		<plan>
+			<act end_time="07:19:29" x="-4159590" y="-578557" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="14:19:29" x="-4159288" y="-577821" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4159590" y="-578557" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa332">
+		<plan>
+			<act end_time="11:10:32" x="-4151956" y="-581155" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="21:10:32" x="-4162370" y="-584265" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4151956" y="-581155" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa333">
+		<plan>
+			<act end_time="14:51:42" x="-4161474" y="-579358" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="19:51:42" x="-4152070" y="-580443" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4161474" y="-579358" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa334">
+		<plan>
+			<act end_time="06:30:01" x="-4150159" y="-574244" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:30:01" x="-4155160" y="-581301" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4150159" y="-574244" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa335">
+		<plan>
+			<act end_time="06:08:03" x="-4159950" y="-573763" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:08:03" x="-4150821" y="-578713" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4159950" y="-573763" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa336">
+		<plan>
+			<act end_time="04:54:46" x="-4163731" y="-584736" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:54:46" x="-4158563" y="-575618" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4163731" y="-584736" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa337">
+		<plan>
+			<act end_time="06:05:47" x="-4158389" y="-575088" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:05:47" x="-4160310" y="-579700" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4158389" y="-575088" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa338">
+		<plan>
+			<act end_time="04:19:25" x="-4159434" y="-576905" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="11:19:25" x="-4153487" y="-585048" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4159434" y="-576905" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa339">
+		<plan>
+			<act end_time="06:26:48" x="-4161492" y="-578093" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="13:26:48" x="-4157270" y="-579386" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4161492" y="-578093" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa340">
+		<plan>
+			<act end_time="04:27:12" x="-4159533" y="-577638" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="21:27:12" x="-4153181" y="-579721" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4159533" y="-577638" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa341">
+		<plan>
+			<act end_time="07:39:17" x="-4156479" y="-582609" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:39:17" x="-4153696" y="-580154" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4156479" y="-582609" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa342">
+		<plan>
+			<act end_time="04:01:55" x="-4155541" y="-582098" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="14:01:55" x="-4156580" y="-578769" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4155541" y="-582098" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa343">
+		<plan>
+			<act end_time="05:58:57" x="-4159283" y="-577309" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:58:57" x="-4155167" y="-571042" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4159283" y="-577309" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa344">
+		<plan>
+			<act end_time="08:16:35" x="-4162637" y="-580014" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:16:35" x="-4158792" y="-574806" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4162637" y="-580014" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa345">
+		<plan>
+			<act end_time="08:24:21" x="-4163415" y="-586863" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:24:21" x="-4155944" y="-575038" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4163415" y="-586863" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa346">
+		<plan>
+			<act end_time="12:28:27" x="-4151835" y="-578967" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="21:28:27" x="-4157016" y="-575562" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4151835" y="-578967" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa347">
+		<plan>
+			<act end_time="11:42:26" x="-4156575" y="-575850" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="21:42:26" x="-4159295" y="-577629" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4156575" y="-575850" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa348">
+		<plan>
+			<act end_time="13:49:53" x="-4155066" y="-570517" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="19:49:53" x="-4158486" y="-578851" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4155066" y="-570517" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa349">
+		<plan>
+			<act end_time="08:08:09" x="-4156780" y="-583712" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:08:09" x="-4159935" y="-578373" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4156780" y="-583712" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa350">
+		<plan>
+			<act end_time="13:07:54" x="-4156173" y="-573676" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="22:07:54" x="-4158008" y="-577039" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4156173" y="-573676" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa351">
+		<plan>
+			<act end_time="08:48:44" x="-4156287" y="-582596" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:48:44" x="-4154819" y="-583484" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4156287" y="-582596" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa352">
+		<plan>
+			<act end_time="08:46:41" x="-4157561" y="-582831" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="12:46:41" x="-4149946" y="-579228" type="shop"/>
+			<leg mode="pt"/>
+			<act end_time="22:46:41" x="-4159502" y="-574042" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4157561" y="-582831" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa353">
+		<plan>
+			<act end_time="05:09:33" x="-4152674" y="-579844" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:09:33" x="-4159134" y="-577878" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4152674" y="-579844" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa354">
+		<plan>
+			<act end_time="08:26:17" x="-4158939" y="-578489" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="17:26:17" x="-4149923" y="-580797" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4158939" y="-578489" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa355">
+		<plan>
+			<act end_time="04:33:42" x="-4161607" y="-572314" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="12:33:42" x="-4161004" y="-575946" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4161607" y="-572314" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa356">
+		<plan>
+			<act end_time="14:55:56" x="-4157209" y="-575918" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="22:55:56" x="-4160220" y="-580468" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4157209" y="-575918" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa357">
+		<plan>
+			<act end_time="11:51:44" x="-4159242" y="-576420" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="20:51:44" x="-4155633" y="-580322" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4159242" y="-576420" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa358">
+		<plan>
+			<act end_time="08:28:21" x="-4153668" y="-578267" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="13:28:21" x="-4154276" y="-579882" type="shop"/>
+			<leg mode="pt"/>
+			<act end_time="21:28:21" x="-4154173" y="-583998" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4153668" y="-578267" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa359">
+		<plan>
+			<act end_time="06:40:05" x="-4151633" y="-581318" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="11:40:05" x="-4160447" y="-578077" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4151633" y="-581318" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa360">
+		<plan>
+			<act end_time="11:41:06" x="-4159010" y="-573461" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="19:41:06" x="-4163285" y="-586748" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4159010" y="-573461" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa361">
+		<plan>
+			<act end_time="04:02:15" x="-4156171" y="-577624" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="12:02:15" x="-4164149" y="-586463" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4156171" y="-577624" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa362">
+		<plan>
+			<act end_time="11:01:59" x="-4158665" y="-576808" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="17:01:59" x="-4160870" y="-577785" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4158665" y="-576808" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa363">
+		<plan>
+			<act end_time="12:27:23" x="-4159889" y="-578975" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="21:27:23" x="-4155221" y="-580637" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4159889" y="-578975" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa364">
+		<plan>
+			<act end_time="07:44:25" x="-4153783" y="-583381" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:44:25" x="-4157701" y="-577423" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4153783" y="-583381" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa365">
+		<plan>
+			<act end_time="13:14:08" x="-4153176" y="-583587" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="21:14:08" x="-4155811" y="-580482" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4153176" y="-583587" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa366">
+		<plan>
+			<act end_time="05:31:58" x="-4152562" y="-578682" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="13:31:58" x="-4155214" y="-575555" type="shop"/>
+			<leg mode="pt"/>
+			<act end_time="22:31:58" x="-4153382" y="-583556" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4152562" y="-578682" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa367">
+		<plan>
+			<act end_time="14:17:31" x="-4159872" y="-579695" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="19:17:31" x="-4151639" y="-581760" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4159872" y="-579695" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa368">
+		<plan>
+			<act end_time="04:19:16" x="-4159240" y="-572891" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="12:19:16" x="-4154331" y="-579894" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4159240" y="-572891" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa369">
+		<plan>
+			<act end_time="12:37:48" x="-4155908" y="-577642" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="22:37:48" x="-4153469" y="-579643" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4155908" y="-577642" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa370">
+		<plan>
+			<act end_time="07:02:56" x="-4153435" y="-577981" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="21:02:56" x="-4160434" y="-579234" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4153435" y="-577981" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa371">
+		<plan>
+			<act end_time="11:51:53" x="-4158639" y="-574938" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="18:51:53" x="-4159126" y="-573921" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4158639" y="-574938" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa372">
+		<plan>
+			<act end_time="04:40:16" x="-4156065" y="-582078" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="17:40:16" x="-4158824" y="-573867" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4156065" y="-582078" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa373">
+		<plan>
+			<act end_time="08:08:27" x="-4151119" y="-578314" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:08:27" x="-4152899" y="-578417" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4151119" y="-578314" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa374">
+		<plan>
+			<act end_time="06:47:18" x="-4154036" y="-583115" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="12:47:18" x="-4156890" y="-576407" type="shop"/>
+			<leg mode="pt"/>
+			<act end_time="17:47:18" x="-4150312" y="-581348" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4154036" y="-583115" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa375">
+		<plan>
+			<act end_time="04:40:05" x="-4158700" y="-573014" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="22:40:05" x="-4162531" y="-577651" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4158700" y="-573014" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa376">
+		<plan>
+			<act end_time="07:14:53" x="-4159482" y="-573668" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:14:53" x="-4155587" y="-575568" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4159482" y="-573668" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa377">
+		<plan>
+			<act end_time="05:17:01" x="-4157639" y="-583321" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="20:17:01" x="-4157399" y="-579833" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4157639" y="-583321" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa378">
+		<plan>
+			<act end_time="06:25:50" x="-4157698" y="-582081" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="22:25:50" x="-4163638" y="-586752" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4157698" y="-582081" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa379">
+		<plan>
+			<act end_time="08:05:53" x="-4156786" y="-581606" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="22:05:53" x="-4158727" y="-578564" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4156786" y="-581606" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa380">
+		<plan>
+			<act end_time="07:30:23" x="-4159034" y="-580691" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="12:30:23" x="-4155431" y="-570735" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4159034" y="-580691" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa381">
+		<plan>
+			<act end_time="07:37:30" x="-4157879" y="-582825" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:37:30" x="-4155802" y="-570663" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4157879" y="-582825" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa382">
+		<plan>
+			<act end_time="05:43:05" x="-4156278" y="-580356" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="17:43:05" x="-4157068" y="-581137" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4156278" y="-580356" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa383">
+		<plan>
+			<act end_time="14:11:42" x="-4160943" y="-579430" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="19:11:42" x="-4159681" y="-578751" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4160943" y="-579430" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa384">
+		<plan>
+			<act end_time="12:10:31" x="-4160466" y="-576593" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="20:10:31" x="-4160439" y="-577334" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4160466" y="-576593" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa385">
+		<plan>
+			<act end_time="04:41:57" x="-4154320" y="-583393" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:41:57" x="-4150498" y="-582350" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4154320" y="-583393" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa386">
+		<plan>
+			<act end_time="07:21:22" x="-4154809" y="-582446" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:21:22" x="-4152694" y="-579838" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4154809" y="-582446" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa387">
+		<plan>
+			<act end_time="08:01:52" x="-4152050" y="-580121" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="19:01:52" x="-4161507" y="-585180" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4152050" y="-580121" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa388">
+		<plan>
+			<act end_time="06:34:23" x="-4157432" y="-577346" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="14:34:23" x="-4154745" y="-582211" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4157432" y="-577346" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa389">
+		<plan>
+			<act end_time="08:20:07" x="-4156974" y="-582704" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:20:07" x="-4154460" y="-579364" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4156974" y="-582704" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa390">
+		<plan>
+			<act end_time="07:56:47" x="-4154604" y="-581965" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="11:56:47" x="-4154865" y="-584779" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4154604" y="-581965" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa391">
+		<plan>
+			<act end_time="06:13:30" x="-4156040" y="-570547" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="17:13:30" x="-4151762" y="-578418" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4156040" y="-570547" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa392">
+		<plan>
+			<act end_time="14:46:14" x="-4157935" y="-582823" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="22:46:14" x="-4156159" y="-570266" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4157935" y="-582823" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa393">
+		<plan>
+			<act end_time="04:47:37" x="-4156975" y="-578867" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="21:47:37" x="-4150109" y="-581738" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4156975" y="-578867" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa394">
+		<plan>
+			<act end_time="06:03:25" x="-4151603" y="-581957" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="13:03:25" x="-4157498" y="-573175" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4151603" y="-581957" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa395">
+		<plan>
+			<act end_time="06:06:28" x="-4155812" y="-570877" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:06:28" x="-4155281" y="-570552" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4155812" y="-570877" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa396">
+		<plan>
+			<act end_time="07:38:12" x="-4157601" y="-575819" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="17:38:12" x="-4162730" y="-584118" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4157601" y="-575819" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa397">
+		<plan>
+			<act end_time="13:38:24" x="-4152584" y="-579669" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="21:38:24" x="-4160370" y="-579974" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4152584" y="-579669" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa398">
+		<plan>
+			<act end_time="06:15:21" x="-4157451" y="-579348" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:15:21" x="-4149929" y="-574053" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4157451" y="-579348" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa399">
+		<plan>
+			<act end_time="06:47:28" x="-4159950" y="-574600" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="17:47:28" x="-4163362" y="-584704" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4159950" y="-574600" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa400">
+		<plan>
+			<act end_time="05:37:15" x="-4155001" y="-571436" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:37:15" x="-4157007" y="-575221" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4155001" y="-571436" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa401">
+		<plan>
+			<act end_time="14:11:42" x="-4154952" y="-583872" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="22:11:42" x="-4158727" y="-573980" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4154952" y="-583872" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa402">
+		<plan>
+			<act end_time="05:56:15" x="-4152577" y="-580767" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:56:15" x="-4156774" y="-575814" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4152577" y="-580767" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa403">
+		<plan>
+			<act end_time="05:43:15" x="-4156094" y="-570745" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:43:15" x="-4152010" y="-581262" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4156094" y="-570745" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa404">
+		<plan>
+			<act end_time="05:33:29" x="-4154953" y="-581599" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="17:33:29" x="-4157090" y="-578121" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4154953" y="-581599" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa405">
+		<plan>
+			<act end_time="05:15:08" x="-4151046" y="-581120" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:15:08" x="-4155152" y="-582470" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4151046" y="-581120" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa406">
+		<plan>
+			<act end_time="14:01:46" x="-4155059" y="-583659" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="22:01:46" x="-4151339" y="-579303" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4155059" y="-583659" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa407">
+		<plan>
+			<act end_time="14:22:21" x="-4154407" y="-579805" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="22:22:21" x="-4152712" y="-585058" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4154407" y="-579805" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa408">
+		<plan>
+			<act end_time="08:07:00" x="-4156668" y="-581045" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="12:07:00" x="-4153105" y="-584582" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4156668" y="-581045" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa409">
+		<plan>
+			<act end_time="05:00:12" x="-4150893" y="-582396" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:00:12" x="-4155663" y="-581302" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4150893" y="-582396" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa410">
+		<plan>
+			<act end_time="06:25:46" x="-4162595" y="-584254" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:25:46" x="-4155008" y="-583213" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4162595" y="-584254" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa411">
+		<plan>
+			<act end_time="13:08:59" x="-4158524" y="-579002" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="17:08:59" x="-4162044" y="-584545" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4158524" y="-579002" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa412">
+		<plan>
+			<act end_time="05:05:40" x="-4157921" y="-577729" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="22:05:40" x="-4162388" y="-584992" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4157921" y="-577729" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa413">
+		<plan>
+			<act end_time="12:33:14" x="-4155852" y="-580176" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="17:33:14" x="-4152621" y="-580834" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4155852" y="-580176" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa414">
+		<plan>
+			<act end_time="05:39:05" x="-4150638" y="-581299" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:39:05" x="-4157826" y="-576680" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4150638" y="-581299" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa415">
+		<plan>
+			<act end_time="08:41:13" x="-4155222" y="-581025" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="17:41:13" x="-4158805" y="-577298" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4155222" y="-581025" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa416">
+		<plan>
+			<act end_time="05:40:50" x="-4150217" y="-581680" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:40:50" x="-4152849" y="-579829" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4150217" y="-581680" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa417">
+		<plan>
+			<act end_time="14:49:31" x="-4158927" y="-578064" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="18:49:31" x="-4155101" y="-579780" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4158927" y="-578064" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa418">
+		<plan>
+			<act end_time="04:28:48" x="-4150418" y="-581334" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="13:28:48" x="-4159300" y="-576567" type="shop"/>
+			<leg mode="pt"/>
+			<act end_time="20:28:48" x="-4163258" y="-584038" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4150418" y="-581334" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa419">
+		<plan>
+			<act end_time="04:13:13" x="-4158945" y="-574124" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:13:13" x="-4158602" y="-580619" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4158945" y="-574124" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa420">
+		<plan>
+			<act end_time="04:19:26" x="-4156215" y="-570382" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="21:19:26" x="-4160320" y="-579897" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4156215" y="-570382" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa421">
+		<plan>
+			<act end_time="07:18:16" x="-4154380" y="-580904" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:18:16" x="-4156623" y="-583585" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4154380" y="-580904" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa422">
+		<plan>
+			<act end_time="07:21:17" x="-4153834" y="-578539" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="13:21:17" x="-4151521" y="-578512" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4153834" y="-578539" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa423">
+		<plan>
+			<act end_time="06:25:06" x="-4161105" y="-575859" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="14:25:06" x="-4155005" y="-571198" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="17:25:06" x="-4153868" y="-580360" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4161105" y="-575859" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa424">
+		<plan>
+			<act end_time="06:45:26" x="-4154889" y="-583629" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="11:45:26" x="-4160617" y="-576167" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4154889" y="-583629" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa425">
+		<plan>
+			<act end_time="05:20:50" x="-4157094" y="-579000" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="11:20:50" x="-4159627" y="-575310" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4157094" y="-579000" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa426">
+		<plan>
+			<act end_time="04:41:07" x="-4161528" y="-577817" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="13:41:07" x="-4158781" y="-573900" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4161528" y="-577817" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa427">
+		<plan>
+			<act end_time="06:03:10" x="-4158729" y="-575233" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="17:03:10" x="-4150351" y="-579372" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4158729" y="-575233" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa428">
+		<plan>
+			<act end_time="05:04:03" x="-4159714" y="-577141" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="14:04:03" x="-4158862" y="-576913" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="21:04:03" x="-4150250" y="-581716" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4159714" y="-577141" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa429">
+		<plan>
+			<act end_time="05:06:46" x="-4154930" y="-576571" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="11:06:46" x="-4162276" y="-584490" type="shop"/>
+			<leg mode="pt"/>
+			<act end_time="20:06:46" x="-4158019" y="-573715" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4154930" y="-576571" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa430">
+		<plan>
+			<act end_time="07:20:42" x="-4159822" y="-579591" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="20:20:42" x="-4163324" y="-584370" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4159822" y="-579591" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa431">
+		<plan>
+			<act end_time="06:26:22" x="-4153352" y="-583317" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="14:26:22" x="-4153239" y="-579896" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="21:26:22" x="-4153222" y="-581250" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4153352" y="-583317" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa432">
+		<plan>
+			<act end_time="07:00:34" x="-4151482" y="-580797" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="11:00:34" x="-4153043" y="-584733" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="22:00:34" x="-4156393" y="-575673" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4151482" y="-580797" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa433">
+		<plan>
+			<act end_time="05:35:35" x="-4154854" y="-585708" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:35:35" x="-4156701" y="-570120" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4154854" y="-585708" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa434">
+		<plan>
+			<act end_time="06:43:02" x="-4157147" y="-581582" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="21:43:02" x="-4161068" y="-574358" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4157147" y="-581582" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa435">
+		<plan>
+			<act end_time="05:28:58" x="-4154734" y="-584974" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:28:58" x="-4159648" y="-572849" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4154734" y="-584974" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa436">
+		<plan>
+			<act end_time="07:59:55" x="-4157883" y="-583805" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:59:55" x="-4163034" y="-584103" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4157883" y="-583805" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa437">
+		<plan>
+			<act end_time="05:32:10" x="-4150727" y="-579057" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="19:32:10" x="-4159401" y="-573666" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4150727" y="-579057" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa438">
+		<plan>
+			<act end_time="08:55:04" x="-4154417" y="-584960" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="22:55:04" x="-4160117" y="-579823" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4154417" y="-584960" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa439">
+		<plan>
+			<act end_time="06:48:17" x="-4150519" y="-582133" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="14:48:17" x="-4159513" y="-573201" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="22:48:17" x="-4151358" y="-580639" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4150519" y="-582133" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa440">
+		<plan>
+			<act end_time="08:16:47" x="-4155422" y="-581740" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:16:47" x="-4155629" y="-582099" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4155422" y="-581740" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa441">
+		<plan>
+			<act end_time="06:51:57" x="-4157833" y="-577311" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="22:51:57" x="-4158994" y="-575836" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4157833" y="-577311" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa442">
+		<plan>
+			<act end_time="07:28:15" x="-4150378" y="-581825" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:28:15" x="-4159471" y="-576418" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4150378" y="-581825" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa443">
+		<plan>
+			<act end_time="06:32:15" x="-4151579" y="-578663" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="21:32:15" x="-4154685" y="-585199" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4151579" y="-578663" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa444">
+		<plan>
+			<act end_time="12:29:47" x="-4161555" y="-572291" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="19:29:47" x="-4155413" y="-582100" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4161555" y="-572291" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa445">
+		<plan>
+			<act end_time="06:54:07" x="-4161758" y="-585063" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:54:07" x="-4159910" y="-575281" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4161758" y="-585063" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa446">
+		<plan>
+			<act end_time="05:58:03" x="-4162533" y="-579787" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:58:03" x="-4154096" y="-583208" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4162533" y="-579787" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa447">
+		<plan>
+			<act end_time="04:10:30" x="-4153108" y="-579583" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="14:10:30" x="-4160563" y="-579504" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="22:10:30" x="-4152515" y="-579924" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4153108" y="-579583" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa448">
+		<plan>
+			<act end_time="11:10:38" x="-4157352" y="-583041" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="20:10:38" x="-4157816" y="-575536" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4157352" y="-583041" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa449">
+		<plan>
+			<act end_time="05:44:34" x="-4160128" y="-578961" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:44:34" x="-4150894" y="-580781" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4160128" y="-578961" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa450">
+		<plan>
+			<act end_time="04:56:30" x="-4158991" y="-575264" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:56:30" x="-4163371" y="-586881" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4158991" y="-575264" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa451">
+		<plan>
+			<act end_time="06:39:41" x="-4159333" y="-573237" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="21:39:41" x="-4157872" y="-577251" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4159333" y="-573237" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa452">
+		<plan>
+			<act end_time="14:33:12" x="-4161287" y="-572242" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="19:33:12" x="-4156688" y="-581652" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4161287" y="-572242" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa453">
+		<plan>
+			<act end_time="07:25:42" x="-4155440" y="-575242" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="13:25:42" x="-4153352" y="-579450" type="shop"/>
+			<leg mode="pt"/>
+			<act end_time="20:25:42" x="-4155284" y="-575589" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4155440" y="-575242" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa454">
+		<plan>
+			<act end_time="14:11:18" x="-4154394" y="-581480" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="22:11:18" x="-4156640" y="-575906" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4154394" y="-581480" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa455">
+		<plan>
+			<act end_time="04:13:08" x="-4153610" y="-571244" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:13:08" x="-4154036" y="-587028" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4153610" y="-571244" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa456">
+		<plan>
+			<act end_time="07:11:02" x="-4154214" y="-573226" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="12:11:02" x="-4157603" y="-575645" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4154214" y="-573226" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa457">
+		<plan>
+			<act end_time="07:33:23" x="-4162326" y="-577870" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="14:33:23" x="-4156646" y="-576646" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4162326" y="-577870" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa458">
+		<plan>
+			<act end_time="04:05:34" x="-4158632" y="-577589" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:05:34" x="-4151304" y="-579613" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4158632" y="-577589" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa459">
+		<plan>
+			<act end_time="06:04:36" x="-4159329" y="-577004" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="21:04:36" x="-4153537" y="-580471" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4159329" y="-577004" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa460">
+		<plan>
+			<act end_time="04:56:42" x="-4152323" y="-578795" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:56:42" x="-4154455" y="-583814" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4152323" y="-578795" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa461">
+		<plan>
+			<act end_time="08:02:49" x="-4160941" y="-577794" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:02:49" x="-4156409" y="-580628" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4160941" y="-577794" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa462">
+		<plan>
+			<act end_time="05:47:46" x="-4150817" y="-582594" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="14:47:46" x="-4154022" y="-572848" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:47:46" x="-4155649" y="-575975" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4150817" y="-582594" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa463">
+		<plan>
+			<act end_time="14:51:44" x="-4157371" y="-575806" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="22:51:44" x="-4161528" y="-578750" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4157371" y="-575806" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa464">
+		<plan>
+			<act end_time="06:59:28" x="-4161648" y="-585528" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="13:59:28" x="-4154247" y="-580325" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4161648" y="-585528" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa465">
+		<plan>
+			<act end_time="07:23:33" x="-4155176" y="-582190" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="14:23:33" x="-4151626" y="-581893" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4155176" y="-582190" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa466">
+		<plan>
+			<act end_time="11:42:40" x="-4157087" y="-575845" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="21:42:40" x="-4151805" y="-579219" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4157087" y="-575845" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa467">
+		<plan>
+			<act end_time="06:39:22" x="-4162662" y="-577759" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="11:39:22" x="-4163110" y="-586980" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4162662" y="-577759" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa468">
+		<plan>
+			<act end_time="06:59:44" x="-4163546" y="-586660" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="14:59:44" x="-4150026" y="-579305" type="shop"/>
+			<leg mode="pt"/>
+			<act end_time="21:59:44" x="-4154348" y="-584376" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4163546" y="-586660" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa469">
+		<plan>
+			<act end_time="08:24:57" x="-4150554" y="-579159" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:24:57" x="-4151807" y="-578819" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4150554" y="-579159" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa470">
+		<plan>
+			<act end_time="12:02:37" x="-4152453" y="-579119" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="17:02:37" x="-4152079" y="-579286" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4152453" y="-579119" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa471">
+		<plan>
+			<act end_time="05:55:49" x="-4160100" y="-577858" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="22:55:49" x="-4154824" y="-580166" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4160100" y="-577858" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa472">
+		<plan>
+			<act end_time="07:13:44" x="-4159066" y="-578222" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:13:44" x="-4160318" y="-579148" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4159066" y="-578222" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa473">
+		<plan>
+			<act end_time="14:53:56" x="-4159199" y="-572744" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="21:53:56" x="-4157043" y="-573147" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4159199" y="-572744" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa474">
+		<plan>
+			<act end_time="04:40:09" x="-4159007" y="-572387" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:40:09" x="-4162794" y="-584288" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4159007" y="-572387" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa475">
+		<plan>
+			<act end_time="05:10:53" x="-4156139" y="-573853" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="17:10:53" x="-4163094" y="-586907" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4156139" y="-573853" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa476">
+		<plan>
+			<act end_time="12:24:28" x="-4157021" y="-576167" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="21:24:28" x="-4155250" y="-571194" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4157021" y="-576167" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa477">
+		<plan>
+			<act end_time="07:23:37" x="-4162189" y="-585097" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="12:23:37" x="-4153170" y="-583921" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4162189" y="-585097" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa478">
+		<plan>
+			<act end_time="08:29:00" x="-4156460" y="-582096" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="11:29:00" x="-4156373" y="-580976" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4156460" y="-582096" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa479">
+		<plan>
+			<act end_time="05:17:04" x="-4152742" y="-584977" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:17:04" x="-4149442" y="-579916" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4152742" y="-584977" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa480">
+		<plan>
+			<act end_time="05:11:59" x="-4157691" y="-577099" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="18:11:59" x="-4159476" y="-572435" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4157691" y="-577099" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa481">
+		<plan>
+			<act end_time="04:10:41" x="-4152579" y="-580718" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="12:10:41" x="-4158332" y="-573718" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4152579" y="-580718" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa482">
+		<plan>
+			<act end_time="07:45:26" x="-4160305" y="-579415" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="11:45:26" x="-4155414" y="-583488" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4160305" y="-579415" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa483">
+		<plan>
+			<act end_time="12:14:38" x="-4161407" y="-572132" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="20:14:38" x="-4158446" y="-578456" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4161407" y="-572132" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa484">
+		<plan>
+			<act end_time="04:07:54" x="-4153111" y="-580395" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="17:07:54" x="-4159383" y="-577365" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4153111" y="-580395" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa485">
+		<plan>
+			<act end_time="06:23:54" x="-4153057" y="-579894" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="18:23:54" x="-4164299" y="-577649" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4153057" y="-579894" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa486">
+		<plan>
+			<act end_time="07:53:30" x="-4158726" y="-580861" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="20:53:30" x="-4159128" y="-574238" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4158726" y="-580861" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa487">
+		<plan>
+			<act end_time="06:06:55" x="-4155029" y="-580694" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="14:06:55" x="-4158444" y="-575869" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="19:06:55" x="-4159882" y="-574847" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4155029" y="-580694" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa488">
+		<plan>
+			<act end_time="06:31:47" x="-4156976" y="-582706" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="22:31:47" x="-4153887" y="-583515" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4156976" y="-582706" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa489">
+		<plan>
+			<act end_time="07:14:22" x="-4155927" y="-575084" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="22:14:22" x="-4156162" y="-575563" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4155927" y="-575084" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa490">
+		<plan>
+			<act end_time="08:44:55" x="-4151142" y="-579420" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="22:44:55" x="-4160157" y="-579996" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4151142" y="-579420" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa491">
+		<plan>
+			<act end_time="07:17:05" x="-4156495" y="-578781" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="14:17:05" x="-4155921" y="-584181" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4156495" y="-578781" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa492">
+		<plan>
+			<act end_time="07:26:41" x="-4158670" y="-572982" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="11:26:41" x="-4153258" y="-580015" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4158670" y="-572982" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa493">
+		<plan>
+			<act end_time="07:15:44" x="-4156380" y="-579854" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="22:15:44" x="-4158621" y="-573961" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4156380" y="-579854" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa494">
+		<plan>
+			<act end_time="06:56:33" x="-4157451" y="-575203" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="21:56:33" x="-4160170" y="-579951" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4157451" y="-575203" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa495">
+		<plan>
+			<act end_time="13:21:33" x="-4160840" y="-577394" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="22:21:33" x="-4150958" y="-579313" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4160840" y="-577394" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa496">
+		<plan>
+			<act end_time="12:07:56" x="-4154966" y="-580144" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="22:07:56" x="-4153809" y="-575872" type="work"/>
+			<leg mode="pt"/>
+			<act x="-4154966" y="-580144" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa497">
+		<plan>
+			<act end_time="07:33:15" x="-4152574" y="-579657" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="21:33:15" x="-4153522" y="-583204" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4152574" y="-579657" type="work"/>
+		</plan>
+	</person>
+
+	<person id="pessoa498">
+		<plan>
+			<act end_time="07:16:24" x="-4150764" y="-581450" type="home"/>
+			<leg mode="pt"/>
+			<act end_time="18:16:24" x="-4159057" y="-574118" type="shop"/>
+			<leg mode="pt"/>
+			<act x="-4150764" y="-581450" type="home"/>
+		</plan>
+	</person>
+
+	<person id="pessoa499">
+		<plan>
+			<act end_time="04:18:51" x="-4155951" y="-575802" type="work"/>
+			<leg mode="pt"/>
+			<act end_time="20:18:51" x="-4156734" y="-575609" type="home"/>
+			<leg mode="pt"/>
+			<act x="-4155951" y="-575802" type="work"/>
+		</plan>
+	</person>
+
+</plans>
