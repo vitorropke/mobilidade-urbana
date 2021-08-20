@@ -1,0 +1,3 @@
+2021-08-02T19:40:53,856  WARN PrepareForSimImpl:224 'usePersonIdForMissingVehicleId' is deprecated. It will be removed soon.
+2021-08-02T19:40:54,138  WARN RandomizingTimeDistanceTravelDisutilityFactory:112 There will be no routing randomness. The randomization of the travel disutility requires the monetary distance rate to be different than zero. Continuing anyway.
+2021-08-02T19:40:54,138  WARN RandomizingTimeDistanceTravelDisutilityFactory:117 There will be no routing randomness. The randomization of the travel disutility requires the travel time cost rate to be different than zero. Continuing anyway.
