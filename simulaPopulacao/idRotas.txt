@@ -1,0 +1,7 @@
+OBS: O método subList(inicio, fim) inclui o início mas não inclui o fim. Então os números a seguir "x até y", devem ser definidos na seguinte forma, "subList(x, y + 1)"
+
+Linha 1 - Ida
+	40 até 69, 132 até 142, 151 até 160, 70 até 96, 190 até 192, 10 até 19 e 0
+
+Linha 1 Santa Júlia - Ida
+	

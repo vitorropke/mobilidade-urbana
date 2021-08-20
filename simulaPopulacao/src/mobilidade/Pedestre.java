@@ -2,14 +2,15 @@ package mobilidade;
 
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
 
 public class Pedestre {
 	private String nome;
 	private Parada origem;
 	private Parada destino;
 	private Parada paradaAtual;
-	private ArrayList<Double> sinal = new ArrayList<Double>();
-	private ArrayList<Calendar> horario = new ArrayList<Calendar>();
+	private List<Double> sinal = new ArrayList<Double>();
+	private List<Calendar> horario = new ArrayList<Calendar>();
 
 	public Pedestre() {
 	}
@@ -66,11 +67,11 @@ public class Pedestre {
 		this.paradaAtual = paradaAtual;
 	}
 
-	public ArrayList<Double> getSinal() {
+	public List<Double> getSinal() {
 		return sinal;
 	}
 
-	public void setSinal(ArrayList<Double> sinal) {
+	public void setSinal(List<Double> sinal) {
 		this.sinal = sinal;
 	}
 
@@ -78,11 +79,11 @@ public class Pedestre {
 		this.sinal.add(sinal);
 	}
 
-	public ArrayList<Calendar> getHorario() {
+	public List<Calendar> getHorario() {
 		return horario;
 	}
 
-	public void setHorario(ArrayList<Calendar> horario) {
+	public void setHorario(List<Calendar> horario) {
 		this.horario = horario;
 	}
 

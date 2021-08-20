@@ -1,30 +1,36 @@
 package mobilidade;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Parada {
-	private static long contadorId = 0;
-	private long id;
+	private static int contadorId = 0;
+	private int id;
+	private String nomeParada;
 	private double coordenadaX, coordenadaY;
-	private boolean terminal;
-	private ArrayList<Pedestre> pedestres = new ArrayList<Pedestre>();
+	private List<Pedestre> pedestres = new ArrayList<Pedestre>();
 
 	public Parada() {
 		setId(contadorId++);
 	}
 
-	public Parada(double coordenadaX, double coordenadaY, boolean terminal) {
+	public Parada(double coordenadaX, double coordenadaY) {
 		setId(contadorId++);
 		setCoordenadaX(coordenadaX);
 		setCoordenadaY(coordenadaY);
-		setTerminal(terminal);
 	}
 
-	public Parada(long id, double coordenadaX, double coordenadaY, boolean terminal) {
+	public Parada(int id, double coordenadaX, double coordenadaY) {
 		setId(id);
 		setCoordenadaX(coordenadaX);
 		setCoordenadaY(coordenadaY);
-		setTerminal(terminal);
+	}
+
+	public Parada(String nomeParada, int id, double coordenadaX, double coordenadaY) {
+		setNomeParada(nomeParada);
+		setId(id);
+		setCoordenadaX(coordenadaX);
+		setCoordenadaY(coordenadaY);
 	}
 
 	@Override
@@ -33,6 +39,9 @@ public class Parada {
 
 		saida += id;
 		saida += '\t';
+		saida += nomeParada;
+		saida += '\t';
+		saida += '\t';
 		saida += coordenadaX;
 		saida += '\t';
 		saida += coordenadaY;
@@ -40,11 +49,11 @@ public class Parada {
 		return saida;
 	}
 
-	public long getId() {
+	public int getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
@@ -64,19 +73,11 @@ public class Parada {
 		this.coordenadaY = coordenadaY;
 	}
 
-	public boolean isTerminal() {
-		return terminal;
-	}
-
-	public void setTerminal(boolean terminal) {
-		this.terminal = terminal;
-	}
-
-	public ArrayList<Pedestre> getPedestres() {
+	public List<Pedestre> getPedestres() {
 		return pedestres;
 	}
 
-	public void setPedestres(ArrayList<Pedestre> pedestres) {
+	public void setPedestres(List<Pedestre> pedestres) {
 		this.pedestres = pedestres;
 	}
 
@@ -84,11 +85,19 @@ public class Parada {
 		this.pedestres.add(pedestre);
 	}
 
-	public void addAllPedestres(ArrayList<Pedestre> pedestres) {
+	public void addAllPedestres(List<Pedestre> pedestres) {
 		this.pedestres.addAll(pedestres);
 	}
 
-	public void removeAllPedestres(ArrayList<Pedestre> pedestres) {
+	public void removeAllPedestres(List<Pedestre> pedestres) {
 		this.pedestres.removeAll(pedestres);
+	}
+
+	public String getNomeParada() {
+		return nomeParada;
+	}
+
+	public void setNomeParada(String nomeParada) {
+		this.nomeParada = nomeParada;
 	}
 }
