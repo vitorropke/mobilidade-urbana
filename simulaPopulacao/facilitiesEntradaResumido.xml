@@ -722,12 +722,7 @@
 	<facility id="parada_UPA_Raimundo_Benjamin_Franco_Ida" x="-4158683.122683" y="-580065.678549"/>
 	<facility id="parada_EE_Monsenhor_Raimundo_Gurgel_Ida" x="-4158657.444619" y="-579876.377471"/>
 	<facility id="parada_Rua_Professor_Manuel_Freire_Ida0" x="-4158508.750712" y="-579538.979651"/>
-	<!--BOA VISTA-->
-	<facility id="parada_Rua_Coelho_Neto_Volta0" x="-4158439.479655" y="-579381.328280"/>
-	<facility id="parada_Aplastec_Center_Volta" x="-4158549.955048" y="-579312.057223"/>
-	<facility id="parada_FUNDAC_Ida" x="-4158609.074312" y="-579226.065567"/>
-	<facility id="parada_Rua_Francisco_Solon_Ida0" x="-4158542.191912" y="-579033.778667"/>
-	<facility id="parada_Tiinha_Restaurante_Ida" x="-4158508.153548" y="-578899.416703"/>
+	
 	<!--DOZE ANOS-->
 	<facility id="parada_Avenida_Diocesana_Ida0" x="-4158392.303677" y="-578520.814548"/>
 	<facility id="parada_Avenida_Diocesana_Ida1" x="-4158205.988421" y="-578275.977192"/>
@@ -768,13 +763,8 @@
 	<facility id="parada_EE_Professor_Eliseu_Viana_Volta" x="-4158011.238219" y="-577997.176117"/>
 	<facility id="parada_Avenida_Diocesana_Volta0" x="-4158222.559729" y="-578263.735324"/>
 	<facility id="parada_Avenida_Diocesana_Volta1" x="-4158410.069314" y="-578509.020553"/>
-	<!--BOA VISTA-->
-	<facility id="parada_Tiinha_Restaurante_Volta" x="-4158520.544707" y="-578905.836220"/>
-	<facility id="parada_Rua_Francisco_Solon_Volta0" x="-4158555.2044364014" y="-579047.2332403001"/>
-	<facility id="parada_FUNDAC_Volta" x="-4158615.493828" y="-579217.854558"/>
-	<facility id="parada_Aplastec_Center_Ida" x="-4158554.4251999645" y="-579322.0972598532"/>
+	
 	<!--LAGOA DO MATO-->
-	<facility id="parada_Rua_Coelho_Neto_Ida0" x="-4158444.256970" y="-579388.942125"/>
 	<facility id="parada_Rua_Professor_Manuel_Freire_Volta0" x="-4158517.021851059" y="-579539.9548639059"/>
 	<facility id="parada_EE_Monsenhor_Raimundo_Gurgel_Volta" x="-4158663.518300942" y="-579860.5387522449"/>
 	<facility id="parada_UPA_Raimundo_Benjamin_Franco_Volta" x="-4158691.5708126226" y="-580064.2019394174"/>
@@ -814,6 +804,21 @@
 	<facility id="parada_Avenida_Mossoro_Volta1" x="-4161508.008326" y="-584687.730103"/>
 	<facility id="parada_Avenida_Mossoro_Volta2" x="-4161725.674707" y="-584596.214677"/>
 	<facility id="parada_Avenida_Mossoro_Volta3" x="-4162022.316065" y="-584472.750961"/>
+
+	<!--ROTA BOA VISTA - IDA==============================================================================================-->
+	<facility id="parada_Rua_Coelho_Neto_Volta0" x="-4158439.479655" y="-579381.328280"/>
+	<facility id="parada_Aplastec_Center_Volta" x="-4158549.955048" y="-579312.057223"/>
+	<facility id="parada_FUNDAC_Ida" x="-4158609.074312" y="-579226.065567"/>
+	<facility id="parada_Rua_Francisco_Solon_Ida0" x="-4158542.191912" y="-579033.778667"/>
+	<facility id="parada_Tiinha_Restaurante_Ida" x="-4158508.153548" y="-578899.416703"/>
+
+	<!--ROTA BOA VISTA - VOLTA============================================================================================-->
+	<facility id="parada_Tiinha_Restaurante_Volta" x="-4158520.544707" y="-578905.836220"/>
+	<facility id="parada_Rua_Francisco_Solon_Volta0" x="-4158555.2044364014" y="-579047.2332403001"/>
+	<facility id="parada_FUNDAC_Volta" x="-4158615.493828" y="-579217.854558"/>
+	<facility id="parada_Aplastec_Center_Ida" x="-4158554.4251999645" y="-579322.0972598532"/>
+	<!--LAGOA DO MATO-->
+	<facility id="parada_Rua_Coelho_Neto_Ida0" x="-4158444.256970" y="-579388.942125"/>
 
 	<!--====================================================================================================================|
 	|						PARADAS SHOPPING, UNP, AEROPORTO, RODOVIÁRIA, BOM PASTOR, MACARRÃO, BOA VISTA					|

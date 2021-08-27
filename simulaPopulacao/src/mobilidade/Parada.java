@@ -1,7 +1,15 @@
 package mobilidade;
 
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
+
+import org.osgeo.proj4j.BasicCoordinateTransform;
+import org.osgeo.proj4j.CRSFactory;
+import org.osgeo.proj4j.CoordinateReferenceSystem;
+import org.osgeo.proj4j.ProjCoordinate;
 
 public class Parada {
 	private static int contadorId = 0;
@@ -45,6 +53,12 @@ public class Parada {
 		saida += coordenadaX;
 		saida += '\t';
 		saida += coordenadaY;
+
+		/*
+		 * int numeroPedestres = pedestres.size(); saida += '\n';
+		 * 
+		 * for (int i = 0; i < numeroPedestres; i++) { saida += pedestres.get(i); }
+		 */
 
 		return saida;
 	}
@@ -99,5 +113,103 @@ public class Parada {
 
 	public void setNomeParada(String nomeParada) {
 		this.nomeParada = nomeParada;
+	}
+
+	public static ArrayList<Parada> gerarParadas(String nomeArquivoFacilitiesEntrada) {
+		String entrada = "";
+
+		// https://www.w3schools.com/Java/java_files_read.asp
+		try {
+			File arquivoEntradaFacilities = new File(nomeArquivoFacilitiesEntrada);
+			Scanner myReaderFacilities = new Scanner(arquivoEntradaFacilities);
+
+			while (myReaderFacilities.hasNextLine()) {
+				entrada += myReaderFacilities.nextLine();
+			}
+
+			myReaderFacilities.close();
+
+			System.out.println("Leitura bem-sucedida!");
+		} catch (FileNotFoundException e) {
+			System.out.println("Erro de leitura!");
+			e.printStackTrace();
+		}
+
+		// Biblioteca proj4j
+		// Lida com conversão de coordenadas
+		CRSFactory factory = new CRSFactory();
+		CoordinateReferenceSystem origemCRS = factory.createFromName("EPSG:3857");
+		CoordinateReferenceSystem destinoCRS = factory.createFromName("EPSG:4326");
+		BasicCoordinateTransform transform = new BasicCoordinateTransform(origemCRS, destinoCRS);
+		ProjCoordinate coordenadasOrigem = new ProjCoordinate();
+		ProjCoordinate coordenadasDestino = new ProjCoordinate();
+
+		ArrayList<Parada> paradas = new ArrayList<Parada>();
+		int idParada = -1;
+		String nomeParada;
+
+		String stringCoordenadaX, stringCoordenadaY;
+		double doubleCoordenadaX, doubleCoordenadaY;
+
+		int tamanhoEntrada = entrada.length();
+		for (int i = 0; i < tamanhoEntrada; i++) {
+			if (entrada.charAt(i) == 'i') {
+				i++;
+				if (entrada.charAt(i) == 'd') {
+					i++;
+					if (entrada.charAt(i) == '=') {
+						// Salta os símbolos ="
+						i += 2;
+						idParada++;
+
+						// Salva o nome da parada
+						nomeParada = "";
+						do {
+							nomeParada += entrada.charAt(i);
+							i++;
+						} while (entrada.charAt(i) != '\"');
+
+						do {
+							i++;
+						} while (entrada.charAt(i) != '\"');
+
+						i++;
+
+						// Salva a coordenada X da parada
+						stringCoordenadaX = "";
+						while (entrada.charAt(i) != '\"') {
+							stringCoordenadaX += entrada.charAt(i);
+							i++;
+						}
+
+						doubleCoordenadaX = Double.valueOf(stringCoordenadaX);
+
+						do {
+							i++;
+						} while (entrada.charAt(i) != '\"');
+
+						i++;
+
+						// Salva a coordenada Y da parada
+						stringCoordenadaY = "";
+						while (entrada.charAt(i) != '\"') {
+							stringCoordenadaY += entrada.charAt(i);
+							i++;
+						}
+
+						doubleCoordenadaY = Double.valueOf(stringCoordenadaY);
+
+						// Converte de X, Y para Longitude, Latitude
+						coordenadasOrigem.setValue(doubleCoordenadaX, doubleCoordenadaY);
+						transform.transform(coordenadasOrigem, coordenadasDestino);
+
+						// Gera um novo objeto 'Parada'
+						paradas.add(new Parada(nomeParada, idParada, coordenadasDestino.x, coordenadasDestino.y));
+					}
+				}
+			}
+		}
+
+		return paradas;
 	}
 }

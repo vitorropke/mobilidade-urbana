@@ -1,7 +1,6 @@
 package mobilidade;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.text.DecimalFormat;
@@ -9,7 +8,6 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 import java.util.Random;
-import java.util.Scanner;
 
 import org.osgeo.proj4j.BasicCoordinateTransform;
 import org.osgeo.proj4j.CRSFactory;
@@ -20,10 +18,12 @@ public class Main {
 	static int seed = 1;
 
 	public static void main(String[] args) {
+		// -----------------------------------------------------------------------------------------------------------------------
 		// Define as paradas
-		List<Parada> paradas = Main.gerarParadas("facilitiesEntradaResumido.xml");
+		List<Parada> paradas = Parada.gerarParadas("facilitiesEntradaResumido.xml");
 		List<Parada> subParadas = new ArrayList<Parada>();
 
+		// -----------------------------------------------------------------------------------------------------------------------
 		// Define as linhas
 		// LINHA 01 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO - IDA
 		subParadas.addAll(paradas.subList(40, 70));
@@ -34,25 +34,569 @@ public class Main {
 		subParadas.addAll(paradas.subList(10, 20));
 		subParadas.add(paradas.get(0));
 		Linha linha1Ida = new Linha(subParadas);
-		// LINHA 01 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO, SANTA JÚLIA - IDA
-		Linha linha1SantaJuliaIda = new Linha(paradas.subList(92, 191));
 
+		// LINHA 01 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO, SANTA JÚLIA - IDA
+		subParadas.addAll(41, paradas.subList(143, 151));
+		Linha linha1SantaJuliaIda = new Linha(subParadas);
+
+		// LINHA 01 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO, SANTA JÚLIA - VOLTA
+		subParadas.clear();
+		subParadas.addAll(paradas.subList(0, 11));
+		subParadas.addAll(paradas.subList(193, 196));
+		subParadas.addAll(paradas.subList(105, 109));
+		subParadas.addAll(paradas.subList(115, 143));
+		subParadas.addAll(paradas.subList(151, 161));
+		subParadas.addAll(paradas.subList(70, 77));
+		subParadas.addAll(paradas.subList(161, 190));
+		subParadas.add(paradas.get(40));
+		Linha linha1Volta = new Linha(subParadas);
+
+		// LINHA 01 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO, SANTA JÚLIA - VOLTA
+		subParadas.addAll(46, paradas.subList(143, 151));
+		Linha linha1SantaJuliaVolta = new Linha(subParadas);
+
+		// LINHA 02 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO - IDA
+		subParadas.clear();
+		subParadas.addAll(paradas.subList(40, 70));
+		subParadas.addAll(paradas.subList(77, 94));
+		subParadas.addAll(paradas.subList(97, 105));
+		subParadas.addAll(paradas.subList(12, 20));
+		subParadas.add(paradas.get(0));
+		Linha linha2Ida = new Linha(subParadas);
+
+		// LINHA 02 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO - VOLTA
+		subParadas.clear();
+		subParadas.addAll(paradas.subList(0, 11));
+		subParadas.addAll(paradas.subList(193, 196));
+		subParadas.addAll(paradas.subList(109, 132));
+		subParadas.addAll(paradas.subList(161, 190));
+		subParadas.add(paradas.get(40));
+		Linha linha2Volta = new Linha(subParadas);
+
+		// LINHA 02 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO, UNIVERSIDADES VIA AEC
+		subParadas.clear();
+		subParadas.addAll(paradas.subList(362, 366));
+		subParadas.addAll(paradas.subList(281, 284));
+		subParadas.addAll(paradas.subList(32, 39));
+		subParadas.addAll(paradas.subList(15, 20));
+		subParadas.add(paradas.get(0));
+		Linha linha2UniversidadesAeC = new Linha(subParadas);
+
+		// LINHA 02 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO, UNIVERSIDADES VIA IFRN
+		subParadas.removeAll(subParadas.subList(5, 7));
+		subParadas.addAll(5, paradas.subList(306, 310));
+		subParadas.addAll(9, paradas.subList(317, 320));
+		subParadas.addAll(12, paradas.subList(29, 32));
+		subParadas.removeAll(subParadas.subList(23, 27));
+		Linha linha2UniversidadesIFRN = new Linha(subParadas);
+
+		// LINHA 03 - SANTO ANTÔNIO, BARROCAS
+		subParadas.clear();
+		subParadas.addAll(paradas.subList(203, 208));
+		subParadas.addAll(paradas.subList(248, 252));
+		subParadas.addAll(paradas.subList(208, 210));
+		subParadas.addAll(paradas.subList(222, 231));
+		subParadas.addAll(paradas.subList(7, 19));
+		subParadas.add(paradas.get(20));
+		Linha linha3 = new Linha(subParadas);
+
+		// LINHA 04 - ABOLIÇÃO V - IDA
+		subParadas.clear();
+		subParadas.add(paradas.get(142));
+		subParadas.addAll(paradas.subList(151, 161));
+		subParadas.addAll(paradas.subList(70, 97));
+		subParadas.addAll(paradas.subList(190, 193));
+		subParadas.addAll(paradas.subList(10, 20));
+		subParadas.add(paradas.get(0));
+		Linha linha4Ida = new Linha(subParadas);
+
+		// LINHA 04 - ABOLIÇÃO V, SANTA JÚLIA
+		subParadas.addAll(1, paradas.subList(143, 151));
+		Linha linha4SantaJulia = new Linha(subParadas);
+
+		// LINHA 04 - ABOLIÇÃO V - VOLTA
+		subParadas.clear();
+		subParadas.addAll(paradas.subList(0, 11));
+		subParadas.addAll(paradas.subList(193, 196));
+		subParadas.addAll(paradas.subList(105, 109));
+		subParadas.addAll(paradas.subList(115, 143));
+		Linha linha4Volta = new Linha(subParadas);
+
+		// LINHA 05 - VINGT ROSADO - IDA
+		subParadas.clear();
+		subParadas.addAll(paradas.subList(284, 306));
+		subParadas.addAll(paradas.subList(276, 284));
+		subParadas.addAll(paradas.subList(32, 40));
+		subParadas.addAll(paradas.subList(2, 19));
+		subParadas.add(paradas.get(20));
+		Linha linha5Ida = new Linha(subParadas);
+
+		// LINHA 05 - VINGT ROSADO VIA UNIVERSIDADES - IDA
+		subParadas.addAll(27, paradas.subList(420, 423));
+		subParadas.addAll(30, paradas.subList(362, 366));
+		subParadas.addAll(35, paradas.subList(306, 310));
+		subParadas.addAll(39, paradas.subList(317, 320));
+		subParadas.addAll(42, paradas.subList(29, 32));
+		subParadas.removeAll(subParadas.subList(45, 47));
+		Linha linha5IdaUniversidades = new Linha(subParadas);
+
+		// LINHA 05 - VINGT ROSADO - VOLTA
+		subParadas.clear();
+		subParadas.addAll(paradas.subList(20, 26));
+		subParadas.addAll(paradas.subList(366, 371));
+		subParadas.addAll(paradas.subList(376, 397));
+		subParadas.add(paradas.get(284));
+		Linha linha5Volta = new Linha(subParadas);
+
+		// LINHA 05 - VINGT ROSADO, UERN - VOLTA
+		subParadas.addAll(9, paradas.subList(420, 423));
+		subParadas.addAll(12, paradas.subList(362, 366));
+		Linha linha5VoltaUERN = new Linha(subParadas);
+
+		// LINHA 05 - VINGT ROSADO, IFRN - VOLTA
+		subParadas.removeAll(subParadas.subList(9, 16));
+		subParadas.removeAll(subParadas.subList(6, 8));
+		subParadas.add(6, paradas.get(26));
+		subParadas.addAll(7, paradas.subList(397, 409));
+		subParadas.addAll(19, paradas.subList(416, 420));
+		Linha linha5VoltaIFRN = new Linha(subParadas);
+
+		// LINHA 05 - VINGT ROSADO VIA UNIVERSIDADES - VOLTA
+		subParadas.addAll(24, paradas.subList(420, 423));
+		subParadas.addAll(27, paradas.subList(362, 366));
+		Linha linha5VoltaUniversidades = new Linha(subParadas);
+
+		// LINHA 05 - VINGT ROSADO VIA ODETE ROSADO - VOLTA
+		subParadas.removeAll(subParadas.subList(27, 31));
+		subParadas.removeAll(subParadas.subList(0, 23));
+		subParadas.addAll(0, paradas.subList(366, 368));
+		subParadas.addAll(6, paradas.subList(423, 425));
+		subParadas.addAll(8, paradas.subList(355, 366));
+		Linha linha5VoltaOdeteRosado = new Linha(subParadas);
+
+		// LINHA 06 - UNIVERSIDADES - IDA
+		subParadas.clear();
+		subParadas.addAll(paradas.subList(362, 366));
+		subParadas.add(paradas.get(281));
+		subParadas.addAll(paradas.subList(306, 320));
+		subParadas.addAll(paradas.subList(29, 40));
+		subParadas.addAll(paradas.subList(320, 328));
+		subParadas.add(paradas.get(18));
+		subParadas.add(paradas.get(20));
+		Linha linha6Ida = new Linha(subParadas);
+
+		// LINHA 06 - UNIVERSIDADES SEM ULRICK GRAFF - IDA
+		subParadas.removeAll(subParadas.subList(9, 16));
+		Linha linha6IdaSemUlrickGraff = new Linha(subParadas);
+
+		// LINHA 06 - UNIVERSIDADES SEM ULRICK GRAFF, NEM AVENIDA RIO BRANCO - IDA
+		subParadas.removeAll(subParadas.subList(22, 31));
+		subParadas.addAll(22, paradas.subList(15, 18));
+		subParadas.remove(subParadas.get(26));
+		subParadas.add(paradas.get(19));
+		subParadas.add(paradas.get(0));
+		Linha linha6IdaSemUlrickGraffNemRioBranco = new Linha(subParadas);
+
+		// LINHA 06 - UNIVERSIDADES SEM ULRICK GRAFF, COM UNIRB E COELHO NETO - IDA
+		subParadas.addAll(0, paradas.subList(274, 281));
+		subParadas.addAll(7, paradas.subList(420, 423));
+		subParadas.removeAll(subParadas.subList(32, 35));
+		subParadas.add(32, paradas.get(39));
+		subParadas.addAll(33, paradas.subList(320, 324));
+		subParadas.addAll(37, paradas.subList(328, 338));
+		Linha linha6IdaSemUlrickGraffComUNIRBComCoelhoNeto = new Linha(subParadas);
+
+		// LINHA 06 - UNIVERSIDADES - VOLTA
+		subParadas.clear();
+		subParadas.addAll(paradas.subList(20, 27));
+		subParadas.addAll(paradas.subList(397, 420));
+		subParadas.add(paradas.get(368));
+		subParadas.addAll(paradas.subList(420, 423));
+		subParadas.add(paradas.get(362));
+		Linha linha6Volta = new Linha(subParadas);
+
+		// LINHA 06 - UNIVERSIDADES SEM ULRICK GRAFF- VOLTA
+		subParadas.removeAll(subParadas.subList(19, 26));
+		Linha linha6VoltaSemUlrickGraff = new Linha(subParadas);
+
+		// LINHA 06 - UNIVERSIDADES COM UNIRB - VOLTA
+		subParadas.addAll(19, paradas.subList(409, 416));
+		subParadas.addAll(paradas.subList(363, 366));
+		subParadas.addAll(paradas.subList(369, 373));
+		Linha linha6VoltaUNIRB = new Linha(subParadas);
+
+		// LINHA 07 - NOVA VIDA - IDA
+		subParadas.clear();
+		subParadas.add(paradas.get(455));
+		subParadas.addAll(paradas.subList(435, 443));
+		subParadas.addAll(paradas.subList(27, 40));
+		subParadas.addAll(paradas.subList(2, 19));
+		subParadas.add(paradas.get(20));
+		Linha linha7Ida = new Linha(subParadas);
+
+		// LINHA 07 - NOVA VIDA SEM PAREDÕES, TERMINANDO NA PRAÇA FELIPE GUERRA - IDA
+		subParadas.removeAll(subParadas.subList(21, 40));
+		subParadas.add(paradas.get(15));
+		subParadas.add(paradas.get(0));
+		Linha linha7IdaSemParedoesTerminandoNaPracaFelipeGuerra = new Linha(subParadas);
+
+		// LINHA 07 - NOVA VIDA VIA JARDIM DAS PALMEIRAS - IDA
+		subParadas.removeAll(subParadas.subList(21, 23));
+		subParadas.add(paradas.get(39));
+		subParadas.addAll(paradas.subList(2, 19));
+		subParadas.add(paradas.get(20));
+		subParadas.remove(subParadas.get(0));
+		subParadas.addAll(0, paradas.subList(425, 435));
+		Linha linha7IdaJardimDasPalmeiras = new Linha(subParadas);
+
+		// LINHA 07 - NOVA VIDA - VOLTA
+		subParadas.clear();
+		subParadas.addAll(paradas.subList(20, 27));
+		subParadas.addAll(paradas.subList(443, 456));
+		Linha linha7Volta = new Linha(subParadas);
+
+		// LINHA 07 - NOVA VIDA VIA JARDIM DAS PALMEIRAS - VOLTA
+		subParadas.addAll(paradas.subList(456, 462));
+		subParadas.add(paradas.get(425));
+		Linha linha7VoltaJardimDasPalmeiras = new Linha(subParadas);
+
+		// LINHA 07 - NOVA VIDA VIA SUMARÉ, LIBERDADE, PLANALTO - VOLTA
+		subParadas.add(0, paradas.get(0));
+		subParadas.add(1, paradas.get(327));
+		subParadas.add(2, paradas.get(18));
+		subParadas.addAll(8, paradas.subList(478, 499));
+		subParadas.addAll(29, paradas.subList(462, 478));
+		subParadas.removeAll(subParadas.subList(45, 51));
+		subParadas.removeAll(subParadas.subList(54, subParadas.size()));
+		Linha linha7VoltaSumareLiberdadePlanalto = new Linha(subParadas);
+
+		// LINHA 08 - SUMARÉ, LIBERDADE, PLANALTO - IDA
+		subParadas.removeAll(subParadas.subList(0, 29));
+		subParadas.removeAll(subParadas.subList(16, subParadas.size()));
+		subParadas.addAll(paradas.subList(27, 40));
+		subParadas.addAll(paradas.subList(2, 19));
+		subParadas.add(paradas.get(20));
+		Linha linha8Ida = new Linha(subParadas);
+
+		// LINHA 08 - SUMARÉ, LIBERDADE, PLANALTO - VOLTA
+		subParadas.clear();
+		subParadas.addAll(paradas.subList(20, 25));
+		subParadas.addAll(paradas.subList(478, 499));
+		subParadas.add(paradas.get(462));
+		Linha linha8Volta = new Linha(subParadas);
+
+		// LINHA 09 - BELO HORIZONTE, BOM JESUS, MONTE OLIMPO - IDA
+		subParadas.clear();
+		subParadas.addAll(paradas.subList(511, 522));
+		subParadas.addAll(paradas.subList(499, 511));
+		subParadas.add(paradas.get(1));
+		subParadas.addAll(paradas.subList(14, 20));
+		subParadas.add(paradas.get(0));
+		Linha linha9Ida = new Linha(subParadas);
+
+		// LINHA 09 - BELO HORIZONTE, BOM JESUS, MONTE OLIMPO COM LAGOA DO MATO, BOA
+		// VISTA, DOZE ANOS E SANTO ANTÔNIO - IDA
+		subParadas.removeAll(subParadas.subList(15, 24));
+		subParadas.add(15, paradas.get(555));
+		subParadas.addAll(16, paradas.subList(522, 533));
+		subParadas.addAll(27, paradas.subList(593, 598));
+		subParadas.addAll(32, paradas.subList(533, 536));
+		subParadas.addAll(35, paradas.subList(190, 193));
+		subParadas.addAll(38, paradas.subList(10, 14));
+		Linha linha9IdaLagoaDoMatoBoaVistaDozeAnosSantoAntonio = new Linha(subParadas);
+
+		// LINHA 09 - BELO HORIZONTE, BOM JESUS, MONTE OLIMPO - VOLTA
+		subParadas.clear();
+		subParadas.addAll(paradas.subList(0, 11));
+		subParadas.addAll(paradas.subList(193, 196));
+		subParadas.addAll(paradas.subList(558, 561));
+		subParadas.addAll(paradas.subList(598, 603));
+		subParadas.addAll(paradas.subList(561, 571));
+		subParadas.addAll(paradas.subList(556, 558));
+		subParadas.addAll(paradas.subList(571, 582));
+		subParadas.add(paradas.get(511));
+		Linha linha9Volta = new Linha(subParadas);
+
+		// LINHA 10 - SHOPPING, UNP - IDA
+		subParadas.clear();
+		subParadas.addAll(paradas.subList(622, 632));
+		subParadas.addAll(paradas.subList(13, 20));
+		subParadas.add(paradas.get(0));
+		Linha linha10Ida = new Linha(subParadas);
+
+		// LINHA 10 - SHOPPING, UNP, AEROPORTO, MACARRÃO, BOA VISTA - IDA
+		subParadas.clear();
+		subParadas.addAll(paradas.subList(642, 653));
+		subParadas.addAll(paradas.subList(615, 622));
+		subParadas.addAll(paradas.subList(637, 642));
+		subParadas.addAll(paradas.subList(622, 626));
+		subParadas.addAll(paradas.subList(656, 668));
+		subParadas.addAll(paradas.subList(709, 711));
+		subParadas.add(paradas.get(676));
+		subParadas.addAll(paradas.subList(686, 693));
+		subParadas.addAll(paradas.subList(606, 610));
+		subParadas.add(paradas.get(693));
+		subParadas.addAll(paradas.subList(598, 603));
+		subParadas.addAll(paradas.subList(694, 701));
+		subParadas.addAll(paradas.subList(324, 326));
+		subParadas.add(paradas.get(701));
+		subParadas.addAll(paradas.subList(509, 511));
+		subParadas.add(paradas.get(1));
+		subParadas.addAll(paradas.subList(14, 20));
+		subParadas.add(paradas.get(0));
+		Linha linha10IdaAeroportoMacarraoBoaVista = new Linha(subParadas);
+
+		// LINHA 10 - SHOPPING, UNP - VOLTA
+		subParadas.clear();
+		subParadas.addAll(paradas.subList(0, 6));
+		subParadas.addAll(paradas.subList(603, 606));
+		subParadas.add(paradas.get(39));
+		subParadas.addAll(paradas.subList(632, 642));
+		subParadas.add(paradas.get(622));
+		Linha linha10Volta = new Linha(subParadas);
+
+		// LINHA 10 - SHOPPING, UNP, AEROPORTO, MACARRÃO, BOA VISTA - VOLTA
+		subParadas.clear();
+		subParadas.addAll(paradas.subList(0, 6));
+		subParadas.addAll(paradas.subList(603, 606));
+		subParadas.add(paradas.get(39));
+		subParadas.addAll(paradas.subList(610, 613));
+		subParadas.addAll(paradas.subList(702, 709));
+		subParadas.addAll(paradas.subList(593, 598));
+		subParadas.addAll(paradas.subList(613, 615));
+		subParadas.addAll(paradas.subList(673, 676));
+		subParadas.add(paradas.get(642));
+		Linha linha10VoltaAeroportoMacarraoBoaVista = new Linha(subParadas);
+
+		// LINHA 11 - PARQUE UNIVERSITÁRIO, UNIRB, ALTO DAS BRISAS - IDA
+		subParadas.clear();
+		subParadas.addAll(paradas.subList(338, 345));
+		subParadas.addAll(paradas.subList(271, 273));
+		subParadas.addAll(paradas.subList(345, 355));
+		subParadas.addAll(paradas.subList(273, 284));
+		subParadas.addAll(paradas.subList(32, 40));
+		subParadas.addAll(paradas.subList(2, 19));
+		subParadas.add(paradas.get(20));
+		Linha linha11Ida = new Linha(subParadas);
+
+		// LINHA 11 - PARQUE UNIVERSITÁRIO, UNIRB, ALTO DAS BRISAS - VOLTA
+		subParadas.clear();
+		subParadas.addAll(paradas.subList(20, 26));
+		subParadas.addAll(paradas.subList(366, 376));
+		subParadas.add(paradas.get(338));
+		Linha linha11Volta = new Linha(subParadas);
+
+		// LINHA 12 - NOVA MOSSORÓ, SANTO ANTÔNIO, BARROCAS - IDA
+		subParadas.clear();
+		subParadas.addAll(paradas.subList(196, 206));
+		subParadas.addAll(paradas.subList(210, 231));
+		subParadas.addAll(paradas.subList(7, 20));
+		subParadas.add(paradas.get(0));
+		Linha linha12Ida = new Linha(subParadas);
+
+		// LINHA 12 - NOVA MOSSORÓ, SANTO ANTÔNIO, BARROCAS - VOLTA
+		subParadas.clear();
+		subParadas.addAll(paradas.subList(0, 7));
+		subParadas.addAll(paradas.subList(231, 271));
+		subParadas.add(paradas.get(196));
+		Linha linha12Volta = new Linha(subParadas);
+
+		// LINHA 14 - AEROPORTO, RODOVIÁRIA - IDA
+		subParadas.clear();
+		subParadas.addAll(paradas.subList(642, 668));
+		subParadas.addAll(paradas.subList(606, 610));
+		subParadas.addAll(paradas.subList(668, 671));
+		subParadas.addAll(paradas.subList(13, 20));
+		subParadas.add(paradas.get(0));
+		Linha linha14Ida = new Linha(subParadas);
+
+		// LINHA 14 - AEROPORTO, RODOVIÁRIA - VOLTA
+		subParadas.clear();
+		subParadas.addAll(paradas.subList(0, 6));
+		subParadas.addAll(paradas.subList(603, 606));
+		subParadas.add(paradas.get(39));
+		subParadas.addAll(paradas.subList(610, 613));
+		subParadas.addAll(paradas.subList(671, 673));
+		subParadas.addAll(paradas.subList(613, 615));
+		subParadas.addAll(paradas.subList(673, 676));
+		subParadas.add(paradas.get(642));
+		Linha linha14Volta = new Linha(subParadas);
+
+		// LINHA 15 - MACARRÃO, BOA VISTA - IDA,
+		subParadas.clear();
+		subParadas.addAll(paradas.subList(676, 693));
+		subParadas.addAll(paradas.subList(606, 610));
+		subParadas.add(paradas.get(693));
+		subParadas.addAll(paradas.subList(598, 603));
+		subParadas.addAll(paradas.subList(694, 701));
+		subParadas.addAll(paradas.subList(324, 326));
+		subParadas.add(paradas.get(701));
+		subParadas.addAll(paradas.subList(509, 511));
+		subParadas.add(paradas.get(1));
+		subParadas.addAll(paradas.subList(14, 20));
+		subParadas.add(paradas.get(0));
+		Linha linha15Ida = new Linha(subParadas);
+
+		// LINHA 15 - MACARRÃO, BOA VISTA - VOLTA
+		subParadas.clear();
+		subParadas.addAll(paradas.subList(0, 6));
+		subParadas.addAll(paradas.subList(603, 606));
+		subParadas.add(paradas.get(39));
+		subParadas.addAll(paradas.subList(610, 613));
+		subParadas.addAll(paradas.subList(702, 709));
+		subParadas.addAll(paradas.subList(593, 598));
+		subParadas.addAll(paradas.subList(613, 615));
+		subParadas.addAll(paradas.subList(709, 711));
+		subParadas.add(paradas.get(676));
+		Linha linha15Volta = new Linha(subParadas);
+
+		// LINHA 17 - ODETE ROSADO - IDA
+		subParadas.clear();
+		subParadas.addAll(paradas.subList(355, 366));
+		subParadas.addAll(paradas.subList(281, 284));
+		subParadas.addAll(paradas.subList(32, 40));
+		subParadas.addAll(paradas.subList(2, 19));
+		subParadas.add(paradas.get(20));
+		Linha linha17Ida = new Linha(subParadas);
+
+		// LINHA 17 - ODETE ROSADO - VOLTA
+		subParadas.clear();
+		subParadas.addAll(paradas.subList(20, 26));
+		subParadas.addAll(paradas.subList(366, 369));
+		subParadas.addAll(paradas.subList(420, 425));
+		subParadas.add(paradas.get(355));
+		Linha linha17Volta = new Linha(subParadas);
+
+		// LINHA 19 - CIDADE OESTE - IDA
+		subParadas.clear();
+		subParadas.addAll(paradas.subList(536, 548));
+		subParadas.addAll(paradas.subList(499, 511));
+		subParadas.add(paradas.get(1));
+		subParadas.addAll(paradas.subList(14, 20));
+		subParadas.add(paradas.get(0));
+		Linha linha19Ida = new Linha(subParadas);
+
+		// LINHA 19 - CIDADE OESTE - VOLTA
+		subParadas.clear();
+		subParadas.addAll(paradas.subList(0, 14));
+		subParadas.addAll(paradas.subList(548, 558));
+		subParadas.addAll(paradas.subList(582, 593));
+		subParadas.add(paradas.get(536));
+		Linha linha19Volta = new Linha(subParadas);
+
+		// -----------------------------------------------------------------------------------------------------------------------
 		// Define os ônibus
 		List<Onibus> onibus = new ArrayList<Onibus>();
 
 		// LINHA 01 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO - IDA
-		onibus.add(new Onibus(10, 40, linha1Ida));
+		onibus.add(new Onibus(50, 50, linha1Ida));
 		// LINHA 01 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO, SANTA JÚLIA - IDA
-		// onibus.add(new Onibus(50, 50, linha1SantaJuliaIda));
+		onibus.add(new Onibus(50, 50, linha1SantaJuliaIda));
 		// LINHA 01 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO - VOLTA
-		// onibus.add(new Onibus(50, 50, paradas.get(192)));
+		onibus.add(new Onibus(50, 50, linha1Volta));
+		// LINHA 01 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO, SANTA JÚLIA - VOLTA
+		onibus.add(new Onibus(50, 50, linha1SantaJuliaVolta));
+		// LINHA 02 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO - IDA
+		onibus.add(new Onibus(50, 50, linha2Ida));
+		// LINHA 02 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO - VOLTA
+		onibus.add(new Onibus(50, 50, linha2Volta));
+		// LINHA 02 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO, UNIVERSIDADES VIA AEC
+		onibus.add(new Onibus(50, 50, linha2UniversidadesAeC));
+		// LINHA 02 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO, UNIVERSIDADES VIA IFRN
+		onibus.add(new Onibus(50, 50, linha2UniversidadesIFRN));
+		// LINHA 03 - SANTO ANTÔNIO, BARROCAS
+		onibus.add(new Onibus(50, 50, linha3));
+		// LINHA 04 - ABOLIÇÃO V - IDA
+		onibus.add(new Onibus(50, 50, linha4Ida));
+		// LINHA 04 - ABOLIÇÃO V, SANTA JÚLIA
+		onibus.add(new Onibus(50, 50, linha4SantaJulia));
+		// LINHA 04 - ABOLIÇÃO V - VOLTA
+		onibus.add(new Onibus(50, 50, linha4Volta));
+		// LINHA 05 - VINGT ROSADO - IDA
+		onibus.add(new Onibus(50, 50, linha5Ida));
+		// LINHA 05 - VINGT ROSADO VIA UNIVERSIADES - IDA
+		onibus.add(new Onibus(50, 50, linha5IdaUniversidades));
+		// LINHA 05 - VINGT ROSADO - VOLTA
+		onibus.add(new Onibus(50, 50, linha5Volta));
+		// LINHA 05 - VINGT ROSADO, UERN - VOLTA
+		onibus.add(new Onibus(50, 50, linha5VoltaUERN));
+		// LINHA 05 - VINGT ROSADO, IFRN - VOLTA
+		onibus.add(new Onibus(50, 50, linha5VoltaIFRN));
+		// LINHA 05 - VINGT ROSADO VIA UNIVERSIDADES - VOLTA
+		onibus.add(new Onibus(50, 50, linha5VoltaUniversidades));
+		// LINHA 05 - VINGT ROSADO VIA ODETE ROSADO - VOLTA
+		onibus.add(new Onibus(50, 50, linha5VoltaOdeteRosado));
+		// LINHA 06 - UNIVERSIDADES - IDA
+		onibus.add(new Onibus(50, 50, linha6Ida));
+		// LINHA 06 - UNIVERSIDADES SEM ULRICK GRAFF - IDA
+		onibus.add(new Onibus(50, 50, linha6IdaSemUlrickGraff));
+		// LINHA 06 - UNIVERSIDADES SEM ULRICK GRAFF, NEM AVENIDA RIO BRANCO - IDA
+		onibus.add(new Onibus(50, 50, linha6IdaSemUlrickGraffNemRioBranco));
+		// LINHA 06 - UNIVERSIDADES SEM ULRICK GRAFF, COM UNIRB E COELHO NETO - IDA
+		onibus.add(new Onibus(50, 50, linha6IdaSemUlrickGraffComUNIRBComCoelhoNeto));
+		// LINHA 06 - UNIVERSIDADES - VOLTA
+		onibus.add(new Onibus(50, 50, linha6Volta));
+		// LINHA 06 - UNIVERSIDADES SEM ULRICK GRAFF- VOLTA
+		onibus.add(new Onibus(50, 50, linha6VoltaSemUlrickGraff));
+		// LINHA 06 - UNIVERSIDADES COM UNIRB - VOLTA
+		onibus.add(new Onibus(50, 50, linha6VoltaUNIRB));
+		// LINHA 07 - NOVA VIDA - IDA
+		onibus.add(new Onibus(50, 50, linha7Ida));
+		// LINHA 07 - NOVA VIDA SEM PAREDÕES, TERMINANDO NA PRAÇA FELIPE GUERRA - IDA
+		onibus.add(new Onibus(50, 50, linha7IdaSemParedoesTerminandoNaPracaFelipeGuerra));
+		// LINHA 07 - NOVA VIDA VIA JARDIM DAS PALMEIRAS - IDA
+		onibus.add(new Onibus(50, 50, linha7IdaJardimDasPalmeiras));
+		// LINHA 07 - NOVA VIDA - VOLTA
+		onibus.add(new Onibus(50, 50, linha7Volta));
+		// LINHA 07 - NOVA VIDA VIA JARDIM DAS PALMEIRAS - VOLTA
+		onibus.add(new Onibus(50, 50, linha7VoltaJardimDasPalmeiras));
+		// LINHA 07 - NOVA VIDA VIA SUMARÉ, LIBERDADE, PLANALTO - VOLTA
+		onibus.add(new Onibus(50, 50, linha7VoltaSumareLiberdadePlanalto));
+		// LINHA 08 - SUMARÉ, LIBERDADE, PLANALTO - IDA
+		onibus.add(new Onibus(50, 50, linha8Ida));
+		// LINHA 08 - SUMARÉ, LIBERDADE, PLANALTO - VOLTA
+		onibus.add(new Onibus(50, 50, linha8Volta));
+		// LINHA 09 - BELO HORIZONTE, BOM JESUS, MONTE OLIMPO - IDA
+		onibus.add(new Onibus(50, 50, linha9Ida));
+		// LINHA 09 - BELO HORIZONTE, BOM JESUS, MONTE OLIMPO COM LAGOA DO MATO, BOA
+		// VISTA, DOZE ANOS E SANTO ANTÔNIO - IDA
+		onibus.add(new Onibus(50, 50, linha9IdaLagoaDoMatoBoaVistaDozeAnosSantoAntonio));
+		// LINHA 09 - BELO HORIZONTE, BOM JESUS, MONTE OLIMPO - VOLTA
+		onibus.add(new Onibus(50, 50, linha9Volta));
+		// LINHA 10 - SHOPPING, UNP - IDA
+		onibus.add(new Onibus(50, 50, linha10Ida));
+		// LINHA 10 - SHOPPING, UNP, AEROPORTO, MACARRÃO, BOA VISTA - IDA
+		onibus.add(new Onibus(50, 50, linha10IdaAeroportoMacarraoBoaVista));
+		// LINHA 10 - SHOPPING, UNP - VOLTA
+		onibus.add(new Onibus(50, 50, linha10Volta));
+		// LINHA 10 - SHOPPING, UNP, AEROPORTO, MACARRÃO, BOA VISTA - VOLTA
+		onibus.add(new Onibus(50, 50, linha10VoltaAeroportoMacarraoBoaVista));
+		// LINHA 11 - PARQUE UNIVERSITÁRIO, UNIRB, ALTO DAS BRISAS - IDA
+		onibus.add(new Onibus(50, 50, linha11Ida));
+		// LINHA 11 - PARQUE UNIVERSITÁRIO, UNIRB, ALTO DAS BRISAS - VOLTA
+		onibus.add(new Onibus(50, 50, linha11Volta));
+		// LINHA 12 - NOVA MOSSORÓ, SANTO ANTÔNIO, BARROCAS - IDA
+		onibus.add(new Onibus(50, 50, linha12Ida));
+		// LINHA 12 - NOVA MOSSORÓ, SANTO ANTÔNIO, BARROCAS - VOLTA
+		onibus.add(new Onibus(50, 50, linha12Volta));
+		// LINHA 14 - AEROPORTO, RODOVIÁRIA - IDA
+		onibus.add(new Onibus(50, 50, linha14Ida));
+		// LINHA 14 - AEROPORTO, RODOVIÁRIA - VOLTA
+		onibus.add(new Onibus(50, 50, linha14Volta));
+		// LINHA 15 - MACARRÃO, BOA VISTA - IDA
+		onibus.add(new Onibus(50, 50, linha15Ida));
+		// LINHA 15 - MACARRÃO, BOA VISTA - VOLTA
+		onibus.add(new Onibus(50, 50, linha15Volta));
+		// LINHA 17 - ODETE ROSADO - IDA
+		onibus.add(new Onibus(50, 50, linha17Ida));
+		// LINHA 17 - ODETE ROSADO - VOLTA
+		onibus.add(new Onibus(50, 50, linha17Volta));
+		// LINHA 19 - CIDADE OESTE - IDA
+		onibus.add(new Onibus(50, 50, linha19Ida));
+		// LINHA 19 - CIDADE OESTE - VOLTA
+		onibus.add(new Onibus(50, 50, linha19Volta));
 
-		/*
-		 * String paradasString = ""; for (int i = 0; i < paradas.size(); i++) {
-		 * paradasString += paradas.get(i) + "\n"; }
-		 * Main.armazenarDados("paradasID.txt", paradasString);
-		 */
-
+		// -----------------------------------------------------------------------------------------------------------------------
 		// Define as pessoas
 		// nome, 'origem', 'destino'
 		List<Pedestre> pessoas = new ArrayList<Pedestre>();
@@ -67,7 +611,7 @@ public class Main {
 		int numeroPessoas = pessoas.size();
 		String stringPessoas[] = new String[numeroPessoas];
 
-		// -------------------------------------------------------------
+		// -----------------------------------------------------------------------------------------------------------------------
 		int numeroParadas = paradas.size();
 		int numeroParadaAleatoria;
 		int numeroPessoasAleatorio = numeroPessoas;
@@ -86,6 +630,12 @@ public class Main {
 
 			paradas.get(numeroParadaAleatoria).addPedestre(pessoas.get(i));
 		}
+
+		/*
+		 * // Imprime as paradas com os pedestres String paradasString = ""; for (int i
+		 * = 0; i < paradas.size(); i++) { paradasString += paradas.get(i) + "\n"; }
+		 * Main.armazenarDados("paradasID.txt", paradasString);
+		 */
 
 		String stringSaidaPopulation = "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n"
 				+ "<!DOCTYPE plans SYSTEM \"http://www.matsim.org/files/dtd/plans_v4.dtd\">\n" + "\n" + "<plans>\n";
@@ -112,10 +662,10 @@ public class Main {
 		double coordenadaY;
 
 		Parada paradaAtual;
-
 		Calendar momentoAtual;
+		String saidaParadasPercorridasOrdem = "";
 
-		// Dependência proj4j
+		// Biblioteca proj4j
 		// Lida com conversão de coordenadas
 		CRSFactory factory = new CRSFactory();
 		CoordinateReferenceSystem origemCRS = factory.createFromName("EPSG:4326");
@@ -127,6 +677,8 @@ public class Main {
 		// Faz as viagens dos ônibus
 		for (int indiceOnibus = 0; indiceOnibus < numeroOnibus; indiceOnibus++) {
 			numeroParadasLinhaAtual = onibus.get(indiceOnibus).getLinha().getParadas().size() - 1;
+
+			saidaParadasPercorridasOrdem += "\n\n";
 
 			for (indiceParada = 0; indiceParada < numeroParadasLinhaAtual; indiceParada++) {
 				momentoAtual = Calendar.getInstance();
@@ -236,14 +788,14 @@ public class Main {
 				System.out.println("Quem está no ônibus: " + pessoasOnibus);
 				System.out.println();
 
-				// Simula deslocamento
-				if ((indiceParada + 1) != numeroParadasLinhaAtual) {
+				saidaParadasPercorridasOrdem += "\t<facility id=\"" + paradaAtual.getNomeParada() + "\" x=\""
+						+ coordenadaX + "\" y=\"" + coordenadaY + "\"/>\n";
 
-					pessoasOnibusSimulado = Main.simularDeslocamento(paradaAtual,
-							onibus.get(indiceOnibus).getLinha().getParadas().get(indiceParada + 1),
-							onibus.get(indiceOnibus).getVelocidade(), pessoasSubiramOnibus, pessoasDesceramOnibus,
-							pessoasOnibus, pessoasOnibusSimulado);
-				}
+				// Simula deslocamento
+				pessoasOnibusSimulado = Main.simularDeslocamento(paradaAtual,
+						onibus.get(indiceOnibus).getLinha().getParadas().get(indiceParada + 1),
+						onibus.get(indiceOnibus).getVelocidade(), pessoasSubiramOnibus, pessoasDesceramOnibus,
+						pessoasOnibus, pessoasOnibusSimulado);
 
 				// Esvazia vetores de descida e subida
 				pessoasDesceramOnibus.clear();
@@ -253,6 +805,7 @@ public class Main {
 			pessoasOnibusSimulado.clear();
 
 			paradaAtual = onibus.get(indiceOnibus).getLinha().getParadas().get(indiceParada);
+
 			momentoAtual = Calendar.getInstance();
 			horaAtual = momentoAtual.get(Calendar.HOUR_OF_DAY);
 			minutoAtual = momentoAtual.get(Calendar.MINUTE);
@@ -293,6 +846,9 @@ public class Main {
 			}
 
 			onibus.get(indiceOnibus).clearPedestres();
+
+			saidaParadasPercorridasOrdem += "\t<facility id=\"" + paradaAtual.getNomeParada() + "\" x=\"" + coordenadaX
+					+ "\" y=\"" + coordenadaY + "\"/>\n";
 		}
 
 		// Adiciona as pessoas que fizeram parte da simulação na string de saída
@@ -308,96 +864,7 @@ public class Main {
 
 		Main.armazenarDados("population.xml", stringSaidaPopulation);
 		Main.armazenarDados("facilitiesSaida.xml", stringSaidaFacilities);
-	}
-
-	public static ArrayList<Parada> gerarParadas(String nomeArquivoFacilitiesEntrada) {
-		String entrada = "";
-
-		// https://www.w3schools.com/Java/java_files_read.asp
-		try {
-			File arquivoEntradaFacilities = new File(nomeArquivoFacilitiesEntrada);
-			Scanner myReaderFacilities = new Scanner(arquivoEntradaFacilities);
-
-			while (myReaderFacilities.hasNextLine()) {
-				entrada += myReaderFacilities.nextLine();
-			}
-
-			myReaderFacilities.close();
-
-			System.out.println("Leitura bem-sucedida!");
-		} catch (FileNotFoundException e) {
-			System.out.println("Erro de leitura!");
-			e.printStackTrace();
-		}
-
-		CRSFactory factory = new CRSFactory();
-		CoordinateReferenceSystem origemCRS = factory.createFromName("EPSG:3857");
-		CoordinateReferenceSystem destinoCRS = factory.createFromName("EPSG:4326");
-		BasicCoordinateTransform transform = new BasicCoordinateTransform(origemCRS, destinoCRS);
-		ProjCoordinate coordenadasOrigem = new ProjCoordinate();
-		ProjCoordinate coordenadasDestino = new ProjCoordinate();
-
-		ArrayList<Parada> paradas = new ArrayList<Parada>();
-		int idParada = -1;
-		String nomeParada;
-
-		String stringCoordenadaX, stringCoordenadaY;
-		double doubleCoordenadaX, doubleCoordenadaY;
-
-		int tamanhoEntrada = entrada.length();
-		for (int i = 0; i < tamanhoEntrada; i++) {
-			nomeParada = "";
-			if (entrada.charAt(i) == 'i') {
-				i++;
-				if (entrada.charAt(i) == 'd') {
-					i++;
-					if (entrada.charAt(i) == '=') {
-						i += 2;
-						idParada++;
-
-						do {
-							nomeParada += entrada.charAt(i);
-							i++;
-						} while (entrada.charAt(i) != '\"');
-
-						do {
-							i++;
-						} while (entrada.charAt(i) != '\"');
-
-						i++;
-
-						stringCoordenadaX = "";
-						while (entrada.charAt(i) != '\"') {
-							stringCoordenadaX += entrada.charAt(i);
-							i++;
-						}
-
-						doubleCoordenadaX = Double.valueOf(stringCoordenadaX);
-
-						do {
-							i++;
-						} while (entrada.charAt(i) != '\"');
-
-						i++;
-
-						stringCoordenadaY = "";
-						while (entrada.charAt(i) != '\"') {
-							stringCoordenadaY += entrada.charAt(i);
-							i++;
-						}
-
-						doubleCoordenadaY = Double.valueOf(stringCoordenadaY);
-
-						coordenadasOrigem.setValue(doubleCoordenadaX, doubleCoordenadaY);
-						transform.transform(coordenadasOrigem, coordenadasDestino);
-
-						paradas.add(new Parada(nomeParada, idParada, coordenadasDestino.x, coordenadasDestino.y));
-					}
-				}
-			}
-		}
-
-		return paradas;
+		Main.armazenarDados("paradasPercorridas.xml", saidaParadasPercorridasOrdem);
 	}
 
 	public static void armazenarDados(String nomeArquivo, String dados) {

@@ -836,7 +836,7 @@
 	<facility id="parada_AeC" x="-4157253.212806" y="-579415.665227"/>
 	<facility id="terminal_Carcara" x="-4157012.257018" y="-579099.466738"/>
 
-	<!--LINHA 05 - VINGT ROSADO VIA UNIVERSIADES - IDA====================================================================-->
+	<!--LINHA 05 - VINGT ROSADO VIA UNIVERSIDADES - IDA===================================================================-->
 	<facility id="parada_Ida_Volta_Linha5" x="-4151614.339769" y="-580650.675610"/>
 	<facility id="parada_Rua_Rosemiro_Fontes_Carneiro_Ida0" x="-4151816.4790612296" y="-580509.7591357834"/>
 	<facility id="parada_Salao_do_Reino_das_Testemunhas_de_Jeova_Vingt_Rosado" x="-4151956.1850221753" y="-580414.7454475632"/>
@@ -1180,7 +1180,7 @@
 	<facility id="parada_AeC" x="-4157253.212806" y="-579415.665227"/>
 	<facility id="terminal_Carcara" x="-4157012.257018" y="-579099.466738"/>
 
-	<!--LINHA 06 - UNIVERSIDADES ROTA ALTERNATIVA 0 - Ida=================================================================-->
+	<!--LINHA 06 - UNIVERSIDADES SEM ULRICK GRAFF - IDA===================================================================-->
 	<facility id="parada_UERN_Ida" x="-4154089.400424247" y="-580321.9227872522"/>
 	<facility id="parada_Costalarga_Corretora_de_Seguros_Presidente_Costa_e_Silva_Ida" x="-4154293.8943288345" y="-580215.161230164"/>
 	<facility id="parada_Cristais_do_Alto_Ida" x="-4154447.735003" y="-580104.494228"/>
@@ -1215,7 +1215,7 @@
 	<facility id="parada_AeC" x="-4157253.212806" y="-579415.665227"/>
 	<facility id="terminal_Carcara" x="-4157012.257018" y="-579099.466738"/>
 
-	<!--LINHA 06 - UNIVERSIDADES ROTA ALTERNATIVA 1 - Ida=================================================================-->
+	<!--LINHA 06 - UNIVERSIDADES SEM ULRICK GRAFF, NEM AVENIDA RIO BRANCO - IDA===========================================-->
 	<facility id="parada_UERN_Ida" x="-4154089.400424247" y="-580321.9227872522"/>
 	<facility id="parada_Costalarga_Corretora_de_Seguros_Presidente_Costa_e_Silva_Ida" x="-4154293.8943288345" y="-580215.161230164"/>
 	<facility id="parada_Cristais_do_Alto_Ida" x="-4154447.735003" y="-580104.494228"/>
@@ -1245,7 +1245,7 @@
 	<facility id="parada_Praca_Gazeta" x="-4157049.819830" y="-579098.329475"/>
 	<facility id="terminal_Praca_Felipe_Guerra" x="-4157205.2329715514" y="-579013.5879012579"/>
 
-	<!--LINHA 06 - UNIVERSIDADES, UNIRB - Ida=============================================================================-->
+	<!--LINHA 06 - UNIVERSIDADES SEM ULRICK GRAFF, COM UNIRB E COELHO NETO - IDA==========================================-->
 	<facility id="parada_UNIRB_Ida" x="-4153331.336375" y="-578720.267418"/>
 	<facility id="parada_BR_110_Norte_Ida1" x="-4153569.903506" y="-578900.312450"/>
 	<facility id="parada_Avenida_Francisco_Mota_Ida0" x="-4154098.692479" y="-579271.076824"/>
@@ -1334,7 +1334,7 @@
 	<facility id="parada_Costalarga_Corretora_de_Seguros_Presidente_Costa_e_Silva_Volta" x="-4154310.685799" y="-580225.718577"/>
 	<facility id="parada_UERN_Ida" x="-4154089.400424247" y="-580321.9227872522"/>
 
-	<!--LINHA 06 - UNIVERSIDADES ALTERNATIVA- VOLTA=======================================================================-->
+	<!--LINHA 06 - UNIVERSIDADES SEM ULRICK GRAFF- VOLTA==================================================================-->
 	<facility id="terminal_Carcara" x="-4157012.257018" y="-579099.466738"/>
 	<facility id="parada_O_Sebosao" x="-4156815.8373927562" y="-579294.1525159125"/>
 	<facility id="parada_Hotel_VillaOeste_Volta" x="-4156576.028509" y="-579710.067218"/>
@@ -1364,7 +1364,7 @@
 	<facility id="parada_Costalarga_Corretora_de_Seguros_Presidente_Costa_e_Silva_Volta" x="-4154310.685799" y="-580225.718577"/>
 	<facility id="parada_UERN_Ida" x="-4154089.400424247" y="-580321.9227872522"/>
 
-	<!--LINHA 06 - UNIVERSIDADES, UNIRB - VOLTA===========================================================================-->
+	<!--LINHA 06 - UNIVERSIDADES COM UNIRB - VOLTA========================================================================-->
 	<facility id="terminal_Carcara" x="-4157012.257018" y="-579099.466738"/>
 	<facility id="parada_O_Sebosao" x="-4156815.8373927562" y="-579294.1525159125"/>
 	<facility id="parada_Hotel_VillaOeste_Volta" x="-4156576.028509" y="-579710.067218"/>
@@ -1450,7 +1450,7 @@
 	<facility id="parada_AeC" x="-4157253.212806" y="-579415.665227"/>
 	<facility id="terminal_Carcara" x="-4157012.257018" y="-579099.466738"/>
 
-	<!--LINHA 07 - NOVA VIDA ALTERNATIVA - IDA============================================================================-->
+	<!--LINHA 07 - NOVA VIDA SEM PAREDÕES, TERMINANDO NA PRAÇA FELIPE GUERRA - IDA========================================-->
 	<facility id="parada_Avenida_Antonio_Bento_Volta4" x="-4153583.453338592" y="-583535.7888552686"/>
 	<facility id="parada_Avenida_Antonio_Bento_Ida4" x="-4153564.7516641384" y="-583533.8773196294"/>
 	<facility id="parada_Avenida_Antonio_Bento_Ida5" x="-4153661.1543431655" y="-583484.8704822817"/>
@@ -1744,7 +1744,7 @@
 	<facility id="parada_Praca_Gazeta" x="-4157049.819830" y="-579098.329475"/>
 	<facility id="terminal_Praca_Felipe_Guerra" x="-4157205.2329715514" y="-579013.5879012579"/>
 
-	<!--LINHA 09 - BELO HORIZONTE, BOM JESUS, MONTE OLIMPO ALTERNATIVA - IDA==============================================-->
+	<!--LINHA 09 - BELO HORIZONTE, BOM JESUS, MONTE OLIMPO COM LAGOA DO MATO, BOA VISTA, DOZE ANOS E SANTO ANTÔNIO - IDA==-->
 	<facility id="parada_Ida_Volta_Linha9" x="-4156440.546862" y="-583688.450320"/>
 	<facility id="parada_Rua_Zeus_Ida0" x="-4156870.878374" y="-583428.609212"/>
 	<facility id="parada_Rua_Zeus_Ida1" x="-4157012.257018" y="-583333.361508"/>
