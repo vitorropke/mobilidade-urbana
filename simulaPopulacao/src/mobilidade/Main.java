@@ -16,12 +16,15 @@ import org.osgeo.proj4j.ProjCoordinate;
 
 public class Main {
 	static int seed = 1;
+	// static Calendar momentoAtual = Calendar.getInstance();
 
 	public static void main(String[] args) {
+		Calendar horaPartida = Calendar.getInstance();
 		// -----------------------------------------------------------------------------------------------------------------------
 		// Define as paradas
 		List<Parada> paradas = Parada.gerarParadas("facilitiesEntradaResumido.xml");
 		List<Parada> subParadas = new ArrayList<Parada>();
+		List<Calendar> horarios = new ArrayList<Calendar>();
 
 		// -----------------------------------------------------------------------------------------------------------------------
 		// Define as linhas
@@ -33,11 +36,18 @@ public class Main {
 		subParadas.addAll(paradas.subList(190, 193));
 		subParadas.addAll(paradas.subList(10, 20));
 		subParadas.add(paradas.get(0));
-		Linha linha1Ida = new Linha(subParadas);
+
+		horaPartida.set(Calendar.SECOND, 0);
+		horaPartida.set(Calendar.MINUTE, 0);
+		horaPartida.set(Calendar.HOUR_OF_DAY, 18);
+		horarios.add(horaPartida);
+		Linha linha1Ida = new Linha(subParadas, horarios);
 
 		// LINHA 01 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO, SANTA JÚLIA - IDA
 		subParadas.addAll(41, paradas.subList(143, 151));
-		Linha linha1SantaJuliaIda = new Linha(subParadas);
+
+		horarios.get(0).set(seed, Calendar.HOUR_OF_DAY, 18);
+		Linha linha1SantaJuliaIda = new Linha(subParadas, horarios);
 
 		// LINHA 01 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO, SANTA JÚLIA - VOLTA
 		subParadas.clear();
@@ -49,11 +59,11 @@ public class Main {
 		subParadas.addAll(paradas.subList(70, 77));
 		subParadas.addAll(paradas.subList(161, 190));
 		subParadas.add(paradas.get(40));
-		Linha linha1Volta = new Linha(subParadas);
+		Linha linha1Volta = new Linha(subParadas, horarios);
 
 		// LINHA 01 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO, SANTA JÚLIA - VOLTA
 		subParadas.addAll(46, paradas.subList(143, 151));
-		Linha linha1SantaJuliaVolta = new Linha(subParadas);
+		Linha linha1SantaJuliaVolta = new Linha(subParadas, horarios);
 
 		// LINHA 02 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO - IDA
 		subParadas.clear();
@@ -62,7 +72,7 @@ public class Main {
 		subParadas.addAll(paradas.subList(97, 105));
 		subParadas.addAll(paradas.subList(12, 20));
 		subParadas.add(paradas.get(0));
-		Linha linha2Ida = new Linha(subParadas);
+		Linha linha2Ida = new Linha(subParadas, horarios);
 
 		// LINHA 02 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO - VOLTA
 		subParadas.clear();
@@ -71,7 +81,7 @@ public class Main {
 		subParadas.addAll(paradas.subList(109, 132));
 		subParadas.addAll(paradas.subList(161, 190));
 		subParadas.add(paradas.get(40));
-		Linha linha2Volta = new Linha(subParadas);
+		Linha linha2Volta = new Linha(subParadas, horarios);
 
 		// LINHA 02 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO, UNIVERSIDADES VIA AEC
 		subParadas.clear();
@@ -80,7 +90,7 @@ public class Main {
 		subParadas.addAll(paradas.subList(32, 39));
 		subParadas.addAll(paradas.subList(15, 20));
 		subParadas.add(paradas.get(0));
-		Linha linha2UniversidadesAeC = new Linha(subParadas);
+		Linha linha2UniversidadesAeC = new Linha(subParadas, horarios);
 
 		// LINHA 02 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO, UNIVERSIDADES VIA IFRN
 		subParadas.removeAll(subParadas.subList(5, 7));
@@ -88,7 +98,7 @@ public class Main {
 		subParadas.addAll(9, paradas.subList(317, 320));
 		subParadas.addAll(12, paradas.subList(29, 32));
 		subParadas.removeAll(subParadas.subList(23, 27));
-		Linha linha2UniversidadesIFRN = new Linha(subParadas);
+		Linha linha2UniversidadesIFRN = new Linha(subParadas, horarios);
 
 		// LINHA 03 - SANTO ANTÔNIO, BARROCAS
 		subParadas.clear();
@@ -98,7 +108,7 @@ public class Main {
 		subParadas.addAll(paradas.subList(222, 231));
 		subParadas.addAll(paradas.subList(7, 19));
 		subParadas.add(paradas.get(20));
-		Linha linha3 = new Linha(subParadas);
+		Linha linha3 = new Linha(subParadas, horarios);
 
 		// LINHA 04 - ABOLIÇÃO V - IDA
 		subParadas.clear();
@@ -108,11 +118,11 @@ public class Main {
 		subParadas.addAll(paradas.subList(190, 193));
 		subParadas.addAll(paradas.subList(10, 20));
 		subParadas.add(paradas.get(0));
-		Linha linha4Ida = new Linha(subParadas);
+		Linha linha4Ida = new Linha(subParadas, horarios);
 
 		// LINHA 04 - ABOLIÇÃO V, SANTA JÚLIA
 		subParadas.addAll(1, paradas.subList(143, 151));
-		Linha linha4SantaJulia = new Linha(subParadas);
+		Linha linha4SantaJulia = new Linha(subParadas, horarios);
 
 		// LINHA 04 - ABOLIÇÃO V - VOLTA
 		subParadas.clear();
@@ -120,7 +130,7 @@ public class Main {
 		subParadas.addAll(paradas.subList(193, 196));
 		subParadas.addAll(paradas.subList(105, 109));
 		subParadas.addAll(paradas.subList(115, 143));
-		Linha linha4Volta = new Linha(subParadas);
+		Linha linha4Volta = new Linha(subParadas, horarios);
 
 		// LINHA 05 - VINGT ROSADO - IDA
 		subParadas.clear();
@@ -129,7 +139,7 @@ public class Main {
 		subParadas.addAll(paradas.subList(32, 40));
 		subParadas.addAll(paradas.subList(2, 19));
 		subParadas.add(paradas.get(20));
-		Linha linha5Ida = new Linha(subParadas);
+		Linha linha5Ida = new Linha(subParadas, horarios);
 
 		// LINHA 05 - VINGT ROSADO VIA UNIVERSIDADES - IDA
 		subParadas.addAll(27, paradas.subList(420, 423));
@@ -138,7 +148,7 @@ public class Main {
 		subParadas.addAll(39, paradas.subList(317, 320));
 		subParadas.addAll(42, paradas.subList(29, 32));
 		subParadas.removeAll(subParadas.subList(45, 47));
-		Linha linha5IdaUniversidades = new Linha(subParadas);
+		Linha linha5IdaUniversidades = new Linha(subParadas, horarios);
 
 		// LINHA 05 - VINGT ROSADO - VOLTA
 		subParadas.clear();
@@ -146,12 +156,12 @@ public class Main {
 		subParadas.addAll(paradas.subList(366, 371));
 		subParadas.addAll(paradas.subList(376, 397));
 		subParadas.add(paradas.get(284));
-		Linha linha5Volta = new Linha(subParadas);
+		Linha linha5Volta = new Linha(subParadas, horarios);
 
 		// LINHA 05 - VINGT ROSADO, UERN - VOLTA
 		subParadas.addAll(9, paradas.subList(420, 423));
 		subParadas.addAll(12, paradas.subList(362, 366));
-		Linha linha5VoltaUERN = new Linha(subParadas);
+		Linha linha5VoltaUERN = new Linha(subParadas, horarios);
 
 		// LINHA 05 - VINGT ROSADO, IFRN - VOLTA
 		subParadas.removeAll(subParadas.subList(9, 16));
@@ -159,12 +169,12 @@ public class Main {
 		subParadas.add(6, paradas.get(26));
 		subParadas.addAll(7, paradas.subList(397, 409));
 		subParadas.addAll(19, paradas.subList(416, 420));
-		Linha linha5VoltaIFRN = new Linha(subParadas);
+		Linha linha5VoltaIFRN = new Linha(subParadas, horarios);
 
 		// LINHA 05 - VINGT ROSADO VIA UNIVERSIDADES - VOLTA
 		subParadas.addAll(24, paradas.subList(420, 423));
 		subParadas.addAll(27, paradas.subList(362, 366));
-		Linha linha5VoltaUniversidades = new Linha(subParadas);
+		Linha linha5VoltaUniversidades = new Linha(subParadas, horarios);
 
 		// LINHA 05 - VINGT ROSADO VIA ODETE ROSADO - VOLTA
 		subParadas.removeAll(subParadas.subList(27, 31));
@@ -172,7 +182,7 @@ public class Main {
 		subParadas.addAll(0, paradas.subList(366, 368));
 		subParadas.addAll(6, paradas.subList(423, 425));
 		subParadas.addAll(8, paradas.subList(355, 366));
-		Linha linha5VoltaOdeteRosado = new Linha(subParadas);
+		Linha linha5VoltaOdeteRosado = new Linha(subParadas, horarios);
 
 		// LINHA 06 - UNIVERSIDADES - IDA
 		subParadas.clear();
@@ -183,11 +193,11 @@ public class Main {
 		subParadas.addAll(paradas.subList(320, 328));
 		subParadas.add(paradas.get(18));
 		subParadas.add(paradas.get(20));
-		Linha linha6Ida = new Linha(subParadas);
+		Linha linha6Ida = new Linha(subParadas, horarios);
 
 		// LINHA 06 - UNIVERSIDADES SEM ULRICK GRAFF - IDA
 		subParadas.removeAll(subParadas.subList(9, 16));
-		Linha linha6IdaSemUlrickGraff = new Linha(subParadas);
+		Linha linha6IdaSemUlrickGraff = new Linha(subParadas, horarios);
 
 		// LINHA 06 - UNIVERSIDADES SEM ULRICK GRAFF, NEM AVENIDA RIO BRANCO - IDA
 		subParadas.removeAll(subParadas.subList(22, 31));
@@ -195,7 +205,7 @@ public class Main {
 		subParadas.remove(subParadas.get(26));
 		subParadas.add(paradas.get(19));
 		subParadas.add(paradas.get(0));
-		Linha linha6IdaSemUlrickGraffNemRioBranco = new Linha(subParadas);
+		Linha linha6IdaSemUlrickGraffNemRioBranco = new Linha(subParadas, horarios);
 
 		// LINHA 06 - UNIVERSIDADES SEM ULRICK GRAFF, COM UNIRB E COELHO NETO - IDA
 		subParadas.addAll(0, paradas.subList(274, 281));
@@ -204,7 +214,7 @@ public class Main {
 		subParadas.add(32, paradas.get(39));
 		subParadas.addAll(33, paradas.subList(320, 324));
 		subParadas.addAll(37, paradas.subList(328, 338));
-		Linha linha6IdaSemUlrickGraffComUNIRBComCoelhoNeto = new Linha(subParadas);
+		Linha linha6IdaSemUlrickGraffComUNIRBComCoelhoNeto = new Linha(subParadas, horarios);
 
 		// LINHA 06 - UNIVERSIDADES - VOLTA
 		subParadas.clear();
@@ -213,17 +223,17 @@ public class Main {
 		subParadas.add(paradas.get(368));
 		subParadas.addAll(paradas.subList(420, 423));
 		subParadas.add(paradas.get(362));
-		Linha linha6Volta = new Linha(subParadas);
+		Linha linha6Volta = new Linha(subParadas, horarios);
 
 		// LINHA 06 - UNIVERSIDADES SEM ULRICK GRAFF- VOLTA
 		subParadas.removeAll(subParadas.subList(19, 26));
-		Linha linha6VoltaSemUlrickGraff = new Linha(subParadas);
+		Linha linha6VoltaSemUlrickGraff = new Linha(subParadas, horarios);
 
 		// LINHA 06 - UNIVERSIDADES COM UNIRB - VOLTA
 		subParadas.addAll(19, paradas.subList(409, 416));
 		subParadas.addAll(paradas.subList(363, 366));
 		subParadas.addAll(paradas.subList(369, 373));
-		Linha linha6VoltaUNIRB = new Linha(subParadas);
+		Linha linha6VoltaUNIRB = new Linha(subParadas, horarios);
 
 		// LINHA 07 - NOVA VIDA - IDA
 		subParadas.clear();
@@ -232,13 +242,13 @@ public class Main {
 		subParadas.addAll(paradas.subList(27, 40));
 		subParadas.addAll(paradas.subList(2, 19));
 		subParadas.add(paradas.get(20));
-		Linha linha7Ida = new Linha(subParadas);
+		Linha linha7Ida = new Linha(subParadas, horarios);
 
 		// LINHA 07 - NOVA VIDA SEM PAREDÕES, TERMINANDO NA PRAÇA FELIPE GUERRA - IDA
 		subParadas.removeAll(subParadas.subList(21, 40));
 		subParadas.add(paradas.get(15));
 		subParadas.add(paradas.get(0));
-		Linha linha7IdaSemParedoesTerminandoNaPracaFelipeGuerra = new Linha(subParadas);
+		Linha linha7IdaSemParedoesTerminandoNaPracaFelipeGuerra = new Linha(subParadas, horarios);
 
 		// LINHA 07 - NOVA VIDA VIA JARDIM DAS PALMEIRAS - IDA
 		subParadas.removeAll(subParadas.subList(21, 23));
@@ -247,18 +257,18 @@ public class Main {
 		subParadas.add(paradas.get(20));
 		subParadas.remove(subParadas.get(0));
 		subParadas.addAll(0, paradas.subList(425, 435));
-		Linha linha7IdaJardimDasPalmeiras = new Linha(subParadas);
+		Linha linha7IdaJardimDasPalmeiras = new Linha(subParadas, horarios);
 
 		// LINHA 07 - NOVA VIDA - VOLTA
 		subParadas.clear();
 		subParadas.addAll(paradas.subList(20, 27));
 		subParadas.addAll(paradas.subList(443, 456));
-		Linha linha7Volta = new Linha(subParadas);
+		Linha linha7Volta = new Linha(subParadas, horarios);
 
 		// LINHA 07 - NOVA VIDA VIA JARDIM DAS PALMEIRAS - VOLTA
 		subParadas.addAll(paradas.subList(456, 462));
 		subParadas.add(paradas.get(425));
-		Linha linha7VoltaJardimDasPalmeiras = new Linha(subParadas);
+		Linha linha7VoltaJardimDasPalmeiras = new Linha(subParadas, horarios);
 
 		// LINHA 07 - NOVA VIDA VIA SUMARÉ, LIBERDADE, PLANALTO - VOLTA
 		subParadas.add(0, paradas.get(0));
@@ -268,7 +278,7 @@ public class Main {
 		subParadas.addAll(29, paradas.subList(462, 478));
 		subParadas.removeAll(subParadas.subList(45, 51));
 		subParadas.removeAll(subParadas.subList(54, subParadas.size()));
-		Linha linha7VoltaSumareLiberdadePlanalto = new Linha(subParadas);
+		Linha linha7VoltaSumareLiberdadePlanalto = new Linha(subParadas, horarios);
 
 		// LINHA 08 - SUMARÉ, LIBERDADE, PLANALTO - IDA
 		subParadas.removeAll(subParadas.subList(0, 29));
@@ -276,14 +286,14 @@ public class Main {
 		subParadas.addAll(paradas.subList(27, 40));
 		subParadas.addAll(paradas.subList(2, 19));
 		subParadas.add(paradas.get(20));
-		Linha linha8Ida = new Linha(subParadas);
+		Linha linha8Ida = new Linha(subParadas, horarios);
 
 		// LINHA 08 - SUMARÉ, LIBERDADE, PLANALTO - VOLTA
 		subParadas.clear();
 		subParadas.addAll(paradas.subList(20, 25));
 		subParadas.addAll(paradas.subList(478, 499));
 		subParadas.add(paradas.get(462));
-		Linha linha8Volta = new Linha(subParadas);
+		Linha linha8Volta = new Linha(subParadas, horarios);
 
 		// LINHA 09 - BELO HORIZONTE, BOM JESUS, MONTE OLIMPO - IDA
 		subParadas.clear();
@@ -292,7 +302,7 @@ public class Main {
 		subParadas.add(paradas.get(1));
 		subParadas.addAll(paradas.subList(14, 20));
 		subParadas.add(paradas.get(0));
-		Linha linha9Ida = new Linha(subParadas);
+		Linha linha9Ida = new Linha(subParadas, horarios);
 
 		// LINHA 09 - BELO HORIZONTE, BOM JESUS, MONTE OLIMPO COM LAGOA DO MATO, BOA
 		// VISTA, DOZE ANOS E SANTO ANTÔNIO - IDA
@@ -303,7 +313,7 @@ public class Main {
 		subParadas.addAll(32, paradas.subList(533, 536));
 		subParadas.addAll(35, paradas.subList(190, 193));
 		subParadas.addAll(38, paradas.subList(10, 14));
-		Linha linha9IdaLagoaDoMatoBoaVistaDozeAnosSantoAntonio = new Linha(subParadas);
+		Linha linha9IdaLagoaDoMatoBoaVistaDozeAnosSantoAntonio = new Linha(subParadas, horarios);
 
 		// LINHA 09 - BELO HORIZONTE, BOM JESUS, MONTE OLIMPO - VOLTA
 		subParadas.clear();
@@ -315,14 +325,14 @@ public class Main {
 		subParadas.addAll(paradas.subList(556, 558));
 		subParadas.addAll(paradas.subList(571, 582));
 		subParadas.add(paradas.get(511));
-		Linha linha9Volta = new Linha(subParadas);
+		Linha linha9Volta = new Linha(subParadas, horarios);
 
 		// LINHA 10 - SHOPPING, UNP - IDA
 		subParadas.clear();
 		subParadas.addAll(paradas.subList(622, 632));
 		subParadas.addAll(paradas.subList(13, 20));
 		subParadas.add(paradas.get(0));
-		Linha linha10Ida = new Linha(subParadas);
+		Linha linha10Ida = new Linha(subParadas, horarios);
 
 		// LINHA 10 - SHOPPING, UNP, AEROPORTO, MACARRÃO, BOA VISTA - IDA
 		subParadas.clear();
@@ -344,7 +354,7 @@ public class Main {
 		subParadas.add(paradas.get(1));
 		subParadas.addAll(paradas.subList(14, 20));
 		subParadas.add(paradas.get(0));
-		Linha linha10IdaAeroportoMacarraoBoaVista = new Linha(subParadas);
+		Linha linha10IdaAeroportoMacarraoBoaVista = new Linha(subParadas, horarios);
 
 		// LINHA 10 - SHOPPING, UNP - VOLTA
 		subParadas.clear();
@@ -353,7 +363,7 @@ public class Main {
 		subParadas.add(paradas.get(39));
 		subParadas.addAll(paradas.subList(632, 642));
 		subParadas.add(paradas.get(622));
-		Linha linha10Volta = new Linha(subParadas);
+		Linha linha10Volta = new Linha(subParadas, horarios);
 
 		// LINHA 10 - SHOPPING, UNP, AEROPORTO, MACARRÃO, BOA VISTA - VOLTA
 		subParadas.clear();
@@ -366,7 +376,7 @@ public class Main {
 		subParadas.addAll(paradas.subList(613, 615));
 		subParadas.addAll(paradas.subList(673, 676));
 		subParadas.add(paradas.get(642));
-		Linha linha10VoltaAeroportoMacarraoBoaVista = new Linha(subParadas);
+		Linha linha10VoltaAeroportoMacarraoBoaVista = new Linha(subParadas, horarios);
 
 		// LINHA 11 - PARQUE UNIVERSITÁRIO, UNIRB, ALTO DAS BRISAS - IDA
 		subParadas.clear();
@@ -377,14 +387,14 @@ public class Main {
 		subParadas.addAll(paradas.subList(32, 40));
 		subParadas.addAll(paradas.subList(2, 19));
 		subParadas.add(paradas.get(20));
-		Linha linha11Ida = new Linha(subParadas);
+		Linha linha11Ida = new Linha(subParadas, horarios);
 
 		// LINHA 11 - PARQUE UNIVERSITÁRIO, UNIRB, ALTO DAS BRISAS - VOLTA
 		subParadas.clear();
 		subParadas.addAll(paradas.subList(20, 26));
 		subParadas.addAll(paradas.subList(366, 376));
 		subParadas.add(paradas.get(338));
-		Linha linha11Volta = new Linha(subParadas);
+		Linha linha11Volta = new Linha(subParadas, horarios);
 
 		// LINHA 12 - NOVA MOSSORÓ, SANTO ANTÔNIO, BARROCAS - IDA
 		subParadas.clear();
@@ -392,14 +402,14 @@ public class Main {
 		subParadas.addAll(paradas.subList(210, 231));
 		subParadas.addAll(paradas.subList(7, 20));
 		subParadas.add(paradas.get(0));
-		Linha linha12Ida = new Linha(subParadas);
+		Linha linha12Ida = new Linha(subParadas, horarios);
 
 		// LINHA 12 - NOVA MOSSORÓ, SANTO ANTÔNIO, BARROCAS - VOLTA
 		subParadas.clear();
 		subParadas.addAll(paradas.subList(0, 7));
 		subParadas.addAll(paradas.subList(231, 271));
 		subParadas.add(paradas.get(196));
-		Linha linha12Volta = new Linha(subParadas);
+		Linha linha12Volta = new Linha(subParadas, horarios);
 
 		// LINHA 14 - AEROPORTO, RODOVIÁRIA - IDA
 		subParadas.clear();
@@ -408,7 +418,7 @@ public class Main {
 		subParadas.addAll(paradas.subList(668, 671));
 		subParadas.addAll(paradas.subList(13, 20));
 		subParadas.add(paradas.get(0));
-		Linha linha14Ida = new Linha(subParadas);
+		Linha linha14Ida = new Linha(subParadas, horarios);
 
 		// LINHA 14 - AEROPORTO, RODOVIÁRIA - VOLTA
 		subParadas.clear();
@@ -420,7 +430,7 @@ public class Main {
 		subParadas.addAll(paradas.subList(613, 615));
 		subParadas.addAll(paradas.subList(673, 676));
 		subParadas.add(paradas.get(642));
-		Linha linha14Volta = new Linha(subParadas);
+		Linha linha14Volta = new Linha(subParadas, horarios);
 
 		// LINHA 15 - MACARRÃO, BOA VISTA - IDA,
 		subParadas.clear();
@@ -435,7 +445,7 @@ public class Main {
 		subParadas.add(paradas.get(1));
 		subParadas.addAll(paradas.subList(14, 20));
 		subParadas.add(paradas.get(0));
-		Linha linha15Ida = new Linha(subParadas);
+		Linha linha15Ida = new Linha(subParadas, horarios);
 
 		// LINHA 15 - MACARRÃO, BOA VISTA - VOLTA
 		subParadas.clear();
@@ -448,7 +458,7 @@ public class Main {
 		subParadas.addAll(paradas.subList(613, 615));
 		subParadas.addAll(paradas.subList(709, 711));
 		subParadas.add(paradas.get(676));
-		Linha linha15Volta = new Linha(subParadas);
+		Linha linha15Volta = new Linha(subParadas, horarios);
 
 		// LINHA 17 - ODETE ROSADO - IDA
 		subParadas.clear();
@@ -457,7 +467,7 @@ public class Main {
 		subParadas.addAll(paradas.subList(32, 40));
 		subParadas.addAll(paradas.subList(2, 19));
 		subParadas.add(paradas.get(20));
-		Linha linha17Ida = new Linha(subParadas);
+		Linha linha17Ida = new Linha(subParadas, horarios);
 
 		// LINHA 17 - ODETE ROSADO - VOLTA
 		subParadas.clear();
@@ -465,7 +475,7 @@ public class Main {
 		subParadas.addAll(paradas.subList(366, 369));
 		subParadas.addAll(paradas.subList(420, 425));
 		subParadas.add(paradas.get(355));
-		Linha linha17Volta = new Linha(subParadas);
+		Linha linha17Volta = new Linha(subParadas, horarios);
 
 		// LINHA 19 - CIDADE OESTE - IDA
 		subParadas.clear();
@@ -474,7 +484,7 @@ public class Main {
 		subParadas.add(paradas.get(1));
 		subParadas.addAll(paradas.subList(14, 20));
 		subParadas.add(paradas.get(0));
-		Linha linha19Ida = new Linha(subParadas);
+		Linha linha19Ida = new Linha(subParadas, horarios);
 
 		// LINHA 19 - CIDADE OESTE - VOLTA
 		subParadas.clear();
@@ -482,10 +492,11 @@ public class Main {
 		subParadas.addAll(paradas.subList(548, 558));
 		subParadas.addAll(paradas.subList(582, 593));
 		subParadas.add(paradas.get(536));
-		Linha linha19Volta = new Linha(subParadas);
+		Linha linha19Volta = new Linha(subParadas, horarios);
 
 		// -----------------------------------------------------------------------------------------------------------------------
 		// Define os ônibus
+		// numeroVeiculo, capacidadePessoas, velocidade, linhaOnibus
 		List<Onibus> onibus = new ArrayList<Onibus>();
 
 		// LINHA 01 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO - IDA
@@ -649,21 +660,18 @@ public class Main {
 		List<Pedestre> pessoasDesceramOnibus = new ArrayList<Pedestre>();
 		List<Pedestre> pessoasSubiramOnibus = new ArrayList<Pedestre>();
 
-		int numeroOnibus = onibus.size();
 		int numeroPessoasOnibus;
 		int numeroPessoasParada;
-		int numeroParadasLinhaAtual;
 		int indicePessoa;
-		int indiceParada;
+		int indiceString;
 		int horaAtual;
 		int minutoAtual;
 		int segundoAtual;
 		double coordenadaX;
 		double coordenadaY;
 
-		Parada paradaAtual;
-		Calendar momentoAtual;
-		String saidaParadasPercorridasOrdem = "";
+		Calendar momentoAtual = Calendar.getInstance();
+		String horariosSaida = "";
 
 		// Biblioteca proj4j
 		// Lida com conversão de coordenadas
@@ -675,18 +683,24 @@ public class Main {
 		ProjCoordinate coordenadasDestino = new ProjCoordinate();
 
 		// Faz as viagens dos ônibus
-		for (int indiceOnibus = 0; indiceOnibus < numeroOnibus; indiceOnibus++) {
-			numeroParadasLinhaAtual = onibus.get(indiceOnibus).getLinha().getParadas().size() - 1;
+		int indiceParada = 0;
+		for (Onibus onibusAtual : onibus) {
+			momentoAtual.set(onibusAtual.getLinha().getHorarios().get(0).get(Calendar.YEAR),
+					onibusAtual.getLinha().getHorarios().get(0).get(Calendar.MONTH),
+					onibusAtual.getLinha().getHorarios().get(0).get(Calendar.DAY_OF_MONTH),
+					onibusAtual.getLinha().getHorarios().get(0).get(Calendar.HOUR_OF_DAY),
+					onibusAtual.getLinha().getHorarios().get(0).get(Calendar.MINUTE),
+					onibusAtual.getLinha().getHorarios().get(0).get(Calendar.SECOND));
 
-			saidaParadasPercorridasOrdem += "\n\n";
+			horariosSaida += momentoAtual.get(Calendar.HOUR_OF_DAY) + ":" + momentoAtual.get(Calendar.MINUTE) + ":"
+					+ momentoAtual.get(Calendar.SECOND) + "\n";
 
-			for (indiceParada = 0; indiceParada < numeroParadasLinhaAtual; indiceParada++) {
-				momentoAtual = Calendar.getInstance();
+			for (Parada paradaAtual : onibusAtual.getLinha().getParadas()) {
+				indiceParada = onibusAtual.getLinha().getParadas().indexOf(paradaAtual);
+
 				horaAtual = momentoAtual.get(Calendar.HOUR_OF_DAY);
 				minutoAtual = momentoAtual.get(Calendar.MINUTE);
 				segundoAtual = momentoAtual.get(Calendar.SECOND);
-
-				paradaAtual = onibus.get(indiceOnibus).getLinha().getParadas().get(indiceParada);
 
 				coordenadasOrigem.setValue(paradaAtual.getCoordenadaX(), paradaAtual.getCoordenadaY());
 				transform.transform(coordenadasOrigem, coordenadasDestino);
@@ -694,7 +708,7 @@ public class Main {
 				coordenadaX = coordenadasDestino.x;
 				coordenadaY = coordenadasDestino.y;
 
-				pessoasOnibus = onibus.get(indiceOnibus).getPedestres();
+				pessoasOnibus = onibusAtual.getPedestres();
 				pessoasParada = paradaAtual.getPedestres();
 
 				numeroPessoasOnibus = pessoasOnibus.size();
@@ -733,8 +747,7 @@ public class Main {
 				for (int i = 0; i < numeroPessoasParada; i++) {
 					// Se for cara e a capacidade máxima do ônibus não for atingida, o pedestre
 					// entra no ônibus
-					if ((numeroPessoasOnibus <= onibus.get(indiceOnibus).getCapacidadeMaximaPassageiros())
-							&& Main.caraCoroa()) {
+					if ((numeroPessoasOnibus <= onibusAtual.getCapacidadeMaximaPassageiros()) && Main.caraCoroa()) {
 						indicePessoa = -1;
 						pessoasSubiramOnibus.add(pessoasParada.get(i));
 						pessoasOnibus.add(pessoasParada.get(i));
@@ -755,10 +768,18 @@ public class Main {
 										+ minutoAtual + ":" + segundoAtual + "\" x=\"" + coordenadaX + "\" y=\""
 										+ coordenadaY + "\" type=\"home\"/>\n" + "\t\t\t<leg mode=\"pt\"/>\n";
 							} else {
-								stringPessoas[indicePessoa] += "\t\t\t<leg mode=\"pt\"/>\n" + "\t\t\t<act end_time=\""
-										+ horaAtual + ":" + minutoAtual + ":" + segundoAtual + "\" x=\"" + coordenadaX
-										+ "\" y=\"" + coordenadaY + "\" type=\"home\"/>\n"
-										+ "\t\t\t<leg mode=\"pt\"/>\n";
+								indiceString = stringPessoas[indicePessoa].length() - 2;
+
+								while (stringPessoas[indicePessoa].charAt(indiceString) != '\n') {
+									indiceString--;
+								}
+
+								stringPessoas[indicePessoa] = stringPessoas[indicePessoa].substring(0,
+										indiceString + 1);
+
+								stringPessoas[indicePessoa] += "\t\t\t<act end_time=\"" + horaAtual + ":" + minutoAtual
+										+ ":" + segundoAtual + "\" x=\"" + coordenadaX + "\" y=\"" + coordenadaY
+										+ "\" type=\"home\"/>\n" + "\t\t\t<leg mode=\"pt\"/>\n";
 							}
 
 							stringSaidaFacilities += "\n\t<facility id=\"" + pessoasParada.get(i).getNome() + "Subiu"
@@ -778,35 +799,36 @@ public class Main {
 				 */
 
 				// Atualiza os pedestres que estão no ônibus
-				onibus.get(indiceOnibus).setPedestres(pessoasOnibus);
+				onibusAtual.setPedestres(pessoasOnibus);
 
 				System.out.println("=====================================================================");
 				System.out.println("Parada " + indiceParada + ": " + paradaAtual.getNomeParada() + " : " + "Ônibus "
-						+ indiceOnibus);
+						+ onibusAtual.getId());
 				System.out.println("Quem subiu: " + pessoasSubiramOnibus);
 				System.out.println("Quem desceu: " + pessoasDesceramOnibus);
 				System.out.println("Quem está no ônibus: " + pessoasOnibus);
 				System.out.println();
 
-				saidaParadasPercorridasOrdem += "\t<facility id=\"" + paradaAtual.getNomeParada() + "\" x=\""
-						+ coordenadaX + "\" y=\"" + coordenadaY + "\"/>\n";
-
 				// Simula deslocamento
-				pessoasOnibusSimulado = Main.simularDeslocamento(paradaAtual,
-						onibus.get(indiceOnibus).getLinha().getParadas().get(indiceParada + 1),
-						onibus.get(indiceOnibus).getVelocidade(), pessoasSubiramOnibus, pessoasDesceramOnibus,
-						pessoasOnibus, pessoasOnibusSimulado);
+				if ((indiceParada + 1) != onibusAtual.getLinha().getParadas().size()) {
+					pessoasOnibusSimulado = Main.simularDeslocamento(momentoAtual, paradaAtual,
+							onibusAtual.getLinha().getParadas().get(indiceParada + 1), onibusAtual.getVelocidade(),
+							pessoasSubiramOnibus, pessoasDesceramOnibus, pessoasOnibus, pessoasOnibusSimulado);
+				} else {
+					pessoasOnibusSimulado = Main.simularDeslocamento(momentoAtual,
+							onibusAtual.getLinha().getParadas().get(indiceParada - 1), paradaAtual,
+							onibusAtual.getVelocidade(), pessoasSubiramOnibus, pessoasDesceramOnibus, pessoasOnibus,
+							pessoasOnibusSimulado);
+				}
 
 				// Esvazia vetores de descida e subida
 				pessoasDesceramOnibus.clear();
 				pessoasSubiramOnibus.clear();
 			}
-
 			pessoasOnibusSimulado.clear();
 
-			paradaAtual = onibus.get(indiceOnibus).getLinha().getParadas().get(indiceParada);
+			Parada paradaAtual = onibusAtual.getLinha().getParadas().get(indiceParada);
 
-			momentoAtual = Calendar.getInstance();
 			horaAtual = momentoAtual.get(Calendar.HOUR_OF_DAY);
 			minutoAtual = momentoAtual.get(Calendar.MINUTE);
 			segundoAtual = momentoAtual.get(Calendar.SECOND);
@@ -818,19 +840,19 @@ public class Main {
 			coordenadaY = coordenadasDestino.y;
 
 			System.out.println("Terminal: " + paradaAtual.getNomeParada());
-			System.out.println("Quem desceu: " + onibus.get(indiceOnibus).getPedestres());
-			paradaAtual.addAllPedestres(onibus.get(indiceOnibus).getPedestres());
+			System.out.println("Quem desceu: " + onibusAtual.getPedestres());
+			paradaAtual.addAllPedestres(onibusAtual.getPedestres());
 
-			numeroPessoasOnibus = onibus.get(indiceOnibus).getPedestres().size();
+			numeroPessoasOnibus = onibusAtual.getPedestres().size();
 
 			// Atualiza a parada atual de cada pessoa que estava no ônibus
 			for (int i = 0; i < numeroPessoasOnibus; i++) {
 				indicePessoa = -1;
-				onibus.get(indiceOnibus).getPedestres().get(i).setParadaAtual(paradaAtual);
+				onibusAtual.getPedestres().get(i).setParadaAtual(paradaAtual);
 
 				// Procura pelo índice da pessoa no vetor de pessoas
 				for (int a = 0; a < numeroPessoas; a++) {
-					if (onibus.get(indiceOnibus).getPedestres().get(i).getNome().equals(pessoas.get(a).getNome())) {
+					if (onibusAtual.getPedestres().get(i).getNome().equals(pessoas.get(a).getNome())) {
 						indicePessoa = a;
 						break;
 					}
@@ -845,10 +867,7 @@ public class Main {
 				}
 			}
 
-			onibus.get(indiceOnibus).clearPedestres();
-
-			saidaParadasPercorridasOrdem += "\t<facility id=\"" + paradaAtual.getNomeParada() + "\" x=\"" + coordenadaX
-					+ "\" y=\"" + coordenadaY + "\"/>\n";
+			onibusAtual.clearPedestres();
 		}
 
 		// Adiciona as pessoas que fizeram parte da simulação na string de saída
@@ -864,7 +883,7 @@ public class Main {
 
 		Main.armazenarDados("population.xml", stringSaidaPopulation);
 		Main.armazenarDados("facilitiesSaida.xml", stringSaidaFacilities);
-		Main.armazenarDados("paradasPercorridas.xml", saidaParadasPercorridasOrdem);
+		Main.armazenarDados("paradasPercorridas.xml", horariosSaida);
 	}
 
 	public static void armazenarDados(String nomeArquivo, String dados) {
@@ -973,9 +992,9 @@ public class Main {
 		return saidaPessoas;
 	}
 
-	public static List<Pedestre> simularDeslocamento(Parada paradaAtual, Parada proximaParada, float velocidade,
-			List<Pedestre> pessoasSubiramOnibus, List<Pedestre> pessoasDesceramOnibus, List<Pedestre> pessoasOnibus,
-			List<Pedestre> pessoasOnibusSimulado) {
+	public static List<Pedestre> simularDeslocamento(Calendar horario, Parada paradaAtual, Parada proximaParada,
+			float velocidade, List<Pedestre> pessoasSubiramOnibus, List<Pedestre> pessoasDesceramOnibus,
+			List<Pedestre> pessoasOnibus, List<Pedestre> pessoasOnibusSimulado) {
 		// Calcula a distância em Km (quilômetros) entre as paradas
 		double distanciaEntreParadas = Haversine.distance(paradaAtual.getCoordenadaY(), paradaAtual.getCoordenadaX(),
 				proximaParada.getCoordenadaY(), proximaParada.getCoordenadaX());
@@ -1023,7 +1042,9 @@ public class Main {
 			saiu[x + numeroPessoasSubiramOnibus + numeroPessoasDesceramOnibus] = true;
 		}
 
+		long horarioEmMilissegundos = horario.getTimeInMillis();
 		double distanciaPedestreParada;
+
 		// Deslocamento
 		for (double i = distanciaEntreParadas; i > 0; i -= velocidade / 3600) {
 			System.out.print("Faltam ");
@@ -1032,6 +1053,9 @@ public class Main {
 			System.out.print("ETA: ");
 			System.out.print(formatter.format(i / (velocidade / 3600)));
 			System.out.println(" segundo(s)\n");
+
+			// Avança no tempo
+			horarioEmMilissegundos += (i / (velocidade / 3600)) * 100;
 
 			// Calcula sinal do bluetooth
 			for (x = 0; x < numeroPessoasSubiramDesceram; x++) {
@@ -1042,11 +1066,6 @@ public class Main {
 				// escanearBluetooth(pedestre, saiu, distanciaUltimaParada)
 				escanearBluetooth(pessoasSubiramDesceram.get(x), saiu[x], distanciaPedestreParada);
 			}
-
-			/*
-			 * try { Thread.sleep(1000); } catch (InterruptedException e) {
-			 * e.printStackTrace(); }
-			 */
 		}
 
 		// Define os valores para saída
@@ -1071,10 +1090,9 @@ public class Main {
 		System.out.println("-----------------------------------------");
 		System.out.println("Embarcando e desembarcando!");
 
-		/*
-		 * try { Thread.sleep(10000); } catch (InterruptedException e) {
-		 * e.printStackTrace(); }
-		 */
+		// Avança no tempo
+		horarioEmMilissegundos += 10000;
+		horario.setTimeInMillis(horarioEmMilissegundos);
 
 		System.out.println();
 		System.out.println("Pessoas que subiram: " + pessoasSubiramOnibus);
