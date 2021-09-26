@@ -1,6 +1,7 @@
 package mobilidade;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.List;
 
 public class Onibus {
@@ -12,6 +13,8 @@ public class Onibus {
 	private float velocidade;
 	private Linha linha;
 	private List<Pedestre> pedestres = new ArrayList<Pedestre>();
+	private List<Calendar> horarios = new ArrayList<Calendar>();
+	private List<Boolean> horarioCumprido = new ArrayList<Boolean>();
 
 	// ------------------------------------------------------------------------------------------------------------
 	// Construtores
@@ -30,18 +33,32 @@ public class Onibus {
 		setVelocidade(velocidade);
 	}
 
-	public Onibus(int capacidade, int velocidade, Linha linha) {
+	public Onibus(int capacidade, int velocidade, Linha linha, List<Calendar> horarios) {
 		setId(contadorId++);
 		setCapacidadeMaximaPassageiros(capacidade);
 		setVelocidade(velocidade);
 		setLinha(linha);
+		setHorarios(horarios);
+
+		int numeroHorarios = horarios.size();
+
+		for (int i = 0; i < numeroHorarios; i++) {
+			horarioCumprido.add(false);
+		}
 	}
 
-	public Onibus(int idVeiculo, int capacidade, int velocidade, Linha linha) {
+	public Onibus(int idVeiculo, int capacidade, int velocidade, Linha linha, List<Calendar> horarios) {
 		setId(idVeiculo);
 		setCapacidadeMaximaPassageiros(capacidade);
 		setVelocidade(velocidade);
 		setLinha(linha);
+		setHorarios(horarios);
+
+		int numeroHorarios = horarios.size();
+
+		for (int i = 0; i < numeroHorarios; i++) {
+			horarioCumprido.add(false);
+		}
 	}
 
 	// ------------------------------------------------------------------------------------------------------------
@@ -92,5 +109,33 @@ public class Onibus {
 
 	public void clearPedestres() {
 		this.pedestres.clear();
+	}
+
+	public List<Calendar> getHorarios() {
+		return horarios;
+	}
+
+	public void setHorarios(List<Calendar> horarios) {
+		this.horarios.addAll(horarios);
+	}
+
+	public List<Boolean> getHorarioCumprido() {
+		return horarioCumprido;
+	}
+
+	public void setHorarioCumprido(List<Boolean> horarioCumprido) {
+		this.horarioCumprido = horarioCumprido;
+	}
+
+	public void setHorarioCumprido(int indice, boolean valor) {
+		this.horarioCumprido.set(indice, valor);
+	}
+
+	public void resetHorarioCumprido() {
+		int numeroHorarios = horarioCumprido.size();
+
+		for (int i = 0; i < numeroHorarios; i++) {
+			this.horarioCumprido.set(i, false);
+		}
 	}
 }

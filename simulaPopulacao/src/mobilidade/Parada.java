@@ -106,6 +106,10 @@ public class Parada {
 	public void removeAllPedestres(List<Pedestre> pedestres) {
 		this.pedestres.removeAll(pedestres);
 	}
+	
+	public void removeAllPedestres() {
+		this.pedestres.clear();
+	}
 
 	public String getNomeParada() {
 		return nomeParada;
