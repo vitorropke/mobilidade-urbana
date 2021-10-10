@@ -11,6 +11,8 @@ public class Pedestre {
 	private Parada paradaAtual;
 	private List<Double> sinal = new ArrayList<Double>();
 	private List<Calendar> horario = new ArrayList<Calendar>();
+	private boolean noDestino;
+	private boolean emViagem;
 
 	public Pedestre() {
 	}
@@ -89,5 +91,21 @@ public class Pedestre {
 
 	public void addHorario(final Calendar horario) {
 		this.horario.add(horario);
+	}
+
+	public boolean isNoDestino() {
+		return noDestino;
+	}
+
+	public void setNoDestino(boolean noDestino) {
+		this.noDestino = noDestino;
+	}
+
+	public boolean isEmViagem() {
+		return emViagem;
+	}
+
+	public void setEmViagem(boolean emViagem) {
+		this.emViagem = emViagem;
 	}
 }

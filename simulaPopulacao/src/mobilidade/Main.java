@@ -494,6 +494,104 @@ public class Main {
 		subParadas.add(paradas.get(536));
 		Linha linha19Volta = new Linha(subParadas);
 
+		// Monta os ciclos das linhas----------------------------------
+		// Linha 1
+		linha1Volta.addLinhaCiclo(linha1Ida);
+		linha1Volta.addLinhaCiclo(linha1SantaJuliaIda);
+		linha1Volta.addLinhaCiclo(linha2Ida);
+
+		linha1SantaJuliaVolta.addLinhaCiclo(linha1Ida);
+		linha1SantaJuliaVolta.addLinhaCiclo(linha1SantaJuliaIda);
+		linha1SantaJuliaVolta.addLinhaCiclo(linha2Ida);
+
+		// Linha 2
+		linha2Volta.addLinhaCiclo(linha1Ida);
+		linha2Volta.addLinhaCiclo(linha1SantaJuliaIda);
+		linha2Volta.addLinhaCiclo(linha2Ida);
+
+		// Linha 4
+		linha4Volta.addLinhaCiclo(linha4Ida);
+		linha4Volta.addLinhaCiclo(linha4SantaJulia);
+		linha4Volta.addLinhaCiclo(linha1Ida);
+		linha4Volta.addLinhaCiclo(linha1SantaJuliaIda);
+		linha4Volta.addLinhaCiclo(linha1Volta);
+
+		// Linha 5
+		linha5Volta.addLinhaCiclo(linha5Ida);
+		linha5Volta.addLinhaCiclo(linha5IdaUniversidades);
+
+		linha5VoltaUERN.addLinhaCiclo(linha5Ida);
+		linha5VoltaUERN.addLinhaCiclo(linha5IdaUniversidades);
+
+		linha5VoltaIFRN.addLinhaCiclo(linha5Ida);
+		linha5VoltaIFRN.addLinhaCiclo(linha5IdaUniversidades);
+
+		linha5VoltaUniversidades.addLinhaCiclo(linha5Ida);
+		linha5VoltaUniversidades.addLinhaCiclo(linha5IdaUniversidades);
+
+		linha5VoltaOdeteRosado.addLinhaCiclo(linha5Ida);
+		linha5VoltaOdeteRosado.addLinhaCiclo(linha5IdaUniversidades);
+
+		// Linha 6
+		linha6Volta.addLinhaCiclo(linha6Ida);
+		linha6Volta.addLinhaCiclo(linha6IdaSemUlrickGraff);
+		linha6Volta.addLinhaCiclo(linha6IdaSemUlrickGraffNemRioBranco);
+		linha6Volta.addLinhaCiclo(linha6VoltaUNIRB);
+
+		linha6VoltaSemUlrickGraff.addLinhaCiclo(linha6Ida);
+		linha6VoltaSemUlrickGraff.addLinhaCiclo(linha6IdaSemUlrickGraff);
+		linha6VoltaSemUlrickGraff.addLinhaCiclo(linha6IdaSemUlrickGraffNemRioBranco);
+		linha6Volta.addLinhaCiclo(linha6VoltaUNIRB);
+
+		linha6VoltaUNIRB.addLinhaCiclo(linha11Volta);
+
+		// Linha 7
+		linha7Volta.addLinhaCiclo(linha7Ida);
+		linha7Volta.addLinhaCiclo(linha7IdaSemParedoesTerminandoNaPracaFelipeGuerra);
+		linha7Volta.addLinhaCiclo(linha7VoltaJardimDasPalmeiras);
+
+		linha7VoltaJardimDasPalmeiras.addLinhaCiclo(linha7IdaJardimDasPalmeiras);
+
+		linha7VoltaSumareLiberdadePlanalto.addLinhaCiclo(linha7Ida);
+		linha7VoltaSumareLiberdadePlanalto.addLinhaCiclo(linha7IdaSemParedoesTerminandoNaPracaFelipeGuerra);
+		linha7VoltaSumareLiberdadePlanalto.addLinhaCiclo(linha7VoltaJardimDasPalmeiras);
+
+		// Linha 8
+		linha8Volta.addLinhaCiclo(linha8Ida);
+		linha8Volta.addLinhaCiclo(linha7VoltaSumareLiberdadePlanalto);
+
+		// Linha 9
+		linha8Volta.addLinhaCiclo(linha9Ida);
+		linha8Volta.addLinhaCiclo(linha9IdaLagoaDoMatoBoaVistaDozeAnosSantoAntonio);
+
+		// Linha 10
+		linha10Volta.addLinhaCiclo(linha10Ida);
+		linha10Volta.addLinhaCiclo(linha10IdaAeroportoMacarraoBoaVista);
+
+		linha10VoltaAeroportoMacarraoBoaVista.addLinhaCiclo(linha10IdaAeroportoMacarraoBoaVista);
+		linha10VoltaAeroportoMacarraoBoaVista.addLinhaCiclo(linha14Ida);
+
+		// Linha 11
+		linha11Volta.addLinhaCiclo(linha11Ida);
+
+		// Linha 12
+		linha12Volta.addLinhaCiclo(linha12Ida);
+
+		// Linha 14
+		linha14Volta.addLinhaCiclo(linha14Ida);
+		linha14Volta.addLinhaCiclo(linha10IdaAeroportoMacarraoBoaVista);
+
+		// Linha 15
+		linha15Volta.addLinhaCiclo(linha15Ida);
+		linha15Volta.addLinhaCiclo(linha10IdaAeroportoMacarraoBoaVista);
+
+		// Linha 17
+		linha17Volta.addLinhaCiclo(linha17Ida);
+		linha17Volta.addLinhaCiclo(linha5VoltaOdeteRosado);
+
+		// Linha 19
+		linha19Volta.addLinhaCiclo(linha19Ida);
+
 		// -----------------------------------------------------------------------------------------------------------------------
 		// Define os ônibus
 		// numeroVeiculo, capacidadePessoas, velocidade, linhaOnibus
@@ -643,6 +741,7 @@ public class Main {
 		List<Pedestre> pessoasOnibusSimulado = new ArrayList<Pedestre>();
 		List<Pedestre> pessoasDesceramOnibus = new ArrayList<Pedestre>();
 		List<Pedestre> pessoasSubiramOnibus = new ArrayList<Pedestre>();
+		List<Pedestre> pessoasTrocaramParada = new ArrayList<Pedestre>();
 
 		int numeroPessoasOnibus;
 		int numeroPessoasParada;
@@ -695,13 +794,22 @@ public class Main {
 			}
 
 			// Adiciona parada nos pedestres e os pedestres na parada de forma aleatória
+			// e também o destino do pedestre
 			for (int i = 0; i < numeroPessoasAleatorio; i++) {
+				// define a origem
 				numeroParadaAleatoria = paradasAleatorias.nextInt(numeroParadas);
 
 				pessoas.get(i).setOrigem(paradas.get(numeroParadaAleatoria));
 				pessoas.get(i).setParadaAtual(paradas.get(numeroParadaAleatoria));
 
 				paradas.get(numeroParadaAleatoria).addPedestre(pessoas.get(i));
+
+				// define o destino
+				numeroParadaAleatoria = paradasAleatorias.nextInt(numeroParadas);
+
+				pessoas.get(i).setDestino(paradas.get(numeroParadaAleatoria));
+				pessoas.get(i).setNoDestino(false);
+				pessoas.get(i).setEmViagem(false);
 			}
 
 			// Reinicia as strings
@@ -766,10 +874,10 @@ public class Main {
 								numeroPessoasOnibus = pessoasOnibus.size();
 								numeroPessoasParada = pessoasParada.size();
 
-								// Primeiro, decide quem vai descer do ônibus através do cara e coroa
+								// Descida de pessoas
 								for (int i = 0; i < numeroPessoasOnibus; i++) {
-									// Se for cara, o pedestre sai do ônibus
-									if (Main.caraCoroa()) {
+									// Se a parada é o destino do pedestre, ele desce
+									if (paradaAtual.getId() == pessoasOnibus.get(i).getDestino().getId()) {
 										indicePessoa = -1;
 										pessoasDesceramOnibus.add(pessoasOnibus.get(i));
 										pessoasOnibus.get(i).setParadaAtual(paradaAtual);
@@ -791,70 +899,122 @@ public class Main {
 													+ "\" y=\"" + coordenadaY + "\"/>\n";
 										}
 
+										pessoasOnibus.get(i).setNoDestino(true);
+										pessoasOnibus.get(i).setEmViagem(false);
 										pessoasOnibus.remove(i);
 										numeroPessoasOnibus--;
 									}
 								}
 
-								// Segundo, decide quem vai entrar no ônibus através do cara e coroa
+								// Subida de pessoas
 								for (int i = 0; i < numeroPessoasParada; i++) {
-									// Se for cara e a capacidade máxima do ônibus não for atingida, o pedestre
-									// entra no ônibus
+									// Se o ônibus não está cheio E
+									// Se o pedestre não está no destino
 									if ((numeroPessoasOnibus <= onibusAtual.getCapacidadeMaximaPassageiros())
-											&& Main.caraCoroa()) {
-										indicePessoa = -1;
-										pessoasSubiramOnibus.add(pessoasParada.get(i));
-										pessoasOnibus.add(pessoasParada.get(i));
-										numeroPessoasOnibus++;
+											&& (!pessoasParada.get(i).isNoDestino())) {
+										// se ele estiver em viagem e o ônibus passar na parada de destino, ele sobe
+										// se ele não estiver em viagem ele sobe
+										if (pessoasParada.get(i).isEmViagem()) {
+											// procura se a linha do ônibus passa pelo destino
+											Linha linhaOnibusAtual = onibusAtual.getLinha();
+											int numeroParadasLinhaOnibusAtual = linhaOnibusAtual.getParadas().size();
+											boolean destinoEncontrado = false;
 
-										// Procura pelo índice da pessoa no vetor de pessoas
-										for (int a = 0; a < numeroPessoas; a++) {
-											if (pessoasParada.get(i).getNome().equals(pessoas.get(a).getNome())) {
-												indicePessoa = a;
-												break;
+											// procura pela parada de destino
+											for (int x = 0; (x < numeroParadasLinhaOnibusAtual)
+													&& (!destinoEncontrado); x++) {
+												if (linhaOnibusAtual.getParadas().get(x).getId() == pessoasParada.get(i)
+														.getDestino().getId()) {
+													destinoEncontrado = true;
+												}
 											}
-										}
 
-										if (indicePessoa != -1) {
-											if (stringPessoas[indicePessoa] == null) {
-												stringPessoas[indicePessoa] = "\n\t<person id=\""
-														+ pessoas.get(indicePessoa).getNome() + "\" >\n\t\t<plan>\n"
-														+ "\t\t\t<act end_time=\"" + horaAtual + ":" + minutoAtual + ":"
-														+ segundoAtual + "\" x=\"" + coordenadaX + "\" y=\""
-														+ coordenadaY + "\" type=\"home\"/>\n"
-														+ "\t\t\t<leg mode=\"pt\"/>\n";
+											// se o destino ainda não foi encontrado, procura pelo ciclo da parada
+											if (!destinoEncontrado) {
+												for (Linha linhaCiclo : linhaOnibusAtual.getLinhaCiclo()) {
+													if (!destinoEncontrado) {
+														int numeroParadasLinhaCiclo = linhaCiclo.getParadas().size();
+
+														// procura pela parada de destino
+														for (int x = 0; (x < numeroParadasLinhaCiclo)
+																&& (!destinoEncontrado); x++) {
+															if (linhaCiclo.getParadas().get(x).getId() == pessoasParada
+																	.get(i).getDestino().getId()) {
+																destinoEncontrado = true;
+															}
+														}
+													}
+												}
+											}
+
+											// se o destino foi encontrado então o pedestre sobe
+											// senão, o pedestre muda de terminal
+											if (destinoEncontrado) {
+												pessoasSubiramOnibus.add(pessoasParada.get(i));
+												pessoasOnibus.add(pessoasParada.get(i));
+												numeroPessoasOnibus++;
+												pessoasParada.get(i).setEmViagem(true);
 											} else {
-												indiceString = stringPessoas[indicePessoa].length() - 2;
+												if (paradaAtual.getId() == 0) {
+													pessoasParada.get(i).setParadaAtual(paradas.get(20));
+													paradas.get(20).addPedestre(pessoasParada.get(i));
+												} else if (paradaAtual.getId() == 20) {
+													pessoasParada.get(i).setParadaAtual(paradas.get(0));
+													paradas.get(0).addPedestre(pessoasParada.get(i));
+												}
+												pessoasTrocaramParada.add(pessoasParada.get(i));
+											}
+										} else {
+											pessoasSubiramOnibus.add(pessoasParada.get(i));
+											pessoasOnibus.add(pessoasParada.get(i));
+											numeroPessoasOnibus++;
 
-												while (stringPessoas[indicePessoa].charAt(indiceString) != '\n') {
-													indiceString--;
+											indicePessoa = -1;
+											// Procura pelo índice da pessoa no vetor de pessoas
+											for (int a = 0; a < numeroPessoas; a++) {
+												if (pessoasParada.get(i).getNome().equals(pessoas.get(a).getNome())) {
+													indicePessoa = a;
+													break;
+												}
+											}
+
+											if (indicePessoa != -1) {
+												if (stringPessoas[indicePessoa] == null) {
+													stringPessoas[indicePessoa] = "\n\t<person id=\""
+															+ pessoas.get(indicePessoa).getNome() + "\" >\n\t\t<plan>\n"
+															+ "\t\t\t<act end_time=\"" + horaAtual + ":" + minutoAtual
+															+ ":" + segundoAtual + "\" x=\"" + coordenadaX + "\" y=\""
+															+ coordenadaY + "\" type=\"home\"/>\n"
+															+ "\t\t\t<leg mode=\"pt\"/>\n";
+												} else {
+													indiceString = stringPessoas[indicePessoa].length() - 2;
+
+													while (stringPessoas[indicePessoa].charAt(indiceString) != '\n') {
+														indiceString--;
+													}
+
+													stringPessoas[indicePessoa] = stringPessoas[indicePessoa]
+															.substring(0, indiceString + 1);
+
+													stringPessoas[indicePessoa] += "\t\t\t<act end_time=\"" + horaAtual
+															+ ":" + minutoAtual + ":" + segundoAtual + "\" x=\""
+															+ coordenadaX + "\" y=\"" + coordenadaY
+															+ "\" type=\"home\"/>\n" + "\t\t\t<leg mode=\"pt\"/>\n";
 												}
 
-												stringPessoas[indicePessoa] = stringPessoas[indicePessoa].substring(0,
-														indiceString + 1);
-
-												stringPessoas[indicePessoa] += "\t\t\t<act end_time=\"" + horaAtual
-														+ ":" + minutoAtual + ":" + segundoAtual + "\" x=\""
-														+ coordenadaX + "\" y=\"" + coordenadaY + "\" type=\"home\"/>\n"
-														+ "\t\t\t<leg mode=\"pt\"/>\n";
+												stringSaidaFacilities += "\n\t<facility id=\""
+														+ pessoasParada.get(i).getNome() + "Subiu" + horaAtual + ":"
+														+ minutoAtual + ":" + segundoAtual + "\" x=\"" + coordenadaX
+														+ "\" y=\"" + coordenadaY + "\"/>\n";
 											}
-
-											stringSaidaFacilities += "\n\t<facility id=\""
-													+ pessoasParada.get(i).getNome() + "Subiu" + horaAtual + ":"
-													+ minutoAtual + ":" + segundoAtual + "\" x=\"" + coordenadaX
-													+ "\" y=\"" + coordenadaY + "\"/>\n";
+											pessoasParada.get(i).setEmViagem(true);
 										}
 									}
 								}
 
 								paradaAtual.addAllPedestres(pessoasDesceramOnibus);
 								paradaAtual.removeAllPedestres(pessoasSubiramOnibus);
-
-								/*
-								 * for (int i = 0; i < numeroPessoasSubiramOnibus; i++) { if
-								 * (onibus.get(x).pedestres.get(i).destino == paradas[indiceParada]) {
-								 * onibus.get(x).pedestres.remove(i); numeroPessoasSubiramOnibus--; } }
-								 */
+								paradaAtual.removeAllPedestres(pessoasTrocaramParada);
 
 								// Atualiza os pedestres que estão no ônibus
 								onibusAtual.setPedestres(pessoasOnibus);
@@ -884,6 +1044,7 @@ public class Main {
 								// Esvazia vetores de descida e subida
 								pessoasDesceramOnibus.clear();
 								pessoasSubiramOnibus.clear();
+								pessoasTrocaramParada.clear();
 							}
 							pessoasOnibusSimulado.clear();
 
@@ -907,23 +1068,26 @@ public class Main {
 
 							// Atualiza a parada atual de cada pessoa que estava no ônibus
 							for (int i = 0; i < numeroPessoasOnibus; i++) {
-								indicePessoa = -1;
-								onibusAtual.getPedestres().get(i).setParadaAtual(paradaAtual);
+								pessoasOnibus.get(i).setParadaAtual(paradaAtual);
 
-								// Procura pelo índice da pessoa no vetor de pessoas
-								for (int a = 0; a < numeroPessoas; a++) {
-									if (onibusAtual.getPedestres().get(i).getNome().equals(pessoas.get(a).getNome())) {
-										indicePessoa = a;
-										break;
+								if (pessoasOnibus.get(i).isNoDestino()) {
+									indicePessoa = -1;
+									// Procura pelo índice da pessoa no vetor de pessoas
+									for (int a = 0; a < numeroPessoas; a++) {
+										if (pessoasOnibus.get(i).getNome().equals(pessoas.get(a).getNome())) {
+											indicePessoa = a;
+											break;
+										}
 									}
-								}
 
-								if (indicePessoa != -1) {
-									stringPessoas[indicePessoa] += "\t\t\t<act x=\"" + coordenadaX + "\" y=\""
-											+ coordenadaY + "\" type=\"home\"/>\n";
-									stringSaidaFacilities += "\n\t<facility id=\"" + pessoasOnibus.get(i).getNome()
-											+ "Desceu" + horaAtual + ":" + minutoAtual + ":" + segundoAtual + "\" x=\""
-											+ coordenadaX + "\" y=\"" + coordenadaY + "\"/>\n";
+									if (indicePessoa != -1) {
+										stringPessoas[indicePessoa] += "\t\t\t<act x=\"" + coordenadaX + "\" y=\""
+												+ coordenadaY + "\" type=\"home\"/>\n";
+										stringSaidaFacilities += "\n\t<facility id=\"" + pessoasOnibus.get(i).getNome()
+												+ "Desceu" + horaAtual + ":" + minutoAtual + ":" + segundoAtual
+												+ "\" x=\"" + coordenadaX + "\" y=\"" + coordenadaY + "\"/>\n";
+									}
+									pessoasOnibus.get(i).setEmViagem(false);
 								}
 							}
 
@@ -947,6 +1111,18 @@ public class Main {
 			// Adiciona as pessoas que fizeram parte da simulação na string de saída
 			for (int a = 0; a < numeroPessoas; a++) {
 				if (stringPessoas[a] != null) {
+					if (stringPessoas[a].charAt(stringPessoas[a].length() - 16) == 'l') {
+						coordenadasOrigem.setValue(pessoas.get(a).getParadaAtual().getCoordenadaX(),
+								pessoas.get(a).getParadaAtual().getCoordenadaY());
+						transform.transform(coordenadasOrigem, coordenadasDestino);
+
+						coordenadaX = coordenadasDestino.x;
+						coordenadaY = coordenadasDestino.y;
+
+						stringPessoas[a] += "\t\t\t<act x=\"" + coordenadaX + "\" y=\"" + coordenadaY
+								+ "\" type=\"home\"/>\n";
+					}
+
 					stringPessoas[a] += "\t\t</plan>\n" + "\t</person>\n";
 					stringSaidaPopulation += stringPessoas[a];
 				}
@@ -982,12 +1158,6 @@ public class Main {
 			System.out.println("Falha catastrófica!");
 			e.printStackTrace();
 		}
-	}
-
-	public static boolean caraCoroa() {
-		Random caraOuCoroa = new Random();
-		// Random caraOuCoroa = new Random();
-		return caraOuCoroa.nextBoolean();
 	}
 
 	public static void escanearBluetooth(Pedestre pedestre, boolean saiu, double distanciaUltimaParada) {

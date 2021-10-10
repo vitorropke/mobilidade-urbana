@@ -119,6 +119,10 @@ public class Onibus {
 		this.horarios.addAll(horarios);
 	}
 
+	public void addHorario(Calendar horario) {
+		this.horarios.add(horario);
+	}
+
 	public List<Boolean> getHorarioCumprido() {
 		return horarioCumprido;
 	}

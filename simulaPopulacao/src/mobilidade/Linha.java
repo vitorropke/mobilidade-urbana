@@ -5,6 +5,7 @@ import java.util.List;
 
 public class Linha {
 	private List<Parada> paradas = new ArrayList<Parada>();
+	private List<Linha> linhaCiclo = new ArrayList<Linha>();
 
 	public Linha() {
 	}
@@ -19,5 +20,17 @@ public class Linha {
 
 	public void setParadas(List<Parada> paradas) {
 		this.paradas.addAll(paradas);
+	}
+
+	public List<Linha> getLinhaCiclo() {
+		return linhaCiclo;
+	}
+
+	public void setLinhaCiclo(List<Linha> linhaCiclo) {
+		this.linhaCiclo = linhaCiclo;
+	}
+
+	public void addLinhaCiclo(Linha linha) {
+		this.linhaCiclo.add(linha);
 	}
 }
