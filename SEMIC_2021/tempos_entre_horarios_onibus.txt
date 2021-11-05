@@ -1,0 +1,377 @@
+Tempo entre dois ônibus saindo do terminal (em minutos)
+
+Linha 1 - Ida
+693
+69
+23
+80
+20
+85
+
+Linha 1 - Volta
+69
+20
+60
+100
+35
+5
+30
+
+Linha 2 - Ida
+22 do horário 0 até 5
+23 de 5 até 7
+22
+21
+19
+35
+26
+27
+22
+45
+17
+27 de 16 até 22
+28
+31
+24
+
+Linha 2 - Volta
+22 de 0 até 2
+23
+25 de 3 até 5
+20
+28
+29 de 7 até 9
+19
+36
+27
+28 de 12 até 14
+31
+24
+28
+27 de 17 até 19
+29
+25
+22
+33
+28
+37
+
+Linha 4 - Ida
+42
+56
+42
+146
+36
+47
+43
+40
+44
+
+Linha 4 com Santa Júlia - Ida
+50
+45
+242
+44
+324
+16
+
+Linha 4 - Volta
+47
+45
+47
+50
+39
+54
+45
+57
+36
+49
+32
+51
+42
+38
+41
+
+Linha 5 - Ida
+30
+20
+37
+30
+25
+40
+30 de 6 até 8
+35
+32
+28
+34
+31
+28
+37
+27
+35 de 16 até 18
+26
+35
+39
+27
+29
+40
+30
+36
+
+Linha 5 com universidades - Ida
+38
+
+Linha 5 - Volta
+53
+44
+23
+30
+35
+30 de 5 até 7
+35 de 7 até 9
+25
+35
+30
+35
+30 de 13 até 15
+35
+33
+27
+35
+40
+25
+35
+57
+
+Linha 5 com universidades - Volta
+67
+43
+60
+
+Linha 6 - Ida
+25
+50
+35 de 2 até 6
+45
+30
+45
+30
+40
+35
+70 de 12 até 14
+
+Linha 6 Alternativa 0 - Ida
+25
+75
+
+Linha 6 - Volta
+50
+30
+40
+35 de 3 até 6
+30
+50
+30
+45
+30
+75
+70 de 12 até 14
+
+Linha 6 Alternativa 0 - Volta
+22
+70
+
+Linha 7 - Ida
+63
+
+Linha 7 com Jardim das Palmeiras - Ida
+15 de 0 até 5
+16 de 5 até 7
+15
+16
+15
+17
+20
+18
+21
+22
+20 de 15 até 17
+19
+20
+21
+22
+20 de 21 até 23
+21
+19
+21 de 25 até 27
+20
+21
+20
+21
+24
+22
+21
+22 de 34 até 36
+26
+
+Linha 7 - Volta
+22 de 0 até 2
+26
+83
+60
+
+Linha 7 com Jardim das Palmeiras - Volta
+18 de 0 até 2
+12
+20
+15
+16 de 5 até 7
+22
+21
+20 de 9 até 12
+21
+20 de 13 até 16
+21 de 16 até 18
+20 de 18 até 22
+21 de 22 até 24
+19
+21 de 25 até 27
+20 de 27 até 29
+21
+25 de 30 até 32
+
+Linha 7 com Linha 8 - Volta
+65
+
+Linha 8 - Ida
+80
+90
+92
+89
+103
+98
+97
+95
+
+Linha 8 - Volta
+93
+90
+93
+95
+98 de 4 até 6
+100
+85
+
+Linha 9 - Ida
+95
+89
+192
+89
+85
+
+Linha 9 Alternativa - Ida
+370
+
+Linha 9 - Volta
+90 de 0 até 2
+85
+108
+87
+85
+100
+
+Linha 10 - Ida
+51 de 0 até 8
+102
+51
+56
+51 de 11 até 13
+
+Linha 10 - Volta
+51 de 0 até 8
+102
+51
+56
+51 de 11 até 13
+
+Linha 10 com Linha 14 e 15 - Volta
+50
+10
+
+Linha 11 - Ida
+341
+
+Linha 11 - Volta
+375
+
+Linha 12 - Ida
+102
+208
+102
+108 de 3 até 5
+107
+
+Linha 12 - Volta
+208
+102
+107
+108
+105
+101
+
+Linha 14 - Ida
+59
+64 de 1 até 4
+128
+64 de 5 até 9
+
+Linha 14 - Volta
+64 de 0 até 3
+128
+64 de 4 até 9
+54
+
+Linha 15 - Ida
+30
+38
+34
+82 de 3 até 6
+38
+43
+36
+45
+27
+54
+86
+43
+
+Linha 15 - Volta
+34
+77
+82 de 2 até 4
+39
+43
+38
+43
+29
+52
+86
+43
+41
+43
+
+Linha 17 - Ida
+75
+290
+70
+
+Linha 17 - Volta
+292
+71
+352
+
+Linha 19 - Ida
+97
+
+Linha 19 - Volta
+713
