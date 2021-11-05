@@ -1,0 +1,21 @@
+Esse trabalho foi motivado pelo seguinte problema: Aumento do tempo médio de deslocamento dentro das cidades.
+Isso foi causado por ter cada vez mais veículos circulando nas ruas, como vemos nesse gráfico de vendas de carro desde 2007.
+Temos mais de 2 milhões de carros sendo vendidos por ano desde lá, mesmo com a pandemia dando uma segurada em 2020.
+Então temos cada veículo, geralmente, tendo apenas 1 ocupante. É como se uma pessoa ocupasse, em média 26m² de espaço na rua.
+
+Isso causa congestionamentos, mais ruído, mais poluição e isso tudo traz impactos econômicos.
+
+Uma solução para isso é incentivar o uso do transporte público, onde é possível juntar várias pessoas em um único veículo.
+Com um ônibus ocupando 36m², em média, com uma capacidade de, mais ou menos, 50 pessoas, temos uma grande economia de espaço
+se comparado com cada pessoa usando seu veículo.
+
+Mas o transporte público pode ter seus problemas. Uma cidade pode ter concentração de paradas em uma região e outras áreas podem ficar
+se cobertura de ônibus, como pode ser visto nesse mapa de Mossoró. Outro problema é a frequência de ônibus em algumas linhas. Nesse gráfico
+podemos ver que algumas linhas o ônibus pode passar de 20 em 20 minutos, enquanto outros duram mais de uma hora e meia. No caso, nessa obs que
+tem aqui, a linha 11 possui um horário por turno. Então aqui mais ou menos 6 horas para um ônibus passar em uma parada nesse local coberto por essa linha.
+
+Para resolver esse problema é possível realizar simulações através de softwares, para que não seja necessário fazer estudos no local, como mudar
+horários e rotas dos ônibus para ver no que vai dar. Isso pode causar vários transtornos. As pessoas podem ficar perdidas nos horários, nas rotas.
+Então simulação por software seria a soluação ideal.
+
+Nesse trabalho usamos o MATSim, que é gratuito 
