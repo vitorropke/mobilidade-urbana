@@ -22,7 +22,7 @@
 		<!-- Defines the mode switch behavior. Possible values [fromAllModesToSpecifiedModes, fromSpecifiedModesToSpecifiedModes] Default: fromSpecifiedModesToSpecifiedModes. -->
 		<param name="modeSwitchBehavior" value="fromSpecifiedModesToSpecifiedModes" />
 		<!-- Defines all the modes available, including chain-based modes, seperated by commas -->
-		<param name="modes" value="car,pt,motorcycle" />
+		<param name="modes" value="car,pt" />
 	</module>
 	<module name="controler" >
 		<!-- Compression algorithm to use when writing out data to files. Possible values: [none, gzip, lz4, zst] -->
@@ -39,12 +39,12 @@
 		<!-- Default=0. First Iteration of a simulation. -->
 		<param name="firstIteration" value="0" />
 		<!-- Default=1000. Last Iteration of a simulation. -->
-		<param name="lastIteration" value="0" />
+		<param name="lastIteration" value="30" />
 		<!-- Defines which mobility simulation will be used. Currently supported: qsim JDEQSim hermes 
 		Depending on the chosen mobsim, you'll have to add additional config modules to configure the corresponding mobsim.
 		For 'qsim', add a module 'qsim' to the config. -->
 		<param name="mobsim" value="qsim" />
-		<param name="outputDirectory" value="./output_Complexo" />
+		<param name="outputDirectory" value="./output_mega_complexo" />
 		<!-- Possible values: failIfDirectoryExists, overwriteExistingFiles, deleteDirectoryIfExists -->
 		<param name="overwriteFiles" value="deleteDirectoryIfExists" />
 		<!-- The type of routing (least cost path) algorithm used, may have the values: [Dijkstra, AStarLandmarks, FastDijkstra, FastAStarLandmarks, SpeedyALT] -->
@@ -60,7 +60,7 @@
 		<!-- iterationNumber % writeSnapshotsInterval == 0 defines in which iterations snapshots are written to a file. `0' disables snapshots writing completely -->
 		<param name="writeSnapshotsInterval" value="1" />
 		<!-- iterationNumber % writeEventsInterval == 0 defines in which iterations trips CSV are written to a file. `0' disables trips writing completely. -->
-		<param name="writeTripsInterval" value="10" />
+		<param name="writeTripsInterval" value="5" />
 	</module>
 	<module name="counts" >
 		<!-- Transport modes that will be respected for the counts comparison. 'car' is default, which includes also bussed from the pt simulation module. Use this parameter in combination with 'filterModes' = true! -->
@@ -91,7 +91,7 @@
 		<param name="idPrefix" value="f_auto_" />
 		<!-- The Coordinates Reference System in which the coordinates are expressed in the input file. At import, the coordinates will be converted to the coordinate system defined in "global", and willbe converted back at export. If not specified, no conversion happens. -->
 		<param name="inputCRS" value="null" />
-		<param name="inputFacilitiesFile" value="null" />
+		<!--<param name="inputFacilitiesFile" value="facilities.xml" />-->
 		<param name="inputFacilityAttributesFile" value="null" />
 		<param name="insistingOnUsingDeprecatedFacilitiesAttributeFile" value="false" />
 	</module>
@@ -129,7 +129,7 @@
 		<!-- The Coordinates Reference System in which the coordinates are expressed in the input file. At import, the coordinates will be converted to the coordinate system defined in "global", and willbe converted back at export. If not specified, no conversion happens. -->
 		<param name="inputCRS" value="null" />
 		<param name="inputChangeEventsFile" value="null" />
-		<param name="inputNetworkFile" value="../network.xml" />
+		<param name="inputNetworkFile" value="network.xml" />
 		<param name="laneDefinitionsFile" value="null" />
 		<param name="timeVariantNetwork" value="false" />
 	</module>
@@ -147,7 +147,7 @@
 	</module>
 	<module name="planCalcScore" >
 		<!-- logit model scale parameter. default: 1.  Has name and default value for historical reasons (see Bryan Raney's phd thesis). -->
-		<param name="BrainExpBeta" value="2.0" />
+		<param name="BrainExpBeta" value="1.0" />
 		<param name="PathSizeLogitBeta" value="1.0" />
 		<!-- fraction of iterations at which MSA score averaging is started. The matsim theory department suggests to use this together with switching off choice set innovation (where a similar switch exists), but it has not been tested yet. -->
 		<param name="fractionOfIterationsToStartScoreMSA" value="null" />
@@ -178,6 +178,42 @@
 				<!-- typical duration of activity.  needs to be defined and non-zero.  in sec. -->
 				<param name="typicalDuration" value="02:00:00" />
 				<!-- method to compute score at typical duration.  Options: | uniform | relative | Use uniform for backwards compatibility (all activities same score; higher proba to drop long acts). -->
+				<param name="typicalDurationScoreComputation" value="relative" />
+			</parameterset>
+			<parameterset type="activityParams" >
+				<param name="activityType" value="home" />
+				<param name="closingTime" value="undefined" />
+				<param name="earliestEndTime" value="undefined" />
+				<param name="latestStartTime" value="undefined" />
+				<param name="minimalDuration" value="08:00:00" />
+				<param name="openingTime" value="undefined" />
+				<param name="priority" value="1.0" />
+				<param name="scoringThisActivityAtAll" value="true" />
+				<param name="typicalDuration" value="13:00:00" />
+				<param name="typicalDurationScoreComputation" value="relative" />
+			</parameterset>
+			<parameterset type="activityParams" >
+				<param name="activityType" value="work" />
+				<param name="closingTime" value="undefined" />
+				<param name="earliestEndTime" value="undefined" />
+				<param name="latestStartTime" value="undefined" />
+				<param name="minimalDuration" value="04:00:00" />
+				<param name="openingTime" value="undefined" />
+				<param name="priority" value="1.0" />
+				<param name="scoringThisActivityAtAll" value="true" />
+				<param name="typicalDuration" value="07:00:00" />
+				<param name="typicalDurationScoreComputation" value="relative" />
+			</parameterset>
+			<parameterset type="activityParams" >
+				<param name="activityType" value="shop" />
+				<param name="closingTime" value="undefined" />
+				<param name="earliestEndTime" value="undefined" />
+				<param name="latestStartTime" value="undefined" />
+				<param name="minimalDuration" value="00:10:00" />
+				<param name="openingTime" value="undefined" />
+				<param name="priority" value="1.0" />
+				<param name="scoringThisActivityAtAll" value="true" />
+				<param name="typicalDuration" value="02:00:00" />
 				<param name="typicalDurationScoreComputation" value="relative" />
 			</parameterset>
 			<parameterset type="activityParams" >
@@ -264,54 +300,6 @@
 				<param name="typicalDuration" value="undefined" />
 				<param name="typicalDurationScoreComputation" value="relative" />
 			</parameterset>
-			<parameterset type="activityParams" >
-				<param name="activityType" value="home" />
-				<param name="closingTime" value="undefined" />
-				<param name="earliestEndTime" value="undefined" />
-				<param name="latestStartTime" value="undefined" />
-				<param name="minimalDuration" value="08:00:00" />
-				<param name="openingTime" value="undefined" />
-				<param name="priority" value="1.0" />
-				<param name="scoringThisActivityAtAll" value="true" />
-				<param name="typicalDuration" value="12:00:00" />
-				<param name="typicalDurationScoreComputation" value="relative" />
-			</parameterset>
-			<parameterset type="activityParams" >
-				<param name="activityType" value="work" />
-				<param name="closingTime" value="18:00:00" />
-				<param name="earliestEndTime" value="undefined" />
-				<param name="latestStartTime" value="09:00:00" />
-				<param name="minimalDuration" value="06:00:00" />
-				<param name="openingTime" value="07:00:00" />
-				<param name="priority" value="1.0" />
-				<param name="scoringThisActivityAtAll" value="true" />
-				<param name="typicalDuration" value="08:00:00" />
-				<param name="typicalDurationScoreComputation" value="relative" />
-			</parameterset>
-			<parameterset type="activityParams" >
-				<param name="activityType" value="shop" />
-				<param name="closingTime" value="20:00:00" />
-				<param name="earliestEndTime" value="undefined" />
-				<param name="latestStartTime" value="undefined" />
-				<param name="minimalDuration" value="00:10:00" />
-				<param name="openingTime" value="08:00:00" />
-				<param name="priority" value="1.0" />
-				<param name="scoringThisActivityAtAll" value="true" />
-				<param name="typicalDuration" value="00:40:00" />
-				<param name="typicalDurationScoreComputation" value="relative" />
-			</parameterset>
-			<parameterset type="activityParams" >
-				<param name="activityType" value="ride interaction" />
-				<param name="closingTime" value="undefined" />
-				<param name="earliestEndTime" value="undefined" />
-				<param name="latestStartTime" value="undefined" />
-				<param name="minimalDuration" value="undefined" />
-				<param name="openingTime" value="undefined" />
-				<param name="priority" value="1.0" />
-				<param name="scoringThisActivityAtAll" value="false" />
-				<param name="typicalDuration" value="undefined" />
-				<param name="typicalDurationScoreComputation" value="relative" />
-			</parameterset>
 			<parameterset type="modeParams" >
 				<!-- [utils] alternative-specific constant.  Normally per trip, but that is probably buggy for multi-leg trips. -->
 				<param name="constant" value="0.0" />
@@ -382,7 +370,7 @@
 		<!-- The Coordinates Reference System in which the coordinates are expressed in the input file. At import, the coordinates will be converted to the coordinate system defined in "global", and willbe converted back at export. If not specified, no conversion happens. -->
 		<param name="inputCRS" value="null" />
 		<param name="inputPersonAttributesFile" value="null" />
-		<param name="inputPlansFile" value="../population-teste.xml" />
+		<param name="inputPlansFile" value="population0.xml" />
 		<param name="insistingOnUsingDeprecatedPersonAttributeFile" value="false" />
 		<!-- Defines how routes are stored in memory. Currently supported: LinkNetworkRoute, CompressedNetworkRoute. -->
 		<param name="networkRouteType" value="LinkNetworkRoute" />
@@ -448,7 +436,7 @@
 		<param name="ptCountsInterval" value="10" />
 	</module>
 	<module name="qsim" >
-		<param name="endTime" value="30:00:00" />
+		<param name="endTime" value="24:00:00" />
 		<param name="flowCapacityFactor" value="1.0" />
 		<!-- decides if waiting vehicles enter the network after or before the already driving vehicles were moved. Default: false -->
 		<param name="insertingWaitingVehiclesBeforeDrivingVehicles" value="true" />
@@ -465,19 +453,19 @@
 		<!-- Shortens a link in the visualization, i.e. its start and end point are moved into towards the center. Does not affect traffic flow.  -->
 		<param name="nodeOffset" value="0.0" />
 		<!-- Number of threads used for the QSim.  Note that this setting is independent from the "global" threads setting.  In contrast to earlier versions, the non-parallel special version is no longer there. -->
-		<param name="numberOfThreads" value="1" />
+		<param name="numberOfThreads" value="2" />
 		<!-- Boolean. `true': stuck vehicles are removed, aborting the plan; `false': stuck vehicles are forced into the next link. `false' is probably the better choice. -->
 		<param name="removeStuckVehicles" value="false" />
 		<!-- If link dynamics is set as SeepageQ, set a seep mode. Default is bike. -->
 		<param name="seepMode" value="bike" />
 		<!-- Possible values: minOfEndtimeAndMobsimFinished, onlyUseEndtime -->
-		<param name="simEndtimeInterpretation" value="null" />
+		<param name="simEndtimeInterpretation" value="minOfEndtimeAndMobsimFinished" />
 		<!-- Options: maxOfStarttimeAndEarliestActivityEnd onlyUseStarttime  -->
 		<param name="simStarttimeInterpretation" value="maxOfStarttimeAndEarliestActivityEnd" />
 		<!-- snapshotStyle. One of: equiDist queue withHoles withHolesAndShowHoles kinematicWaves  -->
 		<param name="snapshotStyle" value="equiDist" />
 		<param name="snapshotperiod" value="00:00:00" />
-		<param name="startTime" value="00:00:00" />
+		<param name="startTime" value="18:00:00" />
 		<param name="storageCapacityFactor" value="1.0" />
 		<!-- time in seconds.  Time after which the frontmost vehicle on a link is called `stuck' if it does not move. -->
 		<param name="stuckTime" value="10.0" />
@@ -503,43 +491,56 @@
 		<!-- root directory for temporary files generated by the external executable. Provided as a service; I don't think this is used by MATSim. -->
 		<param name="ExternalExeTmpFileRootDir" value="null" />
 		<!-- fraction of iterations where innovative strategies are switched off.  Something like 0.8 should be good.  E.g. if you run from iteration 400 to iteration 500, innovation is switched off at iteration 480 -->
-		<param name="fractionOfIterationsToDisableInnovation" value="Infinity" />
+		<param name="fractionOfIterationsToDisableInnovation" value="0.8" />
 		<!-- maximum number of plans per agent.  ``0'' means ``infinity''.  Currently (2010), ``5'' is a good number -->
 		<param name="maxAgentPlanMemorySize" value="5" />
 		<!-- strategyName of PlanSelector for plans removal.  Possible defaults: WorstPlanSelector SelectRandom SelectExpBetaForRemoval ChangeExpBetaForRemoval PathSizeLogitSelectorForRemoval . The current default, WorstPlanSelector is not a good choice from a discrete choice theoretical perspective. Alternatives, however, have not been systematically tested. kai, feb'12 -->
-		<param name="planSelectorForRemoval" value="WorstPlanSelector" />
-		<parameterset type="strategysettings" >
-			<!-- iteration after which strategy will be disabled.  most useful for ``innovative'' strategies (new routes, new times, ...). Normally, better use fractionOfIterationsToDisableInnovation -->
-			<param name="disableAfterIteration" value="-1" />
-			<!-- path to external executable (if applicable) -->
-			<param name="executionPath" value="null" />
-			<!-- strategyName of strategy.  Possible default names: SelectRandom BestScore KeepLastSelected ChangeExpBeta SelectExpBeta SelectPathSizeLogit      (selectors), ReRouteTimeAllocationMutatorTimeAllocationMutator_ReRouteChangeSingleTripModeChangeTripModeSubtourModeChoice (innovative strategies). -->
-			<param name="strategyName" value="BestScore" />
-			<!-- subpopulation to which the strategy applies. "null" refers to the default population, that is, the set of persons for which no explicit subpopulation is defined (ie no subpopulation attribute) -->
-			<param name="subpopulation" value="null" />
-			<!-- weight of a strategy: for each agent, a strategy will be selected with a probability proportional to its weight -->
-			<param name="weight" value="0.8" />
+		<param name="planSelectorForRemoval" value="SelectExpBetaForRemoval" />
+		<!-- strategy selectors -->
+		<parameterset type="strategysettings">
+			<param name="strategyName" value="BestScore"/>
+			<param name="weight" value="0.01"/>
 		</parameterset>
-		<parameterset type="strategysettings" >
-			<param name="disableAfterIteration" value="-1" />
-			<param name="executionPath" value="null" />
-			<param name="strategyName" value="ReRoute" />
-			<param name="subpopulation" value="null" />
-			<param name="weight" value="0.1" />
+		<parameterset type="strategysettings">
+			<param name="strategyName" value="ChangeExpBeta"/>
+			<param name="weight" value="0.1"/>
 		</parameterset>
-		<parameterset type="strategysettings" >
-			<param name="disableAfterIteration" value="-1" />
-			<param name="executionPath" value="null" />
-			<param name="strategyName" value="TimeAllocationMutator" />
-			<param name="subpopulation" value="null" />
-			<param name="weight" value="0.1" />
+		<parameterset type="strategysettings">
+			<param name="strategyName" value="KeepLastSelected"/>
+			<param name="weight" value="0.02"/>
 		</parameterset>
-		<parameterset type="strategysettings" >
-			<param name="disableAfterIteration" value="-1" />
-			<param name="executionPath" value="null" />
-			<param name="strategyName" value="ChangeTripMode" />
-			<param name="subpopulation" value="null" />
-			<param name="weight" value="0.0" />
+		<parameterset type="strategysettings">
+			<param name="strategyName" value="SelectExpBeta"/>
+			<param name="weight" value="0.7"/>
+		</parameterset>
+		<parameterset type="strategysettings">
+			<param name="strategyName" value="SelectPathSizeLogit"/>
+			<param name="weight" value="0.0"/>
+		</parameterset>
+		<parameterset type="strategysettings">
+			<param name="strategyName" value="SelectRandom"/>
+			<param name="weight" value="0.04"/>
+		</parameterset>
+		<!-- strategy innovators -->
+		<parameterset type="strategysettings">
+			<param name="strategyName" value="ChangeSingleTripMode"/>
+			<param name="weight" value="0.0"/>
+		</parameterset>
+		<parameterset type="strategysettings">
+			<param name="strategyName" value="ChangeTripMode"/>
+			<param name="weight" value="0.0"/>
+		</parameterset>
+		<parameterset type="strategysettings">
+			<param name="strategyName" value="ReRoute"/>
+			<param name="weight" value="0.06"/>
+		</parameterset>
+		<parameterset type="strategysettings">
+			<param name="strategyName" value="SubtourModeChoice"/>
+			<param name="weight" value="0.0"/>
+		</parameterset>
+		<parameterset type="strategysettings">
+			<param name="strategyName" value="TimeAllocationMutator"/>
+			<param name="weight" value="0.07"/>
 		</parameterset>
 	</module>
 	<module name="subtourModeChoice" >
@@ -551,23 +552,6 @@
 		<param name="considerCarAvailability" value="false" />
 		<!-- Defines all the modes available, including chain-based modes, seperated by commas -->
 		<param name="modes" value="car,pt,bike,walk" />
-	</module>
-	<module name="swissRailRaptor" >
-		<!-- Sets whether intermodal access and egress modes are selected by least cost (default) or randomly chosen out of the available access / egress modes. -->
-		<param name="intermodalAccessEgressModeSelection" value="CalcLeastCostModePerStop" />
-		<!-- Possible values: Default, Individual -->
-		<param name="scoringParameters" value="Default" />
-		<param name="transferPenaltyBaseCost" value="0.0" />
-		<param name="transferPenaltyCostPerTravelTimeHour" value="0.0" />
-		<param name="transferPenaltyMaxCost" value="Infinity" />
-		<param name="transferPenaltyMinCost" value="-Infinity" />
-		<!-- time deducted from transfer walk leg during transfers between pt legs in order to avoid missing a vehicle by a few seconds due to delays. -->
-		<param name="transferWalkMargin" value="5.0" />
-		<!-- If true, SwissRailRaptor tries to detect when agents cannot board a vehicle in the previous iteration because it is already full and tries to find an alternative route instead. -->
-		<param name="useCapacityConstraints" value="false" />
-		<param name="useIntermodalAccessEgress" value="false" />
-		<param name="useModeMappingForPassengers" value="false" />
-		<param name="useRangeQuery" value="false" />
 	</module>
 	<module name="transit" >
 		<!-- The Coordinates Reference System in which the coordinates are expressed in the input file. At import, the coordinates will be converted to the coordinate system defined in "global", and willbe converted back at export. If not specified, no conversion happens. -->
@@ -587,17 +571,17 @@
 		<param name="useTransit" value="true" />
 		<param name="usingTransitInMobsim" value="true" />
 		<!-- Input file containing the vehicles used by the departures in the transit schedule. -->
-		<param name="vehiclesFile" value="../transit_Vehicles.xml" />
+		<param name="vehiclesFile" value="transit_Vehicles.xml" />
 	</module>
 	<module name="transitRouter" >
 		<!-- additional time the router allocates when a line switch happens. Can be interpreted as a 'safety' time that agents need to safely transfer from one line to another -->
-		<param name="additionalTransferTime" value="0.0" />
+		<param name="additionalTransferTime" value="50.0" />
 		<!-- Factor with which direct walk generalized cost is multiplied before it is compared to the pt generalized cost.  Set to a very high value to reduce direct walk results. -->
-		<param name="directWalkFactor" value="1.0" />
+		<param name="directWalkFactor" value="10000000.0" />
 		<!-- step size to increase searchRadius if no stops are found -->
 		<param name="extensionRadius" value="200.0" />
 		<!-- maximum beeline distance between stops that agents could transfer to by walking -->
-		<param name="maxBeelineWalkConnectionDistance" value="100.0" />
+		<param name="maxBeelineWalkConnectionDistance" value="300.0" />
 		<!-- the radius in which stop locations are searched, given a start or target coordinate -->
 		<param name="searchRadius" value="1000.0" />
 	</module>

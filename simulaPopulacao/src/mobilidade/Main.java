@@ -3,12 +3,12 @@ package mobilidade;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.List;
 import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 
 import org.osgeo.proj4j.BasicCoordinateTransform;
 import org.osgeo.proj4j.CRSFactory;
@@ -22,6 +22,7 @@ public class Main {
 	static int horaInicialSimulacao = 18;
 	static int minutoInicialSimulacao = 0;
 	static int segundoInicialSimulacao = 0;
+	static String log = "";
 
 	public static void main(String[] args) {
 		Main.relogioSimulacao.set(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, horaInicialSimulacao,
@@ -43,11 +44,17 @@ public class Main {
 		subParadas.add(paradas.get(0));
 
 		Linha linha1Ida = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha1Ida);
+		}
 
 		// LINHA 01 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO, SANTA JÚLIA - IDA
 		subParadas.addAll(41, paradas.subList(143, 151));
 
 		Linha linha1SantaJuliaIda = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha1SantaJuliaIda);
+		}
 
 		// LINHA 01 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO, SANTA JÚLIA - VOLTA
 		subParadas.clear();
@@ -60,10 +67,16 @@ public class Main {
 		subParadas.addAll(paradas.subList(161, 190));
 		subParadas.add(paradas.get(40));
 		Linha linha1Volta = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha1Volta);
+		}
 
 		// LINHA 01 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO, SANTA JÚLIA - VOLTA
 		subParadas.addAll(46, paradas.subList(143, 151));
 		Linha linha1SantaJuliaVolta = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha1SantaJuliaVolta);
+		}
 
 		// LINHA 02 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO - IDA
 		subParadas.clear();
@@ -73,6 +86,9 @@ public class Main {
 		subParadas.addAll(paradas.subList(12, 20));
 		subParadas.add(paradas.get(0));
 		Linha linha2Ida = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha2Ida);
+		}
 
 		// LINHA 02 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO - VOLTA
 		subParadas.clear();
@@ -82,6 +98,9 @@ public class Main {
 		subParadas.addAll(paradas.subList(161, 190));
 		subParadas.add(paradas.get(40));
 		Linha linha2Volta = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha2Volta);
+		}
 
 		// LINHA 02 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO, UNIVERSIDADES VIA AEC
 		subParadas.clear();
@@ -91,6 +110,9 @@ public class Main {
 		subParadas.addAll(paradas.subList(15, 20));
 		subParadas.add(paradas.get(0));
 		Linha linha2UniversidadesAeC = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha2UniversidadesAeC);
+		}
 
 		// LINHA 02 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO, UNIVERSIDADES VIA IFRN
 		subParadas.removeAll(subParadas.subList(5, 7));
@@ -99,6 +121,9 @@ public class Main {
 		subParadas.addAll(12, paradas.subList(29, 32));
 		subParadas.removeAll(subParadas.subList(23, 27));
 		Linha linha2UniversidadesIFRN = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha2UniversidadesIFRN);
+		}
 
 		// LINHA 03 - SANTO ANTÔNIO, BARROCAS
 		subParadas.clear();
@@ -109,6 +134,9 @@ public class Main {
 		subParadas.addAll(paradas.subList(7, 19));
 		subParadas.add(paradas.get(20));
 		Linha linha3 = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha3);
+		}
 
 		// LINHA 04 - ABOLIÇÃO V - IDA
 		subParadas.clear();
@@ -119,10 +147,16 @@ public class Main {
 		subParadas.addAll(paradas.subList(10, 20));
 		subParadas.add(paradas.get(0));
 		Linha linha4Ida = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha4Ida);
+		}
 
 		// LINHA 04 - ABOLIÇÃO V, SANTA JÚLIA
 		subParadas.addAll(1, paradas.subList(143, 151));
 		Linha linha4SantaJulia = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha4SantaJulia);
+		}
 
 		// LINHA 04 - ABOLIÇÃO V - VOLTA
 		subParadas.clear();
@@ -131,6 +165,9 @@ public class Main {
 		subParadas.addAll(paradas.subList(105, 109));
 		subParadas.addAll(paradas.subList(115, 143));
 		Linha linha4Volta = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha4Volta);
+		}
 
 		// LINHA 05 - VINGT ROSADO - IDA
 		subParadas.clear();
@@ -140,6 +177,9 @@ public class Main {
 		subParadas.addAll(paradas.subList(2, 19));
 		subParadas.add(paradas.get(20));
 		Linha linha5Ida = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha5Ida);
+		}
 
 		// LINHA 05 - VINGT ROSADO VIA UNIVERSIDADES - IDA
 		subParadas.addAll(27, paradas.subList(420, 423));
@@ -149,6 +189,9 @@ public class Main {
 		subParadas.addAll(42, paradas.subList(29, 32));
 		subParadas.removeAll(subParadas.subList(45, 47));
 		Linha linha5IdaUniversidades = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha5IdaUniversidades);
+		}
 
 		// LINHA 05 - VINGT ROSADO - VOLTA
 		subParadas.clear();
@@ -157,11 +200,17 @@ public class Main {
 		subParadas.addAll(paradas.subList(376, 397));
 		subParadas.add(paradas.get(284));
 		Linha linha5Volta = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha5Volta);
+		}
 
 		// LINHA 05 - VINGT ROSADO, UERN - VOLTA
 		subParadas.addAll(9, paradas.subList(420, 423));
 		subParadas.addAll(12, paradas.subList(362, 366));
 		Linha linha5VoltaUERN = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha5VoltaUERN);
+		}
 
 		// LINHA 05 - VINGT ROSADO, IFRN - VOLTA
 		subParadas.removeAll(subParadas.subList(9, 16));
@@ -170,11 +219,17 @@ public class Main {
 		subParadas.addAll(7, paradas.subList(397, 409));
 		subParadas.addAll(19, paradas.subList(416, 420));
 		Linha linha5VoltaIFRN = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha5VoltaIFRN);
+		}
 
 		// LINHA 05 - VINGT ROSADO VIA UNIVERSIDADES - VOLTA
 		subParadas.addAll(24, paradas.subList(420, 423));
 		subParadas.addAll(27, paradas.subList(362, 366));
 		Linha linha5VoltaUniversidades = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha5VoltaUniversidades);
+		}
 
 		// LINHA 05 - VINGT ROSADO VIA ODETE ROSADO - VOLTA
 		subParadas.removeAll(subParadas.subList(27, 31));
@@ -183,6 +238,9 @@ public class Main {
 		subParadas.addAll(6, paradas.subList(423, 425));
 		subParadas.addAll(8, paradas.subList(355, 366));
 		Linha linha5VoltaOdeteRosado = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha5VoltaOdeteRosado);
+		}
 
 		// LINHA 06 - UNIVERSIDADES - IDA
 		subParadas.clear();
@@ -194,10 +252,16 @@ public class Main {
 		subParadas.add(paradas.get(18));
 		subParadas.add(paradas.get(20));
 		Linha linha6Ida = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha6Ida);
+		}
 
 		// LINHA 06 - UNIVERSIDADES SEM ULRICK GRAFF - IDA
 		subParadas.removeAll(subParadas.subList(9, 16));
 		Linha linha6IdaSemUlrickGraff = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha6IdaSemUlrickGraff);
+		}
 
 		// LINHA 06 - UNIVERSIDADES SEM ULRICK GRAFF, NEM AVENIDA RIO BRANCO - IDA
 		subParadas.removeAll(subParadas.subList(22, 31));
@@ -206,6 +270,9 @@ public class Main {
 		subParadas.add(paradas.get(19));
 		subParadas.add(paradas.get(0));
 		Linha linha6IdaSemUlrickGraffNemRioBranco = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha6IdaSemUlrickGraffNemRioBranco);
+		}
 
 		// LINHA 06 - UNIVERSIDADES SEM ULRICK GRAFF, COM UNIRB E COELHO NETO - IDA
 		subParadas.addAll(0, paradas.subList(274, 281));
@@ -215,6 +282,9 @@ public class Main {
 		subParadas.addAll(33, paradas.subList(320, 324));
 		subParadas.addAll(37, paradas.subList(328, 338));
 		Linha linha6IdaSemUlrickGraffComUNIRBComCoelhoNeto = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha6IdaSemUlrickGraffComUNIRBComCoelhoNeto);
+		}
 
 		// LINHA 06 - UNIVERSIDADES - VOLTA
 		subParadas.clear();
@@ -224,16 +294,25 @@ public class Main {
 		subParadas.addAll(paradas.subList(420, 423));
 		subParadas.add(paradas.get(362));
 		Linha linha6Volta = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha6Volta);
+		}
 
 		// LINHA 06 - UNIVERSIDADES SEM ULRICK GRAFF- VOLTA
 		subParadas.removeAll(subParadas.subList(19, 26));
 		Linha linha6VoltaSemUlrickGraff = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha6VoltaSemUlrickGraff);
+		}
 
 		// LINHA 06 - UNIVERSIDADES COM UNIRB - VOLTA
 		subParadas.addAll(19, paradas.subList(409, 416));
 		subParadas.addAll(paradas.subList(363, 366));
 		subParadas.addAll(paradas.subList(369, 373));
 		Linha linha6VoltaUNIRB = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha6VoltaUNIRB);
+		}
 
 		// LINHA 07 - NOVA VIDA - IDA
 		subParadas.clear();
@@ -243,12 +322,18 @@ public class Main {
 		subParadas.addAll(paradas.subList(2, 19));
 		subParadas.add(paradas.get(20));
 		Linha linha7Ida = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha7Ida);
+		}
 
 		// LINHA 07 - NOVA VIDA SEM PAREDÕES, TERMINANDO NA PRAÇA FELIPE GUERRA - IDA
 		subParadas.removeAll(subParadas.subList(21, 40));
 		subParadas.add(paradas.get(15));
 		subParadas.add(paradas.get(0));
 		Linha linha7IdaSemParedoesTerminandoNaPracaFelipeGuerra = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha7IdaSemParedoesTerminandoNaPracaFelipeGuerra);
+		}
 
 		// LINHA 07 - NOVA VIDA VIA JARDIM DAS PALMEIRAS - IDA
 		subParadas.removeAll(subParadas.subList(21, 23));
@@ -258,17 +343,26 @@ public class Main {
 		subParadas.remove(subParadas.get(0));
 		subParadas.addAll(0, paradas.subList(425, 435));
 		Linha linha7IdaJardimDasPalmeiras = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha7IdaJardimDasPalmeiras);
+		}
 
 		// LINHA 07 - NOVA VIDA - VOLTA
 		subParadas.clear();
 		subParadas.addAll(paradas.subList(20, 27));
 		subParadas.addAll(paradas.subList(443, 456));
 		Linha linha7Volta = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha7Volta);
+		}
 
 		// LINHA 07 - NOVA VIDA VIA JARDIM DAS PALMEIRAS - VOLTA
 		subParadas.addAll(paradas.subList(456, 462));
 		subParadas.add(paradas.get(425));
 		Linha linha7VoltaJardimDasPalmeiras = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha7VoltaJardimDasPalmeiras);
+		}
 
 		// LINHA 07 - NOVA VIDA VIA SUMARÉ, LIBERDADE, PLANALTO - VOLTA
 		subParadas.add(0, paradas.get(0));
@@ -279,6 +373,9 @@ public class Main {
 		subParadas.removeAll(subParadas.subList(45, 51));
 		subParadas.removeAll(subParadas.subList(54, subParadas.size()));
 		Linha linha7VoltaSumareLiberdadePlanalto = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha7VoltaSumareLiberdadePlanalto);
+		}
 
 		// LINHA 08 - SUMARÉ, LIBERDADE, PLANALTO - IDA
 		subParadas.removeAll(subParadas.subList(0, 29));
@@ -287,6 +384,9 @@ public class Main {
 		subParadas.addAll(paradas.subList(2, 19));
 		subParadas.add(paradas.get(20));
 		Linha linha8Ida = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha8Ida);
+		}
 
 		// LINHA 08 - SUMARÉ, LIBERDADE, PLANALTO - VOLTA
 		subParadas.clear();
@@ -294,6 +394,9 @@ public class Main {
 		subParadas.addAll(paradas.subList(478, 499));
 		subParadas.add(paradas.get(462));
 		Linha linha8Volta = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha8Volta);
+		}
 
 		// LINHA 09 - BELO HORIZONTE, BOM JESUS, MONTE OLIMPO - IDA
 		subParadas.clear();
@@ -303,6 +406,9 @@ public class Main {
 		subParadas.addAll(paradas.subList(14, 20));
 		subParadas.add(paradas.get(0));
 		Linha linha9Ida = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha9Ida);
+		}
 
 		// LINHA 09 - BELO HORIZONTE, BOM JESUS, MONTE OLIMPO COM LAGOA DO MATO, BOA
 		// VISTA, DOZE ANOS E SANTO ANTÔNIO - IDA
@@ -314,6 +420,9 @@ public class Main {
 		subParadas.addAll(35, paradas.subList(190, 193));
 		subParadas.addAll(38, paradas.subList(10, 14));
 		Linha linha9IdaLagoaDoMatoBoaVistaDozeAnosSantoAntonio = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha9IdaLagoaDoMatoBoaVistaDozeAnosSantoAntonio);
+		}
 
 		// LINHA 09 - BELO HORIZONTE, BOM JESUS, MONTE OLIMPO - VOLTA
 		subParadas.clear();
@@ -326,6 +435,9 @@ public class Main {
 		subParadas.addAll(paradas.subList(571, 582));
 		subParadas.add(paradas.get(511));
 		Linha linha9Volta = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha9Volta);
+		}
 
 		// LINHA 10 - SHOPPING, UNP - IDA
 		subParadas.clear();
@@ -333,6 +445,9 @@ public class Main {
 		subParadas.addAll(paradas.subList(13, 20));
 		subParadas.add(paradas.get(0));
 		Linha linha10Ida = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha10Ida);
+		}
 
 		// LINHA 10 - SHOPPING, UNP, AEROPORTO, MACARRÃO, BOA VISTA - IDA
 		subParadas.clear();
@@ -355,6 +470,9 @@ public class Main {
 		subParadas.addAll(paradas.subList(14, 20));
 		subParadas.add(paradas.get(0));
 		Linha linha10IdaAeroportoMacarraoBoaVista = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha10IdaAeroportoMacarraoBoaVista);
+		}
 
 		// LINHA 10 - SHOPPING, UNP - VOLTA
 		subParadas.clear();
@@ -364,6 +482,9 @@ public class Main {
 		subParadas.addAll(paradas.subList(632, 642));
 		subParadas.add(paradas.get(622));
 		Linha linha10Volta = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha10Volta);
+		}
 
 		// LINHA 10 - SHOPPING, UNP, AEROPORTO, MACARRÃO, BOA VISTA - VOLTA
 		subParadas.clear();
@@ -377,6 +498,9 @@ public class Main {
 		subParadas.addAll(paradas.subList(673, 676));
 		subParadas.add(paradas.get(642));
 		Linha linha10VoltaAeroportoMacarraoBoaVista = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha10VoltaAeroportoMacarraoBoaVista);
+		}
 
 		// LINHA 11 - PARQUE UNIVERSITÁRIO, UNIRB, ALTO DAS BRISAS - IDA
 		subParadas.clear();
@@ -388,6 +512,9 @@ public class Main {
 		subParadas.addAll(paradas.subList(2, 19));
 		subParadas.add(paradas.get(20));
 		Linha linha11Ida = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha11Ida);
+		}
 
 		// LINHA 11 - PARQUE UNIVERSITÁRIO, UNIRB, ALTO DAS BRISAS - VOLTA
 		subParadas.clear();
@@ -395,6 +522,9 @@ public class Main {
 		subParadas.addAll(paradas.subList(366, 376));
 		subParadas.add(paradas.get(338));
 		Linha linha11Volta = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha11Volta);
+		}
 
 		// LINHA 12 - NOVA MOSSORÓ, SANTO ANTÔNIO, BARROCAS - IDA
 		subParadas.clear();
@@ -403,6 +533,9 @@ public class Main {
 		subParadas.addAll(paradas.subList(7, 20));
 		subParadas.add(paradas.get(0));
 		Linha linha12Ida = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha12Ida);
+		}
 
 		// LINHA 12 - NOVA MOSSORÓ, SANTO ANTÔNIO, BARROCAS - VOLTA
 		subParadas.clear();
@@ -410,6 +543,9 @@ public class Main {
 		subParadas.addAll(paradas.subList(231, 271));
 		subParadas.add(paradas.get(196));
 		Linha linha12Volta = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha12Volta);
+		}
 
 		// LINHA 14 - AEROPORTO, RODOVIÁRIA - IDA
 		subParadas.clear();
@@ -419,6 +555,9 @@ public class Main {
 		subParadas.addAll(paradas.subList(13, 20));
 		subParadas.add(paradas.get(0));
 		Linha linha14Ida = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha14Ida);
+		}
 
 		// LINHA 14 - AEROPORTO, RODOVIÁRIA - VOLTA
 		subParadas.clear();
@@ -431,6 +570,9 @@ public class Main {
 		subParadas.addAll(paradas.subList(673, 676));
 		subParadas.add(paradas.get(642));
 		Linha linha14Volta = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha14Volta);
+		}
 
 		// LINHA 15 - MACARRÃO, BOA VISTA - IDA,
 		subParadas.clear();
@@ -446,6 +588,9 @@ public class Main {
 		subParadas.addAll(paradas.subList(14, 20));
 		subParadas.add(paradas.get(0));
 		Linha linha15Ida = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha15Ida);
+		}
 
 		// LINHA 15 - MACARRÃO, BOA VISTA - VOLTA
 		subParadas.clear();
@@ -459,6 +604,9 @@ public class Main {
 		subParadas.addAll(paradas.subList(709, 711));
 		subParadas.add(paradas.get(676));
 		Linha linha15Volta = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha15Volta);
+		}
 
 		// LINHA 17 - ODETE ROSADO - IDA
 		subParadas.clear();
@@ -468,6 +616,9 @@ public class Main {
 		subParadas.addAll(paradas.subList(2, 19));
 		subParadas.add(paradas.get(20));
 		Linha linha17Ida = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha17Ida);
+		}
 
 		// LINHA 17 - ODETE ROSADO - VOLTA
 		subParadas.clear();
@@ -476,6 +627,9 @@ public class Main {
 		subParadas.addAll(paradas.subList(420, 425));
 		subParadas.add(paradas.get(355));
 		Linha linha17Volta = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha17Volta);
+		}
 
 		// LINHA 19 - CIDADE OESTE - IDA
 		subParadas.clear();
@@ -485,6 +639,9 @@ public class Main {
 		subParadas.addAll(paradas.subList(14, 20));
 		subParadas.add(paradas.get(0));
 		Linha linha19Ida = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha19Ida);
+		}
 
 		// LINHA 19 - CIDADE OESTE - VOLTA
 		subParadas.clear();
@@ -493,6 +650,9 @@ public class Main {
 		subParadas.addAll(paradas.subList(582, 593));
 		subParadas.add(paradas.get(536));
 		Linha linha19Volta = new Linha(subParadas);
+		for (Parada paradaAtual : subParadas) {
+			paradaAtual.addLinha(linha19Volta);
+		}
 
 		// Monta os ciclos das linhas----------------------------------
 		// Linha 1
@@ -596,122 +756,1007 @@ public class Main {
 		// Define os ônibus
 		// numeroVeiculo, capacidadePessoas, velocidade, linhaOnibus
 		List<Onibus> onibus = new ArrayList<Onibus>();
-		List<Calendar> horarios = new ArrayList<Calendar>();
+		List<Viagem> viagens = new ArrayList<Viagem>();
 
-		horarios.add(new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 18, 0, 0));
-		horarios.add(new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 19, 0, 0));
-		horarios.add(new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 20, 0, 0));
-		horarios.add(new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 21, 0, 0));
-		horarios.add(new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 22, 0, 0));
-		horarios.add(new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 23, 0, 0));
+		viagens.add(new Viagem(linha2Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 5, 37)));
+		viagens.add(new Viagem(linha2Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 6, 30)));
+		viagens.add(new Viagem(linha2Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 7, 27)));
+		viagens.add(new Viagem(linha2Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 8, 25)));
+		viagens.add(new Viagem(linha2Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 9, 15)));
+		viagens.add(new Viagem(linha2Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 10, 10)));
+		viagens.add(new Viagem(linha2Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 11, 5)));
+		viagens.add(new Viagem(linha2Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 12, 9)));
+		viagens.add(new Viagem(linha2Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 13, 1)));
+		viagens.add(new Viagem(linha2Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 13, 59)));
+		viagens.add(new Viagem(linha2Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 14, 49)));
+		viagens.add(new Viagem(linha2Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 15, 42)));
+		viagens.add(new Viagem(linha1Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 16, 38)));
+		viagens.add(new Viagem(linha1Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 17, 36)));
+		viagens.add(new Viagem(linha2UniversidadesAeC,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 22, 0)));
+		viagens.add(new Viagem(linha1Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 22, 20)));
 
-		// LINHA 01 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO - IDA
-		onibus.add(new Onibus(50, 50, linha1Ida, horarios));
-		// LINHA 01 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO, SANTA JÚLIA - IDA
-		onibus.add(new Onibus(50, 50, linha1SantaJuliaIda, horarios));
-		// LINHA 01 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO - VOLTA
-		onibus.add(new Onibus(50, 50, linha1Volta, horarios));
-		// LINHA 01 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO, SANTA JÚLIA - VOLTA
-		onibus.add(new Onibus(50, 50, linha1SantaJuliaVolta, horarios));
-		// LINHA 02 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO - IDA
-		onibus.add(new Onibus(50, 50, linha2Ida, horarios));
-		// LINHA 02 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO - VOLTA
-		onibus.add(new Onibus(50, 50, linha2Volta, horarios));
-		// LINHA 02 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO, UNIVERSIDADES VIA AEC
-		onibus.add(new Onibus(50, 50, linha2UniversidadesAeC, horarios));
-		// LINHA 02 - ABOLIÇÕES, SANTA DELMIRA, REDENÇÃO, UNIVERSIDADES VIA IFRN
-		onibus.add(new Onibus(50, 50, linha2UniversidadesIFRN, horarios));
-		// LINHA 03 - SANTO ANTÔNIO, BARROCAS
-		onibus.add(new Onibus(50, 50, linha3, horarios));
-		// LINHA 04 - ABOLIÇÃO V - IDA
-		onibus.add(new Onibus(50, 50, linha4Ida, horarios));
-		// LINHA 04 - ABOLIÇÃO V, SANTA JÚLIA
-		onibus.add(new Onibus(50, 50, linha4SantaJulia, horarios));
-		// LINHA 04 - ABOLIÇÃO V - VOLTA
-		onibus.add(new Onibus(50, 50, linha4Volta, horarios));
-		// LINHA 05 - VINGT ROSADO - IDA
-		onibus.add(new Onibus(50, 50, linha5Ida, horarios));
-		// LINHA 05 - VINGT ROSADO VIA UNIVERSIADES - IDA
-		onibus.add(new Onibus(50, 50, linha5IdaUniversidades, horarios));
-		// LINHA 05 - VINGT ROSADO - VOLTA
-		onibus.add(new Onibus(50, 50, linha5Volta, horarios));
-		// LINHA 05 - VINGT ROSADO, UERN - VOLTA
-		onibus.add(new Onibus(50, 50, linha5VoltaUERN, horarios));
-		// LINHA 05 - VINGT ROSADO, IFRN - VOLTA
-		onibus.add(new Onibus(50, 50, linha5VoltaIFRN, horarios));
-		// LINHA 05 - VINGT ROSADO VIA UNIVERSIDADES - VOLTA
-		onibus.add(new Onibus(50, 50, linha5VoltaUniversidades, horarios));
-		// LINHA 05 - VINGT ROSADO VIA ODETE ROSADO - VOLTA
-		onibus.add(new Onibus(50, 50, linha5VoltaOdeteRosado, horarios));
-		// LINHA 06 - UNIVERSIDADES - IDA
-		onibus.add(new Onibus(50, 50, linha6Ida, horarios));
-		// LINHA 06 - UNIVERSIDADES SEM ULRICK GRAFF - IDA
-		onibus.add(new Onibus(50, 50, linha6IdaSemUlrickGraff, horarios));
-		// LINHA 06 - UNIVERSIDADES SEM ULRICK GRAFF, NEM AVENIDA RIO BRANCO - IDA
-		onibus.add(new Onibus(50, 50, linha6IdaSemUlrickGraffNemRioBranco, horarios));
-		// LINHA 06 - UNIVERSIDADES SEM ULRICK GRAFF, COM UNIRB E COELHO NETO - IDA
-		onibus.add(new Onibus(50, 50, linha6IdaSemUlrickGraffComUNIRBComCoelhoNeto, horarios));
-		// LINHA 06 - UNIVERSIDADES - VOLTA
-		onibus.add(new Onibus(50, 50, linha6Volta, horarios));
-		// LINHA 06 - UNIVERSIDADES SEM ULRICK GRAFF- VOLTA
-		onibus.add(new Onibus(50, 50, linha6VoltaSemUlrickGraff, horarios));
-		// LINHA 06 - UNIVERSIDADES COM UNIRB - VOLTA
-		onibus.add(new Onibus(50, 50, linha6VoltaUNIRB, horarios));
-		// LINHA 07 - NOVA VIDA - IDA
-		onibus.add(new Onibus(50, 50, linha7Ida, horarios));
-		// LINHA 07 - NOVA VIDA SEM PAREDÕES, TERMINANDO NA PRAÇA FELIPE GUERRA - IDA
-		onibus.add(new Onibus(50, 50, linha7IdaSemParedoesTerminandoNaPracaFelipeGuerra, horarios));
-		// LINHA 07 - NOVA VIDA VIA JARDIM DAS PALMEIRAS - IDA
-		onibus.add(new Onibus(50, 50, linha7IdaJardimDasPalmeiras, horarios));
-		// LINHA 07 - NOVA VIDA - VOLTA
-		onibus.add(new Onibus(50, 50, linha7Volta, horarios));
-		// LINHA 07 - NOVA VIDA VIA JARDIM DAS PALMEIRAS - VOLTA
-		onibus.add(new Onibus(50, 50, linha7VoltaJardimDasPalmeiras, horarios));
-		// LINHA 07 - NOVA VIDA VIA SUMARÉ, LIBERDADE, PLANALTO - VOLTA
-		onibus.add(new Onibus(50, 50, linha7VoltaSumareLiberdadePlanalto, horarios));
-		// LINHA 08 - SUMARÉ, LIBERDADE, PLANALTO - IDA
-		onibus.add(new Onibus(50, 50, linha8Ida, horarios));
-		// LINHA 08 - SUMARÉ, LIBERDADE, PLANALTO - VOLTA
-		onibus.add(new Onibus(50, 50, linha8Volta, horarios));
-		// LINHA 09 - BELO HORIZONTE, BOM JESUS, MONTE OLIMPO - IDA
-		onibus.add(new Onibus(50, 50, linha9Ida, horarios));
-		// LINHA 09 - BELO HORIZONTE, BOM JESUS, MONTE OLIMPO COM LAGOA DO MATO, BOA
-		// VISTA, DOZE ANOS E SANTO ANTÔNIO - IDA
-		onibus.add(new Onibus(50, 50, linha9IdaLagoaDoMatoBoaVistaDozeAnosSantoAntonio, horarios));
-		// LINHA 09 - BELO HORIZONTE, BOM JESUS, MONTE OLIMPO - VOLTA
-		onibus.add(new Onibus(50, 50, linha9Volta, horarios));
-		// LINHA 10 - SHOPPING, UNP - IDA
-		onibus.add(new Onibus(50, 50, linha10Ida, horarios));
-		// LINHA 10 - SHOPPING, UNP, AEROPORTO, MACARRÃO, BOA VISTA - IDA
-		onibus.add(new Onibus(50, 50, linha10IdaAeroportoMacarraoBoaVista, horarios));
-		// LINHA 10 - SHOPPING, UNP - VOLTA
-		onibus.add(new Onibus(50, 50, linha10Volta, horarios));
-		// LINHA 10 - SHOPPING, UNP, AEROPORTO, MACARRÃO, BOA VISTA - VOLTA
-		onibus.add(new Onibus(50, 50, linha10VoltaAeroportoMacarraoBoaVista, horarios));
-		// LINHA 11 - PARQUE UNIVERSITÁRIO, UNIRB, ALTO DAS BRISAS - IDA
-		onibus.add(new Onibus(50, 50, linha11Ida, horarios));
-		// LINHA 11 - PARQUE UNIVERSITÁRIO, UNIRB, ALTO DAS BRISAS - VOLTA
-		onibus.add(new Onibus(50, 50, linha11Volta, horarios));
-		// LINHA 12 - NOVA MOSSORÓ, SANTO ANTÔNIO, BARROCAS - IDA
-		onibus.add(new Onibus(50, 50, linha12Ida, horarios));
-		// LINHA 12 - NOVA MOSSORÓ, SANTO ANTÔNIO, BARROCAS - VOLTA
-		onibus.add(new Onibus(50, 50, linha12Volta, horarios));
-		// LINHA 14 - AEROPORTO, RODOVIÁRIA - IDA
-		onibus.add(new Onibus(50, 50, linha14Ida, horarios));
-		// LINHA 14 - AEROPORTO, RODOVIÁRIA - VOLTA
-		onibus.add(new Onibus(50, 50, linha14Volta, horarios));
-		// LINHA 15 - MACARRÃO, BOA VISTA - IDA
-		onibus.add(new Onibus(50, 50, linha15Ida, horarios));
-		// LINHA 15 - MACARRÃO, BOA VISTA - VOLTA
-		onibus.add(new Onibus(50, 50, linha15Volta, horarios));
-		// LINHA 17 - ODETE ROSADO - IDA
-		onibus.add(new Onibus(50, 50, linha17Ida, horarios));
-		// LINHA 17 - ODETE ROSADO - VOLTA
-		onibus.add(new Onibus(50, 50, linha17Volta, horarios));
-		// LINHA 19 - CIDADE OESTE - IDA
-		onibus.add(new Onibus(50, 50, linha19Ida, horarios));
-		// LINHA 19 - CIDADE OESTE - VOLTA
-		onibus.add(new Onibus(50, 50, linha19Volta, horarios));
+		// Veículo 1
+		onibus.add(new Onibus(50, 50, viagens));
+
+		viagens.clear();
+		viagens.add(new Viagem(linha1Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 5, 5)));
+		viagens.add(new Viagem(linha2Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 6, 8)));
+		viagens.add(new Viagem(linha2Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 7, 5)));
+		viagens.add(new Viagem(linha2Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 8, 5)));
+		viagens.add(new Viagem(linha2Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 8, 56)));
+		viagens.add(new Viagem(linha2Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 9, 51)));
+		viagens.add(new Viagem(linha2Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 10, 43)));
+		viagens.add(new Viagem(linha2Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 11, 41)));
+		viagens.add(new Viagem(linha2Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 12, 34)));
+		viagens.add(new Viagem(linha2Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 13, 32)));
+		viagens.add(new Viagem(linha2Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 14, 22)));
+		viagens.add(new Viagem(linha2Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 15, 20)));
+		viagens.add(new Viagem(linha2Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 16, 12)));
+		viagens.add(new Viagem(linha2Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 17, 20)));
+		viagens.add(new Viagem(linha1Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 18, 10)));
+		viagens.add(new Viagem(linha1Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 19, 5)));
+		viagens.add(new Viagem(linha2UniversidadesIFRN,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 22, 0)));
+		viagens.add(new Viagem(linha1Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 22, 25)));
+
+		// Veículo 2
+		onibus.add(new Onibus(50, 50, viagens));
+
+		viagens.clear();
+		viagens.add(new Viagem(linha2Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 5, 59)));
+		viagens.add(new Viagem(linha2Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 6, 52)));
+		viagens.add(new Viagem(linha2Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 7, 50)));
+		viagens.add(new Viagem(linha2Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 8, 53)));
+		viagens.add(new Viagem(linha2Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 9, 50)));
+		viagens.add(new Viagem(linha2Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 10, 46)));
+		viagens.add(new Viagem(linha2Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 11, 50)));
+		viagens.add(new Viagem(linha2Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 12, 40)));
+		viagens.add(new Viagem(linha2Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 13, 28)));
+		viagens.add(new Viagem(linha2Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 14, 26)));
+		viagens.add(new Viagem(linha2Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 15, 17)));
+		viagens.add(new Viagem(linha2Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 16, 15)));
+		viagens.add(new Viagem(linha1SantaJuliaIda,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 17, 20)));
+		viagens.add(new Viagem(linha1SantaJuliaVolta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 18, 10)));
+		viagens.add(new Viagem(linha1Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 19, 30)));
+		viagens.add(new Viagem(linha1Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 20, 5)));
+		viagens.add(new Viagem(linha1Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 21, 15)));
+		viagens.add(new Viagem(linha1Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 22, 55)));
+
+		// Veículo 3
+		onibus.add(new Onibus(50, 50, viagens));
+
+		viagens.clear();
+		viagens.add(new Viagem(linha4SantaJulia,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 5, 45)));
+		viagens.add(new Viagem(linha4Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 6, 40)));
+		viagens.add(new Viagem(linha4SantaJulia,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 7, 20)));
+		viagens.add(new Viagem(linha4Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 8, 12)));
+		viagens.add(new Viagem(linha4Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 8, 53)));
+		viagens.add(new Viagem(linha4Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 9, 41)));
+		viagens.add(new Viagem(linha4Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 10, 31)));
+		viagens.add(new Viagem(linha4Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 11, 20)));
+		viagens.add(new Viagem(linha4SantaJulia,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 12, 6)));
+		viagens.add(new Viagem(linha4Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 12, 53)));
+		viagens.add(new Viagem(linha4Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 13, 33)));
+		viagens.add(new Viagem(linha4Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 14, 14)));
+		viagens.add(new Viagem(linha4Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 15, 3)));
+		viagens.add(new Viagem(linha4Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 15, 47)));
+		viagens.add(new Viagem(linha4Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 16, 27)));
+		viagens.add(new Viagem(linha4Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 17, 6)));
+		viagens.add(new Viagem(linha4SantaJulia,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 17, 46)));
+
+		// Veículo 4
+		onibus.add(new Onibus(50, 50, viagens));
+
+		viagens.clear();
+		viagens.add(
+				new Viagem(linha3, new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 5, 55)));
+		viagens.add(new Viagem(linha6Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 6, 40)));
+		viagens.add(new Viagem(linha6Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 7, 25)));
+		viagens.add(new Viagem(linha6Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 7, 55)));
+		viagens.add(new Viagem(linha6Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 8, 35)));
+		viagens.add(new Viagem(linha6Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 9, 5)));
+		viagens.add(new Viagem(linha6Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 9, 45)));
+		viagens.add(new Viagem(linha6Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 10, 15)));
+		viagens.add(new Viagem(linha6Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 10, 50)));
+		viagens.add(new Viagem(linha6Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 11, 30)));
+		viagens.add(new Viagem(linha6Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 12, 10)));
+		viagens.add(new Viagem(linha6Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 12, 45)));
+		viagens.add(new Viagem(linha6Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 13, 25)));
+		viagens.add(new Viagem(linha6Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 14, 0)));
+		viagens.add(new Viagem(linha6Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 14, 40)));
+		viagens.add(new Viagem(linha6Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 15, 10)));
+		viagens.add(new Viagem(linha6Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 15, 50)));
+		viagens.add(new Viagem(linha6Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 16, 20)));
+		viagens.add(new Viagem(linha6Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 17, 0)));
+		viagens.add(new Viagem(linha6IdaSemUlrickGraff,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 17, 55)));
+		viagens.add(new Viagem(linha6VoltaSemUlrickGraff,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 18, 40)));
+		viagens.add(new Viagem(linha6IdaSemUlrickGraff,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 19, 10)));
+		viagens.add(new Viagem(linha6VoltaSemUlrickGraff,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 19, 50)));
+		viagens.add(new Viagem(linha6IdaSemUlrickGraffComUNIRBComCoelhoNeto,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 22, 0)));
+		viagens.add(new Viagem(linha10VoltaAeroportoMacarraoBoaVista,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 22, 40)));
+
+		// Veículo 5
+		onibus.add(new Onibus(50, 50, viagens));
+
+		viagens.clear();
+		viagens.add(new Viagem(linha4Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 5, 53)));
+		viagens.add(new Viagem(linha4SantaJulia,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 6, 35)));
+		viagens.add(new Viagem(linha4Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 7, 25)));
+		viagens.add(new Viagem(linha4Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 8, 11)));
+		viagens.add(new Viagem(linha4Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 9, 2)));
+		viagens.add(new Viagem(linha4Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 9, 49)));
+		viagens.add(new Viagem(linha4Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 10, 35)));
+		viagens.add(new Viagem(linha4SantaJulia,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 11, 22)));
+		viagens.add(new Viagem(linha4Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 12, 17)));
+		viagens.add(new Viagem(linha4Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 12, 57)));
+		viagens.add(new Viagem(linha4Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 13, 42)));
+		viagens.add(new Viagem(linha4Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 14, 20)));
+		viagens.add(new Viagem(linha4Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 15, 5)));
+		viagens.add(new Viagem(linha4Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 15, 43)));
+		viagens.add(new Viagem(linha4Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 16, 25)));
+		viagens.add(new Viagem(linha4SantaJulia,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 17, 30)));
+
+		// Veículo 6
+		onibus.add(new Onibus(50, 50, viagens));
+
+		viagens.clear();
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 5, 40)));
+		viagens.add(new Viagem(linha7VoltaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 6, 24)));
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 6, 55)));
+		viagens.add(new Viagem(linha7VoltaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 7, 47)));
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 8, 13)));
+		viagens.add(new Viagem(linha7VoltaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 9, 2)));
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 9, 29)));
+		viagens.add(new Viagem(linha7VoltaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 10, 23)));
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 10, 50)));
+		viagens.add(new Viagem(linha7VoltaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 11, 44)));
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 12, 13)));
+		viagens.add(new Viagem(linha7VoltaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 13, 5)));
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 13, 34)));
+		viagens.add(new Viagem(linha7VoltaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 14, 26)));
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 14, 56)));
+		viagens.add(new Viagem(linha7VoltaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 15, 48)));
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 16, 24)));
+		viagens.add(new Viagem(linha7Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 17, 20)));
+
+		// Veículo 7
+		onibus.add(new Onibus(50, 50, viagens));
+
+		viagens.clear();
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 5, 55)));
+		viagens.add(new Viagem(linha7VoltaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 6, 42)));
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 7, 11)));
+		viagens.add(new Viagem(linha7VoltaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 8, 3)));
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 8, 30)));
+		viagens.add(new Viagem(linha7VoltaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 9, 22)));
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 9, 51)));
+		viagens.add(new Viagem(linha7VoltaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 10, 43)));
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 11, 10)));
+		viagens.add(new Viagem(linha7VoltaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 12, 5)));
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 12, 33)));
+		viagens.add(new Viagem(linha7VoltaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 13, 25)));
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 13, 55)));
+		viagens.add(new Viagem(linha7VoltaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 14, 47)));
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 15, 17)));
+		viagens.add(new Viagem(linha7VoltaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 16, 9)));
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 16, 46)));
+		viagens.add(new Viagem(linha7Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 17, 42)));
+
+		// Veículo 8
+		onibus.add(new Onibus(50, 50, viagens));
+
+		viagens.clear();
+		viagens.add(new Viagem(linha2Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 6, 21)));
+		viagens.add(new Viagem(linha2Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 7, 15)));
+		viagens.add(new Viagem(linha2Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 8, 13)));
+		viagens.add(new Viagem(linha2Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 9, 22)));
+		viagens.add(new Viagem(linha2Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 10, 16)));
+		viagens.add(new Viagem(linha2Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 11, 13)));
+		viagens.add(new Viagem(linha2Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 12, 7)));
+		viagens.add(new Viagem(linha2Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 13, 4)));
+		viagens.add(new Viagem(linha2Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 13, 55)));
+		viagens.add(new Viagem(linha2Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 14, 55)));
+		viagens.add(new Viagem(linha2Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 15, 48)));
+		viagens.add(new Viagem(linha2Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 16, 43)));
+		viagens.add(new Viagem(linha1Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 17, 47)));
+		viagens.add(new Viagem(linha1Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 18, 45)));
+		viagens.add(new Viagem(linha1Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 19, 50)));
+		viagens.add(new Viagem(linha1Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 21, 45)));
+
+		// Veículo 9
+		onibus.add(new Onibus(50, 50, viagens));
+
+		viagens.clear();
+		viagens.add(new Viagem(linha6VoltaUNIRB,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 6, 35)));
+		viagens.add(new Viagem(linha5VoltaOdeteRosado,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 17, 15)));
+
+		// Veículo 10
+		onibus.add(new Onibus(50, 50, viagens));
+
+		viagens.clear();
+		viagens.add(new Viagem(linha8Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 5, 30)));
+		viagens.add(new Viagem(linha8Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 6, 13)));
+		viagens.add(new Viagem(linha8Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 6, 50)));
+		viagens.add(new Viagem(linha8Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 7, 46)));
+		viagens.add(new Viagem(linha8Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 8, 20)));
+		viagens.add(new Viagem(linha8Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 9, 16)));
+		viagens.add(new Viagem(linha8Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 9, 52)));
+		viagens.add(new Viagem(linha8Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 10, 49)));
+		viagens.add(new Viagem(linha8Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 11, 21)));
+		viagens.add(new Viagem(linha8Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 12, 24)));
+		viagens.add(new Viagem(linha8Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 13, 4)));
+		viagens.add(new Viagem(linha8Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 14, 2)));
+		viagens.add(new Viagem(linha8Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 14, 42)));
+		viagens.add(new Viagem(linha8Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 15, 40)));
+		viagens.add(new Viagem(linha8Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 16, 19)));
+		viagens.add(new Viagem(linha8Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 17, 20)));
+		viagens.add(new Viagem(linha8Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 17, 54)));
+		viagens.add(new Viagem(linha8Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 18, 45)));
+
+		// Veículo 11
+		onibus.add(new Onibus(50, 50, viagens));
+
+		viagens.clear();
+		viagens.add(new Viagem(linha12Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 5, 55)));
+		viagens.add(new Viagem(linha12Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 6, 50)));
+		viagens.add(new Viagem(linha12Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 7, 37)));
+		viagens.add(new Viagem(linha12Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 10, 18)));
+		viagens.add(new Viagem(linha12Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 11, 5)));
+		viagens.add(new Viagem(linha12Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 12, 0)));
+		viagens.add(new Viagem(linha12Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 12, 47)));
+		viagens.add(new Viagem(linha12Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 13, 47)));
+		viagens.add(new Viagem(linha12Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 14, 35)));
+		viagens.add(new Viagem(linha12Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 15, 35)));
+		viagens.add(new Viagem(linha12Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 16, 23)));
+		viagens.add(new Viagem(linha12Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 17, 20)));
+		viagens.add(new Viagem(linha12Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 18, 10)));
+		viagens.add(new Viagem(linha12Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 19, 1)));
+
+		// Veículo 12
+		onibus.add(new Onibus(50, 50, viagens));
+
+		viagens.clear();
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 6, 10)));
+		viagens.add(new Viagem(linha7VoltaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 7, 0)));
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 7, 27)));
+		viagens.add(new Viagem(linha7VoltaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 8, 19)));
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 8, 50)));
+		viagens.add(new Viagem(linha7VoltaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 9, 42)));
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 10, 11)));
+		viagens.add(new Viagem(linha7VoltaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 11, 3)));
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 11, 31)));
+		viagens.add(new Viagem(linha7VoltaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 12, 25)));
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 12, 54)));
+		viagens.add(new Viagem(linha7VoltaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 13, 46)));
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 14, 15)));
+		viagens.add(new Viagem(linha7VoltaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 15, 8)));
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 15, 41)));
+		viagens.add(new Viagem(linha7VoltaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 16, 34)));
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 17, 8)));
+		viagens.add(new Viagem(linha7Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 18, 4)));
+
+		// Veículo 13
+		onibus.add(new Onibus(50, 50, viagens));
+
+		viagens.clear();
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 6, 40)));
+		viagens.add(new Viagem(linha7VoltaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 7, 32)));
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 7, 58)));
+
+		// Veículo 14
+		onibus.add(new Onibus(50, 50, viagens));
+
+		viagens.clear();
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 6, 25)));
+		viagens.add(new Viagem(linha7VoltaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 7, 12)));
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 7, 42)));
+		viagens.add(new Viagem(linha7VoltaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 8, 41)));
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 9, 8)));
+		viagens.add(new Viagem(linha7VoltaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 10, 2)));
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 10, 31)));
+		viagens.add(new Viagem(linha7VoltaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 11, 23)));
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 11, 53)));
+		viagens.add(new Viagem(linha7VoltaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 12, 45)));
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 13, 13)));
+		viagens.add(new Viagem(linha7VoltaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 14, 7)));
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 14, 36)));
+		viagens.add(new Viagem(linha7VoltaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 15, 28)));
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 16, 3)));
+		viagens.add(new Viagem(linha7VoltaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 16, 59)));
+		viagens.add(new Viagem(linha7IdaJardimDasPalmeiras,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 17, 34)));
+		viagens.add(new Viagem(linha7Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 18, 30)));
+		viagens.add(new Viagem(linha7Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 19, 10)));
+		viagens.add(new Viagem(linha7Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 19, 53)));
+		viagens.add(new Viagem(linha7Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 20, 13)));
+		viagens.add(new Viagem(linha7Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 20, 53)));
+		viagens.add(new Viagem(linha7IdaSemParedoesTerminandoNaPracaFelipeGuerra,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 21, 13)));
+		viagens.add(new Viagem(linha7VoltaSumareLiberdadePlanalto,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 21, 50)));
+
+		// Veículo 18
+		onibus.add(new Onibus(50, 50, viagens));
+
+		viagens.clear();
+		viagens.add(new Viagem(linha6Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 6, 35)));
+		viagens.add(new Viagem(linha2Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 6, 43)));
+		viagens.add(new Viagem(linha6Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 7, 5)));
+		viagens.add(new Viagem(linha2Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 7, 40)));
+		viagens.add(new Viagem(linha6Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 7, 55)));
+		viagens.add(new Viagem(linha6Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 8, 30)));
+		viagens.add(new Viagem(linha2Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 8, 35)));
+		viagens.add(new Viagem(linha6Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 9, 10)));
+		viagens.add(new Viagem(linha6Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 9, 40)));
+		viagens.add(new Viagem(linha6Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 10, 20)));
+		viagens.add(new Viagem(linha6Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 11, 0)));
+		viagens.add(new Viagem(linha6Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 11, 40)));
+		viagens.add(new Viagem(linha6Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 12, 15)));
+		viagens.add(new Viagem(linha6Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 12, 55)));
+		viagens.add(new Viagem(linha6Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 13, 25)));
+		viagens.add(new Viagem(linha6IdaSemUlrickGraff,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 17, 30)));
+		viagens.add(new Viagem(linha6VoltaSemUlrickGraff,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 18, 18)));
+
+		// Veículo 22
+		onibus.add(new Onibus(50, 50, viagens));
+
+		viagens.clear();
+		viagens.add(new Viagem(linha9IdaLagoaDoMatoBoaVistaDozeAnosSantoAntonio,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 5, 45)));
+		viagens.add(new Viagem(linha9Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 6, 35)));
+		viagens.add(new Viagem(linha9Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 7, 20)));
+		viagens.add(new Viagem(linha9Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 8, 5)));
+		viagens.add(new Viagem(linha9Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 8, 55)));
+		viagens.add(new Viagem(linha9Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 9, 35)));
+		viagens.add(new Viagem(linha9Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 10, 24)));
+		viagens.add(new Viagem(linha9Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 11, 0)));
+		viagens.add(new Viagem(linha9IdaLagoaDoMatoBoaVistaDozeAnosSantoAntonio,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 11, 55)));
+		viagens.add(new Viagem(linha9Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 12, 48)));
+		viagens.add(new Viagem(linha9Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 13, 36)));
+		viagens.add(new Viagem(linha9Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 14, 15)));
+		viagens.add(new Viagem(linha9Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 15, 5)));
+		viagens.add(new Viagem(linha9Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 15, 40)));
+		viagens.add(new Viagem(linha9Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 16, 30)));
+		viagens.add(new Viagem(linha9Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 17, 20)));
+
+		// Veículo 23
+		onibus.add(new Onibus(50, 50, viagens));
+
+		viagens.clear();
+		viagens.add(new Viagem(linha5Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 5, 10)));
+		viagens.add(new Viagem(linha5Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 6, 5)));
+		viagens.add(new Viagem(linha5Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 6, 37)));
+		viagens.add(new Viagem(linha5Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 7, 42)));
+		viagens.add(new Viagem(linha5Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 8, 12)));
+		viagens.add(new Viagem(linha5Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 9, 10)));
+		viagens.add(new Viagem(linha5Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 9, 47)));
+		viagens.add(new Viagem(linha5Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 10, 45)));
+		viagens.add(new Viagem(linha5Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 11, 21)));
+		viagens.add(new Viagem(linha5Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 12, 20)));
+		viagens.add(new Viagem(linha5Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 12, 57)));
+		viagens.add(new Viagem(linha5Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 13, 55)));
+		viagens.add(new Viagem(linha5Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 14, 34)));
+		viagens.add(new Viagem(linha5Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 15, 33)));
+		viagens.add(new Viagem(linha5Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 16, 14)));
+		viagens.add(new Viagem(linha5Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 17, 15)));
+		viagens.add(new Viagem(linha5Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 17, 50)));
+		viagens.add(new Viagem(linha5VoltaUniversidades,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 18, 45)));
+
+		// Veículo 24
+		onibus.add(new Onibus(50, 50, viagens));
+
+		viagens.clear();
+		viagens.add(new Viagem(linha5Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 5, 40)));
+		viagens.add(new Viagem(linha5VoltaUERN,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 6, 35)));
+		viagens.add(new Viagem(linha5Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 7, 7)));
+		viagens.add(new Viagem(linha5Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 8, 5)));
+		viagens.add(new Viagem(linha5Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 8, 42)));
+		viagens.add(new Viagem(linha5Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 9, 40)));
+		viagens.add(new Viagem(linha5Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 10, 19)));
+		viagens.add(new Viagem(linha5Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 11, 20)));
+		viagens.add(new Viagem(linha5Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 11, 52)));
+		viagens.add(new Viagem(linha5Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 12, 50)));
+		viagens.add(new Viagem(linha5Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 13, 24)));
+		viagens.add(new Viagem(linha5Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 14, 25)));
+		viagens.add(new Viagem(linha5Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 15, 0)));
+		viagens.add(new Viagem(linha5Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 16, 0)));
+		viagens.add(new Viagem(linha5Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 16, 41)));
+		viagens.add(new Viagem(linha5Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 17, 40)));
+		viagens.add(new Viagem(linha5Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 18, 20)));
+		viagens.add(new Viagem(linha5Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 19, 12)));
+		viagens.add(new Viagem(linha5IdaUniversidades,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 19, 40)));
+		viagens.add(new Viagem(linha5VoltaUniversidades,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 20, 35)));
+
+		// Veículo 25
+		onibus.add(new Onibus(50, 50, viagens));
+
+		viagens.clear();
+		viagens.add(new Viagem(linha5Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 6, 0)));
+		viagens.add(new Viagem(linha5Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 6, 58)));
+		viagens.add(new Viagem(linha5Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 7, 32)));
+		viagens.add(new Viagem(linha5Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 8, 35)));
+		viagens.add(new Viagem(linha5Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 9, 12)));
+		viagens.add(new Viagem(linha5Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 10, 10)));
+		viagens.add(new Viagem(linha5Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 10, 47)));
+		viagens.add(new Viagem(linha5Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 11, 45)));
+		viagens.add(new Viagem(linha5Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 12, 20)));
+		viagens.add(new Viagem(linha5Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 13, 25)));
+		viagens.add(new Viagem(linha5Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 13, 59)));
+		viagens.add(new Viagem(linha5Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 15, 0)));
+		viagens.add(new Viagem(linha5Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 15, 35)));
+		viagens.add(new Viagem(linha5Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 16, 35)));
+		viagens.add(new Viagem(linha5Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 17, 10)));
+		viagens.add(new Viagem(linha5Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 18, 15)));
+		viagens.add(new Viagem(linha5Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 18, 56)));
+		viagens.add(new Viagem(linha5VoltaUniversidades,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 19, 52)));
+		viagens.add(new Viagem(linha5IdaUniversidades,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 20, 18)));
+		viagens.add(new Viagem(linha5VoltaUniversidades,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 21, 35)));
+		viagens.add(new Viagem(linha5VoltaIFRN,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 22, 40)));
+
+		// Veículo 26
+		onibus.add(new Onibus(50, 50, viagens));
+
+		viagens.clear();
+		viagens.add(new Viagem(linha19Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 5, 45)));
+		viagens.add(new Viagem(linha19Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 6, 27)));
+		viagens.add(new Viagem(linha19Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 7, 22)));
+		viagens.add(new Viagem(linha19Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 18, 20)));
+		viagens.add(new Viagem(linha6IdaSemUlrickGraffNemRioBranco,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 22, 5)));
+		viagens.add(new Viagem(linha10VoltaAeroportoMacarraoBoaVista,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 22, 30)));
+
+		// Veículo 27
+		onibus.add(new Onibus(50, 50, viagens));
+
+		viagens.clear();
+		viagens.add(new Viagem(linha11Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 6, 38)));
+		viagens.add(new Viagem(linha11Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 12, 0)));
+		viagens.add(new Viagem(linha11Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 12, 19)));
+		viagens.add(new Viagem(linha11Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 18, 15)));
+
+		// Veículo 28
+		onibus.add(new Onibus(50, 50, viagens));
+
+		viagens.clear();
+		viagens.add(new Viagem(linha10Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 6, 40)));
+		viagens.add(new Viagem(linha10Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 7, 4)));
+		viagens.add(new Viagem(linha10Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 7, 31)));
+		viagens.add(new Viagem(linha10Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 7, 55)));
+		viagens.add(new Viagem(linha10Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 8, 22)));
+		viagens.add(new Viagem(linha10Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 8, 46)));
+		viagens.add(new Viagem(linha10Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 9, 13)));
+		viagens.add(new Viagem(linha10Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 9, 37)));
+		viagens.add(new Viagem(linha10Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 10, 4)));
+		viagens.add(new Viagem(linha10Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 10, 28)));
+		viagens.add(new Viagem(linha10Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 10, 55)));
+		viagens.add(new Viagem(linha10Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 11, 19)));
+		viagens.add(new Viagem(linha10Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 11, 46)));
+		viagens.add(new Viagem(linha10Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 12, 10)));
+		viagens.add(new Viagem(linha10Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 12, 37)));
+		viagens.add(new Viagem(linha10Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 13, 1)));
+		viagens.add(new Viagem(linha10Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 13, 28)));
+		viagens.add(new Viagem(linha10Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 13, 52)));
+		viagens.add(new Viagem(linha10Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 15, 10)));
+		viagens.add(new Viagem(linha10Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 15, 34)));
+		viagens.add(new Viagem(linha10Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 16, 1)));
+		viagens.add(new Viagem(linha10Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 16, 25)));
+		viagens.add(new Viagem(linha10Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 16, 57)));
+		viagens.add(new Viagem(linha10Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 17, 21)));
+		viagens.add(new Viagem(linha10Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 17, 48)));
+		viagens.add(new Viagem(linha10Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 18, 12)));
+		viagens.add(new Viagem(linha10Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 18, 39)));
+		viagens.add(new Viagem(linha10Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 19, 3)));
+		viagens.add(new Viagem(linha10VoltaAeroportoMacarraoBoaVista,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 21, 40)));
+		viagens.add(new Viagem(linha10IdaAeroportoMacarraoBoaVista,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 22, 20)));
+		viagens.add(new Viagem(linha7VoltaSumareLiberdadePlanalto,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 22, 55)));
+
+		// Veículo 29
+		onibus.add(new Onibus(50, 50, viagens));
+
+		viagens.clear();
+		viagens.add(new Viagem(linha15Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 5, 50)));
+		viagens.add(new Viagem(linha15Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 6, 28)));
+		viagens.add(new Viagem(linha15Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 6, 58)));
+		viagens.add(new Viagem(linha15Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 11, 42)));
+		viagens.add(new Viagem(linha15Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 12, 16)));
+		viagens.add(new Viagem(linha15Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 13, 3)));
+		viagens.add(new Viagem(linha15Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 13, 35)));
+		viagens.add(new Viagem(linha15Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 14, 15)));
+		viagens.add(new Viagem(linha15Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 14, 47)));
+		viagens.add(new Viagem(linha15Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 17, 16)));
+		viagens.add(new Viagem(linha15Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 17, 50)));
+		viagens.add(new Viagem(linha15Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 18, 40)));
+
+		// Veículo 30
+		onibus.add(new Onibus(50, 50, viagens));
+
+		viagens.clear();
+		viagens.add(new Viagem(linha14Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 5, 45)));
+		viagens.add(new Viagem(linha14Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 6, 22)));
+		viagens.add(new Viagem(linha14Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 6, 44)));
+		viagens.add(new Viagem(linha14Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 7, 26)));
+		viagens.add(new Viagem(linha14Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 7, 48)));
+		viagens.add(new Viagem(linha14Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 8, 30)));
+		viagens.add(new Viagem(linha14Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 8, 52)));
+		viagens.add(new Viagem(linha14Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 9, 34)));
+		viagens.add(new Viagem(linha14Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 9, 56)));
+		viagens.add(new Viagem(linha14Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 11, 42)));
+		viagens.add(new Viagem(linha14Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 12, 4)));
+		viagens.add(new Viagem(linha14Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 12, 46)));
+		viagens.add(new Viagem(linha14Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 13, 8)));
+		viagens.add(new Viagem(linha14Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 13, 50)));
+		viagens.add(new Viagem(linha14Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 14, 12)));
+		viagens.add(new Viagem(linha14Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 14, 54)));
+		viagens.add(new Viagem(linha14Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 15, 16)));
+		viagens.add(new Viagem(linha14Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 15, 58)));
+		viagens.add(new Viagem(linha14Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 16, 20)));
+		viagens.add(new Viagem(linha14Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 17, 2)));
+		viagens.add(new Viagem(linha14Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 17, 56)));
+
+		// Veículo 31
+		onibus.add(new Onibus(50, 50, viagens));
+
+		viagens.clear();
+		viagens.add(new Viagem(linha17Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 5, 45)));
+		viagens.add(new Viagem(linha17Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 6, 35)));
+		viagens.add(new Viagem(linha17Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 7, 0)));
+		viagens.add(new Viagem(linha17Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 11, 27)));
+		viagens.add(new Viagem(linha17Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 11, 50)));
+		viagens.add(new Viagem(linha17Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 12, 38)));
+		viagens.add(new Viagem(linha17Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 13, 0)));
+		viagens.add(new Viagem(linha17Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 18, 30)));
+
+		// Veículo 32
+		onibus.add(new Onibus(50, 50, viagens));
+
+		viagens.clear();
+		viagens.add(new Viagem(linha15Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 6, 20)));
+		viagens.add(new Viagem(linha15Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 7, 2)));
+		viagens.add(new Viagem(linha15Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 7, 32)));
+		viagens.add(new Viagem(linha15Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 8, 19)));
+		viagens.add(new Viagem(linha15Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 8, 54)));
+		viagens.add(new Viagem(linha15Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 9, 41)));
+		viagens.add(new Viagem(linha15Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 10, 16)));
+		viagens.add(new Viagem(linha15Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 11, 3)));
+		viagens.add(new Viagem(linha15Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 11, 38)));
+		viagens.add(new Viagem(linha15Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 12, 25)));
+		viagens.add(new Viagem(linha15Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 12, 59)));
+		viagens.add(new Viagem(linha15Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 13, 46)));
+		viagens.add(new Viagem(linha15Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 14, 20)));
+		viagens.add(new Viagem(linha15Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 15, 7)));
+		viagens.add(new Viagem(linha15Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 15, 41)));
+		viagens.add(new Viagem(linha15Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 16, 33)));
+		viagens.add(new Viagem(linha15Ida,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 17, 7)));
+		viagens.add(new Viagem(linha15Volta,
+				new GregorianCalendar(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, 17, 57)));
+
+		// Veículo 33
+		onibus.add(new Onibus(50, 50, viagens));
 
 		// -----------------------------------------------------------------------------------------------------------------------
 		// Define as pessoas
@@ -770,7 +1815,6 @@ public class Main {
 		int numeroParadaAleatoria;
 		int numeroPessoasAleatorio;
 		Random paradasAleatorias;
-		// Random pessoasAleatorias;
 		String stringSaidaPopulation;
 		String stringSaidaFacilities;
 
@@ -778,15 +1822,12 @@ public class Main {
 		for (int instancia = 0; instancia < 5; instancia++) {
 			Main.seed = Main.sementeAleatoria.nextInt();
 
-			// pessoasAleatorias = new Random(seed);
 			// Define número de pessoas na simulação
 			numeroPessoasAleatorio = numeroPessoas;
-			// numeroPessoasAleatorio = pessoasAleatorias.nextInt(numeroPessoas);
 
 			paradasAleatorias = new Random(seed);
 
-			// numeroPedestresAleatorio = paradasAleatorias.nextInt(numeroPessoas - 2) + 2;
-			System.out.println("Número de pessoas nessa simulação é " + numeroPessoasAleatorio + '\n');
+			Main.log += "Número de pessoas nessa simulação é " + numeroPessoasAleatorio + '\n' + '\n';
 
 			// Limpa as pessoas das paradas
 			for (Parada paradaAtual : paradas) {
@@ -796,11 +1837,23 @@ public class Main {
 			// Adiciona parada nos pedestres e os pedestres na parada de forma aleatória
 			// e também o destino do pedestre
 			for (int i = 0; i < numeroPessoasAleatorio; i++) {
+				Calendar horarioPartida = Calendar.getInstance();
+				int horaAleatoria = ThreadLocalRandom.current().nextInt(18, 23);
+				int minutoAleatorio = ThreadLocalRandom.current().nextInt(60);
+				int segundoAleatorio = ThreadLocalRandom.current().nextInt(60);
+
 				// define a origem
 				numeroParadaAleatoria = paradasAleatorias.nextInt(numeroParadas);
 
 				pessoas.get(i).setOrigem(paradas.get(numeroParadaAleatoria));
 				pessoas.get(i).setParadaAtual(paradas.get(numeroParadaAleatoria));
+
+				// define o horário de partida
+				horarioPartida.set(Calendar.HOUR_OF_DAY, horaAleatoria);
+				horarioPartida.set(Calendar.MINUTE, minutoAleatorio);
+				horarioPartida.set(Calendar.SECOND, segundoAleatorio);
+
+				pessoas.get(i).setHorarioPartida(horarioPartida);
 
 				paradas.get(numeroParadaAleatoria).addPedestre(pessoas.get(i));
 
@@ -828,35 +1881,36 @@ public class Main {
 			// Enquanto o dia não passou (simulaçao limitada a 23 horas e 59 minutos)
 			while (Main.relogioSimulacao.get(Calendar.DAY_OF_MONTH) == Calendar.DAY_OF_MONTH) {
 				for (Onibus onibusAtual : onibus) {
-					int numeroHorarios = onibusAtual.getHorarios().size();
+					int numeroViagens = onibusAtual.getViagens().size();
 					int indice = 0;
 
-					// Enquanto não chegar no fim do vetor de horários e o horário do ônibus em
+					// Enquanto não chegar no fim do vetor de viagens e o horário do ônibus em
 					// função do índice for diferente do horário da simulação
-					while ((indice < numeroHorarios)
-							&& (onibusAtual.getHorarios().get(indice).getTime().before(relogioSimulacao.getTime()))) {
+					while ((indice < numeroViagens)
+							&& (onibusAtual.getViagens().get(indice).getHorario().equals(relogioSimulacao))) {
 						indice++;
 					}
 
 					// Se algum horário do ônibus for igual ao horário da simulação
-					if (indice != numeroHorarios) {
-						// Se o horário escolhido já não foi usado
-						if (!onibusAtual.getHorarioCumprido().get(indice)) {
-							onibusAtual.setHorarioCumprido(indice, true);
+					if (indice != numeroViagens) {
+						// Se a viagem escolhida já não foi usada
+						if (!onibusAtual.getViagensCumpridas().get(indice)) {
+							onibusAtual.setViagensCumpridas(indice, true);
 
-							momentoAtual.set(onibusAtual.getHorarios().get(indice).get(Calendar.YEAR),
-									onibusAtual.getHorarios().get(indice).get(Calendar.MONTH),
-									onibusAtual.getHorarios().get(indice).get(Calendar.DAY_OF_MONTH),
-									onibusAtual.getHorarios().get(indice).get(Calendar.HOUR_OF_DAY),
-									onibusAtual.getHorarios().get(indice).get(Calendar.MINUTE),
-									onibusAtual.getHorarios().get(indice).get(Calendar.SECOND));
+							momentoAtual.set(onibusAtual.getViagens().get(indice).getHorario().get(Calendar.YEAR),
+									onibusAtual.getViagens().get(indice).getHorario().get(Calendar.MONTH),
+									onibusAtual.getViagens().get(indice).getHorario().get(Calendar.DAY_OF_MONTH),
+									onibusAtual.getViagens().get(indice).getHorario().get(Calendar.HOUR_OF_DAY),
+									onibusAtual.getViagens().get(indice).getHorario().get(Calendar.MINUTE),
+									onibusAtual.getViagens().get(indice).getHorario().get(Calendar.SECOND));
 
 							horariosSaida += momentoAtual.get(Calendar.HOUR_OF_DAY) + ":"
 									+ momentoAtual.get(Calendar.MINUTE) + ":" + momentoAtual.get(Calendar.SECOND)
 									+ "\n";
 
-							for (Parada paradaAtual : onibusAtual.getLinha().getParadas()) {
-								indiceParada = onibusAtual.getLinha().getParadas().indexOf(paradaAtual);
+							for (Parada paradaAtual : onibusAtual.getViagens().get(indice).getLinha().getParadas()) {
+								indiceParada = onibusAtual.getViagens().get(indice).getLinha().getParadas()
+										.indexOf(paradaAtual);
 
 								horaAtual = momentoAtual.get(Calendar.HOUR_OF_DAY);
 								minutoAtual = momentoAtual.get(Calendar.MINUTE);
@@ -904,19 +1958,65 @@ public class Main {
 										pessoasOnibus.remove(i);
 										numeroPessoasOnibus--;
 									}
+									// Se a parada que o ônibus está possui uma linha (que não é a atual linha que
+									// está sendo feita) que tem o destino do pedestre, ele desce
+									else {
+										boolean paradaEncontrada = false;
+										// Se a linha que o ônibus está não possui o destino do pedestre
+										if (!onibusAtual.getViagens().get(indice).getLinha().getParadas()
+												.contains(pessoasOnibus.get(i).getDestino())) {
+											for (Linha linhaAtual : paradaAtual.getLinhas()) {
+												// se não for a linha atual
+												if (!linhaAtual
+														.equals(onibusAtual.getViagens().get(indice).getLinha())) {
+													// se a linha do índice possuir a parada de destino do pedestre
+													if (linhaAtual.getParadas()
+															.contains(pessoasOnibus.get(i).getDestino())) {
+														pessoasDesceramOnibus.add(pessoasOnibus.get(i));
+														pessoasOnibus.get(i).setParadaAtual(paradaAtual);
+
+														pessoasOnibus.remove(i);
+														numeroPessoasOnibus--;
+														paradaEncontrada = true;
+													} else {
+														// Se não, procura nos ciclos da linha
+														int numeroLinhasCiclo = linhaAtual.getLinhaCiclo().size();
+
+														for (int indiceLinha = 0; (indiceLinha < numeroLinhasCiclo)
+																&& (!paradaEncontrada); indiceLinha++) {
+															if (linhaAtual.getLinhaCiclo().get(indiceLinha).getParadas()
+																	.contains(pessoasOnibus.get(i).getDestino())) {
+																pessoasDesceramOnibus.add(pessoasOnibus.get(i));
+																pessoasOnibus.get(i).setParadaAtual(paradaAtual);
+
+																pessoasOnibus.remove(i);
+																numeroPessoasOnibus--;
+																paradaEncontrada = true;
+															}
+														}
+													}
+												}
+												if (paradaEncontrada) {
+													break;
+												}
+											}
+										}
+									}
 								}
 
 								// Subida de pessoas
 								for (int i = 0; i < numeroPessoasParada; i++) {
+									// Se é hora do pedestre sair E
 									// Se o ônibus não está cheio E
 									// Se o pedestre não está no destino
-									if ((numeroPessoasOnibus <= onibusAtual.getCapacidadeMaximaPassageiros())
+									if ((!pessoasParada.get(i).getHorarioPartida().before(relogioSimulacao))
+											&& (numeroPessoasOnibus <= onibusAtual.getCapacidadeMaximaPassageiros())
 											&& (!pessoasParada.get(i).isNoDestino())) {
 										// se ele estiver em viagem e o ônibus passar na parada de destino, ele sobe
 										// se ele não estiver em viagem ele sobe
 										if (pessoasParada.get(i).isEmViagem()) {
 											// procura se a linha do ônibus passa pelo destino
-											Linha linhaOnibusAtual = onibusAtual.getLinha();
+											Linha linhaOnibusAtual = onibusAtual.getViagens().get(indice).getLinha();
 											int numeroParadasLinhaOnibusAtual = linhaOnibusAtual.getParadas().size();
 											boolean destinoEncontrado = false;
 
@@ -982,10 +2082,17 @@ public class Main {
 												if (stringPessoas[indicePessoa] == null) {
 													stringPessoas[indicePessoa] = "\n\t<person id=\""
 															+ pessoas.get(indicePessoa).getNome() + "\" >\n\t\t<plan>\n"
-															+ "\t\t\t<act end_time=\"" + horaAtual + ":" + minutoAtual
-															+ ":" + segundoAtual + "\" x=\"" + coordenadaX + "\" y=\""
-															+ coordenadaY + "\" type=\"home\"/>\n"
-															+ "\t\t\t<leg mode=\"pt\"/>\n";
+															+ "\t\t\t<act end_time=\""
+															+ pessoas.get(indicePessoa).getHorarioPartida()
+																	.get(Calendar.HOUR_OF_DAY)
+															+ ":"
+															+ pessoas.get(indicePessoa).getHorarioPartida()
+																	.get(Calendar.MINUTE)
+															+ ":"
+															+ pessoas.get(indicePessoa).getHorarioPartida()
+																	.get(Calendar.SECOND)
+															+ "\" x=\"" + coordenadaX + "\" y=\"" + coordenadaY
+															+ "\" type=\"home\"/>\n" + "\t\t\t<leg mode=\"pt\"/>\n";
 												} else {
 													indiceString = stringPessoas[indicePessoa].length() - 2;
 
@@ -996,16 +2103,30 @@ public class Main {
 													stringPessoas[indicePessoa] = stringPessoas[indicePessoa]
 															.substring(0, indiceString + 1);
 
-													stringPessoas[indicePessoa] += "\t\t\t<act end_time=\"" + horaAtual
-															+ ":" + minutoAtual + ":" + segundoAtual + "\" x=\""
-															+ coordenadaX + "\" y=\"" + coordenadaY
+													stringPessoas[indicePessoa] += "\t\t\t<act end_time=\""
+															+ pessoas.get(indicePessoa).getHorarioPartida()
+																	.get(Calendar.HOUR_OF_DAY)
+															+ ":"
+															+ pessoas.get(indicePessoa).getHorarioPartida()
+																	.get(Calendar.MINUTE)
+															+ ":"
+															+ pessoas.get(indicePessoa).getHorarioPartida()
+																	.get(Calendar.SECOND)
+															+ "\" x=\"" + coordenadaX + "\" y=\"" + coordenadaY
 															+ "\" type=\"home\"/>\n" + "\t\t\t<leg mode=\"pt\"/>\n";
 												}
 
 												stringSaidaFacilities += "\n\t<facility id=\""
-														+ pessoasParada.get(i).getNome() + "Subiu" + horaAtual + ":"
-														+ minutoAtual + ":" + segundoAtual + "\" x=\"" + coordenadaX
-														+ "\" y=\"" + coordenadaY + "\"/>\n";
+														+ pessoasParada.get(i).getNome() + "Subiu"
+														+ pessoas.get(indicePessoa).getHorarioPartida()
+																.get(Calendar.HOUR_OF_DAY)
+														+ ":"
+														+ pessoas.get(indicePessoa).getHorarioPartida()
+																.get(Calendar.MINUTE)
+														+ ":"
+														+ pessoas.get(indicePessoa).getHorarioPartida()
+																.get(Calendar.SECOND)
+														+ "\" x=\"" + coordenadaX + "\" y=\"" + coordenadaY + "\"/>\n";
 											}
 											pessoasParada.get(i).setEmViagem(true);
 										}
@@ -1019,26 +2140,27 @@ public class Main {
 								// Atualiza os pedestres que estão no ônibus
 								onibusAtual.setPedestres(pessoasOnibus);
 
-								System.out.println(
-										"=====================================================================");
-								System.out.println("Parada " + indiceParada + ": " + paradaAtual.getNomeParada() + " : "
-										+ "Ônibus " + onibusAtual.getId());
-								System.out.println("Quem subiu: " + pessoasSubiramOnibus);
-								System.out.println("Quem desceu: " + pessoasDesceramOnibus);
-								System.out.println("Quem está no ônibus: " + pessoasOnibus);
-								System.out.println();
+								Main.log += "=====================================================================\n";
+								Main.log += "Instância " + instancia + " : " + "Parada " + indiceParada + " : "
+										+ paradaAtual.getNomeParada() + " : " + "Ônibus " + onibusAtual.getId() + '\n';
+								Main.log += "Quem subiu: " + pessoasSubiramOnibus + '\n';
+								Main.log += "Quem desceu: " + pessoasDesceramOnibus + '\n';
+								Main.log += "Quem está no ônibus: " + pessoasOnibus + '\n' + '\n';
 
 								// Simula deslocamento
-								if ((indiceParada + 1) != onibusAtual.getLinha().getParadas().size()) {
+								if ((indiceParada + 1) != onibusAtual.getViagens().get(indice).getLinha().getParadas()
+										.size()) {
 									pessoasOnibusSimulado = Main.simularDeslocamento(momentoAtual, paradaAtual,
-											onibusAtual.getLinha().getParadas().get(indiceParada + 1),
+											onibusAtual.getViagens().get(indice).getLinha().getParadas()
+													.get(indiceParada + 1),
 											onibusAtual.getVelocidade(), pessoasSubiramOnibus, pessoasDesceramOnibus,
 											pessoasOnibus, pessoasOnibusSimulado);
 								} else {
 									pessoasOnibusSimulado = Main.simularDeslocamento(momentoAtual,
-											onibusAtual.getLinha().getParadas().get(indiceParada - 1), paradaAtual,
-											onibusAtual.getVelocidade(), pessoasSubiramOnibus, pessoasDesceramOnibus,
-											pessoasOnibus, pessoasOnibusSimulado);
+											onibusAtual.getViagens().get(indice).getLinha().getParadas()
+													.get(indiceParada - 1),
+											paradaAtual, onibusAtual.getVelocidade(), pessoasSubiramOnibus,
+											pessoasDesceramOnibus, pessoasOnibus, pessoasOnibusSimulado);
 								}
 
 								// Esvazia vetores de descida e subida
@@ -1048,7 +2170,8 @@ public class Main {
 							}
 							pessoasOnibusSimulado.clear();
 
-							Parada paradaAtual = onibusAtual.getLinha().getParadas().get(indiceParada);
+							Parada paradaAtual = onibusAtual.getViagens().get(indice).getLinha().getParadas()
+									.get(indiceParada);
 
 							horaAtual = momentoAtual.get(Calendar.HOUR_OF_DAY);
 							minutoAtual = momentoAtual.get(Calendar.MINUTE);
@@ -1060,8 +2183,8 @@ public class Main {
 							coordenadaX = coordenadasDestino.x;
 							coordenadaY = coordenadasDestino.y;
 
-							System.out.println("Terminal: " + paradaAtual.getNomeParada());
-							System.out.println("Quem desceu: " + onibusAtual.getPedestres());
+							Main.log += "Terminal: " + paradaAtual.getNomeParada() + '\n';
+							Main.log += "Quem desceu: " + onibusAtual.getPedestres() + '\n';
 							paradaAtual.addAllPedestres(onibusAtual.getPedestres());
 
 							numeroPessoasOnibus = onibusAtual.getPedestres().size();
@@ -1102,7 +2225,7 @@ public class Main {
 
 			// reseta os horários cumpridos de todos os ônibus
 			for (Onibus onibusAtual : onibus) {
-				onibusAtual.resetHorarioCumprido();
+				onibusAtual.resetViagensCumpridas();
 			}
 			// reseta o relógio da simulação
 			Main.relogioSimulacao.set(Calendar.YEAR, Calendar.MONTH, Calendar.DAY_OF_MONTH, horaInicialSimulacao,
@@ -1111,6 +2234,7 @@ public class Main {
 			// Adiciona as pessoas que fizeram parte da simulação na string de saída
 			for (int a = 0; a < numeroPessoas; a++) {
 				if (stringPessoas[a] != null) {
+					// se o último passo do pedestre está incompleto
 					if (stringPessoas[a].charAt(stringPessoas[a].length() - 16) == 'l') {
 						coordenadasOrigem.setValue(pessoas.get(a).getParadaAtual().getCoordenadaX(),
 								pessoas.get(a).getParadaAtual().getCoordenadaY());
@@ -1121,6 +2245,10 @@ public class Main {
 
 						stringPessoas[a] += "\t\t\t<act x=\"" + coordenadaX + "\" y=\"" + coordenadaY
 								+ "\" type=\"home\"/>\n";
+						stringSaidaFacilities += "\n\t<facility id=\"" + pessoas.get(a).getNome() + "Desceu"
+								+ relogioSimulacao.get(Calendar.HOUR_OF_DAY) + ":"
+								+ relogioSimulacao.get(Calendar.MINUTE) + ":" + relogioSimulacao.get(Calendar.SECOND)
+								+ "\" x=\"" + coordenadaX + "\" y=\"" + coordenadaY + "\"/>\n";
 					}
 
 					stringPessoas[a] += "\t\t</plan>\n" + "\t</person>\n";
@@ -1135,6 +2263,7 @@ public class Main {
 			Main.armazenarDados("saidas/facilities" + instancia + ".xml", stringSaidaFacilities);
 			Main.armazenarDados("saidas/paradasPercorridas" + instancia + ".xml", horariosSaida);
 		}
+		Main.armazenarDados("saidas/log.txt", Main.log);
 	}
 
 	public static void armazenarDados(String nomeArquivo, String dados) {
@@ -1243,11 +2372,13 @@ public class Main {
 		// Calcula a distância em Km (quilômetros) entre as paradas
 		double distanciaEntreParadas = Haversine.distance(paradaAtual.getCoordenadaY(), paradaAtual.getCoordenadaX(),
 				proximaParada.getCoordenadaY(), proximaParada.getCoordenadaX());
-		DecimalFormat formatter = new DecimalFormat("#0");
-
-		System.out.print("Distancia: ");
-		System.out.print(formatter.format(distanciaEntreParadas * 1000));
-		System.out.println(" metro(s)");
+		/*
+		 * DecimalFormat formatter = new DecimalFormat("#0");
+		 * 
+		 * System.out.print("Distancia: ");
+		 * System.out.print(formatter.format(distanciaEntreParadas * 1000));
+		 * System.out.println(" metro(s)");
+		 */
 
 		// Remove as pessoas que sobraram na última parada porque sairam do alcançe do
 		// bluetooth
@@ -1292,13 +2423,12 @@ public class Main {
 
 		// Deslocamento
 		for (double i = distanciaEntreParadas; i > 0; i -= velocidade / 3600) {
-			System.out.print("Faltam ");
-			System.out.print(formatter.format(i * 1000));
-			System.out.println(" metro(s) para a próxima parada.");
-			System.out.print("ETA: ");
-			System.out.print(formatter.format(i / (velocidade / 3600)));
-			System.out.println(" segundo(s)\n");
-
+			/*
+			 * System.out.print("Faltam "); System.out.print(formatter.format(i * 1000));
+			 * System.out.println(" metro(s) para a próxima parada.");
+			 * System.out.print("ETA: "); System.out.print(formatter.format(i / (velocidade
+			 * / 3600))); System.out.println(" segundo(s)\n");
+			 */
 			// Avança no tempo
 			horarioEmMilissegundos += (i / (velocidade / 3600)) * 100;
 
@@ -1332,24 +2462,20 @@ public class Main {
 		saidaPessoasOnibus.removeAll(saidaPessoasDesceramOnibus);
 
 		// Embarque desembarque
-		System.out.println("-----------------------------------------");
-		System.out.println("Embarcando e desembarcando!");
+		Main.log += "-----------------------------------------\n";
+		Main.log += "Embarcando e desembarcando!\n";
 
 		// Avança no tempo
 		horarioEmMilissegundos += 10000;
 		horario.setTimeInMillis(horarioEmMilissegundos);
 
-		System.out.println();
-		System.out.println("Pessoas que subiram: " + pessoasSubiramOnibus);
-		System.out.println("Pessoas que desceram: " + pessoasDesceramOnibus);
-		System.out.println("Pessoas no onibus: " + pessoasOnibus);
+		Main.log += "\nPessoas que subiram: " + pessoasSubiramOnibus + '\n';
+		Main.log += "Pessoas que desceram: " + pessoasDesceramOnibus + '\n';
+		Main.log += "Pessoas no onibus: " + pessoasOnibus + '\n' + '\n';
 
-		System.out.println();
-
-		System.out.println("Acho que subiu no ônibus: " + saidaPessoasSubiramOnibus);
-		System.out.println("Acho que desceu do ônibus: " + saidaPessoasDesceramOnibus);
-		System.out.println("Acho que está no ônibus: " + saidaPessoasOnibus);
-		System.out.println();
+		Main.log += "Acho que subiu no ônibus: " + saidaPessoasSubiramOnibus + '\n';
+		Main.log += "Acho que desceu do ônibus: " + saidaPessoasDesceramOnibus + '\n';
+		Main.log += "Acho que está no ônibus: " + saidaPessoasOnibus + '\n' + '\n';
 
 		return saidaPessoasOnibus;
 	}

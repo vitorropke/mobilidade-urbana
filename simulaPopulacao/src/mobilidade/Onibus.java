@@ -1,68 +1,30 @@
 package mobilidade;
 
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.List;
 
 public class Onibus {
-	// ------------------------------------------------------------------------------------------------------------
-	// Variáveis
 	private static int contadorId = 0;
 	private int id;
 	private int capacidadeMaximaPassageiros;
 	private float velocidade;
-	private Linha linha;
 	private List<Pedestre> pedestres = new ArrayList<Pedestre>();
-	private List<Calendar> horarios = new ArrayList<Calendar>();
-	private List<Boolean> horarioCumprido = new ArrayList<Boolean>();
+	private List<Viagem> viagens = new ArrayList<Viagem>();
+	private List<Boolean> viagensCumpridas = new ArrayList<Boolean>();
 
-	// ------------------------------------------------------------------------------------------------------------
-	// Construtores
-	public Onibus() {
-		setId(contadorId++);
-	}
-
-	public Onibus(int capacidade) {
-		setId(contadorId++);
-		setCapacidadeMaximaPassageiros(capacidade);
-	}
-
-	public Onibus(int capacidade, int velocidade) {
+	public Onibus(int capacidade, int velocidade, List<Viagem> viagens) {
 		setId(contadorId++);
 		setCapacidadeMaximaPassageiros(capacidade);
 		setVelocidade(velocidade);
-	}
+		addViagens(viagens);
 
-	public Onibus(int capacidade, int velocidade, Linha linha, List<Calendar> horarios) {
-		setId(contadorId++);
-		setCapacidadeMaximaPassageiros(capacidade);
-		setVelocidade(velocidade);
-		setLinha(linha);
-		setHorarios(horarios);
+		int numeroViagens = viagens.size();
 
-		int numeroHorarios = horarios.size();
-
-		for (int i = 0; i < numeroHorarios; i++) {
-			horarioCumprido.add(false);
+		for (int i = 0; i < numeroViagens; i++) {
+			viagensCumpridas.add(false);
 		}
 	}
 
-	public Onibus(int idVeiculo, int capacidade, int velocidade, Linha linha, List<Calendar> horarios) {
-		setId(idVeiculo);
-		setCapacidadeMaximaPassageiros(capacidade);
-		setVelocidade(velocidade);
-		setLinha(linha);
-		setHorarios(horarios);
-
-		int numeroHorarios = horarios.size();
-
-		for (int i = 0; i < numeroHorarios; i++) {
-			horarioCumprido.add(false);
-		}
-	}
-
-	// ------------------------------------------------------------------------------------------------------------
-	// Getters e setters
 	public int getId() {
 		return id;
 	}
@@ -87,14 +49,6 @@ public class Onibus {
 		this.velocidade = velocidade;
 	}
 
-	public Linha getLinha() {
-		return linha;
-	}
-
-	public void setLinha(Linha linha) {
-		this.linha = linha;
-	}
-
 	public List<Pedestre> getPedestres() {
 		return pedestres;
 	}
@@ -111,35 +65,35 @@ public class Onibus {
 		this.pedestres.clear();
 	}
 
-	public List<Calendar> getHorarios() {
-		return horarios;
+	public List<Viagem> getViagens() {
+		return viagens;
 	}
 
-	public void setHorarios(List<Calendar> horarios) {
-		this.horarios.addAll(horarios);
+	public void setViagens(List<Viagem> viagens) {
+		this.viagens = viagens;
+	}
+	
+	public void addViagens(List<Viagem> viagens) {
+		this.viagens.addAll(viagens);
 	}
 
-	public void addHorario(Calendar horario) {
-		this.horarios.add(horario);
+	public List<Boolean> getViagensCumpridas() {
+		return viagensCumpridas;
 	}
 
-	public List<Boolean> getHorarioCumprido() {
-		return horarioCumprido;
+	public void setViagensCumpridas(List<Boolean> viagensCumpridas) {
+		this.viagensCumpridas = viagensCumpridas;
 	}
 
-	public void setHorarioCumprido(List<Boolean> horarioCumprido) {
-		this.horarioCumprido = horarioCumprido;
+	public void setViagensCumpridas(int indice, boolean valor) {
+		this.viagensCumpridas.set(indice, valor);
 	}
 
-	public void setHorarioCumprido(int indice, boolean valor) {
-		this.horarioCumprido.set(indice, valor);
-	}
+	public void resetViagensCumpridas() {
+		int numeroViagens = viagensCumpridas.size();
 
-	public void resetHorarioCumprido() {
-		int numeroHorarios = horarioCumprido.size();
-
-		for (int i = 0; i < numeroHorarios; i++) {
-			this.horarioCumprido.set(i, false);
+		for (int i = 0; i < numeroViagens; i++) {
+			this.viagensCumpridas.set(i, false);
 		}
 	}
 }

@@ -17,6 +17,7 @@ public class Parada {
 	private String nomeParada;
 	private double coordenadaX, coordenadaY;
 	private List<Pedestre> pedestres = new ArrayList<Pedestre>();
+	private List<Linha> linhas = new ArrayList<Linha>();
 
 	public Parada() {
 		setId(contadorId++);
@@ -106,7 +107,7 @@ public class Parada {
 	public void removeAllPedestres(List<Pedestre> pedestres) {
 		this.pedestres.removeAll(pedestres);
 	}
-	
+
 	public void removeAllPedestres() {
 		this.pedestres.clear();
 	}
@@ -215,5 +216,17 @@ public class Parada {
 		}
 
 		return paradas;
+	}
+
+	public List<Linha> getLinhas() {
+		return linhas;
+	}
+
+	public void setLinhas(List<Linha> linhas) {
+		this.linhas = linhas;
+	}
+
+	public void addLinha(Linha linha) {
+		this.linhas.add(linha);
 	}
 }

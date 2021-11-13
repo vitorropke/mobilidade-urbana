@@ -12,7 +12,7 @@
 	</module>
 
 	<module name="plans">
-		<param name="inputPlansFile" value="population.xml" />
+		<param name="inputPlansFile" value="population0.xml" />
 	</module>
 	
 	<module name="transit">
@@ -25,7 +25,7 @@
 	<module name="controler">
 		<param name="outputDirectory" value="./output_Complexo" />
 		<param name="firstIteration" value="0" />
-		<param name="lastIteration" value="0" />
+		<param name="lastIteration" value="30" />
 		<param name="eventsFileFormat" value="xml" />
 		<param name="mobsim" value="qsim" />
 		<param name="overwriteFiles" value="deleteDirectoryIfExists" />
