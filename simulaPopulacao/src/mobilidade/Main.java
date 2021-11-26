@@ -1845,6 +1845,7 @@ public class Main {
 				// define a origem
 				numeroParadaAleatoria = paradasAleatorias.nextInt(numeroParadas);
 
+				
 				pessoas.get(i).setOrigem(paradas.get(numeroParadaAleatoria));
 				pessoas.get(i).setParadaAtual(paradas.get(numeroParadaAleatoria));
 
