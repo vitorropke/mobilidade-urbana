@@ -23,15 +23,26 @@ hora_fim = 23
 for parada_origem in coordenadas:
     for parada_destino in coordenadas:
         if parada_origem != parada_destino:
-            for hora in range(hora_inicio, hora_fim + 1):
-                saida += f"\t<person id=\"{parada_origem[0]}_{parada_destino[0]}_{hora:0>2}\" >\n"
-                saida += "\t\t<plan>\n"
-                saida += f"\t\t\t<act end_time=\"{hora}:00:00\" x=\"{parada_origem[1]}\" y=\"{parada_origem[2]}\" "
-                saida += f"type=\"home\"/>\n "
-                saida += "\t\t\t<leg mode=\"pt\"/>\n"
-                saida += f"\t\t\t<act x=\"{parada_destino[1]}\" y=\"{parada_destino[2]}\" type=\"home\"/>\n "
-                saida += "\t\t</plan>\n"
-                saida += "\t</person>\n\n"
+            for hora in range(hora_inicio, hora_fim):
+                for minuto in range(60):
+                    for segundo in range(1):
+                        saida += f"\t<person id=\"{parada_origem[0]}_{parada_destino[0]}_{hora:0>2}_{minuto:0>2}_"
+                        saida += f"{segundo:0>2}\">\n"
+
+                        saida += "\t\t<plan>\n"
+
+                        saida += f"\t\t\t<act end_time=\"{hora:0>2}:{minuto:0>2}:{segundo:0>2}\" "
+                        saida += f"x=\"{parada_origem[1]}\" y=\"{parada_origem[2]}\" "
+
+                        saida += f"type=\"home\"/>\n"
+
+                        saida += "\t\t\t<leg mode=\"pt\"/>\n"
+
+                        saida += f"\t\t\t<act x=\"{parada_destino[1]}\" y=\"{parada_destino[2]}\" type=\"home\"/>\n"
+
+                        saida += "\t\t</plan>\n"
+
+                        saida += "\t</person>\n\n"
 
 saida += "</plans>\n"
 
