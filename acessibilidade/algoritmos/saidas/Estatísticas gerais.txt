@@ -1,0 +1,39 @@
+Tempo médio de viagem: 01:39:29
+Tempo médio de espera: 01:09:35
+Mediana do tempo de viagem: 01:17:38
+Mediana do tempo de espera: 00:47:47
+Moda do tempo de viagem: 00:35:45
+Moda do tempo de espera: 00:10:40
+
+
+Viagem mais demorada
+person       bom-pastor_abolicao-5
+dep_time                  10:38:00
+trav_time                 04:53:37
+wait_time                 03:53:10
+modes         walk-pt-walk-pt-walk
+Name: 30584, dtype: object
+
+Viagem com mais espera
+person       sumare_nova-vida
+dep_time             18:15:00
+trav_time            04:25:35
+wait_time            03:53:55
+modes            walk-pt-walk
+Name: 17749, dtype: object
+
+Viagem mais curta
+person       teatro-municipal-dix-huit-rosado_nova-vida
+dep_time                                       13:21:00
+trav_time                                      00:22:10
+wait_time                                      00:01:13
+modes                              walk-pt-walk-pt-walk
+Name: 37877, dtype: object
+
+Viagem com menos espera
+person       teatro-municipal-dix-huit-rosado_abolicao-5
+dep_time                                        16:20:00
+trav_time                                       00:31:49
+wait_time                                       00:00:04
+modes                                       walk-pt-walk
+Name: 39979, dtype: object

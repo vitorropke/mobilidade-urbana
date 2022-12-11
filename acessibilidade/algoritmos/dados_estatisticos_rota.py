@@ -119,7 +119,7 @@ tabela_saida["Viagem com mais espera"] = tabela_saida["Viagem com mais espera"].
 tabela_saida["Viagem com menos espera"] = tabela_saida["Viagem com menos espera"].apply(seconds_to_timestamp)
 
 # salva as estatísticas das rotas no csv
-tabela_saida.to_csv("saidas/Estatísticas de cada rota.csv")
+tabela_saida.to_csv("entradas/Estatísticas de cada rota.csv")
 
 # salva as informações gerais em um txt
 with open("saidas/Estatísticas gerais.txt", 'w') as arquivo_saida:
