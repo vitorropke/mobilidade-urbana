@@ -1,0 +1,149 @@
+<?xml version="1.0" ?>
+<!DOCTYPE config SYSTEM "http://www.matsim.org/files/dtd/config_v2.dtd">
+
+<config>
+
+    <module name="global">
+        <param name="randomSeed" value="4711"/>
+        <param name="coordinateSystem" value="gk3"/>
+    </module>
+
+    <module name="network">
+        <param name="inputNetworkFile" value="network.xml"/>
+    </module>
+
+    <module name="plans">
+        <param name="inputPlansFile" value="population-extremes-one-per-minute.xml"/>
+    </module>
+
+    <module name="transit">
+        <!-- Comma-separated list of transportation modes that are handled as transit. Defaults to 'pt'. -->
+        <param name="transitModes" value="pt"/>
+        <!-- Input file containing the transit schedule to be simulated. -->
+        <param name="transitScheduleFile" value="transit-schedule.xml"/>
+        <!-- Set this parameter to true if transit should be simulated, false if not. -->
+        <param name="useTransit" value="true"/>
+        <!-- Input file containing the vehicles used by the departures in the transit schedule. -->
+        <param name="vehiclesFile" value="transit-vehicles.xml"/>
+    </module>
+
+    <module name="TimeAllocationMutator">
+        <!-- Default:1800.0; Defines how many seconds a time mutation can maximally shift a time. -->
+        <param name="mutationRange" value="1800.0"/>
+    </module>
+
+    <module name="controler">
+        <!-- Default=xml; Specifies the file format for writing events. Currently supported: [xml, pb, json]. Multiple
+        values can be specified separated by commas (','). -->
+        <param name="eventsFileFormat" value="xml"/>
+        <!-- Default=0. First Iteration of a simulation. -->
+        <param name="firstIteration" value="0"/>
+        <!-- Default=1000. Last Iteration of a simulation. -->
+        <param name="lastIteration" value="0"/>
+        <param name="outputDirectory" value="./output-one-per-minute"/>
+        <!-- Possible values: failIfDirectoryExists, overwriteExistingFiles, deleteDirectoryIfExists -->
+        <param name="overwriteFiles" value="deleteDirectoryIfExists"/>
+        <!-- iterationNumber % writeEventsInterval == 0 defines in which iterations events are written to a file. '0'
+        disables events writing completely. -->
+        <param name="writeEventsInterval" value="1"/>
+        <!-- iterationNumber % writePlansInterval == 0 defines (hopefully) in which iterations plans are written to a
+        file. '0' disables plans writing completely. Some plans in early iterations are always written. -->
+        <param name="writePlansInterval" value="50"/>
+    </module>
+
+    <module name="qsim">
+        <param name="endTime" value="40:00:00"/>
+        <param name="flowCapacityFactor" value="1.0"/>
+        <!-- Boolean “true”: stuck vehicles are removed, aborting the plan; “false”: stuck vehicles are forced into the
+        next link. "false" is probably the better choice. -->
+        <param name="removeStuckVehicles" value="false"/>
+        <param name="snapshotperiod" value="00:00:00"/>
+        <param name="snapshotStyle" value="queue"/>
+        <param name="startTime" value="undefined"/>
+        <param name="storageCapacityFactor" value="1.0"/>
+        <!-- Defines what happens if an agent wants to depart, but the specified vehicle is not available. One of:
+        "teleport", "wait", "exception". -->
+        <param name="vehicleBehavior" value="wait"/>
+    </module>
+
+    <module name="planCalcScore">
+        <!-- Logit model scale parameter. Default: 1. Has a name and default value for historical reasons (see Bryan
+        Raney's PhD thesis). -->
+        <param name="BrainExpBeta" value="1.0"/>
+
+        <parameterset type="scoringParameters">
+            <param name="earlyDeparture" value="-18.0"/>
+            <param name="lateArrival" value="0.0"/>
+            <param name="performing" value="6.0"/>
+            <param name="utilityOfLineSwitch" value="0.0"/>
+            <param name="waiting" value="0.0"/>
+            <param name="waitingPt" value="2.0"/>
+
+            <parameterset type="modeParams">
+                <!-- [utils/hr] Additional marginal utility of traveling. Normally negative. This comes on top of the
+                opportunity cost of time. -->
+                <param name="marginalUtilityOfTraveling_util_hr" value="-6.0"/>
+                <param name="mode" value="car"/>
+            </parameterset>
+
+            <parameterset type="modeParams">
+                <param name="mode" value="pt"/>
+            </parameterset>
+
+            <parameterset type="modeParams">
+                <!-- [utils] Alternative-specific constant. Normally per a trip, but that is probably buggy for
+                multi-leg trips. -->
+                <param name="constant" value="-0.0"/>
+                <!-- [utils/m] Utility of traveling (e.g., walking or driving) per m. Normally negative. This is on top
+                of the time (dis)utility. -->
+                <param name="marginalUtilityOfDistance_util_m" value="0.0"/>
+                <param name="marginalUtilityOfTraveling_util_hr" value="-12.0"/>
+                <param name="mode" value="walk"/>
+            </parameterset>
+
+            <parameterset type="activityParams">
+                <param name="activityType" value="home"/>
+                <param name="priority" value="1"/>
+                <!-- Typical duration of activity. Needs to be defined and non-zero. In sec. -->
+                <param name="typicalDuration" value="18:00:00"/>
+            </parameterset>
+        </parameterset>
+    </module>
+
+    <module name="strategy">
+        <!-- Maximum amount plans per an agent. '0' means "infinity". Now (2010), '5' is a good number. -->
+        <param name="maxAgentPlanMemorySize" value="5"/>
+
+        <parameterset type="strategysettings">
+            <param name="strategyName" value="ChangeExpBeta"/>
+            <param name="weight" value="0.8"/>
+        </parameterset>
+
+        <parameterset type="strategysettings">
+            <param name="strategyName" value="ReRoute"/>
+            <param name="weight" value="0.1"/>
+        </parameterset>
+
+        <parameterset type="strategysettings">
+            <param name="strategyName" value="TimeAllocationMutator"/>
+            <param name="disableAfterIteration" value="90"/>
+            <param name="weight" value="0.1"/>
+        </parameterset>
+    </module>
+
+    <module name="transitRouter">
+        <!-- Additional time the router allocates when a line switch happens. Can be interpreted as a "savity" time
+        agents need to savely transfer from one line to another. -->
+        <param name="additionalTransferTime" value="0.0"/>
+        <!-- Factor with which direct walk generalized cost is multiplied before it is compared to the pt generalized
+        cost. Set to a high value to reduce direct walk results. -->
+        <param name="directWalkFactor" value="999999999999.0"/>
+        <!-- Step size to increase searchRadius if no stops are found. -->
+        <param name="extensionRadius" value="200.0"/>
+        <!-- Maximum beeline distance between stops that agents could transfer to by walking. -->
+        <param name="maxBeelineWalkConnectionDistance" value="500.0"/>
+        <!-- The radius in which stop locations are searched, given a start or target coordinate. -->
+        <param name="searchRadius" value="1000.0"/>
+    </module>
+
+</config>
