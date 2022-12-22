@@ -1,16 +1,20 @@
 """
-Todos os seguintes cálculos consideram apenas viagens com, no mínimo, uma viagem com transporte público
+Todos os seguintes cálculos consideram apenas viagens com, no mínimo, uma viagem com transporte público.
 
-Calcula o tempo médio de viagem de todas as viagens juntas
-Calcula o tempo médio de espera de todas as viagens juntas
-Obtém o maior e menor tempo de viagem de todas as viagens juntas
-Obtém o maior e menor tempo de espera de todas as viagens juntas
+Calcula o tempo médio de viagem de todas as viagens juntas.
+Calcula o tempo médio de espera de todas as viagens juntas.
+Obtém o maior e menor tempo de viagem de todas as viagens juntas.
+Obtém o maior e menor tempo de espera de todas as viagens juntas.
 
-Calcula o tempo médio de viagem de cada rota
-Calcula o tempo médio de espera de cada rota
-Obtém o maior e menor tempo de viagem da rota
-Obtém o maior e menor tempo de espera da rota
+Obtém o grande, gigantesco e colossal tempo de uso maior.
+
+Calcula o tempo médio de viagem de cada rota.
+Calcula o tempo médio de espera de cada rota.
+Obtém o maior e menor tempo de viagem da rota.
+Obtém o maior e menor tempo de espera da rota.
 """
+import os
+
 import pandas as pd
 import time
 
@@ -35,7 +39,7 @@ def seconds_to_timestamp(seconds):
 
 
 colunas_usadas = ["person", "dep_time", "trav_time", "wait_time", "modes"]
-tabela_viagens = pd.read_csv("entradas/output_trips.csv", sep=';', usecols=colunas_usadas)
+tabela_viagens = pd.read_csv("output_trips.csv", sep=';', usecols=colunas_usadas)
 
 # elimina todas as viagens com o modo 'walk'
 tabela_viagens = tabela_viagens[tabela_viagens.modes != "walk"]
@@ -55,22 +59,19 @@ tempo_medio_espera = seconds_to_timestamp(tabela_viagens["wait_time"].mean())
 mediana_tempo_viagem = seconds_to_timestamp(tabela_viagens["trav_time"].median())
 mediana_tempo_espera = seconds_to_timestamp(tabela_viagens["wait_time"].median())
 
-moda_tempo_viagem = seconds_to_timestamp(tabela_viagens["trav_time"].mode()[0])
-moda_tempo_espera = seconds_to_timestamp(tabela_viagens["wait_time"].mode()[0])
-
 indice_maior_tempo_viagem = tabela_viagens["trav_time"].idxmax()
 indice_maior_tempo_espera = tabela_viagens["wait_time"].idxmax()
 
 indice_menor_tempo_viagem = tabela_viagens["trav_time"].idxmin()
 indice_menor_tempo_espera = tabela_viagens["wait_time"].idxmin()
 
-# remove os nove últimos caracteres de cada pessoa para poder agrupá-las
+# remove os 9 últimos caracteres de cada pessoa para poder agrupá-las
 tabela_viagens["person"] = tabela_viagens["person"].str[:-9]
 
 # agrupa as viagens para rotas com médias, medianas, máximos e mínimos
-tabela_rotas_media = tabela_viagens.groupby("person").mean().rename(
+tabela_rotas_media = tabela_viagens.groupby("person").mean(numeric_only=True).rename(
     columns={"trav_time": "Tempo médio de viagem", "wait_time": "Tempo médio de espera"})
-tabela_rotas_mediana = tabela_viagens.groupby("person").median().rename(
+tabela_rotas_mediana = tabela_viagens.groupby("person").median(numeric_only=True).rename(
     columns={"trav_time": "Mediana do tempo de viagem", "wait_time": "Mediana do tempo de espera"})
 
 maior_tempo_viagem_rota = tabela_viagens.groupby("person")["trav_time"].max().rename(
@@ -118,21 +119,21 @@ tabela_saida["Viagem mais curta"] = tabela_saida["Viagem mais curta"].apply(seco
 tabela_saida["Viagem com mais espera"] = tabela_saida["Viagem com mais espera"].apply(seconds_to_timestamp)
 tabela_saida["Viagem com menos espera"] = tabela_saida["Viagem com menos espera"].apply(seconds_to_timestamp)
 
+# cria a pasta se não existir
+if not os.path.exists("dados-processados"):
+    os.makedirs("dados-processados")
 # salva as estatísticas das rotas no csv
-tabela_saida.to_csv("entradas/Estatísticas de cada rota.csv")
+tabela_saida.to_csv("dados-processados/Estatísticas de cada rota.csv")
 
 # salva as informações gerais em um txt
-with open("saidas/Estatísticas gerais.txt", 'w') as arquivo_saida:
+with open("dados-processados/Estatísticas gerais.txt", 'w') as arquivo_saida:
     saida = ""
 
     saida += f"Tempo médio de viagem: {tempo_medio_viagem}\n"
     saida += f"Tempo médio de espera: {tempo_medio_espera}\n"
 
     saida += f"Mediana do tempo de viagem: {mediana_tempo_viagem}\n"
-    saida += f"Mediana do tempo de espera: {mediana_tempo_espera}\n"
-
-    saida += f"Moda do tempo de viagem: {moda_tempo_viagem}\n"
-    saida += f"Moda do tempo de espera: {moda_tempo_espera}\n\n"
+    saida += f"Mediana do tempo de espera: {mediana_tempo_espera}\n\n"
 
     saida += f"\nViagem mais demorada\n{tabela_viagens.loc[indice_maior_tempo_viagem]}\n"
     saida += f"\nViagem com mais espera\n{tabela_viagens.loc[indice_maior_tempo_espera]}\n"
@@ -143,7 +144,7 @@ with open("saidas/Estatísticas gerais.txt", 'w') as arquivo_saida:
     arquivo_saida.write(saida)
 
 # salva as informações gerais de cada rota em um txt
-with open("saidas/Estatísticas gerais de cada rota.txt", 'w') as arquivo_saida:
+with open("dados-processados/Estatísticas gerais de cada rota.txt", 'w') as arquivo_saida:
     saida = ""
 
     saida += f"Maior média de viagem\n\n{tabela_saida.loc[indice_maior_media_viagem]}\n\n\n"

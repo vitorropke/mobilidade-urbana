@@ -27,7 +27,7 @@ def timestamp_to_seconds(timestamp):
 
 
 colunas_usadas = ["person", "Mediana do tempo de viagem"]
-tabela_tempos = pd.read_csv("entradas/Estatísticas de cada rota.csv", index_col=0, usecols=colunas_usadas)
+tabela_tempos = pd.read_csv("dados-processados/Estatísticas de cada rota.csv", index_col=0, usecols=colunas_usadas)
 
 # muda os tempos de HH:MM:SS para segundos
 tabela_tempos["Mediana do tempo de viagem"] = tabela_tempos["Mediana do tempo de viagem"].apply(timestamp_to_seconds)
@@ -38,15 +38,20 @@ tabela_saida = tabela_tempos.div(len(tabela_tempos) - 1)
 # muda o nome da coluna
 tabela_saida = tabela_saida.rename(columns={"Mediana do tempo de viagem": "Acessibilidade da rota"})
 
-# extrai as informações máximas e mínimas
-print(f"\nAcessibilidade média: {tabela_saida['Acessibilidade da rota'].mean()}")
-print(f"Mediana da acessibilidade: {tabela_saida['Acessibilidade da rota'].median()}\n\n")
+# salva as informações máximas e mínimas
+with open("dados-processados/Estatísticas da acessibilidade integral - Allen et al.txt", 'w') as arquivo_saida:
+    saida = ""
 
-print(f"Maior valor de acessibilidade\n{tabela_saida.loc[tabela_saida.idxmax()]}\n")
-print(f"Menor valor de acessibilidade\n{tabela_saida.loc[tabela_saida.idxmin()]}")
+    saida += f"Acessibilidade média: {tabela_saida['Acessibilidade da rota'].mean()}\n"
+    saida += f"Mediana da acessibilidade: {tabela_saida['Acessibilidade da rota'].median()}\n\n"
+
+    saida += f"Maior valor de acessibilidade\n{tabela_saida.loc[tabela_saida['Acessibilidade da rota'].idxmax()]}\n\n"
+    saida += f"Menor valor de acessibilidade\n{tabela_saida.loc[tabela_saida['Acessibilidade da rota'].idxmin()]}\n"
+
+    arquivo_saida.write(saida)
 
 # ordena a tabela pela acessibilidade da rota
 tabela_saida = tabela_saida.sort_values("Acessibilidade da rota")
 
 # salva em um arquivo csv
-tabela_saida.to_csv("entradas/Acessibilidade integral das rotas por tempo - Allen et al.csv")
+tabela_saida.to_csv("dados-processados/Acessibilidade integral - Allen et al.csv")

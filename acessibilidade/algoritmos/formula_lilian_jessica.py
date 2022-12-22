@@ -1,6 +1,6 @@
 """
-Equação do artigo 'Índice de acessibilidade para comparação dos modos de transporte privado e coletivo' das autoras
-Lílian dos Santos Fontes Pereira Bracarense e Jéssica Oliveira Nunes Ferreira
+Equação do artigo 'Índice de acessibilidade para comparação dos modos de transporte privado e coletivo' das autoras.
+Lílian dos Santos Fontes Pereira Bracarense e Jéssica Oliveira Nunes Ferreira.
 
 Disponível nas seguintes URLs:
 https://www.scielo.br/j/urbe/a/jypKpfGB6TwpXkYNMjSySLx/abstract/?lang=pt
@@ -16,9 +16,9 @@ Aij = ∑ (1 - (Tij - Tmin) / (Tmax - Tmin))
 Aij: é o índice de acessibilidade do nó i para os destinos j;
 Tij: é o tempo de viagem do nó i para o destino j, em minutos;
 Tmax: é o máximo tempo de viagem de i até j para o qual a viagem pode ser considerada viável para o usuário, em minutos;
-Tmin: é o menor tempo de viagem de i até j encontrado para a rede de transportes analisada, em minutos
+Tmin: é o menor tempo de viagem de i até j encontrado para a rede de transportes analisada, em minutos.
 
-Quanto maior o número, mais acessível
+Quanto maior o número, mais acessível.
 """
 import pandas as pd
 
@@ -50,7 +50,7 @@ def formula_acessibilidade(tempo_viagem, tempo_maximo, tempo_minimo):
 
 
 colunas_usadas = ["person", "trav_time", "modes"]
-tabela_viagens = pd.read_csv("entradas/output_trips.csv", sep=';', usecols=colunas_usadas)
+tabela_viagens = pd.read_csv("output_trips.csv", sep=';', usecols=colunas_usadas)
 
 # elimina todas as viagens com o modo 'walk'
 tabela_viagens = tabela_viagens[tabela_viagens.modes != "walk"]
@@ -93,18 +93,23 @@ for indice_viagem, viagem_atual in tabela_viagens.iterrows():
         acessibilidade = 0
         rota_atual += 1
 
-# salva as informações de cada rota em um arquivo csv
+# cria uma tabela de saida usando a tabela de acessibilidade definindo o nome das colunas
 tabela_saida = pd.DataFrame(tabela_acessibilidade_rota, columns=["Nome da rota", "Acessibilidade da rota"])
+
+# salva algumas informações estatísticas da tabela de acessibilidades
+with open("dados-processados/Estatísticas da acessibilidade das rotas - Lilian e Jessica.txt", 'w') as arquivo_saida:
+    saida = ""
+
+    saida += f"Acessibilidade média: {tabela_saida['Acessibilidade da rota'].mean()}\n"
+    saida += f"Mediana da acessibilidade: {tabela_saida['Acessibilidade da rota'].median()}\n\n"
+
+    saida += f"Maior acessibilidade: \n{tabela_saida.loc[tabela_saida['Acessibilidade da rota'].idxmax()]}\n\n"
+    saida += f"Menor acessibilidade: \n{tabela_saida.loc[tabela_saida['Acessibilidade da rota'].idxmin()]}\n"
+
+    arquivo_saida.write(saida)
 
 # ordena a tabela pela acessibilidade da rota
 tabela_saida = tabela_saida.sort_values("Acessibilidade da rota")
 
 # salva em um arquivo csv
-tabela_saida.to_csv("saidas/Acessibilidade das rotas - Lilian e Jessica.csv", index=False)
-
-# extrai algumas informações estatísticas da tabela de acessibilidades
-print(f"Acessibilidade média: {tabela_saida['Acessibilidade da rota'].mean()}")
-print(f"Mediana da acessibilidade: {tabela_saida['Acessibilidade da rota'].median()}")
-print(f"Moda da acessibilidade: {tabela_saida['Acessibilidade da rota'].mode()[0]}\n\n")
-print(f"Maior acessibilidade: \n{tabela_saida.loc[tabela_saida['Acessibilidade da rota'].idxmax()]}\n")
-print(f"Menor acessibilidade: \n{tabela_saida.loc[tabela_saida['Acessibilidade da rota'].idxmin()]}")
+tabela_saida.to_csv("dados-processados/Acessibilidade das rotas - Lilian e Jessica.csv", index=False)

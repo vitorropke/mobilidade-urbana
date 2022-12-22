@@ -34,9 +34,9 @@ tabela_distancias = pd.DataFrame(distancias_paradas, columns=cabecalho_saida, in
 tabela_tempos = pd.DataFrame(tempos_paradas, columns=cabecalho_saida, index=cabecalho_saida)
 tabela_coordenadas = pd.DataFrame(coordenadas, columns=["Latitude", "Longitude"], index=cabecalho_saida)
 
-tabela_distancias.to_csv("saidas/Distâncias entre as paradas.csv")
-tabela_tempos.to_csv("saidas/Tempo entre as paradas.csv")
-tabela_coordenadas.to_csv("saidas/Paradas com coordenadas.csv")
+tabela_distancias.to_csv("saidas/Distâncias entre paradas.csv")
+tabela_tempos.to_csv("saidas/Tempos entre paradas.csv")
+tabela_coordenadas.to_csv("saidas/Coordenadas das paradas.csv")
 
 """
 # sem cabeçalho
