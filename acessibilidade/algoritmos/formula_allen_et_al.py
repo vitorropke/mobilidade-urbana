@@ -26,20 +26,24 @@ def timestamp_to_seconds(timestamp):
         timestamp[6] + timestamp[7])
 
 
+parte_do_diretorio_entrada_saida = "output-one-per-minute"
 colunas_usadas = ["person", "Mediana do tempo de viagem"]
-tabela_tempos = pd.read_csv("dados-processados/Estatísticas de cada rota.csv", index_col=0, usecols=colunas_usadas)
+tabela_tempos = pd.read_csv(
+    "entradas/2-dados-estatisticos/" + parte_do_diretorio_entrada_saida + "/estatisticas-gerais-de-cada-rota.csv",
+    index_col=0, usecols=colunas_usadas)
 
 # muda os tempos de HH:MM:SS para segundos
 tabela_tempos["Mediana do tempo de viagem"] = tabela_tempos["Mediana do tempo de viagem"].apply(timestamp_to_seconds)
 
-# divide pelo número de paradas
+# divide pelo número de rotas
 tabela_saida = tabela_tempos.div(len(tabela_tempos) - 1)
 
 # muda o nome da coluna
 tabela_saida = tabela_saida.rename(columns={"Mediana do tempo de viagem": "Acessibilidade da rota"})
 
-# salva as informações máximas e mínimas
-with open("dados-processados/Estatísticas da acessibilidade integral - Allen et al.txt", 'w') as arquivo_saida:
+# salva num arquivo txt
+with open("saidas/3-allen-et-al/" + parte_do_diretorio_entrada_saida + "/estatisticas-gerais-de-acessibilidade.txt",
+          'w') as arquivo_saida:
     saida = ""
 
     saida += f"Acessibilidade média: {tabela_saida['Acessibilidade da rota'].mean()}\n"
@@ -53,5 +57,5 @@ with open("dados-processados/Estatísticas da acessibilidade integral - Allen et
 # ordena a tabela pela acessibilidade da rota
 tabela_saida = tabela_saida.sort_values("Acessibilidade da rota")
 
-# salva em um arquivo csv
-tabela_saida.to_csv("dados-processados/Acessibilidade integral - Allen et al.csv")
+# salva num arquivo csv
+tabela_saida.to_csv("saidas/3-allen-et-al/" + parte_do_diretorio_entrada_saida + "/acessibilidade-por-rota.csv")

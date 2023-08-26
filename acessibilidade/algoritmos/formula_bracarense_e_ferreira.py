@@ -49,20 +49,27 @@ def formula_acessibilidade(tempo_viagem, tempo_maximo, tempo_minimo):
         return 1 - (tempo_viagem - tempo_minimo) / (tempo_maximo - tempo_minimo)
 
 
-colunas_usadas = ["person", "trav_time", "modes"]
-tabela_viagens = pd.read_csv("output_trips.csv", sep=';', usecols=colunas_usadas)
+parte_do_diretorio_entrada_saida = "output-peak-hours"
+colunas_usadas = ["person", "trav_time", "wait_time", "modes"]
+tabela_viagens = pd.read_csv("entradas/1-output-trips/" + parte_do_diretorio_entrada_saida + "/output_trips.csv",
+                             sep=';', usecols=colunas_usadas)
 
 # elimina todas as viagens com o modo 'walk'
 tabela_viagens = tabela_viagens[tabela_viagens.modes != "walk"]
-
 # remove a coluna 'walk'
 tabela_viagens = tabela_viagens.drop("modes", axis=1)
 
-# muda os tempos de HH:MM:SS para segundos
+# muda os tempos de HH:MM:SS para minutos
 tabela_viagens["trav_time"] = tabela_viagens["trav_time"].apply(timestamp_to_minutes)
+tabela_viagens["wait_time"] = tabela_viagens["wait_time"].apply(timestamp_to_minutes)
 
 # remove os tempos muito grandes (outliers superiores)
+# corta 25% das maiores viagens
 tabela_viagens = tabela_viagens[tabela_viagens["trav_time"] < tabela_viagens["trav_time"].quantile(.75)]
+# corta 25% das maiores esperas
+tabela_viagens = tabela_viagens[tabela_viagens["wait_time"] < tabela_viagens["wait_time"].quantile(.75)]
+# remove a coluna 'wait_time'
+tabela_viagens = tabela_viagens.drop("wait_time", axis=1)
 
 # remove os nove últimos caracteres de cada pessoa para poder agrupá-las
 tabela_viagens["person"] = tabela_viagens["person"].str[:-9]
@@ -96,15 +103,23 @@ for indice_viagem, viagem_atual in tabela_viagens.iterrows():
 # cria uma tabela de saida usando a tabela de acessibilidade definindo o nome das colunas
 tabela_saida = pd.DataFrame(tabela_acessibilidade_rota, columns=["Nome da rota", "Acessibilidade da rota"])
 
+# remove as acessibilidades muito grandes (outliers superiores)
+# corta 25% das maiores acessibilidades
+tabela_saida = tabela_saida[
+    tabela_saida["Acessibilidade da rota"] < tabela_saida["Acessibilidade da rota"].quantile(.75)]
+
 # salva algumas informações estatísticas da tabela de acessibilidades
-with open("dados-processados/Estatísticas da acessibilidade das rotas - Lilian e Jessica.txt", 'w') as arquivo_saida:
+with open(
+        "saidas/4-bracarense-e-ferreira/" + parte_do_diretorio_entrada_saida + "/estatisticas-gerais-de"
+                                                                               "-acessibilidade.txt",
+        'w') as arquivo_saida:
     saida = ""
 
     saida += f"Acessibilidade média: {tabela_saida['Acessibilidade da rota'].mean()}\n"
     saida += f"Mediana da acessibilidade: {tabela_saida['Acessibilidade da rota'].median()}\n\n"
 
-    saida += f"Maior acessibilidade: \n{tabela_saida.loc[tabela_saida['Acessibilidade da rota'].idxmax()]}\n\n"
-    saida += f"Menor acessibilidade: \n{tabela_saida.loc[tabela_saida['Acessibilidade da rota'].idxmin()]}\n"
+    saida += f"Maior valor de acessibilidade: \n{tabela_saida.loc[tabela_saida['Acessibilidade da rota'].idxmax()]}\n\n"
+    saida += f"Menor valor de acessibilidade: \n{tabela_saida.loc[tabela_saida['Acessibilidade da rota'].idxmin()]}\n"
 
     arquivo_saida.write(saida)
 
@@ -112,4 +127,6 @@ with open("dados-processados/Estatísticas da acessibilidade das rotas - Lilian 
 tabela_saida = tabela_saida.sort_values("Acessibilidade da rota")
 
 # salva em um arquivo csv
-tabela_saida.to_csv("dados-processados/Acessibilidade das rotas - Lilian e Jessica.csv", index=False)
+tabela_saida.to_csv(
+    "saidas/4-bracarense-e-ferreira/" + parte_do_diretorio_entrada_saida + "/acessibilidade-por-rota.csv",
+    index=False)
