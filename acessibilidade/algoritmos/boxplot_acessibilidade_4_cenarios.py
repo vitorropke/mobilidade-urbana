@@ -28,5 +28,5 @@ plt.xticks(**outra_fonte)
 plt.ylabel("Cenários", **outra_fonte)
 plt.yticks(**outra_fonte)
 
-plt.savefig("saidas/boxplot-acessibilidade-bracarense-e-ferreira", dpi=600)
+plt.savefig("saidas/boxplot-acessibilidade-" + indice_usado, dpi=600, transparent=True)
 # plt.show()

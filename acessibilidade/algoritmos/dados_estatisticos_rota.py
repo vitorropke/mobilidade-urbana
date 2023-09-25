@@ -1,21 +1,17 @@
 """
 Todos os seguintes cálculos consideram apenas viagens com, no mínimo, uma viagem com transporte público.
-Todas as viagens que constam que a pessoa só andou, são eliminadas.
 
 Calcula o tempo médio de viagem de todas as viagens juntas.
 Calcula o tempo médio de espera de todas as viagens juntas.
-Calcula a mediana do tempo de viagem de todas as viagens juntas.
-Calcula a mediana do tempo de espera de todas as viagens juntas.
 Obtém o maior e menor tempo de viagem de todas as viagens juntas.
 Obtém o maior e menor tempo de espera de todas as viagens juntas.
 
+Obtém o tempo de uso maior.
+
 Calcula o tempo médio de viagem de cada rota.
 Calcula o tempo médio de espera de cada rota.
-Calcula a mediana do tempo de viagem de cada rota.
-Calcula a mediana do tempo de espera de cada rota.
-Obtém o maior e menor tempo de viagem de cada rota.
-Obtém o maior e menor tempo de espera de cada rota.
-Calcula a quantidade de viagens de cada rota.
+Obtém o maior e menor tempo de viagem da rota.
+Obtém o maior e menor tempo de espera da rota.
 """
 import pandas as pd
 import time
