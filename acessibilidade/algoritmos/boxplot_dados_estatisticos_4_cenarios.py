@@ -1,8 +1,12 @@
 """
 Gera um gráfico de caixa de um arquivo csv que contém dados estatísticos
 """
-import matplotlib.pyplot as plt
 import pandas as pd
+import matplotlib.pyplot as plt
+from matplotlib import rcParams
+
+rcParams['font.family'] = ['Times New Roman']
+rcParams['font.size'] = 11
 
 
 def timestamp_to_seconds(timestamp):
@@ -15,11 +19,11 @@ def timestamp_to_seconds(timestamp):
         timestamp[6] + timestamp[7])
 
 
-tabela_padrao = pd.read_csv("entradas/2-dados-estatisticos/output-one-per-hour/estatisticas-gerais-de-cada-rota.csv")
-tabela_hora_pico = pd.read_csv("entradas/2-dados-estatisticos/output-peak-hours/estatisticas-gerais-de-cada-rota.csv")
+tabela_padrao = pd.read_csv("entradas/3-dados-estatisticos/output-one-per-hour/estatisticas-gerais-de-cada-rota.csv")
+tabela_hora_pico = pd.read_csv("entradas/3-dados-estatisticos/output-peak-hours/estatisticas-gerais-de-cada-rota.csv")
 tabela_meia_hora = pd.read_csv(
-    "entradas/2-dados-estatisticos/output-one-per-half-hour/estatisticas-gerais-de-cada-rota.csv")
-tabela_minuto = pd.read_csv("entradas/2-dados-estatisticos/output-one-per-minute/estatisticas-gerais-de-cada-rota.csv")
+    "entradas/3-dados-estatisticos/output-one-per-half-hour/estatisticas-gerais-de-cada-rota.csv")
+tabela_minuto = pd.read_csv("entradas/3-dados-estatisticos/output-one-per-minute/estatisticas-gerais-de-cada-rota.csv")
 
 # muda os tempos de HH:MM:SS para segundos
 tabela_padrao["Tempo médio de viagem"] = tabela_padrao["Tempo médio de viagem"].apply(timestamp_to_seconds)
@@ -80,56 +84,39 @@ tabela_hora_pico = tabela_hora_pico.drop("Quantidade de viagens", axis=1)
 tabela_meia_hora = tabela_meia_hora.drop("Quantidade de viagens", axis=1)
 tabela_minuto = tabela_minuto.drop("Quantidade de viagens", axis=1)
 # ======================================================================================================================
-outra_fonte = {'fontfamily': 'Times New Roman', 'fontsize': 10}
+
 # ======================================================================================================================
-"""
+
 # todos os cenários numa figura
 fig, [[ax1, ax2], [ax3, ax4]] = plt.subplots(nrows=2, ncols=2, figsize=(16, 9))
 
 tabela_padrao.boxplot(ax=ax1, vert=False)
-ax1.set_title("Dados estatísticos do cenário A", **outra_fonte)
-ax1.set_xlabel("Tempo em segundos", **outra_fonte)
-ax1.set_ylabel("Dados estatísticos", **outra_fonte)
+ax1.set_title("Dados estatísticos do cenário A")
+ax1.set_xlabel("Tempo em segundos")
+ax1.set_ylabel("Dados estatísticos")
 ax1.set_xlim(right=11000)
-for x_tick in ax1.get_xticklabels():
-    x_tick.set(**outra_fonte)
-for y_tick in ax1.get_yticklabels():
-    y_tick.set(**outra_fonte)
 
 tabela_hora_pico.boxplot(ax=ax2, vert=False)
-ax2.set_title('Dados estatísticos do cenário B', **outra_fonte)
-ax2.set_xlabel("Tempo em segundos", **outra_fonte)
-ax2.set_ylabel("Dados estatísticos", **outra_fonte)
+ax2.set_title("Dados estatísticos do cenário B")
+ax2.set_xlabel("Tempo em segundos")
+ax2.set_ylabel("Dados estatísticos")
 ax2.set_xlim(right=11000)
-for x_tick in ax2.get_xticklabels():
-    x_tick.set(**outra_fonte)
-for y_tick in ax2.get_yticklabels():
-    y_tick.set(**outra_fonte)
 
 tabela_meia_hora.boxplot(ax=ax3, vert=False)
-ax3.set_title("Dados estatísticos do cenário C", **outra_fonte)
-ax3.set_xlabel("Tempo em segundos", **outra_fonte)
-ax3.set_ylabel("Dados estatísticos", **outra_fonte)
+ax3.set_title("Dados estatísticos do cenário C")
+ax3.set_xlabel("Tempo em segundos")
+ax3.set_ylabel("Dados estatísticos")
 ax3.set_xlim(right=11000)
-for x_tick in ax3.get_xticklabels():
-    x_tick.set(**outra_fonte)
-for y_tick in ax3.get_yticklabels():
-    y_tick.set(**outra_fonte)
 
 tabela_minuto.boxplot(ax=ax4, vert=False)
-ax4.set_title('Dados estatísticos do cenário D', **outra_fonte)
-ax4.set_xlabel("Tempo em segundos", **outra_fonte)
-ax4.set_ylabel("Dados estatísticos", **outra_fonte)
+ax4.set_title("Dados estatísticos do cenário D")
+ax4.set_xlabel("Tempo em segundos")
+ax4.set_ylabel("Dados estatísticos")
 ax4.set_xlim(right=11000)
-for x_tick in ax4.get_xticklabels():
-    x_tick.set(**outra_fonte)
-for y_tick in ax4.get_yticklabels():
-    y_tick.set(**outra_fonte)
 
 plt.tight_layout()
-plt.savefig(f"saidas/boxplot-dados-estatisticos-4-cenarios", dpi=600, transparent=True)
-plt.show()
-"""
+plt.savefig(f"saidas/boxplot-dados-estatisticos-4-cenarios.pdf")
+
 # ======================================================================================================================
 """
 # 2 cenários em 2 figuras
@@ -137,101 +124,78 @@ plt.show()
 fig, [ax1, ax2] = plt.subplots(ncols=2, figsize=(16, 9))
 
 tabela_padrao.boxplot(ax=ax1, vert=False)
-ax1.set_title("Dados estatísticos do cenário A", **outra_fonte)
-ax1.set_xlabel("Tempo em segundos", **outra_fonte)
-ax1.set_ylabel("Dados estatísticos", **outra_fonte)
+ax1.set_title("Dados estatísticos do cenário A")
+ax1.set_xlabel("Tempo em segundos")
+ax1.set_ylabel("Dados estatísticos")
 ax1.set_xlim(right=11000)
-for x_tick in ax1.get_xticklabels():
-    x_tick.set(**outra_fonte)
-for y_tick in ax1.get_yticklabels():
-    y_tick.set(**outra_fonte)
 
 tabela_hora_pico.boxplot(ax=ax2, vert=False)
-ax2.set_title('Dados estatísticos do cenário B', **outra_fonte)
-ax2.set_xlabel("Tempo em segundos", **outra_fonte)
-ax2.set_ylabel("Dados estatísticos", **outra_fonte)
+ax2.set_title("Dados estatísticos do cenário B")
+ax2.set_xlabel("Tempo em segundos")
+ax2.set_ylabel("Dados estatísticos")
 ax2.set_xlim(right=11000)
-for x_tick in ax2.get_xticklabels():
-    x_tick.set(**outra_fonte)
-for y_tick in ax2.get_yticklabels():
-    y_tick.set(**outra_fonte)
 
 plt.tight_layout()
-plt.savefig(f"saidas/boxplot-dados-estatisticos-cenarios-A-B", dpi=600, transparent=True)
+plt.savefig(f"saidas/boxplot-dados-estatisticos-cenarios-A-B.pdf")
 # ----------------------------------------------------------------------------------------------------------------------
 # Cenários C e D
 fig, [ax3, ax4] = plt.subplots(ncols=2, figsize=(16, 9))
 
 tabela_meia_hora.boxplot(ax=ax3, vert=False)
-ax3.set_title("Dados estatísticos do cenário C", **outra_fonte)
-ax3.set_xlabel("Tempo em segundos", **outra_fonte)
-ax3.set_ylabel("Dados estatísticos", **outra_fonte)
+ax3.set_title("Dados estatísticos do cenário C")
+ax3.set_xlabel("Tempo em segundos")
+ax3.set_ylabel("Dados estatísticos")
 ax3.set_xlim(right=11000)
-for x_tick in ax3.get_xticklabels():
-    x_tick.set(**outra_fonte)
-for y_tick in ax3.get_yticklabels():
-    y_tick.set(**outra_fonte)
 
 tabela_minuto.boxplot(ax=ax4, vert=False)
-ax4.set_title('Dados estatísticos do cenário D', **outra_fonte)
-ax4.set_xlabel("Tempo em segundos", **outra_fonte)
-ax4.set_ylabel("Dados estatísticos", **outra_fonte)
+ax4.set_title("Dados estatísticos do cenário D")
+ax4.set_xlabel("Tempo em segundos")
+ax4.set_ylabel("Dados estatísticos")
 ax4.set_xlim(right=11000)
-for x_tick in ax4.get_xticklabels():
-    x_tick.set(**outra_fonte)
-for y_tick in ax4.get_yticklabels():
-    y_tick.set(**outra_fonte)
 
 plt.tight_layout()
-plt.savefig(f"saidas/boxplot-dados-estatisticos-cenarios-C-D", dpi=600, transparent=True)
+plt.savefig(f"saidas/boxplot-dados-estatisticos-cenarios-C-D.pdf")
 """
 # ======================================================================================================================
-
+"""
 # todos os cenários em figuras diferentes
 cenario = "A"
 tabela_padrao.boxplot(vert=False)
-plt.title("Dados estatísticos do cenário " + cenario, **outra_fonte)
-plt.xlabel("Tempo em segundos", **outra_fonte)
-plt.xticks(**outra_fonte)
+plt.title("Dados estatísticos do cenário " + cenario)
+plt.xlabel("Tempo em segundos")
 plt.xlim(right=11000)
-plt.ylabel("Dados estatísticos", **outra_fonte)
-plt.yticks(**outra_fonte)
+plt.ylabel("Dados estatísticos")
 
 plt.tight_layout()
-plt.savefig(f"saidas/boxplot-dados-estatisticos-cenario-" + cenario, dpi=600, transparent=True)
+plt.savefig(f"saidas/boxplot-dados-estatisticos-cenario-" + cenario + ".pdf")
 plt.clf()
 # ----------------------------------------------------------------------------------------------------------------------
 cenario = "B"
 tabela_hora_pico.boxplot(vert=False)
-plt.title("Dados estatísticos do cenário " + cenario, **outra_fonte)
-plt.xlabel("Tempo em segundos", **outra_fonte)
-plt.xticks(**outra_fonte)
+plt.title("Dados estatísticos do cenário " + cenario)
+plt.xlabel("Tempo em segundos")
 plt.xlim(right=11000)
-plt.ylabel("Dados estatísticos", **outra_fonte)
-plt.yticks(**outra_fonte)
+plt.ylabel("Dados estatísticos")
 
-plt.savefig(f"saidas/boxplot-dados-estatisticos-cenario-" + cenario, dpi=600, transparent=True)
+plt.savefig(f"saidas/boxplot-dados-estatisticos-cenario-" + cenario + ".pdf")
 plt.clf()
 # ----------------------------------------------------------------------------------------------------------------------
 cenario = "C"
 tabela_meia_hora.boxplot(vert=False)
-plt.title("Dados estatísticos do cenário " + cenario, **outra_fonte)
-plt.xlabel("Tempo em segundos", **outra_fonte)
-plt.xticks(**outra_fonte)
+plt.title("Dados estatísticos do cenário " + cenario)
+plt.xlabel("Tempo em segundos")
 plt.xlim(right=11000)
-plt.ylabel("Dados estatísticos", **outra_fonte)
-plt.yticks(**outra_fonte)
+plt.ylabel("Dados estatísticos")
 
-plt.savefig(f"saidas/boxplot-dados-estatisticos-cenario-" + cenario, dpi=600, transparent=True)
+plt.savefig(f"saidas/boxplot-dados-estatisticos-cenario-" + cenario + ".pdf")
 plt.clf()
 # ----------------------------------------------------------------------------------------------------------------------
 cenario = "D"
 tabela_minuto.boxplot(vert=False)
-plt.title("Dados estatísticos do cenário " + cenario, **outra_fonte)
-plt.xlabel("Tempo em segundos", **outra_fonte)
-plt.xticks(**outra_fonte)
+plt.title("Dados estatísticos do cenário " + cenario)
+plt.xlabel("Tempo em segundos")
 plt.xlim(right=11000)
-plt.ylabel("Dados estatísticos", **outra_fonte)
-plt.yticks(**outra_fonte)
+plt.ylabel("Dados estatísticos")
 
-plt.savefig(f"saidas/boxplot-dados-estatisticos-cenario-" + cenario, dpi=600, transparent=True)
+plt.savefig(f"saidas/boxplot-dados-estatisticos-cenario-" + cenario + ".pdf")
+"""
